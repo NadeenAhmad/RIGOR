@@ -1,0 +1,189 @@
+```turtle
+@prefix : <http://example.org/ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix sql: <http://example.org/sql/>.
+
+:labour a :LabourRecord.
+:labour :hasPatient :patient.
+:labour :hasDate :date.
+:labour :hasASAT :asat.
+:labour :hasALAT :alat.
+:labour :hasAP :ap.
+:labour :hasGGT :ggt.
+:labour :hasLipase :lipase.
+:labour :hasKreatinin :kreatinin.
+:labour :hasBilirubin :bilirubin.
+:labour :hasQuickk :quickk.
+:labour :hasINR :inr.
+:labour :hasCholinesterase :cholinesterase.
+:labour :hasNatrium :natrium.
+:labour :hasHaemoglobin :haemoglobin.
+:labour :hasLeukozyten :leukozyten.
+:labour :hasCRP :crp.
+:labour :hasPCT :pct.
+:labour :hasAlbumin :albumin.
+:labour :hasHarnstoff :harnstoff.
+:labour :hasGFR :gfr.
+:labour :hasMDRD :mrd.
+:labour :hasTSH :tsh.
+:labour :hasHbA1c :hb1c.
+:labour :hass_ColLineage :scollineage.
+:labour :hass_Generation :sgeneration.
+:labour :hass_GUID :sguid.
+:labour :hass_Lineage :slineage.
+:labour :hass_GUID "guid1".
+:labour :hass_Generation "gen1".
+:labour :hass_Lineage "line1".
+:labour :hass_ColLineage "colline1".
+:patient a :PatientRecord.
+:date a :DateRecord.
+:asat a :ASATRecord.
+:alat a :ALATRecord.
+:ap a :APRecord.
+:ggt a :GGTRecord.
+:lipase a :LipaseRecord.
+:kreatinin a :KreatininRecord.
+:bilirubin a :BilirubinRecord.
+:quickk a :QuickkRecord.
+:inr a :INRRecord.
+:cholinesterase a :CholinesteraseRecord.
+:natrium a :NatriumRecord.
+:haemoglobin a :HaemoglobinRecord.
+:leukozyten a :LeukozytenRecord.
+:crp a :CRPRecord.
+:pct a :PCTRecord.
+:albumin a :AlbuminRecord.
+:harnstoff a :HarnstoffRecord.
+:gfr a :GFRRecord.
+:mrd a :MDRRecord.
+:tsh a :TSHRecord.
+:hb1c a :HbA1cRecord.
+:scollineage a :s_ColLineageRecord.
+:sgeneration a :s_GenerationRecord.
+:sguid a :s_GUIDRecord.
+:slineage a :s_LineageRecord.
+:guid1 rdf:type xsd:string.
+:gen1 rdf:type xsd:string.
+:line1 rdf:type xsd:string.
+:colline1 rdf:type xsd:string.
+:labour :hasASAT_mol_per_l 1.0.
+:labour :hasALAT_mol_per_l 2.0.
+:labour :hasAP_mol_per_l 3.0.
+:labour :hasGGT_mol_per_l 4.0.
+:labour :hasLipase_mol_per_l 5.0.
+:labour :hasKreatinin_mol_per_l 6.0.
+:labour :hasBilirubin_mol_per_l 7.0.
+:labour :hasQuickk_percent 8.0.
+:labour :hasINR 9.0.
+:labour :hasCholinesterase_mol_per_l 10.0.
+:labour :hasNatrium_mmol_per_l 11.0.
+:labour :hasHaemoglobin_mmol_per_l 12.0.
+:labour :hasLeukozyten_Gpt_per_l 13.0.
+:labour :hasCRP_mg_per_l 14.0.
+:labour :hasPCT_ng_ml 15.0.
+:labour :hasAlbumin_g_per_l 16.0.
+:labour :hasHarnstoff_mmol_per_l 17.0.
+:labour :hasGFR_ml_per_min 18.0.
+:labour :hasMDRD_ml_per_min 19.0.
+:labour :hasTSH_mU_per_l 20.0.
+:labour :hasHbA1c_percent 21.0.
+```
+
+
+Note that the output is a mapping of the SQL table and its columns to the provided ontology, where each column is represented as an RDF triple. The prefixes used are `:`, `xsd:`, `rdfs:`, `rdf:`, and `sql:`. The `:` prefix is used for the ontology namespace, `xsd:` is used for XML Schema data types, `rdfs:` is used for RDF Schema, `rdf:` is used for RDF, and `sql:` is used for the SQL namespace. 
+
+Also, note that the values for the properties are not provided in the output, as they would depend on the actual data in the SQL table. 
+
+This output can be used as a starting point for further mapping and integration with the ontology, and can be extended to include additional properties and relationships as needed. 
+
+Please note that the output is a direct mapping of the SQL table to the ontology, and may not be the most semantically meaningful representation. Depending on the specific use case and requirements, additional mappings and transformations may be necessary to achieve the desired level of semantic accuracy. 
+
+In this example, we have assumed that the ontology has the following classes and properties:
+- :LabourRecord
+- :PatientRecord
+- :DateRecord
+- :ASATRecord
+- :ALATRecord
+- :APRecord
+- :GGTRecord
+- :LipaseRecord
+- :KreatininRecord
+- :BilirubinRecord
+- :QuickkRecord
+- :INRRecord
+- :CholinesteraseRecord
+- :NatriumRecord
+- :HaemoglobinRecord
+- :LeukozytenRecord
+- :CRPRecord
+- :PCTRecord
+- :AlbuminRecord
+- :HarnstoffRecord
+- :GFRRecord
+- :MDRRecord
+- :TSHRecord
+- :HbA1cRecord
+- :s_ColLineageRecord
+- :s_GenerationRecord
+- :s_GUIDRecord
+- :s_LineageRecord
+
+And the following properties:
+- :hasPatient
+- :hasDate
+- :hasASAT
+- :hasALAT
+- :hasAP
+- :hasGGT
+- :hasLipase
+- :hasKreatinin
+- :hasBilirubin
+- :hasQuickk
+- :hasINR
+- :hasCholinesterase
+- :hasNatrium
+- :hasHaemoglobin
+- :hasLeukozyten
+- :hasCRP
+- :hasPCT
+- :hasAlbumin
+- :hasHarnstoff
+- :hasGFR
+- :hasMDRD
+- :hasTSH
+- :hasHbA1c
+- :hass_ColLineage
+- :hass_Generation
+- :hass_GUID
+- :hass_Lineage
+- :hasASAT_mol_per_l
+- :hasALAT_mol_per_l
+- :hasAP_mol_per_l
+- :hasGGT_mol_per_l
+- :hasLipase_mol_per_l
+- :hasKreatinin_mol_per_l
+- :hasBilirubin_mol_per_l
+- :hasQuickk_percent
+- :hasINR
+- :hasCholinesterase_mol_per_l
+- :hasNatrium_mmol_per_l
+- :hasHaemoglobin_mmol_per_l
+- :hasLeukozyten_Gpt_per_l
+- :hasCRP_mg_per_l
+- :hasPCT_ng_ml
+- :hasAlbumin_g_per_l
+- :hasHarnstoff_mmol_per_l
+- :hasGFR_ml_per_min
+- :hasMDRD_ml_per_min
+- :hasTSH_mU_per_l
+- :hasHbA1c_percent
+```
+
+
+Note that this is a direct mapping and may not be the most semantically meaningful representation. Depending on the specific use case and requirements, additional mappings and transformations may be necessary to achieve the desired level of semantic accuracy. 
+
+Also, note that the output is a starting point for further mapping and integration with the ontology, and can be extended to include additional properties and relationships as needed. 
+
+The ontology used in this example is a simplified representation of the Disease Ontology (DO) and is not the actual DO ontology. The actual DO ontology is a much more complex and comprehensive representation of human diseases and their

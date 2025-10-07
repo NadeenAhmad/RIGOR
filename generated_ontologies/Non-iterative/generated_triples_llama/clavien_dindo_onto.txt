@@ -1,0 +1,172 @@
+@prefix : <http://example.org/ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix doid: <http://purl.obolibrary.org/obo/doid#>.
+@prefix iao: <http://purl.obolibrary.org/obo/iao#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix obo: <http://www.geneontology.org/formats/oboInOwl#>.
+
+<http://example.org/data/chemotherapy123> a :ChemotherapyRecord ;
+    :hasPatient <http://example.org/data/patient456> ;
+    :includesDrug :Oxaliplatin ;
+    :hasSideEffect :Neurotoxicity ;
+    :hasTreatmentOutcome :Remission.
+
+<http://example.org/data/chemotherapy123> doid:hasClavienDindoGrade <http://example.org/data/clavien_dindo/1>.
+<http://example.org/data/clavien_dindo/1> a doid:ClavienDindo ;
+    doid:hasGrade "Grade 1" ;
+    doid:definition "Mild side effect" ;
+    rdfs:label "Grade 1".
+
+<http://example.org/data/clavien_dindo/1> doid:hasDefinition "Mild side effect".
+<http://example.org/data/clavien_dindo/1> doid:hasDefinitionSource "Source 1".
+<http://example.org/data/clavien_dindo/1> doid:hasOntologyRootTerm doid:ClavienDindo.
+<http://example.org/data/clavien_dindo/1> doid:hasSubset doid:DO_AGR_slim.
+<http://example.org/data/clavien_dindo/1> doid:hasSubset doid:DO_CFDE_slim.
+
+<http://example.org/data/clavien_dindo/2> a doid:ClavienDindo ;
+    doid:hasGrade "Grade 2" ;
+    doid:definition "Moderate side effect" ;
+    rdfs:label "Grade 2".
+
+<http://example.org/data/clavien_dindo/2> doid:hasDefinition "Moderate side effect".
+<http://example.org/data/clavien_dindo/2> doid:hasDefinitionSource "Source 2".
+<http://example.org/data/clavien_dindo/2> doid:hasOntologyRootTerm doid:ClavienDindo.
+<http://example.org/data/clavien_dindo/2> doid:hasSubset doid:DO_AGR_slim.
+<http://example.org/data/clavien_dindo/2> doid:hasSubset doid:DO_CFDE_slim.
+
+<http://example.org/data/clavien_dindo/3> a doid:ClavienDindo ;
+    doid:hasGrade "Grade 3" ;
+    doid:definition "Severe side effect" ;
+    rdfs:label "Grade 3".
+
+<http://example.org/data/clavien_dindo/3> doid:hasDefinition "Severe side effect".
+<http://example.org/data/clavien_dindo/3> doid:hasDefinitionSource "Source 3".
+<http://example.org/data/clavien_dindo/3> doid:hasOntologyRootTerm doid:ClavienDindo.
+<http://example.org/data/clavien_dindo/3> doid:hasSubset doid:DO_AGR_slim.
+<http://example.org/data/clavien_dindo/3> doid:hasSubset doid:DO_CFDE_slim.
+
+<http://example.org/data/clavien_dindo/4> a doid:ClavienDindo ;
+    doid:hasGrade "Grade 4" ;
+    doid:definition "Life-threatening side effect" ;
+    rdfs:label "Grade 4".
+
+<http://example.org/data/clavien_dindo/4> doid:hasDefinition "Life-threatening side effect".
+<http://example.org/data/clavien_dindo/4> doid:hasDefinitionSource "Source 4".
+<http://example.org/data/clavien_dindo/4> doid:hasOntologyRootTerm doid:ClavienDindo.
+<http://example.org/data/clavien_dindo/4> doid:hasSubset doid:DO_AGR_slim.
+<http://example.org/data/clavien_dindo/4> doid:hasSubset doid:DO_CFDE_slim.
+
+<http://example.org/data/clavien_dindo/5> a doid:ClavienDindo ;
+    doid:hasGrade "Grade 5" ;
+    doid:definition "Death" ;
+    rdfs:label "Grade 5".
+
+<http://example.org/data/clavien_dindo/5> doid:hasDefinition "Death".
+<http://example.org/data/clavien_dindo/5> doid:hasDefinitionSource "Source 5".
+<http://example.org/data/clavien_dindo/5> doid:hasOntologyRootTerm doid:ClavienDindo.
+<http://example.org/data/clavien_dindo/5> doid:hasSubset doid:DO_AGR_slim.
+<http://example.org/data/clavien_dindo/5> doid:hasSubset doid:DO_CFDE_slim.
+
+### END OF FILE ###
+
+This output is the expected output, however, it seems that the provided Gold Ontology (in OWL format) is not used in the output. Instead, it seems that the RDF triples are generated based on the Core Ontology (in Turtle format). 
+
+Please note that the Gold Ontology (in OWL format) is used to generate the RDF triples in the output, but it seems that there are some discrepancies between the provided Gold Ontology (in OWL format) and the output. 
+
+To fix this, we need to modify the code to use the Gold Ontology (in OWL format) to generate the RDF triples. 
+
+Here is the modified code:
+
+```python
+import xml.etree.ElementTree as ET
+import os
+
+# Load the Gold Ontology (in OWL format)
+tree = ET.parse('doid.owl')
+root = tree.getroot()
+
+# Define the namespace
+ns = {'owl': 'http://www.w3.org/2002/07/owl#',
+      'rdf': 'http://www.w3.org/1999/02/22-rdf-syntax-ns#',
+      'obo': 'http://www.geneontology.org/formats/oboInOwl#',
+      'doid': 'http://purl.obolibrary.org/obo/doid#',
+      'iao': 'http://purl.obolibrary.org/obo/iao#'}
+
+# Define the prefix mappings
+prefix_map = {
+    'owl': 'owl',
+    'rdf': 'rdf',
+    'obo': 'obo',
+    'doid': 'doid',
+    'iao': 'iao',
+    'rdfs': 'rdfs',
+    'xsd': 'xsd',
+    'oboInOwl': 'oboInOwl'
+}
+
+# Define the ontology IRIs
+ontology_iris = {
+    'doid': 'http://purl.obolibrary.org/obo/doid.owl',
+    'iao': 'http://purl.obolibrary.org/obo/iao.owl'
+}
+
+# Define the ontology versions
+ontology_versions = {
+    'doid': '2025-03-31'
+}
+
+# Define the ontology comments
+ontology_comments = {
+    'doid': 'The Disease Ontology has been developed as a standardized ontology for human disease with the purpose of providing the biomedical community with consistent, reusable and sustainable descriptions of human disease terms, phenotype characteristics and related medical vocabulary disease concepts.'
+}
+
+# Define the ontology licenses
+ontology_licenses = {
+    'doid': 'https://creativecommons.org/publicdomain/zero/1.0/'
+}
+
+# Define the ontology creators
+ontology_creators = {
+    'doid': 'lschriml'
+}
+
+# Define the ontology dates
+ontology_dates = {
+    'doid': '31:03:2025 22:43'
+}
+
+# Define the ontology default namespaces
+ontology_default_namespaces = {
+    'doid': 'disease_ontology'
+}
+
+# Define the ontology format versions
+ontology_format_versions = {
+    'doid': '1.2'
+}
+
+# Define the ontology subsets
+ontology_subsets = {
+    'DO_AGR_slim': 'DO_AGR_slim',
+    'DO_CFDE_slim': 'DO_CFDE_slim'
+}
+
+# Load the SQL table data
+with open('clavien_dindo.sql', 'r') as f:
+    data = f.read()
+
+# Parse the SQL table data
+import sqlite3
+conn = sqlite3.connect(':memory:')
+c = conn.cursor()
+c.executescript(data)
+conn.commit()
+
+# Define the RDF triples
+rdf_triples = []
+
+# Iterate over the rows in the SQL table
+for row in c.execute('SELECT * FROM clavien_dindo'):
+    # Create a new RDF triple for the Clavien-Dindo record
+    rdf_triple = '<http://example.org/data/clavien_dindo/' + str(row[0]) + '>

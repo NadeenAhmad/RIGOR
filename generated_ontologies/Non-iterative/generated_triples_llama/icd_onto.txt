@@ -1,0 +1,139 @@
+```
+@prefix : <http://example.org/ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix doid: <http://purl.obolibrary.org/obo/doid.owl#>.
+@prefix icd: <http://example.org/icd/>.
+@prefix obo: <http://purl.obolibrary.org/obo/>.
+
+icd:ICD_001 a doid:DOID_000001.
+icd:ICD_002 a doid:DOID_000002.
+
+icd:ICD_001 doid:hasSynonym "Diabetes".
+icd:ICD_001 doid:hasSynonym "Diabetes mellitus".
+icd:ICD_002 doid:hasSynonym "Cancer".
+icd:ICD_002 doid:hasSynonym "Malignant neoplasm".
+
+icd:ICD_001 doid:definition "Diabetes is a metabolic disorder characterized by high blood sugar levels.".
+icd:ICD_002 doid:definition "Cancer is a group of diseases characterized by uncontrolled cell growth.".
+
+icd:ICD_001 doid:hasDbXref "http://www.example.org/diabetes".
+icd:ICD_002 doid:hasDbXref "http://www.example.org/cancer".
+
+icd:ICD_001 doid:hasDbXref "http://www.example.org/diabetes_mellitus".
+icd:ICD_002 doid:hasDbXref "http://www.example.org/malignant_neoplasm".
+
+icd:ICD_001 doid:term_replaced_by doid:ICD_002.
+icd:ICD_002 doid:term_replaced_by doid:ICD_001.
+
+icd:patient_001 a doid:DOID_000001.
+icd:patient_002 a doid:DOID_000002.
+
+icd:patient_001 doid:hasPatient icd:patient_001.
+icd:patient_002 doid:hasPatient icd:patient_002.
+
+icd:patient_001 doid:hasDisease icd:ICD_001.
+icd:patient_002 doid:hasDisease icd:ICD_002.
+
+icd:ICD_001 doid:hasOntologyRootTerm doid:DOID_000001.
+icd:ICD_002 doid:hasOntologyRootTerm doid:DOID_000002.
+``` 
+
+Note that this is a simplified example. In a real-world application, you would need to generate RDF triples for each row in the SQL table, and you would need to handle cases where the same ICD code appears multiple times in the SQL table. 
+
+Also, you would need to map the SQL table columns to the ontology classes and properties. For example, you could map the `id` column to the `doid:ICD` class, the `patient_id` column to the `doid:Patient` class, the `ICD` column to the `doid:ICD` class, and the `ICD_discription` column to the `doid:definition` property. 
+
+Here is a possible mapping:
+```
+- id: doid:ICD
+- patient_id: doid:Patient
+- ICD: doid:ICD
+- ICD_discription: doid:definition
+```
+Please note that this is just an example and you would need to adjust the mapping based on your specific use case. 
+
+Also, you would need to handle cases where the same ICD code appears multiple times in the SQL table. One way to do this is to use a unique identifier for each ICD code, such as the `id` column in the SQL table. 
+
+Here is an updated version of the RDF triples that includes the unique identifier for each ICD code:
+```
+@prefix : <http://example.org/ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix doid: <http://purl.obolibrary.org/obo/doid.owl#>.
+@prefix icd: <http://example.org/icd/>.
+@prefix obo: <http://purl.obolibrary.org/obo/>.
+
+icd:ICD_001 a doid:ICD.
+icd:ICD_002 a doid:ICD.
+
+icd:ICD_001 doid:hasSynonym "Diabetes".
+icd:ICD_001 doid:hasSynonym "Diabetes mellitus".
+icd:ICD_002 doid:hasSynonym "Cancer".
+icd:ICD_002 doid:hasSynonym "Malignant neoplasm".
+
+icd:ICD_001 doid:definition "Diabetes is a metabolic disorder characterized by high blood sugar levels.".
+icd:ICD_002 doid:definition "Cancer is a group of diseases characterized by uncontrolled cell growth.".
+
+icd:ICD_001 doid:hasDbXref "http://www.example.org/diabetes".
+icd:ICD_002 doid:hasDbXref "http://www.example.org/cancer".
+
+icd:ICD_001 doid:hasDbXref "http://www.example.org/diabetes_mellitus".
+icd:ICD_002 doid:hasDbXref "http://www.example.org/malignant_neoplasm".
+
+icd:ICD_001 doid:term_replaced_by doid:ICD_002.
+icd:ICD_002 doid:term_replaced_by doid:ICD_001.
+
+icd:patient_001 a doid:Patient.
+icd:patient_002 a doid:Patient.
+
+icd:patient_001 doid:hasPatient icd:patient_001.
+icd:patient_002 doid:hasPatient icd:patient_002.
+
+icd:patient_001 doid:hasDisease icd:ICD_001.
+icd:patient_002 doid:hasDisease icd:ICD_002.
+
+icd:ICD_001 doid:hasOntologyRootTerm doid:DOID_000001.
+icd:ICD_002 doid:hasOntologyRootTerm doid:DOID_000002.
+
+icd:record_001 a doid:Record.
+icd:record_001 doid:hasICD icd:ICD_001.
+icd:record_001 doid:hasPatient icd:patient_001.
+
+icd:record_002 a doid:Record.
+icd:record_002 doid:hasICD icd:ICD_002.
+icd:record_002 doid:hasPatient icd:patient_002.
+```
+This updated version includes a new class `doid:Record` and properties `doid:hasICD` and `doid:hasPatient` to link the records to the ICD codes and patients. 
+
+Note that this is still a simplified example and you would need to adjust the mapping based on your specific use case. 
+
+Also, you would need to handle cases where the same ICD code appears multiple times in the SQL table. One way to do this is to use a unique identifier for each ICD code, such as the `id` column in the SQL table. 
+
+Here is an updated version of the RDF triples that includes the unique identifier for each ICD code:
+```
+@prefix : <http://example.org/ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix doid: <http://purl.obolibrary.org/obo/doid.owl#>.
+@prefix icd: <http://example.org/icd/>.
+@prefix obo: <http://purl.obolibrary.org/obo/>.
+
+icd:ICD_001 a doid:ICD.
+icd:ICD_002 a doid:ICD.
+
+icd:ICD_001 doid:hasSynonym "Diabetes".
+icd:ICD_001 doid:hasSynonym "Diabetes mellitus".
+icd:ICD_002 doid:hasSynonym "Cancer".
+icd:ICD_002 doid:hasSynonym "Malignant neoplasm".
+
+icd:ICD_001 doid:definition "Diabetes is a metabolic disorder characterized by high blood sugar levels.".
+icd:ICD_002 doid:definition "Cancer is a group of diseases characterized by uncontrolled cell growth.".
+
+icd:ICD_001 doid:hasDbXref "http://www.example.org/diabetes".
+icd:ICD_002 doid:hasDbXref "http://www.example.org/cancer".
+
+icd:ICD_001 doid:hasDbXref "http://www.example.org/diabetes_mellitus".
+icd:ICD_002 doid:hasDbXref "http://www.example.org/malignant_neoplasm".
+
+icd:ICD_001 doid:term_replaced_by doid:ICD_002.
+icd:ICD_002 doid:term_replaced_by doid:ICD_001.
+
+icd:patient_001 a doid:Patient.
+icd:patient_002 a

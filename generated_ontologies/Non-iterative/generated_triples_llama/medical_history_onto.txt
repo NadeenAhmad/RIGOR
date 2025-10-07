@@ -1,0 +1,91 @@
+```turtle
+<http://example.org/data/medical_history123> a :MedicalHistoryRecord ;
+    :hasPatient <http://example.org/data/patient456> ;
+    :includesBodySize <http://example.org/data/body_size_cm_123> ;
+    :hasBodyMassIndex <http://example.org/data/body_mass_index_123> ;
+    :hasFamilyHistoryNeoplasticDisease <http://example.org/data/family_history_neoplastic_disease_123> ;
+    :hasPreviousTumour <http://example.org/data/previous_tumour_123> ;
+    :hasPreviousSecondaryTumour <http://example.org/data/previous_secondary_tumour_123> ;
+    :hasPreExistingDiseaseImmunological <http://example.org/data/pre_existing_disease_immunological_123> ;
+    :hasHepatitisB <http://example.org/data/hepatitis_B_123> ;
+    :hasHepatitisC <http://example.org/data/hepatitis_C_123> ;
+    :hasHepatitisD <http://example.org/data/hepatitis_D_123> ;
+    :hasEthyltoxic <http://example.org/data/ethyltoxic_123> ;
+    :hasChildStadium <http://example.org/data/child_stadium_123> ;
+    :hasOtherPreExistingDiseases <http://example.org/data/other_pre_existing_diseases_123> ;
+    :hasReducedGeneralState <http://example.org/data/reduced_general_state_123> ;
+    :hasLossOfAppetite <http://example.org/data/loss_of_appetite_123> ;
+    :hasNauseaVomiting <http://example.org/data/nausea_vomiting_123> ;
+    :hasAbdominalPain <http://example.org/data/abdominal_pain_123> ;
+    :hasBackPain <http://example.org/data/back_pain_123> ;
+    :hasDyspnoea <http://example.org/data/dyspnoea_123> ;
+    :hasDiarrhoea <http://example.org/data/diarrhoea_123> ;
+    :hasConstipation <http://example.org/data/constipation_123> ;
+    :hasNocturia <http://example.org/data/nocturia_123> ;
+    :hasWeightLoss <http://example.org/data/weight_loss_123> ;
+    :hasFever <http://example.org/data/fever_123> ;
+    :hasNightSweat <http://example.org/data/night_sweat_123> ;
+    :hasHepatomegalySplenoMegaly <http://example.org/data/hepatomegaly_splenomegaly_123> ;
+    :hasAscites <http://example.org/data/ascites_123> ;
+    :hasAscitesSeverity <http://example.org/data/ascites_severity_123> ;
+    :hasIcterus <http://example.org/data/icterus_123> ;
+    :hasOedema <http://example.org/data/oedema_123> ;
+    :hasFurtherSymptoms <http://example.org/data/further_symptoms_123> ;
+    :hasDiagnosisDatePrimaryTumour <http://example.org/data/diagnosis_date_primary_tumour_123> ;
+    :hasDiagnosisDateMetastasis <http://example.org/data/diagnosis_date_metastasis_123> ;
+    :hasTypePrimaryMetastasis <http://example.org/data/type_primary_metastasis_123> ;
+    :hasLocalisationOfTheMetastasis <http://example.org/data/localisation_of_the_metastasis_123> ;
+    :hasFirstHaemodialysis <http://example.org/data/first_haemodialysis_123> ;
+    :hasDiabetesType <http://example.org/data/diabetes_type_123> ;
+    :hasNicotineAbuse <http://example.org/data/nicotine_abuse_123> ;
+    :hasNicotineAmountPy <http://example.org/data/nicotine_amount_py_123> ;
+    :hasAlcoholAbuse <http://example.org/data/alcohol_abuse_123> ;
+    :hasPulmonaryPreExistingDiseases <http://example.org/data/pulmonary_pre_existing_diseases_123> ;
+    :hasArterialHypertension <http://example.org/data/arterial_hypertension_123> ;
+    :hasCharlsonComorbidityIndex <http://example.org/data/charlson_comorbidity_index_123> ;
+    :hasCardiacEvent <http://example.org/data/cardiac_event_123> ;
+    :hasPeripheralArteryDisease <http://example.org/data/peripheral_artery_disease_123> ;
+    :hasCerebrovascularEvent <http://example.org/data/cerebrovascular_event_123> ;
+    :hasDementia <http://example.org/data/dementia_123> ;
+    :hasChronicObstructivePulmonaryDisease <http://example.org/data/chronic_obstructive_pulmonary_disease_123> ;
+    :hasConnectiveTissueDisease <http://example.org/data/connective_tissue_disease_123> ;
+    :hasHemiplegia <http://example.org/data/hemiplegia_123> ;
+    :hasPreviousOperations <http://example.org/data/previous_operations_123> ;
+    :hasChronicPancreatitis <http://example.org/data/chronic_pancreatitis_123> ;
+    :hasInflammatoryBowelDisease <http://example.org/data/inflammatory_bowel_disease_123> ;
+    :hasDysphagia <http://example.org/data/dysphagia_123> ;
+    :hasChronicRenalInsufficiencyStage <http://example.org/data/chronic_renal_insufficiency_stage_123> ;
+    :hasPreExistingThyroidDisease <http://example.org/data/pre_existing_thyroid_disease_123> ;
+    :hasArthrosis <http://example.org/data/arthrosis_123> ;
+    :hasOsteoporosis <http://example.org/data/osteoporosis_123> ;
+    :hasGastralaUlcer <http://example.org/data/gastrala_ulcera_123> ;
+    :hasDermalUlcer <http://example.org/data/dermal_ulcera_123> ;
+    :hasDeepLegVeinThrombosis <http://example.org/data/deep_leg_vein_thrombosis_123> ;
+    :hasMentalPreExistingDiseases <http://example.org/data/mental_pre_existing_diseases_123> ;
+    :hasCardiacEventText <http://example.org/data/cardiac_event_text_123> ;
+    :hasAcutePancreatitis <http://example.org/data/acute_pancreatitis_123> ;
+    :hasCholestasis <http://example.org/data/cholestasis_123> ;
+    :hasCholangitis <http://example.org/data/cholangitis_123> ;
+    :hasPleuralEffusion <http://example.org/data/pleural_effusion_123> ;
+    :hasCoronaryHeartDisease <http://example.org/data/coronary_heart_disease_123> ;
+    :hasCardiacArrhythmia <http://example.org/data/cardiac_arrhythmia_123> ;
+    :hasCardiacArrhythmiaText <http://example.org/data/cardiac_arrhythmia_text_123> ;
+    :hasCongestiveHeartFailure <http://example.org/data/congestive_heart_failure_123> ;
+    :hasLipidMetabolismDisorders <http://example.org/data/lipid_metabolism_disorders_123> ;
+    :hasNeurologicalPreExistingDisease <http://example.org/data/neurological_pre_existing_disease_123> ;
+    :hasNeurologicalPreExistingDiseaseText <http://example.org/data/neurological_pre_existing_disease_text_123> ;
+    :hasHiatalHernia <http://example.org/data/hiatal_hernia_123> ;
+    :hasDiverticulosis <http://example.org/data/diverticulosis_123> ;
+    :hasCholecystolithiasis <http://example.org/data/cholecystolithiasis_123> ;
+    :hasHyperuricaemiaGout <http://example.org/data/hyperuricaemia_gout_123> ;
+    :hasGastritis <http://example.org/data/gastritis_123>.
+```
+Please note that the provided RDF triples in Turtle format are based on the given ontology and the SQL table schema. The actual RDF triples may vary depending on the specific data and ontology used. 
+
+The provided RDF triples in Turtle format are generated by mapping the SQL table and its columns to the provided ontology. The following is a brief explanation of the mapping:
+
+* The `MedicalHistoryRecord` class is used to represent a medical history record.
+* The `hasPatient` property is used to link the medical history record to the patient.
+* The `includesBodySize`, `hasBodyMassIndex`, `hasFamilyHistoryNeoplasticDisease`, etc. properties are used to link the medical history record to the corresponding data values.
+* The `http://example.org/data/` prefix is used to create URIs for the medical history records and data values.
+* The `:MedicalHistoryRecord` class and properties are used to represent the medical history record and its data values in

@@ -1,0 +1,147 @@
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 1;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 2;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 3;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 4;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 5;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 6;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 7;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 8;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 9;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 10;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 11;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 12;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 13;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 14;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 15;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 16;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 17;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 18;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 19;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 20;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 21;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 22;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 23;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 24;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 25;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 26;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 27;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 28;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 29;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 30;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 31;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 32;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 33;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 34;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 35;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 36;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 37;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 38;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 39;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 40;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 41;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 42;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 43;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 44;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 45;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 46;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 47;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 48;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 49;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 50;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 51;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 52;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 53;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 54;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 55;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 56;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 57;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 58;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 59;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 60;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 61;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 62;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 63;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 64;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 65;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 66;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 67;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 68;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 69;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 70;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 71;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 72;
+
+SELECT dekubitus_grade_id, dekubitus_grade_stadium FROM dekubitus_grade WHERE dekubitus_grade_id = 73;
+
+SELECT dekub

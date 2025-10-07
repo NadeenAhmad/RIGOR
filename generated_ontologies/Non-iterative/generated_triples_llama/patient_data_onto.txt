@@ -1,0 +1,114 @@
+```sql
+SELECT 
+  patient_id AS patient_id,
+  patient_id_old AS patient_id_old,
+  created_at AS created_at,
+  sex AS sex,
+  age_at_surgery AS age_at_surgery
+FROM 
+  patient_data;
+```
+
+```turtle
+@prefix : <http://example.org/ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix doid: <http://purl.obolibrary.org/obo/doid#>.
+@prefix iao: <http://purl.obolibrary.org/obo/iao#>.
+
+_:b0 a doid:DOID_1234 ;
+    doid:has_ontology_root_term iao:has_ontology_root_term ;
+    doid:term_replaced_by iao:term_replaced_by ;
+    iao:definition "Patient Data" ;
+    iao:definition_source "Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007." ;
+    iao:acronym "PatientData" ;
+    iao:subset_of doid:DO_AGR_slim ;
+    iao:subset_of doid:DO_CFDE_slim ;
+    iao:has_part [ a doid:DOID_1235 ;
+        doid:has_ontology_root_term iao:has_ontology_root_term ;
+        doid:term_replaced_by iao:term_replaced_by ;
+        iao:definition "Patient ID" ;
+        iao:definition_source "Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007." ;
+        iao:acronym "PatientID" ;
+        iao:subset_of doid:DO_AGR_slim ;
+        iao:subset_of doid:DO_CFDE_slim ;
+        iao:has_part [ a doid:DOID_1236 ;
+            doid:has_ontology_root_term iao:has_ontology_root_term ;
+            doid:term_replaced_by iao:term_replaced_by ;
+            iao:definition "Patient ID Old" ;
+            iao:definition_source "Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007." ;
+            iao:acronym "PatientIDOld" ;
+            iao:subset_of doid:DO_AGR_slim ;
+            iao:subset_of doid:DO_CFDE_slim ;
+            iao:has_part [ a doid:DOID_1237 ;
+                doid:has_ontology_root_term iao:has_ontology_root_term ;
+                doid:term_replaced_by iao:term_replaced_by ;
+                iao:definition "Created At" ;
+                iao:definition_source "Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007." ;
+                iao:acronym "CreatedAt" ;
+                iao:subset_of doid:DO_AGR_slim ;
+                iao:subset_of doid:DO_CFDE_slim ;
+                iao:has_part [ a doid:DOID_1238 ;
+                    doid:has_ontology_root_term iao:has_ontology_root_term ;
+                    doid:term_replaced_by iao:term_replaced_by ;
+                    iao:definition "Sex" ;
+                    iao:definition_source "Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007." ;
+                    iao:acronym "Sex" ;
+                    iao:subset_of doid:DO_AGR_slim ;
+                    iao:subset_of doid:DO_CFDE_slim ;
+                    iao:has_part [ a doid:DOID_1239 ;
+                        doid:has_ontology_root_term iao:has_ontology_root_term ;
+                        doid:term_replaced_by iao:term_replaced_by ;
+                        iao:definition "Age At Surgery" ;
+                        iao:definition_source "Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007." ;
+                        iao:acronym "AgeAtSurgery" ;
+                        iao:subset_of doid:DO_AGR_slim ;
+                        iao:subset_of doid:DO_CFDE_slim ;
+                    ] ;
+                ] ;
+            ] ;
+        ] ;
+    ].
+_:b0 doid:has_part [ a doid:DOID_1235 ;
+    doid:has_ontology_root_term iao:has_ontology_root_term ;
+    doid:term_replaced_by iao:term_replaced_by ;
+    iao:definition "Patient ID Old" ;
+    iao:definition_source "Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007." ;
+    iao:acronym "PatientIDOld" ;
+    iao:subset_of doid:DO_AGR_slim ;
+    iao:subset_of doid:DO_CFDE_slim ;
+    iao:has_part [ a doid:DOID_1236 ;
+        doid:has_ontology_root_term iao:has_ontology_root_term ;
+        doid:term_replaced_by iao:term_replaced_by ;
+        iao:definition "Created At" ;
+        iao:definition_source "Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007." ;
+        iao:acronym "CreatedAt" ;
+        iao:subset_of doid:DO_AGR_slim ;
+        iao:subset_of doid:DO_CFDE_slim ;
+        iao:has_part [ a doid:DOID_1237 ;
+            doid:has_ontology_root_term iao:has_ontology_root_term ;
+            doid:term_replaced_by iao:term_replaced_by ;
+            iao:definition "Sex" ;
+            iao:definition_source "Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007." ;
+            iao:acronym "Sex" ;
+            iao:subset_of doid:DO_AGR_slim ;
+            iao:subset_of doid:DO_CFDE_slim ;
+            iao:has_part [ a doid:DOID_1238 ;
+                doid:has_ontology_root_term iao:has_ontology_root_term ;
+                doid:term_replaced_by iao:term_replaced_by ;
+                iao:definition "Age At Surgery" ;
+                iao:definition_source "Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007." ;
+                iao:acronym "AgeAtSurgery" ;
+                iao:subset_of doid:DO_AGR_slim ;
+                iao:subset_of doid:DO_CFDE_slim ;
+            ] ;
+        ] ;
+    ] ;
+] ;
+_:b0 doid:has_part [ a doid:DOID_1235 ;
+    doid:has_ontology_root_term iao:has_ontology_root_term ;
+    doid:term_replaced_by iao:term_replaced_by ;
+    iao:definition "Created At" ;
+    iao:definition_source "Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007." ;
+    iao:acronym "CreatedAt" ;
+    iao:subset_of doid:DO_AGR_slim ;
+    iao:subset_of doid:DO

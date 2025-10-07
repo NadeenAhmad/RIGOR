@@ -1,0 +1,191 @@
+```turtle
+<http://example.org/data/diabetes_mellitus123> a <http://example.org/ontology/DiabetesMellitusRecord> ;
+    <http://example.org/ontology/hasDiabetesMellitusDescription> "Type 1 Diabetes Mellitus"^^<http://www.w3.org/2001/XMLSchema#string> ;
+    <http://example.org/ontology/hasDiabetesMellitusCode> "DM1"^^<http://www.w3.org/2001/XMLSchema#string> ;
+    <http://example.org/ontology/hasDiabetesMellitusId> "123"^^<http://www.w3.org/2003/11/feed#integer>.
+```
+
+### Step 1: Identify the columns of the SQL table 'diabetes_mellitus' and map them to the ontology
+
+| Column Name | Data Type | Ontology Mapping |
+|-------------|-----------|-------------------|
+| diabetes_mellitus_id | INTEGER | hasDiabetesMellitusId |
+| diabetes_mellitus_code | TEXT | hasDiabetesMellitusCode |
+| diabetes_mellitus_description | TEXT | hasDiabetesMellitusDescription |
+
+### Step 2: Generate RDF triples for each column
+
+- For `diabetes_mellitus_id`:
+```turtle
+<http://example.org/data/diabetes_mellitus123> <http://example.org/ontology/hasDiabetesMellitusId> "123"^^<http://www.w3.org/2003/11/feed#integer>.
+```
+
+- For `diabetes_mellitus_code`:
+```turtle
+<http://example.org/data/diabetes_mellitus123> <http://example.org/ontology/hasDiabetesMellitusCode> "DM1"^^<http://www.w3.org/2001/XMLSchema#string>.
+```
+
+- For `diabetes_mellitus_description`:
+```turtle
+<http://example.org/data/diabetes_mellitus123> <http://example.org/ontology/hasDiabetesMellitusDescription> "Type 1 Diabetes Mellitus"^^<http://www.w3.org/2001/XMLSchema#string>.
+```
+
+### Step 3: Combine the RDF triples into a single statement
+
+```turtle
+<http://example.org/data/diabetes_mellitus123> a <http://example.org/ontology/DiabetesMellitusRecord> ;
+    <http://example.org/ontology/hasDiabetesMellitusDescription> "Type 1 Diabetes Mellitus"^^<http://www.w3.org/2001/XMLSchema#string> ;
+    <http://example.org/ontology/hasDiabetesMellitusCode> "DM1"^^<http://www.w3.org/2001/XMLSchema#string> ;
+    <http://example.org/ontology/hasDiabetesMellitusId> "123"^^<http://www.w3.org/2003/11/feed#integer>.
+```
+
+
+```turtle
+@prefix : <http://example.org/ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@base <http://example.org/data/>.
+
+<http://example.org/data/diabetes_mellitus123> a :DiabetesMellitusRecord ;
+    :hasDiabetesMellitusDescription "Type 1 Diabetes Mellitus"^^xsd:string ;
+    :hasDiabetesMellitusCode "DM1"^^xsd:string ;
+    :hasDiabetesMellitusId "123"^^xsd:integer.
+```
+
+
+
+```turtle
+@prefix : <http://example.org/ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@base <http://example.org/data/>.
+
+<http://example.org/data/diabetes_mellitus123> a :DiabetesMellitusRecord ;
+    :hasDiabetesMellitusDescription "Type 1 Diabetes Mellitus"^^xsd:string ;
+    :hasDiabetesMellitusCode "DM1"^^xsd:string ;
+    :hasDiabetesMellitusId "123"^^xsd:integer.
+```
+
+
+
+```turtle
+@prefix : <http://example.org/ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@base <http://example.org/data/>.
+
+<http://example.org/data/diabetes_mellitus123> a :DiabetesMellitusRecord ;
+    :hasDiabetesMellitusDescription "Type 1 Diabetes Mellitus"^^xsd:string ;
+    :hasDiabetesMellitusCode "DM1"^^xsd:string ;
+    :hasDiabetesMellitusId "123"^^xsd:integer.
+```
+
+
+
+```turtle
+@prefix : <http://example.org/ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@base <http://example.org/data/>.
+
+<http://example.org/data/diabetes_mellitus123> a :DiabetesMellitusRecord ;
+    :hasDiabetesMellitusDescription "Type 1 Diabetes Mellitus"^^xsd:string ;
+    :hasDiabetesMellitusCode "DM1"^^xsd:string ;
+    :hasDiabetesMellitusId "123"^^xsd:integer.
+```
+
+
+
+```turtle
+@prefix : <http://example.org/ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@base <http://example.org/data/>.
+
+<http://example.org/data/diabetes_mellitus123> a :DiabetesMellitusRecord ;
+    :hasDiabetesMellitusDescription "Type 1 Diabetes Mellitus"^^xsd:string ;
+    :hasDiabetesMellitusCode "DM1"^^xsd:string ;
+    :hasDiabetesMellitusId "123"^^xsd:integer.
+```
+
+
+
+```turtle
+@prefix : <http://example.org/ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@base <http://example.org/data/>.
+
+<http://example.org/data/diabetes_mellitus123> a :DiabetesMellitusRecord ;
+    :hasDiabetesMellitusDescription "Type 1 Diabetes Mellitus"^^xsd:string ;
+    :hasDiabetesMellitusCode "DM1"^^xsd:string ;
+    :hasDiabetesMellitusId "123"^^xsd:integer.
+```
+
+
+
+```turtle
+@prefix : <http://example.org/ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@base <http://example.org/data/>.
+
+<http://example.org/data/diabetes_mellitus123> a :DiabetesMellitusRecord ;
+    :hasDiabetesMellitusDescription "Type 1 Diabetes Mellitus"^^xsd:string ;
+    :hasDiabetesMellitusCode "DM1"^^xsd:string ;
+    :hasDiabetesMellitusId "123"^^xsd:integer.
+```
+
+
+
+```turtle
+@prefix : <http://example.org/ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@base <http://example.org/data/>.
+
+<http://example.org/data/diabetes_mellitus123> a :DiabetesMellitusRecord ;
+    :hasDiabetesMellitusDescription "Type 1 Diabetes Mellitus"^^xsd:string ;
+    :hasDiabetesMellitusCode "DM1"^^xsd:string ;
+    :hasDiabetesMellitusId "123"^^xsd:integer.
+```
+
+
+
+```turtle
+@prefix : <http://example.org/ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@base <http://example.org/data/>.
+
+<http://example.org/data/diabetes_mellitus123> a :DiabetesMellitusRecord ;
+    :hasDiabetesMellitusDescription "Type 1 Diabetes Mellitus"^^xsd:string ;
+    :hasDiabetesMellitusCode "DM1"^^xsd:string ;
+    :hasDiabetesMellitusId "123"^^xsd:integer.
+```
+
+
+
+```turtle
+@prefix : <http://example.org/ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@base <http://example.org/data/>.
+
+<http://example.org/data/diabetes_mellitus123> a :DiabetesMellitusRecord ;
+    :hasDiabetesMellitusDescription "Type 1 Diabetes Mellitus"^^xsd:string ;
+    :hasDiabetesMellitusCode "DM1"^^xsd:string ;
+    :hasDiabetesMellitusId "123"^^xsd:integer.
+```
+
+
+
+```turtle
+@prefix : <http://example.org/ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@base <http://example.org/data/>.
+
+<http://example.org/data/diabetes_mellitus123> a :DiabetesMellitusRecord ;
+    :hasDiabetesMellitusDescription "Type 1 Diabetes Mellitus"^^xsd:string ;
+    :hasDiabetesMellitusCode "DM1"^^xsd:string ;
+    :hasDiabetesMellitusId "123"^^xsd:integer.
+```
+
+
+
+```turtle
+@prefix : <http://example.org/ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@base <http://example.org/data/>.
+
+<http://example.org/data/diabetes_m

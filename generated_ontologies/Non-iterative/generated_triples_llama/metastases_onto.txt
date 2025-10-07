@@ -1,0 +1,96 @@
+```turtle
+# Define the SQL table and its columns
+:metastases a :Table.
+:metastases :hasColumn :metastasen_id.
+:metastases :hasColumn :metastasen_timepoint.
+
+# Map the SQL table and its columns to the ontology
+:metastases :hasColumn :metastasen_id :hasIntegerId.
+:metastases :hasColumn :metastasen_timepoint :hasText.
+
+# Define the ontology classes and properties
+:Table a :Class.
+:Class a :Class.
+:IntegerId a :Class.
+:Text a :Class.
+
+:hasIntegerId a :Property.
+:hasText a :Property.
+
+# Define the ontology individuals
+:metastasen_id :hasIntegerId "metastasen_id".
+:metastasen_timepoint :hasText "metastasen_timepoint".
+
+# Define the ontology relations
+:metastasen_id :hasColumn :metastases.
+:metastasen_timepoint :hasColumn :metastases.
+```
+
+## Step 1: Define the SQL table and its columns
+The SQL table and its columns are defined in the first section of the output. This defines the structure of the table and its columns.
+
+## Step 2: Map the SQL table and its columns to the ontology
+The second section of the output maps the SQL table and its columns to the ontology. This defines the relationships between the table and the ontology.
+
+## Step 3: Define the ontology classes and properties
+The third section of the output defines the ontology classes and properties. This defines the structure of the ontology and its classes and properties.
+
+## Step 4: Define the ontology individuals
+The fourth section of the output defines the ontology individuals. This defines the instances of the ontology classes.
+
+## Step 5: Define the ontology relations
+The fifth section of the output defines the ontology relations. This defines the relationships between the ontology individuals.
+
+## Step 6: Combine the output
+The final output is the combination of all the previous steps.
+
+The final answer is:
+
+```turtle
+:metastases a :Table.
+:metastases :hasColumn :metastasen_id.
+:metastases :hasColumn :metastasen_timepoint.
+
+:metastases :hasColumn :metastasen_id :hasIntegerId.
+:metastases :hasColumn :metastasen_timepoint :hasText.
+
+:Table a :Class.
+:Class a :Class.
+:IntegerId a :Class.
+:Text a :Class.
+
+:hasIntegerId a :Property.
+:hasText a :Property.
+
+:metastasen_id :hasIntegerId "metastasen_id".
+:metastasen_timepoint :hasText "metastasen_timepoint".
+
+:metastasen_id :hasColumn :metastases.
+:metastasen_timepoint :hasColumn :metastases.
+```
+
+
+
+The final answer is: 
+```turtle
+:metastases a :Table.
+:metastases :hasColumn :metastasen_id.
+:metastases :hasColumn :metastasen_timepoint.
+
+:metastases :hasColumn :metastasen_id :hasIntegerId.
+:metastases :hasColumn :metastasen_timepoint :hasText.
+
+:Table a :Class.
+:Class a :Class.
+:IntegerId a :Class.
+:Text a :Class.
+
+:hasIntegerId a :Property.
+:hasText a :Property.
+
+:metastasen_id :hasIntegerId "metastasen_id".
+:metastasen_timepoint :hasText "metastasen_timepoint".
+
+:metastasen_id :hasColumn :metastases.
+:metastasen_timepoint :hasColumn :metastases.
+```

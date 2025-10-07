@@ -1,0 +1,104 @@
+<http://example.org/data/complication123> a :ComplicationRecord ;
+    :hasPatient <http://example.org/data/patient456> ;
+    :hasDurationOfInpatientStay <http://example.org/data/duration_of_inpatient_stay_d_123> ;
+    :hasDurationIntermediateCare <http://example.org/data/duration_intermediate_care_d_123> ;
+    :hasDurationIntensiveCareStation <http://example.org/data/duration_intensive_care_station_d_123> ;
+    :hasVentilationDuration <http://example.org/data/ventilation_duration_h_123> ;
+    :hasNoninvasiveVentilationDuration <http://example.org/data/noninvasive_ventilation_duration_h_123> ;
+    :hasComplicationFreeProgression <http://example.org/data/complication_free_progression_123> ;
+    :hasLiverFailure <http://example.org/data/liver_failure_123> ;
+    :hasUrinaryRetention <http://example.org/data/urinary_retention_123> ;
+    :hasIleus <http://example.org/data/ileus_123> ;
+    :hasCholascos <http://example.org/data/cholascos_123> ;
+    :hasCholangitis <http://example.org/data/cholangitis_123> ;
+    :hasReintubation <http://example.org/data/reintubation_123> ;
+    :hasPneumonia <http://example.org/data/pneumonia_123> ;
+    :hasThrombosis <http://example.org/data/thrombosis_123> ;
+    :hasEmbolism <http://example.org/data/embolism_123> ;
+    :hasPostoperativeBleeding <http://example.org/data/postoperative_bleeding_123> ;
+    :hasPleuralEffusion <http://example.org/data/pleural_effusion_123> ;
+    :hasBurstAbdomen <http://example.org/data/burst_abdomen_123> ;
+    :hasLiverAbscess <http://example.org/data/liver_abscess_123> ;
+    :hasIntraabdominellerAbszess <http://example.org/data/intraabdomineller_abszess_123> ;
+    :hasBiliom <http://example.org/data/biliom_123> ;
+    :hasDecubitus <http://example.org/data/decubitus_123> ;
+    :hasDecubitusScore <http://example.org/data/decubitus_score_123> ;
+    :hasSecondaryWoundHealing <http://example.org/data/secondary_wound_healing_123> ;
+    :hasMultiOrganFailure <http://example.org/data/multi_organ_failure_123> ;
+    :hasAnastomoticInsufficiency <http://example.org/data/anastomotic_insufficiency_123> ;
+    :hasAnastomoticInsufficiencyType <http://example.org/data/anastomotic_insufficiency_type_123> ;
+    :hasOtherComplications <http://example.org/data/other_complications_123> ;
+    :hasOtherComplications1 <http://example.org/data/other_complications_1_123> ;
+    :hasOtherComplications2 <http://example.org/data/other_complications_2_123> ;
+    :hasOtherComplications3 <http://example.org/data/other_complications_3_123> ;
+    :hasOtherComplications4 <http://example.org/data/other_complications_4_123> ;
+    :hasOtherComplications5 <http://example.org/data/other_complications_5_123> ;
+    :hasOtherComplications6 <http://example.org/data/other_complications_6_123> ;
+    :hasThoracicDrainageForEffusion <http://example.org/data/thoracic_drainage_for_effusion_123> ;
+    :hasSimplifiedAcutePhysiologyScoreAverage <http://example.org/data/simplified_acute_physiology_score_average_123> ;
+    :hasDrainageComplication <http://example.org/data/drainage_complication_123> ;
+    :hasDrainageComplicationText <http://example.org/data/drainage_complication_text_123> ;
+    :hasEndoscopy <http://example.org/data/endoscopy_123> ;
+    :hasEndoscopicRetrogradeCholangiopancreatography <http://example.org/data/endoscopic_retrograde_cholangiopancreatography_123> ;
+    :hasEndoscopyText <http://example.org/data/endoscopy_text_123> ;
+    :hasHaemodialysis <http://example.org/data/haemodialysis_123> ;
+    :hasHaemodialysisDuration <http://example.org/data/haemodialysis_h_123> ;
+    :hasMutationAdjustedRiskScore <http://example.org/data/mutation_adjusted_risk_score_123> ;
+    :hasMutationAdjustedRiskScoreDuration <http://example.org/data/mutation_adjusted_risk_score_h_123> ;
+    :hasInterventionalDrainage <http://example.org/data/interventional_drainage_123> ;
+    :hasReOperation <http://example.org/data/re_operation_123> ;
+    :hasClavienDindo <http://example.org/data/clavien_dindo_123> ;
+    :hasKidneyInsufficiency <http://example.org/data/kidney_insufficiency_123> ;
+    :hasReadmissionToClinic <http://example.org/data/readmission_to_clinic_123> ;
+    :hasReadmissionToClinicDate <http://example.org/data/readmission_to_clinic_date_123> ;
+    :hasOtherComplicationManagement <http://example.org/data/other_complication_management_123> ;
+    :hasOtherComplicationManagementText <http://example.org/data/other_complication_management_text_123> ;
+    :hasRelocationIntensiveCareUnit <http://example.org/data/relocation_intensive_care_unit_123> ;
+    :hasRelocationIntermediateCareUnit <http://example.org/data/relocation_intermediate_care_unit_123> ;
+    :hasAcuteCoronarySyndrome <http://example.org/data/acute_coronary_syndrome_123> ;
+    :hasSepsis <http://example.org/data/sepsis_123> ;
+    :hasSystemicInflammatoryResponseSyndrome <http://example.org/data/systemic_inflammatory_response_syndrome_123> ;
+    :hasCirculatoryInstability <http://example.org/data/circulatory_instability_123> ;
+    :hasReanimation <http://example.org/data/reanimation_123> ;
+    :hasDurationReanimation <http://example.org/data/duration_reanimation_min_123> ;
+    :hasRespiratoryFailure <http://example.org/data/respiratory_failure_123> ;
+    :hasHollowOrganPerforation <http://example.org/data/hollow_organ_perforation_123> ;
+    :hasWhichOrganIsPerforated <http://example.org/data/which_organ_is_perforated_123> ;
+    :hasIntestinalPassageDisorder <http://example.org/data/intestinal_passage_disorder_123> ;
+    :hasAscitesPostoperative <http://example.org/data/ascites_postoperative_123> ;
+    :hasPancreatitisPostoperative <http://example.org/data/pancreatitis_postoperative_123> ;
+    <http://example.org/data/complication123> a :ComplicationRecord ;
+        :hasUrinaryTractInfectionPostoperative <http://example.org/data/urinary_tract_infection_postoperative_123> ;
+        :hasDelirium <http://example.org/data/delirium_123> ;
+        :hasDeliriumType <http://example.org/data/delirium_type_123> ;
+        :hasCholecystitis <http://example.org/data/cholecystitis_123> ;
+        :hasPancreaticFistula <http://example.org/data/pancreatic_fistula_123> ;
+        :hasInternalHernia <http://example.org/data/internal_hernia_123> ;
+        :hasPleuralEmpyema <http://example.org/data/pleural_empyema_123> ;
+   .
+
+<http://example.org/data/duration_of_inpatient_stay_d_123> a :DurationOfInpatientStay ;
+    :hasValue 1.0.
+
+<http://example.org/data/duration_intermediate_care_d_123> a :DurationIntermediateCare ;
+    :hasValue 1.0.
+
+<http://example.org/data/duration_intensive_care_station_d_123> a :DurationIntensiveCareStation ;
+    :hasValue 1.0.
+
+<http://example.org/data/ventilation_duration_h_123> a :VentilationDuration ;
+    :hasValue 1.0.
+
+<http://example.org/data/noninvasive_ventilation_duration_h_123> a :NoninvasiveVentilationDuration ;
+    :hasValue 1.0.
+
+<http://example.org/data/complication_free_progression_123> a :ComplicationFreeProgression ;
+    :hasValue 1.0.
+
+<http://example.org/data/liver_failure_123> a :LiverFailure ;
+    :hasValue 1.0.
+
+<http://example.org/data/urinary_retention_123> a :UrinaryRetention ;
+    :hasValue 1.0.
+
+<http://example.org/data/ileus_123> a :Ileus

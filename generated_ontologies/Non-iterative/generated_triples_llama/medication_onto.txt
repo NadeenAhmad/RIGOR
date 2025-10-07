@@ -1,0 +1,211 @@
+```turtle
+@prefix : <http://example.org/ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix sql: <http://example.org/sql/>.
+
+:medication a :MedicationRecord ;
+    :hasPatient :patient456 ;
+    :includesDrug :Plavix ;
+    :hasSideEffect :Anti_Xa ;
+    :hasTreatmentOutcome :Remission.
+
+:patient456 a :Patient ;
+    :hasMedication :medication.
+
+:Plavix a :Drug ;
+    :hasAClass :Antiplatelet.
+
+:Anti_Xa a :Drug ;
+    :hasAClass :Anticoagulant.
+
+:Remission a :TreatmentOutcome ;
+    :hasValue :Successful.
+
+:MedicationRecord a :Record ;
+    :hasColumn :id ;
+    :hasColumn :patient_id ;
+    :hasColumn :created_at ;
+    :hasColumn :ASS ;
+    :hasColumn :Plavix ;
+    :hasColumn :Anti_Xa ;
+    :hasColumn :Falithrom_Marcumar ;
+    :hasColumn :NSAR ;
+    :hasColumn :Steroide ;
+    :hasColumn :Steroide_Tagesdosis ;
+    :hasColumn :Antidepressiva ;
+    :hasColumn :Antihypertensiva ;
+    :hasColumn :Anzahl_der_Antihypertensiva ;
+    :hasColumn :Thyreostatika ;
+    :hasColumn :Schilddrsenhormone ;
+    :hasColumn :Protonenpumpeninhibitoren ;
+    :hasColumn :Urikostatika ;
+    :hasColumn :orale_Antidiabetika ;
+    :hasColumn :Insulin ;
+    :hasColumn :Insulin_Tagesdosis ;
+    :hasColumn :inhalative_Bronchodilatatoren ;
+    :hasColumn :weitere_Medikation ;
+    :hasColumn :weitere_Medikation_1_Text ;
+    :hasColumn :Statine ;
+    :hasColumn :Diuretika ;
+    :hasColumn :weitere_Medikation_2 ;
+    :hasColumn :weitere_Medikation_2_Text ;
+    :hasColumn :weitere_Medikation_3 ;
+    :hasColumn :weitere_Medikation_3_Text ;
+    :hasColumn :weitere_Medikation_4 ;
+    :hasColumn :weitere_Medikation_4_Text ;
+    :hasColumn :weitere_Medikation_5 ;
+    :hasColumn :weitere_Medikation_5_Text.
+
+:Record a :Class ;
+    :hasProperty :id ;
+    :hasProperty :patient_id ;
+    :hasProperty :created_at ;
+    :hasProperty :ASS ;
+    :hasProperty :Plavix ;
+    :hasProperty :Anti_Xa ;
+    :hasProperty :Falithrom_Marcumar ;
+    :hasProperty :NSAR ;
+    :hasProperty :Steroide ;
+    :hasProperty :Steroide_Tagesdosis ;
+    :hasProperty :Antidepressiva ;
+    :hasProperty :Antihypertensiva ;
+    :hasProperty :Anzahl_der_Antihypertensiva ;
+    :hasProperty :Thyreostatika ;
+    :hasProperty :Schilddrsenhormone ;
+    :hasProperty :Protonenpumpeninhibitoren ;
+    :hasProperty :Urikostatika ;
+    :hasProperty :orale_Antidiabetika ;
+    :hasProperty :Insulin ;
+    :hasProperty :Insulin_Tagesdosis ;
+    :hasProperty :inhalative_Bronchodilatatoren ;
+    :hasProperty :weitere_Medikation ;
+    :hasProperty :weitere_Medikation_1_Text ;
+    :hasProperty :Statine ;
+    :hasProperty :Diuretika ;
+    :hasProperty :weitere_Medikation_2 ;
+    :hasProperty :weitere_Medikation_2_Text ;
+    :hasProperty :weitere_Medikation_3 ;
+    :hasProperty :weitere_Medikation_3_Text ;
+    :hasProperty :weitere_Medikation_4 ;
+    :hasProperty :weitere_Medikation_4_Text ;
+    :hasProperty :weitere_Medikation_5 ;
+    :hasProperty :weitere_Medikation_5_Text.
+```
+
+
+```turtle
+@prefix : <http://example.org/ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix sql: <http://example.org/sql/>.
+
+:medication a :MedicationRecord ;
+    :hasPatient :patient456 ;
+    :includesDrug :Plavix ;
+    :hasSideEffect :Anti_Xa ;
+    :hasTreatmentOutcome :Remission.
+
+:patient456 a :Patient ;
+    :hasMedication :medication.
+
+:Plavix a :Drug ;
+    :hasAClass :Antiplatelet.
+
+:Anti_Xa a :Drug ;
+    :hasAClass :Anticoagulant.
+
+:Remission a :TreatmentOutcome ;
+    :hasValue :Successful.
+
+:MedicationRecord a :Record ;
+    :hasColumn :id ;
+    :hasColumn :patient_id ;
+    :hasColumn :created_at ;
+    :hasColumn :ASS ;
+    :hasColumn :Plavix ;
+    :hasColumn :Anti_Xa ;
+    :hasColumn :Falithrom_Marcumar ;
+    :hasColumn :NSAR ;
+    :hasColumn :Steroide ;
+    :hasColumn :Steroide_Tagesdosis ;
+    :hasColumn :Antidepressiva ;
+    :hasColumn :Antihypertensiva ;
+    :hasColumn :Anzahl_der_Antihypertensiva ;
+    :hasColumn :Thyreostatika ;
+    :hasColumn :Schilddrsenhormone ;
+    :hasColumn :Protonenpumpeninhibitoren ;
+    :hasColumn :Urikostatika ;
+    :hasColumn :orale_Antidiabetika ;
+    :hasColumn :Insulin ;
+    :hasColumn :Insulin_Tagesdosis ;
+    :hasColumn :inhalative_Bronchodilatatoren ;
+    :hasColumn :weitere_Medikation ;
+    :hasColumn :weitere_Medikation_1_Text ;
+    :hasColumn :Statine ;
+    :hasColumn :Diuretika ;
+    :hasColumn :weitere_Medikation_2 ;
+    :hasColumn :weitere_Medikation_2_Text ;
+    :hasColumn :weitere_Medikation_3 ;
+    :hasColumn :weitere_Medikation_3_Text ;
+    :hasColumn :weitere_Medikation_4 ;
+    :hasColumn :weitere_Medikation_4_Text ;
+    :hasColumn :weitere_Medikation_5 ;
+    :hasColumn :weitere_Medikation_5_Text.
+
+:Record a :Class ;
+    :hasProperty :id ;
+    :hasProperty :patient_id ;
+    :hasProperty :created_at ;
+    :hasProperty :ASS ;
+    :hasProperty :Plavix ;
+    :hasProperty :Anti_Xa ;
+    :hasProperty :Falithrom_Marcumar ;
+    :hasProperty :NSAR ;
+    :hasProperty :Steroide ;
+    :hasProperty :Steroide_Tagesdosis ;
+    :hasProperty :Antidepressiva ;
+    :hasProperty :Antihypertensiva ;
+    :hasProperty :Anzahl_der_Antihypertensiva ;
+    :hasProperty :Thyreostatika ;
+    :hasProperty :Schilddrsenhormone ;
+    :hasProperty :Protonenpumpeninhibitoren ;
+    :hasProperty :Urikostatika ;
+    :hasProperty :orale_Antidiabetika ;
+    :hasProperty :Insulin ;
+    :hasProperty :Insulin_Tagesdosis ;
+    :hasProperty :inhalative_Bronchodilatatoren ;
+    :hasProperty :weitere_Medikation ;
+    :hasProperty :weitere_Medikation_1_Text ;
+    :hasProperty :Statine ;
+    :hasProperty :Diuretika ;
+    :hasProperty :weitere_Medikation_2 ;
+    :hasProperty :weitere_Medikation_2_Text ;
+    :hasProperty :weitere_Medikation_3 ;
+    :hasProperty :weitere_Medikation_3_Text ;
+    :hasProperty :weitere_Medikation_4 ;
+    :hasProperty :weitere_Medikation_4_Text ;
+    :hasProperty :weitere_Medikation_5 ;
+    :hasProperty :weitere_Medikation_5_Text.
+
+:Drug a :Class ;
+    :hasProperty :Plavix ;
+    :hasProperty :Anti_Xa.
+
+:Class a :Class ;
+    :hasProperty :id ;
+    :hasProperty :patient_id ;
+    :hasProperty :created_at ;
+    :hasProperty :ASS ;
+    :hasProperty :Plavix ;
+    :hasProperty :Anti_Xa ;
+    :hasProperty :Falithrom_Marcumar ;
+    :hasProperty :NSAR ;
+    :hasProperty :Steroide ;
+    :hasProperty :Steroide_Tagesdosis ;
+    :hasProperty :Antidepressiva ;
+    :hasProperty :Antihypertensiva ;
+    :hasProperty :Anzahl_der_Antihypertensiva ;
+    :hasProperty :Thyreostatika ;
+    :hasProperty :Schilddrsenhormone ;
+    :hasProperty :Protonenpumpeninhibitoren ;
+    :hasProperty :Urikostatika ;
+    :has

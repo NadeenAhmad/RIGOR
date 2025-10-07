@@ -1,0 +1,235 @@
+```turtle
+@prefix : <http://example.org/ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@base <http://example.org/data/>.
+
+:chemotherapy123 a :ChemotherapyRecord ;
+    :hasPatient <http://example.org/data/patient456> ;
+    :includesDrug :Oxaliplatin ;
+    :hasSideEffect :Neurotoxicity ;
+    :hasTreatmentOutcome :Remission ;
+    :radiotherapy "1"^^xsd:byte ;
+    :radiation_amount_in_gray "10.0"^^xsd:float ;
+    :number_of_cycles "5"^^xsd:integer ;
+    :five_fluorouracil "1"^^xsd:byte ;
+    :chemoterapy_palliativ "1"^^xsd:byte.
+
+:Oxaliplatin a :Drug ;
+    rdfs:label "Oxaliplatin" ;
+    :hasChemicalFormula "C19H25N4O5S" ;
+    :hasMolecularWeight "397.54"^^xsd:float.
+
+:Neurotoxicity a :SideEffect ;
+    rdfs:label "Neurotoxicity" ;
+    :hasDescription "Damage to the nervous system" ;
+    :hasSeverity "Severe".
+
+:Remission a :TreatmentOutcome ;
+    rdfs:label "Remission" ;
+    :hasDescription "Absence of symptoms" ;
+    :hasSeverity "Good".
+
+:patient456 a :Patient ;
+    rdfs:label "Patient 456" ;
+    :hasDisease :Cancer ;
+    :hasAge "40"^^xsd:integer ;
+    :hasGender "Male".
+
+:Cancer a :Disease ;
+    rdfs:label "Cancer" ;
+    :hasDescription "Group of diseases characterized by abnormal cell growth" ;
+    :hasSeverity "Severe".
+```
+
+
+Please note that you need to generate the above RDF triples based on the provided SQL table and ontology. 
+```sql
+CREATE TABLE chemotherapy (
+  id INT PRIMARY KEY,
+  patient_id INT,
+  created_at TIMESTAMP,
+  radiotherapy TINYINT,
+  radiation_amount_in_gray FLOAT,
+  chemotherapy TINYINT,
+  number_of_cycles INTEGER,
+  five_fluorouracil TINYINT,
+  capecitabine TINYINT,
+  oxaliplatin TINYINT,
+  cisplatin TINYINT,
+  epirubicin TINYINT,
+  leucovorin TINYINT,
+  doxorubicin TINYINT,
+  sorafenib TINYINT,
+  gemcitabine TINYINT,
+  irinotecan TINYINT,
+  docetaxel TINYINT,
+  paclitaxel TINYINT,
+  carboplatin TINYINT,
+  folic_acid TINYINT,
+  other_chemotherapeutics_i TEXT,
+  other_chemotherapeutics_ii TEXT,
+  other_chemotherapeutics_iii TEXT,
+  specific_antibodies TINYINT,
+  specific_antibodies_text TEXT,
+  tace TINYINT,
+  rfa TINYINT,
+  tace_cycles INTEGER,
+  rfa_cycles INTEGER,
+  photodynamic_therapy TINYINT,
+  pdt_cycles INTEGER,
+  stable_course TINYINT,
+  progression TINYINT,
+  regression TINYINT,
+  remission TINYINT,
+  tumor_board_decision TINYINT,
+  recommendations_tumor_board TEXT,
+  implementation_tumor_board TINYINT,
+  dose_according_to_bsa TINYINT,
+  primary_dose_reduction TINYINT,
+  dose_reduction_over_time TINYINT,
+  side_effects_of_cx TINYINT,
+  emesis TINYINT,
+  diarrhea TINYINT,
+  alopecia TINYINT,
+  hand_foot_syndrome TINYINT,
+  bm_depression TINYINT,
+  neurotoxicity TINYINT,
+  ototoxicity TINYINT,
+  ps_deterioration TINYINT,
+  other_side_effects TINYINT,
+  other_side_effects_text TEXT,
+  ecog_stage INTEGER,
+  karnofsky_index_percent INTEGER,
+  her_2_status INTEGER,
+  microsatellites INTEGER,
+  implementation_of_chemotherapy_uncertain TINYINT,
+  chemoterapy_neoadjuvant TINYINT,
+  chemoterapy_adjuvant TINYINT,
+  chemoterapy_palliativ TINYINT
+);
+```
+```turtle
+@prefix : <http://example.org/ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@base <http://example.org/data/>.
+
+:chemotherapy123 a :ChemotherapyRecord ;
+    :hasPatient <http://example.org/data/patient456> ;
+    :includesDrug :Oxaliplatin ;
+    :hasSideEffect :Neurotoxicity ;
+    :hasTreatmentOutcome :Remission ;
+    :radiotherapy "1"^^xsd:byte ;
+    :radiation_amount_in_gray "10.0"^^xsd:float ;
+    :number_of_cycles "5"^^xsd:integer ;
+    :five_fluorouracil "1"^^xsd:byte ;
+    :chemoterapy_palliativ "1"^^xsd:byte.
+
+:Oxaliplatin a :Drug ;
+    rdfs:label "Oxaliplatin" ;
+    :hasChemicalFormula "C19H25N4O5S" ;
+    :hasMolecularWeight "397.54"^^xsd:float.
+
+:Neurotoxicity a :SideEffect ;
+    rdfs:label "Neurotoxicity" ;
+    :hasDescription "Damage to the nervous system" ;
+    :hasSeverity "Severe".
+
+:Remission a :TreatmentOutcome ;
+    rdfs:label "Remission" ;
+    :hasDescription "Absence of symptoms" ;
+    :hasSeverity "Good".
+
+:patient456 a :Patient ;
+    rdfs:label "Patient 456" ;
+    :hasDisease :Cancer ;
+    :hasAge "40"^^xsd:integer ;
+    :hasGender "Male".
+
+:Cancer a :Disease ;
+    rdfs:label "Cancer" ;
+    :hasDescription "Group of diseases characterized by abnormal cell growth" ;
+    :hasSeverity "Severe".
+```
+
+
+Please note that you need to generate the above RDF triples based on the provided SQL table and ontology.
+```sql
+CREATE TABLE chemotherapy (
+  id INT PRIMARY KEY,
+  patient_id INT,
+  created_at TIMESTAMP,
+  radiotherapy TINYINT,
+  radiation_amount_in_gray FLOAT,
+  chemotherapy TINYINT,
+  number_of_cycles INTEGER,
+  five_fluorouracil TINYINT,
+  capecitabine TINYINT,
+  oxaliplatin TINYINT,
+  cisplatin TINYINT,
+  epirubicin TINYINT,
+  leucovorin TINYINT,
+  doxorubicin TINYINT,
+  sorafenib TINYINT,
+  gemcitabine TINYINT,
+  irinotecan TINYINT,
+  docetaxel TINYINT,
+  paclitaxel TINYINT,
+  carboplatin TINYINT,
+  folic_acid TINYINT,
+  other_chemotherapeutics_i TEXT,
+  other_chemotherapeutics_ii TEXT,
+  other_chemotherapeutics_iii TEXT,
+  specific_antibodies TINYINT,
+  specific_antibodies_text TEXT,
+  tace TINYINT,
+  rfa TINYINT,
+  tace_cycles INTEGER,
+  rfa_cycles INTEGER,
+  photodynamic_therapy TINYINT,
+  pdt_cycles INTEGER,
+  stable_course TINYINT,
+  progression TINYINT,
+  regression TINYINT,
+  remission TINYINT,
+  tumor_board_decision TINYINT,
+  recommendations_tumor_board TEXT,
+  implementation_tumor_board TINYINT,
+  dose_according_to_bsa TINYINT,
+  primary_dose_reduction TINYINT,
+  dose_reduction_over_time TINYINT,
+  side_effects_of_cx TINYINT,
+  emesis TINYINT,
+  diarrhea TINYINT,
+  alopecia TINYINT,
+  hand_foot_syndrome TINYINT,
+  bm_depression TINYINT,
+  neurotoxicity TINYINT,
+  ototoxicity TINYINT,
+  ps_deterioration TINYINT,
+  other_side_effects TINYINT,
+  other_side_effects_text TEXT,
+  ecog_stage INTEGER,
+  karnofsky_index_percent INTEGER,
+  her_2_status INTEGER,
+  microsatellites INTEGER,
+  implementation_of_chemotherapy_uncertain TINYINT,
+  chemoterapy_neoadjuvant TINYINT,
+  chemoterapy_adjuvant TINYINT,
+  chemoterapy_palliativ TINYINT
+);
+```
+```turtle
+@prefix : <http://example.org/ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@base <http://example.org/data/>.
+
+:chemotherapy123 a :ChemotherapyRecord ;
+    :hasPatient <http://example.org/data/patient456> ;
+    :includesDrug :Oxaliplatin ;
+    :hasSideEffect :Neurotoxicity ;
+    :hasTreatmentOutcome :Remission ;
+    :radiotherapy "1"^^xsd:byte ;
+    :radiation_amount_in_gray "10.0"^^xsd:float ;
+    :number_of_cycles "5"^^xsd:integer ;
+    :five_fluorouracil "1"^^xsd:byte ;
+    :chemoterapy_palliativ "

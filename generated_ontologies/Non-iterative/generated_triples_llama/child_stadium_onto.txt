@@ -1,0 +1,182 @@
+```sql
+CREATE TABLE child_stadium (
+    child_stadium_id INTEGER,
+    child_stadium_definition TEXT
+);
+```
+
+```turtle
+:child_stadium rdfs:label "child_stadium"@en.
+:child_stadium a owl:Class.
+:child_stadium rdfs:comment "Table child_stadium"@en.
+
+:child_stadium_id rdfs:label "child_stadium_id"@en.
+:child_stadium_id a rdfs:Property.
+:child_stadium_id rdfs:domain :child_stadium.
+:child_stadium_id rdfs:range xsd:integer.
+:child_stadium_id rdfs:comment "child_stadium_id"@en.
+
+:child_stadium_definition rdfs:label "child_stadium_definition"@en.
+:child_stadium_definition a rdfs:Property.
+:child_stadium_definition rdfs:domain :child_stadium.
+:child_stadium_definition rdfs:range xsd:string.
+:child_stadium_definition rdfs:comment "child_stadium_definition"@en.
+``` 
+
+```turtle
+:child_stadium rdfs:label "child_stadium"@en.
+:child_stadium a owl:Class.
+:child_stadium rdfs:comment "Table child_stadium"@en.
+
+:child_stadium_id rdfs:label "child_stadium_id"@en.
+:child_stadium_id a rdfs:Property.
+:child_stadium_id rdfs:domain :child_stadium.
+:child_stadium_id rdfs:range xsd:integer.
+:child_stadium_id rdfs:comment "child_stadium_id"@en.
+
+:child_stadium_definition rdfs:label "child_stadium_definition"@en.
+:child_stadium_definition a rdfs:Property.
+:child_stadium_definition rdfs:domain :child_stadium.
+:child_stadium_definition rdfs:range xsd:string.
+:child_stadium_definition rdfs:comment "child_stadium_definition"@en.
+
+:child_stadium_id rdfs:subPropertyOf :oboInOwl:hasDbXref.
+:child_stadium_definition rdfs:subPropertyOf :oboInOwl:hasDbXref.
+``` 
+
+```turtle
+:child_stadium rdfs:label "child_stadium"@en.
+:child_stadium a owl:Class.
+:child_stadium rdfs:comment "Table child_stadium"@en.
+
+:child_stadium_id rdfs:label "child_stadium_id"@en.
+:child_stadium_id a rdfs:Property.
+:child_stadium_id rdfs:domain :child_stadium.
+:child_stadium_id rdfs:range xsd:integer.
+:child_stadium_id rdfs:comment "child_stadium_id"@en.
+
+:child_stadium_definition rdfs:label "child_stadium_definition"@en.
+:child_stadium_definition a rdfs:Property.
+:child_stadium_definition rdfs:domain :child_stadium.
+:child_stadium_definition rdfs:range xsd:string.
+:child_stadium_definition rdfs:comment "child_stadium_definition"@en.
+
+:child_stadium_id rdfs:subPropertyOf :oboInOwl:hasDbXref.
+:child_stadium_definition rdfs:subPropertyOf :oboInOwl:hasDbXref.
+
+:child_stadium_definition rdfs:subPropertyOf :oboInOwl:IAO_0000115.
+:child_stadium_definition rdfs:subPropertyOf :oboInOwl:IAO_0000119.
+``` 
+
+```turtle
+:child_stadium rdfs:label "child_stadium"@en.
+:child_stadium a owl:Class.
+:child_stadium rdfs:comment "Table child_stadium"@en.
+
+:child_stadium_id rdfs:label "child_stadium_id"@en.
+:child_stadium_id a rdfs:Property.
+:child_stadium_id rdfs:domain :child_stadium.
+:child_stadium_id rdfs:range xsd:integer.
+:child_stadium_id rdfs:comment "child_stadium_id"@en.
+
+:child_stadium_definition rdfs:label "child_stadium_definition"@en.
+:child_stadium_definition a rdfs:Property.
+:child_stadium_definition rdfs:domain :child_stadium.
+:child_stadium_definition rdfs:range xsd:string.
+:child_stadium_definition rdfs:comment "child_stadium_definition"@en.
+
+:child_stadium_id rdfs:subPropertyOf :oboInOwl:hasDbXref.
+:child_stadium_definition rdfs:subPropertyOf :oboInOwl:hasDbXref.
+
+:child_stadium_definition rdfs:subPropertyOf :oboInOwl:IAO_0000115.
+:child_stadium_definition rdfs:subPropertyOf :oboInOwl:IAO_0000119.
+
+:child_stadium rdfs:subClassOf :oboInOwl:hasDbXref.
+``` 
+
+```turtle
+:child_stadium rdfs:label "child_stadium"@en.
+:child_stadium a owl:Class.
+:child_stadium rdfs:comment "Table child_stadium"@en.
+
+:child_stadium_id rdfs:label "child_stadium_id"@en.
+:child_stadium_id a rdfs:Property.
+:child_stadium_id rdfs:domain :child_stadium.
+:child_stadium_id rdfs:range xsd:integer.
+:child_stadium_id rdfs:comment "child_stadium_id"@en.
+
+:child_stadium_definition rdfs:label "child_stadium_definition"@en.
+:child_stadium_definition a rdfs:Property.
+:child_stadium_definition rdfs:domain :child_stadium.
+:child_stadium_definition rdfs:range xsd:string.
+:child_stadium_definition rdfs:comment "child_stadium_definition"@en.
+
+:child_stadium_id rdfs:subPropertyOf :oboInOwl:hasDbXref.
+:child_stadium_definition rdfs:subPropertyOf :oboInOwl:hasDbXref.
+
+:child_stadium_definition rdfs:subPropertyOf :oboInOwl:IAO_0000115.
+:child_stadium_definition rdfs:subPropertyOf :oboInOwl:IAO_0000119.
+
+:child_stadium rdfs:subClassOf :oboInOwl:hasDbXref.
+
+:child_stadium_definition :oboInOwl:hasDbXref "child_stadium_definition"@en.
+``` 
+
+```turtle
+:child_stadium rdfs:label "child_stadium"@en.
+:child_stadium a owl:Class.
+:child_stadium rdfs:comment "Table child_stadium"@en.
+
+:child_stadium_id rdfs:label "child_stadium_id"@en.
+:child_stadium_id a rdfs:Property.
+:child_stadium_id rdfs:domain :child_stadium.
+:child_stadium_id rdfs:range xsd:integer.
+:child_stadium_id rdfs:comment "child_stadium_id"@en.
+
+:child_stadium_definition rdfs:label "child_stadium_definition"@en.
+:child_stadium_definition a rdfs:Property.
+:child_stadium_definition rdfs:domain :child_stadium.
+:child_stadium_definition rdfs:range xsd:string.
+:child_stadium_definition rdfs:comment "child_stadium_definition"@en.
+
+:child_stadium_id rdfs:subPropertyOf :oboInOwl:hasDbXref.
+:child_stadium_definition rdfs:subPropertyOf :oboInOwl:hasDbXref.
+
+:child_stadium_definition rdfs:subPropertyOf :oboInOwl:IAO_0000115.
+:child_stadium_definition rdfs:subPropertyOf :oboInOwl:IAO_0000119.
+
+:child_stadium rdfs:subClassOf :oboInOwl:hasDbXref.
+
+:child_stadium_definition :oboInOwl:hasDbXref "child_stadium_definition"@en.
+
+:child_stadium_definition :oboInOwl:IAO_0000115 "child_stadium_definition"@en.
+``` 
+
+```turtle
+:child_stadium rdfs:label "child_stadium"@en.
+:child_stadium a owl:Class.
+:child_stadium rdfs:comment "Table child_stadium"@en.
+
+:child_stadium_id rdfs:label "child_stadium_id"@en.
+:child_stadium_id a rdfs:Property.
+:child_stadium_id rdfs:domain :child_stadium.
+:child_stadium_id rdfs:range xsd:integer.
+:child_stadium_id rdfs:comment "child_stadium_id"@en.
+
+:child_stadium_definition rdfs:label "child_stadium_definition"@en.
+:child_stadium_definition a rdfs:Property.
+:child_stadium_definition rdfs:domain :child_stadium.
+:child_stadium_definition rdfs:range xsd:string.
+:child_stadium_definition rdfs:comment "child_stadium_definition"@en.
+
+:child_stadium_id rdfs:subPropertyOf :oboInOwl:hasDbXref.
+:child_stadium_definition rdfs:subPropertyOf :oboInOwl:hasDbXref.
+
+:child_stadium_definition rdfs:subPropertyOf :oboInOwl:IAO_0000115.
+:child_stadium_definition rdfs:subPropertyOf :oboInOwl:IAO_0000119.
+
+:child_stadium rdfs:subClassOf :oboInOwl:hasDbXref.
+
+:child_stadium_definition :oboInOwl:hasDbXref "child_stadium_definition"@en.
+
+:child_stadium_definition :oboInOwl:
