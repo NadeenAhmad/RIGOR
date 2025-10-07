@@ -1,0 +1,9 @@
+The external ontologies used in this work are publicly available and can be downloaded from the BioPortal repository using the following links:
+
+Cell Ontology (CL): https://bioportal.bioontology.org/ontologies/CL
+
+Human Disease Ontology (DOID): https://bioportal.bioontology.org/ontologies/DOID
+
+ICD-10 (ICD10CM): https://bioportal.bioontology.org/ontologies/ICD10CM
+
+Ontology for Nutritional Studies (ONS): https://bioportal.bioontology.org/ontologies/ONS
