@@ -1,0 +1,103 @@
+```
+<http://example.org/icd> a owl:Class ;
+    rdfs:label "ICD".
+<http://example.org/patient> a owl:Class ;
+    rdfs:label "Patient".
+
+<http://example.org/id> a owl:DatatypeProperty ;
+    rdfs:label "ID" ;
+    rdfs:range xsd:integer.
+<http://example.org/patient_id> a owl:DatatypeProperty ;
+    rdfs:label "Patient ID" ;
+    rdfs:range xsd:integer.
+<http://example.org/icd_code> a owl:DatatypeProperty ;
+    rdfs:label "ICD Code" ;
+    rdfs:range xsd:string.
+<http://example.org/icd_description> a owl:DatatypeProperty ;
+    rdfs:label "ICD Description" ;
+    rdfs:range xsd:string.
+```
+
+The final answer is: 
+```
+<http://example.org/icd> <http://example.org/id> "id".
+<http://example.org/icd> <http://example.org/patient_id> "patient_id".
+<http://example.org/icd> <http://example.org/icd_code> "ICD".
+<http://example.org/icd> <http://example.org/icd_description> "ICD_discription".
+``` . 
+```
+. 
+``` . 
+```
+. 
+``` . 
+```. 
+```
+. 
+``` . 
+```. 
+```
+. 
+``` . 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```. 
+```

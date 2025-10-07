@@ -1,0 +1,31 @@
+```sql
+SELECT DISTINCT 
+  m.metastasen_id AS 'http://example.org/ontology#metastasen_id',
+  m.metastasen_timepoint AS 'http://example.org/ontology#metastasen_timepoint'
+FROM metastases m
+WHERE m.metastasen_id = 1;
+```
+
+
+```turtle
+<http://example.org/ontology#metastasen_id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2001/XMLSchema#integer>.
+<http://example.org/ontology#metastasen_timepoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/ontology#metastasen_id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://example.org/ontology#metastasen_timepoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "".
+```
+
+
+```sql
+SELECT DISTINCT 
+  m.metastasen_id AS 'http://example.org/ontology#metastasen_id',
+  m.metastasen_timepoint AS 'http://example.org/ontology#metastasen_timepoint'
+FROM metastases m
+WHERE m.metastasen_id = 1;
+```
+
+
+```turtle
+<http://example.org/ontology#metastasen_id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2001/XMLSchema#integer>.
+<http://example.org/ontology#metastasen_timepoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/ontology#metastasen_id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://example.org/ontology#

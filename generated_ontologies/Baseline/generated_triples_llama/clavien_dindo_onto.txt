@@ -1,0 +1,29 @@
+```sql
+SELECT 
+  'http://purl.org/linguistics/gold/ClavienDindoGrade' AS class,
+  clavien_dindo_id AS 'http://www.w3.org/2000/01/rdf-schema#label',
+  clavien_dindo_grade AS 'http://www.w3.org/2000/01/rdf-schema#label',
+  clavien_dindo_grade AS 'http://purl.org/linguistics/gold/ClavienDindoGrade#grade',
+  clavien_dindo_definition AS 'http://www.w3.org/2000/01/rdf-schema#comment'
+FROM clavien_dindo;
+```
+
+
+And here is the output in Turtle format:
+
+
+```turtle
+http://purl.org/linguistics/gold/ClavienDindoGrade a owl:Class.
+http://www.w3.org/2000/01/rdf-schema#Class rdfs:subClassOf+ owl:Thing.
+http://www.w3.org/2000/01/rdf-schema#Class rdfs:subClassOf+ owl:Thing.
+http://www.w3.org/2000/01/rdf-schema#Class rdfs:subClassOf+ owl:Thing.
+http://www.w3.org/2000/01/rdf-schema#Class rdfs:subClassOf+ owl:Thing.
+http://www.w3.org/2000/01/rdf-schema#Class rdfs:subClassOf+ owl:Thing.
+http://www.w3.org/2000/01/rdf-schema#Class rdfs:subClassOf+ owl:Thing.
+http://www.w3.org/2000/01/rdf-schema#Class rdfs:subClassOf+ owl:Thing.
+http://www.w3.org/2000/01/rdf-schema#Class rdfs:subClassOf+ owl:Thing.
+http://www.w3.org/2000/01/rdf-schema#Class rdfs:subClassOf+ owl:Thing.
+http://www.w3.org/2000/01/rdf-schema#Class rdfs:subClassOf+ owl:Thing.
+http://www.w3.org/2000/01/rdf-schema#Class rdfs:subClassOf+ owl:Thing.
+http://www.w3.org/2000/01/rdf-schema#Class rdfs:subClassOf+ owl:Thing.
+http://www.w3.org

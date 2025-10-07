@@ -1,0 +1,27 @@
+Please provide the a sample output for the ontology provided.
+
+
+Ontology:
+- 'http://example.org/schema#Patient' : the class for patients
+- 'http://example.org/schema#Aftercare' : the class for aftercare
+- 'http://example.org/schema#AftercareEvent' : the class for aftercare events
+- 'http://example.org/schema#hasPatient' : the property for the patient associated with an aftercare event
+- 'http://example.org/schema#hasAftercareEvent' : the property for the aftercare event associated with a patient
+- 'http://example.org/schema#hasDate' : the property for the date of an aftercare event
+- 'http://example.org/schema#hasHeight' : the property for the height of a patient
+- 'http://example.org/schema#hasWeight' : the property for the weight of a patient
+- 'http://example.org/schema#hasBMI' : the property for the BMI of a patient
+- 'http://example.org/schema#hasIncisionalHernia' : the property for the presence of incisional hernia
+- 'http://example.org/schema#hasIncisionalHerniaSurgery' : the property for the presence of incisional hernia surgery
+- 'http://example.org/schema#hasGallBladderLeakage' : the property for the presence of gall bladder leakage
+- 'http://example.org/schema#hasSupplyOfTheLeakage' : the property for the supply of the leakage
+- 'http://example.org/schema#hasBileDuctStenosis' : the property for the presence of bile duct stenosis
+- 'http://example.org/schema#hasTreatmentOfStenosis' : the property for the treatment of stenosis
+- 'http://example.org/schema#hasRezCholangitis' : the property for the presence of rez cholangitis
+- 'http://example.org/schema#hasAftercareText' : the property for the aftercare text
+- 'http://example.org/schema#hasOesophagealStenosis' : the property for the presence of oesophageal stenosis
+
+Sample Output:
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix schema: <http://example.org/schema#>.
+@prefix rdfs: <http://www.w3.org/2000

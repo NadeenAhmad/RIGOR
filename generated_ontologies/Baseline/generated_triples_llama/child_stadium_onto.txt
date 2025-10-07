@@ -1,0 +1,32 @@
+```sql
+SELECT 
+  child_stadium_id AS?childStadiumId,
+  child_stadium_definition AS?childStadiumDefinition
+FROM 
+  child_stadium;
+```
+
+## Step 1: Identify the columns from the SQL query as RDF triples
+The SQL query selects two columns: child_stadium_id and child_stadium_definition. These will be used as the subjects and objects of the RDF triples.
+
+## Step 2: Determine the predicates based on the ontology
+The provided ontology is not explicitly stated, but based on common practices in mapping relational databases to RDF, we can infer that the predicates will be:
+-?childStadiumId: a property that represents the identifier of a child stadium, likely an rdfs:label or an skos:prefLabel.
+-?childStadiumDefinition: a property that represents the definition of a child stadium, likely a rdfs:comment or a skos:definition.
+
+## Step 3: Generate the RDF triples in Turtle format
+Based on the columns and predicates identified, we can generate the RDF triples as follows:
+- <child_stadium_id> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+- <child_stadium_id> <http://www.w3.org/2000/01/rdf-schema#label>?childStadiumId.
+- <child_stadium_id> <http://www.w3.org/2000/01/rdf-schema#comment>?childStadiumDefinition.
+- <child_stadium_id> <http://www.w3.org/2000/01/rdf-schema#label> "child_stadium_id".
+- <child_stadium_id> <http://www.w3.org/2000/01/rdf-schema#comment> "child_stadium_definition".
+- <child_stadium_id> <http://www.w3.org/2001/XMLSchema#integer>?childStadiumId.
+
+## Step 4: Simplify the RDF triples by removing unnecessary statements
+Since we are only interested in the mapping of the SQL table and its columns to the provided ontology, we can remove the unnecessary statements.
+
+## Step 5: Format the RDF triples in Turtle format
+The final RDF triples in Turtle format are:
+- <child_stadium_id> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+- <child_stadium_id> <http://www.w3.org/2000/01/r

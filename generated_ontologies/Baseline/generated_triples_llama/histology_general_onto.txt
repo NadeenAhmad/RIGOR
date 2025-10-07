@@ -1,0 +1,36 @@
+```sql
+SELECT 
+  CONCAT('http://example.org/histology_general/', id) AS id,
+  patient_id AS patient_id,
+  pathologist AS pathologist,
+  order_number AS order_number,
+  histological_diagnosis AS histological_diagnosis,
+  histology_summary AS histology_summary
+FROM 
+  histology_general;
+```
+
+```turtle
+[] a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+    rdfs:label "id"@en.
+[] a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+    rdfs:label "patient_id"@en.
+[] a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+    rdfs:label "pathologist"@en.
+[] a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+    rdfs:label "order_number"@en.
+[] a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+    rdfs:label "histological_diagnosis"@en.
+[] a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+    rdfs:label "histology_summary"@en.
+
+<http://example.org/histology_general/1> <http://example.org/histology_general/id> "1".
+<http://example.org/histology_general/2> <http://example.org/histology_general/id> "2".
+<http://example.org/histology_general/3> <http://example.org/histology_general/id> "3".
+
+<http://example.org/histology_general/1> <http://example.org/histology_general/patient_id> "1".
+<http://example.org/histology_general/2> <http://example.org/histology_general/patient_id> "2".
+<http://example.org/histology_general/3> <http://example.org/histology_general/patient_id> "3".
+
+<http://example.org/histology_general/1> <http://example.org/histology_general/pathologist> "pathologist1".
+<http://example.org/histology_general/2> <http://example.org/histology_general/pathologist> "path

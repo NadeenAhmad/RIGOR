@@ -1,0 +1,40 @@
+```sql
+SELECT 
+  patient_id AS id,
+  patient_id_old AS patient_id_old,
+  created_at AS created_at,
+  sex AS sex,
+  age_at_surgery AS age_at_surgery
+FROM 
+  patient_data
+WHERE 
+  patient_id_old IS NOT NULL;
+```
+
+
+## Step 1: Define the prefix for the ontology namespace
+To begin, we need to define the prefix for the ontology namespace, which will be used to identify the classes and properties in the RDF triples. Let's assume the ontology namespace is "http://example.org/ontology#".
+
+## Step 2: Define the prefix for the SQL namespace
+Next, we need to define the prefix for the SQL namespace, which will be used to identify the tables and columns in the RDF triples. Let's assume the SQL namespace is "http://example.org/sql#".
+
+## Step 3: Map the SQL table to a class in the ontology
+We can map the SQL table 'patient_data' to a class in the ontology using the following Turtle triple:
+```turtle
+<http://example.org/sql#patient_data> a <http://example.org/ontology#PatientData>.
+```
+## Step 4: Map the SQL columns to properties in the ontology
+We can map the SQL columns to properties in the ontology using the following Turtle triples:
+```turtle
+<http://example.org/sql#patient_id> a <http://example.org/ontology#hasPatientId>.
+<http://example.org/sql#patient_id_old> a <http://example.org/ontology#hasPatientIdOld>.
+<http://example.org/sql#created_at> a <http://example.org/ontology#hasCreatedAt>.
+<http://example.org/sql#sex> a <http://example.org/ontology#hasSex>.
+<http://example.org/sql#age_at_surgery> a <http://example.org/ontology#hasAgeAtSurgery>.
+```
+## Step 5: Map the SQL table and columns to instances in the ontology
+We can map the SQL table and columns to instances in the ontology using the following Turtle triples:
+```turtle
+<http://example.org/sql#patient_data_1> a <http://example.org/ontology#PatientData> ;
+  <http://example.org/sql#id> <http://example.org/sql#patient_id_1> ;
+  <http://example.org/sql#patient_id_old> <http://example.org/sql#patient_id_old_

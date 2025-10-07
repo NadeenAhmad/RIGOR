@@ -1,0 +1,44 @@
+Here is the ontology provided:
+
+The ontology consists of classes and properties:
+- <http://example.org/ontology#Patient>
+- <http://example.org/ontology#Medication>
+- <http://example.org/ontology#MedicationType>
+- <http://example.org/ontology#MedicationUsage>
+- <http://example.org/ontology#MedicationUsageAmount>
+- <http://example.org/ontology#hasMedication>
+- <http://example.org/ontology#hasMedicationType>
+- <http://example.org/ontology#hasPatient>
+- <http://example.org/ontology#hasUsageAmount>
+- <http://example.org/ontology#hasUsageDate>
+- <http://example.org/ontology#hasUsageDateRange>
+- <http://example.org/ontology#hasUsageFrequency>
+- <http://example.org/ontology#hasUsageTime>
+
+And the following axioms:
+- <http://example.org/ontology#MedicationUsage> rdfs:subClassOf <http://example.org/ontology#Medication>
+- <http://example.org/ontology#MedicationUsageAmount> rdfs:subClassOf <http://example.org/ontology#MedicationUsage>
+- <http://example.org/ontology#MedicationType> rdfs:subClassOf <http://example.org/ontology#Medication>
+- <http://example.org/ontology#hasMedicationType> rdf:type rdf:Property
+- <http://example.org/ontology#hasUsageAmount> rdf:type rdf:Property
+- <http://example.org/ontology#hasUsageDate> rdf:type rdf:Property
+- <http://example.org/ontology#hasUsageDateRange> rdf:type rdf:Property
+- <http://example.org/ontology#hasUsageFrequency> rdf:type rdf:Property
+- <http://example.org/ontology#hasUsageTime> rdf:type rdf:Property
+- <http://example.org/ontology#hasMedication> rdf:type rdf:Property
+- <http://example.org/ontology#hasPatient> rdf:type rdf:Property
+
+Here is the code to generate RDF triples in Turtle format:
+
+```python
+import sqlite3
+import datetime
+
+# Connect to the SQLite database
+conn = sqlite3.connect('medication.db')
+c = conn.cursor()
+
+# Create a dictionary to map SQL column names to ontology properties
+column_mapping = {
+    'id': 'http://example.org/ontology#hasId',
+    '

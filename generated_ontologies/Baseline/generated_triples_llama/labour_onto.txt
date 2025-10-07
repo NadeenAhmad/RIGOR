@@ -1,0 +1,28 @@
+The table is part of a medical laboratory database and the ontology is based on the FMA (Foundational Model of Anatomy) and the Ontology for Biomedical Investigations (OBI).
+
+Here's an an example of what the output should look like:
+
+
+<http://example.org/labour/1> a <http://purl.obolibrary.org/obo/FMA_12345> ;
+    <http://purl.obolibrary.org/obo/OBI_0000001> "2019-03-20"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    <http://purl.obolibrary.org/obo/OBI_0000070> 1.2 ;
+    <http://purl.obolibrary.org/obo/OBI_0000071> 1.5 ;
+   ...
+    <http://purl.obolibrary.org/obi/OBI_0000065> "some value".
+
+The ontology mapping is as follows:
+
+- id: http://purl.obolibrary.org/obo/FMA_12345
+- patient_id: http://purl.obolibrary.org/obo/OBI_0000001
+- created_at: http://purl.obolibrary.org/obo/OBI_0000002
+- date_laboratory_analysis: http://purl.obolibrary.org/obo/OBI_0000003
+- ASAT_mol_per_l: http://purl.obolibrary.org/obo/OBI_0000004
+- ALAT_mol_per_l: http://purl.obolibrary.org/obo/OBI_0000005
+- AP_mol_per_l: http://purl.obolibrary.org/obo/OBI_0000006
+- GGT_mol_per_l: http://purl.obolibrary.org/obo/OBI_0000007
+- Lipase_mol_per_l: http://purl.obolibrary.org/obo/OBI_0000008
+- Kreatinin_mol_per_l: http://purl.obolibrary.org/obo/OBI_0000009
+- Bilirubin_mol_per_l: http://purl.obolibrary.org/obo/OBI_0000010
+- Quickk_percent: http://purl.obolibrary.org/obo/OBI_0000011
+- INR: http://purl.obolibrary.org/obo/OBI_0000012
+- Cholin

@@ -1,0 +1,66 @@
+```turtle
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix medical: <http://example.org/medical#>.
+
+medical:MedicalHistory
+  a medical:MedicalHistory ;
+  rdfs:label "Medical History".
+
+medical:PatientID
+  a medical:PatientID ;
+  rdfs:label "Patient ID".
+
+medical:CreatedAt
+  a medical:CreatedAt ;
+  rdfs:label "Created At".
+
+medical:BodySizeCM
+  a medical:BodySizeCM ;
+  rdfs:label "Body Size (cm)".
+
+medical:WeightKG
+  a medical:WeightKG ;
+  rdfs:label "Weight (kg)".
+
+medical:BodyMassIndex
+  a medical:BodyMassIndex ;
+  rdfs:label "Body Mass Index".
+
+medical:FamilyHistoryNeoplasticDisease
+  a medical:FamilyHistoryNeoplasticDisease ;
+  rdfs:label "Family History of Neoplastic Disease".
+
+medical:FamilyHistoryNeoplasticDiseaseText
+  a medical:FamilyHistoryNeoplasticDiseaseText ;
+  rdfs:label "Family History of Neoplastic Disease Text".
+
+medical:NumberOfRelativesFirstDegree
+  a medical:NumberOfRelativesFirstDegree ;
+  rdfs:label "Number of Relatives in First Degree".
+
+medical:PreviousTumour
+  a medical:PreviousTumour ;
+  rdfs:label "Previous Tumour".
+
+medical:PreviousTumourText
+  a medical:PreviousTumourText ;
+  rdfs:label "Previous Tumour Text".
+
+medical:PreviousSecondaryTumour
+  a medical:PreviousSecondaryTumour ;
+  rdfs:label "Previous Secondary Tumour".
+
+medical:PreviousSecondaryTumourText
+  a medical:PreviousSecondaryTumourText ;
+  rdfs:label "Previous Secondary Tumour Text".
+
+medical:PreExistingDiseaseImmunological
+  a medical:PreExistingDiseaseImmunological ;
+  rdfs:label "Pre-existing Disease Immunological".
+
+medical:PreExistingDiseaseImmunologicalText
+  a medical:PreExistingDiseaseImmunologicalText ;
+  rdfs:label "Pre-existing Disease Immunological Text".
+
+medical:PreExistingLiverDisease

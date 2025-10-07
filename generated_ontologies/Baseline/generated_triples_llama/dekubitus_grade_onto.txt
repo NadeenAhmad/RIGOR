@@ -1,0 +1,30 @@
+```sql
+SELECT 
+  'http://purl.org/linked-data/cube#measure' AS?p,
+  'http://purl.org/linked-data/cube#observation' AS?s,
+  'http://example.org/dekubitus_grade/dekubitus_grade_id' AS?o
+FROM 
+  dekubitus_grade;
+```
+
+
+```turtle
+@prefix cube: <http://purl.org/linked-data/cube#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+
+<> 
+  a <http://purl.org/linked-data/cube#Cube> ;
+  <http://purl.org/linked-data/cube#structure> [
+    a <http://purl.org/linked-data/cube#DimensionStructure> ;
+    <http://purl.org/linked-data/cube#dimension> [
+      a <http://purl.org/linked-data/cube#DimensionProperty> ;
+      <http://purl.org/linked-data/cube#measureType> <http://purl.org/linked-data/cube#Measure> ;
+      <http://purl.org/linked-data/cube#refer> <http://example.org/dekubitus_grade/dekubitus_grade_id> ;
+      <http://purl.org/linked-data/cube#property> <http://purl.org/linked-data/cube#measure> ;
+      <http://purl.org/linked-data/cube#role> <http://purl.org/linked-data/cube#observation> ;
+      <http://purl.org/linked-data/cube#unit> <http://example.org/dekubitus_grade/dekubitus_grade_id> ;
+      a <http://purl.org/linked-data/cube#Dimension> ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DimensionProperty> ;
+      <http://purl.org/dc/terms/description> "dekubitus_grade_id"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://purl.org/dc/terms/title> "dekubitus_grade_id"^^<http://www.w3.org/2001/XMLSchema#string> ;

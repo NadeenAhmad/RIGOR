@@ -1,0 +1,8 @@
+<http://www.semanticweb.org/ontologies/2023/3/chemotherapy#chemotherapy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2023/3/chemotherapy#Chemotherapy>.
+<http://www.semanticweb.org/ontologies/2023/3/chemotherapy#chemotherapy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing>.
+<http://www.semanticweb.org/ontologies/2023/3/chemotherapy#chemotherapy> <http://www.semanticweb.org/ontologies/2023/3/chemotherapy#hasPatient> <http://www.semanticweb.org/ontologies/2023/3/chemotherapy#patient>.
+<http://www.semanticweb.org/ontologies/2023/3/chemotherapy#chemotherapy> <http://www.semanticweb.org/ontologies/2023/3/chemotherapy#hasChemotherapyType> <http://www.semanticweb.org/ontologies/2023/3/chemotherapy#chemotherapyType>.
+<http://www.semanticweb.org/ontologies/2023/3/chemotherapy#chemotherapy> <http://www.semanticweb.org/ontologies/2023/3/chemotherapy#hasChemotherapySubstance> <http://www.semanticweb.org/ontologies/2023/3/chemotherapy#chemotherapySubstance>.
+<http://www.semanticweb.org/ontologies/2023/3/chemotherapy#chemotherapy> <http://www.semanticweb.org/ontologies/2023/3/chemotherapy#hasNumberOfCycles> <http://www.semanticweb.org/ontologies/2023/3/chemotherapy#numberOfCycles>.
+<http://www.semanticweb.org/ontologies/2023/3/chemotherapy#chemotherapy> <http://www.semanticweb.org/ontologies/2023/3/chemotherapy#hasChemotherapyMethod> <http://www.semanticweb.org/ontologies/2023/3/chemotherapy#chemotherapyMethod>.
+<http://www.semanticweb.org/ontologies/2023/3/chemotherapy#chemotherapy> <http://www.semanticweb.org/ontologies/2023

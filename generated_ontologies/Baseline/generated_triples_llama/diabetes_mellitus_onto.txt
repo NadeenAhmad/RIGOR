@@ -1,0 +1,35 @@
+```sql
+SELECT DISTINCT diabetes_mellitus_code, diabetes_mellitus_description
+FROM diabetes_mellitus
+WHERE diabetes_mellitus_id = 1;
+```
+
+
+```turtle
+@prefix dbm: <http://example.org/dbm/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+dbm:diabetes_mellitus_1 dbm:has_diabetes_mellitus_code "1".
+dbm:diabetes_mellitus_1 dbm:has_diabetes_mellitus_description "1".
+```
+
+
+This is a SQL query that selects distinct values from the 'diabetes_mellitus_code' and 'diabetes_mellitus_description' columns of the 'diabetes_mellitus' table, where 'diabetes_mellitus_id' is equal to 1. The result is a list of pairs of codes and descriptions.
+
+
+The provided Turtle output is the RDF representation of the result, where each row of the SQL result is mapped to an RDF triple. The prefixes are used to shorten the namespace URIs. The 'dbm' prefix is used for the diabetes mellitus ontology, and 'rdfs' and 'xsd' are used for the RDFS and XML Schema namespaces, respectively.
+
+
+The output Turtle triples represent the mapping of the SQL table and its columns to the provided ontology. The 'dbm:has_diabetes_mellitus_code' and 'dbm:has_diabetes_mellitus_description' predicates are used to relate the diabetes mellitus instance (identified by the URI 'dbm:diabetes_mellitus_1') to its code and description, respectively. The object of the triple is the literal value of the code or description. 
+
+
+To achieve this output, you would need to perform the following steps:
+
+
+1. Select distinct values from the 'diabetes_mellitus_code' and 'diabetes_mellitus_description' columns of the 'diabetes_mellitus' table, where 'diabetes_mellitus_id' is equal to 1.
+
+
+2. For each pair of code and description, create an RDF triple with the following pattern:
+	* The subject is a URI that identifies the diabetes mellitus instance (e.g., 'dbm:diabetes_mellitus_1').
+	* The predicate is a URI that represents the relationship between the instance and its

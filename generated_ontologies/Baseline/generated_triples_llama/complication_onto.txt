@@ -1,0 +1,45 @@
+```
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix : <http://example.org/>.
+
+:complication
+  a dcterms:Dataset ;
+  dcterms:title "Complication Table" ;
+  dcterms:description "A table of complications".
+
+:complication :hasColumn :id.
+:complication :hasColumn :patient_id.
+:complication :hasColumn :created_at.
+:complication :hasColumn :duration_of_inpatient_stay_d.
+:complication :hasColumn :duration_intermediate_care_d.
+:complication :hasColumn :duration_intensive_care_station_d.
+:complication :hasColumn :ventilation_duration_h.
+:complication :hasColumn :noninvasive_ventilation_duration_h.
+:complication :hasColumn :complication_free_progression.
+:complication :hasColumn :liver_failure.
+:complication :hasColumn :urinary_retention.
+:complication :hasColumn :ileus.
+:complication :hasColumn :cholascos.
+:complication :hasColumn :cholangitis.
+:complication :hasColumn :reintubation.
+:complication :hasColumn :pneumonia.
+:complication :hasColumn :thrombosis.
+:complication :hasColumn :embolism.
+:complication :hasColumn :postoperative_bleeding.
+:complication :hasColumn :pleural_effusion.
+:complication :hasColumn :burst_abdomen.
+:complication :hasColumn :liver_abscess.
+:complication :hasColumn :intraabdomineller_Abszess.
+:complication :hasColumn :biliom.
+:complication :hasColumn :decubitus.
+:complication :hasColumn :decubitus_score.
+:complication :hasColumn :secondary_wound_healing.
+:complication :hasColumn :multi_organ_failure.
+:complication :hasColumn :anastomotic_insufficiency.
+:complication :hasColumn :anastomotic_insufficiency_type.
+:complication :hasColumn :other_complications.
+:complication :hasColumn :other_complications_1.
+:complication :hasColumn :other_complications_2.
+:complication :hasColumn :other_complications_3.
+:complication

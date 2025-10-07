@@ -1,0 +1,38 @@
+```sql
+SELECT 
+  sex_id AS?id,
+  sex_category AS?category
+FROM 
+  sex;
+```
+
+
+```turtle
+[] a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+    rdfs:domain <http://example.org/sex>.
+[] a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+    rdfs:domain <http://example.org/sex> ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
+[] a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+    rdfs:domain <http://example.org/sex> ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+[] a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+    rdfs:domain <http://example.org/sex> ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/sex> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Class>.
+[] a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+    rdfs:domain <http://example.org/sex> ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#integer>.
+<http://example.org/sex> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Class>.
+[] a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+    rdfs:domain <http://example.org/sex> ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+[] a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+    rdfs:domain <http://example.org/sex> ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#string>.
+```
+
+
+To generate the RDF triples, we need to map the SQL table and its columns to the provided ontology. We will use the following mapping:
+
+- sex

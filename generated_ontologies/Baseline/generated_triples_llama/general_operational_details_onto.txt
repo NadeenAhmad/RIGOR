@@ -1,0 +1,50 @@
+Please note that the 'general_operational_details' table is used as a source for the ontology mapping.
+
+# For each column in the table, create a triple of the form:
+# <table_name> <column_name> <value>
+# For example, given a row with id = 1, patient_id = 2, created_at = '2020-01-01', op_date = '2020-01-01', surgeon = 'Dr. Smith', etc.
+# the triples would be:
+# general_operational_details id 1
+# general_operational_details patient_id 2
+# general_operational_details created_at 2020-01-01
+# general_operational_details op_date 2020-01-01
+# general_operational_details surgeon Dr. Smith
+# etc.
+
+# Also, note that we are assuming that the 'value' of each column is a literal and not a resource.
+
+# The ontology includes the following classes and properties:
+#  - general_operational_details (class)
+#  - id (property)
+#  - patient_id (property)
+#  - created_at (property)
+#  - op_date (property)
+#  - surgeon (property)
+#  - operation_time_start (property)
+#  - operation_time_end (property)
+#  - operation_duration_min (property)
+#  - laparoscopic_procedure (property)
+#  - conversion_lap_open (property)
+#  - transfusion (property)
+#  - number_ecs (property)
+#  - number_ffps (property)
+#  - cirrhosis_intraop (property)
+#  - intraoperative_new_findings (property)
+#  - intraoperative_new_findings_txt (property)
+#  - previous_operations (property)
+#  - adhesions (property)
+#  - intraop_special_features (property)
+#  - intraop_special_features_text (property)
+#  - access_route (property)
+#  - asa_score (property)
+#  - apfel_score (property)
+#  - anaesthesia_time_start (property)
+#  - anaesthesia_time_end (property)
+#  - anaesthesia_duration_min (property)
+#  - general_anaesthesia (property)
+#  - tiva (property)
+#  - rsi (property)
+#  - ffo (property)
+#  - spa (property)
+#  - lumbar_pda (property)
+#  - thoracic_pda (property
