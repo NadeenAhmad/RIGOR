@@ -1,0 +1,4 @@
+```turtle
+<https://example.com/metastases/1> <https://example.com/ontology#has_id> "metastasen_id".
+<https://example.com/metastases/1> <https://example.com/ontology#has_value> "metastasen_timepoint".
+```

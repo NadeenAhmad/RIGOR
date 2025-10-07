@@ -1,0 +1,32 @@
+```turtle
+@prefix db: <X-NS-PREFIX-FOR-YOUR-SQL-TABLE>.
+@prefix ont: <X-NS-PREFIX-FOR-YOUR-ONTOLOGY>.
+
+<db:1>  a ont:GeneralOperationalDetails ;
+       ont:hasPatientID <patientID> ;
+       ont:hasCreatedAt <createdAt> ;
+       ont:hasOpDate <opDate> ;
+       ont:hasSurgeon <surgeon> ;
+       ont:hasOperationTimeStart <operationTimeStart> ;
+       ont:hasOperationTimeEnd <operationTimeEnd> ;
+       ont:hasOperationDurationMin <operationDurationMin> ;
+       ont:isLaparoscopicProcedure <laparoscopicProcedure> ;
+       ont:isConversionLapOpen <conversionLapOpen> ;
+       ont:hasTransfusion <transfusion> ;
+       ont:hasNumberECS <numberECS> ;
+       ont:hasNumberFFPS <numberFFPS> ;
+       ont:hasCirrhosisIntraop <cirrhosisIntraop> ;
+       ont:hasIntraoperativeNewFindings <intraoperativeNewFindings> ;
+       ont:hasIntraoperativeNewFindingsTxt <intraoperativeNewFindingsTxt> ;
+       ont:hasPreviousOperations <previousOperations> ;
+       ont:hasAdhesions <adhesions> ;
+       ont:hasIntraopSpecialFeatures <intraopSpecialFeatures> ;
+       ont:hasIntraopSpecialFeaturesTxt <intraopSpecialFeaturesTxt> ;
+       ont:hasAccessRoute <accessRoute> ;
+       ont:hasASAscore <asaScore> ;
+       ont:hasApfelscore <apfelScore> ;
+       ont:hasAnaesthesiaTimeStart <anaesthesiaTimeStart> ;
+       ont:hasAnaesthesiaTimeEnd <anaesthesiaTimeEnd> ;
+       ont:hasAnaesthesiaDurationMin <anaesthesiaDurationMin> ;
+       ont:isGeneralAnaesthesia <generalAnaesthesia> ;
+       ont:isTIVA <tiva> .

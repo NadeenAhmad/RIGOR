@@ -1,0 +1,38 @@
+```ttl
+@prefix sql: <http://example.com/sql#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix ex: <http://example.com/>.
+
+ex:labour rdf:type owl:Class ;
+    rdfs:subClassOf <http://example.com/sql/PatientSample>.
+
+ex:id rdf:type owl:DatatypeProperty ;
+    rdfs:subPropertyOf sql:hasID ;
+    rdfs:range xsd:nonNegativeInteger.
+
+ex:patient_id rdf:type owl:DatatypeProperty ;
+    rdfs:subPropertyOf sql:hasPatientID ;
+    rdfs:range xsd:nonNegativeInteger.
+
+ex:created_at rdf:type owl:DatatypeProperty ;
+    rdfs:subPropertyOf sql:hasCreationTime ;
+    rdfs:range xsd:dateTime.
+
+ex:date_laboratory_analysis rdf:type owl:DatatypeProperty ;
+    rdfs:subPropertyOf sql:hasLaboratoryAnalysisDate ;
+    rdfs:range xsd:date.
+
+ex:ASAT_mol_per_l rdf:type owl:DatatypeProperty ;
+    rdfs:subPropertyOf sql:hasASAT ;
+    rdfs:range xsd:float.
+
+ex:ALAT_mol_per_l rdf:type owl:DatatypeProperty ;
+    rdfs:subPropertyOf sql:hasALAT ;
+    rdfs:range xsd:float.
+
+ex:AP_mol_per_l rdf:type owl:DatatypeProperty ;
+    rdfs:subPropertyOf sql:hasAP ;
+    rdfs:range xsd:float.

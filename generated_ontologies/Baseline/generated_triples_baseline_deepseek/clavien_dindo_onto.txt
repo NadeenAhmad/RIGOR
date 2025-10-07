@@ -1,0 +1,24 @@
+```turtle
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix cd: <http://example.com/clavien_dindo#>.
+
+<http://example.com/clavien_dindo/clavien_dindo_id>
+    rdf:type rdf:Property ;
+    rdfs:label "clavien_dindo_id"@en ;
+    rdfs:range xsd:integer.
+
+<http://example.com/clavien_dindo/clavien_dindo_grade>
+    rdf:type rdf:Property ;
+    rdfs:label "clavien_dindo_grade"@en ;
+    rdfs:range rdf:Literal ;
+    rdfs:subPropertyOf cd:has_grade.
+
+<http://example.com/clavien_dindo/clavien_dindo_definition>
+    rdf:type rdf:Property ;
+    rdfs:label "clavien_dindo_definition"@en ;
+    rdfs:range rdf:Literal ;
+    rdfs:subPropertyOf cd:has_definition.
+
+```

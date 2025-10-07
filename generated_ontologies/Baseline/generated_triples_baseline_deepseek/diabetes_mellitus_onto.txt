@@ -1,0 +1,29 @@
+```
+@prefix sql: <http://sql.com/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dcm: <http://purl.org/iso21090/tech#>.
+
+<http://sql.com/table/diabetes_mellitus>
+    a sql:Table;
+    rdfs:label "diabetes_mellitus"@en;
+    dc:description "SQL Table diabetes_mellitus"@en;
+    sql:column
+        "<http://sql.com/table/diabetes_mellitus/column/diabetes_mellitus_id>;"@en,
+        "<http://sql.com/table/diabetes_mellitus/column/diabetes_mellitus_code>;"@en,
+        "<http://sql.com/table/diabetes_mellitus/column/diabetes_mellitus_description>;"@en.
+
+<http://sql.com/table/diabetes_mellitus/column/diabetes_mellitus_id>
+    a sql:Column;
+    rdfs:label "diabetes_mellitus_id"@en;
+    dc:description "Unique identifier for a diabetes mellitus entry"@en;
+    sql:dataTypeName "INTEGER"^^xsd:string;
+    sql:columnKey "PRI"^^xsd:string.
+
+<http://sql.com/table/diabetes_mellitus/column/diabetes_mellitus_code>
+    a sql:Column;
+    rdfs:label "diabetes_mellitus_code"@en;
+    dc:description "Code for a diabetes mellitus entry"@en;
+    sql:dataTypeName "TEXT"^^xsd:string.

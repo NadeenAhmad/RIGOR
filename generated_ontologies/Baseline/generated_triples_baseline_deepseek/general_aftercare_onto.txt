@@ -1,0 +1,21 @@
+
+@prefix sql: <http://example.com/sql#>.
+@prefix ont: <http://example.com/ontology#>.
+
+<http://example.com/general_aftercare/1>
+    a ont:GeneralAftercare ;
+    ont:hasPatient <http://example.com/patient/1> ;
+    ont:hasDateOfAftercare "1234.56"^^xsd:float ;
+    ont:hasHeightCm "170"^^xsd:float ;
+    ont:hasWeightKg "70"^^xsd:float ;
+    ont:hasBmi "24.49"^^xsd:float ;
+    ont:hasIncisionalHernia "1"^^xsd:boolean ;
+    ont:hasIncisionalHerniaSurgery "1"^^xsd:boolean ;
+    ont:hasGallBladderLeakage "1"^^xsd:boolean ;
+    ont:hasSupplyOfTheLeakage "Supplied by X" ;
+    ont:hasBileDuctStenosis "1"^^xsd:boolean ;
+    ont:hasTreatmentOfStenosis "Treatment by Y" ;
+    ont:hasRezCholangitis "1"^^xsd:boolean ;
+    ont:hasAftercareText "Aftercare notes." ;
+    ont:hasOesophagealStenosis "1"^^xsd:boolean.
+```

@@ -1,0 +1,62 @@
+The ontology provided is:
+```bash
+@prefix schema: <http://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix ns: <urn:card:>.
+
+ns:Patient
+	schema:name ;
+	schema:birthDate ;
+	schema:gender ;
+	schema:address ;
+	schema:telephone ;
+	schema:email.
+
+ns:Chemotherapy
+	schema:date ;
+	schema:patient ;
+	schema:radiotherapy ;
+	schema:radiationAmount ;
+	schema:chemotherapy ;
+	schema:cycles ;
+	schema:fiveFluorouracil ;
+	schema:capecitabine ;
+	schema:oxaliplatin ;
+	schema:cisplatin ;
+	schema:epirubicin ;
+	schema:leucovorin ;
+	schema:doxorubicin ;
+	schema:sorafenib ;
+	schema:gemcitabine ;
+	schema:irinotecan ;
+	schema:docetaxel ;
+	schema:paclitaxel ;
+	schema:carboplatin ;
+	schema:otherChemotherapeutics ;
+	schema:specificAntibodies ;
+	schema:tace ;
+	schema:rfa ;
+	schema:photodynamicTherapy ;
+	schema:stableCourse ;
+	schema:progression ;
+	schema:regression ;
+	schema:remission ;
+	schema:tumorBoardDecision ;
+	schema:recommendationsTumorBoard ;
+	schema:implementationTumorBoard ;
+	schema:doseAccordingToBsa ;
+	schema:primaryDoseReduction ;
+	schema:doseReductionOverTime ;
+	schema:sideEffectsOfCx ;
+	schema:emesis ;
+	schema:diarrhea ;
+	schema:alopecia ;
+	schema:handFootSyndrome ;
+	schema:bmDepression ;
+	schema:neurotoxicity ;
+	schema:ototoxicity ;
+	schema:psDeterioration ;
+	schema:otherSideEffects ;
+	schema:ecogStage ;
+	schema:karnofskyIndexPercent ;
+	schema:her2Status.

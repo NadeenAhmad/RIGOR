@@ -1,0 +1,8 @@
+dekubitus_grade_id:
+- DekubitusGrade\_id: dekubitus\_grade\_id\_.
+
+dekubitus_grade_stadium:
+- DekubitusGrade\_stadium: "dekubitus\_grade\_stadium\_".
+
+dekubitus\_grade\_id\_: DekubitusGrade.
+dekubitus\_grade\_stadium\_: DekubitusGrade.

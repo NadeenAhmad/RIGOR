@@ -1,0 +1,31 @@
+```turtle
+@prefix sql: <http://example.org/sql#>.
+@prefix ont: <http://example.org/ont#>.
+
+# Mapping for 'id' column
+sql:id ont:hasId.
+
+# Mapping for 'patient_id' column
+sql:patient_id ont:hasPatientId.
+
+# Mapping for 'pathologist' column
+sql:pathologist ont:hasPathologist.
+
+# Mapping for 'order_number' column
+sql:order_number ont:hasOrderNumber.
+
+# Mapping for 'histological_diagnosis' column
+sql:histological_diagnosis ont:hasHistologicalDiagnosis.
+
+# Mapping for 'histology_summary' column
+sql:histology_summary ont:hasHistologySummary.
+
+# Mapping for each row in the table
+[] a ont:Histology ;
+    ont:hasId sql:id ;
+    ont:hasPatientId sql:patient_id ;
+    ont:hasPathologist sql:pathologist ;
+    ont:hasOrderNumber sql:order_number ;
+    ont:hasHistologicalDiagnosis sql:histological_diagnosis ;
+    ont:hasHistologySummary sql:histology_summary.
+```

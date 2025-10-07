@@ -1,0 +1,20 @@
+```
+INSERT DATA {
+  <http://sql.assignment.com/table/sex> rdf:type owl:Class;
+      rdfs:label "sex"@en;
+      rdf:subClassOf <http://sql.assignment.com/ontology#Table>;
+      rdfs:comment "Table containing data about sex of individuals"@en.
+
+  <http://sql.assignment.com/table/sex/sex_id> rdf:type owl:DatatypeProperty;
+      rdf:propertySchema <http://sql.assignment.com/table/sex/sex_id>;
+      rdfs:label "sex_id"@en;
+      rdfs:range <http://sql.assignment.com/datatype/integer>;
+      rdf:comment "Unique identifier for each record in the table"@en.
+
+  <http://sql.assignment.com/table/sex/sex_category> rdf:type owl:DatatypeProperty;
+      rdf:propertySchema <http://sql.assignment.com/table/sex/sex_category>;
+      rdfs:label "sex_category"@en;
+      rdfs:range <http://sql.assignment.com/datatype/text>;
+      rdf:comment "The category of the sex"@en.
+}
+```

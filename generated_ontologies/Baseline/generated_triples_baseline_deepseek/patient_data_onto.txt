@@ -1,0 +1,9 @@
+```turtle
+<urn:patient_data>
+  a patient_data:PatientData;
+  patient_data:patient_id "123";
+  patient_data:patient_id_old "456";
+  patient_data:created_at "2022-01-01T00:00:00Z";
+  patient_data:sex "male";
+  patient_data:age_at_surgery "30".
+```

@@ -1,0 +1,17 @@
+```ttl
+# Mapping for id
+_:table_19162337_0 <http://purl.org/dc/terms/identifier> "1".
+_:table_19162337_0 <http://purl.org/dc/terms/source> "id".
+
+# Mapping for patient_id
+_:table_19162337_1 <http://purl.org/dc/terms/identifier> "2".
+_:table_19162337_1 <http://purl.org/dc/terms/source> "patient_id".
+
+# Mapping for ICD
+_:table_19162337_2 <http://purl.org/dc/terms/identifier> "Z00.00".
+_:table_19162337_2 <http://purl.org/dc/terms/source> "ICD".
+
+# Mapping for ICD_discription
+_:table_19162337_3 <http://purl.org/dc/terms/identifier> "Encounter for (initial) health screening; individual".
+_:table_19162337_3 <http://purl.org/dc/terms/source> "ICD_discription".
+```

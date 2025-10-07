@@ -1,0 +1,6 @@
+```ttl
+##patient_id
+_:b1 a schema:MedicalHistory ;
+    schema:patient_id "123" ;
+   .
+```

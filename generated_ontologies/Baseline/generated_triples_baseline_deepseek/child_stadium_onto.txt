@@ -1,0 +1,15 @@
+### Turtle
+```turtle
+@prefix schema: <http://schema.org/>.
+@prefix db: <http://db.example.com/>.
+
+<http://db.example.com/child_stadium_1>
+    a schema:ChildStadium;
+    schema:childStadiumDefinition "child_stadium_definition_1" ;
+    db:childStadiumId "child_stadium_id_1".
+
+<http://db.example.com/child_stadium_2>
+    a schema:ChildStadium;
+    schema:childStadiumDefinition "child_stadium_definition_2" ;
+    db:childStadiumId "child_stadium_id_2".
+```

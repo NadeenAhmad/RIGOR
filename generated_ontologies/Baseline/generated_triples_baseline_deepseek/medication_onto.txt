@@ -1,0 +1,41 @@
+To complete this task, I'll use the provided SQL table schema and map the columns to the corresponding properties in the ontology. Then, I'll generate RDF triples in Turtle format based on the mappings.
+
+1. Map the table and column names to the ontology properties:
+```
+id -> :id
+patient_id -> :patientId
+created_at -> :createdAt
+ASS -> :ass
+Plavix -> :plavix
+Anti_Xa -> :antiXa
+Falithrom_Marcumar -> :falithromMarcumar
+NSAR -> :nsar
+Steroide -> :steroids
+Steroide_Tagesdosis -> :steroidsDosage
+Antidepressiva -> :antidepressants
+Antihypertensiva -> :antihypertensives
+Anzahl_der_Antihypertensiva -> :numberOfAntihypertensives
+Thyreostatika -> :thyreostatika
+Schilddrsenhormone -> :thyroidHormones
+Protonenpumpeninhibitoren -> :protonPumpInhibitors
+Urikostatika -> :urikostatika
+orale_Antidiabetika -> :oralAntidiabetics
+Insulin -> :insulin
+Insulin_Tagesdosis -> :insulinDosage
+inhalative_Bronchodilatatoren -> :inhaledBronchodilators
+weitere_Medikation -> :additionalMedication
+weitere_Medikation_1_Text -> :additionalMedicationText1
+Statine -> :statin
+Diuretika -> :diuretic
+weitere_Medikation_2 -> :additionalMedication2
+weitere_Medikation_2_Text -> :additionalMedicationText2
+weitere_Medikation_3 -> :additionalMedication3
+weitere_Medikation_3_Text -> :additionalMedicationText3
+weitere_Medikation_4 -> :additionalMedication4
+weitere_Medikation_4_Text -> :additionalMedicationText4
+weitere_Medikation_5 -> :additionalMedication5
+weitere_Medikation_5_Text -> :additionalMedicationText5
+```
+2. Generate RDF triples in Turtle format:
+```arduino
+<id> :id
