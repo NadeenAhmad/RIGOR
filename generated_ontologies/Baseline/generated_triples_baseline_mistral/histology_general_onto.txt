@@ -1,0 +1,19 @@
+@prefix : <http://example.org/ontology#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+:histology_general  a  rdf:Class ;
+    rdfs:label  "Histology General" ;
+    rdfs:comment  "A table representing general histology information.".
+
+:histology_general_id  a  rdf:Property ;
+    rdfs:label  "Histology General ID" ;
+    rdfs:comment  "The unique identifier of the histology general record." ;
+    rdfs:domain  :histology_general ;
+    rdfs:range  xsd:integer.
+
+:histology_general_patient_id  a  rdf:Property ;
+    rdfs:label  "Histology General Patient ID" ;
+    rdfs:comment  "The patient ID associated with the histology general record." ;
+    rdfs:domain  :

@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix ex: <http://example.org/ontology#>.
+
+ex:Chemotherapy a rdfs:Class ;
+    rdfs:label "Chemotherapy"@en.
+
+ex:hasId a rdf:Property ;
+    rdfs:domain ex:Chemotherapy ;
+    rdfs:range xsd:integer.
+
+ex:hasPatientId a rdf:Property ;
+    rdfs:domain ex:Chemotherapy ;
+    rdfs:range xsd:integer.
+
+ex:hasCreatedAt a rdf:Property ;
+    rdfs:domain ex:Chemotherapy ;
+    rdfs:range xsd:dateTime.
+
+ex:hasRadiotherapy a rdf:Property ;
+    rdfs:domain ex:Chemotherapy ;
+    rdfs:range xsd:boolean.
+
+ex:hasRadiationAmountInGray a rdf:Property ;
+   

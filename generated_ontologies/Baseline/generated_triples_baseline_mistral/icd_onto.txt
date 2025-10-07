@@ -1,0 +1,13 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix ex: <http://example.org/ontology#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+ex:icd rdf:type rdfs:Class ;
+       rdfs:label "ICD Table".
+
+ex:id rdf:type rdf:Property ;
+       rdfs:domain ex:icd ;
+       rdfs:range xsd:integer.
+
+ex:patient_id

@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix ex: <http://example.org/ontology#>.
+
+ex:Labour a rdfs:Class ;
+    rdfs:label "Labour".
+
+ex:Labour_id a rdf:Property ;
+    rdfs:label "Labour ID" ;
+    rdfs:domain ex:Labour ;
+    rdfs:range xsd:integer.
+
+ex:Patient_id a rdf:Property ;
+    rdfs:label "Patient ID" ;
+    rdfs:domain ex:Labour ;
+    rdfs:range xsd:integer.
+
+ex:Created_at a rdf:Property ;
+    rdfs:label "Created At" ;
+    rdfs:domain ex:Labour ;
+    rdfs:range xsd:dateTime.
+
+ex:Date_laboratory_analysis a rdf:Property ;
+    rdfs:

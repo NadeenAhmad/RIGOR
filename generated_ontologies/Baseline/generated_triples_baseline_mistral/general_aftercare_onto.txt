@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix ex: <http://example.org/ontology#>.
+@prefix ex2: <http://example.org/aftercare#>.
+
+ex:GeneralAftercare a owl:Class ;
+    rdfs:label "General Aftercare"@en.
+
+ex:patientID a owl:DatatypeProperty ;
+    rdfs:label "Patient ID"@en ;
+    rdfs:domain ex:GeneralAftercare ;
+    rdfs:range xsd:integer.
+
+ex:createdAt a owl:DatatypeProperty ;
+    rdfs:label "Created At"@en ;
+    rdfs:domain ex:GeneralAftercare ;
+    rdfs:range xsd:dateTime.
+
+ex:dateOfAftercare a owl:

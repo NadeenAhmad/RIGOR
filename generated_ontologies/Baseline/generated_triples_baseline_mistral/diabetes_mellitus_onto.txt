@@ -1,0 +1,19 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix diabetes: <http://example.org/ontology/diabetes#>.
+
+diabetes:DiabetesMellitus a rdfs:Class ;
+    rdfs:label "Diabetes Mellitus".
+
+diabetes:diabetesMellitusId a rdf:Property, rdfs:DatatypeProperty ;
+    rdfs:label "Diabetes Mellitus ID" ;
+    rdfs:domain diabetes:DiabetesMellitus ;
+    rdfs:range xsd:integer.
+
+diabetes:diabetesMellitusCode a rdf:Property, rdfs:DatatypeProperty ;
+    rdfs:label "Diabetes Mellitus Code" ;
+    rdfs:domain diabetes:DiabetesMellitus ;
+    rdfs:range xsd:string.
+
+diabetes:diabetesMellitusDescription a rdf:Property,

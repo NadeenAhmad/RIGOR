@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix ex: <http://example.org/ontology#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+# Table mapping
+ex:medication a rdfs:Class ;
+             rdfs:label "Medication"@en.
+
+# Columns mapping
+ex:id a rdf:Property ;
+      rdfs:domain ex:medication ;
+      rdfs:range xsd:integer ;
+      rdfs:label "ID"@en.
+
+ex:patient_id a rdf:Property ;
+              rdfs:domain ex:medication ;
+              rdfs:range xsd:integer ;
+              rdfs:label "Patient ID"@en.
+
+ex:created_at a rdf:Property ;
+             rdfs:domain ex:medication ;
+             rdfs:range xsd:dateTime ;
+             rdfs:label "Created At"@en.
+
+ex:ASS a rdf:Property ;
+     

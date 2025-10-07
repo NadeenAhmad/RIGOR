@@ -1,0 +1,10 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix ex: <http://example.org/ontology#>.
+@prefix sql: <http://example.org/sql#>.
+
+# Table mapping
+sql:general_operational_details rdf:type ex:Table ;
+    rdfs:comment "Table for general operational details" ;
+    ex:hasColumn sql:id, sql:patient_id, sql:created_at, sql:op_date, sql:surgeon, sql:operation_time_start, sql:operation_time_end, sql:operation_duration_min, sql:laparoscopic_procedure, sql:conversion_lap_open, sql:transfusion, sql:number_ecs, sql:number_ffps, sql:cirrhosis_intraop, sql:intraoperative_new_findings, sql:intraoperative_new_findings_txt, sql:previous_operations, sql:adhesions, sql

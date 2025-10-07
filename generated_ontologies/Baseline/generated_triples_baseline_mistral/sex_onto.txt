@@ -1,0 +1,14 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix ex: <http://example.org/ontology#>.
+@prefix sql: <http://example.org/sql#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+sql:sex_table rdf:type rdfs:Class.
+sql:sex_id rdf:type rdf:Property ;
+    rdfs:domain sql:sex_table ;
+    rdfs:range xsd:integer.
+
+sql:sex_category rdf:type rdf:Property ;
+    rdfs:domain sql:sex_table ;
+    rdfs:range xsd:string.

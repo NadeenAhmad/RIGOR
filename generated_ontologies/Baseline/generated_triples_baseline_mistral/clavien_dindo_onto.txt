@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix sql: <http://www.example.org/sql#>.
+@prefix ex: <http://www.example.org/ex#>.
+
+# Table
+sql:clavien_dindo rdf:type rdfs:Class ;
+    rdfs:label "Clavien-Dindo Table"@en.
+
+# Columns
+sql:clavien_dindo_id rdf:type rdf:Property ;
+    rdfs:domain sql:clavien_dindo ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Clavien-Dindo ID"@en.
+
+sql:clavien_dindo_grade rdf:type rdf:Property ;
+    rdfs:domain sql:clavien_dindo ;
+    rdfs:range xsd:string ;
+    rdfs:label "Clavien-Dindo Grade"@en.
+
+sql:clavien_dindo_def

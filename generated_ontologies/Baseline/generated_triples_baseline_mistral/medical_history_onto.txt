@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix foo: <http://example.org/ontology#>.
+@prefix : <http://example.org/ontology#>.
+
+foo:MedicalHistory a rdfs:Class ;
+    rdfs:label "Medical History"@en ;
+    rdfs:comment "Represents the medical history of a patient."@en.
+
+foo:patient a rdf:Property ;
+    rdfs:label "Patient"@en ;
+    rdfs:domain foo:MedicalHistory ;
+    rdfs:range xsd:integer.
+
+foo:createdAt a rdf:Property ;
+    rdfs:label "Created At"@en ;
+    rdfs:domain foo:MedicalHistory ;
+    rdfs:range xsd:dateTime.
+
+foo:bodySizeCm a rdf:Property ;
+    rdfs:label "Body Size (cm)"@en

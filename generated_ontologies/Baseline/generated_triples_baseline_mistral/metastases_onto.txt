@@ -1,0 +1,13 @@
+@prefix ex: <http://example.org/>.
+@prefix rdf: <http://www.w3.org/1999/02/23-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+ex:metastases a rdf:Class ;
+    rdfs:label "Metastases" ;
+    rdfs:comment "Table representing metastases data".
+
+ex:metastasen_id a rdf:Property ;
+    rdfs:label "Metastases ID" ;
+    rdfs:domain ex:metastases ;
+    rdfs:range x
