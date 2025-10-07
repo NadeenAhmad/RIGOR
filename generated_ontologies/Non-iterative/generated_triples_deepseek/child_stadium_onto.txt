@@ -1,0 +1,26 @@
+```turtle
+@prefix : <http://example.org/data/>.
+@prefix schema: <http://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix obo: <http://purl.obolibrary.org/obo/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix doid: <http://purl.obolibrary.org/obo/doid#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dc11: <http://purl.org/dc/dcmitype/>.
+
+:child_stadium_id dc11:hasVersion "1"^^xsd:decimal.
+:child_stadium_id dc:title "Child Stadium ID"@en ;
+    schema:description "Unique identifier for a child stadium."@en.
+
+:child_stadium_definition dc11:hasVersion "1"^^xsd:decimal.
+:child_stadium_definition dc:title "Child Stadium Definition"@en ;
+    schema:description "Definition or description of a child stadium."@en.
+
+:child_stadium_id dc11:hasVersion "1"^^xsd:decimal.
+:child_stadium_id dc:title "Child Stadium ID"@en ;
+    schema:description "Unique identifier for a child stadium."@en.
+
+:child_stadium_definition dc11:hasVersion "1"^^xsd:decimal.
+:child_stadium_definition dc:title "Child Stadium Definition"@en ;
+    schema:description "Definition or description of a child stadium."@en.

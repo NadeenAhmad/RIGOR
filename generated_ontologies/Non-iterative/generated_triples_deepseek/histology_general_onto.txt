@@ -1,0 +1,40 @@
+```turtle
+@prefix : <http://example.org/ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix sql: <http://sql.example.org/>.
+
+sql:histology_general rdf:type owl:Class ;
+    rdfs:subClassOf :ChemotherapyRecord ;
+    rdfs:comment "SQL table for histology_general".
+
+sql:histology_general_id rdf:type owl:ObjectProperty ;
+    rdfs:domain sql:histology_general ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "Patient ID".
+
+sql:pathologist rdf:type owl:ObjectProperty ;
+    rdfs:domain sql:histology_general ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Pathologist".
+
+sql:order_number rdf:type owl:ObjectProperty ;
+    rdfs:domain sql:histology_general ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Order number".
+
+sql:histological_diagnosis rdf:type owl:ObjectProperty ;
+    rdfs:domain sql:histology_general ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Histological diagnosis".
+
+sql:histology_summary rdf:type owl:ObjectProperty ;
+    rdfs:domain sql:histology_general ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Histology summary".
+
+<http://example.org/data/chemotherapy123> rdf:type sql:histology_general ;
+    sql:histology_general_id "123" ;
+    sql:pathologist "Dr. Smith" ;
+    sql:order_number "ORD123" ;
+    sql:histological_diagnosis "Breast cancer" ;
+    sql:histology_summary "Invasive ductal carcinoma, ER+, PR+, HER2-".

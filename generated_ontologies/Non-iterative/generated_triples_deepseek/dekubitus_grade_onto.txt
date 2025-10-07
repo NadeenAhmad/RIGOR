@@ -1,0 +1,18 @@
+```turtle
+@prefix : <http://example.org/ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix obo: <http://purl.obolibrary.org/obo/>.
+@prefix doid: <http://purl.obolibrary.org/obo/doid#>.
+
+:dekubitus_grade_id rdf:type owl:OntologyProperty;
+	rdf:range xsd:integer;
+    rdfs:subPropertyOf obo:IAO_0000115.
+
+:dekubitus_grade_stadium rdf:type owl:OntologyProperty;
+	rdf:range rdf:string;
+    rdfs:subPropertyOf obo:IAO_0000115.
+```

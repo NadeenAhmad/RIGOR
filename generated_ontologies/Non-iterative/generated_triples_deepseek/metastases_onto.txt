@@ -1,0 +1,12 @@
+```turtle
+<http://example.org/data/metastases/1> 
+    a doid:Metastasis ;
+    doid:has_ontology_root_term <http://purl.obolibrary.org/obo/doid#DOID_3187> ;
+    doid:metastasen_id "1"^^xsd:nonNegativeInteger.
+
+<http://example.org/data/metastases/1> 
+    a doid:Metastasis ;
+    doid:has_ontology_root_term <http://purl.obolibrary.org/obo/doid#DOID_3187> ;
+    doid:metastasen_id "1"^^xsd:nonNegativeInteger ;
+    doid:metastasen_timepoint "6 months"^^xsd:string.
+```

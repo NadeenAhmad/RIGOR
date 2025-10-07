@@ -1,0 +1,24 @@
+The following RDF Turtle code can be generated for the provided SQL table and Gold Standard Ontology:
+```python
+@prefix : <http://example.org/data/>.
+@prefix doid: <http://purl.obolibrary.org/obo/doid.owl#>.
+
+:diabetes_mellitus_id doid:DOID_2074 doid:DO_AGR_slim "Diabetes mellitus".
+:diabetes_mellitus_id doid:DOID_2074 doid:DO_CFDE_slim "Diabetes mellitus".
+:diabetes_mellitus_id doid:DOID_2074 rdfs:label "Diabetes mellitus".
+:diabetes_mellitus_id doid:DOID_2074 doid:has_ontology_root_term doid:DOID_2074.
+:diabetes_mellitus_id doid:DOID_2074 doid:has_root_term "D021907"^^xsd:string.
+
+:diabetes_mellitus_code doid:DOID_2074 doid:DO_AGR_slim "Diabetes mellitus".
+:diabetes_mellitus_code doid:DOID_2074 doid:DO_CFDE_slim "Diabetes mellitus".
+:diabetes_mellitus_code doid:DOID_2074 rdfs:label "Diabetes mellitus".
+:diabetes_mellitus_code doid:DOID_2074 doid:has_ontology_root_term doid:DOID_2074.
+:diabetes_mellitus_code doid:DOID_2074 doid:has_root_term "D021907"^^xsd:string.
+
+:diabetes_mellitus_description doid:DOID_2074 doid:DO_AGR_slim "Diabetes mellitus".
+:diabetes_mellitus_description doid:DOID_2074 doid:DO_CFDE_slim "Diabetes mellitus".
+:diabetes_mellitus_description doid:DOID_2074 rdfs:label "Diabetes mellitus".
+:diabetes_mellitus_description doid:DOID_2074 doid:has_ontology_root_term doid:DOID_2074.
+:diabetes_mellitus_description doid:DOID_2074 doid:has_root_term "D021907"^^xsd:string.
+```
+This code maps the columns of the provided SQL table to the corresponding terms in the Gold Standard Ontology using the `doid:` prefix. Each column is associated with the term "Diabetes mellitus" using the `DOID_2074` identifier. The `DOID_2074` identifier is also associated with the root term "D021907" using the `has_root_term` property.

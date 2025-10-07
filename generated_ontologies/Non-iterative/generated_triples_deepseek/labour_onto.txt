@@ -1,0 +1,1 @@
+The provided core and gold ontologies do not have any concepts that directly map to the columns in the SQL table. Therefore, it is not possible to generate RDF triples mapping the SQL table and its columns to the provided ontology using the domain and competency questions/answers.

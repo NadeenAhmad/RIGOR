@@ -1,0 +1,21 @@
+```turtle
+@prefix : <http://example.org/data/>.
+@prefix icd: <http://example.org/ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+:icd_table_1234 rdfs:seeAlso icd:ID;
+                  rdfs:seeAlso icd:patient_id;
+                  rdfs:seeAlso icd:ICD;
+                  rdfs:seeAlso icd:ICD_description.
+
+:icd_row_1 rdfs:seeAlso icd:ID "1";
+            rdfs:seeAlso icd:patient_id "1234";
+            rdfs:seeAlso icd:ICD "D0001";
+            rdfs:seeAlso icd:ICD_description "Description for ICD D0001".
+
+:icd_row_2 rdfs:seeAlso icd:ID "2";
+            rdfs:seeAlso icd:patient_id "1235";
+            rdfs:seeAlso icd:ICD "D0002";
+            rdfs:seeAlso icd:ICD_description "Description for ICD D0002".

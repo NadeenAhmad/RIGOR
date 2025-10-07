@@ -1,0 +1,43 @@
+```turtle
+@prefix : <http://example.org/ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix obo: <http://purl.obolibrary.org/obo/>.
+@prefix omo: <http://purl.obolibrary.org/obo/OMO_>.
+@prefix doid: <http://purl.obolibrary.org/obo/doid#>.
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_>.
+@prefix chemo: <http://example.org/ontology/chemotherapy#>.
+@prefix ecog: <http://example.org/ontology/ecog_stage#>.
+@prefix karno: <http://example.org/ontology/karnofsky_index_percent#>.
+@prefix her: <http://example.org/ontology/her_2_status#>.
+@prefix micros: <http://example.org/ontology/microsatellites#>.
+
+<http://example.org/data/chemotherapy123>
+    a chemo:ChemotherapyRecord ;
+    :hasPatient <http://example.org/data/patient456> ;
+    :includesDrug :<http://example.org/ontology/oxaliplatin> ;
+    :hasSideEffect :<http://example.org/ontology/neurotoxicity> ;
+    :hasTreatmentOutcome :<http://example.org/ontology/remission>.
+
+<http://example.org/ontology/oxaliplatin>
+    a owl:Class, obo:CHEMBL_1295 ;
+    rdfs:subClassOf chemo:Drug ;
+    dc:source "ChEMBL"^^xsd:string ;
+    dc:identifier "CHEMBL1295"^^xsd:string.
+
+<http://example.org/ontology/neurotoxicity>
+    a owl:Class, obo:DOID_12841 ;
+    rdfs:subClassOf chemo:SideEffect ;
+    dc:source "DO"^^xsd:string ;
+    dc:identifier "DOID_12841"^^xsd:string.
+
+<http://example.org/ontology/remission>
+    a owl:Class, obo:DOID_11621 ;
+    rdfs:subClassOf chemo:TreatmentOutcome ;
+    dc:source "DO"^^xsd:string ;
+    dc:identifier "DOID_11621"^^xsd:string.
+```

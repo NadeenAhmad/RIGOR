@@ -1,0 +1,25 @@
+You can use the prefix 'com' for the table 'complication'.
+
+mapping = {
+    "com:id": "http://purl.obolibrary.org/obo/doid#DOID_0030204",
+    "com:patient_id": "http://purl.obolibrary.org/obo/doid#DOID_0030204",
+    "com:created_at": "http://purl.obolibrary.org/obo/doid#DOID_0030204",
+    "com:duration_of_inpatient_stay_d": "http://purl.obolibrary.org/obo/doid#DOID_0030204",
+    "com:duration_intermediate_care_d": "http://purl.obolibrary.org/obo/doid#DOID_0030204",
+    "com:duration_intensive_care_station_d": "http://purl.obolibrary.org/obo/doid#DOID_0030204",
+    "com:ventilation_duration_h": "http://purl.obolibrary.org/obo/doid#DOID_0030204",
+    "com:noninvasive_ventilation_duration_h": "http://purl.obolibrary.org/obo/doid#DOID_0030204",
+    "com:complication_free_progression": "http://purl.obolibrary.org/obo/doid#DOID_0030204",
+    "com:liver_failure": "http://purl.obolibrary.org/obo/doid#DOID_0030204",
+    "com:urinary_retention": "http://purl.obolibrary.org/obo/doid#DOID_0030204",
+    "com:ileus": "http://purl.obolibrary.org/obo/doid#DOID_0030204",
+    "com:cholascos": "http://purl.obolibrary.org/obo/doid#DOID_0030204",
+    "com:cholangitis": "http://purl.obolibrary.org/obo/doid#DOID_0030204",
+    "com:reintubation": "http://purl.obolibrary.org/obo/doid#DOID_0030204",
+    "com:pneumonia": "http://purl.obolibrary.org/obo/doid#DOID_0030204",
+    "com:thrombosis": "http://purl.obolibrary.org/obo/doid#DOID_0030204",
+    "com:embolism": "http://purl.obolibrary.org/obo/doid#DOID_0030204",
+    "com:postoperative_bleeding": "http://purl.obolibrary.org/obo/doid#DOID_0030204",
+    "com:burst_abdomen": "http://purl.obolibrary.org/obo/doid#DOID_0030204",
+    "com:liver_abscess": "http://purl.obolibrary.org/obo/doid#DOID_0030204",
+    "com:non-

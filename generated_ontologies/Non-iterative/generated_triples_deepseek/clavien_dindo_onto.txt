@@ -1,0 +1,40 @@
+```xml
+@prefix : <http://example.org/ontology/>
+@prefix dcterms: <http://purl.org/dc/terms/>
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+@prefix sql: <http://sql.linkeddata.es/ontology#>
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<http://example.org/data/patient456>
+    a sql:Patient;
+    rdfs:seeAlso <http://example.org/data/patient456>;
+    dcterms:identifier "patient456"^^xsd:string.
+    
+<http://example.org/data/chemotherapy123>
+    a sql:ChemotherapyRecord;
+    rdfs:seeAlso <http://example.org/data/chemotherapy123>;
+    dcterms:identifier "chemotherapy123"^^xsd:string.
+    
+<http://example.org/data/patient456> sql:hasChemotherapyRecord <http://example.org/data/chemotherapy123>.
+
+<http://example.org/data/chemotherapy123>
+    sql:hasDrug :Oxaliplatin;
+    sql:hasSideEffect :Neurotoxicity;
+    sql:hasTreatmentOutcome :Remission.
+
+:Oxaliplatin
+    a :ChemotherapyDrug;
+    rdfs:seeAlso <http://example.org/data/oxaliplatin>;
+    dcterms:identifier "Oxaliplatin"^^xsd:string.
+    
+:Neurotoxicity
+    a :ChemotherapySideEffect;
+    rdfs:seeAlso <http://example.org/data/neurotoxicity>;
+    dcterms:identifier "Neurotoxicity"^^xsd:string.
+    
+:Remission
+    a :ChemotherapyTreatmentOutcome;
+    rdfs:seeAlso <http://example.org/data/remission>;
+    dcterms:identifier "Remission"^^xsd:string.
+```

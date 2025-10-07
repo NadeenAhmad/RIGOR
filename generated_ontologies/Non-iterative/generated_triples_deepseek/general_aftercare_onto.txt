@@ -1,0 +1,43 @@
+```turtle
+@prefix : <http://example.org/data/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix ontology: <http://purl.obolibrary.org/obo/doid.owl#>.
+
+:patient456 ontology:has_ontology_root_term "http://purl.obolibrary.org/obo/DOID_11192".
+
+:general_aftercare ontology:has_ontology_root_term "http://purl.obolibrary.org/obo/DOID_11192".
+
+:general_aftercare ontology:DO_AGR_slim "http://purl.obolibrary.org/obo/DOID_21408".
+
+:general_aftercare ontology:DO_CFDE_slim "http://purl.obolibrary.org/obo/DOID_11192".
+
+:patient456 :hasPatient :general_aftercare.
+
+:general_aftercare :created_at "2023-03-24T00:00:00Z"^^xsd:dateTime.
+
+:general_aftercare :date_of_aftercare 178.71^^xsd:float.
+
+:general_aftercare :height_cm 178.71^^xsd:float.
+
+:general_aftercare :weight_kg 80.34^^xsd:float.
+
+:general_aftercare :bmi 24.73^^xsd:float.
+
+:general_aftercare :incisional_hernia 1^^xsd:int.
+
+:general_aftercare :incisional_hernia_surgery 1^^xsd:int.
+
+:general_aftercare :gall_bladder_leakage "http://purl.obolibrary.org/obo/DOID_11192".
+
+:general_aftercare :supply_of_the_leakage "Chemotherapy".
+
+:general_aftercare :bile_duct_stenosis 1^^xsd:int.
+
+:general_aftercare :treatment_of_stenosis "Surgery".
+
+:general_aftercare :rezes_cholangitis 1^^xsd:int.
+
+:general_aftercare :aftercare_text "This is the aftercare text.".
+
+:general_aftercare :oesophageal_stenosis 1^^xsd:int.
+```

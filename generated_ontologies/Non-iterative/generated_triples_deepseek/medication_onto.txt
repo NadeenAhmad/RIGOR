@@ -1,0 +1,11 @@
+For example, if the 'id' column from the SQL table was mapped to 'DOID_0015008' in the gold standard ontology, the generated Turtle triple would be:
+```makefile
+:medication_01 doid:DOID_0015008.
+```
+
+If the 'patient_id' column from the SQL table was mapped to 'DOID_0015008' in the gold standard ontology, the generated Turtle triple would be:
+```makefile
+:medication_01 doid:DOID_0015008 :patient_id_01.
+```
+
+Note: Assume that the 'id' and 'patient_id' columns are unique within the SQL table. If a column is not mappable to any term in the gold standard ontology, you can map it to the term 'DOID_0000000' which represents 'unknown'.

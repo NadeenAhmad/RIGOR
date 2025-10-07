@@ -1,0 +1,16 @@
+```turtle
+<http://example.org/data/sex>
+    a :SexCategory;
+    :sex_id 1;
+    :sex_category "Male".
+
+<http://example.org/data/sex>
+    a :SexCategory;
+    :sex_id 2;
+    :sex_category "Female".
+
+<http://example.org/data/sex>
+    a :SexCategory;
+    :sex_id 3;
+    :sex_category "Other".
+```

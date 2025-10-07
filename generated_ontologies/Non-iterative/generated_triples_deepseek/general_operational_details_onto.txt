@@ -1,0 +1,32 @@
+```turtle
+_:1 a :general_operational_details ;
+    :id "1" ;
+    :patient_id "1" ;
+    :created_at "2023-03-15T10:30:00" ;
+    :op_date "2023-03-15" ;
+    :surgeon "Dr. Smith" ;
+    :operation_time_start "10:30" ;
+    :operation_time_end "12:30" ;
+    :operation_duration_min "180" ;
+    :laparoscopic_procedure "1" ;
+    :conversion_lap_open "0" ;
+    :transfusion "0" ;
+    :number_ecs "5" ;
+    :number_ffps "2" ;
+    :cirrhosis_intraop "0" ;
+    :intraoperative_new_findings "1" ;
+    :intraoperative_new_findings_txt "New finding: Bleeding" ;
+    :previous_operations "1" ;
+    :adhesions "1" ;
+    :intraop_special_features "1" ;
+    :intraop_special_features_text "Special feature: Use of new instrument" ;
+    :access_route "Laparoscopic" ;
+    :asa_score "2" ;
+    :apfel_score "3" ;
+    :anaesthesia_time_start "10:30" ;
+    :anaesthesia_time_end "12:30" ;
+    :anaesthesia_duration_min "180" ;
+    :general_anaesthesia "1" ;
+    :tiva "0" ;
+    :r
+```
