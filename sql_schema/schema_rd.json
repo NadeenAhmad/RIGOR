@@ -1,0 +1,565 @@
+{
+  "chemotherapy": {
+    "columns": {
+      "id": "INTEGER",
+      "patient_id": "INTEGER",
+      "created_at": "TIMESTAMP",
+      "radiotherapy": "TINYINT",
+      "radiation_amount_in_gray": "FLOAT",
+      "chemotherapy": "TINYINT",
+      "number_of_cycles": "INTEGER",
+      "five_fluorouracil": "TINYINT",
+      "capecitabine": "TINYINT",
+      "oxaliplatin": "TINYINT",
+      "cisplatin": "TINYINT",
+      "epirubicin": "TINYINT",
+      "leucovorin": "TINYINT",
+      "doxorubicin": "TINYINT",
+      "sorafenib": "TINYINT",
+      "gemcitabine": "TINYINT",
+      "irinotecan": "TINYINT",
+      "docetaxel": "TINYINT",
+      "paclitaxel": "TINYINT",
+      "carboplatin": "TINYINT",
+      "folic_acid": "TINYINT",
+      "other_chemotherapeutics_i": "TEXT",
+      "other_chemotherapeutics_ii": "TEXT",
+      "other_chemotherapeutics_iii": "TEXT",
+      "specific_antibodies": "TINYINT",
+      "specific_antibodies_text": "TEXT",
+      "tace": "TINYINT",
+      "rfa": "TINYINT",
+      "tace_cycles": "INTEGER",
+      "rfa_cycles": "INTEGER",
+      "photodynamic_therapy": "TINYINT",
+      "pdt_cycles": "INTEGER",
+      "stable_course": "TINYINT",
+      "progression": "TINYINT",
+      "regression": "TINYINT",
+      "remission": "TINYINT",
+      "tumor_board_decision": "TINYINT",
+      "recommendations_tumor_board": "TEXT",
+      "implementation_tumor_board": "TINYINT",
+      "dose_according_to_bsa": "TINYINT",
+      "primary_dose_reduction": "TINYINT",
+      "dose_reduction_over_time": "TINYINT",
+      "side_effects_of_cx": "TINYINT",
+      "emesis": "TINYINT",
+      "diarrhea": "TINYINT",
+      "alopecia": "TINYINT",
+      "hand_foot_syndrome": "TINYINT",
+      "bm_depression": "TINYINT",
+      "neurotoxicity": "TINYINT",
+      "ototoxicity": "TINYINT",
+      "ps_deterioration": "TINYINT",
+      "other_side_effects": "TINYINT",
+      "other_side_effects_text": "TEXT",
+      "ecog_stage": "INTEGER",
+      "karnofsky_index_percent": "INTEGER",
+      "her_2_status": "INTEGER",
+      "microsatellites": "INTEGER",
+      "implementation_of_chemotherapy_uncertain": "TINYINT",
+      "chemoterapy_neoadjuvant": "TINYINT",
+      "chemoterapy_adjuvant": "TINYINT",
+      "chemoterapy_palliativ": "TINYINT"
+    },
+    "foreign_keys": []
+  },
+  "child_stadium": {
+    "columns": {
+      "child_stadium_id": "INTEGER",
+      "child_stadium_definition": "TEXT"
+    },
+    "foreign_keys": []
+  },
+  "clavien_dindo": {
+    "columns": {
+      "clavien_dindo_id": "INTEGER",
+      "clavien_dindo_grade": "TEXT",
+      "clavien_dindo_definition": "TEXT"
+    },
+    "foreign_keys": []
+  },
+  "complication": {
+    "columns": {
+      "id": "INTEGER",
+      "patient_id": "INTEGER",
+      "created_at": "TIMESTAMP",
+      "duration_of_inpatient_stay_d": "FLOAT",
+      "duration_intermediate_care_d": "FLOAT",
+      "duration_intensive_care_station_d": "FLOAT",
+      "ventilation_duration_h": "FLOAT",
+      "noninvasive_ventilation_duration_h": "FLOAT",
+      "complication_free_progression": "TINYINT",
+      "liver_failure": "TINYINT",
+      "urinary_retention": "TINYINT",
+      "ileus": "TINYINT",
+      "cholascos": "TINYINT",
+      "cholangitis": "TINYINT",
+      "reintubation": "TINYINT",
+      "pneumonia": "TINYINT",
+      "thrombosis": "TINYINT",
+      "embolism": "TINYINT",
+      "postoperative_bleeding": "TINYINT",
+      "pleural_effusion": "TINYINT",
+      "burst_abdomen": "TINYINT",
+      "liver_abscess": "TINYINT",
+      "intraabdomineller_Abszess": "TINYINT",
+      "biliom": "TINYINT",
+      "decubitus": "TINYINT",
+      "decubitus_score": "INTEGER",
+      "secondary_wound_healing": "TINYINT",
+      "multi_organ_failure": "TINYINT",
+      "anastomotic_insufficiency": "TINYINT",
+      "anastomotic_insufficiency_type": "TEXT",
+      "other_complications": "TINYINT",
+      "other_complications_1": "TEXT",
+      "other_complications_2": "TEXT",
+      "other_complications_3": "TEXT",
+      "other_complications_4": "TEXT",
+      "other_complications_5": "TEXT",
+      "other_complications_6": "TEXT",
+      "thoracic_drainage_for_effusion": "TINYINT",
+      "simplified_acute_physiology_score_average": "FLOAT",
+      "drainage_complication": "TINYINT",
+      "drainage_complication_text": "TEXT",
+      "endoscopy": "TINYINT",
+      "endoscopic_retrograde_cholangiopancreatography": "TINYINT",
+      "endoscopy_text": "TEXT",
+      "haemodialysis": "TINYINT",
+      "haemodialysis_h": "FLOAT",
+      "mutation_adjusted_risk_score": "TINYINT",
+      "mutation_adjusted_risk_score_h": "FLOAT",
+      "interventional_drainage": "TINYINT",
+      "re_operation": "TINYINT",
+      "clavien_dindo": "INTEGER",
+      "kidney_insufficiency": "TINYINT",
+      "readmission_to_clinic": "TINYINT",
+      "readmission_to_clinic_date": "TEXT",
+      "other_complication_management": "TINYINT",
+      "other_complication_management_text": "TEXT",
+      "relocation_intensive_care_unit": "TINYINT",
+      "relocation_intermediate_care_unit": "TINYINT",
+      "acute_coronary_syndrome": "TINYINT",
+      "sepsis": "TINYINT",
+      "systemic_inflammatory_response_syndrome": "TINYINT",
+      "circulatory_instability": "TINYINT",
+      "reanimation": "TINYINT",
+      "duration_reanimation_min": "FLOAT",
+      "respiratory_failure": "TINYINT",
+      "hollow_organ_perforation": "TINYINT",
+      "which_organ_is_perforated": "TEXT",
+      "intestinal_passage_disorder": "TINYINT",
+      "ascites_postoperative": "TINYINT",
+      "pancreatitis_postoperative": "TINYINT",
+      "urinary_tract_infection_postoperative": "TINYINT",
+      "delirium": "TINYINT",
+      "delirium_type": "TEXT",
+      "cholecystitis": "TINYINT",
+      "pancreatic_fistula": "TINYINT",
+      "internal_hernia": "TINYINT",
+      "pleural_empyema": "TINYINT"
+    },
+    "foreign_keys": [
+      {
+        "column": "clavien_dindo",
+        "references_table": "clavien_dindo",
+        "references_column": "clavien_dindo_id",
+        "constraint": "complication_ibfk_1"
+      },
+      {
+        "column": "decubitus_score",
+        "references_table": "dekubitus_grade",
+        "references_column": "dekubitus_grade_id",
+        "constraint": "complication_ibfk_2"
+      },
+      {
+        "column": "patient_id",
+        "references_table": "patient_data",
+        "references_column": "patient_id",
+        "constraint": "complication_ibfk_3"
+      }
+    ]
+  },
+  "dekubitus_grade": {
+    "columns": {
+      "dekubitus_grade_id": "INTEGER",
+      "dekubitus_grade_stadium": "TEXT"
+    },
+    "foreign_keys": []
+  },
+  "diabetes_mellitus": {
+    "columns": {
+      "diabetes_mellitus_id": "INTEGER",
+      "diabetes_mellitus_code": "TEXT",
+      "diabetes_mellitus_description": "TEXT"
+    },
+    "foreign_keys": []
+  },
+  "general_aftercare": {
+    "columns": {
+      "id": "INTEGER",
+      "patient_id": "INTEGER",
+      "created_at": "TIMESTAMP",
+      "date_of_aftercare": "FLOAT",
+      "height_cm": "FLOAT",
+      "weight_kg": "FLOAT",
+      "bmi": "FLOAT",
+      "incisional_hernia": "TINYINT",
+      "incisional_hernia_surgery": "TINYINT",
+      "gall_bladder_leakage": "TINYINT",
+      "supply_of_the_leakage": "TEXT",
+      "bile_duct_stenosis": "TINYINT",
+      "treatment_of_stenosis": "TEXT",
+      "rez_cholangitis": "TINYINT",
+      "aftercare_text": "TEXT",
+      "oesophageal_stenosis": "TINYINT"
+    },
+    "foreign_keys": [
+      {
+        "column": "patient_id",
+        "references_table": "patient_data",
+        "references_column": "patient_id",
+        "constraint": "general_aftercare_ibfk_1"
+      }
+    ]
+  },
+  "general_operational_details": {
+    "columns": {
+      "id": "INTEGER",
+      "patient_id": "INTEGER",
+      "created_at": "TIMESTAMP",
+      "op_date": "TEXT",
+      "surgeon": "TEXT",
+      "operation_time_start": "TEXT",
+      "operation_time_end": "TEXT",
+      "operation_duration_min": "INTEGER",
+      "laparoscopic_procedure": "TINYINT",
+      "conversion_lap_open": "TINYINT",
+      "transfusion": "TINYINT",
+      "number_ecs": "INTEGER",
+      "number_ffps": "INTEGER",
+      "cirrhosis_intraop": "TINYINT",
+      "intraoperative_new_findings": "TINYINT",
+      "intraoperative_new_findings_txt": "TEXT",
+      "previous_operations": "TINYINT",
+      "adhesions": "TINYINT",
+      "intraop_special_features": "TINYINT",
+      "intraop_special_features_text": "TEXT",
+      "access_route": "TEXT",
+      "asa_score": "INTEGER",
+      "apfel_score": "INTEGER",
+      "anaesthesia_time_start": "TEXT",
+      "anaesthesia_time_end": "TEXT",
+      "anaesthesia_duration_min": "INTEGER",
+      "general_anaesthesia": "TINYINT",
+      "tiva": "TINYINT",
+      "rsi": "TINYINT",
+      "ffo": "TINYINT",
+      "spa": "TINYINT",
+      "lumbar_pda": "TINYINT",
+      "thoracic_pda": "TINYINT",
+      "caudal_block": "TINYINT",
+      "cse": "TINYINT",
+      "ivra": "TINYINT",
+      "analgosedation": "TINYINT",
+      "stand_by_monitoring": "TINYINT",
+      "anaesthesia_special": "TINYINT",
+      "anaesthesia_special_text": "TEXT",
+      "postoperative_nutrition_date": "TEXT",
+      "gastric_tube": "TINYINT",
+      "gastric_tube_removed_date": "TEXT",
+      "parenteral_nutrition": "TINYINT",
+      "continuous_bladder_catheter": "TINYINT",
+      "bladder_catheter_removed_date": "TEXT",
+      "mobilisation_postop_date": "TEXT",
+      "drainage_removed_date": "TEXT",
+      "discharge_with_drainage": "TINYINT"
+    },
+    "foreign_keys": [
+      {
+        "column": "patient_id",
+        "references_table": "patient_data",
+        "references_column": "patient_id",
+        "constraint": "general_operational_details_ibfk_1"
+      }
+    ]
+  },
+  "histology_general": {
+    "columns": {
+      "id": "INTEGER",
+      "patient_id": "INTEGER",
+      "pathologist": "TEXT",
+      "order_number": "TEXT",
+      "histological_diagnosis": "TEXT",
+      "histology_summary": "TEXT"
+    },
+    "foreign_keys": [
+      {
+        "column": "patient_id",
+        "references_table": "patient_data",
+        "references_column": "patient_id",
+        "constraint": "histology_general_ibfk_1"
+      }
+    ]
+  },
+  "icd": {
+    "columns": {
+      "id": "INTEGER",
+      "patient_id": "INTEGER",
+      "ICD": "TEXT",
+      "ICD_discription": "TEXT"
+    },
+    "foreign_keys": [
+      {
+        "column": "patient_id",
+        "references_table": "patient_data",
+        "references_column": "patient_id",
+        "constraint": "FK_icd_patient_data"
+      }
+    ]
+  },
+  "labour": {
+    "columns": {
+      "id": "INTEGER",
+      "patient_id": "INTEGER",
+      "created_at": "TIMESTAMP",
+      "date_laboratory_analysis": "TEXT",
+      "ASAT_\u03bcmol_per_l": "FLOAT",
+      "ALAT_\u03bcmol_per_l": "FLOAT",
+      "AP_\u03bcmol_per_l": "FLOAT",
+      "GGT_\u03bcmol_per_l": "FLOAT",
+      "Lipase_\u03bcmol_per_l": "FLOAT",
+      "Kreatinin_\u03bcmol_per_l": "FLOAT",
+      "Bilirubin_\u03bcmol_per_l": "FLOAT",
+      "Quickk_percent": "FLOAT",
+      "INR": "FLOAT",
+      "Cholinesterase_\u03bcmol_per_l": "FLOAT",
+      "Natrium_mmol_per_l": "FLOAT",
+      "H\u00e4moglobin_mmol_per_l": "FLOAT",
+      "Leukozyten_Gpt_per_l": "FLOAT",
+      "CRP_mg_per_l": "FLOAT",
+      "PCT_ng_ml": "FLOAT",
+      "Albumin_g_per_l": "FLOAT",
+      "Harnstoff_mmol_per_l": "FLOAT",
+      "GFR_ml_per_min": "FLOAT",
+      "MDRD_ml_per_min": "FLOAT",
+      "TSH_mU_per_l": "FLOAT",
+      "HbA1c_percent": "FLOAT",
+      "s_ColLineage": "FLOAT",
+      "s_Generation": "FLOAT",
+      "s_GUID": "TEXT",
+      "s_Lineage": "FLOAT"
+    },
+    "foreign_keys": [
+      {
+        "column": "patient_id",
+        "references_table": "patient_data",
+        "references_column": "patient_id",
+        "constraint": "labour_ibfk_1"
+      }
+    ]
+  },
+  "medical_history": {
+    "columns": {
+      "id": "INTEGER",
+      "patient_id": "INTEGER",
+      "created_at": "TIMESTAMP",
+      "body_size_cm": "FLOAT",
+      "weight_kg": "FLOAT",
+      "body_mass_index": "FLOAT",
+      "family_history_neoplastic_disease": "TINYINT",
+      "family_history_neoplastic_disease_text": "TEXT",
+      "number_of_relatives_first_degree": "TEXT",
+      "previous_tumour": "TINYINT",
+      "previous_tumour_text": "TEXT",
+      "previous_secondary_tumour": "TINYINT",
+      "previous_secondary_tumour_text": "TEXT",
+      "pre_existing_disease_immunological": "TINYINT",
+      "pre_existing_disease_immunological_text": "TEXT",
+      "pre_existing_liver_disease": "TINYINT",
+      "hepatitis_B": "TINYINT",
+      "hepatitis_C": "TINYINT",
+      "hepatitis_D": "TINYINT",
+      "ethyltoxic": "TINYINT",
+      "child_stadium": "INTEGER",
+      "other_pre_existing_diseases": "TINYINT",
+      "other_liver_disease": "TEXT",
+      "other_pre_existing_diseases_1": "TEXT",
+      "other_pre_existing_diseases_2": "TEXT",
+      "other_pre_existing_diseases_3": "TEXT",
+      "other_pre_existing_diseases_4": "TEXT",
+      "other_pre_existing_diseases_5": "TEXT",
+      "reduced_general_state": "TINYINT",
+      "loss_of_appetite": "TINYINT",
+      "nausea_vomiting": "TINYINT",
+      "abdominal_pain": "TINYINT",
+      "back_pain": "TINYINT",
+      "dyspnoea": "TINYINT",
+      "diarrhoea": "TINYINT",
+      "constipation": "TINYINT",
+      "nocturia": "TINYINT",
+      "weight_loss": "TINYINT",
+      "fever": "TINYINT",
+      "night_sweat": "TINYINT",
+      "hepatomegaly_splenomegaly": "TINYINT",
+      "ascites": "TINYINT",
+      "ascites_severity": "TEXT",
+      "icterus": "TINYINT",
+      "oedema": "TINYINT",
+      "further_symptoms": "TINYINT",
+      "further_symptoms_text": "TEXT",
+      "diagnosis_date_primary_tumour": "TEXT",
+      "diagnosis_date_metastasis": "TEXT",
+      "type_primary_metastasis": "INTEGER",
+      "localisation_of_the_metastasis": "TEXT",
+      "first_haemodialysis": "TEXT",
+      "diabetes_type": "INTEGER",
+      "nicotine_abuse": "TINYINT",
+      "nicotine_amount_py": "INTEGER",
+      "alcohol_abuse": "TINYINT",
+      "pulmonary_pre_existing_diseases": "TINYINT",
+      "pulmonary_pre_existing_diseases_text": "TEXT",
+      "arterial_hypertension": "TINYINT",
+      "charlson_comorbidity_index": "INTEGER",
+      "cardiac_event": "TINYINT",
+      "peripheral_artery_disease": "TINYINT",
+      "cerebrovascular_event": "TINYINT",
+      "dementia": "TINYINT",
+      "chronic_obstructive_pulmonary_disease": "TINYINT",
+      "connective_tissue_disease": "TINYINT",
+      "hemiplegia": "TINYINT",
+      "previous_operations": "TINYINT",
+      "chronic_pancreatitis": "TINYINT",
+      "inflammatory_bowel_disease": "TINYINT",
+      "dysphagia": "TINYINT",
+      "chronic_renal_insufficiency_stage": "INTEGER",
+      "pre_existing_thyroid_disease": "TINYINT",
+      "arthrosis": "TINYINT",
+      "osteoporosis": "TINYINT",
+      "gastrala_ulcera": "TINYINT",
+      "dermal_ulcera": "TINYINT",
+      "deep_leg_vein_thrombosis": "TINYINT",
+      "mental_pre_existing_diseases": "TINYINT",
+      "cardiac_event_text": "TEXT",
+      "acute_pancreatitis": "TINYINT",
+      "cholestasis": "TINYINT",
+      "cholangitis": "TINYINT",
+      "pleural_effusion": "TINYINT",
+      "coronary_heart_disease": "TINYINT",
+      "cardiac_arrhythmia": "TINYINT",
+      "cardiac_arrhythmia_text": "TEXT",
+      "congestive_heart_failure": "TEXT",
+      "lipid_metabolism_disorders": "TINYINT",
+      "neurological_pre_existing_disease": "TINYINT",
+      "neurological_pre_existing_disease_text": "TEXT",
+      "hiatal_hernia": "TINYINT",
+      "diverticulosis": "TINYINT",
+      "cholecystolithiasis": "TINYINT",
+      "hyperuricaemia_gout": "TINYINT",
+      "gastritis": "TINYINT"
+    },
+    "foreign_keys": [
+      {
+        "column": "child_stadium",
+        "references_table": "child_stadium",
+        "references_column": "child_stadium_id",
+        "constraint": "medical_history_ibfk_1"
+      },
+      {
+        "column": "diabetes_type",
+        "references_table": "diabetes_mellitus",
+        "references_column": "diabetes_mellitus_id",
+        "constraint": "medical_history_ibfk_2"
+      },
+      {
+        "column": "patient_id",
+        "references_table": "patient_data",
+        "references_column": "patient_id",
+        "constraint": "medical_history_ibfk_3"
+      },
+      {
+        "column": "type_primary_metastasis",
+        "references_table": "metastases",
+        "references_column": "metastasen_id",
+        "constraint": "medical_history_ibfk_4"
+      }
+    ]
+  },
+  "medication": {
+    "columns": {
+      "id": "INTEGER",
+      "patient_id": "INTEGER",
+      "created_at": "TIMESTAMP",
+      "ASS": "TINYINT",
+      "Plavix": "TINYINT",
+      "Anti_Xa": "TINYINT",
+      "Falithrom_Marcumar": "TINYINT",
+      "NSAR": "TINYINT",
+      "Steroide": "TINYINT",
+      "Steroide_Tagesdosis": "FLOAT",
+      "Antidepressiva": "TINYINT",
+      "Antihypertensiva": "TINYINT",
+      "Anzahl_der_Antihypertensiva": "TINYINT",
+      "Thyreostatika": "TINYINT",
+      "Schilddr\u00fcsenhormone": "TINYINT",
+      "Protonenpumpeninhibitoren": "TINYINT",
+      "Urikostatika": "TINYINT",
+      "orale_Antidiabetika": "TINYINT",
+      "Insulin": "TINYINT",
+      "Insulin_Tagesdosis": "INTEGER",
+      "inhalative_Bronchodilatatoren": "TINYINT",
+      "weitere_Medikation": "TINYINT",
+      "weitere_Medikation_1_Text": "TEXT",
+      "Statine": "TINYINT",
+      "Diuretika": "TINYINT",
+      "weitere_Medikation_2": "TINYINT",
+      "weitere_Medikation_2_Text": "TEXT",
+      "weitere_Medikation_3": "TINYINT",
+      "weitere_Medikation_3_Text": "TEXT",
+      "weitere_Medikation_4": "TINYINT",
+      "weitere_Medikation_4_Text": "TEXT",
+      "weitere_Medikation_5": "TINYINT",
+      "weitere_Medikation_5_Text": "TEXT"
+    },
+    "foreign_keys": [
+      {
+        "column": "patient_id",
+        "references_table": "patient_data",
+        "references_column": "patient_id",
+        "constraint": "medication_ibfk_1"
+      }
+    ]
+  },
+  "metastases": {
+    "columns": {
+      "metastasen_id": "INTEGER",
+      "metastasen_timepoint": "TEXT"
+    },
+    "foreign_keys": []
+  },
+  "patient_data": {
+    "columns": {
+      "patient_id": "INTEGER",
+      "patient_id_old": "INTEGER",
+      "created_at": "TIMESTAMP",
+      "sex": "INTEGER",
+      "age_at_surgery": "INTEGER"
+    },
+    "foreign_keys": [
+      {
+        "column": "sex",
+        "references_table": "sex",
+        "references_column": "sex_id",
+        "constraint": "patient_data_ibfk_1"
+      }
+    ]
+  },
+  "sex": {
+    "columns": {
+      "sex_id": "INTEGER",
+      "sex_category": "TEXT"
+    },
+    "foreign_keys": []
+  }
+}

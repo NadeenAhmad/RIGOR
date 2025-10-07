@@ -1,0 +1,758 @@
+{
+  "admissiondrug": {
+    "columns": {
+      "admissiondrugid": "INTEGER",
+      "patientunitstayid": "INTEGER",
+      "drugoffset": "INTEGER",
+      "drugenteredoffset": "INTEGER",
+      "drugnotetype": "VARCHAR(255)",
+      "specialtytype": "VARCHAR(255)",
+      "usertype": "VARCHAR(255)",
+      "rxincluded": "VARCHAR(5)",
+      "writtenineicu": "VARCHAR(5)",
+      "drugname": "VARCHAR(255)",
+      "drugdosage": "DECIMAL(11, 4)",
+      "drugunit": "VARCHAR(1000)",
+      "drugadmitfrequency": "VARCHAR(1000)",
+      "drughiclseqno": "INTEGER"
+    },
+    "foreign_keys": [
+      {
+        "column": "patientunitstayid",
+        "references_table": "patient",
+        "references_column": "patientunitstayid",
+        "constraint": "fk_admissiondrug_patient"
+      }
+    ]
+  },
+  "admissiondx": {
+    "columns": {
+      "admissiondxid": "INTEGER",
+      "patientunitstayid": "INTEGER",
+      "admitdxenteredoffset": "INTEGER",
+      "admitdxpath": "VARCHAR(500)",
+      "admitdxname": "VARCHAR(255)",
+      "admitdxtext": "VARCHAR(255)"
+    },
+    "foreign_keys": [
+      {
+        "column": "patientunitstayid",
+        "references_table": "patient",
+        "references_column": "patientunitstayid",
+        "constraint": "fk_admissiondx_patient"
+      }
+    ]
+  },
+  "allergy": {
+    "columns": {
+      "allergyid": "INTEGER",
+      "patientunitstayid": "INTEGER",
+      "allergyoffset": "INTEGER",
+      "allergyenteredoffset": "INTEGER",
+      "allergynotetype": "VARCHAR(255)",
+      "specialtytype": "VARCHAR(255)",
+      "usertype": "VARCHAR(255)",
+      "rxincluded": "VARCHAR(5)",
+      "writtenineicu": "VARCHAR(5)",
+      "drugname": "VARCHAR(255)",
+      "allergytype": "VARCHAR(255)",
+      "allergyname": "VARCHAR(255)",
+      "drughiclseqno": "INTEGER"
+    },
+    "foreign_keys": [
+      {
+        "column": "patientunitstayid",
+        "references_table": "patient",
+        "references_column": "patientunitstayid",
+        "constraint": "fk_allergy_patient"
+      }
+    ]
+  },
+  "apacheapsvar": {
+    "columns": {
+      "apacheapsvarid": "INTEGER",
+      "patientunitstayid": "INTEGER",
+      "intubated": "SMALLINT",
+      "vent": "SMALLINT",
+      "dialysis": "SMALLINT",
+      "eyes": "SMALLINT",
+      "motor": "SMALLINT",
+      "verbal": "SMALLINT",
+      "meds": "SMALLINT",
+      "urine": "DOUBLE",
+      "wbc": "DOUBLE",
+      "temperature": "DOUBLE",
+      "respiratoryrate": "DOUBLE",
+      "sodium": "DOUBLE",
+      "heartrate": "DOUBLE",
+      "meanbp": "DOUBLE",
+      "ph": "DOUBLE",
+      "hematocrit": "DOUBLE",
+      "creatinine": "DOUBLE",
+      "albumin": "DOUBLE",
+      "pao2": "DOUBLE",
+      "pco2": "DOUBLE",
+      "bun": "DOUBLE",
+      "glucose": "DOUBLE",
+      "bilirubin": "DOUBLE",
+      "fio2": "DOUBLE"
+    },
+    "foreign_keys": [
+      {
+        "column": "patientunitstayid",
+        "references_table": "patient",
+        "references_column": "patientunitstayid",
+        "constraint": "fk_apacheapsvar_patient"
+      }
+    ]
+  },
+  "apachepatientresult": {
+    "columns": {
+      "apachepatientresultsid": "INTEGER",
+      "patientunitstayid": "INTEGER",
+      "physicianspeciality": "VARCHAR(50)",
+      "physicianinterventioncategory": "VARCHAR(50)",
+      "acutephysiologyscore": "INTEGER",
+      "apachescore": "INTEGER",
+      "apacheversion": "VARCHAR(5)",
+      "predictedicumortality": "VARCHAR(50)",
+      "actualicumortality": "VARCHAR(50)",
+      "predictediculos": "DOUBLE",
+      "actualiculos": "DOUBLE",
+      "predictedhospitalmortality": "VARCHAR(50)",
+      "actualhospitalmortality": "VARCHAR(50)",
+      "predictedhospitallos": "DOUBLE",
+      "actualhospitallos": "DOUBLE",
+      "preopmi": "INTEGER",
+      "preopcardiaccath": "INTEGER",
+      "ptcawithin24h": "INTEGER",
+      "unabridgedunitlos": "DOUBLE",
+      "unabridgedhosplos": "DOUBLE",
+      "actualventdays": "DOUBLE",
+      "predventdays": "DOUBLE",
+      "unabridgedactualventdays": "DOUBLE"
+    },
+    "foreign_keys": [
+      {
+        "column": "patientunitstayid",
+        "references_table": "patient",
+        "references_column": "patientunitstayid",
+        "constraint": "fk_apachepatientresult_patient"
+      }
+    ]
+  },
+  "apachepredvar": {
+    "columns": {
+      "apachepredvarid": "INTEGER",
+      "patientunitstayid": "INTEGER",
+      "sicuday": "SMALLINT",
+      "saps3day1": "SMALLINT",
+      "saps3today": "SMALLINT",
+      "saps3yesterday": "SMALLINT",
+      "gender": "SMALLINT",
+      "teachtype": "SMALLINT",
+      "region": "SMALLINT",
+      "bedcount": "SMALLINT",
+      "admitsource": "SMALLINT",
+      "graftcount": "SMALLINT",
+      "meds": "SMALLINT",
+      "verbal": "SMALLINT",
+      "motor": "SMALLINT",
+      "eyes": "SMALLINT",
+      "age": "SMALLINT",
+      "admitdiagnosis": "VARCHAR(11)",
+      "thrombolytics": "SMALLINT",
+      "diedinhospital": "SMALLINT",
+      "aids": "SMALLINT",
+      "hepaticfailure": "SMALLINT",
+      "lymphoma": "SMALLINT",
+      "metastaticcancer": "SMALLINT",
+      "leukemia": "SMALLINT",
+      "immunosuppression": "SMALLINT",
+      "cirrhosis": "SMALLINT",
+      "electivesurgery": "SMALLINT",
+      "activetx": "SMALLINT",
+      "readmit": "SMALLINT",
+      "ima": "SMALLINT",
+      "midur": "SMALLINT",
+      "ventday1": "SMALLINT",
+      "oobventday1": "SMALLINT",
+      "oobintubday1": "SMALLINT",
+      "diabetes": "SMALLINT",
+      "managementsystem": "SMALLINT",
+      "var03hspxlos": "DOUBLE",
+      "pao2": "DOUBLE",
+      "fio2": "DOUBLE",
+      "ejectfx": "DOUBLE",
+      "creatinine": "DOUBLE",
+      "dischargelocation": "SMALLINT",
+      "visitnumber": "SMALLINT",
+      "amilocation": "SMALLINT",
+      "day1meds": "SMALLINT",
+      "day1verbal": "SMALLINT",
+      "day1motor": "SMALLINT",
+      "day1eyes": "SMALLINT",
+      "day1pao2": "DOUBLE",
+      "day1fio2": "DOUBLE"
+    },
+    "foreign_keys": [
+      {
+        "column": "patientunitstayid",
+        "references_table": "patient",
+        "references_column": "patientunitstayid",
+        "constraint": "fk_apachepredvar_patient"
+      }
+    ]
+  },
+  "careplancareprovider": {
+    "columns": {
+      "cplcareprovderid": "INTEGER",
+      "patientunitstayid": "INTEGER",
+      "careprovidersaveoffset": "INTEGER",
+      "providertype": "VARCHAR(255)",
+      "specialty": "VARCHAR(255)",
+      "interventioncategory": "VARCHAR(255)",
+      "managingphysician": "VARCHAR(50)",
+      "activeupondischarge": "VARCHAR(10)"
+    },
+    "foreign_keys": [
+      {
+        "column": "patientunitstayid",
+        "references_table": "patient",
+        "references_column": "patientunitstayid",
+        "constraint": "fk_careplancareprovider_patient"
+      }
+    ]
+  },
+  "careplaneol": {
+    "columns": {
+      "cpleolid": "INTEGER",
+      "patientunitstayid": "INTEGER",
+      "cpleolsaveoffset": "INTEGER",
+      "cpleoldiscussionoffset": "INTEGER",
+      "activeupondischarge": "VARCHAR(10)"
+    },
+    "foreign_keys": [
+      {
+        "column": "patientunitstayid",
+        "references_table": "patient",
+        "references_column": "patientunitstayid",
+        "constraint": "fk_careplaneol_patient"
+      }
+    ]
+  },
+  "careplangeneral": {
+    "columns": {
+      "cplgeneralid": "INTEGER",
+      "patientunitstayid": "INTEGER",
+      "activeupondischarge": "VARCHAR(10)",
+      "cplitemoffset": "INTEGER",
+      "cplgroup": "VARCHAR(255)",
+      "cplitemvalue": "VARCHAR(1024)"
+    },
+    "foreign_keys": [
+      {
+        "column": "patientunitstayid",
+        "references_table": "patient",
+        "references_column": "patientunitstayid",
+        "constraint": "fk_careplangeneral_patient"
+      }
+    ]
+  },
+  "careplangoal": {
+    "columns": {
+      "cplgoalid": "INTEGER",
+      "patientunitstayid": "INTEGER",
+      "CPLGOALoffset": "INTEGER",
+      "CPLGOALCATEGORY": "VARCHAR(255)",
+      "CPLGOALVALUE": "VARCHAR(1000)",
+      "CPLGOALSTATUS": "VARCHAR(255)",
+      "ACTIVEUPONDISCHARGE": "VARCHAR(10)"
+    },
+    "foreign_keys": [
+      {
+        "column": "patientunitstayid",
+        "references_table": "patient",
+        "references_column": "patientunitstayid",
+        "constraint": "fk_careplangoal_patient"
+      }
+    ]
+  },
+  "careplaninfectiousdisease": {
+    "columns": {
+      "cplinfectid": "INTEGER",
+      "patientunitstayid": "INTEGER",
+      "activeupondischarge": "VARCHAR(10)",
+      "cplinfectdiseaseoffset": "INTEGER",
+      "infectdiseasesite": "VARCHAR(64)",
+      "infectdiseaseassessment": "VARCHAR(64)",
+      "responsetotherapy": "VARCHAR(32)",
+      "treatment": "VARCHAR(32)"
+    },
+    "foreign_keys": [
+      {
+        "column": "patientunitstayid",
+        "references_table": "patient",
+        "references_column": "patientunitstayid",
+        "constraint": "fk_careplaninfectiousdisease_patient"
+      }
+    ]
+  },
+  "customlab": {
+    "columns": {
+      "customlabid": "INTEGER",
+      "patientunitstayid": "INTEGER",
+      "labotheroffset": "INTEGER",
+      "labothertypeid": "INTEGER",
+      "labothername": "VARCHAR(64)",
+      "labotherresult": "VARCHAR(64)",
+      "labothervaluetext": "VARCHAR(128)"
+    },
+    "foreign_keys": [
+      {
+        "column": "patientunitstayid",
+        "references_table": "patient",
+        "references_column": "patientunitstayid",
+        "constraint": "fk_customlab_patient"
+      }
+    ]
+  },
+  "diagnosis": {
+    "columns": {
+      "diagnosisid": "INTEGER",
+      "patientunitstayid": "INTEGER",
+      "activeupondischarge": "VARCHAR(64)",
+      "diagnosisoffset": "INTEGER",
+      "diagnosisstring": "VARCHAR(200)",
+      "icd9code": "VARCHAR(100)",
+      "diagnosispriority": "VARCHAR(10)"
+    },
+    "foreign_keys": [
+      {
+        "column": "patientunitstayid",
+        "references_table": "patient",
+        "references_column": "patientunitstayid",
+        "constraint": "fk_diagnosis_patient"
+      }
+    ]
+  },
+  "hospital": {
+    "columns": {
+      "hospitalid": "INTEGER",
+      "numbedscategory": "VARCHAR(32)",
+      "teachingstatus": "TINYINT",
+      "region": "VARCHAR(64)"
+    },
+    "foreign_keys": []
+  },
+  "infusiondrug": {
+    "columns": {
+      "infusiondrugid": "INTEGER",
+      "patientunitstayid": "INTEGER",
+      "infusionoffset": "INTEGER",
+      "drugname": "VARCHAR(255)",
+      "drugrate": "VARCHAR(255)",
+      "infusionrate": "VARCHAR(255)",
+      "drugamount": "VARCHAR(255)",
+      "volumeoffluid": "VARCHAR(255)",
+      "patientweight": "VARCHAR(255)"
+    },
+    "foreign_keys": [
+      {
+        "column": "patientunitstayid",
+        "references_table": "patient",
+        "references_column": "patientunitstayid",
+        "constraint": "fk_infusiondrug_patient"
+      }
+    ]
+  },
+  "intakeoutput": {
+    "columns": {
+      "intakeoutputid": "INTEGER",
+      "patientunitstayid": "INTEGER",
+      "intakeoutputoffset": "INTEGER",
+      "intaketotal": "DECIMAL(12, 4)",
+      "outputtotal": "DECIMAL(12, 4)",
+      "dialysistotal": "DECIMAL(12, 4)",
+      "nettotal": "DECIMAL(12, 4)",
+      "intakeoutputentryoffset": "INTEGER",
+      "cellpath": "VARCHAR(500)",
+      "celllabel": "VARCHAR(255)",
+      "cellvaluenumeric": "DECIMAL(12, 4)",
+      "cellvaluetext": "VARCHAR(255)"
+    },
+    "foreign_keys": [
+      {
+        "column": "patientunitstayid",
+        "references_table": "patient",
+        "references_column": "patientunitstayid",
+        "constraint": "fk_intakeoutput_patient"
+      }
+    ]
+  },
+  "lab": {
+    "columns": {
+      "labid": "INTEGER",
+      "patientunitstayid": "INTEGER",
+      "labresultoffset": "INTEGER",
+      "labtypeid": "DECIMAL(3, 0)",
+      "labname": "VARCHAR(256)",
+      "labresult": "DECIMAL(11, 4)",
+      "labresulttext": "VARCHAR(255)",
+      "labmeasurenamesystem": "VARCHAR(255)",
+      "labmeasurenameinterface": "VARCHAR(255)",
+      "labresultrevisedoffset": "INTEGER"
+    },
+    "foreign_keys": [
+      {
+        "column": "patientunitstayid",
+        "references_table": "patient",
+        "references_column": "patientunitstayid",
+        "constraint": "fk_lab_patient"
+      }
+    ]
+  },
+  "medication": {
+    "columns": {
+      "medicationid": "INTEGER",
+      "patientunitstayid": "INTEGER",
+      "drugorderoffset": "INTEGER",
+      "drugstartoffset": "INTEGER",
+      "drugivadmixture": "VARCHAR(6)",
+      "drugordercancelled": "VARCHAR(6)",
+      "drugname": "VARCHAR(220)",
+      "drughiclseqno": "INTEGER",
+      "dosage": "VARCHAR(60)",
+      "routeadmin": "VARCHAR(120)",
+      "frequency": "VARCHAR(255)",
+      "loadingdose": "VARCHAR(120)",
+      "prn": "VARCHAR(6)",
+      "drugstopoffset": "INTEGER",
+      "gtc": "INTEGER"
+    },
+    "foreign_keys": [
+      {
+        "column": "patientunitstayid",
+        "references_table": "patient",
+        "references_column": "patientunitstayid",
+        "constraint": "fk_medication_patient"
+      }
+    ]
+  },
+  "microlab": {
+    "columns": {
+      "microlabid": "INTEGER",
+      "patientunitstayid": "INTEGER",
+      "culturetakenoffset": "INTEGER",
+      "culturesite": "VARCHAR(255)",
+      "organism": "VARCHAR(255)",
+      "antibiotic": "VARCHAR(255)",
+      "sensitivitylevel": "VARCHAR(255)"
+    },
+    "foreign_keys": [
+      {
+        "column": "patientunitstayid",
+        "references_table": "patient",
+        "references_column": "patientunitstayid",
+        "constraint": "fk_microlab_patient"
+      }
+    ]
+  },
+  "note": {
+    "columns": {
+      "NOTEID": "INTEGER",
+      "patientunitstayid": "INTEGER",
+      "NOTEOFFSET": "INTEGER",
+      "NOTEENTEREDOFFSET": "INTEGER",
+      "NOTETYPE": "VARCHAR(50)",
+      "NOTEPATH": "VARCHAR(255)",
+      "NOTEVALUE": "VARCHAR(150)",
+      "NOTETEXT": "VARCHAR(500)"
+    },
+    "foreign_keys": [
+      {
+        "column": "patientunitstayid",
+        "references_table": "patient",
+        "references_column": "patientunitstayid",
+        "constraint": "fk_note_patient"
+      }
+    ]
+  },
+  "nurseassessment": {
+    "columns": {
+      "nurseassessid": "INTEGER",
+      "patientunitstayid": "INTEGER",
+      "NURSEASSESSOFFSET": "INTEGER",
+      "NURSEASSESSENTRYOFFSET": "INTEGER",
+      "CELLATTRIBUTEPATH": "VARCHAR(255)",
+      "CELLLABEL": "VARCHAR(255)",
+      "CELLATTRIBUTE": "VARCHAR(255)",
+      "CELLATTRIBUTEVALUE": "VARCHAR(4000)"
+    },
+    "foreign_keys": [
+      {
+        "column": "patientunitstayid",
+        "references_table": "patient",
+        "references_column": "patientunitstayid",
+        "constraint": "fk_nurseassessment_patient"
+      }
+    ]
+  },
+  "nursecare": {
+    "columns": {
+      "nursecareid": "INTEGER",
+      "patientunitstayid": "INTEGER",
+      "CELLLABEL": "VARCHAR(255)",
+      "NURSECAREOFFSET": "INTEGER",
+      "NURSECAREENTRYOFFSET": "INTEGER",
+      "CELLATTRIBUTEPATH": "VARCHAR(255)",
+      "CELLATTRIBUTE": "VARCHAR(255)",
+      "CELLATTRIBUTEVALUE": "VARCHAR(4000)"
+    },
+    "foreign_keys": [
+      {
+        "column": "patientunitstayid",
+        "references_table": "patient",
+        "references_column": "patientunitstayid",
+        "constraint": "fk_nursecare_patient"
+      }
+    ]
+  },
+  "nursecharting": {
+    "columns": {
+      "nursingchartid": "BIGINT",
+      "patientunitstayid": "INTEGER",
+      "NURSINGCHARTOFFSET": "INTEGER",
+      "NURSINGCHARTENTRYOFFSET": "INTEGER",
+      "NURSINGCHARTCELLTYPECAT": "VARCHAR(255)",
+      "NURSINGCHARTCELLTYPEVALLABEL": "VARCHAR(255)",
+      "NURSINGCHARTCELLTYPEVALNAME": "VARCHAR(255)",
+      "NURSINGCHARTVALUE": "VARCHAR(255)"
+    },
+    "foreign_keys": [
+      {
+        "column": "patientunitstayid",
+        "references_table": "patient",
+        "references_column": "patientunitstayid",
+        "constraint": "fk_nursecharting_patient"
+      }
+    ]
+  },
+  "pasthistory": {
+    "columns": {
+      "pasthistoryid": "INTEGER",
+      "patientunitstayid": "INTEGER",
+      "pasthistoryoffset": "INTEGER",
+      "pasthistoryenteredoffset": "INTEGER",
+      "pasthistorynotetype": "VARCHAR(40)",
+      "pasthistorypath": "VARCHAR(255)",
+      "pasthistoryvalue": "VARCHAR(100)",
+      "pasthistoryvaluetext": "VARCHAR(255)"
+    },
+    "foreign_keys": [
+      {
+        "column": "patientunitstayid",
+        "references_table": "patient",
+        "references_column": "patientunitstayid",
+        "constraint": "fk_pasthistory_patient"
+      }
+    ]
+  },
+  "patient": {
+    "columns": {
+      "patientunitstayid": "INTEGER",
+      "patienthealthsystemstayid": "INTEGER",
+      "gender": "VARCHAR(25)",
+      "age": "VARCHAR(10)",
+      "ethnicity": "VARCHAR(50)",
+      "hospitalid": "INTEGER",
+      "wardid": "INTEGER",
+      "apacheadmissiondx": "VARCHAR(1000)",
+      "admissionheight": "DECIMAL(10, 2)",
+      "hospitaladmittime24": "VARCHAR(8)",
+      "hospitaladmitoffset": "INTEGER",
+      "hospitaladmitsource": "VARCHAR(30)",
+      "hospitaldischargeyear": "SMALLINT",
+      "hospitaldischargetime24": "VARCHAR(8)",
+      "hospitaldischargeoffset": "INTEGER",
+      "hospitaldischargelocation": "VARCHAR(100)",
+      "hospitaldischargestatus": "VARCHAR(10)",
+      "unittype": "VARCHAR(50)",
+      "unitadmittime24": "VARCHAR(8)",
+      "unitadmitsource": "VARCHAR(100)",
+      "unitvisitnumber": "INTEGER",
+      "unitstaytype": "VARCHAR(15)",
+      "admissionweight": "DECIMAL(10, 2)",
+      "dischargeweight": "DECIMAL(10, 2)",
+      "unitdischargetime24": "VARCHAR(8)",
+      "unitdischargeoffset": "INTEGER",
+      "unitdischargelocation": "VARCHAR(100)",
+      "unitdischargestatus": "VARCHAR(10)",
+      "uniquepid": "VARCHAR(10)"
+    },
+    "foreign_keys": [
+      {
+        "column": "hospitalid",
+        "references_table": "hospital",
+        "references_column": "hospitalid",
+        "constraint": "fk_patient_hospital"
+      }
+    ]
+  },
+  "physicalexam": {
+    "columns": {
+      "physicalexamid": "INTEGER",
+      "patientunitstayid": "INTEGER",
+      "physicalexamoffset": "INTEGER",
+      "physicalexampath": "VARCHAR(255)",
+      "physicalexamvalue": "VARCHAR(100)",
+      "physicalexamtext": "VARCHAR(500)"
+    },
+    "foreign_keys": [
+      {
+        "column": "patientunitstayid",
+        "references_table": "patient",
+        "references_column": "patientunitstayid",
+        "constraint": "fk_physicalexam_patient"
+      }
+    ]
+  },
+  "respiratorycare": {
+    "columns": {
+      "RESPCAREID": "INTEGER",
+      "PATIENTUNITSTAYID": "INTEGER",
+      "RESPCARESTATUSOFFSET": "INTEGER",
+      "CURRENTHISTORYSEQNUM": "INTEGER",
+      "AIRWAYTYPE": "VARCHAR(30)",
+      "AIRWAYSIZE": "VARCHAR(10)",
+      "AIRWAYPOSITION": "VARCHAR(32)",
+      "CUFFPRESSURE": "DECIMAL(5, 1)",
+      "VENTSTARTOFFSET": "INTEGER",
+      "VENTENDOFFSET": "INTEGER",
+      "PRIORVENTSTARTOFFSET": "INTEGER",
+      "PRIORVENTENDOFFSET": "INTEGER",
+      "APNEAPARAMS": "VARCHAR(80)",
+      "LOWEXHMVLIMIT": "DECIMAL(11, 4)",
+      "HIEXHMVLIMIT": "DECIMAL(11, 4)",
+      "LOWEXHTVLIMIT": "DECIMAL(11, 4)",
+      "HIPEAKPRESLIMIT": "DECIMAL(11, 4)",
+      "LOWPEAKPRESLIMIT": "DECIMAL(11, 4)",
+      "HIRESPRATELIMIT": "DECIMAL(11, 4)",
+      "LOWRESPRATELIMIT": "DECIMAL(11, 4)",
+      "SIGHPRESLIMIT": "DECIMAL(11, 4)",
+      "LOWIRONOXLIMIT": "DECIMAL(11, 4)",
+      "HIGHIRONOXLIMIT": "DECIMAL(11, 4)",
+      "MEANAIRWAYPRESLIMIT": "DECIMAL(11, 4)",
+      "PEEPLIMIT": "DECIMAL(11, 4)",
+      "CPAPLIMIT": "DECIMAL(11, 4)",
+      "SETAPNEAINTERVAL": "VARCHAR(80)",
+      "SETAPNEATV": "VARCHAR(80)",
+      "SETAPNEAIPPEEPHIGH": "VARCHAR(80)",
+      "SETAPNEARR": "VARCHAR(80)",
+      "SETAPNEAPEAKFLOW": "VARCHAR(80)",
+      "SETAPNEAINSPTIME": "VARCHAR(80)",
+      "SETAPNEAIE": "VARCHAR(80)",
+      "SETAPNEAFIO2": "VARCHAR(80)"
+    },
+    "foreign_keys": [
+      {
+        "column": "PATIENTUNITSTAYID",
+        "references_table": "patient",
+        "references_column": "patientunitstayid",
+        "constraint": "fk_respiratorycare_patient"
+      }
+    ]
+  },
+  "respiratorycharting": {
+    "columns": {
+      "RESPCHARTID": "INTEGER",
+      "PATIENTUNITSTAYID": "INTEGER",
+      "RESPCHARTOFFSET": "INTEGER",
+      "RESPCHARTENTRYOFFSET": "INTEGER",
+      "RESPCHARTTYPECAT": "VARCHAR(255)",
+      "RESPCHARTVALUELABEL": "VARCHAR(255)",
+      "RESPCHARTVALUE": "VARCHAR(1000)"
+    },
+    "foreign_keys": [
+      {
+        "column": "PATIENTUNITSTAYID",
+        "references_table": "patient",
+        "references_column": "patientunitstayid",
+        "constraint": "fk_respiratorycharting_patient"
+      }
+    ]
+  },
+  "treatment": {
+    "columns": {
+      "treatmentid": "INTEGER",
+      "patientunitstayid": "INTEGER",
+      "treatmentoffset": "INTEGER",
+      "treatmentstring": "VARCHAR(200)",
+      "activeupondischarge": "VARCHAR(10)"
+    },
+    "foreign_keys": [
+      {
+        "column": "patientunitstayid",
+        "references_table": "patient",
+        "references_column": "patientunitstayid",
+        "constraint": "fk_treatment_patient"
+      }
+    ]
+  },
+  "vitalaperiodic": {
+    "columns": {
+      "vitalaperiodicid": "INTEGER",
+      "patientunitstayid": "INTEGER",
+      "observationoffset": "INTEGER",
+      "noninvasivesystolic": "DOUBLE",
+      "noninvasivediastolic": "DOUBLE",
+      "noninvasivemean": "DOUBLE",
+      "paop": "DOUBLE",
+      "cardiacoutput": "DOUBLE",
+      "cardiacinput": "DOUBLE",
+      "svr": "DOUBLE",
+      "svri": "DOUBLE",
+      "pvr": "DOUBLE",
+      "pvri": "DOUBLE"
+    },
+    "foreign_keys": [
+      {
+        "column": "patientunitstayid",
+        "references_table": "patient",
+        "references_column": "patientunitstayid",
+        "constraint": "fk_vitalaperiodic_patient"
+      }
+    ]
+  },
+  "vitalperiodic": {
+    "columns": {
+      "vitalperiodicid": "BIGINT",
+      "patientunitstayid": "INTEGER",
+      "observationoffset": "INTEGER",
+      "temperature": "DECIMAL(11, 4)",
+      "sao2": "INTEGER",
+      "heartrate": "INTEGER",
+      "respiration": "INTEGER",
+      "cvp": "INTEGER",
+      "etco2": "INTEGER",
+      "systemicsystolic": "INTEGER",
+      "systemicdiastolic": "INTEGER",
+      "systemicmean": "INTEGER",
+      "pasystolic": "INTEGER",
+      "padiastolic": "INTEGER",
+      "pamean": "INTEGER",
+      "st1": "DOUBLE",
+      "st2": "DOUBLE",
+      "st3": "DOUBLE",
+      "icp": "INTEGER"
+    },
+    "foreign_keys": [
+      {
+        "column": "patientunitstayid",
+        "references_table": "patient",
+        "references_column": "patientunitstayid",
+        "constraint": "fk_vitalperiodic_patient"
+      }
+    ]
+  }
+}
