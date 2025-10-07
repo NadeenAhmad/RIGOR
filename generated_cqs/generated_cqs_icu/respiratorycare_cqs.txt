@@ -1,0 +1,14 @@
+1.Question: What is the current respiratory care status offset for a given patient unit stay ID?
+Answer: The ontology would answer this by querying the 'RESPCARESTATUSOFFSET' column in the'respiratorycare' table where the 'PATIENTUNITSTAYID' matches the given patient unit stay ID.
+
+2.Question: What are the ventilation start and end offsets for a specific respiratory care ID?
+Answer: The ontology would answer this by querying the 'VENTSTARTOFFSET' and 'VENTENDOFFSET' columns in the'respiratorycare' table where the 'RESPCAREID' matches the specific respiratory care ID.
+
+3.Question: What are the high and low limits for exhaled minute volume for a given respiratory care ID?
+Answer: The ontology would answer this by querying the 'HIEXHMVLIMIT' and 'LOWEXHMVLIMIT' columns in the'respiratorycare' table where the 'RESPCAREID' matches the given respiratory care ID.
+
+4.Question: What is the airway type and size for a specific patient unit stay ID?
+Answer: The ontology would answer this by querying the 'AIRWAYTYPE' and 'AIRWAYSIZE' columns in the'respiratorycare' table where the 'PATIENTUNITSTAYID' matches the specific patient unit stay ID.
+
+5.Question: What are the set apnea interval and TV values for a given respiratory care ID?
+Answer: The ontology would answer this by querying the 'SETAPNEAINTERVAL' and 'SETAPNEATV' columns in the'respiratorycare' table where the 'RESPCAREID' matches the given respiratory care ID.

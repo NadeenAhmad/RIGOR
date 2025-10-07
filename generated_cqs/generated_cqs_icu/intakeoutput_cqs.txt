@@ -1,0 +1,14 @@
+1.Question: What is the total intake for a specific patient unit stay?
+Answer: The ontology would answer this question by querying the 'intaketotal' column for the specific 'patientunitstayid' in the 'intakeoutput' table. The 'patientunitstayid' column serves as the foreign key linking to the 'patient' table, ensuring that the correct patient unit stay is referenced.
+
+2.Question: What is the net total of intake and output for a specific patient unit stay?
+Answer: The ontology would answer this question by querying the 'nettotal' column for the specific 'patientunitstayid' in the 'intakeoutput' table. This column directly provides the net total of intake and output, which is calculated as the difference between 'intaketotal' and 'outputtotal'.
+
+3.Question: How much dialysate was processed for a specific patient unit stay?
+Answer: The ontology would answer this question by querying the 'dialysistotal' column for the specific 'patientunitstayid' in the 'intakeoutput' table. This column directly provides the total amount of dialysate processed for the given patient unit stay.
+
+4.Question: What is the cell value (numeric or text) for a specific intake/output entry offset in a patient unit stay?
+Answer: The ontology would answer this question by querying the 'cellvaluenumeric' and 'cellvaluetext' columns for the specific 'intakeoutputentryoffset' and 'patientunitstayid' in the 'intakeoutput' table. These columns store the numeric and textual values of the cell, respectively, allowing for retrieval of both types of data.
+
+5.Question: What is the cell path and label for a specific intake/output entry offset in a patient unit stay?
+Answer: The ontology would answer this question by querying the 'cellpath' and 'celllabel' columns for the specific 'intakeoutputentryoffset' and 'patientunitstayid' in the 'intakeoutput' table. These columns provide the path and label associated with the cell, which can be used to identify the specific entry within the patient unit stay.

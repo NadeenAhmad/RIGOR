@@ -1,0 +1,14 @@
+1.Question: Which patients have respiratory chart entries with a specific respiratory chart type category (e.g., 'Oxygen Saturation')?
+Answer: The ontology would answer this by querying the 'RESPCHARTTYPECAT' column to filter entries based on the specified category and then using the 'PATIENTUNITSTAYID' column to identify the corresponding patients by looking up the 'patient' table using the foreign key 'fk_respiratorycharting_patient'.
+
+2.Question: What are the respiratory chart values for a given patient unit stay ID?
+Answer: The ontology would answer this by querying the 'PATIENTUNITSTAYID' column to filter entries for the specified patient unit stay ID and then retrieving the corresponding 'RESPCHARTVALUE' entries from the'respiratorycharting' table.
+
+3.Question: What is the latest respiratory chart entry for a specific patient unit stay ID?
+Answer: The ontology would answer this by querying the 'PATIENTUNITSTAYID' column to filter entries for the specified patient unit stay ID and then sorting the results by the 'RESPCHARTOFFSET' and/or 'RESPCHARTENTRYOFFSET' columns to find the most recent entry.
+
+4.Question: How many different types of respiratory chart entries exist in the table?
+Answer: The ontology would answer this by querying the 'RESPCHARTTYPECAT' column to count the distinct values, giving the number of unique respiratory chart types recorded in the table.
+
+5.Question: What is the average respiratory chart value for a specific respiratory chart type category?
+Answer: The ontology would answer this by querying the 'RESPCHARTTYPECAT' column to filter entries based on the specified category, extracting the corresponding 'RESPCHARTVALUE' entries, converting these values to a numerical format if necessary, and then calculating the average of these values.

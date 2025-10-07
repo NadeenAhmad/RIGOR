@@ -1,0 +1,14 @@
+1.Question: What is the predicted ICU mortality rate for a patient with a given Apache score and version?
+Answer: The ontology would use the 'apachescore' and 'apacheversion' columns to filter the records and then retrieve the 'predictedicumortality' and 'predictediculos' columns to provide the predicted ICU mortality rate.
+
+2.Question: Which physicians specialties are associated with the highest actual ICU LOS for patients?
+Answer: The ontology would group the records by the 'physicianspeciality' column and then aggregate the 'actualiculos' column to find the specialty with the highest average ICU length of stay.
+
+3.Question: What is the difference between predicted and actual hospital mortality for patients who underwent a pre-op MI?
+Answer: The ontology would filter the records where 'preopmi' is not null or not zero, and then compare the 'predictedhospitalmortality' and 'actualhospitalmortality' columns to calculate the difference.
+
+4.Question: How many patients had a PTCA within 24 hours of admission, and what were their predicted and actual hospital LOS?
+Answer: The ontology would filter the records where 'ptcawithin24h' is not null or not zero, and then retrieve the 'predictedhospitallos' and 'actualhospitallos' columns to provide the predicted and actual hospital lengths of stay for these patients.
+
+5.Question: What is the average number of ventilator days for patients with a specific Apache version and actual ICU mortality?
+Answer: The ontology would filter the records based on the 'apacheversion' and 'actualicumortality' columns, and then aggregate the 'actualventdays' column to calculate the average number of ventilator days.

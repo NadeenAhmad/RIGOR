@@ -1,0 +1,14 @@
+1.Question: Which patients have an active care plan on discharge?
+Answer: The ontology would answer this question by querying the 'careplaneol' table for rows where the 'activeupondischarge' column is set to a value indicating 'active', such as 'YES' or 'TRUE'. This would provide a list of 'patientunitstayid' values corresponding to patients with active care plans on discharge.
+
+2.Question: What is the discussion offset for a specific patient's care plan?
+Answer: The ontology would answer this question by querying the 'careplaneol' table for the row where the 'patientunitstayid' matches the specific patient's ID. The 'cpleoldiscussionoffset' column in this row would provide the discussion offset for that patient's care plan.
+
+3.Question: How many care plans are there for a specific patient?
+Answer: The ontology would answer this question by counting the number of rows in the 'careplaneol' table where the 'patientunitstayid' matches the specific patient's ID. This count represents the total number of care plans for that patient.
+
+4.Question: What is the save offset for the most recent care plan for a specific patient?
+Answer: The ontology would answer this question by querying the 'careplaneol' table for the row with the maximum 'cpleolsaveoffset' value where the 'patientunitstayid' matches the specific patient's ID. The 'cpleolsaveoffset' value in this row would provide the save offset for the most recent care plan.
+
+5.Question: Which patients have a specific active status upon discharge?
+Answer: The ontology would answer this question by querying the 'careplaneol' table for rows where the 'activeupondischarge' column matches the specified active status. This would provide a list of 'patientunitstayid' values corresponding to patients with the specified active status upon discharge.

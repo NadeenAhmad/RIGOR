@@ -1,0 +1,14 @@
+1.Question: Which patients have an active infectious disease care plan upon discharge?
+Answer: The ontology would answer this by querying the 'careplaninfectiousdisease' table for rows where the 'activeupondischarge' column is 'Yes'. This column directly indicates whether the care plan for an infectious disease was active at the time of discharge.
+
+2.Question: What is the disease site for a specific patient's infectious disease care plan?
+Answer: The ontology would answer this by using the 'patientunitstayid' to join with the 'patient' table to identify the specific patient. Then, it would retrieve the value from the 'infectdiseasesite' column in the 'careplaninfectiousdisease' table for that patient.
+
+3.Question: How many patients have a specific infectious disease site in their care plan?
+Answer: The ontology would answer this by querying the 'careplaninfectiousdisease' table and counting the number of rows where the 'infectdiseasesite' column matches the specified disease site.
+
+4.Question: What is the treatment response for a patient with a specific infectious disease care plan?
+Answer: The ontology would answer this by using the 'patientunitstayid' to join with the 'patient' table to identify the specific patient. Then, it would retrieve the value from the'responsetotherapy' column in the 'careplaninfectiousdisease' table for that patient.
+
+5.Question: Which treatments have been prescribed for patients with a specific infectious disease assessment?
+Answer: The ontology would answer this by querying the 'careplaninfectiousdisease' table for rows where the 'infectdiseaseassessment' column matches the specified assessment. Then, it would retrieve the values from the 'treatment' column for those rows.

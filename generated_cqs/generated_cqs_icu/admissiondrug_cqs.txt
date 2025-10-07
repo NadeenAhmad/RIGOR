@@ -1,0 +1,14 @@
+1.Question: Which drugs were administered to a specific patient during a particular hospital stay?
+Answer: The ontology would answer this by querying the 'admissiondrug' table for rows where the 'patientunitstayid' matches the specific patient's hospital stay ID. The 'drugname' column would provide the names of the drugs administered.
+
+2.Question: What is the dosage and frequency of a specific drug administered to a patient?
+Answer: The ontology would answer this by querying the 'admissiondrug' table for rows where the 'drugname' matches the specific drug and the 'patientunitstayid' matches the specific patient's hospital stay ID. The 'drugdosage' and 'drugadmitfrequency' columns would provide the dosage and frequency of the drug.
+
+3.Question: Which drugs were noted as being written in the ICU for a specific patient stay?
+Answer: The ontology would answer this by querying the 'admissiondrug' table for rows where the 'writtenineicu' is 'Y' (or the appropriate value indicating 'yes') and the 'patientunitstayid' matches the specific patient's hospital stay ID. The 'drugname' column would provide the names of the drugs written in the ICU.
+
+4.Question: What is the specialty type of the user who entered a specific drug for a patient stay?
+Answer: The ontology would answer this by querying the 'admissiondrug' table for rows where the 'drugname' matches the specific drug and the 'patientunitstayid' matches the specific patient's hospital stay ID. The'specialtytype' column would provide the specialty type of the user who entered the drug.
+
+5.Question: Which drugs were included in the patient's medication list (rxincluded) for a specific hospital stay?
+Answer: The ontology would answer this by querying the 'admissiondrug' table for rows where the 'rxincluded' is 'Y' (or the appropriate value indicating 'yes') and the 'patientunitstayid' matches the specific patient's hospital stay ID. The 'drugname' column would provide the names of the drugs included in the medication list.

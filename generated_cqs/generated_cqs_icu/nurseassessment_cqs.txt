@@ -1,0 +1,14 @@
+1.Question: What are the attributes and their values for a specific nurse assessment entry identified by 'nurseassessid'?
+Answer: The ontology would answer this by querying the table 'nurseassessment' to retrieve the rows where 'nurseassessid' matches the given identifier. The columns 'CELLATTRIBUTEPATH', 'CELLATTRIBUTE', and 'CELLATTRIBUTEVALUE' would provide the attributes and their corresponding values for that specific assessment entry.
+
+2.Question: Which nurse assessment entries are related to a specific patient unit stay identified by 'patientunitstayid'?
+Answer: The ontology would answer this by querying the table 'nurseassessment' to retrieve all rows where 'patientunitstayid' matches the given identifier. This would list all nurse assessment entries associated with that particular patient unit stay.
+
+3.Question: What are the offsets (NURSEASSESSOFFSET and NURSEASSESSENTRYOFFSET) for a specific nurse assessment entry identified by 'nurseassessid'?
+Answer: The ontology would answer this by querying the table 'nurseassessment' to retrieve the rows where 'nurseassessid' matches the given identifier. The columns 'NURSEASSESSOFFSET' and 'NURSEASSESSENTRYOFFSET' would provide the offsets for that specific assessment entry.
+
+4.Question: What are the labels for the nurse assessment entries related to a specific patient unit stay identified by 'patientunitstayid'?
+Answer: The ontology would answer this by querying the table 'nurseassessment' to retrieve the rows where 'patientunitstayid' matches the given identifier. The column 'CELLLABEL' would provide the labels for the nurse assessment entries associated with that particular patient unit stay.
+
+5.Question: What are the attribute paths for the nurse assessment entries related to a specific patient unit stay identified by 'patientunitstayid'?
+Answer: The ontology would answer this by querying the table 'nurseassessment' to retrieve the rows where 'patientunitstayid' matches the given identifier. The column 'CELLATTRIBUTEPATH' would provide the attribute paths for the nurse assessment entries associated with that particular patient unit stay.

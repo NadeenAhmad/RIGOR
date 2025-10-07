@@ -1,0 +1,14 @@
+1.Question: What is the average SAPS3 score on the day of admission for patients who died in the hospital?
+Answer: The ontology would answer this by querying the'saps3day1' column and filtering the rows where the 'diedinhospital' column is 1 (indicating the patient died in the hospital). It would then calculate the average of the'saps3day1' values for these filtered rows.
+
+2.Question: How many patients had a diagnosis of metastatic cancer?
+Answer: The ontology would answer this by counting the number of rows where the'metastaticcancer' column is 1, indicating the presence of metastatic cancer.
+
+3.Question: What is the distribution of SAPS3 scores for patients with different types of teaching hospitals?
+Answer: The ontology would answer this by grouping the rows based on the 'teachtype' column and then calculating the distribution (e.g., mean, median, mode) of the'saps3today' values for each group.
+
+4.Question: What is the average age of patients who received thrombolytics?
+Answer: The ontology would answer this by filtering the rows where the 'thrombolytics' column is 1 (indicating the patient received thrombolytics) and then calculating the average of the 'age' values for these filtered rows.
+
+5.Question: How many patients were admitted from an intensive care unit (ICU) and had a SAPS3 score of 10 or higher on the day of admission?
+Answer: The ontology would answer this by filtering the rows where the 'admitsource' column indicates admission from an ICU (assuming a specific code for ICU) and the'saps3day1' column is 10 or higher. It would then count the number of such rows.

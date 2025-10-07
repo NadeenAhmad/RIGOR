@@ -1,0 +1,14 @@
+1.Question: How can I retrieve the past history notes for a specific patient based on their stay ID?
+Answer: The ontology would use the `patientunitstayid` column to filter the `pasthistory` table. By matching the `patientunitstayid` with the specific patient's stay ID, it can retrieve all corresponding rows, which include the `pasthistorynotetype`, `pasthistorypath`, `pasthistoryvalue`, and `pasthistoryvaluetext` columns. This provides the detailed past history notes for that patient's stay.
+
+2.Question: What types of past history notes are recorded for a given patient during their stay?
+Answer: The ontology would query the `pasthistorynotetype` column for rows where the `patientunitstayid` matches the patient's stay ID. This column contains the types of past history notes, allowing the ontology to list all the different types of notes recorded for that patient during their stay.
+
+3.Question: Can I find the exact time when a specific past history note was entered for a patient?
+Answer: The ontology would use the `pasthistoryenteredoffset` column in conjunction with the `patientunitstayid` to identify the specific past history note. The `pasthistoryenteredoffset` column stores the offset time when the note was entered, providing the exact time information for the specific note.
+
+4.Question: How can I retrieve all past history notes for a patient that were entered within a specific time frame?
+Answer: The ontology would filter the `pasthistory` table using the `pasthistoryenteredoffset` column to match the specific time frame. Additionally, it would use the `patientunitstayid` to ensure the notes pertain to the correct patient. This combination would retrieve all past history notes entered within the specified time frame for that patient.
+
+5.Question: What is the value and text description of a past history note for a specific patient and note type?
+Answer: The ontology would filter the `pasthistory` table using both the `patientunitstayid` and `pasthistorynotetype` columns to identify the specific past history note. The `pasthistoryvalue` and `pasthistoryvaluetext` columns would then be used to retrieve the value and text description of that note, providing detailed information about the specific past history note for the patient.

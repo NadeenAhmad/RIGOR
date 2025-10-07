@@ -1,0 +1,14 @@
+1.Question: What is the temperature of a patient with a given patientunitstayid at a specific observationoffset?
+Answer: The ontology would answer this by querying the 'vitalperiodic' table for the row where `patientunitstayid` matches the given value and `observationoffset` matches the specified value. The `temperature` field in that row would provide the answer.
+
+2.Question: What are the heart rate and respiration rate of a patient with a given patientunitstayid at a specific observationoffset?
+Answer: The ontology would answer this by querying the 'vitalperiodic' table for the row where `patientunitstayid` matches the given value and `observationoffset` matches the specified value. The `heartrate` and `respiration` fields in that row would provide the answers.
+
+3.Question: What is the mean systemic blood pressure of a patient with a given patientunitstayid at a specific observationoffset?
+Answer: The ontology would answer this by querying the 'vitalperiodic' table for the row where `patientunitstayid` matches the given value and `observationoffset` matches the specified value. The `systemicmean` field in that row would provide the answer.
+
+4.Question: What are the ST segment values (st1, st2, st3) for a patient with a given patientunitstayid at a specific observationoffset?
+Answer: The ontology would answer this by querying the 'vitalperiodic' table for the row where `patientunitstayid` matches the given value and `observationoffset` matches the specified value. The `st1`, `st2`, and `st3` fields in that row would provide the answers.
+
+5.Question: What is the intracranial pressure (ICP) of a patient with a given patientunitstayid at a specific observationoffset?
+Answer: The ontology would answer this by querying the 'vitalperiodic' table for the row where `patientunitstayid` matches the given value and `observationoffset` matches the specified value. The `icp` field in that row would provide the answer.

@@ -1,0 +1,14 @@
+1.Question: Which medications were administered to a patient during their stay identified by a specific patientunitstayid?
+Answer: The ontology would answer this by querying the'medication' table for rows where the 'patientunitstayid' matches the specified value. The 'drugname' column would provide the names of the medications administered.
+
+2.Question: What is the dosage and route of administration for a specific drug given to a patient during their stay?
+Answer: The ontology would answer this by querying the'medication' table for rows where the 'drugname' matches the specified drug name and the 'patientunitstayid' matches the specific patient stay. The 'dosage' and 'routeadmin' columns would provide the dosage and route of administration, respectively.
+
+3.Question: How many times was a specific drug ordered for a patient during their stay?
+Answer: The ontology would answer this by querying the'medication' table for rows where the 'drugname' matches the specified drug name and the 'patientunitstayid' matches the specific patient stay. The count of such rows would give the number of times the drug was ordered.
+
+4.Question: Which drugs were ordered but not administered to a patient during their stay?
+Answer: The ontology would answer this by querying the'medication' table for rows where the 'patientunitstayid' matches the specific patient stay and the 'drugordercancelled' column indicates that the order was cancelled. The 'drugname' column would provide the names of the drugs that were ordered but not administered.
+
+5.Question: What is the sequence number of the drug administration for a specific patient during their stay?
+Answer: The ontology would answer this by querying the'medication' table for rows where the 'patientunitstayid' matches the specific patient stay. The 'drughiclseqno' column would provide the sequence number of the drug administration for the patient.

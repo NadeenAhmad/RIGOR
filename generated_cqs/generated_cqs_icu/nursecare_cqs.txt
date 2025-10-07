@@ -1,0 +1,14 @@
+1.Question: What is the cell label for a specific nurse care entry identified by nurse care ID?
+Answer: The ontology would query the 'nursecare' table for the row where 'nursecareid' matches the given nurse care ID. The value in the 'CELLLABEL' column of that row would provide the cell label for the specified nurse care entry.
+
+2.Question: Which nurse care entries are associated with a particular patient unit stay ID?
+Answer: The ontology would retrieve all rows from the 'nursecare' table where the 'patientunitstayid' matches the given patient unit stay ID. Each row returned would represent a nurse care entry associated with that patient unit stay.
+
+3.Question: What is the cell attribute value for a specific nurse care entry identified by nurse care ID?
+Answer: The ontology would query the 'nursecare' table for the row where 'nursecareid' matches the given nurse care ID. The value in the 'CELLATTRIBUTEVALUE' column of that row would provide the cell attribute value for the specified nurse care entry.
+
+4.Question: Which patient unit stays have specific cell attribute values in their nurse care entries?
+Answer: The ontology would search the 'nursecare' table for rows where the 'CELLATTRIBUTEVALUE' matches the specified value. The 'patientunitstayid' values in these rows would be retrieved, indicating which patient unit stays have nurse care entries with the specified cell attribute values.
+
+5.Question: What is the offset for a specific nurse care entry identified by nurse care ID?
+Answer: The ontology would query the 'nursecare' table for the row where 'nursecareid' matches the given nurse care ID. The values in the 'NURSECAREOFFSET' and 'NURSECAREENTRYOFFSET' columns of that row would provide the offsets for the specified nurse care entry.

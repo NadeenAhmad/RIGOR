@@ -1,0 +1,14 @@
+1.Question: What are the different types of lab tests performed on a patient with a specific patient unit stay ID?
+Answer: The ontology would query the 'lab' table to retrieve distinct 'labtypeid' and 'labname' values where 'patientunitstayid' matches the specified patient unit stay ID. This would provide the different types of lab tests performed on that patient.
+
+2.Question: Which lab results have been revised for a particular patient unit stay ID?
+Answer: The ontology would search the 'lab' table for records where 'patientunitstayid' matches the specified ID and 'labresultrevisedoffset' is not null. This would identify the lab results that have been revised for that patient unit stay.
+
+3.Question: What is the lab result for a specific lab test type and patient unit stay ID?
+Answer: The ontology would query the 'lab' table for the 'labresult' where both 'labtypeid' and 'patientunitstayid' match the specified values. This would return the lab result for the specific lab test type for that patient unit stay.
+
+4.Question: How many lab tests have been performed for a particular patient unit stay ID?
+Answer: The ontology would count the number of records in the 'lab' table where 'patientunitstayid' matches the specified ID. This would give the total number of lab tests performed for that patient unit stay.
+
+5.Question: What is the measurement name system for a specific lab test type and patient unit stay ID?
+Answer: The ontology would query the 'lab' table for the 'labmeasurenamesystem' where both 'labtypeid' and 'patientunitstayid' match the specified values. This would return the measurement name system for the specific lab test type for that patient unit stay.

@@ -1,0 +1,14 @@
+1.Question: What is the name of the drug administered to a patient with a specific patientunitstayid?
+Answer: The ontology would use the 'drugname' column in the 'infusiondrug' table to retrieve the name of the drug administered to a patient. The query would filter the results based on the provided 'patientunitstayid' value.
+
+2.Question: What is the infusion rate for a specific drug administered to a patient?
+Answer: The ontology would use the 'drugname' column to identify the specific drug and the 'infusionrate' column to retrieve the infusion rate. The query would filter the results based on the provided 'drugname' and 'patientunitstayid' values.
+
+3.Question: What is the total volume of fluid administered to a patient with a specific patientunitstayid?
+Answer: The ontology would use the 'volumeoffluid' column in the 'infusiondrug' table to sum up the total volume of fluid administered. The query would filter the results based on the provided 'patientunitstayid' value.
+
+4.Question: What is the drug rate for a specific infusiondrugid?
+Answer: The ontology would use the 'infusiondrugid' column to identify the specific record and the 'drugrate' column to retrieve the drug rate. The query would filter the results based on the provided 'infusiondrugid' value.
+
+5.Question: Which patients have received a specific drug?
+Answer: The ontology would use the 'drugname' column to identify the specific drug and the 'patientunitstayid' column to retrieve the corresponding patient IDs. The query would filter the results based on the provided 'drugname' value and then join with the 'patient' table using the 'patientunitstayid' foreign key to get the patient details.

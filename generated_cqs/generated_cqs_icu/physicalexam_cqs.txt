@@ -1,0 +1,14 @@
+1.Question: What are the physical examination records for a specific patient unit stay?
+Answer: The ontology would answer this by querying the 'physicalexam' table to retrieve rows where the 'patientunitstayid' matches the specified patient unit stay ID. The relevant columns such as 'physicalexamid', 'physicalexamoffset', 'physicalexampath', 'physicalexamvalue', and 'physicalexamtext' would provide the details of the physical examination records.
+
+2.Question: Which patients have a physical examination record with a specific examination path?
+Answer: The ontology would answer this by querying the 'physicalexam' table to find rows where the 'physicalexampath' matches the specified examination path. The corresponding 'patientunitstayid' values would be retrieved and used to identify the patients through the foreign key relationship with the 'patient' table.
+
+3.Question: What is the value of a specific physical examination for a given patient unit stay?
+Answer: The ontology would answer this by querying the 'physicalexam' table to retrieve the 'physicalexamvalue' where the 'physicalexamid' and 'patientunitstayid' match the specified examination ID and patient unit stay ID, respectively.
+
+4.Question: List all physical examination records that have a specific text description.
+Answer: The ontology would answer this by querying the 'physicalexam' table to find rows where the 'physicalexamtext' matches the specified text description. The relevant columns such as 'physicalexamid', 'patientunitstayid', 'physicalexamoffset', 'physicalexampath', and 'physicalexamvalue' would provide the details of the matching physical examination records.
+
+5.Question: What is the offset of a specific physical examination for a given patient unit stay?
+Answer: The ontology would answer this by querying the 'physicalexam' table to retrieve the 'physicalexamoffset' where the 'physicalexamid' and 'patientunitstayid' match the specified examination ID and patient unit stay ID, respectively.

@@ -1,0 +1,14 @@
+1.Question: Which care providers were involved in the care plan for a specific patient unit stay?
+Answer: The ontology would answer this by querying the 'careplancareprovider' table for rows where 'patientunitstayid' matches the specific patient unit stay ID. The 'cplcareprovderid' and 'providertype' columns would provide details about the involved care providers.
+
+2.Question: What is the specialty of the managing physician for a given patient unit stay?
+Answer: The ontology would query the 'careplancareprovider' table for rows where 'patientunitstayid' matches the given patient unit stay ID and'managingphysician' is not null. The'specialty' column would provide the specialty of the managing physician.
+
+3.Question: Which intervention categories were used by the care providers for a specific patient unit stay?
+Answer: The ontology would query the 'careplancareprovider' table for rows where 'patientunitstayid' matches the specific patient unit stay ID. The 'interventioncategory' column would list the intervention categories used by the care providers.
+
+4.Question: Were there any care providers active upon discharge for a particular patient unit stay?
+Answer: The ontology would query the 'careplancareprovider' table for rows where 'patientunitstayid' matches the particular patient unit stay ID and 'activeupondischarge' is 'Yes'. The presence of such rows would indicate that there were care providers active upon discharge.
+
+5.Question: What is the save offset for a specific care provider in a given patient unit stay?
+Answer: The ontology would query the 'careplancareprovider' table for rows where 'cplcareprovderid' matches the specific care provider ID and 'patientunitstayid' matches the given patient unit stay ID. The 'careprovidersaveoffset' column would provide the save offset for the care provider.

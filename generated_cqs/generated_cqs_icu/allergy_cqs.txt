@@ -1,0 +1,14 @@
+1.Question: What are the names of all drugs that a specific patient is allergic to?
+Answer: The ontology would answer this by querying the 'drugname' column in the 'allergy' table where the 'patientunitstayid' matches the specific patient's ID. The 'patientunitstayid' column serves as a foreign key linking to the 'patient' table, ensuring that the correct patient's allergies are retrieved.
+
+2.Question: Which allergies were entered into the system within a specific time offset range?
+Answer: The ontology would answer this by querying the 'allergyenteredoffset' column in the 'allergy' table to filter records where the 'allergyenteredoffset' falls within the specified range. This allows for the identification of allergies entered during a particular time frame.
+
+3.Question: How many different types of allergies are recorded in the system?
+Answer: The ontology would answer this by performing a distinct count on the 'allergytype' column in the 'allergy' table. This operation would return the number of unique allergy types documented in the system.
+
+4.Question: What are the specialties associated with allergies involving a specific drug?
+Answer: The ontology would answer this by querying the'specialtytype' column in the 'allergy' table where the 'drugname' matches the specific drug. This allows for the retrieval of specialties associated with allergies related to that particular drug.
+
+5.Question: Which users have entered allergies for a specific patient?
+Answer: The ontology would answer this by querying the 'usertype' column in the 'allergy' table where the 'patientunitstayid' matches the specific patient's ID. This allows for the identification of users who have documented allergies for that patient.

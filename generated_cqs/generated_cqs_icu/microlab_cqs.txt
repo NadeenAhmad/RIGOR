@@ -1,0 +1,14 @@
+1.Question: Which patients have had cultures taken from a specific site, such as 'Blood'?
+Answer: The ontology would query the'microlab' table to find all entries where the 'culturesite' column matches the specified site, such as 'Blood'. It would then use the 'patientunitstayid' column to link to the 'patient' table via the foreign key relationship to identify the corresponding patients.
+
+2.Question: What organisms have been identified in cultures taken from a specific patient?
+Answer: The ontology would first identify the 'patientunitstayid' for the specific patient from the 'patient' table. It would then query the'microlab' table to find all entries where the 'patientunitstayid' matches the identified patient ID. The 'organism' column in these entries would provide the list of identified organisms.
+
+3.Question: Which antibiotics have been tested for sensitivity against a specific organism?
+Answer: The ontology would query the'microlab' table to find all entries where the 'organism' column matches the specified organism. The 'antibiotic' column in these entries would provide the list of antibiotics that have been tested for sensitivity against the organism.
+
+4.Question: What is the sensitivity level of a specific antibiotic against a specific organism in a patient's culture?
+Answer: The ontology would first identify the 'patientunitstayid' for the specific patient from the 'patient' table. It would then query the'microlab' table to find the entry where the 'patientunitstayid' matches the identified patient ID, the 'organism' column matches the specified organism, and the 'antibiotic' column matches the specified antibiotic. The'sensitivitylevel' column in this entry would provide the sensitivity level.
+
+5.Question: How many cultures have been taken from a specific patient within a certain time offset?
+Answer: The ontology would first identify the 'patientunitstayid' for the specific patient from the 'patient' table. It would then query the'microlab' table to count the number of entries where the 'patientunitstayid' matches the identified patient ID and the 'culturetakenoffset' column falls within the specified time offset range.

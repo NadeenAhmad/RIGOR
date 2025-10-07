@@ -1,0 +1,14 @@
+1.Question: What treatments were active upon discharge for a specific patient unit stay?
+Answer: The ontology would answer this question by querying the 'treatment' table to filter rows where 'activeupondischarge' is 'Yes' and 'patientunitstayid' matches the specific patient unit stay ID.
+
+2.Question: How many treatments does a specific patient unit stay have?
+Answer: The ontology would count the number of rows in the 'treatment' table where 'patientunitstayid' matches the specific patient unit stay ID.
+
+3.Question: What are the treatment strings for a specific patient unit stay?
+Answer: The ontology would retrieve the 'treatmentstring' column values from the 'treatment' table where 'patientunitstayid' matches the specific patient unit stay ID.
+
+4.Question: What is the treatment offset for a specific treatment ID?
+Answer: The ontology would retrieve the 'treatmentoffset' value from the 'treatment' table where 'treatmentid' matches the specific treatment ID.
+
+5.Question: Which patient unit stays received a specific treatment string?
+Answer: The ontology would retrieve the 'patientunitstayid' values from the 'treatment' table where 'treatmentstring' matches the specific treatment string.

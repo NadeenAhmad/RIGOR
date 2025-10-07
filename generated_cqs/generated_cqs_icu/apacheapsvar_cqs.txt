@@ -1,0 +1,14 @@
+1.Question: What are the different types of treatments (intubation, ventilation, dialysis) administered to a specific patient during their stay, identified by patientunitstayid?
+Answer: The ontology would answer this by retrieving the values of the columns 'intubated','vent', and 'dialysis' for the specific patientunitstayid. These columns indicate whether the patient received intubation, ventilation, or dialysis, respectively.
+
+2.Question: What are the vital signs (heart rate, respiratory rate, temperature) recorded for a patient during their stay, identified by patientunitstayid?
+Answer: The ontology would answer this by retrieving the values of the columns 'heartrate','respiratoryrate', and 'temperature' for the specific patientunitstayid. These columns store the respective vital signs measurements.
+
+3.Question: What is the Glasgow Coma Scale (GCS) score for a patient during their stay, identified by patientunitstayid?
+Answer: The ontology would answer this by summing the values of the columns 'eyes','motor', and'verbal' for the specific patientunitstayid. The GCS score is derived from these three components.
+
+4.Question: What are the laboratory test results (WBC count, creatinine level, albumin level) for a patient during their stay, identified by patientunitstayid?
+Answer: The ontology would answer this by retrieving the values of the columns 'wbc', 'creatinine', and 'albumin' for the specific patientunitstayid. These columns store the respective laboratory test results.
+
+5.Question: What are the medication details (meds) and urine output (urine) for a patient during their stay, identified by patientunitstayid?
+Answer: The ontology would answer this by retrieving the values of the columns'meds' and 'urine' for the specific patientunitstayid. These columns indicate the medication details and urine output, respectively.

@@ -1,0 +1,14 @@
+1.Question: What is the average non-invasive systolic blood pressure for a patient with a given patient unit stay ID?
+Answer: The ontology would answer this question by querying the 'noninvasivesystolic' column for all rows where the 'patientunitstayid' matches the given ID. It would then calculate the average of these values.
+
+2.Question: For a specific patient unit stay, what is the range of observation offsets recorded?
+Answer: The ontology would retrieve all rows where the 'patientunitstayid' matches the specific ID and then determine the minimum and maximum values in the 'observationoffset' column.
+
+3.Question: What is the cardiac output for a patient in a given unit stay at a specific observation offset?
+Answer: The ontology would query the 'cardiacoutput' column for the row where both 'patientunitstayid' and 'observationoffset' match the given values.
+
+4.Question: What is the systemic vascular resistance index (SVRI) for a patient with a given patient unit stay ID?
+Answer: The ontology would retrieve the'svri' column value for all rows where the 'patientunitstayid' matches the given ID. If multiple values are present, it would aggregate them as needed (e.g., average, latest value).
+
+5.Question: What are the mean pulmonary artery pressures (PAOP) for all patients in a specific unit stay?
+Answer: The ontology would query the 'paop' column for all rows where the 'patientunitstayid' matches the specific unit stay ID and then calculate the mean of these values.

@@ -1,0 +1,14 @@
+1.Question: Which patients have a specific diagnosis code (ICD-9) recorded in their diagnosis history?
+Answer: The ontology would answer this question by querying the 'diagnosis' table to filter records based on the 'icd9code' column. It would then join this result with the 'patient' table using the 'patientunitstayid' foreign key to retrieve patient information.
+
+2.Question: What are the active diagnoses upon discharge for a particular patient?
+Answer: The ontology would answer this question by querying the 'diagnosis' table to filter records where the 'activeupondischarge' column is 'Yes' and the 'patientunitstayid' matches the specific patient's ID. It would then retrieve the corresponding 'diagnosisstring' and 'icd9code' for those records.
+
+3.Question: How many unique diagnoses are recorded for a specific patient?
+Answer: The ontology would answer this question by querying the 'diagnosis' table to count the distinct 'diagnosisstring' values for a specific 'patientunitstayid'. This would involve a GROUP BY clause on 'diagnosisstring' and a COUNT function.
+
+4.Question: What is the priority of a specific diagnosis for a particular patient?
+Answer: The ontology would answer this question by querying the 'diagnosis' table to filter records based on the 'patientunitstayid' and 'diagnosisstring'. It would then retrieve the corresponding 'diagnosispriority' value from the matching record.
+
+5.Question: Which diagnoses were recorded within a specific offset range for a patient?
+Answer: The ontology would answer this question by querying the 'diagnosis' table to filter records based on the 'patientunitstayid' and 'diagnosisoffset' column within the specified range. It would then retrieve the corresponding 'diagnosisstring' and 'icd9code' for those records.

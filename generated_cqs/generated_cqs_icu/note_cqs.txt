@@ -1,0 +1,14 @@
+1.Question: Which notes are associated with a specific patient unit stay?
+Answer: The ontology would answer this by querying the 'note' table for rows where the 'patientunitstayid' matches the specific patient unit stay ID. The result would include all relevant 'NOTEID', 'NOTEOFFSET', 'NOTEENTEREDOFFSET', 'NOTETYPE', 'NOTEPATH', 'NOTEVALUE', and 'NOTETEXT'.
+
+2.Question: What is the type of a specific note?
+Answer: The ontology would identify the specific note by its 'NOTEID' and then retrieve the 'NOTETYPE' from the corresponding row in the 'note' table.
+
+3.Question: What is the content of a specific note entered at a particular offset?
+Answer: The ontology would query the 'note' table for the row where 'NOTEID' matches the specific note and 'NOTEENTEREDOFFSET' matches the particular offset. The 'NOTETEXT' from this row would provide the content of the note.
+
+4.Question: Which notes have a value that matches a specific criterion?
+Answer: The ontology would search the 'note' table for rows where the 'NOTEVALUE' matches the specific criterion. The result would include all relevant 'NOTEID', 'patientunitstayid', 'NOTEOFFSET', 'NOTEENTEREDOFFSET', 'NOTETYPE', 'NOTEPATH', and 'NOTETEXT'.
+
+5.Question: What is the path of a specific note type?
+Answer: The ontology would query the 'note' table for rows where the 'NOTETYPE' matches the specific note type. The 'NOTEPATH' from these rows would provide the path information for the notes of that type.

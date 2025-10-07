@@ -1,0 +1,14 @@
+1.Question: How many hospitals are there in the 'North' region?
+Answer: The ontology would count the number of rows in the 'hospital' table where the'region' column is 'North'. This can be achieved using a SQL query like `SELECT COUNT(*) FROM hospital WHERE region = 'North';`.
+
+2.Question: Which hospitals are teaching hospitals?
+Answer: The ontology would identify rows in the 'hospital' table where the 'teachingstatus' column has a value of 1 (assuming 1 indicates a teaching hospital). This can be done using a SQL query like `SELECT * FROM hospital WHERE teachingstatus = 1;`.
+
+3.Question: What are the different bed categories available in the hospitals?
+Answer: The ontology would extract unique values from the 'numbedscategory' column in the 'hospital' table. This can be achieved using a SQL query like `SELECT DISTINCT numbedscategory FROM hospital;`.
+
+4.Question: List all hospitals in the 'South' region that are not teaching hospitals.
+Answer: The ontology would filter rows in the 'hospital' table where the'region' column is 'South' and the 'teachingstatus' column is not 1. This can be done using a SQL query like `SELECT * FROM hospital WHERE region = 'South' AND teachingstatus!= 1;`.
+
+5.Question: How many hospitals are there in total?
+Answer: The ontology would count the total number of rows in the 'hospital' table. This can be achieved using a SQL query like `SELECT COUNT(*) FROM hospital;`.

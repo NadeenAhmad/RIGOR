@@ -1,0 +1,14 @@
+1.Question: What is the average age of patients admitted to a specific hospital?
+Answer: The ontology would answer this by selecting the 'age' column from the 'patient' table where the 'hospitalid' matches the specified hospital. Then, it would calculate the average of the 'age' values.
+
+2.Question: How many patients were admitted from a specific source (e.g., 'Emergency Room') to a particular ward?
+Answer: The ontology would answer this by filtering the 'patient' table for rows where the 'hospitaladmitoffset' and 'wardid' match the specified source and ward, respectively. It would then count the number of resulting rows.
+
+3.Question: What is the discharge status of patients who were admitted to a specific unit type?
+Answer: The ontology would answer this by selecting the 'unitdischargestatus' column from the 'patient' table where the 'unittype' matches the specified unit type. It would then aggregate the discharge statuses.
+
+4.Question: What is the average length of stay in the hospital for patients of a specific gender?
+Answer: The ontology would answer this by calculating the difference between 'hospitaldischargeoffset' and 'hospitaladmitoffset' for rows where the 'gender' matches the specified gender. It would then calculate the average of these differences.
+
+5.Question: How many patients were discharged to a specific location from a particular hospital?
+Answer: The ontology would answer this by filtering the 'patient' table for rows where the 'hospitaldischargeyear' and 'hospitalid' match the specified year and hospital, respectively. It would then count the number of rows where the 'hospitaldischargelocation' matches the specified location.

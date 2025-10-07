@@ -1,0 +1,14 @@
+1.Question: Which patients have a specific lab result for a given lab test?
+Answer: The ontology would use the 'patientunitstayid' column to identify the patient and the 'labothername' and 'labotherresult' columns to match the specific lab test and its result. The foreign key 'fk_customlab_patient' would be used to link to the 'patient' table to get patient details.
+
+2.Question: What are the different types of lab tests conducted for a particular patient?
+Answer: The ontology would use the 'patientunitstayid' column to filter lab tests for a specific patient and the 'labothertypeid' column to identify the different types of lab tests. The 'labothername' column could provide additional context for each test type.
+
+3.Question: What are the text values associated with lab results for a specific patient?
+Answer: The ontology would use the 'patientunitstayid' column to filter lab results for a specific patient and the 'labothervaluetext' column to retrieve the associated text values. The 'labotherresult' column could provide additional context for the results.
+
+4.Question: How many lab tests of a specific type have been conducted for all patients?
+Answer: The ontology would use the 'labothertypeid' column to filter lab tests of a specific type and count the number of entries. The 'labothername' column could provide additional context for the test type.
+
+5.Question: What is the offset time for a specific lab test result for a given patient?
+Answer: The ontology would use the 'patientunitstayid' column to filter lab tests for a specific patient and the 'labothername' column to identify the specific lab test. The 'labotheroffset' column would provide the offset time for the test result.

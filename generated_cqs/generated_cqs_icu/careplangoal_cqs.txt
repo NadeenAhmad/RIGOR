@@ -1,0 +1,14 @@
+1.Question: What are the goals set for a specific patient unit stay?**
+Answer: The ontology would answer this by querying the 'careplangoal' table for rows where 'patientunitstayid' matches the specific patient unit stay ID. The 'CPLGOALVALUE' column would provide the details of the goals set for that patient unit stay.
+
+2.Question: Which goals are currently active for a patient upon discharge?**
+Answer: The ontology would filter the 'careplangoal' table for rows where 'ACTIVEUPONDISCHARGE' is 'Y' or 'Yes' (assuming 'Y' or 'Yes' indicates active status). The 'CPLGOALVALUE' and 'CPLGOALCATEGORY' columns would provide the details of the active goals.
+
+3.Question: What is the status of a specific goal for a given patient unit stay?**
+Answer: The ontology would query the 'careplangoal' table for the row where 'cplgoalid' matches the specific goal ID and 'patientunitstayid' matches the given patient unit stay ID. The 'CPLGOALSTATUS' column would provide the status of that specific goal.
+
+4.Question: How many goals are there for a specific patient unit stay?**
+Answer: The ontology would count the number of rows in the 'careplangoal' table where 'patientunitstayid' matches the specific patient unit stay ID. This count would give the total number of goals set for that patient unit stay.
+
+5.Question: What is the offset value for goals categorized under a specific category for a given patient unit stay?**
+Answer: The ontology would query the 'careplangoal' table for rows where 'patientunitstayid' matches the given patient unit stay ID and 'CPLGOALCATEGORY' matches the specific category. The 'CPLGOALoffset' column would provide the offset values for those goals.

@@ -1,0 +1,14 @@
+1.Question: What is the general care plan for a specific patient during their stay in the hospital?
+Answer: The ontology would answer this by querying the 'careplangeneral' table using the 'patientunitstayid' to filter the relevant entries. The columns 'cplitemoffset', 'cplgroup', and 'cplitemvalue' would provide details about the specific care plan items, their groups, and values, respectively.
+
+2.Question: Which patients have an active care plan upon discharge?
+Answer: The ontology would answer this by querying the 'careplangeneral' table and filtering rows where the 'activeupondischarge' column is set to 'yes' or a similar affirmative value. The 'patientunitstayid' column would then be used to identify the specific patients.
+
+3.Question: What are the different groups of care plan items available for patients?
+Answer: The ontology would answer this by querying the 'cplgroup' column in the 'careplangeneral' table to retrieve distinct groups of care plan items. This would provide a list of all possible care plan item groups.
+
+4.Question: What is the value of a specific care plan item for a given patient?
+Answer: The ontology would answer this by querying the 'careplangeneral' table using the 'patientunitstayid' and 'cplitemoffset' to filter the specific care plan item. The 'cplitemvalue' column would provide the value of the care plan item.
+
+5.Question: How many care plan items are there for a specific patient during their stay?
+Answer: The ontology would answer this by querying the 'careplangeneral' table and counting the number of rows where the 'patientunitstayid' matches the specific patient. This count represents the total number of care plan items for that patient during their stay.
