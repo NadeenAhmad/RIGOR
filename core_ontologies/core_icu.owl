@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://example.org/hospital-ontology#"
+     xml:base="http://example.org/hospital-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+    <owl:Ontology rdf:about="http://example.org/hospital-ontology"/>
+
+    <!-- Classes -->
+    <owl:Class rdf:about="#Patient"/>
+    <owl:Class rdf:about="#AdmissionDrug"/>
+    <owl:Class rdf:about="#AdmissionDiagnosis"/>
+    <owl:Class rdf:about="#Allergy"/>
+
+    <!-- Object Properties -->
+    <owl:ObjectProperty rdf:about="#hasAdmissionDrug">
+        <rdfs:domain rdf:resource="#Patient"/>
+        <rdfs:range rdf:resource="#AdmissionDrug"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="#hasAdmissionDiagnosis">
+        <rdfs:domain rdf:resource="#Patient"/>
+        <rdfs:range rdf:resource="#AdmissionDiagnosis"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="#hasAllergy">
+        <rdfs:domain rdf:resource="#Patient"/>
+        <rdfs:range rdf:resource="#Allergy"/>
+    </owl:ObjectProperty>
+
+</rdf:RDF>
