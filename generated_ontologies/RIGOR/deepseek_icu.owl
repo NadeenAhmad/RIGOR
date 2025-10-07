@@ -1,0 +1,1136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:prov="http://www.w3.org/ns/prov#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://example.org/ontology#has_patientunitstayid">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/admissiondrug"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/allergy"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/medication"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/respiratorycare"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/diagnosis"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apachepredvar"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplangoal"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/pasthistory"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/nursecharting"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/physicalexam"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/nurseassessment"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/lab"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/microlab"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/respiratorycharting"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apacheapsvar"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/nursecare"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/customlab"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_wbc">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apacheapsvar"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_allergyname">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/allergy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_respchartid">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/respiratorycharting"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_admitsource">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apachepredvar"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_motor">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apachepredvar"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apacheapsvar"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hospital">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/hospital"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/cancer-ontology#hasTreatment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/cancer-ontology#Patient"/>
+    <rdfs:range rdf:resource="http://example.org/cancer-ontology#Treatment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_nurseassessentryoffset">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/nurseassessment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hospitaldischargeyear">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/patient"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_labid">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/lab"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_cell_path">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/intakeoutput"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#apacheadmissiondx">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/patient"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#uniquepid">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/patient"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hospitaldischargestatus">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/patient"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_urine">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apacheapsvar"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#relates_to_cpleolid">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplaneol"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_nursingchartcelltypecat">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/nursecharting"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#ethnicity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/patient"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#NOTEOFFSET">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/note"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#relates_to_patient">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/admissiondrug"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/hospital"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/note"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/medication"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplaninfectiousdisease"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/diagnosis"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplangoal"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/pasthistory"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/nursecharting"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/physicalexam"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/lab"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/microlab"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/respiratorycharting"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/infusiondrug"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apachepatientresult"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_heartrate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apacheapsvar"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_bedcount">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apachepredvar"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_graftcount">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apachepredvar"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_aids">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apachepredvar"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_labname">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/lab"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#cplgroup">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplangeneral"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_nursecareid">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/nursecare"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_age">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apachepredvar"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_output_total">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/intakeoutput"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_airwayposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/respiratorycare"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_pasthistoryoffset">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/pasthistory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#treatmentoffset">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/treatment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#cplgeneralid">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplangeneral"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_rxincluded">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/admissiondrug"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/allergy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#NOTEID">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/note"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_dialysis">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apacheapsvar"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_allergytype">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/allergy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_nurseassessoffset">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/nurseassessment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_pasthistoryvaluetext">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/pasthistory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#careplaneol">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplaneol"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_drugorderoffset">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/medication"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#age">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/patient"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_creatinine">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apacheapsvar"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_drugname">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/admissiondrug"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/allergy"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/medication"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_drugunit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/admissiondrug"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_culturesite">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/microlab"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_gtc">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/medication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#relates_to_table">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/vitalaperiodic"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/vitalperiodic"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplangeneral"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/nurseassessment"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplancareprovider"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/customlab"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_sodium">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apacheapsvar"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_allergynotetype">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/allergy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_treatment">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplaninfectiousdisease"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_allergyid">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/allergy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#apacheapsvar">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apacheapsvar"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hospitaldischargeoffset">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/patient"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#svr">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/vitalaperiodic"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_cellattribute">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/nurseassessment"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/nursecare"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_labotheroffset">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/customlab"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hospitaldischargetime24">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/patient"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_vent">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apacheapsvar"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_verbal">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apachepredvar"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apacheapsvar"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#treatment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/treatment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_pasthistorypath">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/pasthistory"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#pasthistory">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/pasthistory"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_physicalexamid">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/physicalexam"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_admitdxtext">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/admissiondx"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_antibiotic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/microlab"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_pasthistoryid">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/pasthistory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#careplangeneral">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplangeneral"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_hiexhmvlimit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/respiratorycare"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_lowexhmvlimit">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/respiratorycare"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#relates_to_cpleoldiscussionoffset">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplaneol"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#relates_to_careplaninfectiousdisease">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplaninfectiousdisease"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#NOTEENTEREDOFFSET">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/note"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_labresultoffset">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/lab"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#apachepatientresult">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apachepatientresult"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#careplaninfectiousdisease">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplaninfectiousdisease"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_physicalexampath">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/physicalexam"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_medicationid">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/medication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_cplgoalstatus">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplangoal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_ph">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apacheapsvar"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_nursingchartcelltypevallabel">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/nursecharting"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_customlabid">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/customlab"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#infusiondrug">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/infusiondrug"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_sicuday">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apachepredvar"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_labothertypeid">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/customlab"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_active_upondischarge">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplaninfectiousdisease"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#admissiondrug">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/admissiondrug"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_labothername">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/customlab"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_drughiclseqno">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/admissiondrug"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/allergy"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/medication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_saps3yesterday">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apachepredvar"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_nursingchartvalue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/nursecharting"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_infectdiseasesite">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplaninfectiousdisease"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_drugstartoffset">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/medication"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#allergy">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/allergy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#relates_to_cpleolsaveoffset">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplaneol"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hospitaladmittime24">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/patient"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_temperature">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apacheapsvar"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#pvri">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/vitalaperiodic"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_drugadmitfrequency">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/admissiondrug"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#vitalaperiodicid">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/vitalaperiodic"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_nursecareoffset">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/nursecare"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#patient">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/patient"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_pasthistoryvalue">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/pasthistory"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#cardiacinput">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/vitalaperiodic"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_cell_value_numeric">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/intakeoutput"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_saps3day1">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apachepredvar"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_respchartentryoffset">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/respiratorycharting"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#patientunitstayid">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/patient"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/note"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/vitalaperiodic"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplangeneral"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_diagnosispriority">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/diagnosis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_albumin">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apacheapsvar"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_meds">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apachepredvar"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apacheapsvar"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_hiexcitvlimit">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/respiratorycare"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_cplgoalvalue">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplangoal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_nursingchartoffset">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/nursecharting"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_cellattributevalue">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/nurseassessment"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/nursecare"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#gender">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/patient"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hospitaldischargelocation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/patient"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_airwaytype">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/respiratorycare"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#microlab">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/microlab"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_nurseassessid">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/nurseassessment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_respcareid">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/respiratorycare"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_priorventstaroffset">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/respiratorycare"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_drugordercancelled">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/medication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_sensitivitylevel">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/microlab"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#vitalaperiodic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/vitalaperiodic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_labresult">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/lab"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_respiratoryrate">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apacheapsvar"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_drugenteredoffset">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/admissiondrug"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_ventendoffset">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/respiratorycare"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_meanbp">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apacheapsvar"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#pvr">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/vitalaperiodic"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_drugstopoffset">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/medication"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_teachingstatus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/hospital"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_admitdiagnosis">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apachepredvar"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_labothervaluetext">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/customlab"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_apacheapsvarid">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apacheapsvar"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_responsetotherapy">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplaninfectiousdisease"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_nursingchartid">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/nursecharting"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#wardid">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/patient"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#svri">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/vitalaperiodic"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_cplinfectdiseaseoffset">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplaninfectiousdisease"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_usertype">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/admissiondrug"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/allergy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_airwaysize">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/respiratorycare"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#admissionheight">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/patient"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_routeadmin">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/medication"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_respcarestatusoffset">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/respiratorycare"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_drugdosage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/admissiondrug"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/cancer-ontology">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_labmeasurenameinterface">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/lab"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#respiratorycare">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/respiratorycare"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_diedinhospital">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apachepredvar"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hospitaladmitsource">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/patient"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hospitalid">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/patient"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_labotherresult">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/customlab"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_diagnosisoffset">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/diagnosis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#nurseassessment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/nurseassessment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_ventstaroffset">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/respiratorycare"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_drugivadmixture">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/medication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_writtenineicu">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/admissiondrug"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/allergy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/cancer-ontology#Cancer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_labmeasurenamesystem">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/lab"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#customlab">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/customlab"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_frequency">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/medication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/cancer-ontology#Diagnosis">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#patienthealthsystemstayid">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/patient"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#cplitemoffset">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplangeneral"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#relates_to_patientunitstay">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/allergy"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/admissiondx"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_gender">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apachepredvar"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_labresultrevisedoffset">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/lab"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#nursecare">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/nursecare"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_dialysis_total">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/intakeoutput"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_admissiondrugid">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/admissiondrug"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#relates_to_hospital">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/patient"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#note">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/note"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_priorventendoffset">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/respiratorycare"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_dosage">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/medication"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/lab"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#apachepredvar">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apachepredvar"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_physicalexamoffset">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/physicalexam"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_labresulttext">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/lab"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_admitdxenteredoffset">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/admissiondx"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_lowexhtvlimit">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/respiratorycare"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_cplgoalsoffset">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplangoal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_pasthistorynotetype">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/pasthistory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_diagnosisstring">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/diagnosis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_allergyoffset">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/allergy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_lowpexehmohlimit">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/respiratorycare"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_cplgoalid">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplangoal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#relates_to_patient_unit_stay">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/intakeoutput"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_apneaparams">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/respiratorycare"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_drugoffset">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/admissiondrug"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_admitdxpath">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/admissiondx"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#NOTETEXT">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/note"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_prn">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/medication"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#relates_to_activeupondischarge">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplaneol"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_nursingchartentryoffset">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/nursecharting"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/cancer-ontology#hasDiagnosis">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/cancer-ontology#Patient"/>
+    <rdfs:range rdf:resource="http://example.org/cancer-ontology#Diagnosis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#vitalperiodic">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/vitalperiodic"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_organism">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/microlab"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_specialtytype">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/admissiondrug"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/allergy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#respiratorycharting">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/respiratorycharting"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#noninvasivemean">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/vitalaperiodic"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_highipeehmohlimit">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/respiratorycare"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#medication">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/medication"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_region">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/hospital"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apachepredvar"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_celllabel">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/nurseassessment"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/nursecare"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_pasthistoryenteredoffset">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/pasthistory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_physicalexamvalue">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/physicalexam"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#noninvasivesystolic">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/vitalaperiodic"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_eyes">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apachepredvar"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apacheapsvar"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#observationoffset">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/vitalaperiodic"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_activeupondischarge">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/diagnosis"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplangoal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#nursecharting">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/nursecharting"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_admitdxname">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/admissiondx"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#intakeoutput">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/intakeoutput"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_currenthistoryseqnum">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/respiratorycare"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_cellattributepath">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/nurseassessment"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/nursecare"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_nursecareentryoffset">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/nursecare"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_cell_label">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/intakeoutput"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_column_name">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplancareprovider"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/cancer-ontology#Patient">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#cplitemvalue">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplangeneral"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hospitaladmitoffset">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/patient"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#paop">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/vitalaperiodic"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_teachtype">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apachepredvar"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_saps3today">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apachepredvar"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#diagnosis">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/diagnosis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_infectdiseaseassessment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplaninfectiousdisease"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#NOTEPATH">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/note"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/cancer-ontology#Treatment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_culturetakenoffset">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/microlab"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_physicalexamtext">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/physicalexam"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_drugnotetype">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/admissiondrug"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#careplangoal">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplangoal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#treatmentstring">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_loadingdose">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/medication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_net_total">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/intakeoutput"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#activeupondischarge">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplangeneral"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/treatment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_nursingchartcelltypevalname">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/nursecharting"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#physicalexam">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/physicalexam"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_intubated">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apacheapsvar"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#careplancareprovider">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplancareprovider"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_thrombolytics">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apachepredvar"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_cell_value_text">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/intakeoutput"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#relates_to_admissiondrug">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/hospital"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_microlabid">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/microlab"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#relates_to_patientunitstayid">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplaneol"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_respcharttypecat">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/respiratorycharting"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_respchartvalue">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/respiratorycharting"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#noninvasivediastolic">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/vitalaperiodic"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_hospitalid">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/hospital"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_allergyenteredoffset">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/allergy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_numbedscategory">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/hospital"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_labtypeid">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/lab"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_intake_total">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/intakeoutput"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_icd9code">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/diagnosis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#cardiacoutput">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/vitalaperiodic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#admissiondx">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/admissiondx"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_cuffpressure">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/respiratorycare"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#treatmentid">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/treatment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_intake_offset">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/intakeoutput"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_hematocrit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/apacheapsvar"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_respchartoffset">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/respiratorycharting"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_diagnosisid">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/diagnosis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#has_cplgoalcategory">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/careplangoal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+</rdf:RDF>
