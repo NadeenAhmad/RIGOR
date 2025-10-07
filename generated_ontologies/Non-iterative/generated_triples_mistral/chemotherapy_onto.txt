@@ -1,0 +1,11 @@
+```turtle
+@prefix : <http://example.org/ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@base <http://example.org/data/>.
+
+<http://example.org/data/chemotherapy123> a :ChemotherapyRecord ;
+    :hasPatient <http://example.org/data/patient456> ;
+    :includesDrug :Oxaliplatin ;
+    :hasSideEffect :Neurotoxicity ;
+    :hasTreatmentOutcome :Remission.
+```

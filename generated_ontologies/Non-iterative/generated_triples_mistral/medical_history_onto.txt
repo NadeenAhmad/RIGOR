@@ -1,0 +1,159 @@
+```turtle
+@prefix : <http://example.org/ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix ex: <http://example.org/ontology/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix obo: <http://purl.obolibrary.org/obo/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+<http://example.org/data/medical_history> a owl:Class ;
+    rdfs:label "Medical History" ;
+    dct:description "A medical history record for a patient." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+        owl:onProperty :hasPatient ;
+        owl:someValuesFrom :Patient ].
+
+<http://example.org/ontology/hasPatient> a owl:ObjectProperty ;
+    rdfs:label "has patient" ;
+    rdfs:domain <http://example.org/data/medical_history> ;
+    rdfs:range :Patient.
+
+<http://example.org/ontology/hasId> a owl:DatatypeProperty ;
+    rdfs:label "has id" ;
+    rdfs:domain <http://example.org/data/medical_history> ;
+    rdfs:range xsd:integer.
+
+<http://example.org/ontology/hasPatientId> a owl:DatatypeProperty ;
+    rdfs:label "has patient id" ;
+    rdfs:domain <http://example.org/data/medical_history> ;
+    rdfs:range xsd:integer.
+
+<http://example.org/ontology/hasCreatedAt> a owl:DatatypeProperty ;
+    rdfs:label "has created at" ;
+    rdfs:domain <http://example.org/data/medical_history> ;
+    rdfs:range xsd:dateTime.
+
+<http://example.org/ontology/hasBodySizeCm> a owl:DatatypeProperty ;
+    rdfs:label "has body size in cm" ;
+    rdfs:domain <http://example.org/data/medical_history> ;
+    rdfs:range xsd:float.
+
+<http://example.org/ontology/hasWeightKg> a owl:DatatypeProperty ;
+    rdfs:label "has weight in kg" ;
+    rdfs:domain <http://example.org/data/medical_history> ;
+    rdfs:range xsd:float.
+
+<http://example.org/ontology/hasBodyMassIndex> a owl:DatatypeProperty ;
+    rdfs:label "has body mass index" ;
+    rdfs:domain <http://example.org/data/medical_history> ;
+    rdfs:range xsd:float.
+
+<http://example.org/ontology/hasFamilyHistoryNeoplasticDisease> a owl:DatatypeProperty ;
+    rdfs:label "has family history of neoplastic disease" ;
+    rdfs:domain <http://example.org/data/medical_history> ;
+    rdfs:range xsd:boolean.
+
+<http://example.org/ontology/hasFamilyHistoryNeoplasticDiseaseText> a owl:DatatypeProperty ;
+    rdfs:label "has family history neoplastic disease text" ;
+    rdfs:domain <http://example.org/data/medical_history> ;
+    rdfs:range xsd:string.
+
+<http://example.org/ontology/hasNumberOfRelativesFirstDegree> a owl:DatatypeProperty ;
+    rdfs:label "has number of relatives first degree" ;
+    rdfs:domain <http://example.org/data/medical_history> ;
+    rdfs:range xsd:string.
+
+<http://example.org/ontology/hasPreviousTumour> a owl:DatatypeProperty ;
+    rdfs:label "has previous tumour" ;
+    rdfs:domain <http://example.org/data/medical_history> ;
+    rdfs:range xsd:boolean.
+
+<http://example.org/ontology/hasPreviousTumourText> a owl:DatatypeProperty ;
+    rdfs:label "has previous tumour text" ;
+    rdfs:domain <http://example.org/data/medical_history> ;
+    rdfs:range xsd:string.
+
+<http://example.org/ontology/hasPreviousSecondaryTumour> a owl:DatatypeProperty ;
+    rdfs:label "has previous secondary tumour" ;
+    rdfs:domain <http://example.org/data/medical_history> ;
+    rdfs:range xsd:boolean.
+
+<http://example.org/ontology/hasPreviousSecondaryTumourText> a owl:DatatypeProperty ;
+    rdfs:label "has previous secondary tumour text" ;
+    rdfs:domain <http://example.org/data/medical_history> ;
+    rdfs:range xsd:string.
+
+<http://example.org/ontology/hasPreExistingDiseaseImmunological> a owl:DatatypeProperty ;
+    rdfs:label "has pre-existing disease immunological" ;
+    rdfs:domain <http://example.org/data/medical_history> ;
+    rdfs:range xsd:boolean.
+
+<http://example.org/ontology/hasPreExistingDiseaseImmunologicalText> a owl:DatatypeProperty ;
+    rdfs:label "has pre-existing disease immunological text" ;
+    rdfs:domain <http://example.org/data/medical_history> ;
+    rdfs:range xsd:string.
+
+<http://example.org/ontology/hasPreExistingLiverDisease> a owl:DatatypeProperty ;
+    rdfs:label "has pre-existing liver disease" ;
+    rdfs:domain <http://example.org/data/medical_history> ;
+    rdfs:range xsd:boolean.
+
+<http://example.org/ontology/hasHepatitisB> a owl:DatatypeProperty ;
+    rdfs:label "has hepatitis B" ;
+    rdfs:domain <http://example.org/data/medical_history> ;
+    rdfs:range xsd:boolean.
+
+<http://example.org/ontology/hasHepatitisC> a owl:DatatypeProperty ;
+    rdfs:label "has hepatitis C" ;
+    rdfs:domain <http://example.org/data/medical_history> ;
+    rdfs:range xsd:boolean.
+
+<http://example.org/ontology/hasHepatitisD> a owl:DatatypeProperty ;
+    rdfs:label "has hepatitis D" ;
+    rdfs:domain <http://example.org/data/medical_history> ;
+    rdfs:range xsd:boolean.
+
+<http://example.org/ontology/hasEthyltoxic> a owl:DatatypeProperty ;
+    rdfs:label "has ethyltoxic" ;
+    rdfs:domain <http://example.org/data/medical_history> ;
+    rdfs:range xsd:boolean.
+
+<http://example.org/ontology/hasChildStadium> a owl:DatatypeProperty ;
+    rdfs:label "has child stadium" ;
+    rdfs:domain <http://example.org/data/medical_history> ;
+    rdfs:range xsd:integer.
+
+<http://example.org/ontology/hasOtherPreExistingDiseases> a owl:DatatypeProperty ;
+    rdfs:label "has other pre-existing diseases" ;
+    rdfs:domain <http://example.org/data/medical_history> ;
+    rdfs:range xsd:boolean.
+
+<http://example.org/ontology/hasOtherLiverDisease> a owl:DatatypeProperty ;
+    rdfs:label "has other liver disease" ;
+    rdfs:domain <http://example.org/data/medical_history> ;
+    rdfs:range xsd:string.
+
+<http://example.org/ontology/hasOtherPreExistingDiseases1> a owl:DatatypeProperty ;
+    rdfs:label "has other pre-existing diseases 1" ;
+    rdfs:domain <http://example.org/data/medical_history> ;
+    rdfs:range xsd:string.
+
+<http://example.org/ontology/hasOtherPreExistingDiseases2> a owl:DatatypeProperty ;
+    rdfs:label "has other pre-existing diseases 2" ;
+    rdfs:domain <http://example.org/data/medical_history> ;
+    rdfs:range xsd:string.
+
+<http://example.org/ontology/hasOtherPreExistingDiseases3> a owl:DatatypeProperty ;
+    rdfs:label "has other pre-existing diseases 3" ;
+    rdfs:domain <http://example.org/data/medical_history> ;
+    rdfs:range xsd:string.
+
+<http://example.org/ontology/hasOtherPreExistingDiseases4> a owl:DatatypeProperty ;
+    rdfs:label "has other pre-existing diseases 4" ;
+    rdfs:domain <http://example.org/data/medical_history> ;
+    rdfs:range xsd:string.
+
+```

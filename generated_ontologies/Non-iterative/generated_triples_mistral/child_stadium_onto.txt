@@ -1,0 +1,11 @@
+```turtle
+@prefix : <http://example.org/ontology/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<http://example.org/data/child_stadium> a :ChildStadium ;
+    rdfs:label "Child Stadium" ;
+    :child_stadium_id "123"^^xsd:integer ;
+    :child_stadium_definition "Example Stadium Definition".
+```

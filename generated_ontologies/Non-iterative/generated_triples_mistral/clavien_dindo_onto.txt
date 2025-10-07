@@ -1,0 +1,35 @@
+```turtle
+@prefix : <http://example.org/ontology/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@base <http://example.org/data/>.
+
+<http://example.org/data/clavien_dindo_table> a :ClavienDindoClassification ;
+    rdfs:label "Clavien-Dindo Classification".
+
+<http://example.org/data/clavien_dindo_table/clavien_dindo_id_1> a :ClavienDindoClass ;
+    :hasGrade <http://example.org/data/clavien_dindo_table/clavien_dindo_grade_I> ;
+    :hasDefinition "Grade I definition".
+<http://example.org/data/clavien_dindo_table/clavien_dindo_id_2> a :ClavienDindoClass ;
+    :hasGrade <http://example.org/data/clavien_dindo_table/clavien_dindo_grade_II> ;
+    :hasDefinition "Grade II definition".
+<http://example.org/data/clavien_dindo_table/clavien_dindo_id_3> a :ClavienDindoClass ;
+    :hasGrade <http://example.org/data/clavien_dindo_table/clavien_dindo_grade_III> ;
+    :hasDefinition "Grade III definition".
+<http://example.org/data/clavien_dindo_table/clavien_dindo_id_4> a :ClavienDindoClass ;
+    :hasGrade <http://example.org/data/clavien_dindo_table/clavien_dindo_grade_IV> ;
+    :hasDefinition "Grade IV definition".
+<http://example.org/data/clavien_dindo_table/clavien_dindo_id_5> a :ClavienDindoClass ;
+    :hasGrade <http://example.org/data/clavien_dindo_table/clavien_dindo_grade_V> ;
+    :hasDefinition "Grade V definition".
+<http://example.org/data/clavien_dindo_table/clavien_dindo_grade_I> a :Grade ;
+    rdfs:label "Grade I".
+<http://example.org/data/clavien_dindo_table/clavien_dindo_grade_II> a :Grade ;
+    rdfs:label "Grade II".
+<http://example.org/data/clavien_dindo_table/clavien_dindo_grade_III> a :Grade ;
+    rdfs:label "Grade III".
+<http://example.org/data/clavien_dindo_table/clavien_dindo_grade_IV> a :Grade ;
+    rdfs:label "Grade IV".
+<http://example.org/data/clavien_dindo_table/clavien_dindo_grade_V> a :Grade ;
+    rdfs:label "Grade V".

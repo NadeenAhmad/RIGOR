@@ -1,0 +1,22 @@
+```
+@prefix : <http://example.org/ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@base <http://example.org/data/>.
+
+<http://example.org/data/1> a :Metastases ;
+    :hasMetastasenID 1 ;
+    :hasMetastasenTimepoint "2023-10-01".
+
+<http://example.org/data/2> a :Metastases ;
+    :hasMetastasenID 2 ;
+    :hasMetastasenTimepoint "2023-10-02".
+
+<http://example.org/data/3> a :Metastases ;
+    :hasMetastasenID 3 ;
+    :hasMetastasenTimepoint "2023-10-03".
+
+<http://example.org/data/4> a :Metastases ;
+    :hasMetastasenID 4 ;
+    :hasMetastasenTimepoint "2023-10-04".
+
+```

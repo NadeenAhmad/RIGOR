@@ -1,0 +1,27 @@
+```turtle
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix : <http://example.org/ontology#>.
+@prefix doid: <http://purl.obolibrary.org/obo/doid#>.
+
+:DiabetesMellitus a owl:Class ;
+    rdfs:label "Diabetes Mellitus" ;
+    rdfs:comment "A disease characterized by high blood glucose levels.".
+
+:diabetes_mellitus_id a owl:DatatypeProperty ;
+    rdfs:label "Diabetes Mellitus ID" ;
+    rdfs:domain :DiabetesMellitus ;
+    rdfs:range xsd:integer.
+
+:diabetes_mellitus_code a owl:DatatypeProperty ;
+    rdfs:label "Diabetes Mellitus Code" ;
+    rdfs:domain :DiabetesMellitus ;
+    rdfs:range xsd:string.
+
+:diabetes_mellitus_description a owl:DatatypeProperty ;
+    rdfs:label "Diabetes Mellitus Description" ;
+    rdfs:domain :DiabetesMellitus ;
+    rdfs:range xsd:string.
+
+```

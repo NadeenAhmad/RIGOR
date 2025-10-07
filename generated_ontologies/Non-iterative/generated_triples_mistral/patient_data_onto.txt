@@ -1,0 +1,33 @@
+```
+@prefix ex: <http://example.org/ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix doid: <http://purl.obolibrary.org/obo/doid#>.
+
+<http://example.org/ontology/ChemotherapyRecord> rdfs:subClassOf ex:ChemotherapyRecord.
+<http://example.org/ontology/ChemotherapyRecord> rdfs:subClassOf doid:DOID_0050118.
+<http://example.org/ontology/ChemotherapyRecord> rdfs:comment "Chemotherapy Record for a patient.".
+<http://example.org/ontology/hasPatient> rdfs:domain ex:ChemotherapyRecord.
+<http://example.org/ontology/hasPatient> rdfs:range ex:Patient.
+<http://example.org/ontology/includesDrug> rdfs:domain ex:ChemotherapyRecord.
+<http://example.org/ontology/includesDrug> rdfs:range ex:Drug.
+<http://example.org/ontology/hasSideEffect> rdfs:domain ex:ChemotherapyRecord.
+<http://example.org/ontology/hasSideEffect> rdfs:range ex:SideEffect.
+<http://example.org/ontology/hasTreatmentOutcome> rdfs:domain ex:ChemotherapyRecord.
+<http://example.org/ontology/hasTreatmentOutcome> rdfs:range ex:TreatmentOutcome.
+
+<http://example.org/data/patient456> rdf:type ex:Patient.
+<http://example.org/data/patient456> ex:patient_id "456"^^xsd:integer.
+<http://example.org/data/patient456> ex:patient_id_old "None"^^xsd:string.
+<http://example.org/data/patient456> ex:created_at "2023-10-01T08:00:00"^^xsd:dateTime.
+<http://example.org/data/patient456> ex:sex "1"^^xsd:integer.
+<http://example.org/data/patient456> ex:age_at_surgery "65"^^xsd:integer.
+
+<http://example.org/data/chemotherapy123> ex:hasPatient <http://example.org/data/patient456>.
+<http://example.org/data/chemotherapy123> ex:includesDrug ex:Oxaliplatin.
+<http://example.org/data/chemotherapy123> ex:hasSideEffect ex:Neurotoxicity.
+<http://example.org/data/chemotherapy123> ex:hasTreatmentOutcome ex:Remission.
+```

@@ -1,0 +1,40 @@
+```turtle
+@prefix : <http://example.org/ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+<http://example.org/data/general_aftercare#1> a :GeneralAftercare ;
+    :hasPatient <http://example.org/data/patient#1> ;
+    :hasId 1 ;
+    :hasDateOfAftercare "11.08.2021"^^xsd:date ;
+    :hasHeightCm 175.0 ;
+    :hasWeightKg 85.0 ;
+    :hasBMI 27.5 ;
+    :hasIncisionalHernia 1 ;
+    :hasIncisionalHerniaSurgery 0 ;
+    :hasGallBladderLeakage 1 ;
+    :hasSupplyOfLeakage "Supply of leakage text" ;
+    :hasBileDuctStenosis 0 ;
+    :hasTreatmentOfStenosis "Treatment of stenosis text" ;
+    :hasRezCholangitis 1 ;
+    :hasAftercareText "Aftercare text" ;
+    :hasOesophagealStenosis 0.
+
+<http://example.org/data/general_aftercare#2> a :GeneralAftercare ;
+    :hasPatient <http://example.org/data/patient#2> ;
+    :hasId 2 ;
+    :hasDateOfAftercare "22.09.2021"^^xsd:date ;
+    :hasHeightCm 165.0 ;
+    :hasWeightKg 70.0 ;
+    :hasBMI 25.7 ;
+    :hasIncisionalHernia 0 ;
+    :hasIncisionalHerniaSurgery 1 ;
+    :hasGallBladderLeakage 0 ;
+    :hasSupplyOfLeakage "Supply of leakage text" ;
+    :hasBileDuctStenosis 1 ;
+    :hasTreatmentOfStenosis "Treatment of stenosis text" ;
+    :hasRezCholangitis 0 ;
+    :hasAftercareText "Aftercare text" ;
+    :hasOesophagealStenosis 1.
+```

@@ -1,0 +1,29 @@
+```turtle
+@prefix : <http://example.org/ontology/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@base <http://example.org/data/>.
+
+<http://example.org/data/histology_general> a :HistologyGeneral ;
+    :hasPatientID <http://example.org/data/patient_id> ;
+    :hasPathologist <http://example.org/data/pathologist> ;
+    :hasOrderNumber <http://example.org/data/order_number> ;
+    :hasDiagnosis <http://example.org/data/histological_diagnosis> ;
+    :hasSummary <http://example.org/data/histology_summary>.
+
+<http://example.org/data/patient_id> a :PatientID ;
+    rdfs:label "Patient ID"@en.
+
+<http://example.org/data/pathologist> a :Pathologist ;
+    rdfs:label "Pathologist"@en.
+
+<http://example.org/data/order_number> a :OrderNumber ;
+    rdfs:label "Order Number"@en.
+
+<http://example.org/data/histological_diagnosis> a :HistologicalDiagnosis ;
+    rdfs:label "Histological Diagnosis"@en.
+
+<http://example.org/data/histology_summary> a :HistologySummary ;
+    rdfs:label "Histology Summary"@en.
+```

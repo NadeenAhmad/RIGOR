@@ -1,0 +1,103 @@
+```turtle
+@prefix : <http://example.org/ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix doid: <http://purl.obolibrary.org/obo/doid#>.
+
+:medication a owl:Class ;
+    rdfs:label "Medication" ;
+    rdfs:comment "Represents the medication information for a patient.".
+
+:id a rdf:Property ;
+    rdfs:label "ID" ;
+    rdfs:comment "Unique identifier for the medication record." ;
+    rdfs:domain :medication ;
+    rdfs:range xsd:integer.
+
+:patient_id a rdf:Property ;
+    rdfs:label "Patient ID" ;
+    rdfs:comment "Identifier for the patient associated with the medication record." ;
+    rdfs:domain :medication ;
+    rdfs:range xsd:integer.
+
+:created_at a rdf:Property ;
+    rdfs:label "Created At" ;
+    rdfs:comment "Timestamp when the medication record was created." ;
+    rdfs:domain :medication ;
+    rdfs:range xsd:dateTime.
+
+:ASS a rdf:Property ;
+    rdfs:label "ASS" ;
+    rdfs:comment "Indicator for ASS medication." ;
+    rdfs:domain :medication ;
+    rdfs:range xsd:integer.
+
+:Plavix a rdf:Property ;
+    rdfs:label "Plavix" ;
+    rdfs:comment "Indicator for Plavix medication." ;
+    rdfs:domain :medication ;
+    rdfs:range xsd:integer.
+
+:Anti_Xa a rdf:Property ;
+    rdfs:label "Anti_Xa" ;
+    rdfs:comment "Indicator for Anti_Xa medication." ;
+    rdfs:domain :medication ;
+    rdfs:range xsd:integer.
+
+:Falithrom_Marcumar a rdf:Property ;
+    rdfs:label "Falithrom_Marcumar" ;
+    rdfs:comment "Indicator for Falithrom_Marcumar medication." ;
+    rdfs:domain :medication ;
+    rdfs:range xsd:integer.
+
+:NSAR a rdf:Property ;
+    rdfs:label "NSAR" ;
+    rdfs:comment "Indicator for NSAR medication." ;
+    rdfs:domain :medication ;
+    rdfs:range xsd:integer.
+
+:Steroide a rdf:Property ;
+    rdfs:label "Steroide" ;
+    rdfs:comment "Indicator for Steroide medication." ;
+    rdfs:domain :medication ;
+    rdfs:range xsd:integer.
+
+:Steroide_Tagesdosis a rdf:Property ;
+    rdfs:label "Steroide Tagesdosis" ;
+    rdfs:comment "Daily dose of Steroide medication." ;
+    rdfs:domain :medication ;
+    rdfs:range xsd:float.
+
+:Antidepressiva a rdf:Property ;
+    rdfs:label "Antidepressiva" ;
+    rdfs:comment "Indicator for Antidepressiva medication." ;
+    rdfs:domain :medication ;
+    rdfs:range xsd:integer.
+
+:Antihypertensiva a rdf:Property ;
+    rdfs:label "Antihypertensiva" ;
+    rdfs:comment "Indicator for Antihypertensiva medication." ;
+    rdfs:domain :medication ;
+    rdfs:range xsd:integer.
+
+:Anzahl_der_Antihypertensiva a rdf:Property ;
+    rdfs:label "Anzahl der Antihypertensiva" ;
+    rdfs:comment "Number of Antihypertensiva medications." ;
+    rdfs:domain :medication ;
+    rdfs:range xsd:integer.
+
+:Thyreostatika a rdf:Property ;
+    rdfs:label "Thyreostatika" ;
+    rdfs:comment "Indicator for Thyreostatika medication." ;
+    rdfs:domain :medication ;
+    rdfs:range xsd:integer.
+
+:Schilddrsenhormone a rdf:Property ;
+    rdfs:label "Schilddrsenhormone" ;
+    rdfs:comment "Indicator for Schilddrsenhormone medication." ;
+    rdfs:domain :medication ;
+    rdfs:range xsd:integer
+
+```

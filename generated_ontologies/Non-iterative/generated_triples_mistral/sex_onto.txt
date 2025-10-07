@@ -1,0 +1,15 @@
+```turtle
+@prefix : <http://example.org/ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@base <http://example.org/data/>.
+
+<http://example.org/data/sex> a :Table ;
+    :hasColumn :sex_id ;
+    :hasColumn :sex_category.
+
+<http://example.org/data/sex_id> a :Column ;
+    :hasDatatype xsd:integer ;
+
+<http://example.org/data/sex_category> a :Column ;
+    :hasDatatype xsd:text.
+```

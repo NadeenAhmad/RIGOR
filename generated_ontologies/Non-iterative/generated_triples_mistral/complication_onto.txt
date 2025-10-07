@@ -1,0 +1,92 @@
+```turtle
+@prefix oio: <http://www.geneontology.org/formats/oboInOwl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix : <http://example.org/ontology/>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix doid: <http://purl.obolibrary.org/obo/doi#>.
+@prefix dc-terms: <http://purl.org/dc/terms/>.
+@prefix obs: <http://example.org/ontology/complication#>.
+@prefix ex: <http://example.org/data/>.
+
+ex:complication123 a :Complication ;
+    oio:hasPatient ex:patient456 ;
+    doid:1234 a :Complication ;
+
+<http://example.org/data/complication123> doid:duration_of_inpatient_stay_d "3.4"^^xsd:float ;
+    doid:duration_intermediate_care_d "1.5"^^xsd:float ;
+    doid:duration_intensive_care_station_d "2.8"^^xsd:float ;
+    doid:ventilation_duration_h "4.2"^^xsd:float ;
+    doid:noninvasive_ventilation_duration_h "3.1"^^xsd:float ;
+    doid:complication_free_progression 1 ;
+    doid:liver_failure 0 ;
+    doid:urinary_retention 1 ;
+    doid:ileus 0 ;
+    doid:cholascos 1 ;
+    doid:cholangitis 0 ;
+    doid:reintubation 1 ;
+    doid:pneumonia 0 ;
+    doid:thrombosis 1 ;
+    doid:embolism 0 ;
+    doid:postoperative_bleeding 1 ;
+    doid:pleural_effusion 0 ;
+    doid:burst_abdomen 1 ;
+    doid:liver_abscess 0 ;
+    doid:intraabdomineller_Abszess 1 ;
+    doid:biliom 0 ;
+    doid:decubitus 1 ;
+    doid:decubitus_score 5 ;
+    doid:secondary_wound_healing 0 ;
+    doid:multi_organ_failure 1 ;
+    doid:anastomotic_insufficiency 0 ;
+    doid:anastomotic_insufficiency_type "Type A" ;
+    doid:other_complications 1 ;
+    doid:other_complications_1 "Complication 1" ;
+    doid:other_complications_2 "Complication 2" ;
+    doid:other_complications_3 "Complication 3" ;
+    doid:other_complications_4 "Complication 4" ;
+    doid:other_complications_5 "Complication 5" ;
+    doid:other_complications_6 "Complication 6" ;
+    doid:thoracic_drainage_for_effusion 0 ;
+    doid:simplified_acute_physiology_score_average "2.5"^^xsd:float ;
+    doid:drainage_complication 1 ;
+    doid:drainage_complication_text "Drainage issue" ;
+    doid:endoscopy 0 ;
+    doid:endoscopic_retrograde_cholangiopancreatography 1 ;
+    doid:endoscopy_text "Endoscopy details" ;
+    doid:haemodialysis 0 ;
+    doid:haemodialysis_h "1.5"^^xsd:float ;
+    doid:mutation_adjusted_risk_score 1 ;
+    doid:mutation_adjusted_risk_score_h "3.2"^^xsd:float ;
+    doid:interventional_drainage 0 ;
+    doid:re_operation 1 ;
+    doid:clavien_dindo 3 ;
+    doid:kidney_insufficiency 0 ;
+    doid:readmission_to_clinic 1 ;
+    doid:readmission_to_clinic_date "2023-10-15" ;
+    doid:other_complication_management 0 ;
+    doid:other_complication_management_text "Management details" ;
+    doid:relocation_intensive_care_unit 1 ;
+    doid:relocation_intermediate_care_unit 0 ;
+    doid:acute_coronary_syndrome 1 ;
+    doid:sepsis 0 ;
+    doid:systemic_inflammatory_response_syndrome 1 ;
+    doid:circulatory_instability 0 ;
+    doid:reanimation 1 ;
+    doid:duration_reanimation_min "120.5"^^xsd:float ;
+    doid:respiratory_failure 0 ;
+    doid:hollow_organ_perforation 1 ;
+    doid:which_organ_is_perforated "Stomach" ;
+    doid:intestinal_passage_disorder 0 ;
+    doid:ascites_postoperative "Ascites details" ;
+    doid:pancreatitis_postoperative 1 ;
+    doid:urinary_tract_infection_postoperative 0 ;
+    doid:delirium 1 ;
+    doid:delirium_type "Type A delirium" ;
+    doid:cholecystitis 0 ;
+    doid:pancreatic_fistula 1 ;
+    doid:internal_hernia 0 ;
+    doid:pleural_empyema 1.
+```

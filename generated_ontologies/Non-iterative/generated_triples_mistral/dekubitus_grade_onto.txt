@@ -1,0 +1,18 @@
+```turtle
+@prefix : <http://example.org/ontology/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@base <http://example.org/data/>.
+
+<http://example.org/data/dekubitus_grade> rdf:type :DekubitusGrade ;
+    :dekubitus_grade_id <http://example.org/data/dekubitus_grade/1> ;
+    :dekubitus_grade_stadium "Stage 1".
+<http://example.org/data/dekubitus_grade/1> rdf:type :DekubitusGradeId ;
+    :value "1".
+<http://example.org/data/dekubitus_grade/2> rdf:type :DekubitusGradeId ;
+    :value "2".
+<http://example.org/data/dekubitus_grade/3> rdf:type :DekubitusGradeStadium ;
+    :value "Stage 2".
+<http://example.org/data/dekubitus_grade/4> rdf:type :DekubitusGradeStadium ;
+    :value "Stage 3".
+```

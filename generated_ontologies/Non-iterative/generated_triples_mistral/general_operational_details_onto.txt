@@ -1,0 +1,53 @@
+```turtle
+@prefix : <http://example.org/data/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<http://example.org/data/record1> a :GeneralOperationalDetail ;
+    :hasPatient <http://example.org/data/patient456> ;
+    :operationDate "2024-10-02"^^xsd:date ;
+    :surgeon "Dr. Smith" ;
+    :operationStart "08:00:00"^^xsd:time ;
+    :operationEnd "10:30:00"^^xsd:time ;
+    :operationDuration "150"^^xsd:integer ;
+    :laparoscopicProcedure true ;
+    :conversionLapOpen false ;
+    :transfusion true ;
+    :ecsNumber "3"^^xsd:integer ;
+    :ffpsNumber "2"^^xsd:integer ;
+    :cirrhosisIntraop false ;
+    :intraopNewFindings true ;
+    :intraopNewFindingsText "Abnormal tissue found" ;
+    :previousOperations true ;
+    :adhesions true ;
+    :intraopSpecialFeatures true ;
+    :intraopSpecialFeaturesText "Special feature noted" ;
+    :accessRoute "Abdominal" ;
+    :asaScore "2"^^xsd:integer ;
+    :apfelScore "2"^^xsd:integer ;
+    :anaesthesiaStart "07:30:00"^^xsd:time ;
+    :anaesthesiaEnd "11:00:00"^^xsd:time ;
+    :anaesthesiaDuration "210"^^xsd:integer ;
+    :generalAnaesthesia true ;
+    :tiva true ;
+    :rsi true ;
+    :ffo true ;
+    :spa true ;
+    :lumbarPda false ;
+    :thoracicPda false ;
+    :caudalBlock false ;
+    :cse false ;
+    :ivra false ;
+    :analgosedation false ;
+    :standByMonitoring true ;
+    :anaesthesiaSpecial true ;
+    :anaesthesiaSpecialText "Special anaesthesia note" ;
+    :postoperativeNutritionDate "2024-10-03"^^xsd:date ;
+    :gastricTube true ;
+    :gastricTubeRemovedDate "2024-10-04"^^xsd:date ;
+    :parenteralNutrition false ;
+    :continuousBladderCatheter true ;
+    :bladderCatheterRemovedDate "2024-10-05"^^xsd:date ;
+    :mobilisationPostopDate "2024-10-06"^^xsd:date ;
+    :drainageRemovedDate "2024-10-07"^^xsd:date ;
+    :dischargeWithDrainage false.
+```
