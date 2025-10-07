@@ -1,0 +1,15 @@
+### Competency Questions for Table 'medication'
+1. How many patients are taking Statine?
+- **Answer** The ontology would answer this by counting the number of rows where the 'Statine' column has a value of 1.
+
+2. What is the average daily dose of Insulin for patients who are taking it?
+-  **Answer** The ontology would answer this by calculating the average value of the 'Insulin_Tagesdosis' column for rows where the 'Insulin' column has a value of 1.
+
+3. Which patients are taking both ASS and Plavix?
+- **Answer** The ontology would answer this by identifying rows where both the 'ASS' and 'Plavix' columns have a value of 1, and then listing the corresponding 'patient_id' values.
+
+4. How many different types of antihypertensive medications are being taken by a specific patient with a given patient_id?
+- **Answer** The ontology would answer this by summing the values of the 'Antihypertensiva' and 'Anzahl_der_Antihypertensiva' columns for the row where the 'patient_id' matches the given value.
+
+5. List all medications taken by a patient with a specific patient_id, including any additional medications listed in the 'weitere_Medikation_*_Text' columns.
+- **Answer** The ontology would answer this by retrieving the values of all medication-related columns ('ASS', 'Plavix', 'Anti_Xa', etc.) for the row where the 'patient_id' matches the given value, and concatenating the text from the 'weitere_Medikation_*_Text' columns where the corresponding 'weitere_Medikation_*' column has a value of 1.

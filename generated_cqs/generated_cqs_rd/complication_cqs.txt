@@ -1,0 +1,15 @@
+### Competency Questions for Table 'complication'
+1. **What is the average duration of inpatient stay for patients who experienced liver failure?**
+   - **Answer** The ontology would answer this by calculating the average of the `duration_of_inpatient_stay_d` column for rows where the `liver_failure` column is 1.
+
+2. **How many patients had a complication-free progression?**
+   - **Answer** The ontology would answer this by counting the number of rows where the `complication_free_progression` column is 1.
+
+3. **What is the total duration of intensive care for patients who required reintubation?**
+   - **Answer** The ontology would answer this by summing the values in the `duration_intensive_care_station_d` column for rows where the `reintubation` column is 1.
+
+4. **Which patients had a secondary wound healing complication and what was the duration of their inpatient stay?**
+   - **Answer** The ontology would answer this by selecting the `patient_id` and `duration_of_inpatient_stay_d` for rows where the `secondary_wound_healing` column is 1.
+
+5. **What is the average simplified acute physiology score for patients who required haemodialysis?**
+   - **Answer** The ontology would answer this by calculating the average of the `simplified_acute_physiology_score_average` column for rows where the `haemodialysis` column is 1.

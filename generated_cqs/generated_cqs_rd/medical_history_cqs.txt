@@ -1,0 +1,16 @@
+### Competency Questions for Table'medical_history'
+
+**1. Which patients have a family history of neoplastic disease?**
+- **Answer**: The ontology would answer this by querying the `family_history_neoplastic_disease` column, which is of type `TINYINT`. It would filter rows where `family_history_neoplastic_disease` is 1 (indicating a positive family history) and retrieve the corresponding `patient_id` values.
+
+**2. What is the body mass index (BMI) for a specific patient on a given date?**
+- **Answer**: The ontology would answer this by looking up the `body_mass_index` column for the specific `patient_id` and `created_at` timestamp provided. This would involve a query that matches both the `patient_id` and `created_at` to retrieve the `body_mass_index` value.
+
+**3. How many patients have a history of previous secondary tumours?**
+- **Answer**: The ontology would answer this by counting the number of rows where the `previous_secondary_tumour` column is 1. This column is of type `TINYINT`, and a count of these rows would give the number of patients with a history of previous secondary tumours.
+
+**4. What are the symptoms reported by patients with a diagnosis of primary tumour on a specific date?**
+- **Answer**: The ontology would answer this by querying the `diagnosis_date_primary_tumour` column for the specific date and then retrieving the corresponding values in the symptom-related columns such as `reduced_general_state`, `loss_of_appetite`, `nausea_vomiting`, etc. This would involve a query that matches the `diagnosis_date_primary_tumour` and retrieves relevant symptom columns.
+
+**5. Which patients have a Charlson Comorbidity Index greater than 5?**
+- **Answer**: The ontology would answer this by querying the `charlson_comorbidity_index` column and filtering rows where the value is greater than 5. It would then retrieve the corresponding `patient_id` values to identify the patients with a high comorbidity index.

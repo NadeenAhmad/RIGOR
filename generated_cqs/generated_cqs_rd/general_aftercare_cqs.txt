@@ -1,0 +1,15 @@
+### Competency Questions for Table 'general_aftercare'
+1. **What is the BMI of a patient with a specific patient_id?**
+   - **Answer** The ontology would answer this question by querying the 'bmi' field for the row where 'patient_id' matches the specified value. The 'bmi' field directly stores the Body Mass Index (BMI) of the patient.
+
+2. **Which patients have undergone incisional hernia surgery?**
+   - **Answer** The ontology would answer this question by filtering the rows where the 'incisional_hernia_surgery' field is set to 1, indicating that the surgery has been performed. The 'patient_id' field in these rows would provide the list of patients who have undergone the surgery.
+
+3. **What is the date of aftercare for a specific patient?**
+   - **Answer** The ontology would answer this question by querying the 'date_of_aftercare' field for the row where 'patient_id' matches the specified value. The 'date_of_aftercare' field stores the date when the aftercare was provided.
+
+4. **How many patients have experienced bile duct stenosis?**
+   - **Answer** The ontology would answer this question by counting the rows where the 'bile_duct_stenosis' field is set to 1. This count represents the number of patients who have experienced bile duct stenosis.
+
+5. **What is the aftercare text for a patient with a specific patient_id?**
+   - **Answer** The ontology would answer this question by querying the 'aftercare_text' field for the row where 'patient_id' matches the specified value. The 'aftercare_text' field contains detailed notes or text related to the aftercare provided to the patient.

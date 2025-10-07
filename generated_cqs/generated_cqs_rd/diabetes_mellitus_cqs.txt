@@ -1,0 +1,15 @@
+### Competency Questions for Table 'diabetes_mellitus'
+1. **What is the description of the diabetes mellitus condition with the code 'DM1'?**
+   - **Answer**: The ontology would use the table schema to find the row where `diabetes_mellitus_code` is 'DM1' and return the corresponding value in the `diabetes_mellitus_description` column.
+
+2. **How many different diabetes mellitus conditions are recorded in the table?**
+   - **Answer**: The ontology would count the distinct values in the `diabetes_mellitus_id` column to determine the number of different diabetes mellitus conditions recorded.
+
+3. **List all diabetes mellitus codes and their descriptions.**
+   - **Answer**: The ontology would retrieve all rows from the table and return the values in the `diabetes_mellitus_code` and `diabetes_mellitus_description` columns.
+
+4. **What is the diabetes mellitus code for the condition described as 'Type 2 Diabetes'?**
+   - **Answer**: The ontology would find the row where `diabetes_mellitus_description` is 'Type 2 Diabetes' and return the corresponding value in the `diabetes_mellitus_code` column.
+
+5. **Is there a diabetes mellitus condition with the code 'DM3'?**
+   - **Answer**: The ontology would check if there is a row where `diabetes_mellitus_code` is 'DM3' and return a boolean value indicating whether such a row exists.

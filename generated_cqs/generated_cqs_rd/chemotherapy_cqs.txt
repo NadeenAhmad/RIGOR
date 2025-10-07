@@ -1,0 +1,15 @@
+### Competency Questions for Table 'chemotherapy'
+1. **Which patients have received radiotherapy and what was the amount of radiation in Gray?**
+- **Answer**: The ontology would answer this by querying the `radiotherapy` and `radiation_amount_in_gray` columns in the `chemotherapy` table. It would filter the rows where `radiotherapy` is 1 (indicating that radiotherapy was received) and return the corresponding `patient_id` and `radiation_amount_in_gray`.
+
+2. **What is the total number of chemotherapy cycles administered to a specific patient?**
+- **Answer**: The ontology would answer this by querying the `patient_id` and `number_of_cycles` columns in the `chemotherapy` table. It would sum the values in the `number_of_cycles` column for rows that match the specified `patient_id`.
+
+3. **Which patients have received a specific type of chemotherapy, such as 5-fluorouracil?**
+- **Answer**: The ontology would answer this by querying the `five_fluorouracil` column in the `chemotherapy` table. It would filter the rows where `five_fluorouracil` is 1 (indicating that 5-fluorouracil was administered) and return the corresponding `patient_id`.
+
+4. **What are the side effects experienced by a patient who underwent chemotherapy?**
+- **Answer**: The ontology would answer this by querying the columns related to side effects (e.g., `emesis`, `diarrhea`, `alopecia`, `hand_foot_syndrome`, `bm_depression`, `neurotoxicity`, `ototoxicity`, `ps_deterioration`, `other_side_effects`, `other_side_effects_text`) in the `chemotherapy` table. It would filter the rows based on the specified `patient_id` and return the relevant side effect information.
+
+5. **What is the treatment decision made by the tumor board for a specific patient?**
+- **Answer**: The ontology would answer this by querying the `tumor_board_decision` and `recommendations_tumor_board` columns in the `chemotherapy` table. It would filter the rows based on the specified `patient_id` and return the values in the `tumor_board_decision` column along with the text in the `recommendations_tumor_board` column.

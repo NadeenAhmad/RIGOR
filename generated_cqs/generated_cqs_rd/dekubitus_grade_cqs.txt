@@ -1,0 +1,20 @@
+### Competency Questions for Table 'dekubitus_grade'
+1. **CQ1: What are the different grades of dekubitus available?**
+
+   - **Answer** The ontology would answer this by querying the `dekubitus_grade_stadium` column to retrieve all unique values. This would provide a list of all different grades of dekubitus available in the table.
+
+2. **CQ2: How many different grades of dekubitus are recorded in the table?**
+
+   - **Answer** The ontology would answer this by counting the number of unique values in the `dekubitus_grade_stadium` column. This count represents the total number of different grades of dekubitus recorded in the table.
+
+3. **CQ3: What is the ID of the dekubitus grade with the stadium 'Stage 3'?**
+
+   - **Answer** The ontology would answer this by querying the `dekubitus_grade_id` where the `dekubitus_grade_stadium` is 'Stage 3'. This would return the ID associated with the specified stadium.
+
+4. **CQ4: Which dekubitus grade stadium corresponds to the ID 5?**
+
+   - **Answer** The ontology would answer this by querying the `dekubitus_grade_stadium` where the `dekubitus_grade_id` is 5. This would return the stadium associated with the specified ID.
+
+5. **CQ5: Are there any dekubitus grades with the stadium 'Stage 4'?**
+
+   - **Answer** The ontology would answer this by checking if there are any rows where the `dekubitus_grade_stadium` is 'Stage 4'. If such rows exist, it confirms the presence of dekubitus grades with the specified stadium; otherwise, it indicates their absence.

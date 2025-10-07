@@ -1,0 +1,15 @@
+### Competency Questions for Table 'patient_data'
+1. **How many patients are there in the table?**
+   - **Answer**: The ontology would count the number of rows in the 'patient_data' table to determine the total number of patients.
+
+2. **What is the average age of patients at the time of surgery?**
+   - **Answer**: The ontology would calculate the average of the 'age_at_surgery' column to find the average age of patients at the time of surgery.
+
+3. **How many male and female patients are there?**
+   - **Answer**: The ontology would group the data by the'sex' column, assuming 0 represents one gender and 1 represents the other, and count the number of patients in each group.
+
+4. **What is the earliest and latest date of surgery recorded in the table?**
+   - **Answer**: The ontology would find the minimum and maximum values in the 'created_at' column to determine the earliest and latest dates of surgery.
+
+5. **How many patients have a 'patient_id_old' value?**
+   - **Answer**: The ontology would count the number of non-null values in the 'patient_id_old' column to determine how many patients have an old patient ID.

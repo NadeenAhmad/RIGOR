@@ -1,0 +1,20 @@
+### Competency Questions for Table 'sex'
+1. **What are the different categories of sex available in the table?**
+
+   - **Answer**: The ontology would answer this by querying the'sex_category' column in the'sex' table. It would retrieve all distinct values from this column, which represent the different categories of sex available.
+
+2. **How many unique sex categories are there?**
+
+   - **Answer**: The ontology would answer this by counting the distinct values in the'sex_category' column. This can be done using a SQL query that counts the number of unique entries in this column.
+
+3. **What is the ID of the category 'Male'?**
+
+   - **Answer**: The ontology would answer this by querying the'sex' table to find the row where'sex_category' is 'Male' and retrieving the corresponding'sex_id'.
+
+4. **Are there any sex categories that are not 'Male' or 'Female'?**
+
+   - **Answer**: The ontology would answer this by querying the'sex' table to find rows where'sex_category' is neither 'Male' nor 'Female'. This would involve using a SQL query with a WHERE clause that excludes these two categories.
+
+5. **List all sex categories along with their corresponding IDs.**
+
+   - **Answer**: The ontology would answer this by performing a SELECT query on the'sex' table to retrieve all rows, displaying both the'sex_id' and'sex_category' columns. This would provide a complete list of all sex categories and their associated IDs.

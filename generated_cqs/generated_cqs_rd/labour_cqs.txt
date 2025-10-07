@@ -1,0 +1,15 @@
+### Competency Questions for Table 'labour'
+1. **CQ1**: What is the average ASAT level for patients with a specific `patient_id`?
+   - **Answer**: The ontology would answer this by querying the `labour` table to filter rows where `patient_id` matches the specific `patient_id` and then calculating the average of the `ASAT_mol_per_l` column for those rows.
+
+2. **CQ2**: How many laboratory analyses were performed on a specific date?
+   - **Answer**: The ontology would answer this by querying the `labour` table to count the number of rows where the `date_laboratory_analysis` matches the specific date.
+
+3. **CQ3**: Which patients have had their `Kreatinin_mol_per_l` levels measured more than once?
+   - **Answer**: The ontology would answer this by querying the `labour` table to group rows by `patient_id` and then filtering groups where the count of `Kreatinin_mol_per_l` measurements is greater than one.
+
+4. **CQ4**: What is the maximum `INR` value recorded for a specific `patient_id`?
+   - **Answer**: The ontology would answer this by querying the `labour` table to filter rows where `patient_id` matches the specific `patient_id` and then finding the maximum value in the `INR` column for those rows.
+
+5. **CQ5**: What is the average `CRP_mg_per_l` level for all patients analyzed on a specific date?
+   - **Answer**: The ontology would answer this by querying the `labour` table to filter rows where `date_laboratory_analysis` matches the specific date and then calculating the average of the `CRP_mg_per_l` column for those rows.

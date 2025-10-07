@@ -1,0 +1,15 @@
+### Competency Questions for Table 'metastases'
+1. **What are the unique timepoints recorded for metastases?**
+   - **Answer**: The ontology would query the'metastasen_timepoint' column to retrieve all distinct values. This involves selecting unique entries from this column to list all different timepoints recorded for metastases.
+
+2. **How many unique metastases records are there?**
+   - **Answer**: The ontology would count the number of unique entries in the'metastasen_id' column. This involves using a count function on the distinct values of'metastasen_id' to determine the total number of unique metastases records.
+
+3. **Which timepoint has the most metastases records?**
+   - **Answer**: The ontology would group the records by'metastasen_timepoint' and count the number of occurrences for each timepoint. It would then identify the timepoint with the highest count, indicating the timepoint with the most metastases records.
+
+4. **What is the total number of metastases records?**
+   - **Answer**: The ontology would count all entries in the table. This involves using a count function on all rows in the'metastases' table to get the total number of metastases records.
+
+5. **Are there any metastases records with a null timepoint?**
+   - **Answer**: The ontology would check for any null values in the'metastasen_timepoint' column. This involves querying the column for null entries to determine if there are any metastases records with a null timepoint.

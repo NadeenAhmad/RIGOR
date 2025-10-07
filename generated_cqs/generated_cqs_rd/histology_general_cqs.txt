@@ -1,0 +1,20 @@
+### Competency Questions for Table 'histology_general'
+1. **CQ1: What is the histological diagnosis for a specific patient?**
+
+    - **Answer**: The ontology would answer this question by querying the 'histology_general' table for records where the 'patient_id' matches the specific patient and then retrieving the 'historical_diagnosis' field from the filtered records.
+
+2. **CQ2: Which pathologist has made the most diagnoses?**
+
+    - **Answer**: The ontology would answer this question by counting the number of records for each 'pathologist' in the 'histology_general' table and then identifying the pathologist with the highest count.
+
+3. **CQ3: What is the summary of the histology for a given order number?**
+
+    - **Answer**: The ontology would answer this question by querying the 'histology_general' table for records where the 'order_number' matches the given order number and then retrieving the 'histology_summary' field from the filtered records.
+
+4. **CQ4: Which patients have a specific histological diagnosis?**
+
+    - **Answer**: The ontology would answer this question by querying the 'histology_general' table for records where the 'historical_diagnosis' matches the specific diagnosis and then retrieving the 'patient_id' field from the filtered records.
+
+5. **CQ5: How many diagnoses have been made by a specific pathologist?**
+
+    - **Answer**: The ontology would answer this question by counting the number of records in the 'histology_general' table where the 'pathologist' matches the specific pathologist.

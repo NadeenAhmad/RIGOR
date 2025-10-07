@@ -1,0 +1,20 @@
+### Competency Questions for Table 'icd'
+1. **What are the ICD codes for a specific patient?**
+
+   - **Answer**: The ontology would query the table for rows where the `patient_id` matches the specified patient. The `ICD` column would provide the ICD codes for that patient.
+
+2. **What is the description for a given ICD code?**
+
+   - **Answer**: The ontology would search the table for rows where the `ICD` column matches the given ICD code. The `ICD_discription` column would provide the description for that ICD code.
+
+3. **Which patients have a specific ICD code?**
+
+   - **Answer**: The ontology would query the table for rows where the `ICD` column matches the specific ICD code. The `patient_id` column would provide the list of patients associated with that ICD code.
+
+4. **How many different ICD codes are there in the table?**
+
+   - **Answer**: The ontology would perform a query to count the distinct values in the `ICD` column. This would give the total number of different ICD codes present in the table.
+
+5. **What are the ICD codes and their descriptions for all patients?**
+
+   - **Answer**: The ontology would retrieve all rows from the table, returning the `ICD` and `ICD_discription` columns for all entries. This would provide a comprehensive list of ICD codes along with their descriptions for all patients.

@@ -1,0 +1,21 @@
+
+### Competency Questions for Table 'clavien_dindo'
+**1. What are the different grades of complications defined in the Clavien-Dindo classification?**
+
+- **Answer**The ontology would answer this question by querying the `clavien_dindo_grade` column of the 'clavien_dindo' table to retrieve all unique grades of complications.
+
+**2. What is the definition of Grade III complications in the Clavien-Dindo classification?**
+
+- **Answer** The ontology would answer this question by querying the `clavien_dindo_definition` column where the `clavien_dindo_grade` is 'III'.
+
+**3. How many different grades of complications are defined in the Clavien-Dindo classification?**
+
+- **Answer** The ontology would answer this question by counting the number of unique entries in the `clavien_dindo_grade` column of the 'clavien_dindo' table.
+
+**4. What is the definition of each grade in the Clavien-Dindo classification?**
+
+- **Answer** The ontology would answer this question by retrieving all entries from the `clavien_dindo_grade` and `clavien_dindo_definition` columns, pairing each grade with its corresponding definition.
+
+**5. Are there any complications defined in the Clavien-Dindo classification that do not have a corresponding definition?**
+
+- **Answer** The ontology would answer this question by checking for any NULL values in the `clavien_dindo_definition` column where the `clavien_dindo_grade` is not NULL.

@@ -1,0 +1,15 @@
+### Competency Questions for Table 'child_stadium'
+1. **What are the unique stadium definitions in the child_stadium table?**
+   - **Answer**: The ontology would answer this question by querying the table to retrieve distinct values from the `child_stadium_definition` column.
+
+2. **How many entries are there in the child_stadium table?**
+   - **Answer**: The ontology would answer this question by executing a count query on the `child_stadium_id` column to get the total number of rows in the table.
+
+3. **What is the definition of the stadium with a specific child_stadium_id?**
+   - **Answer**: The ontology would answer this question by querying the table to retrieve the `child_stadium_definition` for the given `child_stadium_id`.
+
+4. **Are there any duplicate stadium definitions in the child_stadium table?**
+   - **Answer**: The ontology would answer this question by checking for duplicate values in the `child_stadium_definition` column and returning a boolean result.
+
+5. **List all stadium definitions that match a specific keyword.**
+   - **Answer**: The ontology would answer this question by querying the table to retrieve all `child_stadium_definition` values that contain the specified keyword.
