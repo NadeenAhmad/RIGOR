@@ -1,0 +1,6 @@
+{
+        "accuracy": 4.2,
+        "completeness": 3.2,
+        "clarity": 4.1,
+        "relevance": 3.8
+        }

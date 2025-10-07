@@ -1,0 +1,6 @@
+{
+        "accuracy": 3,
+        "completeness": 3,
+        "clarity": 4,
+        "relevance": 4
+        }
