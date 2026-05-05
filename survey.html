@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RIGOR Expert Evaluation — all_databases</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #f7f8fa;
+  --card: #ffffff;
+  --border: #e2e5ea;
+  --text: #1a1d23;
+  --text-secondary: #5f6672;
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --success: #059669;
+  --warning: #d97706;
+  --danger: #dc2626;
+  --accent-a: #7c3aed;
+  --accent-b: #0891b2;
+  --accent-c: #c2410c;
+  --accent-d: #059669;
+  --code-bg: #f1f3f5;
+  --shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06);
+  --shadow-lg: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+body {
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 40px 24px 32px;
+  margin-bottom: 32px;
+}
+.header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.header p {
+  color: var(--text-secondary);
+  font-size: 15px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* Progress */
+.progress-wrap {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 24px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow);
+}
+.progress-bar {
+  height: 8px;
+  background: var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+.progress-fill {
+  height: 100%;
+  background: var(--primary);
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+.progress-text {
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+/* Welcome screen */
+.welcome-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: var(--shadow);
+  max-width: 640px;
+  margin: 0 auto;
+}
+.welcome-card h2 { font-size: 22px; margin-bottom: 16px; }
+.welcome-card p { margin-bottom: 12px; color: var(--text-secondary); font-size: 14px; }
+.welcome-card ul { margin: 12px 0 20px 20px; font-size: 14px; color: var(--text-secondary); }
+.welcome-card li { margin-bottom: 6px; }
+.welcome-card input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 15px;
+  margin-bottom: 16px;
+  font-family: inherit;
+}
+.welcome-card input:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(37,99,235,0.1); }
+
+/* Table screen */
+.table-screen { display: none; }
+.table-screen.active { display: block; }
+
+.context-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow);
+}
+.context-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.context-card pre {
+  background: var(--code-bg);
+  padding: 14px;
+  border-radius: 8px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+/* Method grid */
+.methods-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+@media (max-width: 900px) {
+  .methods-grid { grid-template-columns: 1fr; }
+}
+
+.method-card {
+  background: var(--card);
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.method-header {
+  padding: 12px 16px;
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+}
+.method-card:nth-child(1) .method-header { background: var(--accent-a); }
+.method-card:nth-child(2) .method-header { background: var(--accent-b); }
+.method-card:nth-child(3) .method-header { background: var(--accent-c); }
+.method-card:nth-child(4) .method-header { background: var(--accent-d); }
+
+.method-body {
+  padding: 16px;
+}
+.method-body pre {
+  background: var(--code-bg);
+  padding: 12px;
+  border-radius: 8px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  line-height: 1.4;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+/* Scoring */
+.scoring-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow);
+}
+.scoring-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.dim-row {
+  display: grid;
+  grid-template-columns: 180px repeat(4, 1fr);
+  gap: 8px;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+.dim-row:last-child { border-bottom: none; }
+.dim-label {
+  font-size: 13px;
+  font-weight: 600;
+}
+.dim-desc {
+  font-size: 11px;
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+.score-select {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: inherit;
+  background: white;
+  cursor: pointer;
+}
+.score-select:focus { outline: none; border-color: var(--primary); }
+.method-col-header {
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  padding: 4px;
+  border-radius: 6px;
+  color: white;
+}
+.mch-a { background: var(--accent-a); }
+.mch-b { background: var(--accent-b); }
+.mch-c { background: var(--accent-c); }
+.mch-d { background: var(--accent-d); }
+
+/* Ranking */
+.ranking-row {
+  display: grid;
+  grid-template-columns: 180px repeat(4, 1fr);
+  gap: 8px;
+  align-items: center;
+  padding: 12px 0;
+}
+.rank-select {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: inherit;
+  background: white;
+}
+
+/* Feedback */
+.feedback-area {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  min-height: 80px;
+  resize: vertical;
+  margin-top: 8px;
+}
+.feedback-area:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(37,99,235,0.1); }
+
+/* Buttons */
+.btn {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
+.btn-primary:hover { background: var(--primary-hover); transform: translateY(-1px); box-shadow: var(--shadow-lg); }
+.btn-secondary {
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+.btn-secondary:hover { background: var(--bg); }
+.btn-success {
+  background: var(--success);
+  color: white;
+}
+.btn-success:hover { opacity: 0.9; }
+
+.btn-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+/* Done screen */
+.done-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 48px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  max-width: 640px;
+  margin: 0 auto;
+}
+.done-card h2 { font-size: 24px; margin-bottom: 12px; color: var(--success); }
+.done-card p { color: var(--text-secondary); margin-bottom: 24px; }
+
+.hidden { display: none !important; }
+</style>
+</head>
+<body>
+
+<div class="container" id="app">
+
+  <!-- WELCOME -->
+  <div id="welcome">
+    <div class="header">
+      <h1>Ontology Quality Evaluation</h1>
+      <p>Evaluate ontology fragments generated from a relational database schema. For each table, you will see four anonymised ontology fragments and score them on seven quality dimensions.</p>
+    </div>
+    <div class="welcome-card">
+      <h2>Before you begin</h2>
+      <ul>
+        <li>You will evaluate <strong id="n-tables">4</strong> tables (from two databases), each with 4 ontology fragments shown side-by-side.</li>
+        <li>Fragments are labelled <strong>A, B, C, D</strong> — method names are hidden.</li>
+        <li>For each table, score each fragment (0–5) on 7 quality dimensions, rank them 1st–4th, and optionally leave comments.</li>
+        <li>Estimated time: <strong>10–15 minutes</strong>.</li>
+        <li>At the end, download your results as a JSON file and return it to the study coordinator.</li>
+      </ul>
+      <p style="font-weight:600; margin-bottom:8px;">Your details</p>
+      <input type="text" id="expert-name" placeholder="Name or identifier (e.g., Expert_1)">
+      <input type="text" id="expert-role" placeholder="Role (e.g., Knowledge Engineer, Clinician)">
+      <input type="number" id="expert-years" placeholder="Years of experience in ontology/KG work" min="0" max="50">
+      <br>
+      <button class="btn btn-primary" onclick="startSurvey()">Start Evaluation</button>
+    </div>
+  </div>
+
+  <!-- PROGRESS -->
+  <div id="progress-section" class="progress-wrap hidden">
+    <div class="progress-text">Table <span id="current-idx">1</span> of <span id="total-idx">4</span> — <span id="current-db-name"></span>: <span id="current-table-name"></span></div>
+    <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:20%"></div></div>
+  </div>
+
+  <!-- TABLE SCREENS (generated by JS) -->
+  <div id="screens-container"></div>
+
+  <!-- DONE -->
+  <div id="done-screen" class="hidden">
+    <div class="done-card">
+      <h2>Thank you!</h2>
+      <p>Your evaluation is complete. Please download the results file and send it to the study coordinator.</p>
+      <button class="btn btn-success" onclick="downloadResults()" style="font-size:16px; padding: 14px 32px;">
+        Download Results (JSON)
+      </button>
+      <p style="margin-top:16px; font-size:13px; color: var(--text-secondary);">
+        File: <span id="filename-preview"></span>
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// =========================================================
+// SURVEY DATA (embedded by generator script)
+// =========================================================
+const SURVEY_DATA = {
+  "database": "all",
+  "tables": [
+    {
+      "table_name": "general_aftercare",
+      "database": "real_world",
+      "schema": "Table: general_aftercare\nColumns:\n  id: INTEGER\n  patient_id: INTEGER\n  created_at: TIMESTAMP\n  date_of_aftercare: FLOAT\n  height_cm: FLOAT\n  weight_kg: FLOAT\n  bmi: FLOAT\n  incisional_hernia: TINYINT\n  incisional_hernia_surgery: TINYINT\n  gall_bladder_leakage: TINYINT\n  supply_of_the_leakage: TEXT\n  bile_duct_stenosis: TINYINT\n  treatment_of_stenosis: TEXT\n  rez_cholangitis: TINYINT\n  aftercare_text: TEXT\n  oesophageal_stenosis: TINYINT\nForeign Keys:\n  patient_id -> patient_data.patient_id",
+      "cqs": "[What postoperative follow-up findings were recorded for a patient at a given aftercare visit?]\n\nThe ontology would answer this by using the patient's general_aftercare record identified by patient_id together with the specific aftercare entry or date_of_aftercare and returning the documented findings for that visit.\n\n---\n\n[Which patients developed bile-duct stenosis after surgery, and what treatment was documented?]\n\nThe ontology would answer this by retrieving general_aftercare records where bile_duct_stenosis = 1 and returning the associated treatment_of_stenosis together with the linked patient.\n\n---\n\n[Which patients had gall-bladder leakage during aftercare, and how was that leakage managed?]\n\nThe ontology would answer this by selecting general_aftercare records where gall_bladder_leakage = 1 and returning the linked patients together with supply_of_the_leakage.\n\n---\n\n[Which aftercare records document an incisional hernia, and which of those also document hernia surgery?]\n\nThe ontology would answer this by retrieving general_aftercare entries where incisional_hernia = 1 and distinguishing those with incisional_hernia_surgery = 1.\n\n---\n\n[What anthropometric values were recorded during a given aftercare assessment?]\n\nThe ontology would answer this by retrieving the relevant general_aftercare record and returning height_cm, weight_kg, and bmi for that specific follow-up entry.",
+      "chunks": {
+        "A": "Class: GeneralAftercare\n  DataProperty: aftercare_text -> xsd:string\n  DataProperty: bile_duct_stenosis -> xsd:boolean\n  DataProperty: bmi -> xsd:float\n  DataProperty: created_at -> xsd:dateTime\n  DataProperty: date_of_aftercare -> xsd:date\n  DataProperty: gall_bladder_leakage -> xsd:boolean\n  DataProperty: height_cm -> xsd:float\n  DataProperty: incisional_hernia -> xsd:boolean\n  DataProperty: incisional_hernia_surgery -> xsd:boolean\n  DataProperty: oesophageal_stenosis -> xsd:boolean\n  DataProperty: rez_cholangitis -> xsd:boolean\n  DataProperty: supply_of_the_leakage -> xsd:string\n  DataProperty: treatment_of_stenosis -> xsd:string\n  DataProperty: weight_kg -> xsd:float\n  ObjectProperty: hasPatientData -> PatientData",
+        "B": "Class: GeneralAftercare\n  DataProperty: aftercareText -> string\n  DataProperty: bileDuctStenosis -> boolean\n  DataProperty: bmi -> float\n  DataProperty: createdAt -> dateTime\n  DataProperty: dateOfAftercare -> float\n  DataProperty: gallBladderLeakage -> boolean\n  DataProperty: heightCm -> float\n  DataProperty: id -> integer\n  DataProperty: incisionalHernia -> boolean\n  DataProperty: incisionalHerniaSurgery -> boolean\n  DataProperty: oesophagealStenosis -> boolean\n  DataProperty: rezCholangitis -> boolean\n  DataProperty: supplyOfTheLeakage -> string\n  DataProperty: treatmentOfStenosis -> string\n  DataProperty: weightKg -> float\n  ObjectProperty: hasPatient -> Patient",
+        "C": "Class: GeneralAftercare\n  Label: General Aftercare\n  Comment: Represents a general aftercare record for a patient, capturing follow-up measurements, complications such as incisional hernia, gall bladder leakage, bile duct stenosis, recurrent cholangitis, and oes\n  ObjectProperty: hasPatient -> patient:PatientData, PatientData, db:PatientData  [label: \"oesophageal stenosis\"]  [comment: \"The body mass index of the patient at the time of aftercare.\"]",
+        "D": "Class: GeneralAftercare\n  Label: General Aftercare\n  Comment: Documents a patient's post-surgical follow-up examination, including body metrics (height, weight, BMI), surgical complications such as incisional hernia, bile duct leakage, bile duct stenosis, recurr\n  DataProperty: aftercare_text -> string  [label: \"Aftercare Free Text\"]  [comment: \"Free-text field for additional follow-up care notes and observations (Nachsorge \"]\n  DataProperty: bile_duct_stenosis -> boolean  [label: \"Bile Duct Stenosis\"]  [comment: \"Indicates whether bile duct stricture or narrowing (Gallengangsstenose) was obse\"]\n  DataProperty: bmi -> float  [label: \"Body Mass Index\"]  [comment: \"Body Mass Index (BMI) calculated from the patient's weight and height. Unit: kg/\"]\n  DataProperty: created_at -> dateTime  [label: \"Record Creation Timestamp\"]  [comment: \"The date and time when this chemotherapy treatment record was created.\"]\n  DataProperty: date_of_aftercare -> float  [label: \"Date of Aftercare Examination\"]  [comment: \"Date of the follow-up examination (Datum Nachsorgeuntersuchung). Stored as a FLO\"]\n  DataProperty: gall_bladder_leakage -> boolean  [label: \"Bile Duct Leakage\"]  [comment: \"Indicates whether bile duct leakage (Gallengangsleckage) was observed. Boolean: \"]\n  DataProperty: height_cm -> float  [label: \"Height in Centimetres\"]  [comment: \"Patient's height measured in centimetres (cm) at the time of the aftercare exami\"]\n  DataProperty: id -> integer  [label: \"Record Identifier\"]  [comment: \"Unique primary key identifier for the chemotherapy treatment record.\"]\n  DataProperty: incisional_hernia -> boolean  [label: \"Incisional Hernia\"]  [comment: \"Indicates whether the patient has an incisional hernia (Narbenbruch). Boolean: t\"]\n  DataProperty: incisional_hernia_surgery -> boolean  [label: \"Incisional Hernia Surgery\"]  [comment: \"Indicates whether surgical treatment for the incisional hernia was performed (OP\"]\n  DataProperty: oesophageal_stenosis -> boolean  [label: \"Oesophageal Stenosis\"]  [comment: \"Indicates whether oesophageal stenosis (Oesophagusstenose), a narrowing of the o\"]\n  DataProperty: rez_cholangitis -> boolean  [label: \"Recurring Cholangitis\"]  [comment: \"Indicates whether the patient experienced recurring cholangitis (Rez Cholangitid\"]\n  DataProperty: supply_of_the_leakage -> string  [label: \"Management of Bile Duct Leakage\"]  [comment: \"Free-text description of the management or treatment provided for bile duct leak\"]\n  DataProperty: treatment_of_stenosis -> string  [label: \"Treatment of Bile Duct Stenosis\"]  [comment: \"Free-text description of the treatment or intervention for bile duct stenosis (V\"]\n  DataProperty: weight_kg -> float  [label: \"Weight in Kilograms\"]  [comment: \"Patient's weight measured in kilograms (kg) at the time of the aftercare examina\"]\n  ObjectProperty: hasPatientData -> PatientData  [label: \"has patient data\"]  [comment: \"Links a complication record to the associated patient data record.\"]"
+      }
+    },
+    {
+      "table_name": "complication",
+      "database": "real_world",
+      "schema": "Table: complication\nColumns:\n  id: INTEGER\n  patient_id: INTEGER\n  created_at: TIMESTAMP\n  duration_of_inpatient_stay_d: FLOAT\n  duration_intermediate_care_d: FLOAT\n  duration_intensive_care_station_d: FLOAT\n  ventilation_duration_h: FLOAT\n  noninvasive_ventilation_duration_h: FLOAT\n  complication_free_progression: TINYINT\n  liver_failure: TINYINT\n  urinary_retention: TINYINT\n  ileus: TINYINT\n  cholascos: TINYINT\n  cholangitis: TINYINT\n  reintubation: TINYINT\n  pneumonia: TINYINT\n  thrombosis: TINYINT\n  embolism: TINYINT\n  postoperative_bleeding: TINYINT\n  pleural_effusion: TINYINT\n  burst_abdomen: TINYINT\n  liver_abscess: TINYINT\n  intraabdomineller_Abszess: TINYINT\n  biliom: TINYINT\n  decubitus: TINYINT\n  decubitus_score: INTEGER\n  secondary_wound_healing: TINYINT\n  multi_organ_failure: TINYINT\n  anastomotic_insufficiency: TINYINT\n  anastomotic_insufficiency_type: TEXT\n  other_complications: TINYINT\n  other_complications_1: TEXT\n  other_complications_2: TEXT\n  other_complications_3: TEXT\n  other_complications_4: TEXT\n  other_complications_5: TEXT\n  other_complications_6: TEXT\n  thoracic_drainage_for_effusion: TINYINT\n  simplified_acute_physiology_score_average: FLOAT\n  drainage_complication: TINYINT\n  drainage_complication_text: TEXT\n  endoscopy: TINYINT\n  endoscopic_retrograde_cholangiopancreatography: TINYINT\n  endoscopy_text: TEXT\n  haemodialysis: TINYINT\n  haemodialysis_h: FLOAT\n  mutation_adjusted_risk_score: TINYINT\n  mutation_adjusted_risk_score_h: FLOAT\n  interventional_drainage: TINYINT\n  re_operation: TINYINT\n  clavien_dindo: INTEGER\n  kidney_insufficiency: TINYINT\n  readmission_to_clinic: TINYINT\n  readmission_to_clinic_date: TEXT\n  other_complication_management: TINYINT\n  other_complication_management_text: TEXT\n  relocation_intensive_care_unit: TINYINT\n  relocation_intermediate_care_unit: TINYINT\n  acute_coronary_syndrome: TINYINT\n  sepsis: TINYINT\n  systemic_inflammatory_response_syndrome: TINYINT\n  circulatory_instability: TINYINT\n  reanimation: TINYINT\n  duration_reanimation_min: FLOAT\n  respiratory_failure: TINYINT\n  hollow_organ_perforation: TINYINT\n  which_organ_is_perforated: TEXT\n  intestinal_passage_disorder: TINYINT\n  ascites_postoperative: TINYINT\n  pancreatitis_postoperative: TINYINT\n  urinary_tract_infection_postoperative: TINYINT\n  delirium: TINYINT\n  delirium_type: TEXT\n  cholecystitis: TINYINT\n  pancreatic_fistula: TINYINT\n  internal_hernia: TINYINT\n  pleural_empyema: TINYINT\nForeign Keys:\n  clavien_dindo -> clavien_dindo.clavien_dindo_id\n  decubitus_score -> dekubitus_grade.dekubitus_grade_id\n  patient_id -> patient_data.patient_id",
+      "cqs": "[Which patients had a complication-free postoperative course?]\n\nThe ontology would answer this by retrieving complication records where complication_free_progression = 1 and following the patient_id relation to the corresponding patients.\n\n---\n\n[Which patients had postoperative complications classified as severe according to the Clavien-Dindo system?]\n\nThe ontology would answer this by linking complication.clavien_dindo to the clavien_dindo table and retrieving patients whose complications map to clinically severe grades such as Grade III, IV, or V.\n\n---\n\n[Which patients developed postoperative decubitus and what severity grade was recorded?]\n\nThe ontology would answer this by identifying complication records with decubitus = 1, linking decubitus_score to dekubitus_grade, and returning both the patient and the associated grade.\n\n---\n\n[Which patients required reintubation, and what were their ventilation and inpatient-stay durations?]\n\nThe ontology would answer this by selecting complication records with reintubation = 1 and retrieving the related duration_of_inpatient_stay_d, ventilation_duration_h, and noninvasive_ventilation_duration_h values.\n\n---\n\n[Which patients underwent postoperative endoscopic management such as ERCP, and what related endoscopy information was documented?]\n\nThe ontology would answer this by retrieving complication records where endoscopic_retrograde_cholangiopancreatography = 1 or endoscopy = 1 and returning the associated endoscopy_text and patient linkage.",
+      "chunks": {
+        "A": "Class: Complication\n  DataProperty: acute_coronary_syndrome -> xsd:boolean\n  DataProperty: anastomotic_insufficiency -> xsd:boolean\n  DataProperty: anastomotic_insufficiency_type -> xsd:string\n  DataProperty: ascites_postoperative -> xsd:boolean\n  DataProperty: biliom -> xsd:boolean\n  DataProperty: burst_abdomen -> xsd:boolean\n  DataProperty: cholangitis -> xsd:boolean\n  DataProperty: cholascos -> xsd:boolean\n  DataProperty: cholecystitis -> xsd:boolean\n  DataProperty: circulatory_instability -> xsd:boolean\n  DataProperty: complication_free_progression -> xsd:boolean\n  DataProperty: created_at -> xsd:dateTime\n  DataProperty: decubitus -> xsd:boolean\n  DataProperty: delirium -> xsd:boolean\n  DataProperty: delirium_type -> xsd:string\n  DataProperty: drainage_complication -> xsd:boolean\n  DataProperty: drainage_complication_text -> xsd:string\n  DataProperty: duration_intensive_care_station_d -> xsd:float\n  DataProperty: duration_intermediate_care_d -> xsd:float\n  DataProperty: duration_of_inpatient_stay_d -> xsd:float\n  DataProperty: duration_reanimation_min -> xsd:float\n  DataProperty: embolism -> xsd:boolean\n  DataProperty: endoscopic_retrograde_cholangiopancreatography -> xsd:boolean\n  DataProperty: endoscopy -> xsd:boolean\n  DataProperty: endoscopy_text -> xsd:string\n  DataProperty: haemodialysis -> xsd:boolean\n  DataProperty: haemodialysis_h -> xsd:float\n  DataProperty: hollow_organ_perforation -> xsd:boolean\n  DataProperty: ileus -> xsd:boolean\n  DataProperty: internal_hernia -> xsd:boolean\n  DataProperty: interventional_drainage -> xsd:boolean\n  DataProperty: intestinal_passage_disorder -> xsd:boolean\n  DataProperty: intraabdomineller_Abszess -> xsd:boolean\n  DataProperty: kidney_insufficiency -> xsd:boolean\n  DataProperty: liver_abscess -> xsd:boolean\n  DataProperty: liver_failure -> xsd:boolean\n  DataProperty: multi_organ_failure -> xsd:boolean\n  DataProperty: mutation_adjusted_risk_score -> xsd:boolean\n  DataProperty: mutation_adjusted_risk_score_h -> xsd:float\n  DataProperty: noninvasive_ventilation_duration_h -> xsd:float\n  DataProperty: other_complication_management -> xsd:boolean\n  DataProperty: other_complication_management_text -> xsd:string\n  DataProperty: other_complications -> xsd:boolean\n  DataProperty: other_complications_1 -> xsd:string\n  DataProperty: other_complications_2 -> xsd:string\n  DataProperty: other_complications_3 -> xsd:string\n  DataProperty: other_complications_4 -> xsd:string\n  DataProperty: other_complications_5 -> xsd:string\n  DataProperty: other_complications_6 -> xsd:string\n  DataProperty: pancreatic_fistula -> xsd:boolean\n  DataProperty: pancreatitis_postoperative -> xsd:boolean\n  DataProperty: pleural_effusion -> xsd:boolean\n  DataProperty: pleural_empyema -> xsd:boolean\n  DataProperty: pneumonia -> xsd:boolean\n  DataProperty: postoperative_bleeding -> xsd:boolean\n  DataProperty: re_operation -> xsd:boolean\n  DataProperty: readmission_to_clinic -> xsd:boolean\n  DataProperty: readmission_to_clinic_date -> xsd:date\n  DataProperty: reanimation -> xsd:boolean\n  DataProperty: reintubation -> xsd:boolean\n  DataProperty: relocation_intensive_care_unit -> xsd:boolean\n  DataProperty: relocation_intermediate_care_unit -> xsd:boolean\n  DataProperty: respiratory_failure -> xsd:boolean\n  DataProperty: secondary_wound_healing -> xsd:boolean\n  DataProperty: sepsis -> xsd:boolean\n  DataProperty: simplified_acute_physiology_score_average -> xsd:float\n  DataProperty: systemic_inflammatory_response_syndrome -> xsd:boolean\n  DataProperty: thoracic_drainage_for_effusion -> xsd:boolean\n  DataProperty: thrombosis -> xsd:boolean\n  DataProperty: urinary_retention -> xsd:boolean\n  DataProperty: urinary_tract_infection_postoperative -> xsd:boolean\n  DataProperty: ventilation_duration_h -> xsd:float\n  DataProperty: which_organ_is_perforated -> xsd:string\n  ObjectProperty: hasClavienDindo -> ClavienDindo\n  ObjectProperty: hasDekubitusGrade -> DekubitusGrade\n  ObjectProperty: hasPatientData -> PatientData",
+        "B": "Class: Complication\n  DataProperty: acute_coronary_syndrome -> boolean\n  DataProperty: anastomotic_insufficiency -> boolean\n  DataProperty: anastomotic_insufficiency_type -> string\n  DataProperty: ascites_postoperative -> boolean\n  DataProperty: biliom -> boolean\n  DataProperty: burst_abdomen -> boolean\n  DataProperty: cholangitis -> boolean\n  DataProperty: cholascos -> boolean\n  DataProperty: cholecystitis -> boolean\n  DataProperty: circulatory_instability -> boolean\n  DataProperty: clavien_dindo -> integer\n  DataProperty: complication_free_progression -> boolean\n  DataProperty: complication_id -> integer\n  DataProperty: created_at -> dateTime\n  DataProperty: decubitus -> boolean\n  DataProperty: decubitus_score -> integer\n  DataProperty: delirium -> boolean\n  DataProperty: delirium_type -> string\n  DataProperty: drainage_complication -> boolean\n  DataProperty: drainage_complication_text -> string\n  DataProperty: duration_intensive_care_station_d -> float\n  DataProperty: duration_intermediate_care_d -> float\n  DataProperty: duration_of_inpatient_stay_d -> float\n  DataProperty: duration_reanimation_min -> float\n  DataProperty: embolism -> boolean\n  DataProperty: endoscopic_retrograde_cholangiopancreatography -> boolean\n  DataProperty: endoscopy -> boolean\n  DataProperty: endoscopy_text -> string\n  DataProperty: haemodialysis -> boolean\n  DataProperty: haemodialysis_h -> float\n  DataProperty: hollow_organ_perforation -> boolean\n  DataProperty: ileus -> boolean\n  DataProperty: internal_hernia -> boolean\n  DataProperty: interventional_drainage -> boolean\n  DataProperty: intestinal_passage_disorder -> boolean\n  DataProperty: intraabdomineller_Abszess -> boolean\n  DataProperty: kidney_insufficiency -> boolean\n  DataProperty: liver_abscess -> boolean\n  DataProperty: liver_failure -> boolean\n  DataProperty: multi_organ_failure -> boolean\n  DataProperty: mutation_adjusted_risk_score -> boolean\n  DataProperty: mutation_adjusted_risk_score_h -> float\n  DataProperty: noninvasive_ventilation_duration_h -> float\n  DataProperty: other_complication_management -> boolean\n  DataProperty: other_complication_management_text -> string\n  DataProperty: other_complications -> boolean\n  DataProperty: other_complications_1 -> string\n  DataProperty: other_complications_2 -> string\n  DataProperty: other_complications_3 -> string\n  DataProperty: other_complications_4 -> string\n  DataProperty: other_complications_5 -> string\n  DataProperty: other_complications_6 -> string\n  DataProperty: pancreatic_fistula -> boolean\n  DataProperty: pancreatitis_postoperative -> boolean\n  DataProperty: pleural_effusion -> boolean\n  DataProperty: pleural_empyema -> boolean\n  DataProperty: pneumonia -> boolean\n  DataProperty: postoperative_bleeding -> boolean\n  DataProperty: re_operation -> boolean\n  DataProperty: readmission_to_clinic -> boolean\n  DataProperty: readmission_to_clinic_date -> string\n  DataProperty: reanimation -> boolean\n  DataProperty: reintubation -> boolean\n  DataProperty: relocation_intensive_care_unit -> boolean\n  DataProperty: relocation_intermediate_care_unit -> boolean\n  DataProperty: respiratory_failure -> boolean\n  DataProperty: secondary_wound_healing -> boolean\n  DataProperty: sepsis -> boolean\n  DataProperty: simplified_acute_physiology_score_average -> float\n  DataProperty: systemic_inflammatory_response_syndrome -> boolean\n  DataProperty: thoracic_drainage_for_effusion -> boolean\n  DataProperty: thrombosis -> boolean\n  DataProperty: urinary_retention -> boolean\n  DataProperty: urinary_tract_infection_postoperative -> boolean\n  DataProperty: ventilation_duration_h -> float\n  DataProperty: which_organ_is_perforated -> string\n  ObjectProperty: hasPatient -> Patient",
+        "C": "Class: Complication\n  Label: Complication\n  Comment: Represents a postoperative complication record for a patient, including various complication types, durations, scores, and management details.\n  DataProperty: anastomoticInsufficiency -> boolean  [label: \"anastomotic insufficiency\"]  [comment: \"Indicates whether anastomotic insufficiency occurred as a complication.\"]\n  DataProperty: anastomoticInsufficiencyType -> string  [label: \"anastomotic insufficiency type\"]  [comment: \"Describes the type of anastomotic insufficiency if present.\"]\n  DataProperty: biliom -> boolean  [label: \"biliom\"]  [comment: \"Indicates whether a bilioma occurred as a complication.\"]\n  DataProperty: burstAbdomen -> boolean  [label: \"burst abdomen\"]  [comment: \"Indicates whether burst abdomen (fascial dehiscence) occurred as a complication.\"]\n  DataProperty: cholangitis -> boolean  [label: \"cholangitis\"]  [comment: \"Indicates whether cholangitis occurred as a complication.\"]\n  DataProperty: cholascos -> boolean  [label: \"cholascos\"]  [comment: \"Indicates whether cholascos (bile ascites) occurred as a complication.\"]\n  DataProperty: complicationFreeProgression -> boolean  [label: \"complication-free progression\"]  [comment: \"Indicates whether the patient had a complication-free postoperative progression \"]\n  DataProperty: complicationId -> integer  [label: \"complication ID\"]  [comment: \"Unique identifier for the complication record.\"]\n  DataProperty: createdAt -> dateTime  [label: \"created at\"]  [comment: \"Timestamp when the complication record was created.\"]\n  DataProperty: decubitus -> boolean  [label: \"decubitus\"]  [comment: \"Indicates whether decubitus (pressure ulcer) occurred as a complication.\"]\n  DataProperty: drainageComplication -> boolean  [label: \"drainage complication\"]  [comment: \"Indicates whether a drainage-related complication occurred.\"]\n  DataProperty: drainageComplicationText -> string  [label: \"drainage complication text\"]  [comment: \"Free-text description of the drainage complication.\"]\n  DataProperty: durationIntensiveCareStationD -> float  [label: \"duration intensive care station (days)\"]  [comment: \"Duration of stay in the intensive care station in days.\"]\n  DataProperty: durationIntermediateCareD -> float  [label: \"duration intermediate care (days)\"]  [comment: \"Duration of stay in intermediate care in days.\"]\n  DataProperty: durationOfInpatientStayD -> float  [label: \"duration of inpatient stay (days)\"]  [comment: \"Duration of the inpatient stay in days.\"]\n  DataProperty: embolism -> boolean  [label: \"embolism\"]  [comment: \"Indicates whether embolism occurred as a complication.\"]\n  DataProperty: endoscopicRetrogradeCholangiopancreatography -> boolean  [label: \"endoscopic retrograde cholangiopancreatography\"]  [comment: \"Indicates whether ERCP was performed as part of complication management.\"]\n  DataProperty: endoscopy -> boolean  [label: \"endoscopy\"]  [comment: \"Indicates whether endoscopy was performed as part of complication management.\"]\n  DataProperty: endoscopyText -> string  [label: \"endoscopy text\"]  [comment: \"Free-text description of the endoscopy procedure performed.\"]\n  DataProperty: haemodialysis -> boolean  [label: \"haemodialysis\"]  [comment: \"Indicates whether haemodialysis was required as part of complication management.\"]\n  DataProperty: haemodialysisH -> float  [label: \"haemodialysis duration (hours)\"]  [comment: \"Duration of haemodialysis in hours.\"]\n  DataProperty: ileus -> boolean  [label: \"ileus\"]  [comment: \"Indicates whether ileus (bowel obstruction) occurred as a complication.\"]\n  DataProperty: interventionalDrainage -> boolean  [label: \"interventional drainage\"]  [comment: \"Indicates whether interventional drainage was performed as part of complication \"]\n  DataProperty: intraabdominalAbscess -> boolean  [label: \"intraabdominal abscess\"]  [comment: \"Indicates whether an intraabdominal abscess occurred as a complication.\"]\n  DataProperty: kidneyInsufficiency -> boolean  [label: \"kidney insufficiency\"]  [comment: \"Indicates whether kidney insufficiency occurred as a complication.\"]\n  DataProperty: liverAbscess -> boolean  [label: \"liver abscess\"]  [comment: \"Indicates whether liver abscess occurred as a complication.\"]\n  DataProperty: liverFailure -> boolean  [label: \"liver failure\"]  [comment: \"Indicates whether liver failure occurred as a complication.\"]\n  DataProperty: multiOrganFailure -> boolean  [label: \"multi-organ failure\"]  [comment: \"Indicates whether multi-organ failure occurred as a complication.\"]\n  DataProperty: mutationAdjustedRiskScore -> boolean  [label: \"mutation adjusted risk score\"]  [comment: \"Indicates whether a mutation-adjusted risk score was applied.\"]\n  DataProperty: mutationAdjustedRiskScoreH -> float  [label: \"mutation adjusted risk score value\"]  [comment: \"Value of the mutation-adjusted risk score.\"]\n  DataProperty: noninvasiveVentilationDurationH -> float  [label: \"noninvasive ventilation duration (hours)\"]  [comment: \"Duration of noninvasive ventilation in hours.\"]\n  DataProperty: otherComplicationManagement -> boolean  [label: \"other complication management\"]  [comment: \"Indicates whether other complication management measures were taken.\"]\n  DataProperty: otherComplicationManagementText -> string  [label: \"other complication management text\"]  [comment: \"Free-text description of other complication management measures.\"]\n  DataProperty: otherComplications -> boolean  [label: \"other complications\"]  [comment: \"Indicates whether other complications not specifically listed occurred.\"]\n  DataProperty: otherComplications1 -> string  [label: \"other complications 1\"]  [comment: \"Free-text description of the first other complication.\"]\n  DataProperty: otherComplications2 -> string  [label: \"other complications 2\"]  [comment: \"Free-text description of the second other complication.\"]\n  DataProperty: otherComplications3 -> string  [label: \"other complications 3\"]  [comment: \"Free-text description of the third other complication.\"]\n  DataProperty: otherComplications4 -> string  [label: \"other complications 4\"]  [comment: \"Free-text description of the fourth other complication.\"]\n  DataProperty: otherComplications5 -> string  [label: \"other complications 5\"]  [comment: \"Free-text description of the fifth other complication.\"]\n  DataProperty: otherComplications6 -> string  [label: \"other complications 6\"]  [comment: \"Free-text description of the sixth other complication.\"]\n  DataProperty: pleuralEffusion -> boolean  [label: \"pleural effusion\"]  [comment: \"Indicates whether pleural effusion occurred as a complication.\"]\n  DataProperty: pneumonia -> boolean  [label: \"pneumonia\"]  [comment: \"Indicates whether pneumonia occurred as a complication.\"]\n  DataProperty: postoperativeBleeding -> boolean  [label: \"postoperative bleeding\"]  [comment: \"Indicates whether postoperative bleeding occurred as a complication.\"]\n  DataProperty: reOperation -> boolean  [label: \"re-operation\"]  [comment: \"Indicates whether a re-operation was required due to complications.\"]\n  DataProperty: readmissionToClinic -> boolean  [label: \"readmission to clinic\"]  [comment: \"Indicates whether the patient was readmitted to the clinic.\"]\n  DataProperty: readmissionToClinicDate -> string  [label: \"readmission to clinic date\"]  [comment: \"Date of readmission to the clinic.\"]\n  DataProperty: reintubation -> boolean  [label: \"reintubation\"]  [comment: \"Indicates whether reintubation was required as a complication.\"]\n  DataProperty: relocationIntensiveCareUnit -> boolean  [label: \"relocation to intensive care unit\"]  [comment: \"Indicates whether the patient was relocated to the intensive care unit.\"]\n  DataProperty: relocationIntermediateCareUnit -> boolean  [label: \"relocation to intermediate care unit\"]  [comment: \"Indicates whether the patient was relocated to the intermediate care unit.\"]\n  DataProperty: secondaryWoundHealing -> boolean  [label: \"secondary wound healing\"]  [comment: \"Indicates whether secondary wound healing occurred as a complication.\"]\n  DataProperty: simplifiedAcutePhysiologyScoreAverage -> float  [label: \"simplified acute physiology score average\"]  [comment: \"Average Simplified Acute Physiology Score (SAPS) during the complication period.\"]\n  DataProperty: thoracicDrainageForEffusion -> boolean  [label: \"thoracic drainage for effusion\"]  [comment: \"Indicates whether thoracic drainage was performed for pleural effusion.\"]\n  DataProperty: thrombosis -> boolean  [label: \"thrombosis\"]  [comment: \"Indicates whether thrombosis occurred as a complication.\"]\n  DataProperty: urinaryRetention -> boolean  [label: \"urinary retention\"]  [comment: \"Indicates whether urinary retention occurred as a complication.\"]\n  DataProperty: ventilationDurationH -> float  [label: \"ventilation duration (hours)\"]  [comment: \"Duration of invasive ventilation in hours.\"]\n  ObjectProperty: hasClavienDindoGrade -> ClavienDindo  [label: \"has Clavien-Dindo grade\"]  [comment: \"Links a complication record to its Clavien-Dindo classification grade.\"]\n  ObjectProperty: hasDecubitusScore -> DekubitusGrade  [label: \"has decubitus score\"]  [comment: \"Links a complication record to the decubitus (pressure ulcer) grade.\"]\n  ObjectProperty: hasPatient -> PatientData, patient:PatientData  [label: \"has patient\"]  [comment: \"Links a complication record to the associated patient.\"]",
+        "D": "Class: Complication\n  Label: Complication\n  Comment: Represents a postoperative or surgical complication record associated with a patient, including various complication types, durations of care, and management interventions.\n  DataProperty: anastomotic_insufficiency -> boolean  [label: \"anastomotic insufficiency\"]  [comment: \"Boolean flag indicating whether the patient developed anastomotic insufficiency \"]\n  DataProperty: anastomotic_insufficiency_type -> string  [label: \"anastomotic insufficiency type\"]  [comment: \"Free-text field specifying the location or type of the failed anastomosis, if an\"]\n  DataProperty: biliom -> boolean  [label: \"bilioma\"]  [comment: \"Boolean flag indicating whether the patient developed a bilioma (encapsulated co\"]\n  DataProperty: burst_abdomen -> boolean  [label: \"burst abdomen (fascial dehiscence)\"]  [comment: \"Boolean flag indicating whether the patient developed burst abdomen (fascial deh\"]\n  DataProperty: cholangitis -> boolean  [label: \"cholangitis\"]  [comment: \"Boolean flag indicating whether the patient developed cholangitis (inflammation \"]\n  DataProperty: cholascos -> boolean  [label: \"cholascites (bile ascites)\"]  [comment: \"Boolean flag indicating whether the patient developed cholascites (bile-stained \"]\n  DataProperty: complication_created_at -> dateTime  [label: \"complication record created at\"]  [comment: \"Timestamp indicating when the complication record was created in the system.\"]\n  DataProperty: complication_free_progression -> boolean  [label: \"complication-free progression\"]  [comment: \"Boolean flag indicating whether the patient had a complication-free postoperativ\"]\n  DataProperty: decubitus -> boolean  [label: \"decubitus (pressure ulcer)\"]  [comment: \"Boolean flag indicating whether the patient developed a decubitus (pressure ulce\"]\n  DataProperty: drainage_complication -> boolean  [label: \"drainage complication\"]  [comment: \"Boolean flag indicating whether a complication associated with a drainage proced\"]\n  DataProperty: drainage_complication_text -> string  [label: \"drainage complication text\"]  [comment: \"Free-text field providing specific details of the drainage-related complication.\"]\n  DataProperty: duration_intensive_care_station_d -> float  [label: \"duration of intensive care stay\"]  [comment: \"Duration of the patient's stay in the Intensive Care Unit (ICU), measured in day\"]\n  DataProperty: duration_intermediate_care_d -> float  [label: \"duration of intermediate care\"]  [comment: \"Duration of the patient's stay in the Intermediate Care Unit (IMC), measured in \"]\n  DataProperty: duration_of_inpatient_stay_d -> float  [label: \"duration of inpatient stay\"]  [comment: \"Total duration of the patient's inpatient hospital stay, measured in days (d).\"]\n  DataProperty: embolism -> boolean  [label: \"embolism\"]  [comment: \"Boolean flag indicating whether the patient developed an embolism (e.g., pulmona\"]\n  DataProperty: endoscopic_retrograde_cholangiopancreatography -> boolean  [label: \"ERCP (Endoscopic Retrograde Cholangiopancreatography)\"]  [comment: \"Boolean flag indicating whether an Endoscopic Retrograde Cholangiopancreatograph\"]\n  DataProperty: endoscopy -> boolean  [label: \"endoscopy\"]  [comment: \"Boolean flag indicating whether an endoscopic procedure was performed as part of\"]\n  DataProperty: endoscopy_text -> string  [label: \"endoscopy free text\"]  [comment: \"Free-text field to document findings or notes from an endoscopy procedure.\"]\n  DataProperty: haemodialysis -> boolean  [label: \"haemodialysis\"]  [comment: \"Boolean flag indicating whether the patient required haemodialysis postoperative\"]\n  DataProperty: haemodialysis_h -> float  [label: \"haemodialysis duration\"]  [comment: \"Total duration of haemodialysis treatment, measured in hours (h).\"]\n  DataProperty: id -> integer  [label: \"Record Identifier\"]  [comment: \"Unique primary key identifier for the chemotherapy treatment record.\"]\n  DataProperty: ileus -> boolean  [label: \"ileus\"]  [comment: \"Boolean flag indicating whether the patient developed ileus (bowel obstruction o\"]\n  DataProperty: interventional_drainage -> boolean  [label: \"interventional drainage\"]  [comment: \"Boolean flag indicating whether imaging-guided interventional drainage was perfo\"]\n  DataProperty: intraabdomineller_Abszess -> boolean  [label: \"intra-abdominal abscess\"]  [comment: \"Boolean flag indicating whether the patient developed an intra-abdominal abscess\"]\n  DataProperty: kidney_insufficiency -> boolean  [label: \"kidney insufficiency\"]  [comment: \"Boolean flag indicating whether the patient developed renal insufficiency or kid\"]\n  DataProperty: liver_abscess -> boolean  [label: \"liver abscess\"]  [comment: \"Boolean flag indicating whether the patient developed a liver abscess postoperat\"]\n  DataProperty: liver_failure -> boolean  [label: \"liver failure\"]  [comment: \"Boolean flag indicating whether the patient developed liver failure as a postope\"]\n  DataProperty: multi_organ_failure -> boolean  [label: \"multi-organ failure\"]  [comment: \"Boolean flag indicating whether the patient developed multi-organ failure (simul\"]\n  DataProperty: mutation_adjusted_risk_score -> boolean  [label: \"MARS/SPAD performed\"]  [comment: \"Boolean flag indicating whether a Molecular Adsorbent Recirculating System (MARS\"]\n  DataProperty: mutation_adjusted_risk_score_h -> float  [label: \"MARS/SPAD duration\"]  [comment: \"Duration of the MARS or SPAD procedure, measured in hours (h).\"]\n  DataProperty: noninvasive_ventilation_duration_h -> float  [label: \"non-invasive ventilation duration\"]  [comment: \"Total duration of non-invasive ventilation (e.g., CPAP, BiPAP), measured in hour\"]\n  DataProperty: other_complication_management -> boolean  [label: \"other complication management\"]  [comment: \"Boolean flag indicating whether other complication management strategies not exp\"]\n  DataProperty: other_complication_management_text -> string  [label: \"other complication management text\"]  [comment: \"Free-text field to document details of other complication management strategies.\"]\n  DataProperty: other_complications -> boolean  [label: \"other complications\"]  [comment: \"Boolean flag indicating whether the patient had other complications not covered \"]\n  DataProperty: other_complications_1 -> string  [label: \"other complication 1\"]  [comment: \"Free-text field for the first additional complication not listed in the predefin\"]\n  DataProperty: other_complications_2 -> string  [label: \"other complication 2\"]  [comment: \"Free-text field for the second additional complication not listed in the predefi\"]\n  DataProperty: other_complications_3 -> string  [label: \"other complication 3\"]  [comment: \"Free-text field for the third additional complication not listed in the predefin\"]\n  DataProperty: other_complications_4 -> string  [label: \"other complication 4\"]  [comment: \"Free-text field for the fourth additional complication not listed in the predefi\"]\n  DataProperty: other_complications_5 -> string  [label: \"other complication 5\"]  [comment: \"Free-text field for the fifth additional complication not listed in the predefin\"]\n  DataProperty: other_complications_6 -> string  [label: \"other complication 6\"]  [comment: \"Free-text field for the sixth additional complication not listed in the predefin\"]\n  DataProperty: pleural_effusion -> boolean  [label: \"pleural effusion\"]  [comment: \"Boolean flag indicating whether the patient developed pleural effusion (fluid ac\"]\n  DataProperty: pneumonia -> boolean  [label: \"pneumonia\"]  [comment: \"Boolean flag indicating whether the patient developed pneumonia as a postoperati\"]\n  DataProperty: postoperative_bleeding -> boolean  [label: \"postoperative bleeding\"]  [comment: \"Boolean flag indicating whether the patient experienced postoperative bleeding (\"]\n  DataProperty: re_operation -> boolean  [label: \"re-operation\"]  [comment: \"Boolean flag indicating whether the patient required an additional surgical proc\"]\n  DataProperty: readmission_to_clinic -> boolean  [label: \"readmission to clinic\"]  [comment: \"Boolean flag indicating whether the patient was readmitted to the hospital after\"]\n  DataProperty: readmission_to_clinic_date -> date  [label: \"readmission date\"]  [comment: \"The date of the patient's readmission to the clinic. Stored as TEXT in the sourc\"]\n  DataProperty: reintubation -> boolean  [label: \"reintubation\"]  [comment: \"Boolean flag indicating whether the patient required reintubation after initial \"]\n  DataProperty: secondary_wound_healing -> boolean  [label: \"secondary wound healing\"]  [comment: \"Boolean flag indicating whether the patient experienced secondary wound healing \"]\n  DataProperty: simplified_acute_physiology_score_average -> float  [label: \"SAPS average score\"]  [comment: \"The average Simplified Acute Physiology Score (SAPS), used to assess the severit\"]\n  DataProperty: thoracic_drainage_for_effusion -> boolean  [label: \"thoracic drainage for effusion\"]  [comment: \"Boolean flag indicating whether thoracic drainage was used to remove fluid from \"]\n  DataProperty: thrombosis -> boolean  [label: \"thrombosis\"]  [comment: \"Boolean flag indicating whether the patient developed thrombosis (blood clot for\"]\n  DataProperty: urinary_retention -> boolean  [label: \"urinary retention\"]  [comment: \"Boolean flag indicating whether the patient experienced urinary retention postop\"]\n  DataProperty: ventilation_duration_h -> float  [label: \"invasive ventilation duration\"]  [comment: \"Total duration of invasive mechanical ventilation, measured in hours (h).\"]\n  ObjectProperty: hasClavienDindo -> ClavienDindo  [label: \"has Clavien-Dindo classification\"]  [comment: \"Links a complication record to its Clavien-Dindo classification grade, indicatin\"]\n  ObjectProperty: hasDekubitusGrade -> DekubitusGrade  [label: \"has decubitus grade\"]  [comment: \"Links a complication record to the pressure ulcer (decubitus) severity grade, re\"]\n  ObjectProperty: hasPatientData -> PatientData  [label: \"has patient data\"]  [comment: \"Links a complication record to the associated patient data record.\"]"
+      }
+    },
+    {
+      "table_name": "hospital",
+      "database": "eicu_crd",
+      "schema": "Table: hospital\nColumns:\n  hospitalid: INTEGER\n  numbedscategory: VARCHAR(32)\n  teachingstatus: TINYINT\n  region: VARCHAR(64)",
+      "cqs": "[How many hospitals are there in each region?]\n\nThe ontology would answer this by grouping the entries by the 'region' column and counting the number of entries in each group, using the 'hospitalid' column to determine the number of unique hospitals.\n\n---\n\n[What are the different bed categories available in the hospitals?]\n\nThe ontology would answer this by selecting the distinct values from the 'numbedscategory' column.\n\n---\n\n[How many teaching hospitals are there?]\n\nThe ontology would answer this by filtering the entries where the 'teachingstatus' column has a value indicating that the hospital is a teaching hospital (e.g., 1 or 'Yes') and counting the number of such entries.\n\n---\n\n[Which hospitals are located in a specific region, say 'New England'?]\n\nThe ontology would answer this by filtering the entries where the 'region' column matches 'New England' and then selecting the corresponding 'hospitalid' values.\n\n---\n\n[What is the teaching status of each hospital in a specific region, say 'Midwest'?]\n\nThe ontology would answer this by filtering the entries where the 'region' column matches 'Midwest' and then selecting the corresponding 'hospitalid' and 'teachingstatus' values.",
+      "chunks": {
+        "A": "Class: Hospital\n  DataProperty: numbedscategory -> xsd:string\n  DataProperty: region -> xsd:integer, xsd:string\n  DataProperty: teachingstatus -> xsd:boolean",
+        "B": "Class: Hospital\n  DataProperty: hospitalid -> integer\n  DataProperty: numbedscategory -> string\n  DataProperty: region -> string\n  DataProperty: teachingstatus -> boolean",
+        "C": "Class: Hospital\n  Label: Hospital\n  Comment: Represents a hospital entity referenced by patient records.",
+        "D": "Class: Hospital\n  Label: Hospital\n  Comment: Represents a hospital facility within the eICU collaborative research database.\n  DataProperty: hospitalid -> integer  [label: \"Hospital ID\"]  [comment: \"A unique integer identifier for the hospital. Serves as the primary key for the \"]\n  DataProperty: numbedscategory -> string  [label: \"Number of Beds Category\"]  [comment: \"A categorical string describing the size of the hospital based on the number of \"]\n  DataProperty: region -> integer, string  [label: \"Geographic Region\"]  [comment: \"Encoded geographic region of the hospital. Categorical integer representing the \"]\n  DataProperty: teachingstatus -> boolean  [label: \"Teaching Status\"]  [comment: \"Indicates whether the hospital is a teaching hospital. The source database colum\"]"
+      }
+    },
+    {
+      "table_name": "patient",
+      "database": "eicu_crd",
+      "schema": "Table: patient\nColumns:\n  patientunitstayid: INTEGER\n  patienthealthsystemstayid: INTEGER\n  gender: VARCHAR(25)\n  age: VARCHAR(10)\n  ethnicity: VARCHAR(50)\n  hospitalid: INTEGER\n  wardid: INTEGER\n  apacheadmissiondx: VARCHAR(1000)\n  admissionheight: DECIMAL(10, 2)\n  hospitaladmittime24: VARCHAR(8)\n  hospitaladmitoffset: INTEGER\n  hospitaladmitsource: VARCHAR(30)\n  hospitaldischargeyear: SMALLINT\n  hospitaldischargetime24: VARCHAR(8)\n  hospitaldischargeoffset: INTEGER\n  hospitaldischargelocation: VARCHAR(100)\n  hospitaldischargestatus: VARCHAR(10)\n  unittype: VARCHAR(50)\n  unitadmittime24: VARCHAR(8)\n  unitadmitsource: VARCHAR(100)\n  unitvisitnumber: INTEGER\n  unitstaytype: VARCHAR(15)\n  admissionweight: DECIMAL(10, 2)\n  dischargeweight: DECIMAL(10, 2)\n  unitdischargetime24: VARCHAR(8)\n  unitdischargeoffset: INTEGER\n  unitdischargelocation: VARCHAR(100)\n  unitdischargestatus: VARCHAR(10)\n  uniquepid: VARCHAR(10)\nForeign Keys:\n  hospitalid -> hospital.hospitalid",
+      "cqs": "[What is the gender distribution of patients admitted to a specific ward?]\n\nThe ontology can answer this by grouping the data based on the 'gender' and 'wardid' fields, and then counting the number of patients in each group.\n\n---\n\n[Which patients were admitted to the hospital through the emergency department?]\n\nThe ontology can answer this by filtering the data based on the 'hospitaladmitsource' field to find patients whose source is the emergency department.\n\n---\n\n[What is the average age of patients discharged from a specific hospital?]\n\nThe ontology can answer this by filtering the data based on the 'hospitalid' field, extracting the 'age' field, and calculating the average age of the patients.\n\n---\n\n[How many patients were discharged to home from a specific unit?]\n\nThe ontology can answer this by filtering the data based on the 'unittype' field and the 'unitdischargelocation' field, and then counting the number of patients discharged to home.\n\n---\n\n[What is the average length of stay in the hospital for patients admitted through a specific source?]\n\nThe ontology can answer this by filtering the data based on the 'hospitaladmitsource' field. Then, it can calculate the difference between 'hospitaldischargeoffset' and 'hospitaladmitoffset' to determine the length of stay for each patient, and then calculate the average length of stay.",
+      "chunks": {
+        "A": "Class: Patient\n  DataProperty: admissionheight -> xsd:decimal\n  DataProperty: admissionweight -> xsd:decimal\n  DataProperty: age -> xsd:integer, xsd:string\n  DataProperty: apacheadmissiondx -> xsd:string\n  DataProperty: dischargeweight -> xsd:decimal\n  DataProperty: ethnicity -> xsd:string\n  DataProperty: gender -> xsd:integer, xsd:string\n  DataProperty: hospitaladmitoffset -> xsd:integer\n  DataProperty: hospitaladmitsource -> xsd:string\n  DataProperty: hospitaladmittime24 -> xsd:date\n  DataProperty: hospitaldischargelocation -> xsd:string\n  DataProperty: hospitaldischargeoffset -> xsd:integer\n  DataProperty: hospitaldischargestatus -> xsd:string\n  DataProperty: hospitaldischargetime24 -> xsd:date\n  DataProperty: hospitaldischargeyear -> xsd:integer\n  DataProperty: patienthealthsystemstayid -> xsd:integer\n  DataProperty: uniquepid -> xsd:string\n  DataProperty: unitadmitsource -> xsd:string\n  DataProperty: unitadmittime24 -> xsd:date\n  DataProperty: unitdischargelocation -> xsd:string\n  DataProperty: unitdischargeoffset -> xsd:integer\n  DataProperty: unitdischargestatus -> xsd:string\n  DataProperty: unitdischargetime24 -> xsd:date\n  DataProperty: unitstaytype -> xsd:string\n  DataProperty: unittype -> xsd:string\n  DataProperty: unitvisitnumber -> xsd:integer\n  DataProperty: wardid -> xsd:integer\n  ObjectProperty: hasHospital -> Hospital",
+        "B": "Class: Patient\n  DataProperty: admissionheight -> float\n  DataProperty: admissionweight -> float\n  DataProperty: age -> string\n  DataProperty: apacheadmissiondx -> string\n  DataProperty: dischargeweight -> float\n  DataProperty: ethnicity -> string\n  DataProperty: gender -> string\n  DataProperty: hospitaladmitoffset -> integer\n  DataProperty: hospitaladmitsource -> string\n  DataProperty: hospitaladmittime24 -> string\n  DataProperty: hospitaldischargelocation -> string\n  DataProperty: hospitaldischargeoffset -> integer\n  DataProperty: hospitaldischargestatus -> string\n  DataProperty: hospitaldischargetime24 -> string\n  DataProperty: hospitaldischargeyear -> integer\n  DataProperty: patientunitstayid -> integer\n  DataProperty: uniquepid -> string\n  DataProperty: unitadmitsource -> string\n  DataProperty: unitadmittime24 -> string\n  DataProperty: unitdischargelocation -> string\n  DataProperty: unitdischargeoffset -> integer\n  DataProperty: unitdischargestatus -> string\n  DataProperty: unitdischargetime24 -> string\n  DataProperty: unitstaytype -> string\n  DataProperty: unittype -> string\n  DataProperty: unitvisitnumber -> integer\n  ObjectProperty: patientHasHealthSystemStay -> HealthSystemStay\n  ObjectProperty: patientHasHospital -> Hospital\n  ObjectProperty: patientHasWard -> Ward",
+        "C": "Class: Patient\n  Label: Patient\n  Comment: Represents a patient unit stay record from the 'patient' table.\n  ObjectProperty: hasHospital -> Hospital  [label: \"hospital discharge status\"]  [comment: \"The location to which the patient was discharged from the ICU unit.\"]",
+        "D": "Class: Patient\n  Label: Patient\n  Comment: Represents a patient unit stay record, capturing demographic information, hospital and unit admission/discharge details, and clinical attributes for a single ICU visit.\n  DataProperty: admissionheight -> decimal  [label: \"Admission Height\"]  [comment: \"The height of the patient at the time of admission, measured in centimeters (cm)\"]\n  DataProperty: admissionweight -> decimal  [label: \"Admission Weight\"]  [comment: \"The weight of the patient at the time of admission, measured in kilograms (kg).\"]\n  DataProperty: age -> string  [label: \"Age\"]  [comment: \"The age of the patient as a string. May contain numeric values or descriptive te\"]\n  DataProperty: apacheadmissiondx -> string  [label: \"APACHE Admission Diagnosis\"]  [comment: \"The APACHE (Acute Physiology and Chronic Health Evaluation) admission diagnosis,\"]\n  DataProperty: dischargeweight -> decimal  [label: \"Discharge Weight\"]  [comment: \"The weight of the patient at the time of discharge, measured in kilograms (kg).\"]\n  DataProperty: ethnicity -> string  [label: \"Ethnicity\"]  [comment: \"The ethnicity of the patient as recorded in the clinical system.\"]\n  DataProperty: gender -> string  [label: \"Gender\"]  [comment: \"The gender of the patient (e.g., Male, Female, Other, Unknown).\"]\n  DataProperty: hospitaladmitoffset -> integer  [label: \"Hospital Admit Offset\"]  [comment: \"Time offset in minutes from the unit admission time to the hospital admission ti\"]\n  DataProperty: hospitaladmitsource -> string  [label: \"Hospital Admit Source\"]  [comment: \"The source from which the patient was admitted to the hospital (e.g., Emergency \"]\n  DataProperty: hospitaladmittime24 -> time  [label: \"Hospital Admit Time (24h)\"]  [comment: \"The time of hospital admission in 24-hour format (HH:MM:SS). Stored as a time st\"]\n  DataProperty: hospitaldischargelocation -> string  [label: \"Hospital Discharge Location\"]  [comment: \"The location or facility to which the patient was discharged from the hospital (\"]\n  DataProperty: hospitaldischargeoffset -> integer  [label: \"Hospital Discharge Offset\"]  [comment: \"Time offset in minutes from the unit admission time to the hospital discharge ti\"]\n  DataProperty: hospitaldischargestatus -> string  [label: \"Hospital Discharge Status\"]  [comment: \"The status of the patient at hospital discharge (e.g., Alive, Expired).\"]\n  DataProperty: hospitaldischargetime24 -> time  [label: \"Hospital Discharge Time (24h)\"]  [comment: \"The time of hospital discharge in 24-hour format (HH:MM:SS). Stored as a time st\"]\n  DataProperty: hospitaldischargeyear -> integer  [label: \"Hospital Discharge Year\"]  [comment: \"The year in which the patient was discharged from the hospital.\"]\n  DataProperty: patienthealthsystemstayid -> integer  [label: \"Patient Health System Stay ID\"]  [comment: \"Identifier for the patient's overall health system stay, which may encompass mul\"]\n  DataProperty: patientunitstayid -> integer  [label: \"Patient Unit Stay ID\"]  [comment: \"Primary key uniquely identifying each patient unit stay record.\"]\n  DataProperty: uniquepid -> string  [label: \"Unique Patient ID\"]  [comment: \"A de-identified unique identifier for the patient across multiple hospital stays\"]\n  DataProperty: unitadmitsource -> string  [label: \"Unit Admit Source\"]  [comment: \"The source from which the patient was admitted to the ICU unit (e.g., Emergency \"]\n  DataProperty: unitadmittime24 -> time  [label: \"Unit Admit Time (24h)\"]  [comment: \"The time of unit admission in 24-hour format (HH:MM:SS). Stored as a time string\"]\n  DataProperty: unitdischargelocation -> string  [label: \"Unit Discharge Location\"]  [comment: \"The location to which the patient was discharged from the ICU unit (e.g., Floor,\"]\n  DataProperty: unitdischargeoffset -> integer  [label: \"Unit Discharge Offset\"]  [comment: \"Time offset in minutes from the unit admission time to the unit discharge time.\"]\n  DataProperty: unitdischargestatus -> string  [label: \"Unit Discharge Status\"]  [comment: \"The status of the patient at unit discharge (e.g., Alive, Expired).\"]\n  DataProperty: unitdischargetime24 -> time  [label: \"Unit Discharge Time (24h)\"]  [comment: \"The time of unit discharge in 24-hour format (HH:MM:SS). Stored as a time string\"]\n  DataProperty: unitstaytype -> string  [label: \"Unit Stay Type\"]  [comment: \"The type of unit stay (e.g., admit, readmit, transfer).\"]\n  DataProperty: unittype -> string  [label: \"Unit Type\"]  [comment: \"The type of ICU or care unit where the patient was admitted (e.g., MICU, SICU, C\"]\n  DataProperty: unitvisitnumber -> integer  [label: \"Unit Visit Number\"]  [comment: \"The sequential visit number for the patient within the same hospital stay, indic\"]\n  DataProperty: wardid -> integer  [label: \"Ward ID\"]  [comment: \"Identifier for the ward or unit within the hospital where the patient was locate\"]\n  ObjectProperty: hasHospital -> Hospital  [label: \"has hospital\"]  [comment: \"Links a patient unit stay record to the hospital where the stay occurred. Resolv\"]"
+      }
+    }
+  ]
+};
+
+const DIMENSIONS = [
+  { key: "accuracy", label: "Accuracy", desc: "Classes and properties faithfully reflect the table schema and its semantics." },
+  { key: "completeness", label: "Completeness", desc: "All columns represented; annotations (rdfs:label, rdfs:comment) on every element; value encodings documented." },
+  { key: "conciseness", label: "Conciseness", desc: "No redundant elements; every class and property serves a purpose." },
+  { key: "adaptability", label: "Adaptability", desc: "SubClassOf hierarchy enables extension; alignment to external vocabularies exists." },
+  { key: "clarity", label: "Clarity", desc: "Human-readable labels and comments; abbreviated names expanded; units documented." },
+  { key: "consistency", label: "Consistency", desc: "No punning; correct property types; domain/range present; FK resolved to ObjectProperty." },
+  { key: "domain_enrichment", label: "Domain Enrichment", desc: "Annotations explain domain meaning; coded values documented; class hierarchies reflect domain; provenance present." },
+];
+
+const METHODS = ["A", "B", "C", "D"];
+let results = [];
+let currentScreen = 0;
+let expertInfo = {};
+
+// =========================================================
+// GENERATE SCREENS
+// =========================================================
+function buildScreens() {
+  const container = document.getElementById("screens-container");
+  container.innerHTML = "";
+
+  SURVEY_DATA.tables.forEach((tbl, idx) => {
+    const div = document.createElement("div");
+    div.className = "table-screen" + (idx === 0 ? " active" : "");
+    div.id = "screen-" + idx;
+
+    let methodCards = "";
+    METHODS.forEach(m => {
+      const chunk = tbl.chunks[m] || "(No data)";
+      methodCards += `
+        <div class="method-card">
+          <div class="method-header">Ontology ${m}</div>
+          <div class="method-body"><pre>${escHtml(chunk)}</pre></div>
+        </div>`;
+    });
+
+    // Scoring grid
+    let dimRows = "";
+    // Header row
+    dimRows += `<div class="dim-row">
+      <div></div>
+      <div class="method-col-header mch-a">A</div>
+      <div class="method-col-header mch-b">B</div>
+      <div class="method-col-header mch-c">C</div>
+      <div class="method-col-header mch-d">D</div>
+    </div>`;
+
+    DIMENSIONS.forEach(dim => {
+      let selects = "";
+      METHODS.forEach(m => {
+        selects += `<div><select class="score-select" id="score-${idx}-${dim.key}-${m}">
+          <option value="">—</option>
+          <option value="0">0</option><option value="1">1</option>
+          <option value="2">2</option><option value="3">3</option>
+          <option value="4">4</option><option value="5">5</option>
+        </select></div>`;
+      });
+      dimRows += `<div class="dim-row">
+        <div class="dim-label">${dim.label}<br><span class="dim-desc">${dim.desc}</span></div>
+        ${selects}
+      </div>`;
+    });
+
+    // Ranking row
+    let rankSelects = "";
+    METHODS.forEach(m => {
+      rankSelects += `<div><select class="rank-select" id="rank-${idx}-${m}">
+        <option value="">—</option>
+        <option value="1">1st</option><option value="2">2nd</option>
+        <option value="3">3rd</option><option value="4">4th</option>
+      </select></div>`;
+    });
+
+    div.innerHTML = `
+      <div style="display:inline-block;padding:4px 12px;border-radius:6px;background:var(--primary);color:white;font-size:12px;font-weight:600;margin-bottom:12px;">${tbl.database ? tbl.database.replace('_',' ').toUpperCase() : ''} — ${tbl.table_name}</div>
+      <div class="context-card">
+        <h3>📋 Table Schema</h3>
+        <pre>${escHtml(tbl.schema)}</pre>
+      </div>
+      <div class="context-card">
+        <h3>❓ Competency Questions</h3>
+        <pre>${escHtml(tbl.cqs)}</pre>
+      </div>
+      <div class="methods-grid">${methodCards}</div>
+      <div class="scoring-card">
+        <h3>Scoring (0–5 per dimension)</h3>
+        ${dimRows}
+        <hr style="margin:16px 0; border:none; border-top:1px solid var(--border);">
+        <h3>Ranking (1st = best, 4th = worst)</h3>
+        <div class="ranking-row">
+          <div class="dim-label">Overall rank</div>
+          ${rankSelects}
+        </div>
+        <hr style="margin:16px 0; border:none; border-top:1px solid var(--border);">
+        <h3>Comments (optional)</h3>
+        <textarea class="feedback-area" id="feedback-${idx}" placeholder="Any observations about these four ontology fragments..."></textarea>
+      </div>
+      <div class="btn-row">
+        <button class="btn btn-secondary" onclick="prevScreen()" ${idx === 0 ? 'style="visibility:hidden"' : ''}>← Previous</button>
+        <button class="btn btn-primary" onclick="nextScreen(${idx})">${idx === SURVEY_DATA.tables.length - 1 ? 'Finish →' : 'Next →'}</button>
+      </div>
+    `;
+
+    container.appendChild(div);
+  });
+
+  document.getElementById("n-tables").textContent = SURVEY_DATA.tables.length;
+  document.getElementById("total-idx").textContent = SURVEY_DATA.tables.length;
+}
+
+// =========================================================
+// NAVIGATION
+// =========================================================
+function startSurvey() {
+  const name = document.getElementById("expert-name").value.trim();
+  const role = document.getElementById("expert-role").value.trim();
+  const years = document.getElementById("expert-years").value.trim();
+  if (!name) { alert("Please enter your name or identifier."); return; }
+  expertInfo = { name, role, years: parseInt(years) || 0, startTime: new Date().toISOString() };
+  document.getElementById("welcome").classList.add("hidden");
+  document.getElementById("progress-section").classList.remove("hidden");
+  currentScreen = 0;
+  showScreen(0);
+}
+
+function showScreen(idx) {
+  document.querySelectorAll(".table-screen").forEach(s => s.classList.remove("active"));
+  document.getElementById("screen-" + idx).classList.add("active");
+  document.getElementById("current-idx").textContent = idx + 1;
+  document.getElementById("current-table-name").textContent = SURVEY_DATA.tables[idx].table_name;
+  document.getElementById("current-db-name").textContent = SURVEY_DATA.tables[idx].database || "";
+  const pct = ((idx + 1) / SURVEY_DATA.tables.length) * 100;
+  document.getElementById("progress-fill").style.width = pct + "%";
+  window.scrollTo(0, 0);
+}
+
+function collectScreenData(idx) {
+  const tbl = SURVEY_DATA.tables[idx];
+  const entry = {
+    table_name: tbl.table_name,
+    database: tbl.database || "",
+    scores: {},
+    ranking: {},
+    feedback: document.getElementById("feedback-" + idx).value.trim(),
+  };
+
+  METHODS.forEach(m => {
+    entry.scores[m] = {};
+    DIMENSIONS.forEach(dim => {
+      const sel = document.getElementById("score-" + idx + "-" + dim.key + "-" + m);
+      entry.scores[m][dim.key] = sel.value === "" ? null : parseFloat(sel.value);
+    });
+    const rankSel = document.getElementById("rank-" + idx + "-" + m);
+    entry.ranking[m] = rankSel.value === "" ? null : parseInt(rankSel.value);
+  });
+
+  return entry;
+}
+
+function validateScreen(idx) {
+  const entry = collectScreenData(idx);
+  // Check all scores filled
+  for (const m of METHODS) {
+    for (const dim of DIMENSIONS) {
+      if (entry.scores[m][dim.key] === null) {
+        alert("Please score all dimensions for all methods before proceeding.");
+        return false;
+      }
+    }
+    if (entry.ranking[m] === null) {
+      alert("Please rank all methods (1st–4th) before proceeding.");
+      return false;
+    }
+  }
+  // Check ranking is valid (each rank used once)
+  const ranks = METHODS.map(m => entry.ranking[m]);
+  const unique = new Set(ranks);
+  if (unique.size !== 4 || !([1,2,3,4].every(r => unique.has(r)))) {
+    alert("Each rank (1st–4th) must be used exactly once.");
+    return false;
+  }
+  return true;
+}
+
+function nextScreen(idx) {
+  if (!validateScreen(idx)) return;
+  results[idx] = collectScreenData(idx);
+
+  if (idx < SURVEY_DATA.tables.length - 1) {
+    currentScreen = idx + 1;
+    showScreen(currentScreen);
+  } else {
+    finishSurvey();
+  }
+}
+
+function prevScreen() {
+  if (currentScreen > 0) {
+    results[currentScreen] = collectScreenData(currentScreen);
+    currentScreen--;
+    showScreen(currentScreen);
+  }
+}
+
+function finishSurvey() {
+  document.getElementById("progress-section").classList.add("hidden");
+  document.querySelectorAll(".table-screen").forEach(s => s.classList.remove("active"));
+  document.getElementById("done-screen").classList.remove("hidden");
+  const fname = "expert_" + expertInfo.name.replace(/\s+/g, "_") + "_evaluation.json";
+  document.getElementById("filename-preview").textContent = fname;
+}
+
+function downloadResults() {
+  const output = {
+    expert: expertInfo,
+    database: SURVEY_DATA.database,
+    timestamp: new Date().toISOString(),
+    tables_evaluated: SURVEY_DATA.tables.map(t => t.table_name),
+    evaluations: results,
+  };
+  const blob = new Blob([JSON.stringify(output, null, 2)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "expert_" + expertInfo.name.replace(/\s+/g, "_") + "_evaluation.json";
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+function escHtml(s) {
+  const div = document.createElement("div");
+  div.textContent = s;
+  return div.innerHTML;
+}
+
+// =========================================================
+// INIT
+// =========================================================
+buildScreens();
+</script>
+</body>
+</html>
