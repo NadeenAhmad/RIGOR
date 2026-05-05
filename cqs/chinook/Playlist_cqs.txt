@@ -1,0 +1,27 @@
+[What is the primary key of the Playlist table?]
+
+The PlaylistId column is the primary key of the Playlist table, which uniquely identifies each record.
+
+---
+
+[Can the Name column contain null values?]
+
+Yes, the Name column can contain null values as it is nullable.
+
+---
+
+[What is the data type of the PlaylistId column?]
+
+The data type of the PlaylistId column is INTEGER.
+
+---
+
+[Is the Name column unique?]
+
+No, the Name column is not unique as the 'unique' attribute is set to False.
+
+---
+
+[What is the maximum length of the Name column?]
+
+The maximum length of the Name column is 120 characters, as indicated by the NVARCHAR(120) data type.

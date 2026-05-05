@@ -1,0 +1,27 @@
+[What is the full name of the customer with the email 'john.doe@example.com'?]
+
+The ontology would use the 'Email' field to find the record with the matching email address, and then retrieve the 'FirstName' and 'LastName' fields to construct the full name.
+
+---
+
+[Which customers are supported by the representative with ID 5?]
+
+The ontology would filter the records where the 'SupportRepId' field matches the value 5, and then return the 'FirstName', 'LastName', and other relevant fields for those records.
+
+---
+
+[What is the phone number of the customer with ID 10?]
+
+The ontology would search for the record where the 'CustomerId' field is 10, and then return the value in the 'Phone' field.
+
+---
+
+[Which customers are based in the 'USA'?]
+
+The ontology would filter the records where the 'Country' field is 'USA', and then return the 'FirstName', 'LastName', and other relevant fields for those records.
+
+---
+
+[What is the address of the customer with the last name 'Smith'?]
+
+The ontology would filter the records where the 'LastName' field is 'Smith', and then return the values in the 'Address', 'City', 'State', 'Country', and 'PostalCode' fields to provide the full address.
