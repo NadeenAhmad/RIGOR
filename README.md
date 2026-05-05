@@ -50,7 +50,6 @@ RIGOR_Framework/
 │   ├── ablation/ # Ablation variants for Chinook Database with Claude (7 Variants)      
 │
 ├── cqs/                        # Generated competency questions (created by cqs.py)
-├── evaluation/                 # Evaluation results (created by eval.py)
 └── jars/                       # External JARs (HermiT reasoner)
 ```
 
