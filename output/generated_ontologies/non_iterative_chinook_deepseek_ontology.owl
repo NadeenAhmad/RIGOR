@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://example.org/ontology#hasArtist">
+    <rdfs:label xml:lang="en">artist</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Album"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#Artist"/>
+    <rdfs:comment xml:lang="en">Artist associated with the album</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasInvoiceDate">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">invoice date</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Invoice"/>
+    <rdfs:comment xml:lang="en">Date and time when the invoice was created</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTrack">
+    <rdfs:comment xml:lang="en">The unit price charged for the track on this invoice line.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links an invoice line to the purchased track.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The number of units purchased in this invoice line.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Indicates which tracks are included in the playlist.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Indicates the track included in the playlist.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Identifier of the playlist.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Identifier of the track.</rdfs:comment>
+    <rdfs:label xml:lang="en">hasQuantity</rdfs:label>
+    <rdfs:label xml:lang="en">hasUnitPrice</rdfs:label>
+    <rdfs:label xml:lang="en">hasTrack</rdfs:label>
+    <rdfs:label xml:lang="en">has track</rdfs:label>
+    <rdfs:label xml:lang="en">PlaylistId</rdfs:label>
+    <rdfs:label xml:lang="en">TrackId</rdfs:label>
+    <rdfs:range rdf:resource="http://example.org/ontology#Track"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#InvoiceLine"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Playlist"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#PlaylistTrack"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasBillingState">
+    <rdfs:label xml:lang="en">billing state</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Invoice"/>
+    <rdfs:comment xml:lang="en">State, province, or regional subdivision used for billing</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Address">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <rdfs:comment xml:lang="en">Street address of the customer.</rdfs:comment>
+    <rdfs:label xml:lang="en">Address</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#City">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">City</rdfs:label>
+    <rdfs:comment xml:lang="en">City of the customer address.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#MediaType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">MediaType</rdfs:label>
+    <rdfs:comment xml:lang="en">The MediaType table stores media format or encoding types for tracks.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Country">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <rdfs:comment xml:lang="en">Country of the customer address.</rdfs:comment>
+    <rdfs:label xml:lang="en">Country</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#MediaTypeId">
+    <rdfs:label xml:lang="en">MediaTypeId</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MediaType"/>
+    <rdfs:comment xml:lang="en">Unique identifier for the media type. This field is the primary key of the MediaType table.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Playlist">
+    <rdfs:comment xml:lang="en">A collection of tracks grouped into a named list.</rdfs:comment>
+    <rdfs:label xml:lang="en">Playlist</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTitle">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Album"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Title of the album</rdfs:comment>
+    <rdfs:label xml:lang="en">title</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTotal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Total monetary amount of the invoice</rdfs:comment>
+    <rdfs:label xml:lang="en">total amount</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Invoice"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#LastName">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <rdfs:label xml:lang="en">LastName</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Customer’s last name. This is a required text field.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasAlbum">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Artist"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Track"/>
+    <rdfs:label xml:lang="en">has album</rdfs:label>
+    <rdfs:label xml:lang="en">hasAlbum</rdfs:label>
+    <rdfs:comment xml:lang="en">Links an artist to their albums</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links a track to an album.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#Album"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasBillingPostalCode">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">billing postal code</rdfs:label>
+    <rdfs:comment xml:lang="en">Postal or ZIP code used for billing</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Invoice"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#InvoiceLine">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">InvoiceLine</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents individual line items within invoices.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#GenreId">
+    <rdfs:comment xml:lang="en">Unique identifier for the genre.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Genre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="en">Genre ID</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasBillingCountry">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Country used for billing</rdfs:comment>
+    <rdfs:label xml:lang="en">billing country</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Invoice"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Name">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Artist"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Genre"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MediaType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">Name</rdfs:label>
+    <rdfs:comment xml:lang="en">Name of the artist or performer</rdfs:comment>
+    <rdfs:comment xml:lang="en">Name of the musical genre.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Name or description of the media type. This may describe the audio format, encoding type, or protected media format.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasPlaylistId">
+    <rdfs:comment xml:lang="en">Unique identifier for the playlist.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Playlist"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">playlist ID</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasGenre">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Track"/>
+    <rdfs:label xml:lang="en">hasGenre</rdfs:label>
+    <rdfs:label xml:lang="en">milliseconds</rdfs:label>
+    <rdfs:label xml:lang="en">unitPrice</rdfs:label>
+    <rdfs:label xml:lang="en">name</rdfs:label>
+    <rdfs:label xml:lang="en">bytes</rdfs:label>
+    <rdfs:label xml:lang="en">trackId</rdfs:label>
+    <rdfs:label xml:lang="en">composer</rdfs:label>
+    <rdfs:comment xml:lang="en">Size of the media file measured in bytes.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Price of the track as a decimal monetary amount.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Name of the composer or composers of the track.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Unique identifier for the track.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Name or title of the track.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Duration of the track measured in milliseconds.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links a track to its genre.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#PostalCode">
+    <rdfs:label xml:lang="en">PostalCode</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <rdfs:comment xml:lang="en">Postal or ZIP code of the customer address.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#State">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <rdfs:label xml:lang="en">State</rdfs:label>
+    <rdfs:comment xml:lang="en">State, province, or regional subdivision of the customer address.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Company">
+    <rdfs:label xml:lang="en">Company</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <rdfs:comment xml:lang="en">Company or organization associated with the customer. This field may be empty.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Fax">
+    <rdfs:label xml:lang="en">Fax</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <rdfs:comment xml:lang="en">Customer fax number.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasInvoice">
+    <rdfs:comment xml:lang="en">Links an invoice line to its corresponding invoice.</rdfs:comment>
+    <rdfs:label xml:lang="en">hasInvoice</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#Invoice"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#InvoiceLine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasSupportRep">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <rdfs:label xml:lang="en">hasSupportRep</rdfs:label>
+    <rdfs:comment xml:lang="en">Identifier of the employee assigned as the customer’s support representative. This field is a foreign key referencing Employee.EmployeeId. It may be empty if no support representative is assigned.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#Employee"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Genre">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Represents a music genre category.</rdfs:comment>
+    <rdfs:label xml:lang="en">Genre</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasInvoiceId">
+    <rdfs:label xml:lang="en">invoice ID</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:comment xml:lang="en">Unique identifier for the invoice</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Invoice"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasName">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Playlist"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Name of the playlist.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">name</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#FirstName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Customer’s first name. This is a required text field.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <rdfs:label xml:lang="en">FirstName</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasAlbumId">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Album"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">album ID</rdfs:label>
+    <rdfs:comment xml:lang="en">Unique identifier for the album</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#CustomerId">
+    <rdfs:comment xml:lang="en">Unique identifier for the customer.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <rdfs:label xml:lang="en">CustomerId</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Invoice">
+    <rdfs:label xml:lang="en">Invoice</rdfs:label>
+    <rdfs:comment xml:lang="en">A customer purchase transaction record</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Email">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <rdfs:label xml:lang="en">Email</rdfs:label>
+    <rdfs:comment xml:lang="en">Customer email address. This is a required field.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Album">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Album</rdfs:label>
+    <rdfs:comment xml:lang="en">A music album in the catalogue</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasBillingCity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">City used for billing</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Invoice"/>
+    <rdfs:label xml:lang="en">billing city</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#PlaylistTrack">
+    <rdfs:comment xml:lang="en">Represents the association between playlists and tracks.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">PlaylistTrack</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#ArtistId">
+    <rdfs:label xml:lang="en">Artist ID</rdfs:label>
+    <rdfs:comment xml:lang="en">Unique identifier for the artist</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Artist"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Customer">
+    <rdfs:comment xml:lang="en">This table documents customers of the digital media store. It stores customer names, company information, contact details, address information, and the employee responsible for customer support.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Customer</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasBillingAddress">
+    <rdfs:label xml:lang="en">billing address</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Street address used for billing</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Invoice"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasCustomerId">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="en">customer ID</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Invoice"/>
+    <rdfs:comment xml:lang="en">Identifier of the customer associated with the invoice</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Employee">
+    <rdfs:label xml:lang="en">Employee</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents an employee of the digital media store with identity, contact details, job information, and reporting relationships.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Track">
+    <rdfs:label xml:lang="en">Track</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Represents an individual music track in the catalogue.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Artist">
+    <rdfs:comment xml:lang="en">A musical artist or performer entity</rdfs:comment>
+    <rdfs:label xml:lang="en">Artist</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasMediaType">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Track"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">hasMediaType</rdfs:label>
+    <rdfs:range rdf:resource="http://example.org/ontology#MediaType"/>
+    <rdfs:comment xml:lang="en">Links a track to its media type.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Phone">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Customer phone number.</rdfs:comment>
+    <rdfs:label xml:lang="en">Phone</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasPlaylist">
+    <rdfs:label xml:lang="en">hasPlaylist</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#PlaylistTrack"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">Indicates the playlist associated with the track.</rdfs:comment>
+    <rdfs:range rdf:resource="http://example.org/ontology#Playlist"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasCustomer">
+    <rdfs:comment xml:lang="en">Links an invoice to its customer</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Invoice"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#Customer"/>
+    <rdfs:label xml:lang="en">has customer</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

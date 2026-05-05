@@ -1,0 +1,1555 @@
+Prefix: : <http://example.org/ontology#>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: prov: <http://www.w3.org/ns/prov#>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+
+Ontology: <http://example.org/ontology>
+
+Annotations:
+    prov:generatedAtTime "2026-04-16T10:47:34.471740+00:00"^^xsd:dateTime,
+    prov:wasGeneratedBy :DirectMappingActivity
+
+Class: :Admissiondrug
+    HasKey: :admissiondrugid
+
+ObjectProperty: :hasPatient
+    Domain: :Admissiondrug
+    Range:  Patient
+
+DataProperty: :drugoffset
+    Domain: :Admissiondrug
+    Range:  :xsd:integer
+
+DataProperty: :drugenteredoffset
+    Domain: :Admissiondrug
+    Range:  :xsd:integer
+
+DataProperty: :drugnotetype
+    Domain: :Admissiondrug
+    Range:  :xsd:string
+
+DataProperty: :specialtytype
+    Domain: :Admissiondrug
+    Range:  :xsd:string
+
+DataProperty: :usertype
+    Domain: :Admissiondrug
+    Range:  :xsd:string
+
+DataProperty: :rxincluded
+    Domain: :Admissiondrug
+    Range:  :xsd:string
+
+DataProperty: :writtenineicu
+    Domain: :Admissiondrug
+    Range:  :xsd:string
+
+DataProperty: :drugname
+    Domain: :Admissiondrug
+    Range:  :xsd:string
+
+DataProperty: :drugdosage
+    Domain: :Admissiondrug
+    Range:  :xsd:decimal
+
+DataProperty: :drugunit
+    Domain: :Admissiondrug
+    Range:  :xsd:string
+
+DataProperty: :drugadmitfrequency
+    Domain: :Admissiondrug
+    Range:  :xsd:string
+
+DataProperty: :drughiclseqno
+    Domain: :Admissiondrug
+    Range:  :xsd:integer
+
+Class: :Admissiondx
+    HasKey: :admissiondxid
+
+ObjectProperty: :hasPatient
+    Domain: :Admissiondx
+    Range:  Patient
+
+DataProperty: :admitdxenteredoffset
+    Domain: :Admissiondx
+    Range:  :xsd:integer
+
+DataProperty: :admitdxpath
+    Domain: :Admissiondx
+    Range:  :xsd:string
+
+DataProperty: :admitdxname
+    Domain: :Admissiondx
+    Range:  :xsd:string
+
+DataProperty: :admitdxtext
+    Domain: :Admissiondx
+    Range:  :xsd:string
+
+Class: :Allergy
+    HasKey: :allergyid
+
+ObjectProperty: :hasPatient
+    Domain: :Allergy
+    Range:  Patient
+
+DataProperty: :allergyoffset
+    Domain: :Allergy
+    Range:  :xsd:integer
+
+DataProperty: :allergyenteredoffset
+    Domain: :Allergy
+    Range:  :xsd:integer
+
+DataProperty: :allergynotetype
+    Domain: :Allergy
+    Range:  :xsd:string
+
+DataProperty: :specialtytype
+    Domain: :Allergy
+    Range:  :xsd:string
+
+DataProperty: :usertype
+    Domain: :Allergy
+    Range:  :xsd:string
+
+DataProperty: :rxincluded
+    Domain: :Allergy
+    Range:  :xsd:string
+
+DataProperty: :writtenineicu
+    Domain: :Allergy
+    Range:  :xsd:string
+
+DataProperty: :drugname
+    Domain: :Allergy
+    Range:  :xsd:string
+
+DataProperty: :allergytype
+    Domain: :Allergy
+    Range:  :xsd:string
+
+DataProperty: :allergyname
+    Domain: :Allergy
+    Range:  :xsd:string
+
+DataProperty: :drughiclseqno
+    Domain: :Allergy
+    Range:  :xsd:integer
+
+Class: :Apacheapsvar
+    HasKey: :apacheapsvarid
+
+ObjectProperty: :hasPatient
+    Domain: :Apacheapsvar
+    Range:  Patient
+
+DataProperty: :intubated
+    Domain: :Apacheapsvar
+    Range:  :xsd:integer
+
+DataProperty: :vent
+    Domain: :Apacheapsvar
+    Range:  :xsd:integer
+
+DataProperty: :dialysis
+    Domain: :Apacheapsvar
+    Range:  :xsd:integer
+
+DataProperty: :eyes
+    Domain: :Apacheapsvar
+    Range:  :xsd:integer
+
+DataProperty: :motor
+    Domain: :Apacheapsvar
+    Range:  :xsd:integer
+
+DataProperty: :verbal
+    Domain: :Apacheapsvar
+    Range:  :xsd:integer
+
+DataProperty: :meds
+    Domain: :Apacheapsvar
+    Range:  :xsd:integer
+
+DataProperty: :urine
+    Domain: :Apacheapsvar
+    Range:  :xsd:double
+
+DataProperty: :wbc
+    Domain: :Apacheapsvar
+    Range:  :xsd:double
+
+DataProperty: :temperature
+    Domain: :Apacheapsvar
+    Range:  :xsd:double
+
+DataProperty: :respiratoryrate
+    Domain: :Apacheapsvar
+    Range:  :xsd:double
+
+DataProperty: :sodium
+    Domain: :Apacheapsvar
+    Range:  :xsd:double
+
+DataProperty: :heartrate
+    Domain: :Apacheapsvar
+    Range:  :xsd:double
+
+DataProperty: :meanbp
+    Domain: :Apacheapsvar
+    Range:  :xsd:double
+
+DataProperty: :ph
+    Domain: :Apacheapsvar
+    Range:  :xsd:double
+
+DataProperty: :hematocrit
+    Domain: :Apacheapsvar
+    Range:  :xsd:double
+
+DataProperty: :creatinine
+    Domain: :Apacheapsvar
+    Range:  :xsd:double
+
+DataProperty: :albumin
+    Domain: :Apacheapsvar
+    Range:  :xsd:double
+
+DataProperty: :pao2
+    Domain: :Apacheapsvar
+    Range:  :xsd:double
+
+DataProperty: :pco2
+    Domain: :Apacheapsvar
+    Range:  :xsd:double
+
+DataProperty: :bun
+    Domain: :Apacheapsvar
+    Range:  :xsd:double
+
+DataProperty: :glucose
+    Domain: :Apacheapsvar
+    Range:  :xsd:double
+
+DataProperty: :bilirubin
+    Domain: :Apacheapsvar
+    Range:  :xsd:double
+
+DataProperty: :fio2
+    Domain: :Apacheapsvar
+    Range:  :xsd:double
+
+Class: :Apachepatientresult
+    HasKey: :apachepatientresultsid
+
+ObjectProperty: :hasPatient
+    Domain: :Apachepatientresult
+    Range:  Patient
+
+DataProperty: :physicianspeciality
+    Domain: :Apachepatientresult
+    Range:  :xsd:string
+
+DataProperty: :physicianinterventioncategory
+    Domain: :Apachepatientresult
+    Range:  :xsd:string
+
+DataProperty: :acutephysiologyscore
+    Domain: :Apachepatientresult
+    Range:  :xsd:integer
+
+DataProperty: :apachescore
+    Domain: :Apachepatientresult
+    Range:  :xsd:integer
+
+DataProperty: :apacheversion
+    Domain: :Apachepatientresult
+    Range:  :xsd:string
+
+DataProperty: :predictedicumortality
+    Domain: :Apachepatientresult
+    Range:  :xsd:string
+
+DataProperty: :actualicumortality
+    Domain: :Apachepatientresult
+    Range:  :xsd:string
+
+DataProperty: :predictediculos
+    Domain: :Apachepatientresult
+    Range:  :xsd:double
+
+DataProperty: :actualiculos
+    Domain: :Apachepatientresult
+    Range:  :xsd:double
+
+DataProperty: :predictedhospitalmortality
+    Domain: :Apachepatientresult
+    Range:  :xsd:string
+
+DataProperty: :actualhospitalmortality
+    Domain: :Apachepatientresult
+    Range:  :xsd:string
+
+DataProperty: :predictedhospitallos
+    Domain: :Apachepatientresult
+    Range:  :xsd:double
+
+DataProperty: :actualhospitallos
+    Domain: :Apachepatientresult
+    Range:  :xsd:double
+
+DataProperty: :preopmi
+    Domain: :Apachepatientresult
+    Range:  :xsd:integer
+
+DataProperty: :preopcardiaccath
+    Domain: :Apachepatientresult
+    Range:  :xsd:integer
+
+DataProperty: :ptcawithin24h
+    Domain: :Apachepatientresult
+    Range:  :xsd:integer
+
+DataProperty: :unabridgedunitlos
+    Domain: :Apachepatientresult
+    Range:  :xsd:double
+
+DataProperty: :unabridgedhosplos
+    Domain: :Apachepatientresult
+    Range:  :xsd:double
+
+DataProperty: :actualventdays
+    Domain: :Apachepatientresult
+    Range:  :xsd:double
+
+DataProperty: :predventdays
+    Domain: :Apachepatientresult
+    Range:  :xsd:double
+
+DataProperty: :unabridgedactualventdays
+    Domain: :Apachepatientresult
+    Range:  :xsd:double
+
+Class: :Apachepredvar
+    HasKey: :apachepredvarid
+
+ObjectProperty: :hasPatient
+    Domain: :Apachepredvar
+    Range:  Patient
+
+DataProperty: :sicuday
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :saps3day1
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :saps3today
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :saps3yesterday
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :gender
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :teachtype
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :region
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :bedcount
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :admitsource
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :graftcount
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :meds
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :verbal
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :motor
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :eyes
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :age
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :admitdiagnosis
+    Domain: :Apachepredvar
+    Range:  :xsd:string
+
+DataProperty: :thrombolytics
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :diedinhospital
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :aids
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :hepaticfailure
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :lymphoma
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :metastaticcancer
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :leukemia
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :immunosuppression
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :cirrhosis
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :electivesurgery
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :activetx
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :readmit
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :ima
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :midur
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :ventday1
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :oobventday1
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :oobintubday1
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :diabetes
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :managementsystem
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :var03hspxlos
+    Domain: :Apachepredvar
+    Range:  :xsd:double
+
+DataProperty: :pao2
+    Domain: :Apachepredvar
+    Range:  :xsd:double
+
+DataProperty: :fio2
+    Domain: :Apachepredvar
+    Range:  :xsd:double
+
+DataProperty: :ejectfx
+    Domain: :Apachepredvar
+    Range:  :xsd:double
+
+DataProperty: :creatinine
+    Domain: :Apachepredvar
+    Range:  :xsd:double
+
+DataProperty: :dischargelocation
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :visitnumber
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :amilocation
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :day1meds
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :day1verbal
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :day1motor
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :day1eyes
+    Domain: :Apachepredvar
+    Range:  :xsd:integer
+
+DataProperty: :day1pao2
+    Domain: :Apachepredvar
+    Range:  :xsd:double
+
+DataProperty: :day1fio2
+    Domain: :Apachepredvar
+    Range:  :xsd:double
+
+Class: :Careplancareprovider
+    HasKey: :cplcareprovderid
+
+ObjectProperty: :hasPatient
+    Domain: :Careplancareprovider
+    Range:  Patient
+
+DataProperty: :careprovidersaveoffset
+    Domain: :Careplancareprovider
+    Range:  :xsd:integer
+
+DataProperty: :providertype
+    Domain: :Careplancareprovider
+    Range:  :xsd:string
+
+DataProperty: :specialty
+    Domain: :Careplancareprovider
+    Range:  :xsd:string
+
+DataProperty: :interventioncategory
+    Domain: :Careplancareprovider
+    Range:  :xsd:string
+
+DataProperty: :managingphysician
+    Domain: :Careplancareprovider
+    Range:  :xsd:string
+
+DataProperty: :activeupondischarge
+    Domain: :Careplancareprovider
+    Range:  :xsd:string
+
+Class: :Careplaneol
+    HasKey: :cpleolid
+
+ObjectProperty: :hasPatient
+    Domain: :Careplaneol
+    Range:  Patient
+
+DataProperty: :cpleolsaveoffset
+    Domain: :Careplaneol
+    Range:  :xsd:integer
+
+DataProperty: :cpleoldiscussionoffset
+    Domain: :Careplaneol
+    Range:  :xsd:integer
+
+DataProperty: :activeupondischarge
+    Domain: :Careplaneol
+    Range:  :xsd:string
+
+Class: :Careplangeneral
+    HasKey: :cplgeneralid
+
+ObjectProperty: :hasPatient
+    Domain: :Careplangeneral
+    Range:  Patient
+
+DataProperty: :activeupondischarge
+    Domain: :Careplangeneral
+    Range:  :xsd:string
+
+DataProperty: :cplitemoffset
+    Domain: :Careplangeneral
+    Range:  :xsd:integer
+
+DataProperty: :cplgroup
+    Domain: :Careplangeneral
+    Range:  :xsd:string
+
+DataProperty: :cplitemvalue
+    Domain: :Careplangeneral
+    Range:  :xsd:string
+
+Class: :Careplangoal
+    HasKey: :cplgoalid
+
+ObjectProperty: :hasPatient
+    Domain: :Careplangoal
+    Range:  Patient
+
+DataProperty: :CPLGOALoffset
+    Domain: :Careplangoal
+    Range:  :xsd:integer
+
+DataProperty: :CPLGOALCATEGORY
+    Domain: :Careplangoal
+    Range:  :xsd:string
+
+DataProperty: :CPLGOALVALUE
+    Domain: :Careplangoal
+    Range:  :xsd:string
+
+DataProperty: :CPLGOALSTATUS
+    Domain: :Careplangoal
+    Range:  :xsd:string
+
+DataProperty: :ACTIVEUPONDISCHARGE
+    Domain: :Careplangoal
+    Range:  :xsd:string
+
+Class: :Careplaninfectiousdisease
+    HasKey: :cplinfectid
+
+ObjectProperty: :hasPatient
+    Domain: :Careplaninfectiousdisease
+    Range:  Patient
+
+DataProperty: :activeupondischarge
+    Domain: :Careplaninfectiousdisease
+    Range:  :xsd:string
+
+DataProperty: :cplinfectdiseaseoffset
+    Domain: :Careplaninfectiousdisease
+    Range:  :xsd:integer
+
+DataProperty: :infectdiseasesite
+    Domain: :Careplaninfectiousdisease
+    Range:  :xsd:string
+
+DataProperty: :infectdiseaseassessment
+    Domain: :Careplaninfectiousdisease
+    Range:  :xsd:string
+
+DataProperty: :responsetotherapy
+    Domain: :Careplaninfectiousdisease
+    Range:  :xsd:string
+
+DataProperty: :treatment
+    Domain: :Careplaninfectiousdisease
+    Range:  :xsd:string
+
+Class: :Customlab
+    HasKey: :customlabid
+
+ObjectProperty: :hasPatient
+    Domain: :Customlab
+    Range:  Patient
+
+DataProperty: :labotheroffset
+    Domain: :Customlab
+    Range:  :xsd:integer
+
+DataProperty: :labothertypeid
+    Domain: :Customlab
+    Range:  :xsd:integer
+
+DataProperty: :labothername
+    Domain: :Customlab
+    Range:  :xsd:string
+
+DataProperty: :labotherresult
+    Domain: :Customlab
+    Range:  :xsd:string
+
+DataProperty: :labothervaluetext
+    Domain: :Customlab
+    Range:  :xsd:string
+
+Class: :Diagnosis
+    HasKey: :diagnosisid
+
+ObjectProperty: :hasPatient
+    Domain: :Diagnosis
+    Range:  Patient
+
+DataProperty: :activeupondischarge
+    Domain: :Diagnosis
+    Range:  :xsd:string
+
+DataProperty: :diagnosisoffset
+    Domain: :Diagnosis
+    Range:  :xsd:integer
+
+DataProperty: :diagnosisstring
+    Domain: :Diagnosis
+    Range:  :xsd:string
+
+DataProperty: :icd9code
+    Domain: :Diagnosis
+    Range:  :xsd:string
+
+DataProperty: :diagnosispriority
+    Domain: :Diagnosis
+    Range:  :xsd:string
+
+Class: :Hospital
+    HasKey: :hospitalid
+
+DataProperty: :numbedscategory
+    Domain: :Hospital
+    Range:  :xsd:string
+
+DataProperty: :teachingstatus
+    Domain: :Hospital
+    Range:  :xsd:boolean
+
+DataProperty: :region
+    Domain: :Hospital
+    Range:  :xsd:string
+
+Class: :Infusiondrug
+    HasKey: :infusiondrugid
+
+ObjectProperty: :hasPatient
+    Domain: :Infusiondrug
+    Range:  Patient
+
+DataProperty: :infusionoffset
+    Domain: :Infusiondrug
+    Range:  :xsd:integer
+
+DataProperty: :drugname
+    Domain: :Infusiondrug
+    Range:  :xsd:string
+
+DataProperty: :drugrate
+    Domain: :Infusiondrug
+    Range:  :xsd:string
+
+DataProperty: :infusionrate
+    Domain: :Infusiondrug
+    Range:  :xsd:string
+
+DataProperty: :drugamount
+    Domain: :Infusiondrug
+    Range:  :xsd:string
+
+DataProperty: :volumeoffluid
+    Domain: :Infusiondrug
+    Range:  :xsd:string
+
+DataProperty: :patientweight
+    Domain: :Infusiondrug
+    Range:  :xsd:string
+
+Class: :Intakeoutput
+    HasKey: :intakeoutputid
+
+ObjectProperty: :hasPatient
+    Domain: :Intakeoutput
+    Range:  Patient
+
+DataProperty: :intakeoutputoffset
+    Domain: :Intakeoutput
+    Range:  :xsd:integer
+
+DataProperty: :intaketotal
+    Domain: :Intakeoutput
+    Range:  :xsd:decimal
+
+DataProperty: :outputtotal
+    Domain: :Intakeoutput
+    Range:  :xsd:decimal
+
+DataProperty: :dialysistotal
+    Domain: :Intakeoutput
+    Range:  :xsd:decimal
+
+DataProperty: :nettotal
+    Domain: :Intakeoutput
+    Range:  :xsd:decimal
+
+DataProperty: :intakeoutputentryoffset
+    Domain: :Intakeoutput
+    Range:  :xsd:integer
+
+DataProperty: :cellpath
+    Domain: :Intakeoutput
+    Range:  :xsd:string
+
+DataProperty: :celllabel
+    Domain: :Intakeoutput
+    Range:  :xsd:string
+
+DataProperty: :cellvaluenumeric
+    Domain: :Intakeoutput
+    Range:  :xsd:decimal
+
+DataProperty: :cellvaluetext
+    Domain: :Intakeoutput
+    Range:  :xsd:string
+
+Class: :Lab
+    HasKey: :labid
+
+ObjectProperty: :hasPatient
+    Domain: :Lab
+    Range:  Patient
+
+DataProperty: :labresultoffset
+    Domain: :Lab
+    Range:  :xsd:integer
+
+DataProperty: :labtypeid
+    Domain: :Lab
+    Range:  :xsd:decimal
+
+DataProperty: :labname
+    Domain: :Lab
+    Range:  :xsd:string
+
+DataProperty: :labresult
+    Domain: :Lab
+    Range:  :xsd:decimal
+
+DataProperty: :labresulttext
+    Domain: :Lab
+    Range:  :xsd:string
+
+DataProperty: :labmeasurenamesystem
+    Domain: :Lab
+    Range:  :xsd:string
+
+DataProperty: :labmeasurenameinterface
+    Domain: :Lab
+    Range:  :xsd:string
+
+DataProperty: :labresultrevisedoffset
+    Domain: :Lab
+    Range:  :xsd:integer
+
+Class: :Medication
+    HasKey: :medicationid
+
+ObjectProperty: :hasPatient
+    Domain: :Medication
+    Range:  Patient
+
+DataProperty: :drugorderoffset
+    Domain: :Medication
+    Range:  :xsd:integer
+
+DataProperty: :drugstartoffset
+    Domain: :Medication
+    Range:  :xsd:integer
+
+DataProperty: :drugivadmixture
+    Domain: :Medication
+    Range:  :xsd:string
+
+DataProperty: :drugordercancelled
+    Domain: :Medication
+    Range:  :xsd:string
+
+DataProperty: :drugname
+    Domain: :Medication
+    Range:  :xsd:string
+
+DataProperty: :drughiclseqno
+    Domain: :Medication
+    Range:  :xsd:integer
+
+DataProperty: :dosage
+    Domain: :Medication
+    Range:  :xsd:string
+
+DataProperty: :routeadmin
+    Domain: :Medication
+    Range:  :xsd:string
+
+DataProperty: :frequency
+    Domain: :Medication
+    Range:  :xsd:string
+
+DataProperty: :loadingdose
+    Domain: :Medication
+    Range:  :xsd:string
+
+DataProperty: :prn
+    Domain: :Medication
+    Range:  :xsd:string
+
+DataProperty: :drugstopoffset
+    Domain: :Medication
+    Range:  :xsd:integer
+
+DataProperty: :gtc
+    Domain: :Medication
+    Range:  :xsd:integer
+
+Class: :Microlab
+    HasKey: :microlabid
+
+ObjectProperty: :hasPatient
+    Domain: :Microlab
+    Range:  Patient
+
+DataProperty: :culturetakenoffset
+    Domain: :Microlab
+    Range:  :xsd:integer
+
+DataProperty: :culturesite
+    Domain: :Microlab
+    Range:  :xsd:string
+
+DataProperty: :organism
+    Domain: :Microlab
+    Range:  :xsd:string
+
+DataProperty: :antibiotic
+    Domain: :Microlab
+    Range:  :xsd:string
+
+DataProperty: :sensitivitylevel
+    Domain: :Microlab
+    Range:  :xsd:string
+
+Class: :Note
+    HasKey: :NOTEID
+
+ObjectProperty: :hasPatient
+    Domain: :Note
+    Range:  Patient
+
+DataProperty: :NOTEOFFSET
+    Domain: :Note
+    Range:  :xsd:integer
+
+DataProperty: :NOTEENTEREDOFFSET
+    Domain: :Note
+    Range:  :xsd:integer
+
+DataProperty: :NOTETYPE
+    Domain: :Note
+    Range:  :xsd:string
+
+DataProperty: :NOTEPATH
+    Domain: :Note
+    Range:  :xsd:string
+
+DataProperty: :NOTEVALUE
+    Domain: :Note
+    Range:  :xsd:string
+
+DataProperty: :NOTETEXT
+    Domain: :Note
+    Range:  :xsd:string
+
+Class: :Nurseassessment
+    HasKey: :nurseassessid
+
+ObjectProperty: :hasPatient
+    Domain: :Nurseassessment
+    Range:  Patient
+
+DataProperty: :NURSEASSESSOFFSET
+    Domain: :Nurseassessment
+    Range:  :xsd:integer
+
+DataProperty: :NURSEASSESSENTRYOFFSET
+    Domain: :Nurseassessment
+    Range:  :xsd:integer
+
+DataProperty: :CELLATTRIBUTEPATH
+    Domain: :Nurseassessment
+    Range:  :xsd:string
+
+DataProperty: :CELLLABEL
+    Domain: :Nurseassessment
+    Range:  :xsd:string
+
+DataProperty: :CELLATTRIBUTE
+    Domain: :Nurseassessment
+    Range:  :xsd:string
+
+DataProperty: :CELLATTRIBUTEVALUE
+    Domain: :Nurseassessment
+    Range:  :xsd:string
+
+Class: :Nursecare
+    HasKey: :nursecareid
+
+ObjectProperty: :hasPatient
+    Domain: :Nursecare
+    Range:  Patient
+
+DataProperty: :CELLLABEL
+    Domain: :Nursecare
+    Range:  :xsd:string
+
+DataProperty: :NURSECAREOFFSET
+    Domain: :Nursecare
+    Range:  :xsd:integer
+
+DataProperty: :NURSECAREENTRYOFFSET
+    Domain: :Nursecare
+    Range:  :xsd:integer
+
+DataProperty: :CELLATTRIBUTEPATH
+    Domain: :Nursecare
+    Range:  :xsd:string
+
+DataProperty: :CELLATTRIBUTE
+    Domain: :Nursecare
+    Range:  :xsd:string
+
+DataProperty: :CELLATTRIBUTEVALUE
+    Domain: :Nursecare
+    Range:  :xsd:string
+
+Class: :Nursecharting
+    HasKey: :nursingchartid
+
+ObjectProperty: :hasPatient
+    Domain: :Nursecharting
+    Range:  Patient
+
+DataProperty: :NURSINGCHARTOFFSET
+    Domain: :Nursecharting
+    Range:  :xsd:integer
+
+DataProperty: :NURSINGCHARTENTRYOFFSET
+    Domain: :Nursecharting
+    Range:  :xsd:integer
+
+DataProperty: :NURSINGCHARTCELLTYPECAT
+    Domain: :Nursecharting
+    Range:  :xsd:string
+
+DataProperty: :NURSINGCHARTCELLTYPEVALLABEL
+    Domain: :Nursecharting
+    Range:  :xsd:string
+
+DataProperty: :NURSINGCHARTCELLTYPEVALNAME
+    Domain: :Nursecharting
+    Range:  :xsd:string
+
+DataProperty: :NURSINGCHARTVALUE
+    Domain: :Nursecharting
+    Range:  :xsd:string
+
+Class: :Pasthistory
+    HasKey: :pasthistoryid
+
+ObjectProperty: :hasPatient
+    Domain: :Pasthistory
+    Range:  Patient
+
+DataProperty: :pasthistoryoffset
+    Domain: :Pasthistory
+    Range:  :xsd:integer
+
+DataProperty: :pasthistoryenteredoffset
+    Domain: :Pasthistory
+    Range:  :xsd:integer
+
+DataProperty: :pasthistorynotetype
+    Domain: :Pasthistory
+    Range:  :xsd:string
+
+DataProperty: :pasthistorypath
+    Domain: :Pasthistory
+    Range:  :xsd:string
+
+DataProperty: :pasthistoryvalue
+    Domain: :Pasthistory
+    Range:  :xsd:string
+
+DataProperty: :pasthistoryvaluetext
+    Domain: :Pasthistory
+    Range:  :xsd:string
+
+Class: :Patient
+    HasKey: :patientunitstayid
+
+ObjectProperty: :hasHospital
+    Domain: :Patient
+    Range:  Hospital
+
+DataProperty: :patienthealthsystemstayid
+    Domain: :Patient
+    Range:  :xsd:integer
+
+DataProperty: :gender
+    Domain: :Patient
+    Range:  :xsd:string
+
+DataProperty: :age
+    Domain: :Patient
+    Range:  :xsd:string
+
+DataProperty: :ethnicity
+    Domain: :Patient
+    Range:  :xsd:string
+
+DataProperty: :wardid
+    Domain: :Patient
+    Range:  :xsd:integer
+
+DataProperty: :apacheadmissiondx
+    Domain: :Patient
+    Range:  :xsd:string
+
+DataProperty: :admissionheight
+    Domain: :Patient
+    Range:  :xsd:decimal
+
+DataProperty: :hospitaladmittime24
+    Domain: :Patient
+    Range:  :xsd:date
+
+DataProperty: :hospitaladmitoffset
+    Domain: :Patient
+    Range:  :xsd:integer
+
+DataProperty: :hospitaladmitsource
+    Domain: :Patient
+    Range:  :xsd:string
+
+DataProperty: :hospitaldischargeyear
+    Domain: :Patient
+    Range:  :xsd:integer
+
+DataProperty: :hospitaldischargetime24
+    Domain: :Patient
+    Range:  :xsd:date
+
+DataProperty: :hospitaldischargeoffset
+    Domain: :Patient
+    Range:  :xsd:integer
+
+DataProperty: :hospitaldischargelocation
+    Domain: :Patient
+    Range:  :xsd:string
+
+DataProperty: :hospitaldischargestatus
+    Domain: :Patient
+    Range:  :xsd:string
+
+DataProperty: :unittype
+    Domain: :Patient
+    Range:  :xsd:string
+
+DataProperty: :unitadmittime24
+    Domain: :Patient
+    Range:  :xsd:date
+
+DataProperty: :unitadmitsource
+    Domain: :Patient
+    Range:  :xsd:string
+
+DataProperty: :unitvisitnumber
+    Domain: :Patient
+    Range:  :xsd:integer
+
+DataProperty: :unitstaytype
+    Domain: :Patient
+    Range:  :xsd:string
+
+DataProperty: :admissionweight
+    Domain: :Patient
+    Range:  :xsd:decimal
+
+DataProperty: :dischargeweight
+    Domain: :Patient
+    Range:  :xsd:decimal
+
+DataProperty: :unitdischargetime24
+    Domain: :Patient
+    Range:  :xsd:date
+
+DataProperty: :unitdischargeoffset
+    Domain: :Patient
+    Range:  :xsd:integer
+
+DataProperty: :unitdischargelocation
+    Domain: :Patient
+    Range:  :xsd:string
+
+DataProperty: :unitdischargestatus
+    Domain: :Patient
+    Range:  :xsd:string
+
+DataProperty: :uniquepid
+    Domain: :Patient
+    Range:  :xsd:string
+
+Class: :Physicalexam
+    HasKey: :physicalexamid
+
+ObjectProperty: :hasPatient
+    Domain: :Physicalexam
+    Range:  Patient
+
+DataProperty: :physicalexamoffset
+    Domain: :Physicalexam
+    Range:  :xsd:integer
+
+DataProperty: :physicalexampath
+    Domain: :Physicalexam
+    Range:  :xsd:string
+
+DataProperty: :physicalexamvalue
+    Domain: :Physicalexam
+    Range:  :xsd:string
+
+DataProperty: :physicalexamtext
+    Domain: :Physicalexam
+    Range:  :xsd:string
+
+Class: :Respiratorycare
+    HasKey: :RESPCAREID
+
+ObjectProperty: :hasPatient
+    Domain: :Respiratorycare
+    Range:  Patient
+
+DataProperty: :RESPCARESTATUSOFFSET
+    Domain: :Respiratorycare
+    Range:  :xsd:integer
+
+DataProperty: :CURRENTHISTORYSEQNUM
+    Domain: :Respiratorycare
+    Range:  :xsd:integer
+
+DataProperty: :AIRWAYTYPE
+    Domain: :Respiratorycare
+    Range:  :xsd:string
+
+DataProperty: :AIRWAYSIZE
+    Domain: :Respiratorycare
+    Range:  :xsd:string
+
+DataProperty: :AIRWAYPOSITION
+    Domain: :Respiratorycare
+    Range:  :xsd:string
+
+DataProperty: :CUFFPRESSURE
+    Domain: :Respiratorycare
+    Range:  :xsd:decimal
+
+DataProperty: :VENTSTARTOFFSET
+    Domain: :Respiratorycare
+    Range:  :xsd:integer
+
+DataProperty: :VENTENDOFFSET
+    Domain: :Respiratorycare
+    Range:  :xsd:integer
+
+DataProperty: :PRIORVENTSTARTOFFSET
+    Domain: :Respiratorycare
+    Range:  :xsd:integer
+
+DataProperty: :PRIORVENTENDOFFSET
+    Domain: :Respiratorycare
+    Range:  :xsd:integer
+
+DataProperty: :APNEAPARAMS
+    Domain: :Respiratorycare
+    Range:  :xsd:string
+
+DataProperty: :LOWEXHMVLIMIT
+    Domain: :Respiratorycare
+    Range:  :xsd:decimal
+
+DataProperty: :HIEXHMVLIMIT
+    Domain: :Respiratorycare
+    Range:  :xsd:decimal
+
+DataProperty: :LOWEXHTVLIMIT
+    Domain: :Respiratorycare
+    Range:  :xsd:decimal
+
+DataProperty: :HIPEAKPRESLIMIT
+    Domain: :Respiratorycare
+    Range:  :xsd:decimal
+
+DataProperty: :LOWPEAKPRESLIMIT
+    Domain: :Respiratorycare
+    Range:  :xsd:decimal
+
+DataProperty: :HIRESPRATELIMIT
+    Domain: :Respiratorycare
+    Range:  :xsd:decimal
+
+DataProperty: :LOWRESPRATELIMIT
+    Domain: :Respiratorycare
+    Range:  :xsd:decimal
+
+DataProperty: :SIGHPRESLIMIT
+    Domain: :Respiratorycare
+    Range:  :xsd:decimal
+
+DataProperty: :LOWIRONOXLIMIT
+    Domain: :Respiratorycare
+    Range:  :xsd:decimal
+
+DataProperty: :HIGHIRONOXLIMIT
+    Domain: :Respiratorycare
+    Range:  :xsd:decimal
+
+DataProperty: :MEANAIRWAYPRESLIMIT
+    Domain: :Respiratorycare
+    Range:  :xsd:decimal
+
+DataProperty: :PEEPLIMIT
+    Domain: :Respiratorycare
+    Range:  :xsd:decimal
+
+DataProperty: :CPAPLIMIT
+    Domain: :Respiratorycare
+    Range:  :xsd:decimal
+
+DataProperty: :SETAPNEAINTERVAL
+    Domain: :Respiratorycare
+    Range:  :xsd:string
+
+DataProperty: :SETAPNEATV
+    Domain: :Respiratorycare
+    Range:  :xsd:string
+
+DataProperty: :SETAPNEAIPPEEPHIGH
+    Domain: :Respiratorycare
+    Range:  :xsd:string
+
+DataProperty: :SETAPNEARR
+    Domain: :Respiratorycare
+    Range:  :xsd:string
+
+DataProperty: :SETAPNEAPEAKFLOW
+    Domain: :Respiratorycare
+    Range:  :xsd:string
+
+DataProperty: :SETAPNEAINSPTIME
+    Domain: :Respiratorycare
+    Range:  :xsd:date
+
+DataProperty: :SETAPNEAIE
+    Domain: :Respiratorycare
+    Range:  :xsd:string
+
+DataProperty: :SETAPNEAFIO2
+    Domain: :Respiratorycare
+    Range:  :xsd:string
+
+Class: :Respiratorycharting
+    HasKey: :RESPCHARTID
+
+ObjectProperty: :hasPatient
+    Domain: :Respiratorycharting
+    Range:  Patient
+
+DataProperty: :RESPCHARTOFFSET
+    Domain: :Respiratorycharting
+    Range:  :xsd:integer
+
+DataProperty: :RESPCHARTENTRYOFFSET
+    Domain: :Respiratorycharting
+    Range:  :xsd:integer
+
+DataProperty: :RESPCHARTTYPECAT
+    Domain: :Respiratorycharting
+    Range:  :xsd:string
+
+DataProperty: :RESPCHARTVALUELABEL
+    Domain: :Respiratorycharting
+    Range:  :xsd:string
+
+DataProperty: :RESPCHARTVALUE
+    Domain: :Respiratorycharting
+    Range:  :xsd:string
+
+Class: :Treatment
+    HasKey: :treatmentid
+
+ObjectProperty: :hasPatient
+    Domain: :Treatment
+    Range:  Patient
+
+DataProperty: :treatmentoffset
+    Domain: :Treatment
+    Range:  :xsd:integer
+
+DataProperty: :treatmentstring
+    Domain: :Treatment
+    Range:  :xsd:string
+
+DataProperty: :activeupondischarge
+    Domain: :Treatment
+    Range:  :xsd:string
+
+Class: :Vitalaperiodic
+    HasKey: :vitalaperiodicid
+
+ObjectProperty: :hasPatient
+    Domain: :Vitalaperiodic
+    Range:  Patient
+
+DataProperty: :observationoffset
+    Domain: :Vitalaperiodic
+    Range:  :xsd:integer
+
+DataProperty: :noninvasivesystolic
+    Domain: :Vitalaperiodic
+    Range:  :xsd:double
+
+DataProperty: :noninvasivediastolic
+    Domain: :Vitalaperiodic
+    Range:  :xsd:double
+
+DataProperty: :noninvasivemean
+    Domain: :Vitalaperiodic
+    Range:  :xsd:double
+
+DataProperty: :paop
+    Domain: :Vitalaperiodic
+    Range:  :xsd:double
+
+DataProperty: :cardiacoutput
+    Domain: :Vitalaperiodic
+    Range:  :xsd:double
+
+DataProperty: :cardiacinput
+    Domain: :Vitalaperiodic
+    Range:  :xsd:double
+
+DataProperty: :svr
+    Domain: :Vitalaperiodic
+    Range:  :xsd:double
+
+DataProperty: :svri
+    Domain: :Vitalaperiodic
+    Range:  :xsd:double
+
+DataProperty: :pvr
+    Domain: :Vitalaperiodic
+    Range:  :xsd:double
+
+DataProperty: :pvri
+    Domain: :Vitalaperiodic
+    Range:  :xsd:double
+
+Class: :Vitalperiodic
+    HasKey: :vitalperiodicid
+
+ObjectProperty: :hasPatient
+    Domain: :Vitalperiodic
+    Range:  Patient
+
+DataProperty: :observationoffset
+    Domain: :Vitalperiodic
+    Range:  :xsd:integer
+
+DataProperty: :temperature
+    Domain: :Vitalperiodic
+    Range:  :xsd:decimal
+
+DataProperty: :sao2
+    Domain: :Vitalperiodic
+    Range:  :xsd:integer
+
+DataProperty: :heartrate
+    Domain: :Vitalperiodic
+    Range:  :xsd:integer
+
+DataProperty: :respiration
+    Domain: :Vitalperiodic
+    Range:  :xsd:integer
+
+DataProperty: :cvp
+    Domain: :Vitalperiodic
+    Range:  :xsd:integer
+
+DataProperty: :etco2
+    Domain: :Vitalperiodic
+    Range:  :xsd:integer
+
+DataProperty: :systemicsystolic
+    Domain: :Vitalperiodic
+    Range:  :xsd:integer
+
+DataProperty: :systemicdiastolic
+    Domain: :Vitalperiodic
+    Range:  :xsd:integer
+
+DataProperty: :systemicmean
+    Domain: :Vitalperiodic
+    Range:  :xsd:integer
+
+DataProperty: :pasystolic
+    Domain: :Vitalperiodic
+    Range:  :xsd:integer
+
+DataProperty: :padiastolic
+    Domain: :Vitalperiodic
+    Range:  :xsd:integer
+
+DataProperty: :pamean
+    Domain: :Vitalperiodic
+    Range:  :xsd:integer
+
+DataProperty: :st1
+    Domain: :Vitalperiodic
+    Range:  :xsd:double
+
+DataProperty: :st2
+    Domain: :Vitalperiodic
+    Range:  :xsd:double
+
+DataProperty: :st3
+    Domain: :Vitalperiodic
+    Range:  :xsd:double
+
+DataProperty: :icp
+    Domain: :Vitalperiodic
+    Range:  :xsd:integer
+
+Individual: :DirectMappingActivity
+    Types: prov:Activity
+    Facts:
+        prov:used :SchemaJSON,
+        prov:wasAssociatedWith :OntologyGeneratorScript
+
+Individual: :SchemaJSON
+    Types: prov:Entity
+
+Individual: :OntologyGeneratorScript
+    Types: prov:SoftwareAgent

@@ -1,0 +1,1481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://example.org/ontology#Allergy">
+    <rdfs:label xml:lang="en">Allergy</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Represents an allergy record in the database.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasApacheScore">
+    <rdfs:comment xml:lang="en">Total APACHE score</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#ApachePatientResult"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">has APACHE score</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasPatientUnitStay">
+    <rdfs:range rdf:resource="http://example.org/ontology#Patient"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#PatientUnitStay"/>
+    <rdfs:label xml:lang="en">patient unit stay</rdfs:label>
+    <rdfs:label xml:lang="en">has Admission Diagnosis ID</rdfs:label>
+    <rdfs:label xml:lang="en">has Admit Diagnosis Text</rdfs:label>
+    <rdfs:label xml:lang="en">has Admit Diagnosis Path</rdfs:label>
+    <rdfs:label xml:lang="en">has Admit Diagnosis Name</rdfs:label>
+    <rdfs:label xml:lang="en">has Admit Diagnosis Entered Offset</rdfs:label>
+    <rdfs:label xml:lang="en">has Patient Unit Stay</rdfs:label>
+    <rdfs:label xml:lang="en">hasDrugName</rdfs:label>
+    <rdfs:label xml:lang="en">hasAllergyOffset</rdfs:label>
+    <rdfs:label xml:lang="en">hasAllergyName</rdfs:label>
+    <rdfs:label xml:lang="en">hasAllergyEnteredOffset</rdfs:label>
+    <rdfs:label xml:lang="en">hasRxIncluded</rdfs:label>
+    <rdfs:label xml:lang="en">hasWrittenInICU</rdfs:label>
+    <rdfs:label xml:lang="en">hasDrugHiclSeqNo</rdfs:label>
+    <rdfs:label xml:lang="en">hasSpecialtyType</rdfs:label>
+    <rdfs:label xml:lang="en">hasAllergyType</rdfs:label>
+    <rdfs:label xml:lang="en">hasAllergyNoteType</rdfs:label>
+    <rdfs:label xml:lang="en">hasUserType</rdfs:label>
+    <rdfs:label xml:lang="en">hasPatientUnitStay</rdfs:label>
+    <rdfs:label xml:lang="en">hasAllergyId</rdfs:label>
+    <rdfs:label xml:lang="en">intubated</rdfs:label>
+    <rdfs:label xml:lang="en">meanbp</rdfs:label>
+    <rdfs:label xml:lang="en">temperature</rdfs:label>
+    <rdfs:label xml:lang="en">verbal</rdfs:label>
+    <rdfs:label xml:lang="en">glucose</rdfs:label>
+    <rdfs:label xml:lang="en">albumin</rdfs:label>
+    <rdfs:label xml:lang="en">fio2</rdfs:label>
+    <rdfs:label xml:lang="en">dialysis</rdfs:label>
+    <rdfs:label xml:lang="en">creatinine</rdfs:label>
+    <rdfs:label xml:lang="en">bilirubin</rdfs:label>
+    <rdfs:label xml:lang="en">pao2</rdfs:label>
+    <rdfs:label xml:lang="en">motor</rdfs:label>
+    <rdfs:label xml:lang="en">eyes</rdfs:label>
+    <rdfs:label xml:lang="en">pco2</rdfs:label>
+    <rdfs:label xml:lang="en">wbc</rdfs:label>
+    <rdfs:label xml:lang="en">bun</rdfs:label>
+    <rdfs:label xml:lang="en">hematocrit</rdfs:label>
+    <rdfs:label xml:lang="en">vent</rdfs:label>
+    <rdfs:label xml:lang="en">urine</rdfs:label>
+    <rdfs:label xml:lang="en">sodium</rdfs:label>
+    <rdfs:label xml:lang="en">respiratoryrate</rdfs:label>
+    <rdfs:label xml:lang="en">apacheapsvarid</rdfs:label>
+    <rdfs:label xml:lang="en">meds</rdfs:label>
+    <rdfs:label xml:lang="en">heartrate</rdfs:label>
+    <rdfs:label xml:lang="en">ph</rdfs:label>
+    <rdfs:label xml:lang="en">has patient unit stay</rdfs:label>
+    <rdfs:label xml:lang="en">Treatment</rdfs:label>
+    <rdfs:label xml:lang="en">Active Upon Discharge</rdfs:label>
+    <rdfs:label xml:lang="en">Infectious Disease Site</rdfs:label>
+    <rdfs:label xml:lang="en">Care Plan Infectious ID</rdfs:label>
+    <rdfs:label xml:lang="en">Infectious Disease Assessment</rdfs:label>
+    <rdfs:label xml:lang="en">Response To Therapy</rdfs:label>
+    <rdfs:label xml:lang="en">Care Plan Infectious Disease Offset</rdfs:label>
+    <rdfs:label xml:lang="en">customlabid</rdfs:label>
+    <rdfs:label xml:lang="en">labothertypeid</rdfs:label>
+    <rdfs:label xml:lang="en">patientunitstayid</rdfs:label>
+    <rdfs:label xml:lang="en">labotheroffset</rdfs:label>
+    <rdfs:label xml:lang="en">labothername</rdfs:label>
+    <rdfs:label xml:lang="en">labothervaluetext</rdfs:label>
+    <rdfs:label xml:lang="en">labotherresult</rdfs:label>
+    <rdfs:label xml:lang="en">hasDiagnosisID</rdfs:label>
+    <rdfs:label xml:lang="en">hasDiagnosisString</rdfs:label>
+    <rdfs:label xml:lang="en">hasICD9Code</rdfs:label>
+    <rdfs:label xml:lang="en">hasActiveUponDischarge</rdfs:label>
+    <rdfs:label xml:lang="en">hasDiagnosisPriority</rdfs:label>
+    <rdfs:label xml:lang="en">hasDiagnosisOffset</rdfs:label>
+    <rdfs:label xml:lang="en">has GTC</rdfs:label>
+    <rdfs:label xml:lang="en">has drug HICL sequence number</rdfs:label>
+    <rdfs:label xml:lang="en">has dosage</rdfs:label>
+    <rdfs:label xml:lang="en">has drug IV admixture</rdfs:label>
+    <rdfs:label xml:lang="en">has drug start offset</rdfs:label>
+    <rdfs:label xml:lang="en">has drug order cancelled</rdfs:label>
+    <rdfs:label xml:lang="en">has medication ID</rdfs:label>
+    <rdfs:label xml:lang="en">has loading dose</rdfs:label>
+    <rdfs:label xml:lang="en">has PRN</rdfs:label>
+    <rdfs:label xml:lang="en">has frequency</rdfs:label>
+    <rdfs:label xml:lang="en">has drug stop offset</rdfs:label>
+    <rdfs:label xml:lang="en">has drug name</rdfs:label>
+    <rdfs:label xml:lang="en">has drug order offset</rdfs:label>
+    <rdfs:label xml:lang="en">has route administration</rdfs:label>
+    <rdfs:label xml:lang="en">Antibiotic</rdfs:label>
+    <rdfs:label xml:lang="en">Culture Taken Offset</rdfs:label>
+    <rdfs:label xml:lang="en">Microlab ID</rdfs:label>
+    <rdfs:label xml:lang="en">Culture Site</rdfs:label>
+    <rdfs:label xml:lang="en">Organism</rdfs:label>
+    <rdfs:label xml:lang="en">Sensitivity Level</rdfs:label>
+    <rdfs:label xml:lang="en">Physical Exam Value</rdfs:label>
+    <rdfs:label xml:lang="en">Physical Exam Text</rdfs:label>
+    <rdfs:label xml:lang="en">Physical Exam ID</rdfs:label>
+    <rdfs:label xml:lang="en">Physical Exam Path</rdfs:label>
+    <rdfs:label xml:lang="en">Physical Exam Offset</rdfs:label>
+    <rdfs:label xml:lang="en">hasCuffPressure</rdfs:label>
+    <rdfs:label xml:lang="en">hasAirwayPosition</rdfs:label>
+    <rdfs:label xml:lang="en">hasCPAPLimit</rdfs:label>
+    <rdfs:label xml:lang="en">hasCurrentHistorySeqNum</rdfs:label>
+    <rdfs:label xml:lang="en">hasMeanAirwayPresLimit</rdfs:label>
+    <rdfs:label xml:lang="en">hasAirwaySize</rdfs:label>
+    <rdfs:label xml:lang="en">hasLowExhTVLimit</rdfs:label>
+    <rdfs:label xml:lang="en">hasHighIronOxLimit</rdfs:label>
+    <rdfs:label xml:lang="en">hasVentEndOffset</rdfs:label>
+    <rdfs:label xml:lang="en">hasHiExhMVLimit</rdfs:label>
+    <rdfs:label xml:lang="en">hasHiPeakPresLimit</rdfs:label>
+    <rdfs:label xml:lang="en">hasSetApneaPeakFlow</rdfs:label>
+    <rdfs:label xml:lang="en">hasHiRespRateLimit</rdfs:label>
+    <rdfs:label xml:lang="en">hasSetApneaIPPeepHigh</rdfs:label>
+    <rdfs:label xml:lang="en">hasSetApneaInspTime</rdfs:label>
+    <rdfs:label xml:lang="en">hasSighPresLimit</rdfs:label>
+    <rdfs:label xml:lang="en">hasRespCareID</rdfs:label>
+    <rdfs:label xml:lang="en">hasPEEPLimit</rdfs:label>
+    <rdfs:label xml:lang="en">hasLowIronOxLimit</rdfs:label>
+    <rdfs:label xml:lang="en">hasSetApneaTV</rdfs:label>
+    <rdfs:label xml:lang="en">hasPriorVentStartOffset</rdfs:label>
+    <rdfs:label xml:lang="en">hasPriorVentEndOffset</rdfs:label>
+    <rdfs:label xml:lang="en">hasApneaParams</rdfs:label>
+    <rdfs:label xml:lang="en">hasSetApneaInterval</rdfs:label>
+    <rdfs:label xml:lang="en">hasRespCareStatusOffset</rdfs:label>
+    <rdfs:label xml:lang="en">hasSetApneaRR</rdfs:label>
+    <rdfs:label xml:lang="en">hasSetApneaFiO2</rdfs:label>
+    <rdfs:label xml:lang="en">hasLowPeakPresLimit</rdfs:label>
+    <rdfs:label xml:lang="en">hasVentStartOffset</rdfs:label>
+    <rdfs:label xml:lang="en">hasAirwayType</rdfs:label>
+    <rdfs:label xml:lang="en">hasLowRespRateLimit</rdfs:label>
+    <rdfs:label xml:lang="en">hasSetApneaIE</rdfs:label>
+    <rdfs:label xml:lang="en">hasLowExhMVLimit</rdfs:label>
+    <rdfs:label xml:lang="en">has PA systolic</rdfs:label>
+    <rdfs:label xml:lang="en">has observation offset</rdfs:label>
+    <rdfs:label xml:lang="en">has PA diastolic</rdfs:label>
+    <rdfs:label xml:lang="en">has SaO2</rdfs:label>
+    <rdfs:label xml:lang="en">has respiration</rdfs:label>
+    <rdfs:label xml:lang="en">has systemic mean</rdfs:label>
+    <rdfs:label xml:lang="en">has PA mean</rdfs:label>
+    <rdfs:label xml:lang="en">has ST1</rdfs:label>
+    <rdfs:label xml:lang="en">has ST3</rdfs:label>
+    <rdfs:label xml:lang="en">has heart rate</rdfs:label>
+    <rdfs:label xml:lang="en">has temperature</rdfs:label>
+    <rdfs:label xml:lang="en">has ST2</rdfs:label>
+    <rdfs:label xml:lang="en">has systemic systolic</rdfs:label>
+    <rdfs:label xml:lang="en">has CVP</rdfs:label>
+    <rdfs:label xml:lang="en">has systemic diastolic</rdfs:label>
+    <rdfs:label xml:lang="en">has ICP</rdfs:label>
+    <rdfs:label xml:lang="en">has EtCO2</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#AdmissionDrug"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#AdmissionDx"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Allergy"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#ApacheApsVar"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#ApachePatientResult"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#CarePlanGoal"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#CarePlanInfectiousDisease"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#CustomLab"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Diagnosis"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#IntakeOutput"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Lab"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Microlab"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Note"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#NurseAssessment"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#NurseCare"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#PhysicalExam"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#RespiratoryCare"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Treatment"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#VitalPeriodic"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">Links to the patient's unit stay record</rdfs:comment>
+    <rdfs:comment xml:lang="en">The text description of the admission diagnosis.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The unique identifier for the admission diagnosis.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The name of the admission diagnosis.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The time offset when the diagnosis was entered.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The path of the admission diagnosis.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links the admission diagnosis to the patient unit stay.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Indicates if the allergy was written in the ICU.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The HICL sequence number for the drug.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The unique identifier for an allergy record.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The time offset when the allergy was entered.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Indicates if the allergy includes a prescription.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The name of the allergy.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The type of user associated with the allergy.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The name of the drug associated with the allergy.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The time offset for the allergy record.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The type of allergy.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links an allergy record to a patient unit stay.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The type of note associated with the allergy.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The specialty type associated with the allergy.</rdfs:comment>
+    <rdfs:comment xml:lang="en">pH level.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Glucose level.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Eye response score.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Sodium level.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Heart rate.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Urine output.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Hematocrit level.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Indicates if the patient was on ventilation.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Bilirubin level.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Indicates if the patient was on dialysis.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Respiratory rate.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Mean blood pressure.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Verbal response score.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Albumin level.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Motor response score.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Medication score.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Patient temperature.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Blood urea nitrogen level.</rdfs:comment>
+    <rdfs:comment xml:lang="en">White blood cell count.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Creatinine level.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Partial pressure of carbon dioxide.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links ApacheApsVar to Patient.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Fraction of inspired oxygen.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Indicates if the patient was intubated.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The ID of the ApacheApsVar record.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Partial pressure of oxygen.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links to the patient's ICU stay record</rdfs:comment>
+    <rdfs:comment xml:lang="en">The response to therapy for the infectious disease.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The time offset for the infectious disease in the care plan.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The site of the infectious disease.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Indicates if the infectious disease is active upon discharge.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links to the patient's unit stay.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The treatment for the infectious disease.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The assessment of the infectious disease.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The unique identifier for the care plan infectious disease record.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The offset time for the lab other record.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The text value of the lab other record.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The unique identifier for a custom lab record.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The result of the lab other record.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links CustomLab to Patient via patientunitstayid.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The identifier for the type of lab other record.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The identifier linking to the patient's unit stay.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The name of the lab other record.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links a diagnosis to a patient unit stay.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The priority level of the diagnosis.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Indicates if the diagnosis was active upon discharge.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The ICD-9 code associated with the diagnosis.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The textual description of the diagnosis.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The time offset of the diagnosis.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The unique identifier for a diagnosis.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links lab result to patient unit stay</rdfs:comment>
+    <rdfs:comment xml:lang="en">The dosage of the drug</rdfs:comment>
+    <rdfs:comment xml:lang="en">The loading dose of the drug</rdfs:comment>
+    <rdfs:comment xml:lang="en">The name of the drug</rdfs:comment>
+    <rdfs:comment xml:lang="en">Indicates if drug is IV admixture</rdfs:comment>
+    <rdfs:comment xml:lang="en">The time offset when drug was started</rdfs:comment>
+    <rdfs:comment xml:lang="en">The time offset when drug was stopped</rdfs:comment>
+    <rdfs:comment xml:lang="en">Generic Therapeutic Class identifier</rdfs:comment>
+    <rdfs:comment xml:lang="en">The HICL sequence number for the drug</rdfs:comment>
+    <rdfs:comment xml:lang="en">Indicates if drug is PRN (as needed)</rdfs:comment>
+    <rdfs:comment xml:lang="en">The unique identifier for the medication record</rdfs:comment>
+    <rdfs:comment xml:lang="en">Indicates if drug order was cancelled</rdfs:comment>
+    <rdfs:comment xml:lang="en">The time offset for drug order</rdfs:comment>
+    <rdfs:comment xml:lang="en">The frequency of drug administration</rdfs:comment>
+    <rdfs:comment xml:lang="en">The administration route for the drug</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links medication to patient unit stay</rdfs:comment>
+    <rdfs:comment xml:lang="en">The antibiotic used in the culture.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The sensitivity level of the organism to the antibiotic.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The site from which the culture was taken.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The time offset when the culture was taken.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The unique identifier for a microlab record.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links a microlab record to a patient unit stay.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The organism identified in the culture.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links a note to its associated patient unit stay</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links a nurse assessment to a patient unit stay.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links nurse care records to patient unit stays</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links a physical exam to a patient unit stay.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The path of the physical exam.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The time offset of the physical exam.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The unique identifier for a physical exam.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The text description of the physical exam.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The value of the physical exam.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The unique identifier for respiratory care.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The start offset for ventilation.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The set apnea IP Peep high.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The set apnea inspiration time.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The type of airway used.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The set apnea respiratory rate.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The low peak pressure limit.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The size of the airway.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The high exhaled minute volume limit.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The low exhaled minute volume limit.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The high respiratory rate limit.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The sigh pressure limit.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The set apnea peak flow.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The set apnea tidal volume.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The mean airway pressure limit.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The high peak pressure limit.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The set apnea FiO2.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The PEEP limit.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The prior start offset for ventilation.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The apnea parameters.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The sequence number for current history.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The prior end offset for ventilation.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The low exhaled tidal volume limit.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The cuff pressure.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The set apnea IE ratio.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The high iron oxide limit.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The low iron oxide limit.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The end offset for ventilation.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The position of the airway.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links RespiratoryCare to a PatientUnitStay.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The CPAP limit.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The low respiratory rate limit.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The offset for respiratory care status.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The set apnea interval.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The patient's temperature measurement</rdfs:comment>
+    <rdfs:comment xml:lang="en">The patient's central venous pressure</rdfs:comment>
+    <rdfs:comment xml:lang="en">The patient's pulmonary artery mean pressure</rdfs:comment>
+    <rdfs:comment xml:lang="en">The patient's respiration rate</rdfs:comment>
+    <rdfs:comment xml:lang="en">The patient's ST segment measurement 1</rdfs:comment>
+    <rdfs:comment xml:lang="en">The time offset of the observation</rdfs:comment>
+    <rdfs:comment xml:lang="en">The patient's heart rate measurement</rdfs:comment>
+    <rdfs:comment xml:lang="en">The patient's systemic diastolic blood pressure</rdfs:comment>
+    <rdfs:comment xml:lang="en">The patient's systemic mean blood pressure</rdfs:comment>
+    <rdfs:comment xml:lang="en">The patient's ST segment measurement 2</rdfs:comment>
+    <rdfs:comment xml:lang="en">The patient's pulmonary artery diastolic pressure</rdfs:comment>
+    <rdfs:comment xml:lang="en">The patient's pulmonary artery systolic pressure</rdfs:comment>
+    <rdfs:comment xml:lang="en">The patient's systemic systolic blood pressure</rdfs:comment>
+    <rdfs:comment xml:lang="en">The patient's intracranial pressure</rdfs:comment>
+    <rdfs:comment xml:lang="en">The patient's end-tidal carbon dioxide</rdfs:comment>
+    <rdfs:comment xml:lang="en">The patient's oxygen saturation level</rdfs:comment>
+    <rdfs:comment xml:lang="en">The patient's ST segment measurement 3</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasIntakeOutputID">
+    <rdfs:domain rdf:resource="http://example.org/ontology#IntakeOutput"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="en">has intake output ID</rdfs:label>
+    <rdfs:comment xml:lang="en">The unique identifier for the intake/output record</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#nursingchartid">
+    <rdfs:comment xml:lang="en">Unique identifier for the nurse charting record.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#NurseCharting"/>
+    <rdfs:label xml:lang="en">Nursing Chart ID</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasSpecialtyType">
+    <rdfs:domain rdf:resource="http://example.org/ontology#AdmissionDrug"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">specialty type</rdfs:label>
+    <rdfs:comment xml:lang="en">Medical specialty associated with drug administration</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#patientunitstayid">
+    <rdfs:comment xml:lang="en">Represents the verbal column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the lymphoma column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the day1motor column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the region column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the fio2 column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the metastaticcancer column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the saps3today column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the ventday1 column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the ejectfx column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the immunosuppression column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the saps3day1 column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the readmit column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the day1eyes column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Foreign key linking to the patient table.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the motor column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the day1pao2 column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the admitsource column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the eyes column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the pao2 column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the meds column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the cirrhosis column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the saps3yesterday column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the activetx column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the age column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the bedcount column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the midur column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the amilocation column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Primary key for the apachepredvar table.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the gender column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the managementsystem column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the admitdiagnosis column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the day1meds column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the teachtype column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the aids column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the day1fio2 column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the hepaticfailure column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the thrombolytics column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the sicuday column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the day1verbal column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the diedinhospital column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the dischargelocation column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the visitnumber column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the creatinine column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the graftcount column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the diabetes column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the leukemia column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the oobventday1 column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the var03hspxlos column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the electivesurgery column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the ima column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the oobintubday1 column.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Category of the intervention provided by the care provider.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Specialty of the care provider.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Offset for when the care provider was saved.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Primary key for the care plan care provider table.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Managing physician for the care provider.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Indicates if the care provider is active upon discharge.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Type of the care provider.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links to the patient's unit stay record.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Unique identifier for a patient's unit stay.</rdfs:comment>
+    <rdfs:label xml:lang="en">ventday1</rdfs:label>
+    <rdfs:label xml:lang="en">var03hspxlos</rdfs:label>
+    <rdfs:label xml:lang="en">day1eyes</rdfs:label>
+    <rdfs:label xml:lang="en">day1motor</rdfs:label>
+    <rdfs:label xml:lang="en">ejectfx</rdfs:label>
+    <rdfs:label xml:lang="en">dischargelocation</rdfs:label>
+    <rdfs:label xml:lang="en">thrombolytics</rdfs:label>
+    <rdfs:label xml:lang="en">creatinine</rdfs:label>
+    <rdfs:label xml:lang="en">pao2</rdfs:label>
+    <rdfs:label xml:lang="en">diabetes</rdfs:label>
+    <rdfs:label xml:lang="en">hepaticfailure</rdfs:label>
+    <rdfs:label xml:lang="en">motor</rdfs:label>
+    <rdfs:label xml:lang="en">aids</rdfs:label>
+    <rdfs:label xml:lang="en">admitdiagnosis</rdfs:label>
+    <rdfs:label xml:lang="en">eyes</rdfs:label>
+    <rdfs:label xml:lang="en">age</rdfs:label>
+    <rdfs:label xml:lang="en">readmit</rdfs:label>
+    <rdfs:label xml:lang="en">bedcount</rdfs:label>
+    <rdfs:label xml:lang="en">oobintubday1</rdfs:label>
+    <rdfs:label xml:lang="en">gender</rdfs:label>
+    <rdfs:label xml:lang="en">patientunitstayid</rdfs:label>
+    <rdfs:label xml:lang="en">sicuday</rdfs:label>
+    <rdfs:label xml:lang="en">day1pao2</rdfs:label>
+    <rdfs:label xml:lang="en">midur</rdfs:label>
+    <rdfs:label xml:lang="en">cirrhosis</rdfs:label>
+    <rdfs:label xml:lang="en">meds</rdfs:label>
+    <rdfs:label xml:lang="en">day1meds</rdfs:label>
+    <rdfs:label xml:lang="en">verbal</rdfs:label>
+    <rdfs:label xml:lang="en">activetx</rdfs:label>
+    <rdfs:label xml:lang="en">graftcount</rdfs:label>
+    <rdfs:label xml:lang="en">visitnumber</rdfs:label>
+    <rdfs:label xml:lang="en">region</rdfs:label>
+    <rdfs:label xml:lang="en">fio2</rdfs:label>
+    <rdfs:label xml:lang="en">amilocation</rdfs:label>
+    <rdfs:label xml:lang="en">metastaticcancer</rdfs:label>
+    <rdfs:label xml:lang="en">leukemia</rdfs:label>
+    <rdfs:label xml:lang="en">day1verbal</rdfs:label>
+    <rdfs:label xml:lang="en">day1fio2</rdfs:label>
+    <rdfs:label xml:lang="en">managementsystem</rdfs:label>
+    <rdfs:label xml:lang="en">lymphoma</rdfs:label>
+    <rdfs:label xml:lang="en">teachtype</rdfs:label>
+    <rdfs:label xml:lang="en">electivesurgery</rdfs:label>
+    <rdfs:label xml:lang="en">saps3yesterday</rdfs:label>
+    <rdfs:label xml:lang="en">immunosuppression</rdfs:label>
+    <rdfs:label xml:lang="en">admitsource</rdfs:label>
+    <rdfs:label xml:lang="en">saps3day1</rdfs:label>
+    <rdfs:label xml:lang="en">saps3today</rdfs:label>
+    <rdfs:label xml:lang="en">oobventday1</rdfs:label>
+    <rdfs:label xml:lang="en">diedinhospital</rdfs:label>
+    <rdfs:label xml:lang="en">apachepredvarid</rdfs:label>
+    <rdfs:label xml:lang="en">ima</rdfs:label>
+    <rdfs:label xml:lang="en">interventioncategory</rdfs:label>
+    <rdfs:label xml:lang="en">specialty</rdfs:label>
+    <rdfs:label xml:lang="en">managingphysician</rdfs:label>
+    <rdfs:label xml:lang="en">activeupondischarge</rdfs:label>
+    <rdfs:label xml:lang="en">careprovidersaveoffset</rdfs:label>
+    <rdfs:label xml:lang="en">providertype</rdfs:label>
+    <rdfs:label xml:lang="en">cplcareprovderid</rdfs:label>
+    <rdfs:label xml:lang="en">Patient Unit Stay ID</rdfs:label>
+    <rdfs:range rdf:resource="http://example.org/ontology#Patient"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#ApachePredVar"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#CarePlanCareProvider"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#NurseCharting"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Patient"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasDrugOffset">
+    <rdfs:label xml:lang="en">drug offset</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#AdmissionDrug"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Time offset for drug administration</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasNoteText">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">has note text</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">The full text content of the note</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Note"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasPatientUnitStayID">
+    <rdfs:label xml:lang="en">hasCPLItemOffset</rdfs:label>
+    <rdfs:label xml:lang="en">hasPatientUnitStayID</rdfs:label>
+    <rdfs:label xml:lang="en">hasCPLGroup</rdfs:label>
+    <rdfs:label xml:lang="en">hasActiveUponDischarge</rdfs:label>
+    <rdfs:label xml:lang="en">hasCPLItemValue</rdfs:label>
+    <rdfs:label xml:lang="en">hasInfusionOffset</rdfs:label>
+    <rdfs:label xml:lang="en">hasDrugAmount</rdfs:label>
+    <rdfs:label xml:lang="en">hasPatientWeight</rdfs:label>
+    <rdfs:label xml:lang="en">hasDrugName</rdfs:label>
+    <rdfs:label xml:lang="en">hasInfusionDrugID</rdfs:label>
+    <rdfs:label xml:lang="en">hasInfusionRate</rdfs:label>
+    <rdfs:label xml:lang="en">hasVolumeOfFluid</rdfs:label>
+    <rdfs:label xml:lang="en">hasDrugRate</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates if the care plan is active upon discharge</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links to the patient's unit stay record</rdfs:comment>
+    <rdfs:comment xml:lang="en">The value/content of the care plan item</rdfs:comment>
+    <rdfs:comment xml:lang="en">The offset time for the care plan item</rdfs:comment>
+    <rdfs:comment xml:lang="en">The group category of the care plan item</rdfs:comment>
+    <rdfs:comment xml:lang="en">The volume of fluid administered.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The rate at which the drug is administered.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links InfusionDrug to Patient via patientunitstayid.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The rate of infusion.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The name of the drug administered.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The offset time for the infusion drug.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The amount of drug administered.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The weight of the patient.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The unique identifier for an infusion drug record.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#Patient"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#CarePlanGeneral"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#InfusionDrug"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#PastHistory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#nurseCareEntryOffset">
+    <rdfs:domain rdf:resource="http://example.org/ontology#NurseCare"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:comment xml:lang="en">Time offset when nursing care was entered</rdfs:comment>
+    <rdfs:label xml:lang="en">nurse care entry offset</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasPTCAWithin24h">
+    <rdfs:label xml:lang="en">has PTCA within 24 hours</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#ApachePatientResult"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicator of PTCA procedure within 24 hours</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasPreOpCardiacCath">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#ApachePatientResult"/>
+    <rdfs:comment xml:lang="en">Indicator of pre-operative cardiac catheterization</rdfs:comment>
+    <rdfs:label xml:lang="en">has pre-operative cardiac catheterization</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasLabtypeid">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Lab"/>
+    <rdfs:label xml:lang="en">lab type ID</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Identifier for type of lab test</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#cellLabel">
+    <rdfs:domain rdf:resource="http://example.org/ontology#NurseAssessment"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#NurseCare"/>
+    <rdfs:comment xml:lang="en">The label of the cell in the nurse assessment.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Label for the nursing care cell</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">Cell Label</rdfs:label>
+    <rdfs:label xml:lang="en">cell label</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasNoteOffset">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Note"/>
+    <rdfs:label xml:lang="en">has note offset</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:comment xml:lang="en">The time offset for when the note was created</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasLabid">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Lab"/>
+    <rdfs:label xml:lang="en">lab ID</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:comment xml:lang="en">Unique identifier for lab test</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#admissionheight">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Patient"/>
+    <rdfs:comment xml:lang="en">Height of the patient at admission.</rdfs:comment>
+    <rdfs:label xml:lang="en">Admission Height</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#age">
+    <rdfs:label xml:lang="en">Age</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Age of the patient.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Patient"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasDrugName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">drug name</rdfs:label>
+    <rdfs:comment xml:lang="en">Name of administered drug</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#AdmissionDrug"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasActualHospitalLOS">
+    <rdfs:domain rdf:resource="http://example.org/ontology#ApachePatientResult"/>
+    <rdfs:comment xml:lang="en">Actual length of stay in hospital</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">has actual hospital length of stay</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasLabmeasurenamesystem">
+    <rdfs:comment xml:lang="en">System name for lab measurement</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">lab measure name system</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Lab"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasPhysicianInterventionCategory">
+    <rdfs:domain rdf:resource="http://example.org/ontology#ApachePatientResult"/>
+    <rdfs:comment xml:lang="en">Category of physician interventions</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">has physician intervention category</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#admissionweight">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Patient"/>
+    <rdfs:label xml:lang="en">Admission Weight</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdfs:comment xml:lang="en">Weight of the patient at admission.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasPreOpMI">
+    <rdfs:comment xml:lang="en">Indicator of pre-operative myocardial infarction</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#ApachePatientResult"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="en">has pre-operative myocardial infarction</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasNoteValue">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Note"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">has note value</rdfs:label>
+    <rdfs:comment xml:lang="en">The value or content of the note</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasIntakeOutputEntryOffset">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#IntakeOutput"/>
+    <rdfs:label xml:lang="en">has intake output entry offset</rdfs:label>
+    <rdfs:comment xml:lang="en">Time offset for the entry</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasCplGoalCategory">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">The category of the care plan goal</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#CarePlanGoal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">has care plan goal category</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/ontology#hasCplGoalValue">
+    <rdfs:comment xml:lang="en">The value of the care plan goal</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">has care plan goal value</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#CarePlanGoal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasPredVentDays">
+    <rdfs:label xml:lang="en">has predicted ventilation days</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#ApachePatientResult"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Predicted days on ventilation</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hospitaladmittime24">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Patient"/>
+    <rdfs:comment xml:lang="en">Time of hospital admission in 24-hour format.</rdfs:comment>
+    <rdfs:label xml:lang="en">Hospital Admission Time (24h)</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#numbedscategory">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Hospital"/>
+    <rdfs:comment xml:lang="en">The category describing the number of beds in the hospital.</rdfs:comment>
+    <rdfs:label xml:lang="en">Number of Beds Category</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#wardid">
+    <rdfs:label xml:lang="en">Ward ID</rdfs:label>
+    <rdfs:comment xml:lang="en">Identifier for the ward where the patient is admitted.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Patient"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#gender">
+    <rdfs:label xml:lang="en">Gender</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Gender of the patient.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Patient"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#cellAttribute">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">The attribute of the cell in the nurse assessment.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Attribute of the nursing care cell</rdfs:comment>
+    <rdfs:label xml:lang="en">Cell Attribute</rdfs:label>
+    <rdfs:label xml:lang="en">cell attribute</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#NurseAssessment"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#NurseCare"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#unitadmittime24">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Time of unit admission in 24-hour format.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Unit Admission Time (24h)</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Patient"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasPatientUnitStayId">
+    <rdfs:label xml:lang="en">hasCpleoldiscussionoffset</rdfs:label>
+    <rdfs:label xml:lang="en">hasCpleolsaveoffset</rdfs:label>
+    <rdfs:label xml:lang="en">hasActiveupondischarge</rdfs:label>
+    <rdfs:label xml:lang="en">hasCpleolid</rdfs:label>
+    <rdfs:label xml:lang="en">hasPatientUnitStayId</rdfs:label>
+    <rdfs:range rdf:resource="http://example.org/ontology#Patient"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#CarePlaneol"/>
+    <rdfs:comment xml:lang="en">Represents the cpleolsaveoffset column in the CarePlaneol table.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the cpleolid column in the CarePlaneol table.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links CarePlaneol to Patient via patientunitstayid.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the cpleoldiscussionoffset column in the CarePlaneol table.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the activeupondischarge column in the CarePlaneol table.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasWrittenInICU">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#AdmissionDrug"/>
+    <rdfs:comment xml:lang="en">Whether drug was prescribed in ICU</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">written in ICU</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasNetTotal">
+    <rdfs:domain rdf:resource="http://example.org/ontology#IntakeOutput"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Net total measurement</rdfs:comment>
+    <rdfs:label xml:lang="en">has net total</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasUnabridgedHospLOS">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">has unabridged hospital length of stay</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#ApachePatientResult"/>
+    <rdfs:comment xml:lang="en">Unabridged length of stay in hospital</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hospitaladmitoffset">
+    <rdfs:comment xml:lang="en">Offset time for hospital admission.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Hospital Admission Offset</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Patient"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasIntakeOutputOffset">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:comment xml:lang="en">Time offset for the measurement</rdfs:comment>
+    <rdfs:label xml:lang="en">has intake output offset</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#IntakeOutput"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hospitaldischargeyear">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Patient"/>
+    <rdfs:label xml:lang="en">Hospital Discharge Year</rdfs:label>
+    <rdfs:comment xml:lang="en">Year of hospital discharge.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#CarePlanGoal">
+    <rdfs:comment xml:lang="en">Represents goals in a patient's care plan</rdfs:comment>
+    <rdfs:label xml:lang="en">Care Plan Goal</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#patienthealthsystemstayid">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Patient"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:comment xml:lang="en">Unique identifier for a patient's health system stay.</rdfs:comment>
+    <rdfs:label xml:lang="en">Patient Health System Stay ID</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasCellPath">
+    <rdfs:label xml:lang="en">has cell path</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#IntakeOutput"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Path identifier for the cell</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/ontology#NurseAssessment">
+    <rdfs:comment xml:lang="en">Represents a nurse assessment record in the database.</rdfs:comment>
+    <rdfs:label xml:lang="en">Nurse Assessment</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+ 
+  <rdf:Description rdf:about="http://example.org/ontology#nursingchartvalue">
+    <rdfs:label xml:lang="en">Nursing Chart Value</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#NurseCharting"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Value recorded in the nursing chart.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasDrugAdmitFrequency">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#AdmissionDrug"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Frequency of drug administration</rdfs:comment>
+    <rdfs:label xml:lang="en">drug admit frequency</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasOutputTotal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Total output measurement</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#IntakeOutput"/>
+    <rdfs:label xml:lang="en">has output total</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#nurseCareOffset">
+    <rdfs:label xml:lang="en">nurse care offset</rdfs:label>
+    <rdfs:comment xml:lang="en">Time offset for nursing care</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#NurseCare"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#cellAttributePath">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#NurseAssessment"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#NurseCare"/>
+    <rdfs:comment xml:lang="en">The path of the cell attribute in the nurse assessment.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Path to the cell attribute</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">Cell Attribute Path</rdfs:label>
+    <rdfs:label xml:lang="en">cell attribute path</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasUserType">
+    <rdfs:comment xml:lang="en">Type of user who administered the drug</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#AdmissionDrug"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">user type</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#unitdischargelocation">
+    <rdfs:comment xml:lang="en">Location of unit discharge.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">Unit Discharge Location</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Patient"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/ontology#cellAttributeValue">
+    <rdfs:label xml:lang="en">Cell Attribute Value</rdfs:label>
+    <rdfs:label xml:lang="en">cell attribute value</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#NurseAssessment"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#NurseCare"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">The value of the cell attribute in the nurse assessment.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Value of the nursing care cell attribute</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Diagnosis">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Represents a diagnosis record in the database.</rdfs:comment>
+    <rdfs:label xml:lang="en">Diagnosis</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#unitadmitsource">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Patient"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">Unit Admission Source</rdfs:label>
+    <rdfs:comment xml:lang="en">Source of unit admission.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasAcutePhysiologyScore">
+    <rdfs:comment xml:lang="en">Acute Physiology Score component of APACHE</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#ApachePatientResult"/>
+    <rdfs:label xml:lang="en">has acute physiology score</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#unitvisitnumber">
+    <rdfs:label xml:lang="en">Unit Visit Number</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Number of visits to the unit.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Patient"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasLabresult">
+    <rdfs:comment xml:lang="en">Numerical result of lab test</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Lab"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdfs:label xml:lang="en">lab result</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#nurseAssessEntryOffset">
+    <rdfs:label xml:lang="en">Nurse Assess Entry Offset</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:comment xml:lang="en">The entry offset time for the nurse assessment.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#NurseAssessment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hospitalid">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">Hospital ID</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#Hospital"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Hospital"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Patient"/>
+    <rdfs:comment xml:lang="en">The unique identifier for a hospital.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Identifier linking the patient to a hospital.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#unitdischargeoffset">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Offset time for unit discharge.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="en">Unit Discharge Offset</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Patient"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasCellLabel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#IntakeOutput"/>
+    <rdfs:comment xml:lang="en">Label for the cell</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">has cell label</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#nursingchartcelltypecat">
+    <rdfs:label xml:lang="en">Nursing Chart Cell Type Category</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#NurseCharting"/>
+    <rdfs:comment xml:lang="en">Category of the nursing chart cell type.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#IntakeOutput">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">IntakeOutput</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents patient intake and output measurements</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasNoteType">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">has note type</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Note"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">The type of clinical note</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#nursingchartentryoffset">
+    <rdfs:label xml:lang="en">Nursing Chart Entry Offset</rdfs:label>
+    <rdfs:comment xml:lang="en">Offset for the nursing chart entry.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#NurseCharting"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/ontology#hasDialysisTotal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Total dialysis measurement</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#IntakeOutput"/>
+    <rdfs:label xml:lang="en">has dialysis total</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/ontology#hasPredictedHospitalMortality">
+    <rdfs:comment xml:lang="en">Predicted mortality rate in hospital</rdfs:comment>
+    <rdfs:label xml:lang="en">has predicted hospital mortality</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#ApachePatientResult"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasCplGoalStatus">
+    <rdfs:label xml:lang="en">has care plan goal status</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#CarePlanGoal"/>
+    <rdfs:comment xml:lang="en">The status of the care plan goal</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasLabname">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Lab"/>
+    <rdfs:comment xml:lang="en">Name of the lab test</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">lab name</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hospitaladmitsource">
+    <rdfs:comment xml:lang="en">Source of hospital admission.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">Hospital Admission Source</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Patient"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#ApachePatientResult">
+    <rdfs:label xml:lang="en">Apache patient result</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents results from APACHE scoring system for ICU patients</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#ApacheApsVar">
+    <rdfs:label xml:lang="en">ApacheApsVar</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Represents the apacheapsvar table.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Note">
+    <rdfs:comment xml:lang="en">A clinical note documenting patient information</rdfs:comment>
+    <rdfs:label xml:lang="en">Note</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#CarePlanGeneral">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">CarePlanGeneral</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents a general care plan for a patient</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Hospital">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Represents a hospital entity.</rdfs:comment>
+    <rdfs:label xml:lang="en">Hospital</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/ontology#hasRxIncluded">
+    <rdfs:domain rdf:resource="http://example.org/ontology#AdmissionDrug"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Whether prescription was included</rdfs:comment>
+    <rdfs:label xml:lang="en">RX included</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#unittype">
+    <rdfs:comment xml:lang="en">Type of unit where the patient is admitted.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Patient"/>
+    <rdfs:label xml:lang="en">Unit Type</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hospitaldischargestatus">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">Hospital Discharge Status</rdfs:label>
+    <rdfs:comment xml:lang="en">Status of the patient at hospital discharge.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Patient"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#AdmissionDx">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Represents the admission diagnosis for a patient.</rdfs:comment>
+    <rdfs:label xml:lang="en">Admission Diagnosis</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasActualVentDays">
+    <rdfs:domain rdf:resource="http://example.org/ontology#ApachePatientResult"/>
+    <rdfs:comment xml:lang="en">Actual days on ventilation</rdfs:comment>
+    <rdfs:label xml:lang="en">has actual ventilation days</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#region">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Hospital"/>
+    <rdfs:label xml:lang="en">Region</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">The region where the hospital is located.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasDrugEnteredOffset">
+    <rdfs:domain rdf:resource="http://example.org/ontology#AdmissionDrug"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:comment xml:lang="en">Time offset when drug was entered into system</rdfs:comment>
+    <rdfs:label xml:lang="en">drug entered offset</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#uniquepid">
+    <rdfs:label xml:lang="en">Unique Patient ID</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Unique identifier for the patient.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Patient"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#dischargeweight">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Weight of the patient at discharge.</rdfs:comment>
+    <rdfs:label xml:lang="en">Discharge Weight</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Patient"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#NurseCare">
+    <rdfs:comment xml:lang="en">Represents nursing care records for patients</rdfs:comment>
+    <rdfs:label xml:lang="en">NurseCare</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hospitaldischargetime24">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Patient"/>
+    <rdfs:comment xml:lang="en">Time of hospital discharge in 24-hour format.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Hospital Discharge Time (24h)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hospitaldischargelocation">
+    <rdfs:comment xml:lang="en">Location of hospital discharge.</rdfs:comment>
+    <rdfs:label xml:lang="en">Hospital Discharge Location</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Patient"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasPredictedICULOS">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#ApachePatientResult"/>
+    <rdfs:comment xml:lang="en">Predicted length of stay in ICU</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">has predicted ICU length of stay</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#CarePlanCareProvider">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Represents the care plan care provider table.</rdfs:comment>
+    <rdfs:label xml:lang="en">CarePlanCareProvider</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Medication">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Medication</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents medication records for patients</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasNoteID">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">The unique identifier for a note</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Note"/>
+    <rdfs:label xml:lang="en">has note ID</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasUnabridgedUnitLOS">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Unabridged length of stay in unit</rdfs:comment>
+    <rdfs:label xml:lang="en">has unabridged unit length of stay</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#ApachePatientResult"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasPredictedICUMortality">
+    <rdfs:comment xml:lang="en">Predicted mortality rate in ICU</rdfs:comment>
+    <rdfs:label xml:lang="en">has predicted ICU mortality</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#ApachePatientResult"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasNotePath">
+    <rdfs:comment xml:lang="en">The path or location of the note</rdfs:comment>
+    <rdfs:label xml:lang="en">has note path</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Note"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasLabresultrevisedoffset">
+    <rdfs:label xml:lang="en">lab result revised offset</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Lab"/>
+    <rdfs:comment xml:lang="en">Time offset for revised lab result</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#apacheadmissiondx">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">APACHE Admission Diagnosis</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Patient"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Admission diagnosis according to APACHE.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasActiveUponDischarge">
+    <rdfs:domain rdf:resource="http://example.org/ontology#CarePlanGoal"/>
+    <rdfs:label xml:lang="en">has active upon discharge</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Whether the goal is active upon discharge</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasIntakeTotal">
+    <rdfs:domain rdf:resource="http://example.org/ontology#IntakeOutput"/>
+    <rdfs:label xml:lang="en">has intake total</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Total intake measurement</rdfs:comment>
+  </rdf:Description>
+  
+  
+  <rdf:Description rdf:about="http://example.org/ontology#PhysicalExam">
+    <rdfs:label xml:lang="en">Physical Exam</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents a physical examination record.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Lab">
+    <rdfs:label xml:lang="en">Lab</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Represents lab test results for patients</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasLabresulttext">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Lab"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">lab result text</rdfs:label>
+    <rdfs:comment xml:lang="en">Textual result of lab test</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasCellValueNumeric">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#IntakeOutput"/>
+    <rdfs:comment xml:lang="en">Numeric value of the cell</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdfs:label xml:lang="en">has cell value numeric</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#nursingchartcelltypevallabel">
+    <rdfs:comment xml:lang="en">Label for the nursing chart cell type value.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">Nursing Chart Cell Type Value Label</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#NurseCharting"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasCellValueText">
+    <rdfs:comment xml:lang="en">Text value of the cell</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#IntakeOutput"/>
+    <rdfs:label xml:lang="en">has cell value text</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasLabmeasurenameinterface">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Lab"/>
+    <rdfs:comment xml:lang="en">Interface name for lab measurement</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">lab measure name interface</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Patient">
+    <rdfs:comment xml:lang="en">Represents a patient in the healthcare system.</rdfs:comment>
+    <rdfs:label xml:lang="en">Patient</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#ethnicity">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Patient"/>
+    <rdfs:comment xml:lang="en">Ethnicity of the patient.</rdfs:comment>
+    <rdfs:label xml:lang="en">Ethnicity</rdfs:label>
+  </rdf:Description>
+ 
+ 
+  <rdf:Description rdf:about="http://example.org/ontology#nursingchartcelltypevalname">
+    <rdfs:comment xml:lang="en">Name of the nursing chart cell type value.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">Nursing Chart Cell Type Value Name</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#NurseCharting"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasPhysicianSpeciality">
+    <rdfs:comment xml:lang="en">Specialty of the attending physician</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">has physician speciality</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#ApachePatientResult"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasLabresultoffset">
+    <rdfs:label xml:lang="en">lab result offset</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Lab"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Time offset for lab result</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasDrugNoteType">
+    <rdfs:label xml:lang="en">drug note type</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#AdmissionDrug"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Type of note associated with drug administration</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hospitaldischargeoffset">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:comment xml:lang="en">Offset time for hospital discharge.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Patient"/>
+    <rdfs:label xml:lang="en">Hospital Discharge Offset</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#CarePlaneol">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">CarePlaneol</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents the careplaneol table in the database.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasAdmissionDrugID">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="en">admission drug ID</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#AdmissionDrug"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Unique identifier for admission drug record</rdfs:comment>
+  </rdf:Description>
+ 
+ 
+  <rdf:Description rdf:about="http://example.org/ontology#teachingstatus">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Hospital"/>
+    <rdfs:comment xml:lang="en">Indicates whether the hospital is a teaching hospital.</rdfs:comment>
+    <rdfs:label xml:lang="en">Teaching Status</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#nurseAssessId">
+    <rdfs:comment xml:lang="en">The unique identifier for a nurse assessment.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Nurse Assess ID</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#NurseAssessment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasDrugHICLSeqNo">
+    <rdfs:label xml:lang="en">drug HICL sequence number</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Hierarchical Ingredient Code List sequence number</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#AdmissionDrug"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#nursingchartoffset">
+    <rdfs:label xml:lang="en">Nursing Chart Offset</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:comment xml:lang="en">Offset for the nursing chart.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#NurseCharting"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#NurseCharting">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Represents the nurse charting data for a patient.</rdfs:comment>
+    <rdfs:label xml:lang="en">Nurse Charting</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#unitdischargestatus">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Patient"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">Unit Discharge Status</rdfs:label>
+    <rdfs:comment xml:lang="en">Status of the patient at unit discharge.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#RespiratoryCare">
+    <rdfs:label xml:lang="en">RespiratoryCare</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Represents respiratory care data for patients.</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/ontology#ApachePredVar">
+    <rdfs:label xml:lang="en">ApachePredVar</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents the apachepredvar table.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasActualICUMortality">
+    <rdfs:domain rdf:resource="http://example.org/ontology#ApachePatientResult"/>
+    <rdfs:label xml:lang="en">has actual ICU mortality</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Actual mortality outcome in ICU</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasApacheVersion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Version of APACHE scoring system used</rdfs:comment>
+    <rdfs:label xml:lang="en">has APACHE version</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#ApachePatientResult"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#unitstaytype">
+    <rdfs:label xml:lang="en">Unit Stay Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Patient"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Type of unit stay.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasNoteEnteredOffset">
+    <rdfs:label xml:lang="en">has note entered offset</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Note"/>
+    <rdfs:comment xml:lang="en">The time offset for when the note was entered into the system</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasActualICULOS">
+    <rdfs:domain rdf:resource="http://example.org/ontology#ApachePatientResult"/>
+    <rdfs:label xml:lang="en">has actual ICU length of stay</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Actual length of stay in ICU</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#CustomLab">
+    <rdfs:comment xml:lang="en">Represents the customlab table in the database.</rdfs:comment>
+    <rdfs:label xml:lang="en">CustomLab</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasUnabridgedActualVentDays">
+    <rdfs:comment xml:lang="en">Unabridged actual days on ventilation</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#ApachePatientResult"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">has unabridged actual ventilation days</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#nursecareid">
+    <rdfs:comment xml:lang="en">Unique identifier for nurse care records</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#NurseCare"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="en">nurse care ID</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasPredictedHospitalLOS">
+    <rdfs:domain rdf:resource="http://example.org/ontology#ApachePatientResult"/>
+    <rdfs:comment xml:lang="en">Predicted length of stay in hospital</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">has predicted hospital length of stay</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasActualHospitalMortality">
+    <rdfs:label xml:lang="en">has actual hospital mortality</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#ApachePatientResult"/>
+    <rdfs:comment xml:lang="en">Actual mortality outcome in hospital</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasCplGoalOffset">
+    <rdfs:comment xml:lang="en">The time offset for the care plan goal</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#CarePlanGoal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">has care plan goal offset</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/ontology#hasDrugDosage">
+    <rdfs:comment xml:lang="en">Amount of drug administered</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#AdmissionDrug"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">drug dosage</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Microlab">
+    <rdfs:label xml:lang="en">Microlab</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Represents a microlab record in the database.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#CarePlanInfectiousDisease">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Represents the care plan for infectious diseases.</rdfs:comment>
+    <rdfs:label xml:lang="en">Care Plan Infectious Disease</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasDrugUnit">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">drug unit</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#AdmissionDrug"/>
+    <rdfs:comment xml:lang="en">Unit of measurement for drug dosage</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#AdmissionDrug">
+    <rdfs:label xml:lang="en">Admission Drug</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Represents drug administration records during patient admission</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasCplGoalId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="en">has care plan goal ID</rdfs:label>
+    <rdfs:comment xml:lang="en">The unique identifier for a care plan goal</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#CarePlanGoal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#VitalPeriodic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Represents periodic vital sign measurements for patients</rdfs:comment>
+    <rdfs:label xml:lang="en">Vital Periodic</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#nurseAssessOffset">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:comment xml:lang="en">The offset time for the nurse assessment.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#NurseAssessment"/>
+    <rdfs:label xml:lang="en">Nurse Assess Offset</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Treatment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#InfusionDrug">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">InfusionDrug</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents the infusion drug table.</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/ontology#PastHistory">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#unitdischargetime24">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Unit Discharge Time (24h)</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Patient"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Time of unit discharge in 24-hour format.</rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>

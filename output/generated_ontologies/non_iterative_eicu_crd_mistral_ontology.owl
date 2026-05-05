@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentAllergyHiclSeqNo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasPatientUnitStay">
+    <rdfs:domain rdf:resource="http://example.org/ontology#AdmissionDrug"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#admissiondx"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Allergy"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#ApachePatientResult"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#apachepredvar"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#careplancareprovider"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#careplaneol"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#careplangeneral"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#careplangoal"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#careplaninfectiousdisease"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#customlab"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Diagnosis"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#InfusionDrug"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#IntakeOutput"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#microlab"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#patient"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#NurseAssessment"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#nursecare"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#NurseCharting"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#pasthistory"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#physicalexam"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#RespiratoryCare"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#RespiratoryCharting"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#VitalAperiodic"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#VitalPeriodic"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#PatientUnitStay"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#patientunitstay"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#Patient"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#patient"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#microlab"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">Represents an allergy record in the database.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Indicates if the allergy is included in the Rx.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The name of the allergy.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The type of user associated with the allergy.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The HICL sequence number for the drug associated with the allergy.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The unique identifier for the allergy record.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The name of the drug associated with the allergy.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The type of note for the allergy.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The type of the allergy.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The offset for the allergy record.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links an allergy record to a patient unit stay.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Indicates if the allergy was written in the EICU.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The specialty type associated with the allergy.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The offset when the allergy was entered.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The response to therapy for the infectious disease.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links a care plan for infectious disease to a patient unit stay.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The site of the infectious disease.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Indicates if the care plan is active upon discharge.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The treatment for the infectious disease.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The unique identifier for the care plan infectious disease.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The offset for the care plan infectious disease.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The assessment of the infectious disease.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The offset of the nurse care entry.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The attribute of the cell.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The value of the cell attribute.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The label of the cell.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The offset of the nurse care.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The ID of the nurse care entry.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The path of the cell attribute.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links a NurseCare instance to a PatientUnitStay instance.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The offset of the respiratory charting entry.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The type category of the respiratory charting entry.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The entry offset of the respiratory charting entry.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links a respiratory charting entry to a patient unit stay.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The ID of the respiratory charting entry.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The value label of the respiratory charting entry.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The value of the respiratory charting entry.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The ID of the vital aperiodic record</rdfs:comment>
+    <rdfs:comment xml:lang="en">The PVR measurement</rdfs:comment>
+    <rdfs:comment xml:lang="en">The PAOP measurement</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links a VitalAperiodic instance to its associated PatientUnitStay instance</rdfs:comment>
+    <rdfs:comment xml:lang="en">The cardiac input measurement</rdfs:comment>
+    <rdfs:comment xml:lang="en">The PVRI measurement</rdfs:comment>
+    <rdfs:comment xml:lang="en">The SVRI measurement</rdfs:comment>
+    <rdfs:comment xml:lang="en">The cardiac output measurement</rdfs:comment>
+    <rdfs:comment xml:lang="en">The noninvasive diastolic measurement</rdfs:comment>
+    <rdfs:comment xml:lang="en">The observation offset</rdfs:comment>
+    <rdfs:comment xml:lang="en">The noninvasive systolic measurement</rdfs:comment>
+    <rdfs:comment xml:lang="en">The SVR measurement</rdfs:comment>
+    <rdfs:comment xml:lang="en">The noninvasive mean measurement</rdfs:comment>
+    <rdfs:label xml:lang="en">hasDrugName</rdfs:label>
+    <rdfs:label xml:lang="en">hasAllergyOffset</rdfs:label>
+    <rdfs:label xml:lang="en">hasAllergyName</rdfs:label>
+    <rdfs:label xml:lang="en">hasAllergyEnteredOffset</rdfs:label>
+    <rdfs:label xml:lang="en">hasRxIncluded</rdfs:label>
+    <rdfs:label xml:lang="en">hasWrittenInEICU</rdfs:label>
+    <rdfs:label xml:lang="en">hasSpecialtyType</rdfs:label>
+    <rdfs:label xml:lang="en">hasAllergyType</rdfs:label>
+    <rdfs:label xml:lang="en">hasAllergyNoteType</rdfs:label>
+    <rdfs:label xml:lang="en">hasUserType</rdfs:label>
+    <rdfs:label xml:lang="en">Allergy</rdfs:label>
+    <rdfs:label xml:lang="en">hasPatientUnitStay</rdfs:label>
+    <rdfs:label xml:lang="en">hasDrugHICLSeqNo</rdfs:label>
+    <rdfs:label xml:lang="en">hasAllergyID</rdfs:label>
+    <rdfs:label xml:lang="en">has patient unit stay</rdfs:label>
+    <rdfs:label xml:lang="en">infectious disease assessment</rdfs:label>
+    <rdfs:label xml:lang="en">response to therapy</rdfs:label>
+    <rdfs:label xml:lang="en">active upon discharge</rdfs:label>
+    <rdfs:label xml:lang="en">care plan infectious disease offset</rdfs:label>
+    <rdfs:label xml:lang="en">infectious disease site</rdfs:label>
+    <rdfs:label xml:lang="en">care plan infectious disease id</rdfs:label>
+    <rdfs:label xml:lang="en">treatment</rdfs:label>
+    <rdfs:label xml:lang="en">has nurse care entry offset</rdfs:label>
+    <rdfs:label xml:lang="en">has nurse care id</rdfs:label>
+    <rdfs:label xml:lang="en">has nurse care offset</rdfs:label>
+    <rdfs:label xml:lang="en">has cell label</rdfs:label>
+    <rdfs:label xml:lang="en">has cell attribute</rdfs:label>
+    <rdfs:label xml:lang="en">has cell attribute value</rdfs:label>
+    <rdfs:label xml:lang="en">has cell attribute path</rdfs:label>
+    <rdfs:label xml:lang="en">has respiratory chart type category</rdfs:label>
+    <rdfs:label xml:lang="en">has respiratory chart ID</rdfs:label>
+    <rdfs:label xml:lang="en">has respiratory chart value</rdfs:label>
+    <rdfs:label xml:lang="en">has respiratory chart offset</rdfs:label>
+    <rdfs:label xml:lang="en">has respiratory chart entry offset</rdfs:label>
+    <rdfs:label xml:lang="en">has respiratory chart value label</rdfs:label>
+    <rdfs:label xml:lang="en">has svri</rdfs:label>
+    <rdfs:label xml:lang="en">has observation offset</rdfs:label>
+    <rdfs:label xml:lang="en">has cardiac output</rdfs:label>
+    <rdfs:label xml:lang="en">has pvri</rdfs:label>
+    <rdfs:label xml:lang="en">has paop</rdfs:label>
+    <rdfs:label xml:lang="en">has vital aperiodic id</rdfs:label>
+    <rdfs:label xml:lang="en">has svr</rdfs:label>
+    <rdfs:label xml:lang="en">has pvr</rdfs:label>
+    <rdfs:label xml:lang="en">has noninvasive systolic</rdfs:label>
+    <rdfs:label xml:lang="en">has noninvasive diastolic</rdfs:label>
+    <rdfs:label xml:lang="en">has cardiac input</rdfs:label>
+    <rdfs:label xml:lang="en">has noninvasive mean</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#">
+    <rdfs:label xml:lang="en">ethnicity</rdfs:label>
+    <rdfs:label xml:lang="en">unit admit source</rdfs:label>
+    <rdfs:label xml:lang="en">hospital discharge status</rdfs:label>
+    <rdfs:label xml:lang="en">hospital discharge time 24</rdfs:label>
+    <rdfs:label xml:lang="en">patient health system stay id</rdfs:label>
+    <rdfs:label xml:lang="en">hospital discharge year</rdfs:label>
+    <rdfs:label xml:lang="en">hospital admit time 24</rdfs:label>
+    <rdfs:label xml:lang="en">unit stay type</rdfs:label>
+    <rdfs:label xml:lang="en">unit discharge time 24</rdfs:label>
+    <rdfs:label xml:lang="en">apache admission dx</rdfs:label>
+    <rdfs:label xml:lang="en">hospital admit offset</rdfs:label>
+    <rdfs:label xml:lang="en">unit admit time 24</rdfs:label>
+    <rdfs:label xml:lang="en">hospital admit source</rdfs:label>
+    <rdfs:label xml:lang="en">hospital discharge location</rdfs:label>
+    <rdfs:label xml:lang="en">age</rdfs:label>
+    <rdfs:label xml:lang="en">ward id</rdfs:label>
+    <rdfs:label xml:lang="en">unit discharge offset</rdfs:label>
+    <rdfs:label xml:lang="en">admission height</rdfs:label>
+    <rdfs:label xml:lang="en">hospital discharge offset</rdfs:label>
+    <rdfs:label xml:lang="en">unit type</rdfs:label>
+    <rdfs:label xml:lang="en">unit visit number</rdfs:label>
+    <rdfs:label xml:lang="en">discharge weight</rdfs:label>
+    <rdfs:label xml:lang="en">unit discharge status</rdfs:label>
+    <rdfs:label xml:lang="en">unique pid</rdfs:label>
+    <rdfs:label xml:lang="en">patient unit stay id</rdfs:label>
+    <rdfs:label xml:lang="en">has hospital</rdfs:label>
+    <rdfs:label xml:lang="en">admission weight</rdfs:label>
+    <rdfs:label xml:lang="en">gender</rdfs:label>
+    <rdfs:label xml:lang="en">unit discharge location</rdfs:label>
+    <rdfs:comment xml:lang="en">The status of unit discharge</rdfs:comment>
+    <rdfs:comment xml:lang="en">The type of unit where the patient is admitted</rdfs:comment>
+    <rdfs:comment xml:lang="en">The unique identifier for the patient's unit stay</rdfs:comment>
+    <rdfs:comment xml:lang="en">The visit number for the unit</rdfs:comment>
+    <rdfs:comment xml:lang="en">The location of unit discharge</rdfs:comment>
+    <rdfs:comment xml:lang="en">The status of hospital discharge</rdfs:comment>
+    <rdfs:comment xml:lang="en">The unique patient identifier</rdfs:comment>
+    <rdfs:comment xml:lang="en">The hospital where the patient is admitted</rdfs:comment>
+    <rdfs:comment xml:lang="en">The height of the patient at admission</rdfs:comment>
+    <rdfs:comment xml:lang="en">The Apache admission diagnosis for the patient</rdfs:comment>
+    <rdfs:comment xml:lang="en">The gender of the patient</rdfs:comment>
+    <rdfs:comment xml:lang="en">The age of the patient</rdfs:comment>
+    <rdfs:comment xml:lang="en">The unique identifier for the patient's health system stay</rdfs:comment>
+    <rdfs:comment xml:lang="en">The source of unit admission</rdfs:comment>
+    <rdfs:comment xml:lang="en">The 24-hour format time of unit discharge</rdfs:comment>
+    <rdfs:comment xml:lang="en">The weight of the patient at discharge</rdfs:comment>
+    <rdfs:comment xml:lang="en">The location of hospital discharge</rdfs:comment>
+    <rdfs:comment xml:lang="en">The 24-hour format time of unit admission</rdfs:comment>
+    <rdfs:comment xml:lang="en">The offset of unit discharge</rdfs:comment>
+    <rdfs:comment xml:lang="en">The ethnicity of the patient</rdfs:comment>
+    <rdfs:comment xml:lang="en">The offset of hospital discharge</rdfs:comment>
+    <rdfs:comment xml:lang="en">The source of hospital admission</rdfs:comment>
+    <rdfs:comment xml:lang="en">The weight of the patient at admission</rdfs:comment>
+    <rdfs:comment xml:lang="en">The offset of hospital admission</rdfs:comment>
+    <rdfs:comment xml:lang="en">The type of unit stay</rdfs:comment>
+    <rdfs:comment xml:lang="en">The year of hospital discharge</rdfs:comment>
+    <rdfs:comment xml:lang="en">The 24-hour format time of hospital discharge</rdfs:comment>
+    <rdfs:comment xml:lang="en">The 24-hour format time of hospital admission</rdfs:comment>
+    <rdfs:comment xml:lang="en">The unique identifier for the ward where the patient is admitted</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Patient"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#Hospital"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentAllergyType">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentActualHospitalLos">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentPreopMi">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentCreatinine">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentUrine">
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentAllergyWrittenInIcu">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasApachePredVar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#ApachePredVar"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Diagnosis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hospital">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentAllergyOffset">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasApacheApsVar">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Diagnosis"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#ApacheApsVar"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#treatment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#VitalAperiodic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentAllergyNoteType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#IntakeOutput">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentSpecialtyType">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasLabTypeId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#xsd:decimal"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Lab"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentSaps3Day1">
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentDrugNoteType">
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentPh">
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentPhysicianSpeciality">
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentDosage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentRxIncluded">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentWrittenInIcu">
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentTemperature">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasLabResultText">
+    <rdfs:range rdf:resource="http://example.org/ontology#xsd:string"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Lab"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentUnabridgedHospLos">
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasLabMeasureNameInterface">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#xsd:string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Lab"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentSicuDay">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentPredictedHospitalLos">
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentAllergyDrugName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentUnabridgedActualVentDays">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentGlucose">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasCplItemValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#xsd:string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#careplangeneral"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentAllergySpecialtyType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentRegion">
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasDiagnosisId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Diagnosis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentAdmitDxText">
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatment">
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#treatment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentGraftCount">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentAlbumin">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentBun">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentActualIcuMortality">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentSaps3Yesterday">
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasActiveOnDischarge">
+    <rdfs:domain rdf:resource="http://example.org/ontology#careplangeneral"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Diagnosis"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#xsd:string"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#admissiondx">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentString">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentUnabridgedUnitLos">
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentPao2">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentVerbal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentHematocrit">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentDescriptiveName">
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentMeds">
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentActualIcuLos">
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#VitalPeriodic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentTeachType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentUserType">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#careplangoal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasCplItemOffset">
+    <rdfs:range rdf:resource="http://example.org/ontology#xsd:integer"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#careplangeneral"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentEndDate">
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentAdmitSource">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentPredictedHospitalMortality">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasLabOtherType">
+    <rdfs:domain rdf:resource="http://example.org/ontology#customlab"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#LabOtherType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasPatientUnitStayId">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Lab"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Note"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#PatientUnitStay"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#Patient"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasLabMeasureNameSystem">
+    <rdfs:range rdf:resource="http://example.org/ontology#xsd:string"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Lab"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentSaps3Today">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Diagnosis">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentAllergyName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasAdmissionDrug">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Diagnosis"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#AdmissionDrug"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentAcutePhysiologyScore">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasIcd9Code">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Diagnosis"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentApacheVersion">
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentDrugUnit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentPhysicianInterventionCategory">
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentAllergyRxIncluded">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasDiagnosisOffset">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Diagnosis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentVent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentDrugHiclSeqNo">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentPredictedIcuMortality">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasLabId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#xsd:integer"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Lab"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasLabName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#xsd:string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Lab"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentEyes">
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentDrugAdmitFrequency">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#ApachePatientResult">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentPredictedIcuLos">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentBilirubin">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#nursecare">
+    <rdfs:comment xml:lang="en">A class representing the nursecare table in the database.</rdfs:comment>
+    <rdfs:label xml:lang="en">NurseCare</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentWbc">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasAllergy">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Diagnosis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#Allergy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentDialysis">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasLabResult">
+    <rdfs:range rdf:resource="http://example.org/ontology#xsd:decimal"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Lab"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentFio2">
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentDrugName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentStartDate">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentBedCount">
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentAdmitDxName">
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#apacheapsvar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentGender">
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentOffset">
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentPco2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#NurseAssessment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentUnit">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentMotor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentPtcaWithin24h">
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentApacheScore">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentActualVentDays">
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasAdmissionDx">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Diagnosis"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#AdmissionDx"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentDrugDosage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentActualHospitalMortality">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasPatientunitstayid">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#patient"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#apacheapsvar"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentDrugEnteredOffset">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#customlab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentHeartRate">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentDuration">
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentHiclSeqNo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentIntubated">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentSodium">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentAdmitDxEnteredOffset">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Medication">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentRespiratoryRate">
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentAllergyUserType">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasApachePatientResult">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#ApachePatientResult"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Diagnosis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Note">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasCplGroup">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#careplangeneral"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#xsd:string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentAdmitDxPath">
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#physicalexam">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentPreopCardiacCath">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasLabResultOffset">
+    <rdfs:range rdf:resource="http://example.org/ontology#xsd:integer"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Lab"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentDrugOffset">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentDesign">
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentAllergyEnteredOffset">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentPredVentDays">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentMeanBp">
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#microlab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasLabResultRevisedOffset">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Lab"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#xsd:integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasDiagnosisString">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Diagnosis"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasTreatmentFrequency">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#treatment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Allergy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasDiagnosisPriority">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Diagnosis"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#careplaneol">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#NurseCharting">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#careplaninfectiousdisease">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#patientunitstay">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#pasthistory">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#careplangeneral">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#careplancareprovider">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#RespiratoryCharting">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#AdmissionDrug">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#apachepredvar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#RespiratoryCare">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Patient">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#InfusionDrug">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

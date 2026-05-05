@@ -1,0 +1,1477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:prov="http://www.w3.org/ns/prov#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://example.org/ontology#Track_hasGenre">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Track/GenreId"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#Genre"/>
+    <rdfs:label xml:lang="en">Track has Genre</rdfs:label>
+    <rdfs:label xml:lang="en">has genre</rdfs:label>
+    <rdfs:comment xml:lang="en">Object property generated from foreign key 'Track.GenreId' referencing 'Genre.GenreId'.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links a track to its musical genre classification, when specified.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Track"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Invoice_Total">
+    <rdfs:label xml:lang="en">Total</rdfs:label>
+    <rdfs:label xml:lang="en">total amount</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Invoice"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Invoice/Total"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Invoice.Total' with range xsd:decimal.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The total monetary amount of the invoice.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Album">
+    <rdfs:subClassOf rdf:nodeID="N833c3a955b0f4b308ee827047f0aef45"/>
+    <rdfs:subClassOf rdf:nodeID="Nfe0f12a002a849e49214e75a555119c2"/>
+    <rdfs:subClassOf rdf:nodeID="Nce76ffce7af1447fae0cbae2baeab7de"/>
+    <rdfs:subClassOf rdf:nodeID="Ne3b4eb8818b24b1e8c679ebefc0d9369"/>
+    <rdfs:subClassOf rdf:nodeID="Nc096423da82c49188383469b72e45e53"/>
+    <rdfs:subClassOf rdf:nodeID="Nadcac47d4e064c69b72d96d25fc2ca0b"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Unnamed"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Album"/>
+    <rdfs:label xml:lang="en">Album</rdfs:label>
+    <rdfs:label xml:lang="en">Music album</rdfs:label>
+    <owl:hasKey rdf:nodeID="N188f6ddfd15d45ffa3b94701cbba2c7e"/>
+    <owl:hasKey rdf:nodeID="N3c6728f3d5a44492a56f42dfcaa6a385"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Class generated from source table 'Album'.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A collection of musical tracks released as a single work.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N934c3eb03d4642b38c2c07a2964e3506">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://example.org/ontology#Playlist_PlaylistId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Track_TrackId">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Track"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Track/TrackId"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Track Id</rdfs:label>
+    <rdfs:label xml:lang="en">track identifier</rdfs:label>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Track.TrackId' with range xsd:integer.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The primary key identifier for a music track.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Employee">
+    <rdfs:subClassOf rdf:nodeID="Ne29546464c014580881b5f8c3158a6a3"/>
+    <rdfs:subClassOf rdf:nodeID="N66f04f95eb0148ae82850cf90ae0a580"/>
+    <rdfs:subClassOf rdf:nodeID="N4ca64313ff80495986f9f9e61f39d38c"/>
+    <rdfs:subClassOf rdf:nodeID="Nb8f076a7d6ba4b80a6767a15d794b68f"/>
+    <rdfs:subClassOf rdf:nodeID="N2c4fda1af733414c9129fdffa6b0b161"/>
+    <rdfs:subClassOf rdf:nodeID="N8e17023318284710949aa8d83c0d6539"/>
+    <rdfs:subClassOf rdf:nodeID="N213343ccac744060ad7280f42060d939"/>
+    <rdfs:subClassOf rdf:nodeID="Nabb69c5b06cd417ca89c18d15341158e"/>
+    <rdfs:subClassOf rdf:nodeID="N44ec5ccbe44047828eb8a8658f33db35"/>
+    <rdfs:subClassOf rdf:nodeID="Nc51a82fa5d5a45f0ac1c76358467d06c"/>
+    <rdfs:subClassOf rdf:nodeID="Nbcb955ca6b534833b0795eb34506af6b"/>
+    <rdfs:subClassOf rdf:nodeID="Nc315ccd9d0ff4bbf9686e0df0f5a3e8d"/>
+    <rdfs:subClassOf rdf:nodeID="Ncfbdd513b8174435a24616f5c1280e3d"/>
+    <rdfs:subClassOf rdf:nodeID="N5d9d84e79cd54fc4b8f6a904c50b5eff"/>
+    <rdfs:subClassOf rdf:nodeID="N6ac6d8aa71c748a086bb1b0dce8681f8"/>
+    <rdfs:subClassOf rdf:nodeID="N770fe9b306e74e98b1fb04ed92e07e94"/>
+    <rdfs:subClassOf rdf:nodeID="N0d9cc25562d9442fafb3e96c6d9af496"/>
+    <rdfs:subClassOf rdf:nodeID="N8223cb86462a4c89af491de2f1eef315"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Employee_HireDate_max_1_xsd_datetime"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Employee_Fax_max_1_xsd_string"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Employee_Phone_max_1_xsd_string"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Employee_EmployeeId_exactly_1_xsd_integer"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Employee_LastName_exactly_1_xsd_string"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Employee_Address_max_1_xsd_string"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Employee_State_max_1_xsd_string"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Employee_Email_max_1_xsd_string"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Employee_BirthDate_max_1_xsd_datetime"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Employee_FirstName_exactly_1_xsd_string"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Employee_Title_max_1_xsd_string"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Employee_ReportsTo_max_1_Employee"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Employee_City_max_1_xsd_string"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Employee_PostalCode_max_1_xsd_string"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Employee_Country_max_1_xsd_string"/>
+    <owl:hasKey rdf:nodeID="Neaa870cf69964f0fa4440a3661c8f3b8"/>
+    <owl:hasKey rdf:nodeID="Ne7f8972ba4f4460e9563e6f857e252ba"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Employee"/>
+    <rdfs:label xml:lang="en">Employee</rdfs:label>
+    <rdfs:comment xml:lang="en">Class generated from source table 'Employee'.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A person employed by the organization, with personal details, job information, and organizational relationships.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na5ead93bfd284e1baaf34975d4174900">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://example.org/ontology#MediaType_MediaTypeId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Customer">
+    <rdfs:subClassOf rdf:nodeID="N14dc130683804f0e838570fde152efa0"/>
+    <rdfs:subClassOf rdf:nodeID="N6bdf5d13fb8d4caa9184dfbcc332d542"/>
+    <rdfs:subClassOf rdf:nodeID="N06247244b00d49df9c240285bc20f313"/>
+    <rdfs:subClassOf rdf:nodeID="N628ec3bb89e246bda034e1e546bd6f5d"/>
+    <rdfs:subClassOf rdf:nodeID="Ndcad0259070041e882b4469bbc50e0c2"/>
+    <rdfs:subClassOf rdf:nodeID="N933104e557fa4014a7c6322319862469"/>
+    <rdfs:subClassOf rdf:nodeID="N5eef5b09ec274270bd651dde8246f3e6"/>
+    <rdfs:subClassOf rdf:nodeID="N2cec9b0bffb3440a889175ee07de8595"/>
+    <rdfs:subClassOf rdf:nodeID="Nd2ae18da0b674869bc6b4332fa50b865"/>
+    <rdfs:subClassOf rdf:nodeID="Nd1a1d05a750149389d8f01dfd7f195f6"/>
+    <rdfs:subClassOf rdf:nodeID="N7fa4ae1decd24e6c9593eef48c82c711"/>
+    <rdfs:subClassOf rdf:nodeID="N8d83475bb58c4b6a931ab53eee4721c9"/>
+    <rdfs:subClassOf rdf:nodeID="Ne86af9656f034fe5810fa406cb7bc843"/>
+    <rdfs:subClassOf rdf:nodeID="N6be983b52c024ed58fe9cc9e15688d6f"/>
+    <rdfs:subClassOf rdf:nodeID="N87617f5e19ba4293830be5710c76e6c7"/>
+    <rdfs:subClassOf rdf:nodeID="N51781f52ae75401eab608feea7957c38"/>
+    <rdfs:subClassOf rdf:nodeID="N7b827a5d94e94f3b9fe6b9e5c62c91fb"/>
+    <rdfs:subClassOf rdf:nodeID="Nf66d7720c5c643e1b5252bfb5f7f4a43"/>
+    <owl:hasKey rdf:nodeID="Nb1c8293167524d238ebf439fb939bcfd"/>
+    <rdfs:comment xml:lang="en">Class generated from source table 'Customer'.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents a customer of the digital media store, storing personal, contact, and support information.</rdfs:comment>
+    <rdfs:label xml:lang="en">Customer</rdfs:label>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Customer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7fa4ae1decd24e6c9593eef48c82c711">
+    <owl:onProperty rdf:resource="http://example.org/ontology#Customer_Company"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Track_Composer">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Track"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Track/Composer"/>
+    <rdfs:label xml:lang="en">Composer</rdfs:label>
+    <rdfs:label xml:lang="en">composer</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Track.Composer' with range xsd:string.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The composer(s) of the music track, when known.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb668225010af487f85aed98d1e4bfb3a">
+    <owl:onProperty rdf:resource="http://example.org/ontology#MediaType_MediaTypeId"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#PlaylistTrack_hasTrack">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/PlaylistTrack/TrackId"/>
+    <rdfs:comment xml:lang="en">Object property generated from foreign key 'PlaylistTrack.TrackId' referencing 'Track.TrackId'.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Indicates the track associated with this playlist-track relationship.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#PlaylistTrack"/>
+    <rdfs:label xml:lang="en">Playlist Track has Track</rdfs:label>
+    <rdfs:label xml:lang="en">has Track</rdfs:label>
+    <rdfs:range rdf:resource="http://example.org/ontology#Track"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Track">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Track"/>
+    <rdfs:subClassOf rdf:nodeID="N9f6ed18415eb44ae8606ccfc533e9229"/>
+    <rdfs:subClassOf rdf:nodeID="N7e9107bb683445c5993cae5d42d5708e"/>
+    <rdfs:subClassOf rdf:nodeID="N766c309d435a4c698dc2f3b27a8fcb1d"/>
+    <rdfs:subClassOf rdf:nodeID="N36f62824e4234c3fa478bcca541c3844"/>
+    <rdfs:subClassOf rdf:nodeID="N9f94dc0035494b3bb0998c8fc605aa9a"/>
+    <rdfs:subClassOf rdf:nodeID="N9bd00cedc880434e82fe603173af5aaf"/>
+    <rdfs:subClassOf rdf:nodeID="N3f599d299abf4a5a81a66b703fbc2d6f"/>
+    <rdfs:subClassOf rdf:nodeID="Ne4a72827ab13458e85f5c2ac6b11b3c6"/>
+    <rdfs:subClassOf rdf:nodeID="N1a52e34fae5b42c2880e88ccb078a9ab"/>
+    <rdfs:subClassOf rdf:nodeID="N15126b1c86f84830b5b0865609042362"/>
+    <rdfs:subClassOf rdf:nodeID="N76889997afcb4f478eddeb5ffdbd3268"/>
+    <rdfs:subClassOf rdf:nodeID="N5ff671e94aad43389731600590fe8b4d"/>
+    <rdfs:subClassOf rdf:nodeID="Nec46e320ff87440c86b9cf1512fedf59"/>
+    <rdfs:subClassOf rdf:nodeID="Nacefc6d237e648c89645ad4419fe4684"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Track_TrackId_exactly_1_xsd_integer"/>
+    <rdfs:label xml:lang="en">Track</rdfs:label>
+    <rdfs:label xml:lang="en">Music track</rdfs:label>
+    <owl:hasKey rdf:nodeID="Na245e5e11c744f05b19b949d9ae3982f"/>
+    <owl:hasKey rdf:nodeID="N3bfb87bac18b48798a5a6dd529338303"/>
+    <rdfs:comment xml:lang="en">Class generated from source table 'Track'.</rdfs:comment>
+    <rdfs:comment xml:lang="en">An individual music recording in the catalog, with metadata about its content, format, and pricing.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#MediaType">
+    <rdfs:subClassOf rdf:nodeID="N361e9a153cd14729aaf6eea664ec01f7"/>
+    <rdfs:subClassOf rdf:nodeID="Nb668225010af487f85aed98d1e4bfb3a"/>
+    <rdfs:subClassOf rdf:nodeID="Nfdba9f005af34865ba91bf9609905362"/>
+    <rdfs:subClassOf rdf:nodeID="N655a66738eb44d718bea3d37b8d35712"/>
+    <rdfs:subClassOf rdf:nodeID="N5f85236e8bcb4c8fbe6adc9a28ac56fc"/>
+    <rdfs:label xml:lang="en">Media Type</rdfs:label>
+    <owl:hasKey rdf:nodeID="N9b71c5e7a1c147089717a74dd8a14739"/>
+    <owl:hasKey rdf:nodeID="Na5ead93bfd284e1baaf34975d4174900"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/MediaType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Class generated from source table 'MediaType'.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the media format or encoding types for tracks in the catalogue.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Customer_City">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Customer/City"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <rdfs:label xml:lang="en">City</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Customer.City' with range xsd:string.</rdfs:comment>
+    <rdfs:comment xml:lang="en">City of the customer address.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Customer_Email">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Customer/Email"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Customer.Email' with range xsd:string.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Customer email address. This is a required field.</rdfs:comment>
+    <rdfs:label xml:lang="en">Email</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Invoice_BillingCity">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Invoice/BillingCity"/>
+    <rdfs:label xml:lang="en">Billing City</rdfs:label>
+    <rdfs:label xml:lang="en">billing city</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Invoice.BillingCity' with range xsd:string.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The city used for billing purposes.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Invoice"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#InvoiceLine">
+    <rdfs:label xml:lang="en">Invoice Line</rdfs:label>
+    <rdfs:label xml:lang="en">Invoice line item</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="Ne1ac71ab61504d7baad500b1272c1bc1"/>
+    <rdfs:subClassOf rdf:nodeID="Nc31b29264b834e71b91a83f34d1bc9f5"/>
+    <rdfs:subClassOf rdf:nodeID="N77133d35700a4586bfefbdbfc6939233"/>
+    <rdfs:subClassOf rdf:nodeID="Naf54bdc1afb64a47ab7b75c80f9d3189"/>
+    <rdfs:subClassOf rdf:nodeID="N19b6c2befc154e269adbfed8c9cb88a5"/>
+    <rdfs:subClassOf rdf:nodeID="N4e2541b4455f470f8487933cd47d8d72"/>
+    <rdfs:subClassOf rdf:nodeID="N18bb2468a07f4552865610539d62b576"/>
+    <rdfs:subClassOf rdf:nodeID="N001d5d5ba7884d0d82292bcd6dd31da4"/>
+    <rdfs:subClassOf rdf:nodeID="Ne75c46b7f2e64716b5710baf10609005"/>
+    <rdfs:subClassOf rdf:nodeID="Na7badd8daa904673ba45bf1e76976f90"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Unnamed"/>
+    <rdfs:comment xml:lang="en">Class generated from source table 'InvoiceLine'.</rdfs:comment>
+    <rdfs:comment xml:lang="en">An individual purchased item within an invoice, connecting an invoice to a track with quantity and price information.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/InvoiceLine"/>
+    <owl:hasKey rdf:nodeID="N5253500d83bc4c3fbd200d42f28b4287"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Artist">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="N6cdf65f5aa454e4ca9e8c5183b55eff4"/>
+    <rdfs:subClassOf rdf:nodeID="N463c779eb18e4a06857bfcddb31c1757"/>
+    <rdfs:subClassOf rdf:nodeID="Ncc7f1039262345ffbdf15900c9629883"/>
+    <rdfs:subClassOf rdf:nodeID="Neccfccaba085418988c2d8428e6259cd"/>
+    <owl:hasKey rdf:nodeID="N65f1378de31841e8bb08670637b4b937"/>
+    <owl:hasKey rdf:nodeID="N936f9988ee2f44128113fde4e2bd94a3"/>
+    <rdfs:comment xml:lang="en">Class generated from source table 'Artist'.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents a musical artist or performer entity in the music catalogue.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Artist"/>
+    <rdfs:label xml:lang="en">Artist</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#InvoiceLine_hasInvoice">
+    <rdfs:comment xml:lang="en">Object property generated from foreign key 'InvoiceLine.InvoiceId' referencing 'Invoice.InvoiceId'.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links an invoice line item to its containing invoice.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/InvoiceLine/InvoiceId"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#InvoiceLine"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#Invoice"/>
+    <rdfs:label xml:lang="en">Invoice Line has Invoice</rdfs:label>
+    <rdfs:label xml:lang="en">has invoice</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Album_AlbumId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Album"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Album.AlbumId' with range xsd:integer.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Primary key identifier for an album in the music catalogue.</rdfs:comment>
+    <rdfs:label xml:lang="en">Album Id</rdfs:label>
+    <rdfs:label xml:lang="en">album identifier</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Album/AlbumId"/>
+    <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/P10262"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na245e5e11c744f05b19b949d9ae3982f">
+    <rdf:first rdf:resource="http://example.org/ontology#Track_TrackId"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Genre_Name">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Name</rdfs:label>
+    <rdfs:label xml:lang="en">Genre Name</rdfs:label>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Genre.Name' with range xsd:string.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The name or title of a music genre.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Genre/Name"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Invoice">
+    <rdfs:subClassOf rdf:nodeID="N1d801d2bd5d0486191cfea2f24645f8d"/>
+    <rdfs:subClassOf rdf:nodeID="N01099a7cb0734112adea869faf0cfa9e"/>
+    <rdfs:subClassOf rdf:nodeID="N152a13daeed848928396d25a8a63b72e"/>
+    <rdfs:subClassOf rdf:nodeID="N49ff66d5e8cd43eda085a40feba56d56"/>
+    <rdfs:subClassOf rdf:nodeID="Nd0ed66588b7f44e4bb5690c5e123cd42"/>
+    <rdfs:subClassOf rdf:nodeID="N0351946f2357405e8160a085475205be"/>
+    <rdfs:subClassOf rdf:nodeID="N8606bee20f90423cadc9e41020139d55"/>
+    <rdfs:subClassOf rdf:nodeID="N6067629639464521b6ef676d939ea88f"/>
+    <rdfs:subClassOf rdf:nodeID="N1b545117e46542c1b8be44757f454ded"/>
+    <rdfs:subClassOf rdf:nodeID="Nee9f6b11ad094462b2d777c8484b3ff0"/>
+    <rdfs:subClassOf rdf:nodeID="Nd73250bca58d4bababf66a7a6055cec3"/>
+    <rdfs:subClassOf rdf:nodeID="N11e0c3f4b76f4ff88fb5e96349d7257c"/>
+    <rdfs:subClassOf rdf:nodeID="N354faacd8c084992af33454c021cd262"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Unnamed"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Invoice"/>
+    <owl:hasKey rdf:nodeID="Nd2e589e6650f4ee99d7c6d69ca934d78"/>
+    <owl:hasKey rdf:nodeID="N76b7170ce0f443f0a7560e236ca7a0b3"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Invoice</rdfs:label>
+    <rdfs:comment xml:lang="en">Class generated from source table 'Invoice'.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A document issued by a seller to a buyer indicating the products, quantities, and agreed prices for products or services provided.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Employee_Phone">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Employee"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Employee.Phone' with range xsd:string.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The contact telephone number for the employee.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Employee/Phone"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Phone</rdfs:label>
+    <rdfs:label xml:lang="en">phone number</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Employee_HireDate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:label xml:lang="en">Hire Date</rdfs:label>
+    <rdfs:label xml:lang="en">hire date</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Employee"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Employee.HireDate' with range xsd:datetime.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The date when the employee was hired by the organization.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Employee/HireDate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#InvoiceLine_UnitPrice">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#InvoiceLine"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'InvoiceLine.UnitPrice' with range xsd:decimal.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The price per unit of the track at the time of purchase.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/InvoiceLine/UnitPrice"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdfs:label xml:lang="en">Unit Price</rdfs:label>
+    <rdfs:label xml:lang="en">unit price</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2c4fda1af733414c9129fdffa6b0b161">
+    <owl:onProperty rdf:resource="http://example.org/ontology#Employee_Fax"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Employee_BirthDate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Employee"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:label xml:lang="en">Birth Date</rdfs:label>
+    <rdfs:label xml:lang="en">birth date</rdfs:label>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Employee/BirthDate"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Employee.BirthDate' with range xsd:datetime.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The date of birth of the employee.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nacefc6d237e648c89645ad4419fe4684">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Track_Composer"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#PlaylistTrack">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="Nb70793f18728436bbac60501cf39cdbb"/>
+    <rdfs:subClassOf rdf:nodeID="Nac1caf1376d1429faa441850189cbcb1"/>
+    <rdfs:subClassOf rdf:nodeID="Ndb3f22bc50f04ae6aeee7d6fa11e4cb4"/>
+    <rdfs:subClassOf rdf:nodeID="N50be47a83a5043829b47a21741c8f973"/>
+    <rdfs:subClassOf rdf:nodeID="N7961185658e34551a13f437644cc9bce"/>
+    <rdfs:subClassOf rdf:nodeID="Neea86d32baf948c5b36508447210b040"/>
+    <rdfs:subClassOf rdf:nodeID="N255dbbc0f18941f1ab8d376f9d138150"/>
+    <rdfs:subClassOf rdf:nodeID="N4b6c6309af9249a0b5a8b4642fbe675f"/>
+    <owl:hasKey rdf:nodeID="N1609390d757a45e2a64d96f15fc6a0d3"/>
+    <owl:hasKey rdf:nodeID="N2391eeff2db540a294ddbf9cb0f74eea"/>
+    <rdfs:label xml:lang="en">Playlist Track</rdfs:label>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/PlaylistTrack"/>
+    <rdfs:comment xml:lang="en">Class generated from source table 'PlaylistTrack'.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the association between a playlist and a track in a music catalog.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N76889997afcb4f478eddeb5ffdbd3268">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Track_Name"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1a52e34fae5b42c2880e88ccb078a9ab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Track_Milliseconds"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Playlist_PlaylistId">
+    <rdfs:label xml:lang="en">Playlist Id</rdfs:label>
+    <rdfs:label xml:lang="en">playlist identifier</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Playlist/PlaylistId"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Playlist"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Playlist.PlaylistId' with range xsd:integer.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The unique numeric identifier for a playlist.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na7badd8daa904673ba45bf1e76976f90">
+    <owl:onProperty rdf:resource="http://example.org/ontology#InvoiceLine_hasInvoice"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://example.org/ontology#Invoice"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Track_UnitPrice">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Track/UnitPrice"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Track"/>
+    <rdfs:label xml:lang="en">Unit Price</rdfs:label>
+    <rdfs:label xml:lang="en">unit price</rdfs:label>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Track.UnitPrice' with range xsd:decimal.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The retail price of the track as a monetary amount.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N66f04f95eb0148ae82850cf90ae0a580">
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Employee_LastName"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Employee_Country">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Country</rdfs:label>
+    <rdfs:label xml:lang="en">country</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Employee"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Employee/Country"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Employee.Country' with range xsd:string.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The country component of the employee's address.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncc7f1039262345ffbdf15900c9629883">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Artist_ArtistId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Employee_City">
+    <rdfs:label xml:lang="en">City</rdfs:label>
+    <rdfs:label xml:lang="en">city</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Employee"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Employee.City' with range xsd:string.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The city component of the employee's address.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Employee/City"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N85562f6db19342fe84bee0dde59d6fd5">
+    <owl:onProperty rdf:resource="http://example.org/ontology#Playlist_PlaylistId"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nabb69c5b06cd417ca89c18d15341158e">
+    <owl:onProperty rdf:resource="http://example.org/ontology#Employee_PostalCode"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Customer_Fax">
+    <rdfs:label xml:lang="en">Fax</rdfs:label>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Customer/Fax"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Customer.Fax' with range xsd:string.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Customer fax number.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Playlist_Name">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Playlist"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Playlist.Name' with range xsd:string.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The name given to identify the playlist.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Playlist/Name"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">Name</rdfs:label>
+    <rdfs:label xml:lang="en">playlist name</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Employee_PostalCode">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Postal Code</rdfs:label>
+    <rdfs:label xml:lang="en">postal code</rdfs:label>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Employee/PostalCode"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Employee.PostalCode' with range xsd:string.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The postal or ZIP code component of the employee's address.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Employee"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N55e52e9b3cc244829cb4a1c72bd6972c">
+    <owl:onProperty rdf:resource="http://example.org/ontology#Playlist_PlaylistId"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Neea86d32baf948c5b36508447210b040">
+    <owl:onProperty rdf:resource="http://example.org/ontology#PlaylistTrack_hasTrack"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://example.org/ontology#Track"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Album_Title">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">Title</rdfs:label>
+    <rdfs:label xml:lang="en">album title</rdfs:label>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Album.Title' with range xsd:string.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The name of the music album.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Album/Title"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Album"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6be983b52c024ed58fe9cc9e15688d6f">
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Customer_LastName"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Playlist">
+    <rdfs:subClassOf rdf:nodeID="Ndb3db293168c400db049642ec964ab70"/>
+    <rdfs:subClassOf rdf:nodeID="N55e52e9b3cc244829cb4a1c72bd6972c"/>
+    <rdfs:subClassOf rdf:nodeID="N85562f6db19342fe84bee0dde59d6fd5"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Unnamed"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Playlist"/>
+    <rdfs:comment xml:lang="en">Class generated from source table 'Playlist'.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A collection of tracks grouped together under a name.</rdfs:comment>
+    <owl:hasKey rdf:nodeID="N67896fbf2313406492025d5f2d3c9ad9"/>
+    <owl:hasKey rdf:nodeID="N934c3eb03d4642b38c2c07a2964e3506"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Playlist</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Employee_State">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Employee"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Employee/State"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">State</rdfs:label>
+    <rdfs:label xml:lang="en">state/province</rdfs:label>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Employee.State' with range xsd:string.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The state or provincial component of the employee's address.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4b6c6309af9249a0b5a8b4642fbe675f">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://example.org/ontology#Playlist"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#PlaylistTrack_hasPlaylist"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N18bb2468a07f4552865610539d62b576">
+    <owl:onProperty rdf:resource="http://example.org/ontology#InvoiceLine_InvoiceLineId"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Track_Bytes">
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Track.Bytes' with range xsd:integer.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The size of the track's media file in bytes, when available.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Track/Bytes"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Track"/>
+    <rdfs:label xml:lang="en">Bytes</rdfs:label>
+    <rdfs:label xml:lang="en">file size</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Customer_Country">
+    <rdfs:label xml:lang="en">Country</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Customer/Country"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Customer.Country' with range xsd:string.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Country of the customer address.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndb3f22bc50f04ae6aeee7d6fa11e4cb4">
+    <owl:onProperty rdf:resource="http://example.org/ontology#PlaylistTrack_hasTrack"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://example.org/ontology#Track"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbacae6504c334894b9cc3af84f452c7a">
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Genre_GenreId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Track_Name">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Track"/>
+    <rdfs:label xml:lang="en">Name</rdfs:label>
+    <rdfs:label xml:lang="en">track name</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Track/Name"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Track.Name' with range xsd:string.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The title or name of the music track.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Artist_Name">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Artist.Name' with range xsd:string.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Name of the artist or performer. Stores the human-readable artist name.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Artist"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">Name</rdfs:label>
+    <rdfs:label xml:lang="en">Artist Name</rdfs:label>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Artist/Name"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Employee_Fax">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Fax</rdfs:label>
+    <rdfs:label xml:lang="en">fax number</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Employee"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Employee.Fax' with range xsd:string.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The contact fax number for the employee.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Employee/Fax"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne3b4eb8818b24b1e8c679ebefc0d9369">
+    <owl:onProperty rdf:resource="http://example.org/ontology#Album_AlbumId"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Invoice_BillingPostalCode">
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Invoice.BillingPostalCode' with range xsd:string.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The postal or ZIP code used for billing purposes.</rdfs:comment>
+    <rdfs:label xml:lang="en">Billing Postal Code</rdfs:label>
+    <rdfs:label xml:lang="en">billing postal code</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Invoice"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Invoice/BillingPostalCode"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N655a66738eb44d718bea3d37b8d35712">
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#MediaType_MediaTypeId"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Customer_LastName">
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Customer.LastName' with range xsd:string.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Customer’s last name. This is a required text field.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Customer/LastName"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <rdfs:label xml:lang="en">Last Name</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5d9d84e79cd54fc4b8f6a904c50b5eff">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Employee_FirstName"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#InvoiceLine_hasTrack">
+    <rdfs:comment xml:lang="en">Object property generated from foreign key 'InvoiceLine.TrackId' referencing 'Track.TrackId'.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links an invoice line item to the purchased track.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#Track"/>
+    <rdfs:label xml:lang="en">Invoice Line has Track</rdfs:label>
+    <rdfs:label xml:lang="en">has track</rdfs:label>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/InvoiceLine/TrackId"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#InvoiceLine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Artist_ArtistId">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Artist"/>
+    <rdfs:label xml:lang="en">Artist Id</rdfs:label>
+    <rdfs:label xml:lang="en">Artist ID</rdfs:label>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Artist/ArtistId"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Artist.ArtistId' with range xsd:integer.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Unique identifier for the artist. Primary key of the Artist table.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Invoice_InvoiceDate">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Invoice/InvoiceDate"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Invoice"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Invoice Date</rdfs:label>
+    <rdfs:label xml:lang="en">invoice date</rdfs:label>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Invoice.InvoiceDate' with range xsd:datetime.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The date and time when the invoice was created.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne1ac71ab61504d7baad500b1272c1bc1">
+    <owl:onProperty rdf:resource="http://example.org/ontology#InvoiceLine_hasInvoice"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://example.org/ontology#Invoice"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Employee_FirstName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">First Name</rdfs:label>
+    <rdfs:label xml:lang="en">first name</rdfs:label>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Employee.FirstName' with range xsd:string.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The given name of the employee (required field).</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Employee/FirstName"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Employee"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9f6ed18415eb44ae8606ccfc533e9229">
+    <owl:onProperty rdf:resource="http://example.org/ontology#Track_TrackId"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N65f1378de31841e8bb08670637b4b937">
+    <rdf:first rdf:resource="http://example.org/ontology#Artist_ArtistId"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Employee_EmployeeId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Employee"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Employee/EmployeeId"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Employee.EmployeeId' with range xsd:integer.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The unique numeric identifier for an employee record, serving as primary key.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="en">Employee Id</rdfs:label>
+    <rdfs:label xml:lang="en">employee identifier</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Employee_Email">
+    <rdfs:label xml:lang="en">Email</rdfs:label>
+    <rdfs:label xml:lang="en">email address</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Employee"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Employee.Email' with range xsd:string.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The electronic mail address for the employee.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Employee/Email"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd1a1d05a750149389d8f01dfd7f195f6">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Customer_FirstName"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0d9cc25562d9442fafb3e96c6d9af496">
+    <owl:onProperty rdf:resource="http://example.org/ontology#Employee_ReportsTo"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://example.org/ontology#Employee"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#InvoiceLine_InvoiceLineId">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/InvoiceLine/InvoiceLineId"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'InvoiceLine.InvoiceLineId' with range xsd:integer.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Primary key uniquely identifying an invoice line item.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#InvoiceLine"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Invoice Line Id</rdfs:label>
+    <rdfs:label xml:lang="en">Invoice line identifier</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Customer_Company">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">Company</rdfs:label>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Customer/Company"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Customer.Company' with range xsd:string.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Company or organization associated with the customer. This field may be empty.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Neaa870cf69964f0fa4440a3661c8f3b8">
+    <rdf:first rdf:resource="http://example.org/ontology#Employee_EmployeeId"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2391eeff2db540a294ddbf9cb0f74eea">
+    <rdf:first rdf:resource="http://example.org/ontology#PlaylistTrack_hasPlaylist"/>
+    <rdf:rest rdf:nodeID="N8025fa11db4b4675a24e223dcdb7e14e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Naba99832e87c46b193d949db24476700">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Genre_GenreId"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N50be47a83a5043829b47a21741c8f973">
+    <owl:allValuesFrom rdf:resource="http://example.org/ontology#Track"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#PlaylistTrack_hasTrack"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc31b29264b834e71b91a83f34d1bc9f5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#InvoiceLine_Quantity"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndcad0259070041e882b4469bbc50e0c2">
+    <owl:onProperty rdf:resource="http://example.org/ontology#Customer_LastName"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6bdf5d13fb8d4caa9184dfbcc332d542">
+    <owl:onProperty rdf:resource="http://example.org/ontology#Customer_CustomerId"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#InvoiceLine_Quantity">
+    <rdfs:domain rdf:resource="http://example.org/ontology#InvoiceLine"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'InvoiceLine.Quantity' with range xsd:integer.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The number of units purchased in this line item.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/InvoiceLine/Quantity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Quantity</rdfs:label>
+    <rdfs:label xml:lang="en">quantity</rdfs:label>
+    <skos:exactMatch rdf:resource="http://data.doremus.org/ontology#U9_has_quantity"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne75c46b7f2e64716b5710baf10609005">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#InvoiceLine_UnitPrice"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Invoice_BillingState">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Invoice/BillingState"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Invoice"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Invoice.BillingState' with range xsd:string.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The state or province used for billing purposes.</rdfs:comment>
+    <rdfs:label xml:lang="en">Billing State</rdfs:label>
+    <rdfs:label xml:lang="en">billing state</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Invoice_hasCustomer">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Invoice/CustomerId"/>
+    <rdfs:comment xml:lang="en">Object property generated from foreign key 'Invoice.CustomerId' referencing 'Customer.CustomerId'.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links an invoice to the customer who made the purchase.</rdfs:comment>
+    <rdfs:label xml:lang="en">Invoice has Customer</rdfs:label>
+    <rdfs:label xml:lang="en">has customer</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Invoice"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#Customer"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8606bee20f90423cadc9e41020139d55">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Invoice_InvoiceDate"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Customer_Address">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Customer/Address"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Customer.Address' with range xsd:string.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Street address of the customer.</rdfs:comment>
+    <rdfs:label xml:lang="en">Address</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Employee_LastName">
+    <rdfs:label xml:lang="en">Last Name</rdfs:label>
+    <rdfs:label xml:lang="en">last name</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Employee"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Employee/LastName"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Employee.LastName' with range xsd:string.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The family name or surname of the employee (required field).</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Customer_PostalCode">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Customer/PostalCode"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Customer.PostalCode' with range xsd:string.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Postal or ZIP code of the customer address.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">Postal Code</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N463c779eb18e4a06857bfcddb31c1757">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Artist_ArtistId"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Invoice_BillingAddress">
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Invoice.BillingAddress' with range xsd:string.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The street address used for billing purposes.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Invoice"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Invoice/BillingAddress"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">Billing Address</rdfs:label>
+    <rdfs:label xml:lang="en">billing address</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb70793f18728436bbac60501cf39cdbb">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://example.org/ontology#Playlist"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#PlaylistTrack_hasPlaylist"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N14dc130683804f0e838570fde152efa0">
+    <owl:onProperty rdf:resource="http://example.org/ontology#Customer_City"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9f94dc0035494b3bb0998c8fc605aa9a">
+    <owl:onProperty rdf:resource="http://example.org/ontology#Track_Bytes"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N01099a7cb0734112adea869faf0cfa9e">
+    <owl:onProperty rdf:resource="http://example.org/ontology#Invoice_hasCustomer"/>
+    <owl:allValuesFrom rdf:resource="http://example.org/ontology#Customer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Employee_Address">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Employee.Address' with range xsd:string.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The physical street address of the employee.</rdfs:comment>
+    <rdfs:label xml:lang="en">Address</rdfs:label>
+    <rdfs:label xml:lang="en">street address</rdfs:label>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Employee/Address"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Employee"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Customer_hasSupportRep">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">Object property generated from foreign key 'Customer.SupportRepId' referencing 'Employee.EmployeeId'.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Indicates that a customer may be assigned to an employee who acts as their support representative.</rdfs:comment>
+    <rdfs:label xml:lang="en">Customer has Support Rep</rdfs:label>
+    <rdfs:label xml:lang="en">Has Support Representative</rdfs:label>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Customer/SupportRepId"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#Employee"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N833c3a955b0f4b308ee827047f0aef45">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Album_Title"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne4a72827ab13458e85f5c2ac6b11b3c6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Track_UnitPrice"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Customer_CustomerId">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Customer/CustomerId"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Customer.CustomerId' with range xsd:integer.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Unique identifier for the customer. This field is the primary key of the Customer table.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Customer Id</rdfs:label>
+    <rdfs:label xml:lang="en">Customer ID</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Invoice_InvoiceId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Invoice/InvoiceId"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Invoice"/>
+    <rdfs:label xml:lang="en">Invoice Id</rdfs:label>
+    <rdfs:label xml:lang="en">invoice identifier</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Invoice.InvoiceId' with range xsd:integer.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The unique numeric identifier for an invoice.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Genre_GenreId">
+    <rdfs:label xml:lang="en">Genre Id</rdfs:label>
+    <rdfs:label xml:lang="en">Genre Identifier</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Genre/GenreId"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Genre.GenreId' with range xsd:integer.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A unique identifier for a music genre.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2cec9b0bffb3440a889175ee07de8595">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Customer_Email"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8025fa11db4b4675a24e223dcdb7e14e">
+    <rdf:first rdf:resource="http://example.org/ontology#PlaylistTrack_hasTrack"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3f599d299abf4a5a81a66b703fbc2d6f">
+    <owl:onProperty rdf:resource="http://example.org/ontology#Track_UnitPrice"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd0ed66588b7f44e4bb5690c5e123cd42">
+    <owl:onProperty rdf:resource="http://example.org/ontology#Invoice_InvoiceDate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Customer_State">
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Customer.State' with range xsd:string.</rdfs:comment>
+    <rdfs:comment xml:lang="en">State, province, or regional subdivision of the customer address.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Customer/State"/>
+    <rdfs:label xml:lang="en">State</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nec46e320ff87440c86b9cf1512fedf59">
+    <owl:onProperty rdf:resource="http://example.org/ontology#Track_Milliseconds"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Genre">
+    <rdfs:subClassOf rdf:nodeID="N60c06409a0ca45ea9d8803534a9db5af"/>
+    <rdfs:subClassOf rdf:nodeID="Nb41729c68d8a4ec2b148f489679965fa"/>
+    <rdfs:subClassOf rdf:nodeID="N4d2379200633401a90db643a9d37c050"/>
+    <rdfs:subClassOf rdf:nodeID="Nbacae6504c334894b9cc3af84f452c7a"/>
+    <rdfs:subClassOf rdf:nodeID="Naba99832e87c46b193d949db24476700"/>
+    <owl:hasKey rdf:nodeID="N3147be48153149cea29b5897b2776a04"/>
+    <owl:hasKey rdf:nodeID="Nbab4d06d3ef949c2ab83f487ccef2816"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Genre"/>
+    <rdfs:comment xml:lang="en">Class generated from source table 'Genre'.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A category or classification of music based on style, form, or content.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Genre</rdfs:label>
+    <rdfs:label xml:lang="en">Music Genre</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3147be48153149cea29b5897b2776a04">
+    <rdf:first rdf:resource="http://example.org/ontology#Genre_GenreId"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N152a13daeed848928396d25a8a63b72e">
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Invoice_InvoiceId"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7b827a5d94e94f3b9fe6b9e5c62c91fb">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Customer_Email"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc096423da82c49188383469b72e45e53">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://example.org/ontology#Artist"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Album_hasArtist"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nadcac47d4e064c69b72d96d25fc2ca0b">
+    <owl:onProperty rdf:resource="http://example.org/ontology#Album_AlbumId"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbab4d06d3ef949c2ab83f487ccef2816">
+    <rdf:first rdf:resource="http://example.org/ontology#Genre_GenreId"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Track_Milliseconds">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Track"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Track/Milliseconds"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Track.Milliseconds' with range xsd:integer.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The duration of the track in milliseconds.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Milliseconds</rdfs:label>
+    <rdfs:label xml:lang="en">duration (ms)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Track_hasMediaType">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Track/MediaTypeId"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#MediaType"/>
+    <rdfs:comment xml:lang="en">Object property generated from foreign key 'Track.MediaTypeId' referencing 'MediaType.MediaTypeId'.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links a track to its technical media format (e.g. MP3, AAC).</rdfs:comment>
+    <rdfs:label xml:lang="en">Track has Media Type</rdfs:label>
+    <rdfs:label xml:lang="en">has media type</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Track"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4e2541b4455f470f8487933cd47d8d72">
+    <owl:onProperty rdf:resource="http://example.org/ontology#InvoiceLine_UnitPrice"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Employee_ReportsTo">
+    <rdfs:range rdf:resource="http://example.org/ontology#Employee"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Employee/ReportsTo"/>
+    <rdfs:label xml:lang="en">Employee Reports To</rdfs:label>
+    <rdfs:label xml:lang="en">reports to</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">Object property generated from foreign key 'Employee.ReportsTo' referencing 'Employee.EmployeeId'. This is an explicit recursive self-referential relationship within the Employee class.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The managerial relationship where an employee reports to another employee (self-referential).</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Employee"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N19b6c2befc154e269adbfed8c9cb88a5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#InvoiceLine_InvoiceLineId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Track_hasAlbum">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Track"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Track/AlbumId"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#Album"/>
+    <rdfs:label xml:lang="en">Track has Album</rdfs:label>
+    <rdfs:label xml:lang="en">has album</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">Object property generated from foreign key 'Track.AlbumId' referencing 'Album.AlbumId'.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links a track to its containing album, when available.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9b71c5e7a1c147089717a74dd8a14739">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://example.org/ontology#MediaType_MediaTypeId"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5ff671e94aad43389731600590fe8b4d">
+    <owl:onProperty rdf:resource="http://example.org/ontology#Track_hasMediaType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://example.org/ontology#MediaType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Album_hasArtist">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Album/ArtistId"/>
+    <rdfs:comment xml:lang="en">Object property generated from foreign key 'Album.ArtistId' referencing 'Artist.ArtistId'.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links an album to its performing or creating artist.</rdfs:comment>
+    <rdfs:label xml:lang="en">Album has Artist</rdfs:label>
+    <rdfs:label xml:lang="en">has artist</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Album"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#Artist"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Employee_Title">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Employee.Title' with range xsd:string.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The official designation or role of the employee within the organization.</rdfs:comment>
+    <rdfs:label xml:lang="en">Title</rdfs:label>
+    <rdfs:label xml:lang="en">job title</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Employee/Title"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Employee"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#MediaType_MediaTypeId">
+    <rdfs:comment xml:lang="en">Data property generated from source column 'MediaType.MediaTypeId' with range xsd:integer.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Unique identifier for the media type. This field is the primary key of the MediaType table.</rdfs:comment>
+    <rdfs:label xml:lang="en">Media Type Id</rdfs:label>
+    <rdfs:label xml:lang="en">Media Type ID</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/MediaType/MediaTypeId"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MediaType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndb3db293168c400db049642ec964ab70">
+    <owl:onProperty rdf:resource="http://example.org/ontology#Playlist_Name"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Naf54bdc1afb64a47ab7b75c80f9d3189">
+    <owl:onProperty rdf:resource="http://example.org/ontology#InvoiceLine_Quantity"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N11e0c3f4b76f4ff88fb5e96349d7257c">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Invoice_BillingCity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N67896fbf2313406492025d5f2d3c9ad9">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://example.org/ontology#Playlist_PlaylistId"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne86af9656f034fe5810fa406cb7bc843">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Customer_FirstName"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nac1caf1376d1429faa441850189cbcb1">
+    <owl:allValuesFrom rdf:resource="http://example.org/ontology#Playlist"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#PlaylistTrack_hasPlaylist"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc51a82fa5d5a45f0ac1c76358467d06c">
+    <owl:onProperty rdf:resource="http://example.org/ontology#Employee_State"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd2ae18da0b674869bc6b4332fa50b865">
+    <owl:onProperty rdf:resource="http://example.org/ontology#Customer_State"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfe0f12a002a849e49214e75a555119c2">
+    <owl:onProperty rdf:resource="http://example.org/ontology#Album_Title"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3c6728f3d5a44492a56f42dfcaa6a385">
+    <rdf:first rdf:resource="http://example.org/ontology#Album_AlbumId"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Invoice_BillingCountry">
+    <rdfs:label xml:lang="en">Billing Country</rdfs:label>
+    <rdfs:label xml:lang="en">billing country</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Invoice.BillingCountry' with range xsd:string.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The country used for billing purposes.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Invoice/BillingCountry"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Invoice"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1609390d757a45e2a64d96f15fc6a0d3">
+    <rdf:first rdf:resource="http://example.org/ontology#PlaylistTrack_hasPlaylist"/>
+    <rdf:rest rdf:nodeID="N1a14d0bb388146939627ecb647963994"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N766c309d435a4c698dc2f3b27a8fcb1d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://example.org/ontology#Album"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Track_hasAlbum"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6ac6d8aa71c748a086bb1b0dce8681f8">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Employee_Email"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N933104e557fa4014a7c6322319862469">
+    <owl:onProperty rdf:resource="http://example.org/ontology#Customer_Country"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N87617f5e19ba4293830be5710c76e6c7">
+    <owl:onProperty rdf:resource="http://example.org/ontology#Customer_Phone"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N77133d35700a4586bfefbdbfc6939233">
+    <owl:onProperty rdf:resource="http://example.org/ontology#InvoiceLine_hasTrack"/>
+    <owl:someValuesFrom rdf:resource="http://example.org/ontology#Track"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3bfb87bac18b48798a5a6dd529338303">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://example.org/ontology#Track_TrackId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#MediaType_Name">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/MediaType/Name"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'MediaType.Name' with range xsd:string.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Name or description of the media type, describing the audio format, encoding type, or protected media format.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MediaType"/>
+    <rdfs:label xml:lang="en">Name</rdfs:label>
+    <rdfs:label xml:lang="en">Media Type Name</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4ca64313ff80495986f9f9e61f39d38c">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Employee_Phone"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <prov:generatedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-30T20:25:26.627494+00:00</prov:generatedAtTime>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1d801d2bd5d0486191cfea2f24645f8d">
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Invoice_Total"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N188f6ddfd15d45ffa3b94701cbba2c7e">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://example.org/ontology#Album_AlbumId"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#PlaylistTrack_hasPlaylist">
+    <rdfs:range rdf:resource="http://example.org/ontology#Playlist"/>
+    <rdfs:label xml:lang="en">Playlist Track has Playlist</rdfs:label>
+    <rdfs:label xml:lang="en">has Playlist</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#PlaylistTrack"/>
+    <rdfs:comment xml:lang="en">Object property generated from foreign key 'PlaylistTrack.PlaylistId' referencing 'Playlist.PlaylistId'.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Indicates the playlist associated with this playlist-track relationship.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/PlaylistTrack/PlaylistId"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N936f9988ee2f44128113fde4e2bd94a3">
+    <rdf:first rdf:resource="http://example.org/ontology#Artist_ArtistId"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfdba9f005af34865ba91bf9609905362">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#MediaType_Name"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5253500d83bc4c3fbd200d42f28b4287">
+    <rdf:first rdf:resource="http://example.org/ontology#InvoiceLine_InvoiceLineId"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd73250bca58d4bababf66a7a6055cec3">
+    <owl:someValuesFrom rdf:resource="http://example.org/ontology#Customer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Invoice_hasCustomer"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N628ec3bb89e246bda034e1e546bd6f5d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Customer_Address"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb1c8293167524d238ebf439fb939bcfd">
+    <rdf:first rdf:resource="http://example.org/ontology#Customer_CustomerId"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7e9107bb683445c5993cae5d42d5708e">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Track_hasMediaType"/>
+    <owl:allValuesFrom rdf:resource="http://example.org/ontology#MediaType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0351946f2357405e8160a085475205be">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Invoice_BillingCountry"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbcb955ca6b534833b0795eb34506af6b">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Employee_LastName"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6cdf65f5aa454e4ca9e8c5183b55eff4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Artist_Name"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Customer_Phone">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Customer/Phone"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Customer.Phone' with range xsd:string.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Customer phone number.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Phone</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Customer_FirstName">
+    <rdfs:comment xml:lang="en">Data property generated from source column 'Customer.FirstName' with range xsd:string.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Customer’s first name. This is a required text field.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/Customer/FirstName"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">First Name</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N255dbbc0f18941f1ab8d376f9d138150">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://example.org/ontology#Playlist"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#PlaylistTrack_hasPlaylist"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N49ff66d5e8cd43eda085a40feba56d56">
+    <owl:onProperty rdf:resource="http://example.org/ontology#Invoice_BillingPostalCode"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N354faacd8c084992af33454c021cd262">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Invoice_BillingAddress"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N15126b1c86f84830b5b0865609042362">
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Track_Name"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8e17023318284710949aa8d83c0d6539">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Employee_City"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N06247244b00d49df9c240285bc20f313">
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Customer_CustomerId"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nee9f6b11ad094462b2d777c8484b3ff0">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Invoice_BillingState"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1a14d0bb388146939627ecb647963994">
+    <rdf:first rdf:resource="http://example.org/ontology#PlaylistTrack_hasTrack"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7961185658e34551a13f437644cc9bce">
+    <owl:onProperty rdf:resource="http://example.org/ontology#PlaylistTrack_hasTrack"/>
+    <owl:someValuesFrom rdf:resource="http://example.org/ontology#Track"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne29546464c014580881b5f8c3158a6a3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Employee_Title"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncfbdd513b8174435a24616f5c1280e3d">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Employee_EmployeeId"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N213343ccac744060ad7280f42060d939">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Employee_BirthDate"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N51781f52ae75401eab608feea7957c38">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Customer_Fax"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4d2379200633401a90db643a9d37c050">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Genre_Name"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N44ec5ccbe44047828eb8a8658f33db35">
+    <owl:onProperty rdf:resource="http://example.org/ontology#Employee_Country"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N770fe9b306e74e98b1fb04ed92e07e94">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Employee_Address"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N001d5d5ba7884d0d82292bcd6dd31da4">
+    <owl:allValuesFrom rdf:resource="http://example.org/ontology#Track"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#InvoiceLine_hasTrack"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8223cb86462a4c89af491de2f1eef315">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Employee_FirstName"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6067629639464521b6ef676d939ea88f">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Invoice_InvoiceId"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N36f62824e4234c3fa478bcca541c3844">
+    <owl:onProperty rdf:resource="http://example.org/ontology#Track_hasGenre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://example.org/ontology#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9bd00cedc880434e82fe603173af5aaf">
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Track_TrackId"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N361e9a153cd14729aaf6eea664ec01f7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#MediaType_MediaTypeId"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf66d7720c5c643e1b5252bfb5f7f4a43">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Customer_CustomerId"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8d83475bb58c4b6a931ab53eee4721c9">
+    <owl:onProperty rdf:resource="http://example.org/ontology#Customer_PostalCode"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb8f076a7d6ba4b80a6767a15d794b68f">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Employee_HireDate"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5f85236e8bcb4c8fbe6adc9a28ac56fc">
+    <owl:onProperty rdf:resource="http://example.org/ontology#MediaType_MediaTypeId"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N76b7170ce0f443f0a7560e236ca7a0b3">
+    <rdf:first rdf:resource="http://example.org/ontology#Invoice_InvoiceId"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd2e589e6650f4ee99d7c6d69ca934d78">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://example.org/ontology#Invoice_InvoiceId"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb41729c68d8a4ec2b148f489679965fa">
+    <owl:onProperty rdf:resource="http://example.org/ontology#Genre_GenreId"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Neccfccaba085418988c2d8428e6259cd">
+    <owl:onProperty rdf:resource="http://example.org/ontology#Artist_ArtistId"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N60c06409a0ca45ea9d8803534a9db5af">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Genre_GenreId"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1b545117e46542c1b8be44757f454ded">
+    <owl:onProperty rdf:resource="http://example.org/ontology#Invoice_Total"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne7f8972ba4f4460e9563e6f857e252ba">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://example.org/ontology#Employee_EmployeeId"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc315ccd9d0ff4bbf9686e0df0f5a3e8d">
+    <owl:onProperty rdf:resource="http://example.org/ontology#Employee_EmployeeId"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nce76ffce7af1447fae0cbae2baeab7de">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://example.org/ontology#Artist"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#Album_hasArtist"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5eef5b09ec274270bd651dde8246f3e6">
+    <owl:onProperty rdf:resource="http://example.org/ontology#Customer_hasSupportRep"/>
+    <owl:allValuesFrom rdf:resource="http://example.org/ontology#Employee"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+</rdf:RDF>

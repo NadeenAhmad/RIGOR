@@ -1,0 +1,267 @@
+Prefix: : <http://example.org/ontology#>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: prov: <http://www.w3.org/ns/prov#>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+
+Ontology: <http://example.org/ontology>
+
+Annotations:
+    prov:generatedAtTime "2026-04-30T11:50:50.700898+00:00"^^xsd:dateTime,
+    prov:wasGeneratedBy :DirectMappingActivity
+
+Class: :Album
+    HasKey: :AlbumId
+
+ObjectProperty: :hasArtist
+    Domain: :Album
+    Range:  Artist
+
+DataProperty: :Title
+    Domain: :Album
+    Range:  :xsd:string
+
+Class: :Artist
+    HasKey: :ArtistId
+
+DataProperty: :Name
+    Domain: :Artist
+    Range:  :xsd:string
+
+Class: :Customer
+    HasKey: :CustomerId
+
+ObjectProperty: :hasEmployee
+    Domain: :Customer
+    Range:  Employee
+
+DataProperty: :FirstName
+    Domain: :Customer
+    Range:  :xsd:string
+
+DataProperty: :LastName
+    Domain: :Customer
+    Range:  :xsd:string
+
+DataProperty: :Company
+    Domain: :Customer
+    Range:  :xsd:string
+
+DataProperty: :Address
+    Domain: :Customer
+    Range:  :xsd:string
+
+DataProperty: :City
+    Domain: :Customer
+    Range:  :xsd:string
+
+DataProperty: :State
+    Domain: :Customer
+    Range:  :xsd:string
+
+DataProperty: :Country
+    Domain: :Customer
+    Range:  :xsd:string
+
+DataProperty: :PostalCode
+    Domain: :Customer
+    Range:  :xsd:string
+
+DataProperty: :Phone
+    Domain: :Customer
+    Range:  :xsd:string
+
+DataProperty: :Fax
+    Domain: :Customer
+    Range:  :xsd:string
+
+DataProperty: :Email
+    Domain: :Customer
+    Range:  :xsd:string
+
+Class: :Employee
+    HasKey: :EmployeeId
+
+DataProperty: :LastName
+    Domain: :Employee
+    Range:  :xsd:string
+
+DataProperty: :FirstName
+    Domain: :Employee
+    Range:  :xsd:string
+
+DataProperty: :Title
+    Domain: :Employee
+    Range:  :xsd:string
+
+DataProperty: :BirthDate
+    Domain: :Employee
+    Range:  :xsd:date
+
+DataProperty: :HireDate
+    Domain: :Employee
+    Range:  :xsd:date
+
+DataProperty: :Address
+    Domain: :Employee
+    Range:  :xsd:string
+
+DataProperty: :City
+    Domain: :Employee
+    Range:  :xsd:string
+
+DataProperty: :State
+    Domain: :Employee
+    Range:  :xsd:string
+
+DataProperty: :Country
+    Domain: :Employee
+    Range:  :xsd:string
+
+DataProperty: :PostalCode
+    Domain: :Employee
+    Range:  :xsd:string
+
+DataProperty: :Phone
+    Domain: :Employee
+    Range:  :xsd:string
+
+DataProperty: :Fax
+    Domain: :Employee
+    Range:  :xsd:string
+
+DataProperty: :Email
+    Domain: :Employee
+    Range:  :xsd:string
+
+Class: :Genre
+    HasKey: :GenreId
+
+DataProperty: :Name
+    Domain: :Genre
+    Range:  :xsd:string
+
+Class: :Invoice
+    HasKey: :InvoiceId
+
+ObjectProperty: :hasCustomer
+    Domain: :Invoice
+    Range:  Customer
+
+DataProperty: :InvoiceDate
+    Domain: :Invoice
+    Range:  :xsd:date
+
+DataProperty: :BillingAddress
+    Domain: :Invoice
+    Range:  :xsd:string
+
+DataProperty: :BillingCity
+    Domain: :Invoice
+    Range:  :xsd:string
+
+DataProperty: :BillingState
+    Domain: :Invoice
+    Range:  :xsd:string
+
+DataProperty: :BillingCountry
+    Domain: :Invoice
+    Range:  :xsd:string
+
+DataProperty: :BillingPostalCode
+    Domain: :Invoice
+    Range:  :xsd:string
+
+DataProperty: :Total
+    Domain: :Invoice
+    Range:  :xsd:string
+
+Class: :Invoiceline
+    HasKey: :InvoiceLineId
+
+ObjectProperty: :hasTrack
+    Domain: :Invoiceline
+    Range:  Track
+
+ObjectProperty: :hasInvoice
+    Domain: :Invoiceline
+    Range:  Invoice
+
+DataProperty: :UnitPrice
+    Domain: :Invoiceline
+    Range:  :xsd:string
+
+DataProperty: :Quantity
+    Domain: :Invoiceline
+    Range:  :xsd:string
+
+Class: :Mediatype
+    HasKey: :MediaTypeId
+
+DataProperty: :Name
+    Domain: :Mediatype
+    Range:  :xsd:string
+
+Class: :Playlist
+    HasKey: :PlaylistId
+
+DataProperty: :Name
+    Domain: :Playlist
+    Range:  :xsd:string
+
+Class: :Playlisttrack
+    HasKey: :PlaylistId
+
+ObjectProperty: :hasTrack
+    Domain: :Playlisttrack
+    Range:  Track
+
+ObjectProperty: :hasPlaylist
+    Domain: :Playlisttrack
+    Range:  Playlist
+
+Class: :Track
+    HasKey: :TrackId
+
+ObjectProperty: :hasMediatype
+    Domain: :Track
+    Range:  Mediatype
+
+ObjectProperty: :hasGenre
+    Domain: :Track
+    Range:  Genre
+
+ObjectProperty: :hasAlbum
+    Domain: :Track
+    Range:  Album
+
+DataProperty: :Name
+    Domain: :Track
+    Range:  :xsd:string
+
+DataProperty: :Composer
+    Domain: :Track
+    Range:  :xsd:string
+
+DataProperty: :Milliseconds
+    Domain: :Track
+    Range:  :xsd:string
+
+DataProperty: :Bytes
+    Domain: :Track
+    Range:  :xsd:string
+
+DataProperty: :UnitPrice
+    Domain: :Track
+    Range:  :xsd:string
+
+Individual: :DirectMappingActivity
+    Types: prov:Activity
+    Facts:
+        prov:used :SchemaJSON,
+        prov:wasAssociatedWith :OntologyGeneratorScript
+
+Individual: :SchemaJSON
+    Types: prov:Entity
+
+Individual: :OntologyGeneratorScript
+    Types: prov:SoftwareAgent

@@ -1,0 +1,1550 @@
+Prefix: : <http://example.org/ontology#>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: prov: <http://www.w3.org/ns/prov#>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+
+Ontology: <http://example.org/ontology>
+
+Annotations:
+    prov:generatedAtTime "2026-04-16T10:47:04.639779+00:00"^^xsd:dateTime,
+    prov:wasGeneratedBy :DirectMappingActivity
+
+Class: :Chemotherapy
+    HasKey: :id
+
+DataProperty: :patient_id
+    Domain: :Chemotherapy
+    Range:  :xsd:integer
+
+DataProperty: :created_at
+    Domain: :Chemotherapy
+    Range:  :xsd:dateTime
+
+DataProperty: :radiotherapy
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :radiation_amount_in_gray
+    Domain: :Chemotherapy
+    Range:  :xsd:float
+
+DataProperty: :chemotherapy
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :number_of_cycles
+    Domain: :Chemotherapy
+    Range:  :xsd:integer
+
+DataProperty: :five_fluorouracil
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :capecitabine
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :oxaliplatin
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :cisplatin
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :epirubicin
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :leucovorin
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :doxorubicin
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :sorafenib
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :gemcitabine
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :irinotecan
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :docetaxel
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :paclitaxel
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :carboplatin
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :folic_acid
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :other_chemotherapeutics_i
+    Domain: :Chemotherapy
+    Range:  :xsd:string
+
+DataProperty: :other_chemotherapeutics_ii
+    Domain: :Chemotherapy
+    Range:  :xsd:string
+
+DataProperty: :other_chemotherapeutics_iii
+    Domain: :Chemotherapy
+    Range:  :xsd:string
+
+DataProperty: :specific_antibodies
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :specific_antibodies_text
+    Domain: :Chemotherapy
+    Range:  :xsd:string
+
+DataProperty: :tace
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :rfa
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :tace_cycles
+    Domain: :Chemotherapy
+    Range:  :xsd:integer
+
+DataProperty: :rfa_cycles
+    Domain: :Chemotherapy
+    Range:  :xsd:integer
+
+DataProperty: :photodynamic_therapy
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :pdt_cycles
+    Domain: :Chemotherapy
+    Range:  :xsd:integer
+
+DataProperty: :stable_course
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :progression
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :regression
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :remission
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :tumor_board_decision
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :recommendations_tumor_board
+    Domain: :Chemotherapy
+    Range:  :xsd:string
+
+DataProperty: :implementation_tumor_board
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :dose_according_to_bsa
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :primary_dose_reduction
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :dose_reduction_over_time
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :side_effects_of_cx
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :emesis
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :diarrhea
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :alopecia
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :hand_foot_syndrome
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :bm_depression
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :neurotoxicity
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :ototoxicity
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :ps_deterioration
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :other_side_effects
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :other_side_effects_text
+    Domain: :Chemotherapy
+    Range:  :xsd:string
+
+DataProperty: :ecog_stage
+    Domain: :Chemotherapy
+    Range:  :xsd:integer
+
+DataProperty: :karnofsky_index_percent
+    Domain: :Chemotherapy
+    Range:  :xsd:integer
+
+DataProperty: :her_2_status
+    Domain: :Chemotherapy
+    Range:  :xsd:integer
+
+DataProperty: :microsatellites
+    Domain: :Chemotherapy
+    Range:  :xsd:integer
+
+DataProperty: :implementation_of_chemotherapy_uncertain
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :chemoterapy_neoadjuvant
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :chemoterapy_adjuvant
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+DataProperty: :chemoterapy_palliativ
+    Domain: :Chemotherapy
+    Range:  :xsd:boolean
+
+Class: :ChildStadium
+    HasKey: :child_stadium_id
+
+DataProperty: :child_stadium_definition
+    Domain: :ChildStadium
+    Range:  :xsd:string
+
+Class: :ClavienDindo
+    HasKey: :clavien_dindo_id
+
+DataProperty: :clavien_dindo_grade
+    Domain: :ClavienDindo
+    Range:  :xsd:string
+
+DataProperty: :clavien_dindo_definition
+    Domain: :ClavienDindo
+    Range:  :xsd:string
+
+Class: :Complication
+    HasKey: :id
+
+ObjectProperty: :hasClavienDindo
+    Domain: :Complication
+    Range:  ClavienDindo
+
+ObjectProperty: :hasDekubitusGrade
+    Domain: :Complication
+    Range:  DekubitusGrade
+
+ObjectProperty: :hasPatientData
+    Domain: :Complication
+    Range:  PatientData
+
+DataProperty: :created_at
+    Domain: :Complication
+    Range:  :xsd:dateTime
+
+DataProperty: :duration_of_inpatient_stay_d
+    Domain: :Complication
+    Range:  :xsd:float
+
+DataProperty: :duration_intermediate_care_d
+    Domain: :Complication
+    Range:  :xsd:float
+
+DataProperty: :duration_intensive_care_station_d
+    Domain: :Complication
+    Range:  :xsd:float
+
+DataProperty: :ventilation_duration_h
+    Domain: :Complication
+    Range:  :xsd:float
+
+DataProperty: :noninvasive_ventilation_duration_h
+    Domain: :Complication
+    Range:  :xsd:float
+
+DataProperty: :complication_free_progression
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :liver_failure
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :urinary_retention
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :ileus
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :cholascos
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :cholangitis
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :reintubation
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :pneumonia
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :thrombosis
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :embolism
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :postoperative_bleeding
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :pleural_effusion
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :burst_abdomen
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :liver_abscess
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :intraabdomineller_Abszess
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :biliom
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :decubitus
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :secondary_wound_healing
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :multi_organ_failure
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :anastomotic_insufficiency
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :anastomotic_insufficiency_type
+    Domain: :Complication
+    Range:  :xsd:string
+
+DataProperty: :other_complications
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :other_complications_1
+    Domain: :Complication
+    Range:  :xsd:string
+
+DataProperty: :other_complications_2
+    Domain: :Complication
+    Range:  :xsd:string
+
+DataProperty: :other_complications_3
+    Domain: :Complication
+    Range:  :xsd:string
+
+DataProperty: :other_complications_4
+    Domain: :Complication
+    Range:  :xsd:string
+
+DataProperty: :other_complications_5
+    Domain: :Complication
+    Range:  :xsd:string
+
+DataProperty: :other_complications_6
+    Domain: :Complication
+    Range:  :xsd:string
+
+DataProperty: :thoracic_drainage_for_effusion
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :simplified_acute_physiology_score_average
+    Domain: :Complication
+    Range:  :xsd:float
+
+DataProperty: :drainage_complication
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :drainage_complication_text
+    Domain: :Complication
+    Range:  :xsd:string
+
+DataProperty: :endoscopy
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :endoscopic_retrograde_cholangiopancreatography
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :endoscopy_text
+    Domain: :Complication
+    Range:  :xsd:string
+
+DataProperty: :haemodialysis
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :haemodialysis_h
+    Domain: :Complication
+    Range:  :xsd:float
+
+DataProperty: :mutation_adjusted_risk_score
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :mutation_adjusted_risk_score_h
+    Domain: :Complication
+    Range:  :xsd:float
+
+DataProperty: :interventional_drainage
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :re_operation
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :kidney_insufficiency
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :readmission_to_clinic
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :readmission_to_clinic_date
+    Domain: :Complication
+    Range:  :xsd:date
+
+DataProperty: :other_complication_management
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :other_complication_management_text
+    Domain: :Complication
+    Range:  :xsd:string
+
+DataProperty: :relocation_intensive_care_unit
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :relocation_intermediate_care_unit
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :acute_coronary_syndrome
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :sepsis
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :systemic_inflammatory_response_syndrome
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :circulatory_instability
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :reanimation
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :duration_reanimation_min
+    Domain: :Complication
+    Range:  :xsd:float
+
+DataProperty: :respiratory_failure
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :hollow_organ_perforation
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :which_organ_is_perforated
+    Domain: :Complication
+    Range:  :xsd:string
+
+DataProperty: :intestinal_passage_disorder
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :ascites_postoperative
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :pancreatitis_postoperative
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :urinary_tract_infection_postoperative
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :delirium
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :delirium_type
+    Domain: :Complication
+    Range:  :xsd:string
+
+DataProperty: :cholecystitis
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :pancreatic_fistula
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :internal_hernia
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+DataProperty: :pleural_empyema
+    Domain: :Complication
+    Range:  :xsd:boolean
+
+Class: :DekubitusGrade
+    HasKey: :dekubitus_grade_id
+
+DataProperty: :dekubitus_grade_stadium
+    Domain: :DekubitusGrade
+    Range:  :xsd:string
+
+Class: :DiabetesMellitus
+    HasKey: :diabetes_mellitus_id
+
+DataProperty: :diabetes_mellitus_code
+    Domain: :DiabetesMellitus
+    Range:  :xsd:string
+
+DataProperty: :diabetes_mellitus_description
+    Domain: :DiabetesMellitus
+    Range:  :xsd:string
+
+Class: :GeneralAftercare
+    HasKey: :id
+
+ObjectProperty: :hasPatientData
+    Domain: :GeneralAftercare
+    Range:  PatientData
+
+DataProperty: :created_at
+    Domain: :GeneralAftercare
+    Range:  :xsd:dateTime
+
+DataProperty: :date_of_aftercare
+    Domain: :GeneralAftercare
+    Range:  :xsd:date
+
+DataProperty: :height_cm
+    Domain: :GeneralAftercare
+    Range:  :xsd:float
+
+DataProperty: :weight_kg
+    Domain: :GeneralAftercare
+    Range:  :xsd:float
+
+DataProperty: :bmi
+    Domain: :GeneralAftercare
+    Range:  :xsd:float
+
+DataProperty: :incisional_hernia
+    Domain: :GeneralAftercare
+    Range:  :xsd:boolean
+
+DataProperty: :incisional_hernia_surgery
+    Domain: :GeneralAftercare
+    Range:  :xsd:boolean
+
+DataProperty: :gall_bladder_leakage
+    Domain: :GeneralAftercare
+    Range:  :xsd:boolean
+
+DataProperty: :supply_of_the_leakage
+    Domain: :GeneralAftercare
+    Range:  :xsd:string
+
+DataProperty: :bile_duct_stenosis
+    Domain: :GeneralAftercare
+    Range:  :xsd:boolean
+
+DataProperty: :treatment_of_stenosis
+    Domain: :GeneralAftercare
+    Range:  :xsd:string
+
+DataProperty: :rez_cholangitis
+    Domain: :GeneralAftercare
+    Range:  :xsd:boolean
+
+DataProperty: :aftercare_text
+    Domain: :GeneralAftercare
+    Range:  :xsd:string
+
+DataProperty: :oesophageal_stenosis
+    Domain: :GeneralAftercare
+    Range:  :xsd:boolean
+
+Class: :GeneralOperationalDetails
+    HasKey: :id
+
+ObjectProperty: :hasPatientData
+    Domain: :GeneralOperationalDetails
+    Range:  PatientData
+
+DataProperty: :created_at
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:dateTime
+
+DataProperty: :op_date
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:date
+
+DataProperty: :surgeon
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:string
+
+DataProperty: :operation_time_start
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:date
+
+DataProperty: :operation_time_end
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:date
+
+DataProperty: :operation_duration_min
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:integer
+
+DataProperty: :laparoscopic_procedure
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:boolean
+
+DataProperty: :conversion_lap_open
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:boolean
+
+DataProperty: :transfusion
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:boolean
+
+DataProperty: :number_ecs
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:integer
+
+DataProperty: :number_ffps
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:integer
+
+DataProperty: :cirrhosis_intraop
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:boolean
+
+DataProperty: :intraoperative_new_findings
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:boolean
+
+DataProperty: :intraoperative_new_findings_txt
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:string
+
+DataProperty: :previous_operations
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:boolean
+
+DataProperty: :adhesions
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:boolean
+
+DataProperty: :intraop_special_features
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:boolean
+
+DataProperty: :intraop_special_features_text
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:string
+
+DataProperty: :access_route
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:string
+
+DataProperty: :asa_score
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:integer
+
+DataProperty: :apfel_score
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:integer
+
+DataProperty: :anaesthesia_time_start
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:date
+
+DataProperty: :anaesthesia_time_end
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:date
+
+DataProperty: :anaesthesia_duration_min
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:integer
+
+DataProperty: :general_anaesthesia
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:boolean
+
+DataProperty: :tiva
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:boolean
+
+DataProperty: :rsi
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:boolean
+
+DataProperty: :ffo
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:boolean
+
+DataProperty: :spa
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:boolean
+
+DataProperty: :lumbar_pda
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:boolean
+
+DataProperty: :thoracic_pda
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:boolean
+
+DataProperty: :caudal_block
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:boolean
+
+DataProperty: :cse
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:boolean
+
+DataProperty: :ivra
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:boolean
+
+DataProperty: :analgosedation
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:boolean
+
+DataProperty: :stand_by_monitoring
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:boolean
+
+DataProperty: :anaesthesia_special
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:boolean
+
+DataProperty: :anaesthesia_special_text
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:string
+
+DataProperty: :postoperative_nutrition_date
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:date
+
+DataProperty: :gastric_tube
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:boolean
+
+DataProperty: :gastric_tube_removed_date
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:date
+
+DataProperty: :parenteral_nutrition
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:boolean
+
+DataProperty: :continuous_bladder_catheter
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:boolean
+
+DataProperty: :bladder_catheter_removed_date
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:date
+
+DataProperty: :mobilisation_postop_date
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:date
+
+DataProperty: :drainage_removed_date
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:date
+
+DataProperty: :discharge_with_drainage
+    Domain: :GeneralOperationalDetails
+    Range:  :xsd:boolean
+
+Class: :HistologyGeneral
+    HasKey: :id
+
+ObjectProperty: :hasPatientData
+    Domain: :HistologyGeneral
+    Range:  PatientData
+
+DataProperty: :pathologist
+    Domain: :HistologyGeneral
+    Range:  :xsd:string
+
+DataProperty: :order_number
+    Domain: :HistologyGeneral
+    Range:  :xsd:string
+
+DataProperty: :histological_diagnosis
+    Domain: :HistologyGeneral
+    Range:  :xsd:string
+
+DataProperty: :histology_summary
+    Domain: :HistologyGeneral
+    Range:  :xsd:string
+
+Class: :Icd
+    HasKey: :id
+
+ObjectProperty: :hasPatientData
+    Domain: :Icd
+    Range:  PatientData
+
+DataProperty: :ICD
+    Domain: :Icd
+    Range:  :xsd:string
+
+DataProperty: :ICD_discription
+    Domain: :Icd
+    Range:  :xsd:string
+
+Class: :Labour
+    HasKey: :id
+
+ObjectProperty: :hasPatientData
+    Domain: :Labour
+    Range:  PatientData
+
+DataProperty: :created_at
+    Domain: :Labour
+    Range:  :xsd:dateTime
+
+DataProperty: :date_laboratory_analysis
+    Domain: :Labour
+    Range:  :xsd:date
+
+DataProperty: :ASAT_μmol_per_l
+    Domain: :Labour
+    Range:  :xsd:float
+
+DataProperty: :ALAT_μmol_per_l
+    Domain: :Labour
+    Range:  :xsd:float
+
+DataProperty: :AP_μmol_per_l
+    Domain: :Labour
+    Range:  :xsd:float
+
+DataProperty: :GGT_μmol_per_l
+    Domain: :Labour
+    Range:  :xsd:float
+
+DataProperty: :Lipase_μmol_per_l
+    Domain: :Labour
+    Range:  :xsd:float
+
+DataProperty: :Kreatinin_μmol_per_l
+    Domain: :Labour
+    Range:  :xsd:float
+
+DataProperty: :Bilirubin_μmol_per_l
+    Domain: :Labour
+    Range:  :xsd:float
+
+DataProperty: :Quickk_percent
+    Domain: :Labour
+    Range:  :xsd:float
+
+DataProperty: :INR
+    Domain: :Labour
+    Range:  :xsd:float
+
+DataProperty: :Cholinesterase_μmol_per_l
+    Domain: :Labour
+    Range:  :xsd:float
+
+DataProperty: :Natrium_mmol_per_l
+    Domain: :Labour
+    Range:  :xsd:float
+
+DataProperty: :Hämoglobin_mmol_per_l
+    Domain: :Labour
+    Range:  :xsd:float
+
+DataProperty: :Leukozyten_Gpt_per_l
+    Domain: :Labour
+    Range:  :xsd:float
+
+DataProperty: :CRP_mg_per_l
+    Domain: :Labour
+    Range:  :xsd:float
+
+DataProperty: :PCT_ng_ml
+    Domain: :Labour
+    Range:  :xsd:float
+
+DataProperty: :Albumin_g_per_l
+    Domain: :Labour
+    Range:  :xsd:float
+
+DataProperty: :Harnstoff_mmol_per_l
+    Domain: :Labour
+    Range:  :xsd:float
+
+DataProperty: :GFR_ml_per_min
+    Domain: :Labour
+    Range:  :xsd:float
+
+DataProperty: :MDRD_ml_per_min
+    Domain: :Labour
+    Range:  :xsd:float
+
+DataProperty: :TSH_mU_per_l
+    Domain: :Labour
+    Range:  :xsd:float
+
+DataProperty: :HbA1c_percent
+    Domain: :Labour
+    Range:  :xsd:float
+
+Class: :MedicalHistory
+    HasKey: :id
+
+ObjectProperty: :hasChildStadium
+    Domain: :MedicalHistory
+    Range:  ChildStadium
+
+ObjectProperty: :hasDiabetesMellitus
+    Domain: :MedicalHistory
+    Range:  DiabetesMellitus
+
+ObjectProperty: :hasPatientData
+    Domain: :MedicalHistory
+    Range:  PatientData
+
+ObjectProperty: :hasMetastases
+    Domain: :MedicalHistory
+    Range:  Metastases
+
+DataProperty: :created_at
+    Domain: :MedicalHistory
+    Range:  :xsd:dateTime
+
+DataProperty: :body_size_cm
+    Domain: :MedicalHistory
+    Range:  :xsd:float
+
+DataProperty: :weight_kg
+    Domain: :MedicalHistory
+    Range:  :xsd:float
+
+DataProperty: :body_mass_index
+    Domain: :MedicalHistory
+    Range:  :xsd:float
+
+DataProperty: :family_history_neoplastic_disease
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :family_history_neoplastic_disease_text
+    Domain: :MedicalHistory
+    Range:  :xsd:string
+
+DataProperty: :number_of_relatives_first_degree
+    Domain: :MedicalHistory
+    Range:  :xsd:string
+
+DataProperty: :previous_tumour
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :previous_tumour_text
+    Domain: :MedicalHistory
+    Range:  :xsd:string
+
+DataProperty: :previous_secondary_tumour
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :previous_secondary_tumour_text
+    Domain: :MedicalHistory
+    Range:  :xsd:string
+
+DataProperty: :pre_existing_disease_immunological
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :pre_existing_disease_immunological_text
+    Domain: :MedicalHistory
+    Range:  :xsd:string
+
+DataProperty: :pre_existing_liver_disease
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :hepatitis_B
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :hepatitis_C
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :hepatitis_D
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :ethyltoxic
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :other_pre_existing_diseases
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :other_liver_disease
+    Domain: :MedicalHistory
+    Range:  :xsd:string
+
+DataProperty: :other_pre_existing_diseases_1
+    Domain: :MedicalHistory
+    Range:  :xsd:string
+
+DataProperty: :other_pre_existing_diseases_2
+    Domain: :MedicalHistory
+    Range:  :xsd:string
+
+DataProperty: :other_pre_existing_diseases_3
+    Domain: :MedicalHistory
+    Range:  :xsd:string
+
+DataProperty: :other_pre_existing_diseases_4
+    Domain: :MedicalHistory
+    Range:  :xsd:string
+
+DataProperty: :other_pre_existing_diseases_5
+    Domain: :MedicalHistory
+    Range:  :xsd:string
+
+DataProperty: :reduced_general_state
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :loss_of_appetite
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :nausea_vomiting
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :abdominal_pain
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :back_pain
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :dyspnoea
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :diarrhoea
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :constipation
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :nocturia
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :weight_loss
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :fever
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :night_sweat
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :hepatomegaly_splenomegaly
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :ascites
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :ascites_severity
+    Domain: :MedicalHistory
+    Range:  :xsd:string
+
+DataProperty: :icterus
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :oedema
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :further_symptoms
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :further_symptoms_text
+    Domain: :MedicalHistory
+    Range:  :xsd:string
+
+DataProperty: :diagnosis_date_primary_tumour
+    Domain: :MedicalHistory
+    Range:  :xsd:date
+
+DataProperty: :diagnosis_date_metastasis
+    Domain: :MedicalHistory
+    Range:  :xsd:date
+
+DataProperty: :localisation_of_the_metastasis
+    Domain: :MedicalHistory
+    Range:  :xsd:string
+
+DataProperty: :first_haemodialysis
+    Domain: :MedicalHistory
+    Range:  :xsd:string
+
+DataProperty: :nicotine_abuse
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :nicotine_amount_py
+    Domain: :MedicalHistory
+    Range:  :xsd:integer
+
+DataProperty: :alcohol_abuse
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :pulmonary_pre_existing_diseases
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :pulmonary_pre_existing_diseases_text
+    Domain: :MedicalHistory
+    Range:  :xsd:string
+
+DataProperty: :arterial_hypertension
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :charlson_comorbidity_index
+    Domain: :MedicalHistory
+    Range:  :xsd:integer
+
+DataProperty: :cardiac_event
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :peripheral_artery_disease
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :cerebrovascular_event
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :dementia
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :chronic_obstructive_pulmonary_disease
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :connective_tissue_disease
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :hemiplegia
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :previous_operations
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :chronic_pancreatitis
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :inflammatory_bowel_disease
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :dysphagia
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :chronic_renal_insufficiency_stage
+    Domain: :MedicalHistory
+    Range:  :xsd:integer
+
+DataProperty: :pre_existing_thyroid_disease
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :arthrosis
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :osteoporosis
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :gastrala_ulcera
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :dermal_ulcera
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :deep_leg_vein_thrombosis
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :mental_pre_existing_diseases
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :cardiac_event_text
+    Domain: :MedicalHistory
+    Range:  :xsd:string
+
+DataProperty: :acute_pancreatitis
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :cholestasis
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :cholangitis
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :pleural_effusion
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :coronary_heart_disease
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :cardiac_arrhythmia
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :cardiac_arrhythmia_text
+    Domain: :MedicalHistory
+    Range:  :xsd:string
+
+DataProperty: :congestive_heart_failure
+    Domain: :MedicalHistory
+    Range:  :xsd:string
+
+DataProperty: :lipid_metabolism_disorders
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :neurological_pre_existing_disease
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :neurological_pre_existing_disease_text
+    Domain: :MedicalHistory
+    Range:  :xsd:string
+
+DataProperty: :hiatal_hernia
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :diverticulosis
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :cholecystolithiasis
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :hyperuricaemia_gout
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+DataProperty: :gastritis
+    Domain: :MedicalHistory
+    Range:  :xsd:boolean
+
+Class: :Medication
+    HasKey: :id
+
+ObjectProperty: :hasPatientData
+    Domain: :Medication
+    Range:  PatientData
+
+DataProperty: :created_at
+    Domain: :Medication
+    Range:  :xsd:dateTime
+
+DataProperty: :ASS
+    Domain: :Medication
+    Range:  :xsd:boolean
+
+DataProperty: :Plavix
+    Domain: :Medication
+    Range:  :xsd:boolean
+
+DataProperty: :Anti_Xa
+    Domain: :Medication
+    Range:  :xsd:boolean
+
+DataProperty: :Falithrom_Marcumar
+    Domain: :Medication
+    Range:  :xsd:boolean
+
+DataProperty: :NSAR
+    Domain: :Medication
+    Range:  :xsd:boolean
+
+DataProperty: :Steroide
+    Domain: :Medication
+    Range:  :xsd:boolean
+
+DataProperty: :Steroide_Tagesdosis
+    Domain: :Medication
+    Range:  :xsd:float
+
+DataProperty: :Antidepressiva
+    Domain: :Medication
+    Range:  :xsd:boolean
+
+DataProperty: :Antihypertensiva
+    Domain: :Medication
+    Range:  :xsd:boolean
+
+DataProperty: :Anzahl_der_Antihypertensiva
+    Domain: :Medication
+    Range:  :xsd:boolean
+
+DataProperty: :Thyreostatika
+    Domain: :Medication
+    Range:  :xsd:boolean
+
+DataProperty: :Schilddrüsenhormone
+    Domain: :Medication
+    Range:  :xsd:boolean
+
+DataProperty: :Protonenpumpeninhibitoren
+    Domain: :Medication
+    Range:  :xsd:boolean
+
+DataProperty: :Urikostatika
+    Domain: :Medication
+    Range:  :xsd:boolean
+
+DataProperty: :orale_Antidiabetika
+    Domain: :Medication
+    Range:  :xsd:boolean
+
+DataProperty: :Insulin
+    Domain: :Medication
+    Range:  :xsd:boolean
+
+DataProperty: :Insulin_Tagesdosis
+    Domain: :Medication
+    Range:  :xsd:integer
+
+DataProperty: :inhalative_Bronchodilatatoren
+    Domain: :Medication
+    Range:  :xsd:boolean
+
+DataProperty: :weitere_Medikation
+    Domain: :Medication
+    Range:  :xsd:boolean
+
+DataProperty: :weitere_Medikation_1_Text
+    Domain: :Medication
+    Range:  :xsd:string
+
+DataProperty: :Statine
+    Domain: :Medication
+    Range:  :xsd:boolean
+
+DataProperty: :Diuretika
+    Domain: :Medication
+    Range:  :xsd:boolean
+
+DataProperty: :weitere_Medikation_2
+    Domain: :Medication
+    Range:  :xsd:boolean
+
+DataProperty: :weitere_Medikation_2_Text
+    Domain: :Medication
+    Range:  :xsd:string
+
+DataProperty: :weitere_Medikation_3
+    Domain: :Medication
+    Range:  :xsd:boolean
+
+DataProperty: :weitere_Medikation_3_Text
+    Domain: :Medication
+    Range:  :xsd:string
+
+DataProperty: :weitere_Medikation_4
+    Domain: :Medication
+    Range:  :xsd:boolean
+
+DataProperty: :weitere_Medikation_4_Text
+    Domain: :Medication
+    Range:  :xsd:string
+
+DataProperty: :weitere_Medikation_5
+    Domain: :Medication
+    Range:  :xsd:boolean
+
+DataProperty: :weitere_Medikation_5_Text
+    Domain: :Medication
+    Range:  :xsd:string
+
+Class: :Metastases
+    HasKey: :metastasen_id
+
+DataProperty: :metastasen_timepoint
+    Domain: :Metastases
+    Range:  :xsd:date
+
+Class: :PatientData
+    HasKey: :patient_id
+
+ObjectProperty: :hasSex
+    Domain: :PatientData
+    Range:  Sex
+
+DataProperty: :patient_id_old
+    Domain: :PatientData
+    Range:  :xsd:integer
+
+DataProperty: :created_at
+    Domain: :PatientData
+    Range:  :xsd:dateTime
+
+DataProperty: :age_at_surgery
+    Domain: :PatientData
+    Range:  :xsd:integer
+
+Class: :Sex
+    HasKey: :sex_id
+
+DataProperty: :sex_category
+    Domain: :Sex
+    Range:  :xsd:string
+
+Individual: :DirectMappingActivity
+    Types: prov:Activity
+    Facts:
+        prov:used :SchemaJSON,
+        prov:wasAssociatedWith :OntologyGeneratorScript
+
+Individual: :SchemaJSON
+    Types: prov:Entity
+
+Individual: :OntologyGeneratorScript
+    Types: prov:SoftwareAgent

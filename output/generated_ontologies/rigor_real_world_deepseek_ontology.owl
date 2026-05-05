@@ -1,0 +1,2167 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rdf:RDF xmlns:prov="http://www.w3.org/ns/prov#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <rdf:Description rdf:about="http://example.org/ontology#postoperative_nutrition_date">
+    <rdfs:label xml:lang="en">postoperative nutrition date</rdfs:label>
+    <rdfs:comment xml:lang="en">Date when oral feeding was resumed postoperatively</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#further_symptoms_text">
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Additional details about further symptoms.</rdfs:comment>
+    <rdfs:label xml:lang="en">Further Symptoms Text</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#karnofsky_index_percent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="en">Karnofsky Index Percent</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:comment xml:lang="en">Karnofsky Performance Scale, ranging from 0% (dead) to 100% (normal, no complaints).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#adhesions">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">adhesions</rdfs:label>
+    <rdfs:comment xml:lang="en">Presence of adhesions (scar tissue)</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasDiabetesMellitus">
+    <rdfs:label xml:lang="en">Has Diabetes Mellitus</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#DiabetesMellitus"/>
+    <rdfs:comment xml:lang="en">Indicates the presence of diabetes mellitus.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#dose_reduction_over_time">
+    <rdfs:label xml:lang="en">Dose Reduction Over Time</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates whether there were dose reductions during the treatment course.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#ChildStadium">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A classification system used to assess the severity of cirrhosis.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A system used to assess the severity of chronic liver disease, including cirrhosis.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#(∃ child_stadium_definition)"/>
+    <rdfs:label xml:lang="en">Child Stadium</rdfs:label>
+    <rdfs:label xml:lang="en">Child-Pugh Classification</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#rfa_cycles">
+    <rdfs:comment xml:lang="en">Number of Radiofrequency Ablation (RFA) cycles performed.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:label xml:lang="en">RFA Cycles</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#weitere_Medikation_3_Text">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+    <rdfs:label xml:lang="en">additional medication 3 description</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Text field for detailed description of additional medication 3</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#further_symptoms">
+    <rdfs:comment xml:lang="en">Indicates if the patient has additional symptoms.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">Further Symptoms</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#diagnosis_date_metastasis">
+    <rdfs:comment xml:lang="en">The date when metastasis was diagnosed.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:label xml:lang="en">Diagnosis Date of Metastasis</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasPatientData">
+    <rdfs:range rdf:resource="http://example.org/ontology#PatientData"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Complication"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralAftercare"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#HistologyGeneral"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Icd"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Labour"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+    <rdfs:label xml:lang="en">has Patient Data</rdfs:label>
+    <rdfs:label xml:lang="en">has patient data</rdfs:label>
+    <rdfs:label xml:lang="en">Has Patient Data</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/schema#complication.patient_id"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/schema/icd/patient_id"/>
+    <rdfs:comment xml:lang="en">The patient data associated with the complication.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links a general aftercare record to the corresponding patient data.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links operational details to patient data</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links histological data to the corresponding patient data.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links an ICD record to the associated patient data.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links laboratory test results to the patient's demographic data</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links to the demographic and personal information of the patient.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links a medication record to its associated patient data</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Urikostatika">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">uric acid reducers</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+    <rdfs:comment xml:lang="en">Indicates whether the patient is taking medications to lower uric acid levels (e.g., for gout)</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Bilirubin_μmol_per_l">
+    <rdfs:label xml:lang="en">Bilirubin</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Liver function and bile processing measurement in micromoles per liter (μmol/l)</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Labour"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#patient_id_old">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Previous identifier for the patient.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the previous identifier for the patient.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Previous identifier for the patient in legacy systems</rdfs:comment>
+    <rdfs:comment xml:lang="en">A previous identifier assigned to the patient, used for historical reference.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#PatientData"/>
+    <rdfs:label xml:lang="en">old patient ID</rdfs:label>
+    <rdfs:label xml:lang="en">legacy patient identifier</rdfs:label>
+    <rdfs:label xml:lang="en">Old Patient ID</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/schema/patient_data/patient_id_old"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#cse">
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdfs:comment xml:lang="en">Indicates if combined spinal-epidural anesthesia was used</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">combined spinal-epidural anesthesia</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Protonenpumpeninhibitoren">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">proton pump inhibitors</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates whether the patient is taking proton pump inhibitors (PPIs) to reduce stomach acid</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#acute_pancreatitis">
+    <rdfs:label xml:lang="en">Acute Pancreatitis</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="en">Indicates if the patient has acute pancreatitis.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hiatal_hernia">
+    <rdfs:comment xml:lang="en">Indicates if the patient has a hiatal hernia.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Hiatal Hernia</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#created_at">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Created At</rdfs:label>
+    <rdfs:label xml:lang="en">Creation Timestamp</rdfs:label>
+    <rdfs:label xml:lang="en">created at</rdfs:label>
+    <rdfs:label xml:lang="en">creation timestamp</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:comment xml:lang="en">Timestamp indicating when the chemotherapy record was created.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The timestamp when the complication record was created.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Timestamp when the record was created</rdfs:comment>
+    <rdfs:comment xml:lang="en">Indicates the timestamp when the patient data was created.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Records when the laboratory test results were created in the system</rdfs:comment>
+    <rdfs:comment xml:lang="en">The timestamp when the medical history record was created.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Timestamp when the medication record was created</rdfs:comment>
+    <rdfs:comment xml:lang="en">Timestamp when the patient record was created</rdfs:comment>
+    <rdfs:comment xml:lang="en">The timestamp when the patient record was created.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Complication"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#PatientData"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Labour"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/schema#complication.created_at"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/schema/patient_data/created_at"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#peripheral_artery_disease">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates if the patient has peripheral artery disease.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:label xml:lang="en">Peripheral Artery Disease</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Insulin">
+    <rdfs:label xml:lang="en">insulin</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+    <rdfs:comment xml:lang="en">Indicates whether the patient is taking insulin for diabetes management</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Anti_Xa">
+    <rdfs:comment xml:lang="en">Indicates whether the patient is taking factor Xa inhibitors, commonly used anticoagulants (e.g., Rivaroxaban)</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">anti-Xa medication</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#back_pain">
+    <rdfs:comment xml:lang="en">Indicates if the patient has experienced back pain.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Back Pain</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#GGT_μmol_per_l">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Labour"/>
+    <rdfs:label xml:lang="en">GGT (Gamma-Glutamyl Transferase)</rdfs:label>
+    <rdfs:comment xml:lang="en">Liver enzyme measurement in micromoles per liter (μmol/l)</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#child_stadium_definition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#ChildStadium"/>
+    <rdfs:label xml:lang="en">Child Stadium Definition</rdfs:label>
+    <rdfs:comment xml:lang="en">Description of the Child-Pugh classification stage.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Antidepressiva">
+    <rdfs:label xml:lang="en">antidepressants</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+    <rdfs:comment xml:lang="en">Indicates whether the patient is taking antidepressants</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#dermal_ulcera">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Dermal Ulcera</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates if the patient has skin ulcers.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Diuretika">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">diuretics</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+    <rdfs:comment xml:lang="en">Indicates whether the patient is taking diuretics, used to remove excess fluid and treat high blood pressure</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#intraop_special_features_text">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">intraoperative special features text</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdfs:comment xml:lang="en">Text description of special intraoperative circumstances</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#aftercare_text">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">aftercare text</rdfs:label>
+    <rdfs:comment xml:lang="en">Free-text field for additional follow-up care notes.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralAftercare"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#PatientData">
+    <rdfs:label xml:lang="en">Patient Data</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Data related to a patient's clinical information.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Contains demographic and clinical data about patients.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Patient demographic and clinical data</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the data related to a patient.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the data associated with a patient, including medical records and demographic information.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Demographic and personal information about a patient.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A class representing patient demographic and clinical data</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the basic data of a patient, including identifiers and demographic information.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/schema#patient_data"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/schema/patient_data"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#neurotoxicity">
+    <rdfs:comment xml:lang="en">Indicates whether neurotoxicity occurred as a side effect of chemotherapy.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Neurotoxicity</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#caudal_block">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdfs:label xml:lang="en">caudal block</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates if a caudal block was used for anesthesia</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#implementation_of_chemotherapy_uncertain">
+    <rdfs:comment xml:lang="en">Indicates whether the implementation of chemotherapy was uncertain.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">Implementation of Chemotherapy Uncertain</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Sex">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A class representing biological sex</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the gender or sex of a patient, categorized as male, female, or other.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the classification of gender.</rdfs:comment>
+    <rdfs:label xml:lang="en">Sex</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#histology_summary">
+    <rdfs:label xml:lang="en">Histology Summary</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#HistologyGeneral"/>
+    <rdfs:comment xml:lang="en">A summary of the histological findings, providing an overview of key results.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#incisional_hernia_surgery">
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralAftercare"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Whether surgical treatment for the incisional hernia was performed.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">incisional hernia surgery</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#incisional_hernia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates the presence of an incisional hernia.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralAftercare"/>
+    <rdfs:label xml:lang="en">incisional hernia</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Albumin_g_per_l">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Labour"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Albumin</rdfs:label>
+    <rdfs:comment xml:lang="en">Nutritional status and liver function measurement in grams per liter (g/l)</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#alopecia">
+    <rdfs:comment xml:lang="en">Indicates whether hair loss occurred as a side effect of chemotherapy.</rdfs:comment>
+    <rdfs:label xml:lang="en">Alopecia</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#leucovorin">
+    <rdfs:label xml:lang="en">Leucovorin</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:comment xml:lang="en">Indicates whether Leucovorin was used in the chemotherapy regimen.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#operation_time_end">
+    <rdfs:label xml:lang="en">operation end time</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:comment xml:lang="en">End time of the surgical procedure</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Statine">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+    <rdfs:comment xml:lang="en">Indicates whether the patient is taking statins, used to lower cholesterol</rdfs:comment>
+    <rdfs:label xml:lang="en">statins</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#gall_bladder_leakage">
+    <rdfs:label xml:lang="en">gall bladder leakage</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates bile duct leakage.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralAftercare"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#intraoperative_new_findings">
+    <rdfs:label xml:lang="en">intraoperative new findings</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdfs:comment xml:lang="en">Indicates if new findings were discovered during surgery</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#deep_leg_vein_thrombosis">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:comment xml:lang="en">Indicates if the patient has deep leg vein thrombosis.</rdfs:comment>
+    <rdfs:label xml:lang="en">Deep Leg Vein Thrombosis</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#rsi">
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">rapid sequence induction</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates if rapid sequence induction was used</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#icterus">
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Icterus</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates if the patient has jaundice.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#weitere_Medikation_4">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="en">Indicates whether the patient has additional medication 4</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">additional medication 4</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hepatitis_D">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Hepatitis D</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:comment xml:lang="en">Indicates if the patient has Hepatitis D.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#cardiac_event_text">
+    <rdfs:comment xml:lang="en">Additional details about the cardiac event.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Cardiac Event Text</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#other_chemotherapeutics_iii">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">Other Chemotherapeutics III</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:comment xml:lang="en">Other unspecified chemotherapy agents used in the regimen.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasClavienDindo">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Complication"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/schema#complication.clavien_dindo"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#ClavienDindo"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">has Clavien-Dindo Classification</rdfs:label>
+    <rdfs:comment xml:lang="en">The Clavien-Dindo classification associated with the complication.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#cholangitis">
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">Cholangitis</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates if the patient has inflammation of the bile ducts.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#chronic_renal_insufficiency_stage">
+    <rdfs:label xml:lang="en">Chronic Renal Insufficiency Stage</rdfs:label>
+    <rdfs:comment xml:lang="en">The stage of chronic renal insufficiency in the patient.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#other_chemotherapeutics_i">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Other unspecified chemotherapy agents used in the regimen.</rdfs:comment>
+    <rdfs:label xml:lang="en">Other Chemotherapeutics I</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#other_side_effects">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">Other Side Effects</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates whether other unspecified side effects occurred.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#diagnosis_date_primary_tumour">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:label xml:lang="en">Diagnosis Date of Primary Tumour</rdfs:label>
+    <rdfs:comment xml:lang="en">The date when the primary tumour was diagnosed.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#TSH_mU_per_l">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Thyroid function measurement in milliunits per liter (mU/l)</rdfs:comment>
+    <rdfs:label xml:lang="en">Thyroid-Stimulating Hormone</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Labour"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Lipase_μmol_per_l">
+    <rdfs:comment xml:lang="en">Pancreatic enzyme measurement in micromoles per liter (μmol/l)</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Labour"/>
+    <rdfs:label xml:lang="en">Lipase</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#other_pre_existing_diseases_5">
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">Other Pre-existing Disease 5</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Additional details about other pre-existing disease 5.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#radiotherapy">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:label xml:lang="en">Radiotherapy</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates whether radiotherapy was administered alongside chemotherapy.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasDekubitusGrade">
+    <rdfs:range rdf:resource="http://example.org/ontology#DekubitusGrade"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Complication"/>
+    <rdfs:label xml:lang="en">has Dekubitus Grade</rdfs:label>
+    <rdfs:comment xml:lang="en">The severity grade of a pressure ulcer associated with the complication.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/schema#complication.decubitus_score"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#NSAR">
+    <rdfs:label xml:lang="en">non-steroidal anti-inflammatory drugs</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+    <rdfs:comment xml:lang="en">Indicates whether the patient is taking non-steroidal anti-inflammatory drugs (NSAIDs) for pain and inflammation</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#weitere_Medikation_1_Text">
+    <rdfs:label xml:lang="en">additional medication 1 description</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Text field for detailed description of additional medication 1</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#DiabetesMellitus">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Diabetes Mellitus</rdfs:label>
+    <rdfs:comment xml:lang="en">A chronic condition characterized by high levels of sugar in the blood.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A metabolic disorder characterized by high blood sugar levels over a prolonged period, with various types classified by underlying cause and clinical presentation</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#cardiac_arrhythmia_text">
+    <rdfs:label xml:lang="en">Cardiac Arrhythmia Text</rdfs:label>
+    <rdfs:comment xml:lang="en">Additional details about the cardiac arrhythmia.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#cardiac_arrhythmia">
+    <rdfs:comment xml:lang="en">Indicates if the patient has cardiac arrhythmia.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Cardiac Arrhythmia</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#diabetes_mellitus_description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Textual description of the diabetes mellitus type</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#DiabetesMellitus"/>
+    <rdfs:label xml:lang="en">diabetes mellitus description</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Harnstoff_mmol_per_l">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Labour"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment xml:lang="en">Kidney function measurement in millimoles per liter (mmol/l)</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Urea</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasChildStadium">
+    <rdfs:label xml:lang="en">Has Child Stadium</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#ChildStadium"/>
+    <rdfs:comment xml:lang="en">Indicates the Child-Pugh score for cirrhosis severity.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#diarrhea">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:label xml:lang="en">Diarrhea</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="en">Indicates whether diarrhea occurred as a side effect of chemotherapy.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#radiation_amount_in_gray">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:label xml:lang="en">Radiation Amount in Gray</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment xml:lang="en">Amount of radiation administered, measured in Gray (Gy).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#ps_deterioration">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="en">Indicates whether there was a deterioration in the patient's performance status.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Performance Status Deterioration</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#height_cm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralAftercare"/>
+    <rdfs:comment xml:lang="en">Patient's height in centimeters.</rdfs:comment>
+    <rdfs:label xml:lang="en">height</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#chemoterapy_adjuvant">
+    <rdfs:label xml:lang="en">Adjuvant Chemotherapy</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates whether chemotherapy was administered after the primary treatment.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#weitere_Medikation_2_Text">
+    <rdfs:label xml:lang="en">additional medication 2 description</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+    <rdfs:comment xml:lang="en">Text field for detailed description of additional medication 2</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#osteoporosis">
+    <rdfs:label xml:lang="en">Osteoporosis</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates if the patient has osteoporosis.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#AP_μmol_per_l">
+    <rdfs:label xml:lang="en">AP (Alkaline Phosphatase)</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Liver and bone enzyme measurement in micromoles per liter (μmol/l)</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Labour"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Kreatinin_μmol_per_l">
+    <rdfs:comment xml:lang="en">Kidney function measurement in micromoles per liter (μmol/l)</rdfs:comment>
+    <rdfs:label xml:lang="en">Creatinine</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Labour"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#lumbar_pda">
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdfs:comment xml:lang="en">Indicates if a lumbar epidural catheter was placed</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">lumbar epidural catheter</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Schilddrüsenhormone">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">thyroid hormones</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+    <rdfs:comment xml:lang="en">Indicates whether the patient is taking thyroid hormone replacement therapy</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#gastrala_ulcera">
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:label xml:lang="en">Gastrala Ulcera</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="en">Indicates if the patient has gastric ulcers.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#family_history_neoplastic_disease_text">
+    <rdfs:label xml:lang="en">Family History of Neoplastic Disease Text</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Additional details about the family history of neoplastic disease.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#specific_antibodies">
+    <rdfs:label xml:lang="en">Specific Antibodies</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="en">Indicates whether specific antibodies were used in the chemotherapy regimen.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#loss_of_appetite">
+    <rdfs:comment xml:lang="en">Indicates if the patient has experienced a loss of appetite.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">Loss of Appetite</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#weitere_Medikation">
+    <rdfs:label xml:lang="en">additional medication</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates whether the patient has additional medications beyond those specifically listed</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#emesis">
+    <rdfs:comment xml:lang="en">Indicates whether vomiting occurred as a side effect of chemotherapy.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">Emesis</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#age_at_surgery">
+    <rdfs:domain rdf:resource="http://example.org/ontology#PatientData"/>
+    <rdfs:label xml:lang="en">age at surgery</rdfs:label>
+    <rdfs:label xml:lang="en">Age at Surgery</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Patient's age at the time of surgery in years.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The age of the patient at the time of surgery in years.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the age of the patient at the time of surgery.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Patient's age at the time of surgery in years</rdfs:comment>
+    <rdfs:comment xml:lang="en">The age of the patient at the time of surgery, measured in years.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/schema/patient_data/age_at_surgery"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Medication">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A class representing a patient's medication regimen</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en">Medication</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#metastasen_timepoint">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">metastasis timepoint</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Metastases"/>
+    <rdfs:comment xml:lang="en">The date when metastasis was diagnosed. Codes: 1 - Synchronous (same time as primary tumor diagnosis), 2 - Metachronous (after primary tumor diagnosis), 99 - No information provided.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#night_sweat">
+    <rdfs:label xml:lang="en">Night Sweat</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates if the patient has experienced night sweats.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#charlson_comorbidity_index">
+    <rdfs:label xml:lang="en">Charlson Comorbidity Index</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:comment xml:lang="en">A score assessing comorbid conditions in the patient.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Cholinesterase_μmol_per_l">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Labour"/>
+    <rdfs:comment xml:lang="en">Liver function and nutritional status measurement in micromoles per liter (μmol/l)</rdfs:comment>
+    <rdfs:label xml:lang="en">Cholinesterase</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#alcohol_abuse">
+    <rdfs:comment xml:lang="en">Indicates if the patient has a history of alcohol abuse.</rdfs:comment>
+    <rdfs:label xml:lang="en">Alcohol Abuse</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#clavien_dindo_grade">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/clavien_dindo/clavien_dindo_grade"/>
+    <rdfs:label xml:lang="en">Clavien-Dindo Grade</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#ClavienDindo"/>
+    <rdfs:comment xml:lang="en">The specific grade level of the postoperative complication.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#anaesthesia_duration_min">
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">anesthesia duration</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:comment xml:lang="en">Total duration of anesthesia in minutes</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Thyreostatika">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">thyroid inhibitors</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+    <rdfs:comment xml:lang="en">Indicates whether the patient is taking medications that inhibit thyroid hormone production</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#stand_by_monitoring">
+    <rdfs:label xml:lang="en">stand by monitoring</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="en">Indicates if monitoring was provided during recovery</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#ALAT_μmol_per_l">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Labour"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment xml:lang="en">Liver enzyme measurement in micromoles per liter (μmol/l)</rdfs:comment>
+    <rdfs:label xml:lang="en">ALAT (Alanine Aminotransferase)</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#dekubitus_grade_stadium">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Categorical values: 1-Grade I, 2-Grade II, 3-Grade III, 4-Grade IV, 99-No information provided</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#DekubitusGrade"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology#dekubitus_grade_stadium"/>
+    <rdfs:label xml:lang="en">Pressure ulcer grade stage</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#neurological_pre_existing_disease_text">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Additional details about pre-existing neurological diseases.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">Neurological Pre-existing Disease Text</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hepatomegaly_splenomegaly">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">Hepatomegaly/Splenomegaly</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates if the patient has an enlarged liver or spleen.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#microsatellites">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Microsatellites</rdfs:label>
+    <rdfs:comment xml:lang="en">Microsatellite instability status, often used in cancer diagnostics.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#irinotecan">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="en">Indicates whether Irinotecan was used in the chemotherapy regimen.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Irinotecan</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#stable_course">
+    <rdfs:label xml:lang="en">Stable Course</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates whether the disease course remained stable.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#pre_existing_thyroid_disease">
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">Pre-existing Thyroid Disease</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates if the patient has a pre-existing thyroid disease.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#bile_duct_stenosis">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates bile duct stricture (narrowing).</rdfs:comment>
+    <rdfs:label xml:lang="en">bile duct stenosis</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralAftercare"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#bladder_catheter_removed_date">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdfs:comment xml:lang="en">Date of urinary catheter removal</rdfs:comment>
+    <rdfs:label xml:lang="en">bladder catheter removed date</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#ICD_discription">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Provides additional information or descriptions about the diagnosis that may not be fully captured by the ICD code alone.</rdfs:comment>
+    <rdfs:label xml:lang="en">ICD description</rdfs:label>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/schema/icd/ICD_discription"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Icd"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Steroide">
+    <rdfs:comment xml:lang="en">Indicates whether the patient is taking steroids, often used for inflammation or immune modulation</rdfs:comment>
+    <rdfs:label xml:lang="en">steroids</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#mental_pre_existing_diseases">
+    <rdfs:label xml:lang="en">Mental Pre-existing Diseases</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:comment xml:lang="en">Indicates if the patient has pre-existing mental diseases.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#tiva">
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">total intravenous anesthesia</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates if total intravenous anesthesia was used</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hepatitis_C">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">Hepatitis C</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:comment xml:lang="en">Indicates if the patient has Hepatitis C.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#diverticulosis">
+    <rdfs:label xml:lang="en">Diverticulosis</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:comment xml:lang="en">Indicates if the patient has diverticulosis.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Antihypertensiva">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">antihypertensive medications</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates whether the patient is taking medications to lower blood pressure</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#pleural_effusion">
+    <rdfs:comment xml:lang="en">Indicates if the patient has pleural effusion.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">Pleural Effusion</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#cerebrovascular_event">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:comment xml:lang="en">Indicates if the patient has experienced a cerebrovascular event.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Cerebrovascular Event</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#operation_time_start">
+    <rdfs:comment xml:lang="en">Start time of the surgical procedure</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">operation start time</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#body_size_cm">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Body Size in Centimeters</rdfs:label>
+    <rdfs:comment xml:lang="en">The height of the patient in centimeters.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#localisation_of_the_metastasis">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">Localisation of the Metastasis</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:comment xml:lang="en">The location of the metastasis in the body.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#dose_according_to_bsa">
+    <rdfs:comment xml:lang="en">Indicates whether the dose was calculated based on body surface area (BSA).</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">Dose According to BSA</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#gastric_tube_removed_date">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">gastric tube removed date</rdfs:label>
+    <rdfs:comment xml:lang="en">Date of gastric tube removal</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#other_pre_existing_diseases_2">
+    <rdfs:label xml:lang="en">Other Pre-existing Disease 2</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:comment xml:lang="en">Additional details about other pre-existing disease 2.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#rez_cholangitis">
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralAftercare"/>
+    <rdfs:comment xml:lang="en">Recurring cholangitis (bile duct infections).</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">recurrent cholangitis</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#surgeon">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Name or identifier of the surgeon</rdfs:comment>
+    <rdfs:label xml:lang="en">surgeon</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#intraoperative_new_findings_txt">
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">intraoperative new findings text</rdfs:label>
+    <rdfs:comment xml:lang="en">Text description of new intraoperative findings</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#pulmonary_pre_existing_diseases">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="en">Indicates if the patient has pre-existing pulmonary diseases.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:label xml:lang="en">Pulmonary Pre-existing Diseases</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasSex">
+    <rdfs:range rdf:resource="http://example.org/ontology#Sex"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">Links patient data to their sex information.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links patient data to the corresponding sex information.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links patient data to the associated sex information.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Links patient data to their biological sex information</rdfs:comment>
+    <rdfs:comment xml:lang="en">Indicates the gender or sex of the patient.</rdfs:comment>
+    <rdfs:label xml:lang="en">has sex</rdfs:label>
+    <rdfs:label xml:lang="en">has Sex</rdfs:label>
+    <rdfs:label xml:lang="en">Has Sex</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#PatientData"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/schema/patient_data/sex"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Leukozyten_Gpt_per_l">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Labour"/>
+    <rdfs:comment xml:lang="en">White blood cell count in gigaparticles per liter (Gpt/l)</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:label xml:lang="en">Leukocytes</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#pre_existing_disease_immunological_text">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Pre-existing Immunological Disease Text</rdfs:label>
+    <rdfs:comment xml:lang="en">Additional details about the pre-existing immunological disease.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#discharge_with_drainage">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates if the patient was discharged with a drainage system</rdfs:comment>
+    <rdfs:label xml:lang="en">discharge with drainage</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Anzahl_der_Antihypertensiva">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">number of antihypertensive medications</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:comment xml:lang="en">Number of antihypertensive medications prescribed to the patient</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#dementia">
+    <rdfs:comment xml:lang="en">Indicates if the patient has dementia.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Dementia</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#gemcitabine">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:label xml:lang="en">Gemcitabine</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="en">Indicates whether Gemcitabine was used in the chemotherapy regimen.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#pre_existing_liver_disease">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates if the patient has a pre-existing liver disease.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:label xml:lang="en">Pre-existing Liver Disease</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#ecog_stage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">ECOG Stage</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:comment xml:lang="en">Eastern Cooperative Oncology Group (ECOG) performance status, ranging from 0 (fully active) to 5 (dead).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#sorafenib">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">Sorafenib</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates whether Sorafenib was used in the chemotherapy regimen.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#congestive_heart_failure">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:label xml:lang="en">Congestive Heart Failure</rdfs:label>
+    <rdfs:comment xml:lang="en">Details about congestive heart failure in the patient.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#epirubicin">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Epirubicin</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates whether Epirubicin was used in the chemotherapy regimen.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#photodynamic_therapy">
+    <rdfs:comment xml:lang="en">Indicates whether Photodynamic Therapy (PDT) was performed.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">Photodynamic Therapy</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#pre_existing_disease_immunological">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:comment xml:lang="en">Indicates if the patient has a pre-existing immunological disease.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Pre-existing Immunological Disease</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasMetastases">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">Has Metastases</rdfs:label>
+    <rdfs:range rdf:resource="http://example.org/ontology#Metastases"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:comment xml:lang="en">Indicates the presence and details of cancer metastasis.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#connective_tissue_disease">
+    <rdfs:label xml:lang="en">Connective Tissue Disease</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates if the patient has connective tissue disease.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#folic_acid">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Folic Acid</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates whether Folic Acid was used in the chemotherapy regimen.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#order_number">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">Order Number</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#HistologyGeneral"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">The order or case number assigned to the histological examination.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Labour">
+    <rdfs:label xml:lang="en">Laboratory Test Results</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing,"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Represents clinical laboratory test results for preoperative and discharge assessments</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#nicotine_amount_py">
+    <rdfs:comment xml:lang="en">The amount of nicotine consumed in pack years.</rdfs:comment>
+    <rdfs:label xml:lang="en">Nicotine Amount in Pack Years</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#pulmonary_pre_existing_diseases_text">
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:comment xml:lang="en">Additional details about pre-existing pulmonary diseases.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Pulmonary Pre-existing Diseases Text</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#ClavienDindo">
+    <rdfs:label xml:lang="en">Clavien-Dindo Classification</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A classification system for surgical complications.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A classification system used to grade postoperative complications based on their severity.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/schema#clavien_dindo"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/clavien_dindo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#previous_tumour">
+    <rdfs:comment xml:lang="en">Indicates if the patient has had a previous tumour.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:label xml:lang="en">Previous Tumour</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#first_haemodialysis">
+    <rdfs:label xml:lang="en">First Haemodialysis</rdfs:label>
+    <rdfs:comment xml:lang="en">Details about the first haemodialysis session.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#arthrosis">
+    <rdfs:comment xml:lang="en">Indicates if the patient has arthrosis.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:label xml:lang="en">Arthrosis</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#GeneralAftercare">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">General Aftercare</rdfs:label>
+    <rdfs:comment xml:lang="en">Documents important aspects of a patient's post-surgical follow-up, including complications like hernias, bile duct issues, and weight-related metrics.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Icd">
+    <rdfs:comment xml:lang="en">Represents a standardized coding system used to document diagnoses, diseases, and health-related problems.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/schema/icd"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">International Classification of Diseases</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#DekubitusGrade">
+    <rdfs:label xml:lang="en">Dekubitus Grade</rdfs:label>
+    <rdfs:label xml:lang="en">Pressure ulcer grade</rdfs:label>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/schema#dekubitus_grade"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology#dekubitus_grade"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:comment xml:lang="en">The severity level of a pressure ulcer.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Classification of pressure ulcers (decubitus ulcers or bedsores) by their severity</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#ascites_severity">
+    <rdfs:label xml:lang="en">Ascites Severity</rdfs:label>
+    <rdfs:comment xml:lang="en">The severity of ascites in the patient.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#ivra">
+    <rdfs:comment xml:lang="en">Indicates if intravenous regional anesthesia was used</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">intravenous regional anesthesia</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#side_effects_of_cx">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates whether side effects from chemotherapy were observed.</rdfs:comment>
+    <rdfs:label xml:lang="en">Side Effects of Chemotherapy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#her_2_status">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:comment xml:lang="en">Human epidermal growth factor receptor 2 (HER-2) status, often used in breast cancer and other cancers.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">HER-2 Status</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#cholestasis">
+    <rdfs:comment xml:lang="en">Indicates if the patient has cholestasis.</rdfs:comment>
+    <rdfs:label xml:lang="en">Cholestasis</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#diarrhoea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Diarrhoea</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates if the patient has experienced diarrhoea.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#coronary_heart_disease">
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:label xml:lang="en">Coronary Heart Disease</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates if the patient has coronary heart disease.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#chemoterapy_neoadjuvant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="en">Indicates whether chemotherapy was administered before the primary treatment.</rdfs:comment>
+    <rdfs:label xml:lang="en">Neoadjuvant Chemotherapy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#CRP_mg_per_l">
+    <rdfs:label xml:lang="en">C-Reactive Protein</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment xml:lang="en">Inflammation marker measurement in milligrams per liter (mg/l)</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Labour"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#anaesthesia_time_start">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:label xml:lang="en">anesthesia start time</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdfs:comment xml:lang="en">Start time of anesthesia</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#weitere_Medikation_5_Text">
+    <rdfs:label xml:lang="en">additional medication 5 description</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Text field for detailed description of additional medication 5</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Falithrom_Marcumar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">vitamin K antagonists</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+    <rdfs:comment xml:lang="en">Indicates whether the patient is taking vitamin K antagonists (e.g., Warfarin) used as anticoagulants</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#progression">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:comment xml:lang="en">Indicates whether the disease progressed.</rdfs:comment>
+    <rdfs:label xml:lang="en">Progression</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#other_side_effects_text">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Other Side Effects Text</rdfs:label>
+    <rdfs:comment xml:lang="en">Text field specifying additional side effects not listed.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#ASAT_μmol_per_l">
+    <rdfs:comment xml:lang="en">Liver enzyme measurement in micromoles per liter (μmol/l)</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Labour"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">ASAT (Aspartate Aminotransferase)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#thoracic_pda">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">thoracic epidural catheter</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="en">Indicates if a thoracic epidural catheter was placed</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#operation_duration_min">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">operation duration</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdfs:comment xml:lang="en">Duration of the surgical procedure in minutes</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#number_ecs">
+    <rdfs:comment xml:lang="en">Number of erythrocyte concentrates (red blood cell units) transfused</rdfs:comment>
+    <rdfs:label xml:lang="en">number of erythrocyte concentrates</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#nausea_vomiting">
+    <rdfs:comment xml:lang="en">Indicates if the patient has experienced nausea or vomiting.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">Nausea/Vomiting</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#weitere_Medikation_3">
+    <rdfs:label xml:lang="en">additional medication 3</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="en">Indicates whether the patient has additional medication 3</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#cirrhosis_intraop">
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="en">Presence of cirrhosis noted intraoperatively</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">intraoperative cirrhosis</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#parenteral_nutrition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="en">Indicates if intravenous feeding was required</rdfs:comment>
+    <rdfs:label xml:lang="en">parenteral nutrition</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#previous_secondary_tumour_text">
+    <rdfs:comment xml:lang="en">Additional details about the previous secondary tumour.</rdfs:comment>
+    <rdfs:label xml:lang="en">Previous Secondary Tumour Text</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#nocturia">
+    <rdfs:comment xml:lang="en">Indicates if the patient has experienced nighttime urination.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:label xml:lang="en">Nocturia</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#diabetes_mellitus_code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">diabetes mellitus code</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#DiabetesMellitus"/>
+    <rdfs:comment xml:lang="en">Categorical code representing specific types of diabetes mellitus (1=Type I, 2=Type IIa, 3=Type IIb, 4=Type II unspecified, 5=Type IIIa, 6=Type IIIb, 99=No information)</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#recommendations_tumor_board">
+    <rdfs:comment xml:lang="en">Recommendations provided by the tumor board.</rdfs:comment>
+    <rdfs:label xml:lang="en">Recommendations Tumor Board</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#anaesthesia_time_end">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">End time of anesthesia</rdfs:comment>
+    <rdfs:label xml:lang="en">anesthesia end time</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#number_of_relatives_first_degree">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">The number of first-degree relatives with neoplastic disease.</rdfs:comment>
+    <rdfs:label xml:lang="en">Number of First-Degree Relatives</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#supply_of_the_leakage">
+    <rdfs:comment xml:lang="en">Management or treatment of the bile duct leakage.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralAftercare"/>
+    <rdfs:label xml:lang="en">supply of the leakage</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#ototoxicity">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates whether ototoxicity occurred as a side effect of chemotherapy.</rdfs:comment>
+    <rdfs:label xml:lang="en">Ototoxicity</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#gastritis">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="en">Indicates if the patient has inflammation of the stomach lining.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:label xml:lang="en">Gastritis</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#orale_Antidiabetika">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+    <rdfs:comment xml:lang="en">Indicates whether the patient is taking oral medications for diabetes management</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">oral antidiabetics</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#analgosedation">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="en">Indicates if sedation for pain relief was used</rdfs:comment>
+    <rdfs:label xml:lang="en">analgosedation</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#neurological_pre_existing_disease">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Neurological Pre-existing Disease</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:comment xml:lang="en">Indicates if the patient has pre-existing neurological diseases.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#chemoterapy_palliativ">
+    <rdfs:comment xml:lang="en">Indicates whether chemotherapy was administered for palliative care.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Palliative Chemotherapy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#doxorubicin">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates whether Doxorubicin was used in the chemotherapy regimen.</rdfs:comment>
+    <rdfs:label xml:lang="en">Doxorubicin</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#op_date">
+    <rdfs:comment xml:lang="en">Date of the surgical procedure</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:label xml:lang="en">operation date</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#dysphagia">
+    <rdfs:label xml:lang="en">Dysphagia</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates if the patient has difficulty swallowing.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#laparoscopic_procedure">
+    <rdfs:comment xml:lang="en">Indicates if the procedure was performed laparoscopically</rdfs:comment>
+    <rdfs:label xml:lang="en">laparoscopic procedure</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#family_history_neoplastic_disease">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="en">Indicates if there is a family history of neoplastic disease.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:label xml:lang="en">Family History of Neoplastic Disease</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#chronic_obstructive_pulmonary_disease">
+    <rdfs:comment xml:lang="en">Indicates if the patient has chronic obstructive pulmonary disease.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:label xml:lang="en">Chronic Obstructive Pulmonary Disease</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#inhalative_Bronchodilatatoren">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates whether the patient is taking inhaled bronchodilators for respiratory conditions like asthma or COPD</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+    <rdfs:label xml:lang="en">inhaled bronchodilators</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#apfel_score">
+    <rdfs:comment xml:lang="en">Risk score for postoperative nausea and vomiting (0-4)</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdfs:label xml:lang="en">Apfel score</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#other_liver_disease">
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Additional details about other liver diseases.</rdfs:comment>
+    <rdfs:label xml:lang="en">Other Liver Disease</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#GFR_ml_per_min">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Labour"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:label xml:lang="en">Glomerular Filtration Rate</rdfs:label>
+    <rdfs:comment xml:lang="en">Kidney function measurement in milliliters per minute (ml/min)</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#other_pre_existing_diseases_1">
+    <rdfs:label xml:lang="en">Other Pre-existing Disease 1</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:comment xml:lang="en">Additional details about other pre-existing disease 1.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#spa">
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates if spinal anesthesia was used</rdfs:comment>
+    <rdfs:label xml:lang="en">spinal anesthesia</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#PCT_ng_ml">
+    <rdfs:comment xml:lang="en">Bacterial infection marker measurement in nanograms per milliliter (ng/ml)</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Labour"/>
+    <rdfs:label xml:lang="en">Procalcitonin</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hyperuricaemia_gout">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:label xml:lang="en">Hyperuricaemia/Gout</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates if the patient has hyperuricaemia or gout.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hemiplegia">
+    <rdfs:label xml:lang="en">Hemiplegia</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates if the patient has hemiplegia.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#cholecystolithiasis">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:label xml:lang="en">Cholecystolithiasis</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="en">Indicates if the patient has gallstones.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#oesophageal_stenosis">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="en">Indicates esophageal stenosis (narrowing of the esophagus).</rdfs:comment>
+    <rdfs:label xml:lang="en">oesophageal stenosis</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralAftercare"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#date_laboratory_analysis">
+    <rdfs:comment xml:lang="en">Date when the laboratory analysis was performed</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">laboratory analysis date</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Labour"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Complication">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Complication</rdfs:label>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/schema#complication"/>
+    <rdfs:comment xml:lang="en">A clinical complication occurring during or after a procedure.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#previous_tumour_text">
+    <rdfs:comment xml:lang="en">Additional details about the previous tumour.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Previous Tumour Text</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Plavix">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+    <rdfs:label xml:lang="en">clopidogrel</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates whether the patient is taking clopidogrel, a blood thinner used to prevent strokes and heart attacks</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#date_of_aftercare">
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralAftercare"/>
+    <rdfs:label xml:lang="en">date of aftercare</rdfs:label>
+    <rdfs:comment xml:lang="en">Date of the follow-up examination.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Natrium_mmol_per_l">
+    <rdfs:label xml:lang="en">Sodium</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Electrolyte measurement in millimoles per liter (mmol/l)</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Labour"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#inflammatory_bowel_disease">
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Inflammatory Bowel Disease</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates if the patient has inflammatory bowel disease.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#access_route">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">access route</rdfs:label>
+    <rdfs:comment xml:lang="en">Access route for anesthesia or surgery</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Insulin_Tagesdosis">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+    <rdfs:comment xml:lang="en">Daily dose of insulin in international units (IU)</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="en">insulin daily dose</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#GeneralOperationalDetails">
+    <rdfs:comment xml:lang="en">Documentation of surgical and perioperative process including preparation, intraoperative events, anesthesia management, and postoperative recovery</rdfs:comment>
+    <rdfs:label xml:lang="en">General Operational Details</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#anaesthesia_special_text">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdfs:comment xml:lang="en">Text description of special anesthesia-related conditions</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">anesthesia special text</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#chemotherapy">
+    <rdfs:label xml:lang="en">Chemotherapy</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates whether chemotherapy was administered.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#transfusion">
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">transfusion</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates if a blood transfusion was required</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#implementation_tumor_board">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Implementation Tumor Board</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates whether the tumor board recommendations were implemented.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#oxaliplatin">
+    <rdfs:label xml:lang="en">Oxaliplatin</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates whether Oxaliplatin was used in the chemotherapy regimen.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#conversion_lap_open">
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">conversion laparoscopic to open</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="en">Indicates if there was a conversion from laparoscopic to open surgery</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#number_of_cycles">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="en">Number of Cycles</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Total number of chemotherapy cycles administered.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#continuous_bladder_catheter">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">continuous bladder catheter</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates if a urinary catheter was placed</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#general_anaesthesia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdfs:comment xml:lang="en">Indicates if general anesthesia was used</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">general anesthesia</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#previous_secondary_tumour">
+    <rdfs:comment xml:lang="en">Indicates if the patient has had a previous secondary tumour.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">Previous Secondary Tumour</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#MDRD_ml_per_min">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Labour"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:label xml:lang="en">MDRD GFR</rdfs:label>
+    <rdfs:comment xml:lang="en">Estimated glomerular filtration rate using MDRD formula in milliliters per minute (ml/min)</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#reduced_general_state">
+    <rdfs:label xml:lang="en">Reduced General State</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates if the patient has a reduced general state of health.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#lipid_metabolism_disorders">
+    <rdfs:label xml:lang="en">Lipid Metabolism Disorders</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:comment xml:lang="en">Indicates if the patient has lipid metabolism disorders.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hepatitis_B">
+    <rdfs:label xml:lang="en">Hepatitis B</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates if the patient has Hepatitis B.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#INR">
+    <rdfs:label xml:lang="en">International Normalized Ratio</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Labour"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment xml:lang="en">Standardized blood clotting measurement</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#weight_kg">
+    <rdfs:label xml:lang="en">weight</rdfs:label>
+    <rdfs:label xml:lang="en">Weight in Kilograms</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralAftercare"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:comment xml:lang="en">Patient's weight in kilograms.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The weight of the patient in kilograms.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#tumor_board_decision">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="en">Indicates whether a decision was made by the tumor board.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:label xml:lang="en">Tumor Board Decision</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Metastases">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">The spread of cancer from one part of the body to another.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Represents the spread of cancer cells from the primary tumor to other parts of the body.</rdfs:comment>
+    <rdfs:label xml:lang="en">Metastases</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#ethyltoxic">
+    <rdfs:label xml:lang="en">Ethyltoxic</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:comment xml:lang="en">Indicates if the patient has alcohol-related toxicity.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#mobilisation_postop_date">
+    <rdfs:comment xml:lang="en">Date of the patient's mobilization post-surgery</rdfs:comment>
+    <rdfs:label xml:lang="en">mobilisation postoperative date</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#pdt_cycles">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">PDT Cycles</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:comment xml:lang="en">Number of Photodynamic Therapy (PDT) cycles performed.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#other_pre_existing_diseases_3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Other Pre-existing Disease 3</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Additional details about other pre-existing disease 3.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#specific_antibodies_text">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">Specific Antibodies Text</rdfs:label>
+    <rdfs:comment xml:lang="en">Text field specifying the specific antibodies used in the chemotherapy regimen.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#weitere_Medikation_5">
+    <rdfs:label xml:lang="en">additional medication 5</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="en">Indicates whether the patient has additional medication 5</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#weitere_Medikation_4_Text">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">additional medication 4 description</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+    <rdfs:comment xml:lang="en">Text field for detailed description of additional medication 4</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#sex_category">
+    <rdfs:comment xml:lang="en">The category of the patient's sex, such as male, female, or other.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Indicates the gender category in text form. Values: 1 (Female), 2 (Male), 3 (Diverse).</rdfs:comment>
+    <rdfs:label xml:lang="en">Sex Category</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Sex"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Quickk_percent">
+    <rdfs:comment xml:lang="en">Blood clotting test result in percentage</rdfs:comment>
+    <rdfs:label xml:lang="en">Quick Test</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Labour"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#ASS">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates whether the patient is taking acetylsalicylic acid (Aspirin), commonly used for blood thinning or pain relief</rdfs:comment>
+    <rdfs:label xml:lang="en">acetylsalicylic acid</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Steroide_Tagesdosis">
+    <rdfs:comment xml:lang="en">Daily dose of steroids in milligrams</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:label xml:lang="en">steroid daily dose</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#number_ffps">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdfs:comment xml:lang="en">Number of fresh frozen plasma units transfused</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">number of fresh frozen plasma units</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#constipation">
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Constipation</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates if the patient has experienced constipation.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#weight_loss">
+    <rdfs:label xml:lang="en">Weight Loss</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates if the patient has experienced weight loss.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#clavien_dindo_definition">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/provenance/clavien_dindo/clavien_dindo_definition"/>
+    <rdfs:comment xml:lang="en">Description of the complication's severity and required interventions.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#ClavienDindo"/>
+    <rdfs:label xml:lang="en">Clavien-Dindo Definition</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#body_mass_index">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment xml:lang="en">The body mass index (BMI) of the patient.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Body Mass Index</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#rfa">
+    <rdfs:label xml:lang="en">RFA</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:comment xml:lang="en">Indicates whether Radiofrequency Ablation (RFA) was performed.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Chemotherapy">
+    <rdfs:label xml:lang="en">Chemotherapy</rdfs:label>
+    <rdfs:comment xml:lang="en">A treatment involving the use of chemical substances to destroy cancer cells.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#bmi">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:label xml:lang="en">body mass index</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Body Mass Index, calculated based on weight and height.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralAftercare"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#fever">
+    <rdfs:comment xml:lang="en">Indicates if the patient has experienced fever.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Fever</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#drainage_removed_date">
+    <rdfs:label xml:lang="en">drainage removed date</rdfs:label>
+    <rdfs:comment xml:lang="en">Date of drain removal</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#previous_operations">
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates if the patient had previous operations relevant to the current procedure</rdfs:comment>
+    <rdfs:comment xml:lang="en">Indicates if the patient has had previous operations.</rdfs:comment>
+    <rdfs:label xml:lang="en">previous operations</rdfs:label>
+    <rdfs:label xml:lang="en">Previous Operations</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#HistologyGeneral">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Represents the general histological examination data.</rdfs:comment>
+    <rdfs:label xml:lang="en">General Histology</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#MedicalHistory">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en">Medical History</rdfs:label>
+    <rdfs:comment xml:lang="en">A record of a patient's medical history including diagnoses, treatments, and conditions.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#remission">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="en">Indicates whether the cancer went into remission.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Remission</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#ascites">
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:comment xml:lang="en">Indicates if the patient has fluid in the abdominal cavity.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">Ascites</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#primary_dose_reduction">
+    <rdfs:label xml:lang="en">Primary Dose Reduction</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates whether there was an initial reduction in the prescribed dose.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#histological_diagnosis">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#HistologyGeneral"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">The specific histological diagnosis resulting from the tissue analysis.</rdfs:comment>
+    <rdfs:label xml:lang="en">Histological Diagnosis</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#paclitaxel">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates whether Paclitaxel was used in the chemotherapy regimen.</rdfs:comment>
+    <rdfs:label xml:lang="en">Paclitaxel</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#bm_depression">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">Bone Marrow Depression</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates whether bone marrow depression occurred as a side effect of chemotherapy.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#abdominal_pain">
+    <rdfs:label xml:lang="en">Abdominal Pain</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:comment xml:lang="en">Indicates if the patient has experienced abdominal pain.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hand_foot_syndrome">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:label xml:lang="en">Hand-Foot Syndrome</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates whether hand-foot syndrome occurred as a side effect of chemotherapy.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#patient_id">
+    <rdfs:comment xml:lang="en">Unique identifier for the patient undergoing chemotherapy.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="en">Patient ID</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#other_pre_existing_diseases">
+    <rdfs:label xml:lang="en">Other Pre-existing Diseases</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="en">Indicates if the patient has other pre-existing diseases.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#tace_cycles">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="en">TACE Cycles</rdfs:label>
+    <rdfs:comment xml:lang="en">Number of Transarterial Chemoembolization (TACE) cycles performed.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#dyspnoea">
+    <rdfs:comment xml:lang="en">Indicates if the patient has experienced shortness of breath.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:label xml:lang="en">Dyspnoea</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#asa_score">
+    <rdfs:label xml:lang="en">ASA score</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:comment xml:lang="en">Preoperative physical status classification system by the American Society of Anesthesiologists (1-6)</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#capecitabine">
+    <rdfs:label xml:lang="en">Capecitabine</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates whether Capecitabine was used in the chemotherapy regimen.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#tace">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">TACE</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates whether Transarterial Chemoembolization (TACE) was performed.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#carboplatin">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="en">Indicates whether Carboplatin was used in the chemotherapy regimen.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Carboplatin</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#docetaxel">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates whether Docetaxel was used in the chemotherapy regimen.</rdfs:comment>
+    <rdfs:label xml:lang="en">Docetaxel</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#ffo">
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdfs:label xml:lang="en">fiberoptic intubation</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates if fiberoptic intubation was used</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#five_fluorouracil">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">5-Fluorouracil</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="en">Indicates whether 5-Fluorouracil was used in the chemotherapy regimen.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Hämoglobin_mmol_per_l">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Oxygen-carrying capacity measurement in millimoles per liter (mmol/l)</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Labour"/>
+    <rdfs:label xml:lang="en">Hemoglobin</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#ICD">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/schema/icd/ICD"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Icd"/>
+    <rdfs:label xml:lang="en">ICD code</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents the International Classification of Diseases code for a diagnosis.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#HbA1c_percent">
+    <rdfs:label xml:lang="en">Hemoglobin A1c</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Long-term blood glucose measurement in percentage</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Labour"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#cisplatin">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates whether Cisplatin was used in the chemotherapy regimen.</rdfs:comment>
+    <rdfs:label xml:lang="en">Cisplatin</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#cardiac_event">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Indicates if the patient has experienced a cardiac event.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:label xml:lang="en">Cardiac Event</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#regression">
+    <rdfs:comment xml:lang="en">Indicates whether the tumor regressed.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">Regression</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#other_pre_existing_diseases_4">
+    <rdfs:comment xml:lang="en">Additional details about other pre-existing disease 4.</rdfs:comment>
+    <rdfs:label xml:lang="en">Other Pre-existing Disease 4</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#chronic_pancreatitis">
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:comment xml:lang="en">Indicates if the patient has chronic pancreatitis.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">Chronic Pancreatitis</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#pathologist">
+    <rdfs:label xml:lang="en">Pathologist</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">The pathologist responsible for analyzing and reporting the histological findings.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#HistologyGeneral"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#oedema">
+    <rdfs:label xml:lang="en">Oedema</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates if the patient has edema.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#nicotine_abuse">
+    <rdfs:comment xml:lang="en">Indicates if the patient has a history of nicotine abuse.</rdfs:comment>
+    <rdfs:label xml:lang="en">Nicotine Abuse</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#anaesthesia_special">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="en">Indicates if there were special conditions related to anesthesia</rdfs:comment>
+    <rdfs:label xml:lang="en">anesthesia special</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#arterial_hypertension">
+    <rdfs:comment xml:lang="en">Indicates if the patient has arterial hypertension.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MedicalHistory"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">Arterial Hypertension</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#weitere_Medikation_2">
+    <rdfs:comment xml:lang="en">Indicates whether the patient has additional medication 2</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Medication"/>
+    <rdfs:label xml:lang="en">additional medication 2</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#intraop_special_features">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">intraoperative special features</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates if there were special circumstances during the operation</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#treatment_of_stenosis">
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralAftercare"/>
+    <rdfs:label xml:lang="en">treatment of stenosis</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Treatment or intervention for bile duct stricture.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#other_chemotherapeutics_ii">
+    <rdfs:label xml:lang="en">Other Chemotherapeutics II</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Chemotherapy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Other unspecified chemotherapy agents used in the regimen.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#gastric_tube">
+    <rdfs:label xml:lang="en">gastric tube</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#GeneralOperationalDetails"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="en">Indicates if a gastric tube was placed</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+</rdf:RDF>
