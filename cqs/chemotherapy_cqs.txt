@@ -1,0 +1,27 @@
+[Which treatment modalities were recorded for a patient at a given chemotherapy record, such as chemotherapy, radiotherapy, TACE, RFA, or photodynamic therapy?]
+
+The ontology would answer this by retrieving a specific chemotherapy entry for the patient and returning the treatment-modality indicators documented in that record.
+
+---
+
+[Which systemic agents or other chemotherapeutics were documented for a given chemotherapy record?]
+
+The ontology would answer this by examining the drug-specific fields such as five_fluorouracil, capecitabine, oxaliplatin, cisplatin, gemcitabine, irinotecan, paclitaxel, carboplatin, and the free-text other_chemotherapeutics fields in the selected record.
+
+---
+
+[Which patients received radiotherapy, and what radiation dose in gray was documented for the corresponding treatment record?]
+
+The ontology would answer this by retrieving chemotherapy records where radiotherapy = 1 and returning the linked patients together with radiation_amount_in_gray.
+
+---
+
+[What treatment intent or treatment context was documented for a chemotherapy record, such as neoadjuvant, adjuvant, or palliative therapy?]
+
+The ontology would answer this by retrieving the selected chemotherapy entry and interpreting the chemoterapy_neoadjuvant, chemoterapy_adjuvant, and chemoterapy_palliativ fields together with related recommendation text.
+
+---
+
+[What treatment response, performance status, and side effects were documented for a chemotherapy record?]
+
+The ontology would answer this by retrieving the selected chemotherapy entry and returning response-related fields such as stable_course, progression, regression, remission, together with ecog_stage, karnofsky_index_percent, and side-effect indicators including any free-text notes.
