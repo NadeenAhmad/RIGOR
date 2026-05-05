@@ -41,8 +41,8 @@ RIGOR_Framework/
 │   ├── schema_rd.json
 │   └── schema_icu.json
 │
-├── documents/          # Domain documents for RAG retrieval (Chinook)
-├── external_ontologies_chinook/# Reference ontologies for RAG retrieval (Chinook)
+├── documents/          # Domain documents for RAG retrieval 
+├── external_ontologies/# Reference ontologies for RAG retrieval 
 │
 ├── output/                     # Generated ontologies (created at runtime)
 │   ├── RIGOR/<schema>/<model>/enriched_ontology.owl
