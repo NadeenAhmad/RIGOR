@@ -94,7 +94,7 @@ seaborn
 pandas
 owlready2
 python-docx
-thefuzz          # optional, for fuzzy matching in sql_to_kg.py
+thefuzz          
 ```
 
 ### Environment Variables
