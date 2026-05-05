@@ -1,0 +1,27 @@
+[What sex category is recorded for a given patient?]
+
+The ontology would answer this by linking patient_data.sex to sex.sex_id and returning the corresponding sex_category value.
+
+---
+
+[Which patients are recorded as weiblich, männlich, or divers?]
+
+The ontology would answer this by following the foreign-key relation from patient_data to the sex lookup table and grouping patients by the referenced sex_category.
+
+---
+
+[How can the ontology distinguish coded sex identifiers from human-readable sex categories?]
+
+The ontology would answer this by modeling sex_id as the identifier of a classification entry and sex_category as its semantic label, then linking patients to that classification through patient_data.sex.
+
+---
+
+[Which sex categories are actually used by patient records in the database?]
+
+The ontology would answer this by joining patient_data.sex to sex.sex_id and retrieving the referenced sex_category values that occur in patient records.
+
+---
+
+[Which patients share the same sex category as a given patient?]
+
+The ontology would answer this by identifying the sex classification linked to the given patient and retrieving other patient_data records that point to the same sex entry.

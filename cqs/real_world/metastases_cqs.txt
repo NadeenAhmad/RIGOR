@@ -1,0 +1,27 @@
+[Which patients have documented metastatic disease, and what is the primary metastasis timepoint classification recorded for them?]
+
+The ontology would answer this by linking medical_history.type_primary_metastasis to metastases.metastasen_id and returning the corresponding metastasen_timepoint classification for each patient with a recorded metastasis entry.
+
+---
+
+[Which patients are classified as having synchronous metastases versus metachronous metastases?]
+
+The ontology would answer this by following the foreign-key relation from medical_history.type_primary_metastasis to the metastases table and grouping patients by the referenced metastasen_timepoint value, distinguishing synchronous from metachronous disease presentation.
+
+---
+
+[What is the relationship between a patient's primary tumour diagnosis date and the metastasis timepoint classification recorded in their medical history?]
+
+The ontology would answer this by retrieving a patient's medical_history record and combining the diagnosis_date_primary_tumour and diagnosis_date_metastasis fields with the referenced metastasen_timepoint classification to characterise the temporal relationship between primary disease and metastatic spread.
+
+---
+
+[Which patients have both a localisation of metastasis documented and a metastasis timepoint classification recorded?]
+
+The ontology would answer this by retrieving medical_history records where localisation_of_the_metastasis is populated and type_primary_metastasis references a valid metastases entry, returning both the localisation text and the timepoint classification.
+
+---
+
+[How does the metastases classification support oncological staging in the context of the overall patient medical history?]
+
+The ontology would answer this by modelling the metastases table as a controlled vocabulary for metastatic disease timing, linked from medical_history via type_primary_metastasis, enabling queries that combine metastasis classification with other staging-relevant fields such as diagnosis dates, ICD codes, and treatment records.

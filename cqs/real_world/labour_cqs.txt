@@ -1,0 +1,27 @@
+[What laboratory measurements were recorded for a patient on a given laboratory-analysis date?]
+
+The ontology would answer this by retrieving the labour record for the patient and date_laboratory_analysis, then returning the available biomarker values such as ASAT, ALAT, Bilirubin, INR, CRP, GFR, and others.
+
+---
+
+[Which patients had elevated inflammatory markers documented, such as CRP or PCT values?]
+
+The ontology would answer this by retrieving labour records with recorded CRP_mg_per_l or PCT_ng_ml values and linking those measurement results to the corresponding patients.
+
+---
+
+[What were the liver-related laboratory values for a patient at a specific laboratory time point?]
+
+The ontology would answer this by using a patient's labour record for a given date_laboratory_analysis and returning liver-associated measurements such as ASAT, ALAT, AP, GGT, Bilirubin, and Cholinesterase.
+
+---
+
+[What renal-function measurements were documented for a patient at a given laboratory assessment?]
+
+The ontology would answer this by retrieving the labour record for the patient and returning values such as Kreatinin, Harnstoff, GFR, and MDRD.
+
+---
+
+[How did coagulation-related laboratory values appear for a patient at a given laboratory assessment?]
+
+The ontology would answer this by retrieving the labour record for the patient and returning values such as Quickk_percent and INR for the specified laboratory time point.

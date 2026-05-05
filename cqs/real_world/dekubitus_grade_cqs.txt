@@ -1,0 +1,27 @@
+[What clinical severity of pressure ulcer is represented by each Dekubitus grade?]
+
+The ontology would answer this by modeling each dekubitus_grade entry as a pressure-ulcer severity class using the dekubitus_grade_stadium values such as Grad I through Grad IV.
+
+---
+
+[Which patients had postoperative decubitus and what pressure-ulcer grade was recorded?]
+
+The ontology would answer this by identifying complication records with decubitus = 1, linking decubitus_score to dekubitus_grade, and returning the corresponding severity stage.
+
+---
+
+[Which patients were documented with severe pressure-ulcer grades such as Grad III or Grad IV?]
+
+The ontology would answer this by following the complication.decubitus_score foreign key to dekubitus_grade and selecting patients whose linked stage is Grad III or Grad IV.
+
+---
+
+[What pressure-ulcer grade is associated with a given complication record?]
+
+The ontology would answer this by mapping the complication record's decubitus_score to the referenced dekubitus_grade entry and returning the dekubitus_grade_stadium value.
+
+---
+
+[Which dekubitus_grade entries represent valid clinical stages versus unspecified information?]
+
+The ontology would answer this by distinguishing Grad I to Grad IV from the non-clinical placeholder value 'keine Angabe' in the lookup table.

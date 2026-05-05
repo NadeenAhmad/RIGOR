@@ -1,0 +1,27 @@
+[What Child-Pugh category or liver status is represented by each child_stadium entry?]
+
+The ontology would answer this by representing each row in the child_stadium table as a liver-status classification concept, using child_stadium_definition values such as 'keine Zirrhose', 'Child A', 'Child B', and 'Child C'.
+
+---
+
+[Which patients are documented as having Child-Pugh class A, B, or C?]
+
+The ontology would answer this by linking medical_history.child_stadium to child_stadium.child_stadium_id and retrieving the corresponding patients for each Child-Pugh category.
+
+---
+
+[Which patients are documented as having no cirrhosis?]
+
+The ontology would answer this by identifying the child_stadium entry whose definition is 'keine Zirrhose' and retrieving patients whose medical_history.child_stadium points to that classification.
+
+---
+
+[What liver disease severity classification is recorded for a given patient in the medical history?]
+
+The ontology would answer this by following the relation from a patient's medical_history record to the referenced child_stadium entry and returning the corresponding child_stadium_definition.
+
+---
+
+[Which child_stadium entries indicate an explicit clinical class versus missing or unspecified information?]
+
+The ontology would answer this by distinguishing clinical categories such as 'Child A', 'Child B', and 'Child C' from non-clinical values such as 'keine Angabe' in the child_stadium table.

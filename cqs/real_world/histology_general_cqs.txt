@@ -1,0 +1,27 @@
+[What is the histological diagnosis for a given patient?]
+
+The ontology can answer this question by querying the 'histological_diagnosis' column based on the 'patient_id'.
+
+---
+
+[Which pathologist made a diagnosis for a given order number?]
+
+The ontology can answer this question by retrieving the 'pathologist' column for the given 'order_number'.
+
+---
+
+[What is the summary of histology for a specific patient?]
+
+The ontology can answer this question by querying the 'histology_summary' column based on the 'patient_id'.
+
+---
+
+[How many unique pathologists have made diagnoses?]
+
+The ontology can answer this question by counting the distinct values in the 'pathologist' column.
+
+---
+
+[What are the unique histological diagnoses made by a specific pathologist?]
+
+The ontology can answer this question by retrieving the distinct values in the 'histological_diagnosis' column for a specific 'pathologist'.

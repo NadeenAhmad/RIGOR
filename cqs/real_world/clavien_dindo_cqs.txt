@@ -1,0 +1,27 @@
+[What postoperative severity category is assigned to a complication with a given Clavien-Dindo grade?]
+
+The ontology would answer this by mapping a complication's clavien_dindo foreign key to the corresponding clavien_dindo entry and returning the grade and its definition.
+
+---
+
+[Which complications are classified as requiring pharmacological treatment but not a surgical, endoscopic, or radiological intervention?]
+
+The ontology would answer this by identifying complications linked to the Clavien-Dindo entry whose definition states the need for medication, including parenteral nutrition or blood transfusion, corresponding to Grade II.
+
+---
+
+[Which complications are classified as requiring an intervention under general anaesthesia versus without general anaesthesia?]
+
+The ontology would answer this by distinguishing complications linked to the Clavien-Dindo entries Grade III b ('Mit Vollnarkose') and Grade III a ('Ohne Vollnarkose').
+
+---
+
+[Which complications are classified as life-threatening or associated with organ dysfunction?]
+
+The ontology would answer this by retrieving complication records linked to Grade IV, Grade IV a, or Grade IV b entries in the clavien_dindo classification.
+
+---
+
+[Which patients had postoperative complications classified as death?]
+
+The ontology would answer this by linking complication records to the Clavien-Dindo entry Grade V and then following the patient_id relation to the affected patients.

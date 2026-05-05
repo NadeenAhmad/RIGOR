@@ -1,0 +1,27 @@
+[Which patients have a pre-existing liver disease, and what Child-Pugh classification is recorded for them?]
+
+The ontology would answer this by retrieving medical_history records where pre_existing_liver_disease = 1 and linking child_stadium to the referenced Child-Pugh classification.
+
+---
+
+[Which patients have diabetes documented in their medical history, and which diabetes subtype is recorded?]
+
+The ontology would answer this by linking medical_history.diabetes_type to diabetes_mellitus and returning the associated classification for each patient.
+
+---
+
+[Which patients have documented metastatic disease, and at what primary-metastasis time point was it recorded?]
+
+The ontology would answer this by linking medical_history.type_primary_metastasis to the metastases lookup table and returning the corresponding metastasen_timepoint classification.
+
+---
+
+[Which patients have clinically relevant constitutional symptoms such as weight loss, fever, night sweat, or reduced general state?]
+
+The ontology would answer this by retrieving medical_history records where the corresponding symptom indicators are set and linking them to the affected patients.
+
+---
+
+[Which patients have documented liver-related symptoms or signs such as ascites, icterus, hepatomegaly/splenomegaly, or cholangitis?]
+
+The ontology would answer this by retrieving medical_history records in which those liver-related findings are documented and returning the corresponding patients and available severity or text details.

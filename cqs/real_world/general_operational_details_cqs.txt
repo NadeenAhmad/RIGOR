@@ -1,0 +1,27 @@
+[What operative and anaesthetic durations were documented for a given operation record?]
+
+The ontology would answer this by retrieving a specific general_operational_details entry and returning operation_duration_min together with anaesthesia_duration_min and the recorded start and end times.
+
+---
+
+[Which operations were started laparoscopically and then converted to an open procedure?]
+
+The ontology would answer this by identifying general_operational_details records where laparoscopic_procedure = 1 and conversion_lap_open = 1.
+
+---
+
+[Which operations required blood-product transfusion, and how many erythrocyte concentrates or fresh frozen plasma units were documented?]
+
+The ontology would answer this by retrieving operation records where transfusion = 1 and returning number_ecs and number_ffps for those procedures.
+
+---
+
+[Which operation records document intraoperative new findings or special intraoperative features?]
+
+The ontology would answer this by selecting general_operational_details entries where intraoperative_new_findings = 1 or intraop_special_features = 1 and returning the associated text fields.
+
+---
+
+[What postoperative support measures were documented after a given operation, such as gastric tube use, parenteral nutrition, bladder catheterization, mobilisation, drainage removal, or discharge with drainage?]
+
+The ontology would answer this by retrieving a specific general_operational_details record and returning the corresponding postoperative-support fields and dates.

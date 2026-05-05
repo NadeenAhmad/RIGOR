@@ -1,0 +1,27 @@
+[Which medications has a patient with a specific patient_id been prescribed?]
+
+The ontology would use the patient_id column to filter the records and then examine the columns corresponding to different medications (e.g., ASS, Plavix, Anti_Xa, etc.) to determine which medications have been prescribed.
+
+---
+
+[What is the total number of different medications prescribed to a patient?]
+
+The ontology would count the number of medication columns (from ASS to weitere_Medikation_5) that have a non-zero value for a specific patient_id.
+
+---
+
+[How many patients have been prescribed a specific medication, such as ASS?]
+
+The ontology would count the number of records where the ASS column has a non-zero value.
+
+---
+
+[What is the average daily dose of Steroide for all patients?]
+
+The ontology would calculate the average value of the Steroide_Tagesdosis column for all records.
+
+---
+
+[How many patients have been prescribed more than one type of antihypertensive medication?]
+
+The ontology would count the number of records where the Antihypertensiva column has a non-zero value and the Anzahl_der_Antihypertensiva column is greater than 1.

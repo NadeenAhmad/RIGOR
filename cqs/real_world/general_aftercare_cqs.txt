@@ -1,0 +1,27 @@
+[What postoperative follow-up findings were recorded for a patient at a given aftercare visit?]
+
+The ontology would answer this by using the patient's general_aftercare record identified by patient_id together with the specific aftercare entry or date_of_aftercare and returning the documented findings for that visit.
+
+---
+
+[Which patients developed bile-duct stenosis after surgery, and what treatment was documented?]
+
+The ontology would answer this by retrieving general_aftercare records where bile_duct_stenosis = 1 and returning the associated treatment_of_stenosis together with the linked patient.
+
+---
+
+[Which patients had gall-bladder leakage during aftercare, and how was that leakage managed?]
+
+The ontology would answer this by selecting general_aftercare records where gall_bladder_leakage = 1 and returning the linked patients together with supply_of_the_leakage.
+
+---
+
+[Which aftercare records document an incisional hernia, and which of those also document hernia surgery?]
+
+The ontology would answer this by retrieving general_aftercare entries where incisional_hernia = 1 and distinguishing those with incisional_hernia_surgery = 1.
+
+---
+
+[What anthropometric values were recorded during a given aftercare assessment?]
+
+The ontology would answer this by retrieving the relevant general_aftercare record and returning height_cm, weight_kg, and bmi for that specific follow-up entry.

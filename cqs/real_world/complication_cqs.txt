@@ -1,0 +1,27 @@
+[Which patients had a complication-free postoperative course?]
+
+The ontology would answer this by retrieving complication records where complication_free_progression = 1 and following the patient_id relation to the corresponding patients.
+
+---
+
+[Which patients had postoperative complications classified as severe according to the Clavien-Dindo system?]
+
+The ontology would answer this by linking complication.clavien_dindo to the clavien_dindo table and retrieving patients whose complications map to clinically severe grades such as Grade III, IV, or V.
+
+---
+
+[Which patients developed postoperative decubitus and what severity grade was recorded?]
+
+The ontology would answer this by identifying complication records with decubitus = 1, linking decubitus_score to dekubitus_grade, and returning both the patient and the associated grade.
+
+---
+
+[Which patients required reintubation, and what were their ventilation and inpatient-stay durations?]
+
+The ontology would answer this by selecting complication records with reintubation = 1 and retrieving the related duration_of_inpatient_stay_d, ventilation_duration_h, and noninvasive_ventilation_duration_h values.
+
+---
+
+[Which patients underwent postoperative endoscopic management such as ERCP, and what related endoscopy information was documented?]
+
+The ontology would answer this by retrieving complication records where endoscopic_retrograde_cholangiopancreatography = 1 or endoscopy = 1 and returning the associated endoscopy_text and patient linkage.

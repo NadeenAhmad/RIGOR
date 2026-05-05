@@ -1,0 +1,27 @@
+[What is the ICD code for a patient given their patient ID?]
+
+The ontology would use the patient_id column to filter the table and return the ICD codes for the specified patient.
+
+---
+
+[What is the description of a given ICD code?]
+
+The ontology would use the ICD column to filter the table and return the corresponding ICD_discription.
+
+---
+
+[Which patients have a specific ICD code?]
+
+The ontology would use the ICD column to filter the table and return the patient_id values for patients with the specified ICD code.
+
+---
+
+[What are all the unique ICD codes present in the table?]
+
+The ontology would query the ICD column to retrieve all unique values.
+
+---
+
+[What are the ICD descriptions for a given patient?]
+
+The ontology would use the patient_id column to filter the table and return the corresponding ICD_discription values for the specified patient.

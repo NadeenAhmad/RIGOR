@@ -1,0 +1,27 @@
+[Which diabetes subtype is documented for a patient in the medical history?]
+
+The ontology would answer this by linking medical_history.diabetes_type to diabetes_mellitus.diabetes_mellitus_id and returning the corresponding diabetes_mellitus_code.
+
+---
+
+[Which patients are recorded as having Type I diabetes versus Type II diabetes variants?]
+
+The ontology would answer this by following the medical_history.diabetes_type foreign key to the diabetes_mellitus table and grouping patients by the referenced code values such as 'Typ I', 'Typ II a', 'Typ II b', or 'Typ II unspez'.
+
+---
+
+[Which patients have an unspecified diabetes classification?]
+
+The ontology would answer this by identifying medical_history records whose diabetes_type points to the diabetes_mellitus entry 'keine Angabe'.
+
+---
+
+[What diabetes classification code is associated with a given medical history record?]
+
+The ontology would answer this by following the medical_history.diabetes_type relation to the referenced diabetes_mellitus entry and returning the diabetes_mellitus_code.
+
+---
+
+[Which diabetes_mellitus entries represent clinically meaningful subtypes versus missing information?]
+
+The ontology would answer this by distinguishing entries such as 'Typ I', 'Typ II a', 'Typ II b', 'Typ II unspez', 'Typ III a', and 'Typ III b' from the placeholder value 'keine Angabe'.
