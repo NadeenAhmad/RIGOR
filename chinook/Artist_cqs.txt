@@ -1,0 +1,27 @@
+[What are the unique identifiers for artists in the table?]
+
+The unique identifiers for artists are the values in the ArtistId column, as it is an INTEGER type and a primary key, ensuring each value is unique and non-nullable.
+
+---
+
+[Can the name of an artist be null?]
+
+Yes, the name of an artist can be null. The Name column is of type TEXT and is nullable.
+
+---
+
+[Is there a default value for the artist's name?]
+
+No, there is no default value for the artist's name. The default value for the Name column is set to None.
+
+---
+
+[How many characters can the artist's name have at most?]
+
+The artist's name can have at most 120 characters, as the Name column is of type NVARCHAR(120).
+
+---
+
+[Can there be two artists with the same name?]
+
+Yes, there can be two artists with the same name. The Name column is not unique, and the schema does not enforce uniqueness of artist names.

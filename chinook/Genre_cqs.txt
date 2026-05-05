@@ -1,0 +1,27 @@
+What are the possible genres in the database?
+
+The ontology would retrieve all distinct values from the 'Name' column in the 'Genre' table to list all possible genres.
+
+---
+
+How many genres are there in the database?
+
+The ontology would count the number of unique entries in the 'GenreId' column, as each 'GenreId' represents a unique genre.
+
+---
+
+Can a genre be identified by its name?
+
+No, a genre cannot be uniquely identified by its name because the 'Name' column is nullable and not unique. The 'GenreId' column is the primary key and uniquely identifies each genre.
+
+---
+
+What is the ID of the genre named 'Action'?
+
+The ontology would search for the 'Name' column with the value 'Action' and retrieve the corresponding 'GenreId' value.
+
+---
+
+Are there any genres in the database with a null name?
+
+The ontology would count the number of rows in the 'Genre' table where the 'Name' column is null to determine if there are any genres with a null name.
