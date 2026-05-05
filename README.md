@@ -191,7 +191,7 @@ python eval.py
 ```
 
 Evaluation dimensions:
-- **CQ-based quality scoring** — 6 dimensions scored by a Judge-LLM (GPT-4o, a different model family from all generators to avoid self-evaluation bias)
+- **CQ-based quality scoring** — 7 dimensions scored by a Judge-LLM (GPT-4o, a different model family from all generators to avoid self-evaluation bias)
 - **Structural analysis** — class/property/axiom counts
 - **Semantic coverage** — how well schema concepts are covered (embedding similarity)
 - **Syntax and logical consistency** — rdflib parse validation
