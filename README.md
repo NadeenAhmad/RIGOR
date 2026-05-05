@@ -9,12 +9,12 @@ An end-to-end framework for automatically generating semantically rich OWL 2 ont
 
 ## Overview
 
-Translating relational databases into ontologies is a well-studied problem, but existing approaches either produce shallow structural mirrors of the schema (direct mapping) or rely on unconstrained LLM generation that hallucinates concepts. RIGOR bridges this gap through a multi-stage pipeline:
+Translating relational databases into ontologies is a well-studied problem, but existing approaches either produce shallow structural mirrors of the schema (direct mapping) or rely on unconstrained LLMs that hallucinate concepts. RIGOR bridges this gap through a multi-stage pipeline:
 
 1. **Deterministic Direct Mapping** generates a faithful OWL backbone from the SQL schema, guaranteeing full structural coverage.
 2. **FK-Guided Iterative Enrichment** processes tables in foreign-key dependency order. For each table, a Gen-LLM produces semantic enrichment deltas (labels, comments, subclass axioms, restrictions, provenance links) grounded in three RAG sources: the growing core ontology, domain documents, and external reference ontologies.
 3. **Judge-LLM Validation** reviews each delta for consistency with the schema and the direct mapping before it is merged, rejecting or correcting hallucinated constructs.
-4. **Deterministic Post-Validation** checks every merged graph against RIGOR structural invariants (domain/range completeness, class coverage, property typing) as a final safety net.
+
 
 The repository also includes baseline and ablation scripts for reproducible evaluation, a competency-question generator, a full evaluation suite, and a knowledge-graph population module.
 
@@ -105,7 +105,7 @@ export OPENROUTER_API_KEY="your_key_here"
 
 ### Configuration
 
-All scripts use a `BASE_PATH` variable at the top of the file that should point to the root of this repository. By default it is set to the current directory of the script. Update it if your layout differs.
+All scripts use a `BASE_PATH` variable at the top of the file that points to the repository root. By default, it is set to the script's current directory. Update it if your layout differs.
 
 ---
 
@@ -113,7 +113,7 @@ All scripts use a `BASE_PATH` variable at the top of the file that should point 
 
 ### 1. Generate the Direct Mapping
 
-Produces a deterministic OWL ontology from the schema alone (no LLM calls):
+Produces a deterministic OWL ontology from the schema alone (no LLM calls), following the direct mapping approach of [Sequeda et al. (2012)](#references):
 
 ```bash
 python mapping.py
@@ -137,16 +137,16 @@ python run_all.py
 
 **What happens during a run:**
 1. Schema is loaded and parsed from JSON
-2. Local embedding model (`all-MiniLM-L6-v2`) is initialised
+2. Local embedding model (`all-MiniLM-L6-v2`) is initialized
 3. FAISS indices are built for domain documents and external ontologies
 4. Seed core ontology is loaded (if provided)
 5. Tables are traversed in FK-dependency order
 6. For each table: direct mapping is merged → RAG context is retrieved → Gen-LLM produces a delta → Judge-LLM validates → deterministic post-validation → merge into growing core
-7. Final ontology is validated and serialised as OWL/XML
+7. Final ontology is validated and serialized as OWL/XML
 
 ### 3. Run Baselines
 
-**Schema-only baseline** (no RAG, no documents, no Judge):
+**Schema-only baseline** — LLM generates ontology fragments from schema alone, with no RAG, no documents, and no Judge, following the approach of [Mateiu and Groza (2023)](#references):
 
 ```bash
 python baseline.py
@@ -165,7 +165,6 @@ Generates ontology variants with selected context sources disabled:
 ```bash
 python run_ablation.py                          # all variants
 python run_ablation.py --variant no_rag         # single variant
-python run_ablation.py --force                  # regenerate existing outputs
 ```
 
 Ablation variants:
@@ -228,7 +227,6 @@ Reads SQL dumps or CSVs and instantiates individuals in the RIGOR-enriched ontol
 
 ```bash
 python sql_to_kg.py
-python sql_to_kg.py --schema chinook --model claude
 ```
 
 ---
@@ -264,7 +262,7 @@ Schema files are provided as JSON in `sql_schema/`. Each file maps table names t
 
 ## Output Format
 
-All generated ontologies are serialised as **OWL/XML** (`.owl` files) and can be opened in Protégé or any OWL-compatible tool. Key ontology features include:
+All generated ontologies are serialized as **OWL/XML** (`.owl` files) and can be opened in Protégé or any OWL-compatible tool. Key ontology features include:
 
 - OWL 2 classes, datatype properties, and object properties with full domain/range declarations
 - `rdfs:label` and `rdfs:comment` annotations
@@ -273,9 +271,13 @@ All generated ontologies are serialised as **OWL/XML** (`.owl` files) and can be
 - PROV-O provenance metadata (`prov:generatedAtTime`, `prov:wasDerivedFrom`)
 - SKOS alignment links to external ontologies (`skos:exactMatch`, `skos:closeMatch`)
 
-
 ---
 
-## License
+## References
 
-TODO: Add license information.
+This work builds on the following prior work:
+
+- **Direct Mapping:** Sequeda, J.F., Arenas, M., Miranker, D.P.: On directly mapping relational databases to RDF and OWL. In: Proceedings of the 21st International Conference on World Wide Web, pp. 649–658 (2012)
+- **LLM-based Ontology Engineering Baseline:** Mateiu, P., Groza, A.: Ontology engineering with large language models. In: 2023 25th International Symposium on Symbolic and Numeric Algorithms for Scientific Computing (SYNASC), pp. 226–229. IEEE (2023)
+
+---
