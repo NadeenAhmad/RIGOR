@@ -1,0 +1,659 @@
+{
+  "Album": {
+    "columns": {
+      "AlbumId": {
+        "type": "INTEGER",
+        "raw_type": "INTEGER",
+        "nullable": false,
+        "primary_key": true,
+        "unique": false,
+        "default": null
+      },
+      "Title": {
+        "type": "TEXT",
+        "raw_type": "NVARCHAR(160)",
+        "nullable": false,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "ArtistId": {
+        "type": "INTEGER",
+        "raw_type": "INTEGER",
+        "nullable": false,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      }
+    },
+    "foreign_keys": [
+      {
+        "column": "ArtistId",
+        "references_table": "Artist",
+        "references_column": "ArtistId",
+        "on_update": "NO ACTION",
+        "on_delete": "NO ACTION"
+      }
+    ]
+  },
+  "Artist": {
+    "columns": {
+      "ArtistId": {
+        "type": "INTEGER",
+        "raw_type": "INTEGER",
+        "nullable": false,
+        "primary_key": true,
+        "unique": false,
+        "default": null
+      },
+      "Name": {
+        "type": "TEXT",
+        "raw_type": "NVARCHAR(120)",
+        "nullable": true,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      }
+    },
+    "foreign_keys": []
+  },
+  "Customer": {
+    "columns": {
+      "CustomerId": {
+        "type": "INTEGER",
+        "raw_type": "INTEGER",
+        "nullable": false,
+        "primary_key": true,
+        "unique": false,
+        "default": null
+      },
+      "FirstName": {
+        "type": "TEXT",
+        "raw_type": "NVARCHAR(40)",
+        "nullable": false,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "LastName": {
+        "type": "TEXT",
+        "raw_type": "NVARCHAR(20)",
+        "nullable": false,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "Company": {
+        "type": "TEXT",
+        "raw_type": "NVARCHAR(80)",
+        "nullable": true,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "Address": {
+        "type": "TEXT",
+        "raw_type": "NVARCHAR(70)",
+        "nullable": true,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "City": {
+        "type": "TEXT",
+        "raw_type": "NVARCHAR(40)",
+        "nullable": true,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "State": {
+        "type": "TEXT",
+        "raw_type": "NVARCHAR(40)",
+        "nullable": true,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "Country": {
+        "type": "TEXT",
+        "raw_type": "NVARCHAR(40)",
+        "nullable": true,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "PostalCode": {
+        "type": "TEXT",
+        "raw_type": "NVARCHAR(10)",
+        "nullable": true,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "Phone": {
+        "type": "TEXT",
+        "raw_type": "NVARCHAR(24)",
+        "nullable": true,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "Fax": {
+        "type": "TEXT",
+        "raw_type": "NVARCHAR(24)",
+        "nullable": true,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "Email": {
+        "type": "TEXT",
+        "raw_type": "NVARCHAR(60)",
+        "nullable": false,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "SupportRepId": {
+        "type": "INTEGER",
+        "raw_type": "INTEGER",
+        "nullable": true,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      }
+    },
+    "foreign_keys": [
+      {
+        "column": "SupportRepId",
+        "references_table": "Employee",
+        "references_column": "EmployeeId",
+        "on_update": "NO ACTION",
+        "on_delete": "NO ACTION"
+      }
+    ]
+  },
+  "Employee": {
+    "columns": {
+      "EmployeeId": {
+        "type": "INTEGER",
+        "raw_type": "INTEGER",
+        "nullable": false,
+        "primary_key": true,
+        "unique": false,
+        "default": null
+      },
+      "LastName": {
+        "type": "TEXT",
+        "raw_type": "NVARCHAR(20)",
+        "nullable": false,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "FirstName": {
+        "type": "TEXT",
+        "raw_type": "NVARCHAR(20)",
+        "nullable": false,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "Title": {
+        "type": "TEXT",
+        "raw_type": "NVARCHAR(30)",
+        "nullable": true,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "ReportsTo": {
+        "type": "INTEGER",
+        "raw_type": "INTEGER",
+        "nullable": true,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "BirthDate": {
+        "type": "DATETIME",
+        "raw_type": "DATETIME",
+        "nullable": true,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "HireDate": {
+        "type": "DATETIME",
+        "raw_type": "DATETIME",
+        "nullable": true,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "Address": {
+        "type": "TEXT",
+        "raw_type": "NVARCHAR(70)",
+        "nullable": true,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "City": {
+        "type": "TEXT",
+        "raw_type": "NVARCHAR(40)",
+        "nullable": true,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "State": {
+        "type": "TEXT",
+        "raw_type": "NVARCHAR(40)",
+        "nullable": true,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "Country": {
+        "type": "TEXT",
+        "raw_type": "NVARCHAR(40)",
+        "nullable": true,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "PostalCode": {
+        "type": "TEXT",
+        "raw_type": "NVARCHAR(10)",
+        "nullable": true,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "Phone": {
+        "type": "TEXT",
+        "raw_type": "NVARCHAR(24)",
+        "nullable": true,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "Fax": {
+        "type": "TEXT",
+        "raw_type": "NVARCHAR(24)",
+        "nullable": true,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "Email": {
+        "type": "TEXT",
+        "raw_type": "NVARCHAR(60)",
+        "nullable": true,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      }
+    },
+    "foreign_keys": [
+      {
+        "column": "ReportsTo",
+        "references_table": "Employee",
+        "references_column": "EmployeeId",
+        "on_update": "NO ACTION",
+        "on_delete": "NO ACTION"
+      }
+    ]
+  },
+  "Genre": {
+    "columns": {
+      "GenreId": {
+        "type": "INTEGER",
+        "raw_type": "INTEGER",
+        "nullable": false,
+        "primary_key": true,
+        "unique": false,
+        "default": null
+      },
+      "Name": {
+        "type": "TEXT",
+        "raw_type": "NVARCHAR(120)",
+        "nullable": true,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      }
+    },
+    "foreign_keys": []
+  },
+  "Invoice": {
+    "columns": {
+      "InvoiceId": {
+        "type": "INTEGER",
+        "raw_type": "INTEGER",
+        "nullable": false,
+        "primary_key": true,
+        "unique": false,
+        "default": null
+      },
+      "CustomerId": {
+        "type": "INTEGER",
+        "raw_type": "INTEGER",
+        "nullable": false,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "InvoiceDate": {
+        "type": "DATETIME",
+        "raw_type": "DATETIME",
+        "nullable": false,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "BillingAddress": {
+        "type": "TEXT",
+        "raw_type": "NVARCHAR(70)",
+        "nullable": true,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "BillingCity": {
+        "type": "TEXT",
+        "raw_type": "NVARCHAR(40)",
+        "nullable": true,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "BillingState": {
+        "type": "TEXT",
+        "raw_type": "NVARCHAR(40)",
+        "nullable": true,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "BillingCountry": {
+        "type": "TEXT",
+        "raw_type": "NVARCHAR(40)",
+        "nullable": true,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "BillingPostalCode": {
+        "type": "TEXT",
+        "raw_type": "NVARCHAR(10)",
+        "nullable": true,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "Total": {
+        "type": "DECIMAL",
+        "raw_type": "NUMERIC(10,2)",
+        "nullable": false,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      }
+    },
+    "foreign_keys": [
+      {
+        "column": "CustomerId",
+        "references_table": "Customer",
+        "references_column": "CustomerId",
+        "on_update": "NO ACTION",
+        "on_delete": "NO ACTION"
+      }
+    ]
+  },
+  "InvoiceLine": {
+    "columns": {
+      "InvoiceLineId": {
+        "type": "INTEGER",
+        "raw_type": "INTEGER",
+        "nullable": false,
+        "primary_key": true,
+        "unique": false,
+        "default": null
+      },
+      "InvoiceId": {
+        "type": "INTEGER",
+        "raw_type": "INTEGER",
+        "nullable": false,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "TrackId": {
+        "type": "INTEGER",
+        "raw_type": "INTEGER",
+        "nullable": false,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "UnitPrice": {
+        "type": "DECIMAL",
+        "raw_type": "NUMERIC(10,2)",
+        "nullable": false,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "Quantity": {
+        "type": "INTEGER",
+        "raw_type": "INTEGER",
+        "nullable": false,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      }
+    },
+    "foreign_keys": [
+      {
+        "column": "TrackId",
+        "references_table": "Track",
+        "references_column": "TrackId",
+        "on_update": "NO ACTION",
+        "on_delete": "NO ACTION"
+      },
+      {
+        "column": "InvoiceId",
+        "references_table": "Invoice",
+        "references_column": "InvoiceId",
+        "on_update": "NO ACTION",
+        "on_delete": "NO ACTION"
+      }
+    ]
+  },
+  "MediaType": {
+    "columns": {
+      "MediaTypeId": {
+        "type": "INTEGER",
+        "raw_type": "INTEGER",
+        "nullable": false,
+        "primary_key": true,
+        "unique": false,
+        "default": null
+      },
+      "Name": {
+        "type": "TEXT",
+        "raw_type": "NVARCHAR(120)",
+        "nullable": true,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      }
+    },
+    "foreign_keys": []
+  },
+  "Playlist": {
+    "columns": {
+      "PlaylistId": {
+        "type": "INTEGER",
+        "raw_type": "INTEGER",
+        "nullable": false,
+        "primary_key": true,
+        "unique": false,
+        "default": null
+      },
+      "Name": {
+        "type": "TEXT",
+        "raw_type": "NVARCHAR(120)",
+        "nullable": true,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      }
+    },
+    "foreign_keys": []
+  },
+  "PlaylistTrack": {
+    "columns": {
+      "PlaylistId": {
+        "type": "INTEGER",
+        "raw_type": "INTEGER",
+        "nullable": false,
+        "primary_key": true,
+        "unique": false,
+        "default": null
+      },
+      "TrackId": {
+        "type": "INTEGER",
+        "raw_type": "INTEGER",
+        "nullable": false,
+        "primary_key": true,
+        "unique": false,
+        "default": null
+      }
+    },
+    "foreign_keys": [
+      {
+        "column": "TrackId",
+        "references_table": "Track",
+        "references_column": "TrackId",
+        "on_update": "NO ACTION",
+        "on_delete": "NO ACTION"
+      },
+      {
+        "column": "PlaylistId",
+        "references_table": "Playlist",
+        "references_column": "PlaylistId",
+        "on_update": "NO ACTION",
+        "on_delete": "NO ACTION"
+      }
+    ],
+    "unique_constraints": [
+      [
+        "PlaylistId",
+        "TrackId"
+      ]
+    ]
+  },
+  "Track": {
+    "columns": {
+      "TrackId": {
+        "type": "INTEGER",
+        "raw_type": "INTEGER",
+        "nullable": false,
+        "primary_key": true,
+        "unique": false,
+        "default": null
+      },
+      "Name": {
+        "type": "TEXT",
+        "raw_type": "NVARCHAR(200)",
+        "nullable": false,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "AlbumId": {
+        "type": "INTEGER",
+        "raw_type": "INTEGER",
+        "nullable": true,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "MediaTypeId": {
+        "type": "INTEGER",
+        "raw_type": "INTEGER",
+        "nullable": false,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "GenreId": {
+        "type": "INTEGER",
+        "raw_type": "INTEGER",
+        "nullable": true,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "Composer": {
+        "type": "TEXT",
+        "raw_type": "NVARCHAR(220)",
+        "nullable": true,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "Milliseconds": {
+        "type": "INTEGER",
+        "raw_type": "INTEGER",
+        "nullable": false,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "Bytes": {
+        "type": "INTEGER",
+        "raw_type": "INTEGER",
+        "nullable": true,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      },
+      "UnitPrice": {
+        "type": "DECIMAL",
+        "raw_type": "NUMERIC(10,2)",
+        "nullable": false,
+        "primary_key": false,
+        "unique": false,
+        "default": null
+      }
+    },
+    "foreign_keys": [
+      {
+        "column": "MediaTypeId",
+        "references_table": "MediaType",
+        "references_column": "MediaTypeId",
+        "on_update": "NO ACTION",
+        "on_delete": "NO ACTION"
+      },
+      {
+        "column": "GenreId",
+        "references_table": "Genre",
+        "references_column": "GenreId",
+        "on_update": "NO ACTION",
+        "on_delete": "NO ACTION"
+      },
+      {
+        "column": "AlbumId",
+        "references_table": "Album",
+        "references_column": "AlbumId",
+        "on_update": "NO ACTION",
+        "on_delete": "NO ACTION"
+      }
+    ]
+  }
+}
