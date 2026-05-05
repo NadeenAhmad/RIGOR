@@ -1,0 +1,598 @@
+@prefix : <http://www.w3.org/2002/07/owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmo: <http://performedmusicontology.org/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+<http://performedmusicontology.org/ontology/> rdf:type owl:Ontology ;
+                                               owl:versionIRI <http://performedmusicontology.org/ontology/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://id.loc.gov/ontologies/bibframe/eventContent
+<http://id.loc.gov/ontologies/bibframe/eventContent> rdf:type owl:ObjectProperty .
+
+
+###  http://id.loc.gov/ontologies/bibframe/eventContentOf
+<http://id.loc.gov/ontologies/bibframe/eventContentOf> rdf:type owl:ObjectProperty .
+
+
+###  http://id.loc.gov/ontologies/bibframe/relatedTo
+<http://id.loc.gov/ontologies/bibframe/relatedTo> rdf:type owl:ObjectProperty .
+
+
+###  http://performedmusicontology.org/ontology/aggregatedIn
+pmo:aggregatedIn rdf:type owl:ObjectProperty ;
+                 owl:inverseOf pmo:aggregates ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Property connecting an individual aggregated Instance to the Instance in which it is aggregated." .
+
+
+###  http://performedmusicontology.org/ontology/aggregates
+pmo:aggregates rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               <http://www.w3.org/2004/02/skos/core#definition> "Property connecting an aggregating instance to an individual instance that it aggregates." .
+
+
+###  http://performedmusicontology.org/ontology/asMemberOf
+pmo:asMemberOf rdf:type owl:ObjectProperty ;
+               rdfs:comment "Use with bf:Contribution" ;
+               rdfs:label "as Member of" ;
+               <http://www.w3.org/2004/02/skos/core#definition> "Organization through which a person makes a contribution to a work or instance." .
+
+
+###  http://performedmusicontology.org/ontology/associatedWith
+pmo:associatedWith rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/relatedTo> ;
+                   rdf:type owl:SymmetricProperty ;
+                   rdfs:comment "Example: the Bible used at a presidential inauguration" ;
+                   rdfs:label "associated with" ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "Event or Work that is associated in a general way with another event or work, instance or item." .
+
+
+###  http://performedmusicontology.org/ontology/composedOf
+pmo:composedOf rdf:type owl:ObjectProperty ;
+               rdfs:comment "Use with Thematic Identifer Statement, Opus Number Statement" ;
+               rdfs:label "composed of" ;
+               <http://www.w3.org/2004/02/skos/core#definition> "Portion of a multi-level identifier, such as a prefix or part number" .
+
+
+###  http://performedmusicontology.org/ontology/createdFor
+pmo:createdFor rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/relatedTo> ;
+               rdfs:domain <http://id.loc.gov/ontologies/bibframe/Work> ;
+               rdfs:comment "Example: a laudatory motet intended to be sung at the inauguration of a pope." ;
+               rdfs:label "created for" ;
+               <http://www.w3.org/2004/02/skos/core#definition> "Event for which a work is created." .
+
+
+###  http://performedmusicontology.org/ontology/hasDoublingMediumOfPerformance
+pmo:hasDoublingMediumOfPerformance rdf:type owl:ObjectProperty ;
+                                   rdfs:comment "Use with MediumPart" ;
+                                   rdfs:label "has Doubling Medium of Performance" ;
+                                   <http://www.w3.org/2004/02/skos/core#definition> "2 (or more) mediums of performance intended to be performed alternately or at the same time by a single performer" .
+
+
+###  http://performedmusicontology.org/ontology/hasDramaticRole
+pmo:hasDramaticRole rdf:type owl:ObjectProperty ;
+                    rdfs:comment "Example: the role of Carmen in the opera Carmen." ;
+                    rdfs:label "has Dramatic Role" ;
+                    <http://www.w3.org/2004/02/skos/core#definition> "Property connecting a Contribution to the character of a performer in a dramatic work, such as an opera, play, or film." .
+
+
+###  http://performedmusicontology.org/ontology/hasEventName
+pmo:hasEventName rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdfs:domain <http://id.loc.gov/ontologies/bibframe/Event> ;
+                 rdfs:label "has Event Name" ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Name of an event, whether formal or created for metadata purposes" .
+
+
+###  http://performedmusicontology.org/ontology/hasInspiration
+pmo:hasInspiration rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/relatedTo> ;
+                   owl:inverseOf pmo:inspirationFor ;
+                   rdfs:label "has as Inspiration" ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "Event that inspired the creation of a work." .
+
+
+###  http://performedmusicontology.org/ontology/hasKeyMode
+pmo:hasKeyMode rdf:type owl:ObjectProperty ;
+               rdfs:comment "Example: E major, F minor" ;
+               rdfs:label "has key and mode" ;
+               <http://www.w3.org/2004/02/skos/core#definition> "Property linking a Work to a combination of a musical key and mode." .
+
+
+###  http://performedmusicontology.org/ontology/hasMedium
+pmo:hasMedium rdf:type owl:ObjectProperty ;
+              rdfs:label "has Medium" ;
+              <http://www.w3.org/2004/02/skos/core#definition> "Property that links a Work or Performance to the Declared or Performed Medium." .
+
+
+###  http://performedmusicontology.org/ontology/hasMediumOfPerformance
+pmo:hasMediumOfPerformance rdf:type owl:ObjectProperty ;
+                           rdfs:comment "Examples: bass guitar; er hu; soprano; computer" ;
+                           rdfs:label "has Medium Of Performance" ;
+                           <http://www.w3.org/2004/02/skos/core#definition> "Specific medium of performance." .
+
+
+###  http://performedmusicontology.org/ontology/hasMediumPart
+pmo:hasMediumPart rdf:type owl:ObjectProperty ;
+                  rdfs:range pmo:MediumPart ;
+                  rdfs:comment "Examples: er hu, mixed chorus" ,
+                               "Use with :DeclaredMedium or :PerformedMedium" ;
+                  rdfs:label "has Medium Part" ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Specific element within an overall declared or performed medium." .
+
+
+###  http://performedmusicontology.org/ontology/hasMediumPartType
+pmo:hasMediumPartType rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf owl:topObjectProperty ;
+                      rdfs:domain pmo:MediumPart ;
+                      rdfs:comment "Examples: solo, ad lib, optional, offstage, amplified" ;
+                      rdfs:label "has Medium Part Type" ;
+                      <http://www.w3.org/2004/02/skos/core#definition> "Property that links a a pmo:MediumPart to a specific role or type of part." .
+
+
+###  http://performedmusicontology.org/ontology/hasMode
+pmo:hasMode rdf:type owl:ObjectProperty ;
+            rdfs:domain <http://id.loc.gov/ontologies/bibframe/Work> ;
+            rdfs:range pmo:Mode ;
+            rdfs:label "has Mode" ;
+            <http://www.w3.org/2004/02/skos/core#definition> "Property that links a Work to a musical Mode." .
+
+
+###  http://performedmusicontology.org/ontology/hasMusicPart
+pmo:hasMusicPart rdf:type owl:ObjectProperty ;
+                 rdfs:comment "Use with MediumPart" ;
+                 rdfs:label "has Music Part" ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Property linking MediumPart or bf:Contribution to the specific music parts within a single medium part e.g., Violin 1, Clarinet 2." .
+
+
+###  http://performedmusicontology.org/ontology/hasPerformance
+pmo:hasPerformance rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/eventContentOf> ;
+                   owl:inverseOf pmo:performanceOf ;
+                   rdfs:range pmo:Performance ;
+                   rdfs:label "has Performance" ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "Event that is a performance, either improvised or of a pre-existing work." .
+
+
+###  http://performedmusicontology.org/ontology/hasRecording
+pmo:hasRecording rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/eventContent> ;
+                 owl:inverseOf pmo:recordingOf ;
+                 rdfs:domain <http://id.loc.gov/ontologies/bibframe/Event> ;
+                 rdfs:range <http://id.loc.gov/ontologies/bibframe/Work> ;
+                 rdfs:label "has Recording" ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Audio or video work created from the recording of event content." .
+
+
+###  http://performedmusicontology.org/ontology/hasTempo
+pmo:hasTempo rdf:type owl:ObjectProperty ;
+             rdfs:label "has Tempo" ;
+             <http://www.w3.org/2004/02/skos/core#definition> "The speed or pace of a music work, whether declared (in a score) or performed." .
+
+
+###  http://performedmusicontology.org/ontology/hasTonalCenter
+pmo:hasTonalCenter rdf:type owl:ObjectProperty ;
+                   rdfs:label "has Tonal Center" ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "Property that links Work to its Tonal Center" .
+
+
+###  http://performedmusicontology.org/ontology/inspirationFor
+pmo:inspirationFor rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/relatedTo> ;
+                   rdfs:label "Inspiration for" ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "Work that is inspired by an event." .
+
+
+###  http://performedmusicontology.org/ontology/performanceOf
+pmo:performanceOf rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/eventContent> ;
+                  rdfs:domain pmo:Performance ;
+                  rdfs:range <http://id.loc.gov/ontologies/bibframe/Work> ;
+                  rdfs:label "Performance of" ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Work that is realized through a performance." .
+
+
+###  http://performedmusicontology.org/ontology/recordingOf
+pmo:recordingOf rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/eventContentOf> ;
+                rdfs:domain <http://id.loc.gov/ontologies/bibframe/Work> ;
+                rdfs:range <http://id.loc.gov/ontologies/bibframe/Event> ;
+                rdfs:label "Recording of" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Audio or video work created from the recording of event content." .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://id.loc.gov/ontologies/bibframe/date
+<http://id.loc.gov/ontologies/bibframe/date> rdf:type owl:DatatypeProperty .
+
+
+###  http://performedmusicontology.org/ontology/hasDistinctPartCount
+pmo:hasDistinctPartCount rdf:type owl:DatatypeProperty ;
+                         rdfs:range rdfs:Literal ;
+                         rdfs:comment "Example: A work for 2 flutes has a distinct part count of 2." ;
+                         rdfs:label "Number of distinct parts" ;
+                         <http://www.w3.org/2004/02/skos/core#definition> "Number of distinct music parts in a Performed Medium, Declared Medium, or Medium Part that is not a named ensemble." .
+
+
+###  http://performedmusicontology.org/ontology/hasEnsembleCount
+pmo:hasEnsembleCount rdf:type owl:DatatypeProperty ;
+                     rdfs:range rdfs:Literal ;
+                     rdfs:comment "Example: a work for 2 choruses and orchestra has an ensemble count of 3." ;
+                     rdfs:label "Number of ensembles" ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "Number of named ensembles in a specified Declared Medium, Performed Medium, or Medium Part." .
+
+
+###  http://performedmusicontology.org/ontology/hasNumberOfHands
+pmo:hasNumberOfHands rdf:type owl:DatatypeProperty ;
+                     rdfs:range rdfs:Literal ;
+                     rdfs:label "Number of hands" ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "Number of hands required for performance in works where more than one performer shares an instrument, such as piano, 4 hands, or where an atypical number of hands is specified, such as viola, 1 hand." .
+
+
+###  http://performedmusicontology.org/ontology/hasOrder
+pmo:hasOrder rdf:type owl:DatatypeProperty ;
+             rdfs:range rdfs:Literal ;
+             rdfs:label "Order in sequence" ;
+             <http://www.w3.org/2004/02/skos/core#definition> "Order an aggregated instance appears in an aggregating instance, or the order a work component appears in a work." .
+
+
+###  http://performedmusicontology.org/ontology/hasPerformerCount
+pmo:hasPerformerCount rdf:type owl:DatatypeProperty ;
+                      rdfs:range rdfs:Literal ;
+                      rdfs:label "Number of performers" ;
+                      <http://www.w3.org/2004/02/skos/core#definition> "Actual number of individual performers performing a Declared Medium, Performed Medium, Medium Part, or Music Part." .
+
+
+###  http://performedmusicontology.org/ontology/hasRequiredPerformerCount
+pmo:hasRequiredPerformerCount rdf:type owl:DatatypeProperty ;
+                              rdfs:range rdfs:Literal ;
+                              rdfs:comment "Example: A string quartet has a required performer count of 4." ;
+                              rdfs:label "Suggested number of performers" ;
+                              <http://www.w3.org/2004/02/skos/core#definition> "Minimum or suggested number of performers required to perform a Declared Medium, Performed Medium, Medium Part, or Music Part." .
+
+
+###  http://performedmusicontology.org/ontology/hasTrackNumber
+pmo:hasTrackNumber rdf:type owl:DatatypeProperty ;
+                   rdfs:range rdfs:Literal ;
+                   rdfs:label "Track number" ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "Track number(s) of a compiled audio work on a sound recording." .
+
+
+###  http://performedmusicontology.org/ontology/phonogramCopyrightDate
+pmo:phonogramCopyrightDate rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/date> ;
+                           rdfs:label "Phonogram copyright date" ;
+                           <http://www.w3.org/2004/02/skos/core#definition> "Phonogram copyright date for a sound recording." .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://erlangen-crm.org/efrbroo/F31_Performance
+<http://erlangen-crm.org/efrbroo/F31_Performance> rdf:type owl:Class .
+
+
+###  http://id.loc.gov/ontologies/bibframe/Event
+<http://id.loc.gov/ontologies/bibframe/Event> rdf:type owl:Class .
+
+
+###  http://id.loc.gov/ontologies/bibframe/Identifier
+<http://id.loc.gov/ontologies/bibframe/Identifier> rdf:type owl:Class .
+
+
+###  http://id.loc.gov/ontologies/bibframe/SoundCharacteristic
+<http://id.loc.gov/ontologies/bibframe/SoundCharacteristic> rdf:type owl:Class .
+
+
+###  http://id.loc.gov/ontologies/bibframe/Work
+<http://id.loc.gov/ontologies/bibframe/Work> rdf:type owl:Class .
+
+
+###  http://performedmusicontology.org/ontology/Audition
+pmo:Audition rdf:type owl:Class ;
+             rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Event> ;
+             rdfs:label "Audition" ;
+             <http://www.w3.org/2004/02/skos/core#definition> "Event in which a performer or actor is applying for a position in an ensemble, cast, film, etc." .
+
+
+###  http://performedmusicontology.org/ontology/BenefitConcert
+pmo:BenefitConcert rdf:type owl:Class ;
+                   rdfs:subClassOf pmo:Concert ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "Concert held for charitable purposes, i.e., to raise funds or awareness" .
+
+
+###  http://performedmusicontology.org/ontology/Ceremony
+pmo:Ceremony rdf:type owl:Class ;
+             rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Event> ;
+             rdfs:label "Ceremony" ;
+             <http://www.w3.org/2004/02/skos/core#definition> "Ritual event, performed on special occasions (e.g., death, baptism, wedding, graduation, equinox, coronation, victory)" .
+
+
+###  http://performedmusicontology.org/ontology/CommandPerformance
+pmo:CommandPerformance rdf:type owl:Class ;
+                       rdfs:subClassOf pmo:Concert ;
+                       rdfs:label "Command performance" ;
+                       <http://www.w3.org/2004/02/skos/core#definition> "Concert or Performance done at the request of a monarch or other head of state." .
+
+
+###  http://performedmusicontology.org/ontology/Concert
+pmo:Concert rdf:type owl:Class ;
+            rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Event> ;
+            rdfs:label "Concert" ;
+            <http://www.w3.org/2004/02/skos/core#definition> "Live musical performance of one or more works in front of an audience or in a single recording session" .
+
+
+###  http://performedmusicontology.org/ontology/ConcertSeries
+pmo:ConcertSeries rdf:type owl:Class ;
+                  rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Event> ;
+                  rdfs:label "Concert series" ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Group of concerts in the same geographic area by a single performer or brought together by a common theme, usually available for sale as a package. e.g., an orchestra concert season, a series featuring chamber ensembles." .
+
+
+###  http://performedmusicontology.org/ontology/ConcertTour
+pmo:ConcertTour rdf:type owl:Class ;
+                rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Event> ;
+                rdfs:label "Concert tour" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Series of concerts by a performer or group of performers in different cities, countries, or locations." .
+
+
+###  http://performedmusicontology.org/ontology/DeclaredMedium
+pmo:DeclaredMedium rdf:type owl:Class ;
+                   rdfs:label "Declared medium" ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "Intended overall medium of performance of a musical work, as declared by the composer, a reference source, or other source." .
+
+
+###  http://performedmusicontology.org/ontology/DiscCutting
+pmo:DiscCutting rdf:type owl:Class ;
+                rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/SoundCharacteristic> ;
+                rdfs:label "Disc cutting process" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Recording process in which a stylus cuts a vertical or lateral groove into an audio disc." .
+
+
+###  http://performedmusicontology.org/ontology/Discogs
+pmo:Discogs rdf:type owl:Class ;
+            rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Identifier> ;
+            rdfs:label "Discogs ID" ;
+            <http://www.w3.org/2004/02/skos/core#definition> "Identifier from Discogs." .
+
+
+###  http://performedmusicontology.org/ontology/DramaticRole
+pmo:DramaticRole rdf:type owl:Class ;
+                 rdfs:comment "Example: the role of Carmen in the opera Carmen." ;
+                 rdfs:label "Dramatic role" ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Character of a performer in a dramatic work, such as an opera or play, as realized in a sound recording, a video, in text, etc." .
+
+
+###  http://performedmusicontology.org/ontology/EnsembleMediumOfPerformance
+pmo:EnsembleMediumOfPerformance rdf:type owl:Class ;
+                                rdfs:subClassOf pmo:MediumOfPerformance ;
+                                rdfs:comment "Examples: orchestra, jazz combo, string quartet, percussion ensemble" ;
+                                rdfs:label "Ensemble type" ;
+                                <http://www.w3.org/2004/02/skos/core#definition> "Named group of like or unlike mediums of performance intended to be played by multiple performers." .
+
+
+###  http://performedmusicontology.org/ontology/EventName
+pmo:EventName rdf:type owl:Class ;
+              rdfs:label "Event name" ;
+              <http://www.w3.org/2004/02/skos/core#definition> "Name given to an event." .
+
+
+###  http://performedmusicontology.org/ontology/FirstPerformance
+pmo:FirstPerformance rdf:type owl:Class ;
+                     rdfs:subClassOf pmo:Performance ;
+                     rdfs:label "First performance" ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "The first known performance of a work." .
+
+
+###  http://performedmusicontology.org/ontology/IndividualMediumOfPerformance
+pmo:IndividualMediumOfPerformance rdf:type owl:Class ;
+                                  rdfs:subClassOf pmo:MediumOfPerformance ;
+                                  rdfs:comment "Examples: flute, keyboard, pi pa, typewriter" ,
+                                               "Individual musical instrument, voice, or other object used as a medium of performance." ;
+                                  rdfs:label "Individual medium of performance" .
+
+
+###  http://performedmusicontology.org/ontology/KeyMode
+pmo:KeyMode rdf:type owl:Class ;
+            rdfs:comment "Examples: C major; B-flat minor" ;
+            rdfs:label "Music key and mode" ;
+            <http://www.w3.org/2004/02/skos/core#definition> "Key and mode of a music work when used in combination." .
+
+
+###  http://performedmusicontology.org/ontology/LivePerformance
+pmo:LivePerformance rdf:type owl:Class ;
+                    rdfs:subClassOf pmo:Performance ;
+                    rdfs:label "Live performance" ;
+                    <http://www.w3.org/2004/02/skos/core#definition> "Live Performance that is recorded at a public event or in a single recording session." .
+
+
+###  http://performedmusicontology.org/ontology/MasterClass
+pmo:MasterClass rdf:type owl:Class ;
+                rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Event> ;
+                rdfs:label "Master class" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Event in which a recognized performer critiques the performances of one or more other performers." .
+
+
+###  http://performedmusicontology.org/ontology/MediumOfPerformance
+pmo:MediumOfPerformance rdf:type owl:Class ;
+                        rdfs:label "Medium of performance" ;
+                        <http://www.w3.org/2004/02/skos/core#definition> "Instruments, voices, ensembles, choruses, and other participants (actors, dancers, etc.) required for, or performing in, an event or work, including electronics, computers, installations, etc." .
+
+
+###  http://performedmusicontology.org/ontology/MediumPart
+pmo:MediumPart rdf:type owl:Class ;
+               rdfs:comment "Example: a string quartet has 3 medium parts: the violins; the viola; the cello" ,
+                            "Use with DeclaredMedium, PerformedMedium" ;
+               rdfs:label "Medium part" ;
+               <http://www.w3.org/2004/02/skos/core#definition> "Medium of performance, type, etc., of a specific part of the declared or performed medium." .
+
+
+###  http://performedmusicontology.org/ontology/MediumPartType
+pmo:MediumPartType rdf:type owl:Class ;
+                   rdfs:comment "Examples: solo, ad lib, optional, offstage, amplified" ,
+                                "Use with MediumPart" ;
+                   rdfs:label "Part type" ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "Specific role or type of a medium part" .
+
+
+###  http://performedmusicontology.org/ontology/Mode
+pmo:Mode rdf:type owl:Class ;
+         rdfs:comment "Examples: Dorian, Dhaivata" ;
+         rdfs:label "Music mode" ;
+         <http://www.w3.org/2004/02/skos/core#definition> "Musical mode of a music work." .
+
+
+###  http://performedmusicontology.org/ontology/MusicBrainz
+pmo:MusicBrainz rdf:type owl:Class ;
+                rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Identifier> ;
+                rdfs:label "MusicBrainz ID" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Identifier from MusicBrainz" .
+
+
+###  http://performedmusicontology.org/ontology/MusicPart
+pmo:MusicPart rdf:type owl:Class ;
+              rdfs:comment "Use with MediumPart" ;
+              rdfs:label "Music part" ;
+              <http://www.w3.org/2004/02/skos/core#definition> "Specific element within an overall declared or performed medium, e.g., Violin 1, Trumpet 2." .
+
+
+###  http://performedmusicontology.org/ontology/OpenMicPerformance
+pmo:OpenMicPerformance rdf:type owl:Class ;
+                       rdfs:subClassOf pmo:Performance ;
+                       rdfs:label "Open mic performance" ;
+                       <http://www.w3.org/2004/02/skos/core#definition> "Live performance at a coffee house, night club, or other venue by amateur performers." .
+
+
+###  http://performedmusicontology.org/ontology/OpusNumber
+pmo:OpusNumber rdf:type owl:Class ;
+               rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Identifier> ;
+               rdfs:comment "Example: The number 45 of Op. 45. No. 1" ;
+               rdfs:label "Opus number" ;
+               <http://www.w3.org/2004/02/skos/core#definition> "Primary opus number for a musical work." .
+
+
+###  http://performedmusicontology.org/ontology/OpusNumberPart
+pmo:OpusNumberPart rdf:type owl:Class ;
+                   rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Identifier> ;
+                   rdfs:comment "Example: The number 1 of Op. 45, no. 1" ;
+                   rdfs:label "Opus number part" ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "Number for a portion of an opus number." .
+
+
+###  http://performedmusicontology.org/ontology/OpusNumberStatement
+pmo:OpusNumberStatement rdf:type owl:Class ;
+                        rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Identifier> ;
+                        rdfs:comment "Example: Op. 45, no. 1" ;
+                        rdfs:label "Opus number statement" ;
+                        <http://www.w3.org/2004/02/skos/core#definition> "Statement about the opus number for a musical work." .
+
+
+###  http://performedmusicontology.org/ontology/Performance
+pmo:Performance rdf:type owl:Class ;
+                rdfs:subClassOf <http://erlangen-crm.org/efrbroo/F31_Performance> ,
+                                <http://id.loc.gov/ontologies/bibframe/Event> ;
+                rdfs:label "Performance" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Event in which a performer or group of performers perform an improvisation or pre-existing work to an audience or in a recording studio." .
+
+
+###  http://performedmusicontology.org/ontology/PerformedMedium
+pmo:PerformedMedium rdf:type owl:Class ;
+                    rdfs:label "Performed medium" ;
+                    <http://www.w3.org/2004/02/skos/core#definition> "The overall medium of performance used in the performance of a musical work. This may or may not be the same as the declared medium of performance." .
+
+
+###  http://performedmusicontology.org/ontology/RecordingSession
+pmo:RecordingSession rdf:type owl:Class ;
+                     rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Event> ;
+                     rdfs:label "Recording session" ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "Event in which one or more performances are recorded with the aim of producing a recording for issue." .
+
+
+###  http://performedmusicontology.org/ontology/Rehearsal
+pmo:Rehearsal rdf:type owl:Class ;
+              rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Event> ;
+              rdfs:label "Rehearsal" ;
+              <http://www.w3.org/2004/02/skos/core#definition> "Event in which a performer or group of performers prepare for a performance." .
+
+
+###  http://performedmusicontology.org/ontology/RismNumber
+pmo:RismNumber rdf:type owl:Class ;
+               rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Identifier> ;
+               rdfs:label "RISM number" ;
+               <http://www.w3.org/2004/02/skos/core#definition> "Number from the Repertoire Internationale des Sources Musicales (RISM) online version." .
+
+
+###  http://performedmusicontology.org/ontology/Tempo
+pmo:Tempo rdf:type owl:Class ;
+          rdfs:label "Tempo" ;
+          <http://www.w3.org/2004/02/skos/core#definition> "The speed or pace of a music work, whether declared (in a score) or performed." .
+
+
+###  http://performedmusicontology.org/ontology/ThematicCatalogNumber
+pmo:ThematicCatalogNumber rdf:type owl:Class ;
+                          rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Identifier> ;
+                          rdfs:comment "Example: 485 from BWV 485; 52:d1 from TWV 52:d1" ;
+                          rdfs:label "Thematic catalog number" ;
+                          <http://www.w3.org/2004/02/skos/core#definition> "Numeric or alphanumeric designation of a musical work as found in a thematic index for the composer (without the identifying prefix)." .
+
+
+###  http://performedmusicontology.org/ontology/ThematicCatalogPrefix
+pmo:ThematicCatalogPrefix rdf:type owl:Class ;
+                          rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Identifier> ;
+                          rdfs:comment "Examples: BWV from BWV 485 (Bach); M.S. from M.S. 35 (Paganini)." ;
+                          rdfs:label "Thematic catalog prefix" ;
+                          <http://www.w3.org/2004/02/skos/core#definition> "Prefix assigned to a thematic catalog number denoting thework from which the number originated." .
+
+
+###  http://performedmusicontology.org/ontology/ThematicCatalogStatement
+pmo:ThematicCatalogStatement rdf:type owl:Class ;
+                             rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Identifier> ;
+                             rdfs:comment "Example: BWV 485 (Bach); TWV 52:d1 (Telemann)" ;
+                             rdfs:label "Thematic catalog number statement" ;
+                             <http://www.w3.org/2004/02/skos/core#definition> "Statement about the thematic catalog number for a musical work, including both the prefix and the numeric or alphanumeric parts." .
+
+
+###  http://performedmusicontology.org/ontology/TonalCenter
+pmo:TonalCenter rdf:type owl:Class ;
+                rdfs:comment "Examples: D, C##" ;
+                rdfs:label "Tonal center" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "The tonal center of a music work, without mode" .
+
+
+###  http://performedmusicontology.org/ontology/VideogamePlatformIdentifier
+pmo:VideogamePlatformIdentifier rdf:type owl:Class ;
+                                rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Identifier> ;
+                                rdfs:comment "Example: CUSA 54321 (a PlayStation 4 number)" ;
+                                rdfs:label "Videogame platform identifier" ;
+                                <http://www.w3.org/2004/02/skos/core#definition> "Identifier assigned to a video game platform." .
+
+
+###  http://performedmusicontology.org/ontology/WorkComponent
+pmo:WorkComponent rdf:type owl:Class ;
+                  rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Work> ;
+                  rdfs:comment "Examples: A rondo from a 3-movement piano concerto; the first movement of a symphony; chapter 4 of a 10 chapter book" ;
+                  rdfs:label "Work component" ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "A work that is an integral part of another work, even when separated from it" .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
