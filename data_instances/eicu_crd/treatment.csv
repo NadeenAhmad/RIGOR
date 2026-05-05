@@ -1,0 +1,360 @@
+treatmentid,patientunitstayid,treatmentoffset,treatmentstring,activeupondischarge
+1,1,2314,Medication reconciliation (procedure),No
+2,1,2440,Medication reconciliation (procedure),Yes
+3,1,2909,Medication reconciliation (procedure),Yes
+4,2,774,Medication reconciliation (procedure),Yes
+5,2,1080,Medication reconciliation (procedure),No
+6,2,2174,Medication reconciliation (procedure),Yes
+7,3,1358,Medication reconciliation (procedure),No
+8,3,106,Plain X-ray of wrist region (procedure),No
+9,3,1000,Bone immobilization (procedure),Yes
+10,4,2375,Patient referral for dental care (procedure),No
+11,4,2585,Dental consultation and report (procedure),No
+12,4,1646,Dental care (regime/therapy),No
+13,5,1416,Medication reconciliation (procedure),No
+14,5,2210,Patient referral for dental care (procedure),Yes
+15,5,151,Dental consultation and report (procedure),Yes
+16,6,1367,Medication reconciliation (procedure),No
+17,6,2646,Assessment of health and social care needs (procedure),No
+18,6,980,Screening for domestic abuse (procedure),No
+19,7,1339,Medication reconciliation (procedure),No
+20,7,1315,Assessment of health and social care needs (procedure),No
+21,7,1849,Depression screening (procedure),Yes
+22,8,305,Assessment of health and social care needs (procedure),Yes
+23,8,1059,Patient referral for dental care (procedure),No
+24,8,979,Dental consultation and report (procedure),No
+25,9,1724,Fetal anatomy study (procedure),Yes
+26,9,674,Alpha-fetoprotein test - antenatal (procedure),Yes
+27,9,1979,Evaluation of uterine fundal height (procedure),No
+28,10,1303,Assessment of health and social care needs (procedure),Yes
+29,10,2004,Screening for domestic abuse (procedure),Yes
+30,10,1326,Depression screening (procedure),Yes
+31,11,2751,Subcutaneous immunotherapy (procedure),Yes
+32,11,457,Subcutaneous immunotherapy (procedure),No
+33,11,1347,Subcutaneous immunotherapy (procedure),Yes
+34,12,1345,Assessment of health and social care needs (procedure),Yes
+35,12,2285,Assessment of anxiety (procedure),No
+36,12,2030,Screening for domestic abuse (procedure),No
+37,13,1896,Plain X-ray of mandible (procedure),No
+38,13,1165,Closed reduction of dislocation of temporomandibular joint (procedure),No
+39,13,1327,Dental consultation and report (procedure),No
+40,14,324,Medication reconciliation (procedure),Yes
+41,14,458,Medication reconciliation (procedure),Yes
+42,14,2518,Medication reconciliation (procedure),Yes
+43,15,2259,Assessment of health and social care needs (procedure),Yes
+44,15,927,Assessment of anxiety (procedure),Yes
+45,15,90,Depression screening (procedure),Yes
+46,16,1285,Rehabilitation therapy (regime/therapy),Yes
+47,16,2921,Rehabilitation therapy (regime/therapy),Yes
+48,16,2352,Rehabilitation therapy (regime/therapy),No
+49,17,1920,Removal of subcutaneous contraceptive (procedure),Yes
+50,17,2355,Standard pregnancy test (procedure),No
+51,17,492,Ultrasound scan for fetal viability (procedure),Yes
+52,18,1314,Colonoscopy (procedure),Yes
+53,18,1428,Assessment of health and social care needs (procedure),Yes
+54,18,581,Depression screening (procedure),Yes
+55,19,178,Medication reconciliation (procedure),No
+56,19,2981,Assessment of health and social care needs (procedure),No
+57,19,454,Assessment of substance use (procedure),Yes
+58,20,1082,Assessment of health and social care needs (procedure),Yes
+59,20,2135,Depression screening (procedure),Yes
+60,20,1796,Depression screening (procedure),Yes
+61,21,251,Throat culture (procedure),No
+62,21,1033,Assessment of health and social care needs (procedure),Yes
+63,21,1423,Depression screening (procedure),Yes
+64,22,1582,Assessment of anxiety (procedure),No
+65,22,119,Depression screening (procedure),Yes
+66,22,717,Depression screening using Patient Health Questionnaire Nine Item score (procedure),Yes
+67,23,1248,Standard pregnancy test (procedure),Yes
+68,23,1428,Ultrasound scan for fetal viability (procedure),No
+69,23,2162,Evaluation of uterine fundal height (procedure),No
+70,24,326,Assessment of health and social care needs (procedure),No
+71,24,539,Assessment of anxiety (procedure),Yes
+72,24,1690,Depression screening (procedure),No
+73,25,1202,Assessment of health and social care needs (procedure),Yes
+74,25,2828,Assessment of substance use (procedure),No
+75,25,1414,Screening for drug abuse (procedure),No
+76,26,2120,Medication reconciliation (procedure),Yes
+77,26,1558,Medication reconciliation (procedure),Yes
+78,26,837,Medication reconciliation (procedure),Yes
+79,27,1686,Spirometry (procedure),No
+80,27,1226,Pulmonary rehabilitation (regime/therapy),Yes
+81,27,1612,Assessment of health and social care needs (procedure),Yes
+82,28,1702,Sputum examination (procedure),Yes
+83,28,2550,Medication reconciliation (procedure),Yes
+84,28,1517,Assessment of anxiety (procedure),Yes
+85,29,1191,Plain X-ray of humerus (procedure),Yes
+86,29,96,Bone immobilization (procedure),Yes
+87,29,2520,Assessment of health and social care needs (procedure),Yes
+88,30,1911,Medication reconciliation (procedure),Yes
+89,30,1714,Assessment of health and social care needs (procedure),No
+90,30,2271,Depression screening (procedure),Yes
+91,31,1872,Colonoscopy (procedure),No
+92,31,641,Replacement of contraceptive intrauterine device (procedure),Yes
+93,31,859,Spirometry (procedure),Yes
+94,32,1318,Medication reconciliation (procedure),No
+95,32,80,Assessment of health and social care needs (procedure),Yes
+96,32,2140,Assessment of anxiety (procedure),Yes
+97,33,2631,Evaluation of uterine fundal height (procedure),No
+98,33,2491,Auscultation of the fetal heart (procedure),No
+99,33,497,Evaluation of uterine fundal height (procedure),Yes
+100,34,387,Medication reconciliation (procedure),Yes
+101,34,1482,Patient referral for dental care (procedure),No
+102,34,1578,Dental consultation and report (procedure),Yes
+103,35,646,Colonoscopy (procedure),No
+104,35,782,Rectal polypectomy (procedure),Yes
+105,35,942,Partial resection of colon (procedure),Yes
+106,36,516,Medication reconciliation (procedure),Yes
+107,36,2520,Assessment of health and social care needs (procedure),No
+108,36,1787,Assessment of anxiety (procedure),No
+109,37,565,Medication reconciliation (procedure),Yes
+110,37,388,Assessment of health and social care needs (procedure),Yes
+111,37,1475,Assessment of anxiety (procedure),Yes
+112,38,1985,Medication reconciliation (procedure),No
+113,38,2538,Assessment of health and social care needs (procedure),No
+114,38,1187,Assessment of anxiety (procedure),Yes
+115,39,2843,Medication reconciliation (procedure),Yes
+116,39,866,Assessment of health and social care needs (procedure),Yes
+117,39,1847,Assessment of anxiety (procedure),No
+118,40,2978,Assessment of health and social care needs (procedure),Yes
+119,40,1109,Assessment of substance use (procedure),No
+120,40,1570,Assessment using Alcohol Use Disorders Identification Test - Consumption (procedure),Yes
+121,41,870,Rehabilitation therapy (regime/therapy),No
+122,41,746,Assessment of health and social care needs (procedure),Yes
+123,41,287,Depression screening (procedure),Yes
+124,42,1479,Assessment of health and social care needs (procedure),No
+125,42,2669,Screening for domestic abuse (procedure),No
+126,42,1972,Depression screening (procedure),Yes
+127,43,808,Medication reconciliation (procedure),No
+128,43,698,Medication reconciliation (procedure),Yes
+129,44,236,Patient referral for dental care (procedure),No
+130,44,1410,Dental consultation and report (procedure),Yes
+131,44,2673,Dental care (regime/therapy),No
+132,45,2527,Medication reconciliation (procedure),No
+133,45,1282,Assessment of health and social care needs (procedure),Yes
+134,45,2428,Assessment of anxiety (procedure),No
+135,46,219,Patient referral for dental care (procedure),No
+136,46,2116,Medication reconciliation (procedure),Yes
+137,46,139,Dental consultation and report (procedure),Yes
+138,47,1266,Medication reconciliation (procedure),Yes
+139,47,34,Medication reconciliation (procedure),No
+140,47,1428,Patient referral for dental care (procedure),Yes
+141,48,2722,Medication reconciliation (procedure),No
+142,48,161,Medication reconciliation (procedure),Yes
+143,48,2268,Medication reconciliation (procedure),No
+144,49,1500,Assessment of health and social care needs (procedure),No
+145,49,1674,Depression screening (procedure),No
+146,49,2653,Depression screening (procedure),No
+147,50,556,Colonoscopy (procedure),No
+148,50,209,Medication reconciliation (procedure),Yes
+149,50,1597,Assessment of health and social care needs (procedure),No
+150,51,1980,Assessment of health and social care needs (procedure),No
+151,51,1041,Assessment using Morse Fall Scale (procedure),No
+152,51,432,Assessment of substance use (procedure),Yes
+153,52,1093,Dental consultation and report (procedure),No
+154,52,1837,Dental care (regime/therapy),No
+155,52,2943,Removal of supragingival plaque and calculus from all teeth using dental instrument (procedure),Yes
+156,53,2389,Medication reconciliation (procedure),No
+157,53,2831,Assessment of health and social care needs (procedure),No
+158,53,1459,Colonoscopy (procedure),Yes
+159,54,864,Standard pregnancy test (procedure),No
+160,54,2049,Ultrasound scan for fetal viability (procedure),Yes
+161,54,459,Evaluation of uterine fundal height (procedure),Yes
+162,55,939,Medication reconciliation (procedure),No
+163,55,2929,Medication reconciliation (procedure),Yes
+164,55,326,Depression screening (procedure),No
+165,56,2736,Percutaneous coronary intervention,Yes
+166,56,22,Visual acuity testing (procedure),No
+167,56,328,Intraocular pressure test (procedure),No
+168,57,1632,Intramuscular injection (procedure),No
+169,57,2251,Colonoscopy (procedure),Yes
+170,57,2505,Intramuscular injection (procedure),Yes
+171,58,1277,Standard pregnancy test (procedure),Yes
+172,58,2967,Ultrasound scan for fetal viability (procedure),Yes
+173,58,1906,Counseling for termination of pregnancy (procedure),No
+174,59,115,Assessment of health and social care needs (procedure),Yes
+175,59,436,Assessment of anxiety (procedure),No
+176,59,1266,Screening for domestic abuse (procedure),Yes
+177,60,2424,Spirometry (procedure),Yes
+178,60,1911,Pulmonary rehabilitation (regime/therapy),No
+179,60,2723,Medication reconciliation (procedure),No
+180,61,2875,Medication reconciliation (procedure),No
+181,61,2549,Depression screening (procedure),Yes
+182,61,2066,Depression screening using Patient Health Questionnaire Nine Item score (procedure),Yes
+183,62,508,Dental consultation and report (procedure),No
+184,62,466,Dental care (regime/therapy),No
+185,62,2770,Removal of supragingival plaque and calculus from all teeth using dental instrument (procedure),No
+186,63,2885,Medication reconciliation (procedure),No
+187,63,837,Assessment of health and social care needs (procedure),No
+188,63,2257,Screening for domestic abuse (procedure),Yes
+189,64,958,Assessment of health and social care needs (procedure),No
+190,64,865,Depression screening (procedure),Yes
+191,64,2253,Depression screening (procedure),Yes
+192,65,9,Medication reconciliation (procedure),No
+193,65,1918,Medication reconciliation (procedure),Yes
+194,65,1089,Injection of epinephrine (procedure),No
+195,66,1591,Standard pregnancy test (procedure),Yes
+196,66,1022,Ultrasound scan for fetal viability (procedure),Yes
+197,66,2694,Evaluation of uterine fundal height (procedure),Yes
+198,67,328,Assessment of health and social care needs (procedure),Yes
+199,67,2931,Depression screening (procedure),Yes
+200,67,1964,Depression screening (procedure),Yes
+201,68,2111,Assessment of health and social care needs (procedure),Yes
+202,68,681,Assessment of anxiety (procedure),No
+203,68,2385,Assessment of substance use (procedure),No
+204,69,1514,Medication reconciliation (procedure),Yes
+205,69,373,Assessment of health and social care needs (procedure),No
+206,69,1129,Assessment of anxiety (procedure),Yes
+207,70,2420,Medication reconciliation (procedure),No
+208,70,2526,Assessment of health and social care needs (procedure),No
+209,70,718,Depression screening (procedure),Yes
+210,71,794,Assessment of health and social care needs (procedure),Yes
+211,71,390,Depression screening (procedure),Yes
+212,71,1034,Depression screening (procedure),No
+213,72,559,Medication reconciliation (procedure),No
+214,72,2198,Assessment of health and social care needs (procedure),No
+215,72,2291,Assessment of anxiety (procedure),Yes
+216,73,1076,Patient referral for dental care (procedure),Yes
+217,73,424,Dental consultation and report (procedure),No
+218,73,1889,Dental care (regime/therapy),No
+219,74,505,Medication reconciliation (procedure),No
+220,74,681,Medication reconciliation (procedure),No
+221,74,705,Medication reconciliation (procedure),Yes
+222,75,2040,Assessment of anxiety (procedure),Yes
+223,75,449,Depression screening (procedure),No
+224,75,60,Depression screening using Patient Health Questionnaire Nine Item score (procedure),No
+225,76,1320,Medication reconciliation (procedure),No
+226,76,2887,Assessment of health and social care needs (procedure),Yes
+227,76,659,Screening for domestic abuse (procedure),Yes
+228,77,656,Assessment of anxiety (procedure),Yes
+229,77,2736,Assessment of substance use (procedure),Yes
+230,77,555,Assessment using Car  Relax  Alone  Forget  Friends  Trouble Screening Test (procedure),Yes
+231,78,2296,Medication reconciliation (procedure),Yes
+232,78,2483,Medication reconciliation (procedure),No
+233,78,1108,Patient referral for dental care (procedure),No
+234,79,1487,Assessment of health and social care needs (procedure),Yes
+235,79,1651,Assessment of anxiety (procedure),No
+236,79,460,Depression screening (procedure),Yes
+237,80,1362,Medication reconciliation (procedure),No
+238,80,1366,Medication reconciliation (procedure),No
+239,80,49,Medication reconciliation (procedure),Yes
+240,81,856,Medication reconciliation (procedure),Yes
+241,81,1634,Patient referral for dental care (procedure),Yes
+242,81,1629,Dental consultation and report (procedure),No
+243,82,2109,Discharge to ward (procedure),Yes
+244,82,2712,Discharge from hospital (procedure),Yes
+245,82,435,Assessment of health and social care needs (procedure),No
+246,83,154,Assessment of health and social care needs (procedure),Yes
+247,83,2883,Assessment of anxiety (procedure),Yes
+248,83,1377,Depression screening (procedure),No
+249,84,2641,Assessment of health and social care needs (procedure),Yes
+250,84,1101,Assessment of anxiety (procedure),No
+251,84,1169,Screening for domestic abuse (procedure),No
+252,85,1516,Medication reconciliation (procedure),No
+253,85,616,Patient referral for dental care (procedure),Yes
+254,85,1662,Dental consultation and report (procedure),Yes
+255,86,1669,Assessment of health and social care needs (procedure),No
+256,86,858,Depression screening (procedure),Yes
+257,86,1259,Depression screening (procedure),No
+258,87,431,Medication reconciliation (procedure),No
+259,87,104,Assessment of health and social care needs (procedure),No
+260,87,1156,Assessment of anxiety (procedure),No
+261,88,2115,Medication reconciliation (procedure),Yes
+262,88,276,Medication reconciliation (procedure),No
+263,88,1635,Plain X-ray of chest (procedure),Yes
+264,89,1060,Medication reconciliation (procedure),No
+265,89,459,Medication reconciliation (procedure),No
+266,89,196,Medication reconciliation (procedure),Yes
+267,90,2843,Sleep apnea assessment (procedure),Yes
+268,90,2318,Assessment of health and social care needs (procedure),Yes
+269,90,1646,Assessment of anxiety (procedure),Yes
+270,91,2866,Medication reconciliation (procedure),No
+271,91,411,Patient referral for dental care (procedure),No
+272,91,663,Dental consultation and report (procedure),Yes
+273,92,1118,Assessment of health and social care needs (procedure),No
+274,92,1036,Assessment of health and social care needs (procedure),Yes
+275,92,48,Assessment of anxiety (procedure),Yes
+276,93,1122,Suture open wound (procedure),No
+277,93,1385,Medication reconciliation (procedure),No
+278,93,1300,Assessment of health and social care needs (procedure),No
+279,94,444,Colonoscopy (procedure),Yes
+280,94,1615,Screening for occult blood in feces (procedure),No
+281,94,777,Rectal polypectomy (procedure),Yes
+282,95,28,Medication reconciliation (procedure),Yes
+283,95,2723,Assessment of health and social care needs (procedure),Yes
+284,95,2429,Assessment of anxiety (procedure),No
+285,96,2974,Medication reconciliation (procedure),No
+286,96,272,Allergy screening test (procedure),No
+287,96,1283,Patient referral for dental care (procedure),Yes
+288,97,2181,Sputum examination (procedure),No
+289,97,1495,Assessment of health and social care needs (procedure),Yes
+290,97,1774,Assessment of anxiety (procedure),Yes
+291,98,566,Assessment of health and social care needs (procedure),Yes
+292,98,2642,Assessment of anxiety (procedure),No
+293,98,471,Patient referral for dental care (procedure),Yes
+294,99,2140,Rehabilitation therapy (regime/therapy),Yes
+295,99,2677,Rehabilitation therapy (regime/therapy),Yes
+296,99,893,Rehabilitation therapy (regime/therapy),Yes
+297,100,1656,Throat culture (procedure),Yes
+298,100,2112,Standard pregnancy test (procedure),No
+299,100,1082,Ultrasound scan for fetal viability (procedure),Yes
+300,101,794,Assessment of health and social care needs (procedure),No
+301,101,273,Depression screening (procedure),Yes
+302,101,1880,Depression screening (procedure),Yes
+303,102,297,Patient referral for dental care (procedure),Yes
+304,102,256,Dental consultation and report (procedure),Yes
+305,102,92,Dental care (regime/therapy),No
+306,103,612,Evaluation of uterine fundal height (procedure),No
+307,103,942,Auscultation of the fetal heart (procedure),No
+308,103,2481,Detection of chromosomal aneuploidy in prenatal amniotic fluid specimen using fluorescence in situ hybridization screening technique (procedure),No
+309,104,2932,Implantation of subcutaneous contraceptive (procedure),Yes
+310,104,547,Assessment of health and social care needs (procedure),Yes
+311,104,2129,Assessment of anxiety (procedure),Yes
+312,105,2797,Insertion of intrauterine contraceptive device (procedure),Yes
+313,105,2407,Assessment of health and social care needs (procedure),No
+314,105,2809,Depression screening (procedure),Yes
+315,106,412,Sleep apnea assessment (procedure),No
+316,106,2141,Assessment of health and social care needs (procedure),No
+317,106,2342,Assessment of anxiety (procedure),No
+318,107,2216,Medication reconciliation (procedure),No
+319,107,349,Assessment of health and social care needs (procedure),Yes
+320,107,2848,Assessment of anxiety (procedure),Yes
+321,108,529,Medication reconciliation (procedure),Yes
+322,108,961,Assessment of health and social care needs (procedure),Yes
+323,108,1042,Screening for domestic abuse (procedure),Yes
+324,109,1907,Dental consultation and report (procedure),No
+325,109,998,Dental plain X-ray bitewing (procedure),Yes
+326,109,2355,Take oral or dental impression (procedure),Yes
+327,110,457,Assessment of health and social care needs (procedure),No
+328,110,1041,Assessment of anxiety (procedure),No
+329,110,2349,Assessment of substance use (procedure),Yes
+330,111,752,Medication reconciliation (procedure),No
+331,111,2003,Assessment of health and social care needs (procedure),Yes
+332,111,1504,Assessment using Morse Fall Scale (procedure),Yes
+333,112,712,Medication reconciliation (procedure),Yes
+334,112,2023,Assessment of health and social care needs (procedure),No
+335,112,2338,Depression screening (procedure),No
+336,113,1793,Medication reconciliation (procedure),No
+337,113,1970,Assessment of health and social care needs (procedure),Yes
+338,113,2206,Depression screening (procedure),No
+339,114,452,Assessment of health and social care needs (procedure),Yes
+340,114,2774,Assessment using Morse Fall Scale (procedure),No
+341,114,1414,Depression screening (procedure),Yes
+342,115,2376,Assessment of health and social care needs (procedure),No
+343,115,320,Assessment of anxiety (procedure),Yes
+344,115,1663,Depression screening (procedure),Yes
+345,116,2804,Medication reconciliation (procedure),Yes
+346,116,357,Assessment of health and social care needs (procedure),Yes
+347,116,2166,Assessment using Morse Fall Scale (procedure),No
+348,117,2529,Assessment of health and social care needs (procedure),No
+349,117,2633,Assessment of anxiety (procedure),No
+350,117,2052,Assessment using Morse Fall Scale (procedure),Yes
+351,118,196,Assessment of health and social care needs (procedure),No
+352,118,134,Depression screening (procedure),Yes
+353,118,2426,Depression screening (procedure),No
+354,119,28,Plain X-ray of chest (procedure),No
+355,119,648,Bone immobilization (procedure),No
+356,119,2615,Bone density scan (procedure),Yes
+357,120,973,Assessment of health and social care needs (procedure),No
+358,120,1950,Screening for domestic abuse (procedure),No
+359,120,270,Depression screening (procedure),No

@@ -1,0 +1,121 @@
+cplgeneralid,patientunitstayid,activeupondischarge,cplitemoffset,cplgroup,cplitemvalue
+1,1,No,779,Respiratory,Intervention needed
+2,2,Yes,256,Nutrition,Stable
+3,3,Yes,776,Nutrition,Continue monitoring
+4,4,No,67,Mobility,Intervention needed
+5,5,Yes,922,Mobility,Improving
+6,6,No,1580,Cardiovascular,Continue monitoring
+7,7,No,677,Nutrition,Continue monitoring
+8,8,No,223,Respiratory,Intervention needed
+9,9,Yes,1792,Nutrition,Stable
+10,10,Yes,1313,Mobility,Continue monitoring
+11,11,No,1419,Mobility,Stable
+12,12,Yes,330,Cardiovascular,Continue monitoring
+13,13,Yes,1423,Respiratory,Improving
+14,14,Yes,1011,Cardiovascular,Intervention needed
+15,15,Yes,1708,Nutrition,Improving
+16,16,Yes,1595,Respiratory,Continue monitoring
+17,17,No,257,Respiratory,Improving
+18,18,No,1530,Cardiovascular,Stable
+19,19,No,995,Cardiovascular,Stable
+20,20,Yes,1128,Nutrition,Continue monitoring
+21,21,No,1458,Cardiovascular,Intervention needed
+22,22,No,8,Cardiovascular,Intervention needed
+23,23,No,607,Mobility,Continue monitoring
+24,24,Yes,552,Nutrition,Stable
+25,25,No,2000,Nutrition,Improving
+26,26,No,268,Mobility,Intervention needed
+27,27,No,1146,Mobility,Improving
+28,28,Yes,445,Nutrition,Improving
+29,29,Yes,1241,Mobility,Improving
+30,30,No,170,Cardiovascular,Improving
+31,31,No,585,Cardiovascular,Intervention needed
+32,32,No,1288,Nutrition,Improving
+33,33,No,1567,Nutrition,Intervention needed
+34,34,No,919,Nutrition,Continue monitoring
+35,35,No,1981,Respiratory,Improving
+36,36,Yes,693,Nutrition,Intervention needed
+37,37,Yes,136,Cardiovascular,Improving
+38,38,No,410,Respiratory,Stable
+39,39,Yes,1834,Mobility,Stable
+40,40,Yes,804,Nutrition,Improving
+41,41,Yes,918,Respiratory,Improving
+42,42,Yes,28,Respiratory,Stable
+43,43,Yes,1472,Mobility,Improving
+44,44,Yes,795,Respiratory,Continue monitoring
+45,45,Yes,1904,Cardiovascular,Intervention needed
+46,46,Yes,634,Cardiovascular,Improving
+47,47,Yes,320,Cardiovascular,Improving
+48,48,Yes,60,Mobility,Improving
+49,49,Yes,887,Respiratory,Continue monitoring
+50,50,Yes,1664,Respiratory,Continue monitoring
+51,51,No,1681,Respiratory,Continue monitoring
+52,52,No,1717,Nutrition,Stable
+53,53,Yes,738,Mobility,Continue monitoring
+54,54,Yes,1075,Cardiovascular,Intervention needed
+55,55,No,212,Nutrition,Stable
+56,56,Yes,1267,Nutrition,Intervention needed
+57,57,No,1317,Respiratory,Continue monitoring
+58,58,Yes,1832,Respiratory,Intervention needed
+59,59,No,1537,Respiratory,Improving
+60,60,No,90,Cardiovascular,Continue monitoring
+61,61,No,1914,Nutrition,Stable
+62,62,Yes,1537,Respiratory,Continue monitoring
+63,63,No,237,Nutrition,Continue monitoring
+64,64,Yes,72,Mobility,Continue monitoring
+65,65,No,312,Respiratory,Continue monitoring
+66,66,Yes,1623,Mobility,Intervention needed
+67,67,Yes,271,Respiratory,Improving
+68,68,No,418,Cardiovascular,Intervention needed
+69,69,No,1776,Mobility,Continue monitoring
+70,70,Yes,1974,Cardiovascular,Stable
+71,71,Yes,1624,Nutrition,Stable
+72,72,No,1913,Nutrition,Improving
+73,73,No,1448,Mobility,Continue monitoring
+74,74,Yes,1144,Nutrition,Continue monitoring
+75,75,Yes,668,Respiratory,Improving
+76,76,Yes,1201,Cardiovascular,Continue monitoring
+77,77,Yes,1969,Respiratory,Stable
+78,78,No,1278,Respiratory,Continue monitoring
+79,79,Yes,546,Respiratory,Stable
+80,80,No,180,Respiratory,Stable
+81,81,Yes,1378,Respiratory,Continue monitoring
+82,82,No,1299,Nutrition,Stable
+83,83,Yes,782,Mobility,Continue monitoring
+84,84,No,882,Mobility,Intervention needed
+85,85,Yes,111,Cardiovascular,Improving
+86,86,No,1413,Mobility,Continue monitoring
+87,87,No,1295,Nutrition,Continue monitoring
+88,88,Yes,369,Mobility,Intervention needed
+89,89,Yes,1393,Respiratory,Improving
+90,90,No,1628,Cardiovascular,Intervention needed
+91,91,No,1766,Mobility,Improving
+92,92,No,1763,Mobility,Improving
+93,93,No,258,Nutrition,Continue monitoring
+94,94,Yes,702,Mobility,Intervention needed
+95,95,No,486,Respiratory,Intervention needed
+96,96,No,678,Nutrition,Stable
+97,97,No,763,Respiratory,Improving
+98,98,No,934,Nutrition,Continue monitoring
+99,99,No,1973,Nutrition,Continue monitoring
+100,100,No,933,Cardiovascular,Continue monitoring
+101,101,No,407,Nutrition,Continue monitoring
+102,102,No,1466,Respiratory,Intervention needed
+103,103,Yes,1590,Nutrition,Intervention needed
+104,104,Yes,760,Mobility,Continue monitoring
+105,105,Yes,545,Nutrition,Improving
+106,106,No,1815,Cardiovascular,Continue monitoring
+107,107,No,484,Respiratory,Continue monitoring
+108,108,No,1362,Nutrition,Intervention needed
+109,109,No,536,Respiratory,Intervention needed
+110,110,No,238,Nutrition,Intervention needed
+111,111,Yes,1801,Cardiovascular,Continue monitoring
+112,112,No,634,Cardiovascular,Intervention needed
+113,113,Yes,1185,Mobility,Stable
+114,114,No,1169,Nutrition,Improving
+115,115,No,136,Nutrition,Stable
+116,116,Yes,1369,Respiratory,Improving
+117,117,No,941,Respiratory,Stable
+118,118,Yes,1090,Cardiovascular,Continue monitoring
+119,119,Yes,964,Cardiovascular,Continue monitoring
+120,120,Yes,674,Respiratory,Intervention needed

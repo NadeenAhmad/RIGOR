@@ -1,0 +1,121 @@
+cplgoalid,patientunitstayid,CPLGOALoffset,CPLGOALCATEGORY,CPLGOALVALUE,CPLGOALSTATUS,ACTIVEUPONDISCHARGE
+1,1,218,Pain,Pain controlled,In Progress,No
+2,2,370,Ventilation,Transfer to floor,Met,Yes
+3,3,352,Pain,Pain controlled,In Progress,Yes
+4,4,1699,Ventilation,Transfer to floor,In Progress,No
+5,5,1770,Pain,Wean oxygen,Met,Yes
+6,6,181,Ventilation,Transfer to floor,In Progress,No
+7,7,191,Ventilation,MAP > 65,In Progress,No
+8,8,1517,Ventilation,Transfer to floor,Met,Yes
+9,9,1323,Hemodynamic,Pain controlled,Met,No
+10,10,1163,Pain,Pain controlled,Met,No
+11,11,1966,Hemodynamic,Pain controlled,Met,Yes
+12,12,1660,Hemodynamic,Wean oxygen,In Progress,No
+13,13,1555,Discharge,Transfer to floor,Met,Yes
+14,14,745,Pain,Wean oxygen,Not Met,Yes
+15,15,1344,Ventilation,Transfer to floor,Met,Yes
+16,16,904,Ventilation,Pain controlled,Not Met,Yes
+17,17,1535,Discharge,Transfer to floor,In Progress,No
+18,18,1762,Ventilation,MAP > 65,In Progress,Yes
+19,19,1654,Ventilation,Wean oxygen,In Progress,Yes
+20,20,346,Ventilation,Transfer to floor,Met,No
+21,21,113,Pain,MAP > 65,Met,Yes
+22,22,1503,Ventilation,Pain controlled,Met,No
+23,23,250,Ventilation,Wean oxygen,Not Met,Yes
+24,24,280,Discharge,Wean oxygen,Met,No
+25,25,1295,Pain,MAP > 65,In Progress,Yes
+26,26,1014,Hemodynamic,Wean oxygen,In Progress,Yes
+27,27,881,Pain,MAP > 65,In Progress,No
+28,28,728,Discharge,Pain controlled,In Progress,Yes
+29,29,1607,Hemodynamic,Pain controlled,In Progress,No
+30,30,1302,Pain,MAP > 65,In Progress,Yes
+31,31,943,Hemodynamic,Transfer to floor,Not Met,Yes
+32,32,1211,Pain,Transfer to floor,In Progress,No
+33,33,1692,Hemodynamic,Pain controlled,Not Met,No
+34,34,879,Pain,Wean oxygen,Met,Yes
+35,35,192,Discharge,Transfer to floor,Met,Yes
+36,36,554,Discharge,MAP > 65,Met,Yes
+37,37,1643,Hemodynamic,Wean oxygen,Not Met,No
+38,38,1308,Hemodynamic,Pain controlled,In Progress,Yes
+39,39,1626,Ventilation,Wean oxygen,In Progress,Yes
+40,40,1733,Ventilation,Wean oxygen,In Progress,No
+41,41,858,Ventilation,Transfer to floor,In Progress,Yes
+42,42,1756,Pain,Pain controlled,Not Met,No
+43,43,424,Ventilation,Transfer to floor,In Progress,No
+44,44,1786,Discharge,MAP > 65,Not Met,No
+45,45,664,Pain,MAP > 65,Not Met,No
+46,46,123,Pain,MAP > 65,Met,No
+47,47,1521,Discharge,Transfer to floor,Met,No
+48,48,438,Discharge,MAP > 65,Not Met,No
+49,49,148,Ventilation,Wean oxygen,Met,No
+50,50,1640,Discharge,Pain controlled,Met,Yes
+51,51,351,Ventilation,MAP > 65,In Progress,Yes
+52,52,212,Hemodynamic,Pain controlled,Not Met,Yes
+53,53,1638,Pain,Wean oxygen,Met,Yes
+54,54,1802,Pain,Wean oxygen,In Progress,Yes
+55,55,1763,Discharge,MAP > 65,Not Met,Yes
+56,56,1217,Hemodynamic,Wean oxygen,In Progress,No
+57,57,1147,Pain,Pain controlled,In Progress,No
+58,58,1142,Ventilation,Wean oxygen,Met,Yes
+59,59,1913,Ventilation,Wean oxygen,In Progress,No
+60,60,1674,Ventilation,Wean oxygen,Not Met,Yes
+61,61,925,Hemodynamic,Transfer to floor,Met,Yes
+62,62,1745,Ventilation,Transfer to floor,Not Met,No
+63,63,629,Ventilation,Transfer to floor,Met,No
+64,64,1489,Pain,Pain controlled,Not Met,No
+65,65,1188,Ventilation,Transfer to floor,Met,Yes
+66,66,1416,Ventilation,Pain controlled,Met,Yes
+67,67,1215,Discharge,Wean oxygen,Met,Yes
+68,68,652,Ventilation,Pain controlled,In Progress,No
+69,69,815,Discharge,MAP > 65,Met,No
+70,70,1804,Pain,Wean oxygen,In Progress,No
+71,71,44,Ventilation,Wean oxygen,In Progress,No
+72,72,503,Hemodynamic,Wean oxygen,Not Met,Yes
+73,73,1880,Discharge,Wean oxygen,Met,No
+74,74,1677,Hemodynamic,MAP > 65,Not Met,Yes
+75,75,747,Pain,Pain controlled,Met,Yes
+76,76,282,Ventilation,Wean oxygen,In Progress,No
+77,77,746,Hemodynamic,Wean oxygen,In Progress,No
+78,78,61,Discharge,Wean oxygen,Met,No
+79,79,600,Pain,Wean oxygen,In Progress,Yes
+80,80,528,Hemodynamic,Pain controlled,Not Met,Yes
+81,81,1489,Ventilation,MAP > 65,Met,Yes
+82,82,938,Pain,Pain controlled,Met,No
+83,83,165,Ventilation,MAP > 65,Met,Yes
+84,84,1002,Hemodynamic,Wean oxygen,Not Met,No
+85,85,817,Ventilation,Transfer to floor,Met,Yes
+86,86,822,Discharge,Wean oxygen,Met,Yes
+87,87,653,Hemodynamic,MAP > 65,Met,Yes
+88,88,895,Pain,Pain controlled,Not Met,Yes
+89,89,687,Pain,Pain controlled,Met,Yes
+90,90,1654,Ventilation,Wean oxygen,In Progress,Yes
+91,91,824,Ventilation,MAP > 65,In Progress,No
+92,92,1918,Hemodynamic,MAP > 65,In Progress,Yes
+93,93,1515,Ventilation,Wean oxygen,Met,No
+94,94,934,Pain,Pain controlled,In Progress,No
+95,95,1272,Pain,Transfer to floor,Met,No
+96,96,1926,Hemodynamic,Pain controlled,Met,No
+97,97,1104,Discharge,Wean oxygen,In Progress,No
+98,98,1166,Ventilation,Transfer to floor,Met,No
+99,99,1706,Ventilation,Pain controlled,Not Met,Yes
+100,100,164,Ventilation,Transfer to floor,In Progress,No
+101,101,426,Hemodynamic,MAP > 65,In Progress,Yes
+102,102,892,Ventilation,Pain controlled,In Progress,No
+103,103,1699,Pain,MAP > 65,Not Met,No
+104,104,179,Ventilation,Transfer to floor,Met,Yes
+105,105,231,Pain,Wean oxygen,Met,No
+106,106,421,Pain,Wean oxygen,Met,No
+107,107,1356,Discharge,Pain controlled,Met,Yes
+108,108,1551,Pain,MAP > 65,Not Met,Yes
+109,109,114,Hemodynamic,Transfer to floor,In Progress,No
+110,110,1027,Hemodynamic,MAP > 65,Not Met,No
+111,111,1122,Hemodynamic,Pain controlled,Met,No
+112,112,241,Pain,Transfer to floor,In Progress,Yes
+113,113,1723,Pain,MAP > 65,In Progress,No
+114,114,584,Discharge,Pain controlled,In Progress,No
+115,115,1095,Pain,MAP > 65,Not Met,No
+116,116,183,Pain,Pain controlled,Met,No
+117,117,1027,Hemodynamic,Pain controlled,Not Met,Yes
+118,118,1847,Hemodynamic,Wean oxygen,Not Met,Yes
+119,119,605,Pain,Wean oxygen,Not Met,No
+120,120,1984,Pain,MAP > 65,Not Met,No

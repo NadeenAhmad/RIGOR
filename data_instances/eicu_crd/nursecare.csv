@@ -1,0 +1,121 @@
+nursecareid,patientunitstayid,CELLLABEL,NURSECAREOFFSET,NURSECAREENTRYOFFSET,CELLATTRIBUTEPATH,CELLATTRIBUTE,CELLATTRIBUTEVALUE
+1,1,Turning,1913,1865,care/interventions,Ongoing,No
+2,2,Hygiene,2200,1716,care/interventions,Ongoing,Q2 turns
+3,3,Turning,3856,2802,care/interventions,Ongoing,Yes
+4,4,Turning,186,3151,care/interventions,Deferred,Yes
+5,5,Fall precautions,1746,1536,care/interventions,Ongoing,No
+6,6,Hygiene,973,402,care/interventions,Deferred,Q2 turns
+7,7,Fall precautions,852,46,care/interventions,Performed,No
+8,8,Turning,2125,417,care/interventions,Deferred,Yes
+9,9,Turning,1421,2855,care/interventions,Deferred,Yes
+10,10,Hygiene,179,1359,care/interventions,Performed,No
+11,11,Hygiene,2804,2895,care/interventions,Deferred,Yes
+12,12,Fall precautions,55,2511,care/interventions,Performed,Yes
+13,13,Hygiene,3580,1394,care/interventions,Ongoing,Yes
+14,14,Hygiene,1011,571,care/interventions,Deferred,Yes
+15,15,Turning,1801,3694,care/interventions,Performed,No
+16,16,Fall precautions,487,2221,care/interventions,Performed,No
+17,17,Hygiene,1287,3343,care/interventions,Deferred,Q2 turns
+18,18,Fall precautions,397,2097,care/interventions,Performed,No
+19,19,Turning,1540,235,care/interventions,Performed,Yes
+20,20,Hygiene,3575,233,care/interventions,Deferred,Q2 turns
+21,21,Hygiene,909,3943,care/interventions,Performed,No
+22,22,Turning,1574,73,care/interventions,Deferred,Yes
+23,23,Fall precautions,1499,2002,care/interventions,Deferred,Q2 turns
+24,24,Fall precautions,3465,749,care/interventions,Ongoing,No
+25,25,Hygiene,1350,1417,care/interventions,Deferred,No
+26,26,Hygiene,3471,3815,care/interventions,Ongoing,Yes
+27,27,Hygiene,1098,1673,care/interventions,Deferred,No
+28,28,Fall precautions,1182,2859,care/interventions,Performed,No
+29,29,Fall precautions,664,1512,care/interventions,Ongoing,Yes
+30,30,Fall precautions,903,2073,care/interventions,Ongoing,Q2 turns
+31,31,Turning,1461,2363,care/interventions,Performed,Yes
+32,32,Hygiene,970,2430,care/interventions,Deferred,No
+33,33,Turning,2453,2363,care/interventions,Deferred,No
+34,34,Fall precautions,3271,1061,care/interventions,Performed,Yes
+35,35,Turning,2756,3094,care/interventions,Ongoing,Yes
+36,36,Hygiene,1355,2279,care/interventions,Deferred,No
+37,37,Fall precautions,2505,17,care/interventions,Performed,Yes
+38,38,Turning,3518,1555,care/interventions,Deferred,Yes
+39,39,Fall precautions,1490,165,care/interventions,Deferred,No
+40,40,Fall precautions,86,1366,care/interventions,Ongoing,No
+41,41,Fall precautions,223,2083,care/interventions,Ongoing,Yes
+42,42,Fall precautions,2153,1033,care/interventions,Performed,No
+43,43,Turning,2900,1042,care/interventions,Deferred,Q2 turns
+44,44,Fall precautions,1179,133,care/interventions,Deferred,No
+45,45,Hygiene,639,810,care/interventions,Ongoing,Q2 turns
+46,46,Fall precautions,3220,2176,care/interventions,Deferred,No
+47,47,Fall precautions,3606,3466,care/interventions,Performed,Q2 turns
+48,48,Fall precautions,2056,2256,care/interventions,Performed,Yes
+49,49,Turning,1661,675,care/interventions,Deferred,Yes
+50,50,Turning,3435,1097,care/interventions,Performed,Q2 turns
+51,51,Fall precautions,141,2944,care/interventions,Ongoing,Q2 turns
+52,52,Fall precautions,371,2722,care/interventions,Ongoing,No
+53,53,Hygiene,3044,1164,care/interventions,Ongoing,Q2 turns
+54,54,Hygiene,1520,3296,care/interventions,Deferred,Yes
+55,55,Hygiene,3169,191,care/interventions,Performed,No
+56,56,Hygiene,2186,1344,care/interventions,Deferred,No
+57,57,Fall precautions,807,1457,care/interventions,Deferred,No
+58,58,Fall precautions,2933,2432,care/interventions,Deferred,Yes
+59,59,Fall precautions,1751,1184,care/interventions,Performed,No
+60,60,Fall precautions,2353,3979,care/interventions,Performed,No
+61,61,Turning,77,3964,care/interventions,Performed,Yes
+62,62,Turning,2805,653,care/interventions,Performed,Yes
+63,63,Fall precautions,3718,848,care/interventions,Deferred,No
+64,64,Hygiene,3936,2605,care/interventions,Ongoing,Yes
+65,65,Hygiene,1612,773,care/interventions,Performed,No
+66,66,Fall precautions,1942,2327,care/interventions,Ongoing,Q2 turns
+67,67,Hygiene,828,2133,care/interventions,Ongoing,Q2 turns
+68,68,Fall precautions,3245,1470,care/interventions,Deferred,No
+69,69,Hygiene,2530,1138,care/interventions,Ongoing,No
+70,70,Hygiene,187,1119,care/interventions,Ongoing,Q2 turns
+71,71,Turning,1216,148,care/interventions,Performed,No
+72,72,Hygiene,2254,1358,care/interventions,Ongoing,Yes
+73,73,Fall precautions,2442,3658,care/interventions,Deferred,No
+74,74,Hygiene,2263,3005,care/interventions,Ongoing,No
+75,75,Turning,3757,3722,care/interventions,Performed,Yes
+76,76,Fall precautions,3810,1494,care/interventions,Ongoing,Q2 turns
+77,77,Fall precautions,3152,1603,care/interventions,Performed,No
+78,78,Fall precautions,2042,831,care/interventions,Deferred,Q2 turns
+79,79,Hygiene,1560,1997,care/interventions,Ongoing,No
+80,80,Turning,2234,2247,care/interventions,Ongoing,Q2 turns
+81,81,Hygiene,1547,1525,care/interventions,Ongoing,Yes
+82,82,Hygiene,3601,2948,care/interventions,Ongoing,Q2 turns
+83,83,Fall precautions,1338,795,care/interventions,Performed,Q2 turns
+84,84,Turning,3255,2716,care/interventions,Performed,Yes
+85,85,Hygiene,853,2871,care/interventions,Performed,No
+86,86,Turning,3259,2430,care/interventions,Performed,Q2 turns
+87,87,Hygiene,3736,359,care/interventions,Ongoing,Q2 turns
+88,88,Hygiene,1606,704,care/interventions,Ongoing,Q2 turns
+89,89,Turning,2644,1122,care/interventions,Deferred,Q2 turns
+90,90,Turning,2590,771,care/interventions,Deferred,Yes
+91,91,Fall precautions,1097,2470,care/interventions,Deferred,Q2 turns
+92,92,Fall precautions,2519,3953,care/interventions,Ongoing,No
+93,93,Hygiene,3012,642,care/interventions,Ongoing,No
+94,94,Fall precautions,21,3218,care/interventions,Performed,Q2 turns
+95,95,Fall precautions,2015,437,care/interventions,Ongoing,Yes
+96,96,Turning,1660,41,care/interventions,Ongoing,No
+97,97,Turning,1366,2955,care/interventions,Deferred,Yes
+98,98,Fall precautions,3494,1376,care/interventions,Deferred,No
+99,99,Turning,2126,675,care/interventions,Ongoing,No
+100,100,Turning,2875,2169,care/interventions,Deferred,Yes
+101,101,Hygiene,3784,2460,care/interventions,Ongoing,Yes
+102,102,Hygiene,847,1847,care/interventions,Performed,No
+103,103,Hygiene,3987,516,care/interventions,Ongoing,No
+104,104,Fall precautions,495,3319,care/interventions,Deferred,Yes
+105,105,Hygiene,574,38,care/interventions,Ongoing,No
+106,106,Hygiene,1696,2082,care/interventions,Ongoing,No
+107,107,Hygiene,1318,3396,care/interventions,Ongoing,Q2 turns
+108,108,Fall precautions,1340,698,care/interventions,Ongoing,Yes
+109,109,Turning,1894,2664,care/interventions,Performed,Q2 turns
+110,110,Fall precautions,3911,3501,care/interventions,Ongoing,Q2 turns
+111,111,Turning,3785,2041,care/interventions,Performed,Yes
+112,112,Hygiene,1670,2217,care/interventions,Performed,No
+113,113,Hygiene,2278,3976,care/interventions,Performed,Q2 turns
+114,114,Turning,2900,241,care/interventions,Ongoing,Q2 turns
+115,115,Hygiene,2114,3918,care/interventions,Performed,No
+116,116,Fall precautions,925,1294,care/interventions,Deferred,Q2 turns
+117,117,Fall precautions,2956,200,care/interventions,Deferred,Yes
+118,118,Turning,2066,2361,care/interventions,Performed,Yes
+119,119,Turning,3119,121,care/interventions,Deferred,Q2 turns
+120,120,Turning,1269,1466,care/interventions,Deferred,No

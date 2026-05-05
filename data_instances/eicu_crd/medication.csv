@@ -1,0 +1,563 @@
+medicationid,patientunitstayid,drugorderoffset,drugstartoffset,drugivadmixture,drugordercancelled,drugname,drughiclseqno,dosage,routeadmin,frequency,loadingdose,prn,drugstopoffset,gtc
+1,1,53,581,Yes,No,clonazePAM 0.25 MG Oral Tablet,1430,3,SQ,PRN,,Yes,3902,1
+2,1,341,401,No,Yes,Cefuroxime 250 MG Oral Tablet,2141,1,PO,PRN,,Yes,1502,0
+3,1,537,977,Yes,No,Ibuprofen 100 MG Oral Tablet,1403,1,PO,BID,,Yes,2654,1
+4,1,83,196,Yes,No,carbamazepine 20 MG/ML Oral Suspension [Tegretol],9180,84,PO,QD,,No,3415,1
+5,1,230,873,No,No,clonazePAM 0.25 MG Oral Tablet,7325,6,SQ,TID,,No,2167,0
+6,2,303,896,No,Yes,Acetaminophen 160 MG Chewable Tablet,6801,1,IV,PRN,,No,1212,0
+7,2,739,113,Yes,Yes,Penicillin V Potassium 250 MG Oral Tablet,4812,1,SQ,PRN,,No,4494,0
+8,2,597,192,No,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,6112,1,IM,TID,,Yes,1436,1
+9,2,1000,806,No,No,sodium fluoride 0.0272 MG/MG Oral Gel,8281,1,SQ,BID,,Yes,4356,1
+10,3,765,447,No,No,Ibuprofen 100 MG Oral Tablet,7758,1,IV,QD,,No,1649,0
+11,3,287,188,No,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,1726,1,PO,BID,,No,3804,0
+12,3,944,420,No,Yes,Amoxicillin 500 MG Oral Tablet,2025,1,IV,PRN,,Yes,2537,1
+13,3,445,896,No,No,Ibuprofen 100 MG Oral Tablet,8535,1,IV,QID,,No,4184,0
+14,3,455,771,Yes,No,sodium fluoride 0.0272 MG/MG Oral Gel,1674,1,PO,BID,,No,3971,1
+15,4,439,572,Yes,No,Ibuprofen 100 MG Oral Tablet,1033,2,PO,QID,,Yes,3739,0
+16,4,262,235,Yes,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,2096,1,IV,PRN,,Yes,4617,1
+17,4,126,763,No,No,sodium fluoride 0.0272 MG/MG Oral Gel,8071,1,IM,QID,,Yes,1475,0
+18,4,366,961,No,Yes,Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet,8248,3,PO,QD,,Yes,2236,0
+19,4,139,867,No,Yes,Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet,5136,3,IV,BID,,No,3075,1
+20,5,215,421,Yes,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,1560,1,SQ,PRN,,No,4726,1
+21,5,916,436,Yes,No,sodium fluoride 0.0272 MG/MG Oral Gel,1641,1,IV,BID,,Yes,1796,0
+22,5,869,330,Yes,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,1028,1,IM,QD,,Yes,3913,1
+23,5,97,350,Yes,No,{7 (ethinyl estradiol 0.035 MG / norgestimate 0.18 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norgestimate 0.215 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norgestimate 0.25 MG Oral Tablet) / 7 (inert ingre,2670,12,IM,BID,,No,4527,0
+24,5,229,808,Yes,No,{24 (drospirenone 3 MG / ethinyl estradiol 0.02 MG Oral Tablet) / 4 (inert ingredients 1 MG Oral Tablet) } Pack [Yaz 28 Day],5673,12,SQ,BID,,No,1036,1
+25,6,379,215,Yes,Yes,Loratadine 5 MG Chewable Tablet,8271,407,SQ,QD,,No,4467,0
+26,6,852,396,Yes,No,NDA020800 0.3 ML Epinephrine 1 MG/ML Auto-Injector,2324,407,IM,QD,,No,4072,1
+27,6,137,562,No,No,Amoxicillin 250 MG / Clavulanate 125 MG Oral Tablet,8507,1,SQ,BID,,No,4715,1
+28,7,79,955,No,No,diphenhydrAMINE Hydrochloride 25 MG Oral Tablet,3014,469,IM,QID,,Yes,3887,1
+29,7,325,188,No,Yes,NDA020800 0.3 ML Epinephrine 1 MG/ML Auto-Injector,9263,469,IM,PRN,,Yes,3825,1
+30,8,367,450,No,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,9950,1,PO,PRN,,Yes,1361,0
+31,8,520,929,Yes,No,Acetaminophen 325 MG Oral Tablet,8580,1,IV,QID,,No,2697,1
+32,9,648,211,No,No,Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet,2615,3,SQ,QID,,Yes,4876,1
+33,9,846,710,No,No,{24 (drospirenone 3 MG / ethinyl estradiol 0.02 MG Oral Tablet) / 4 (inert ingredients 1 MG Oral Tablet) } Pack [Yaz 28 Day],4918,12,IV,TID,,No,3261,0
+34,9,439,941,No,No,Vitamin B12 5 MG/ML Injectable Solution,1359,100,IM,TID,,No,4212,1
+35,9,420,757,No,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,4029,1,IV,TID,,Yes,2833,1
+36,9,952,753,No,Yes,Acetaminophen 325 MG Oral Tablet,4658,1,PO,TID,,No,3836,0
+37,10,293,815,No,No,sodium fluoride 0.0272 MG/MG Oral Gel,7815,1,IV,BID,,Yes,1096,0
+38,10,764,995,Yes,No,Penicillin V Potassium 500 MG Oral Tablet,3308,1,SQ,BID,,No,2761,1
+39,10,671,898,No,Yes,Acetaminophen 325 MG / HYDROcodone Bitartrate 7.5 MG Oral Tablet,4888,1,IV,BID,,No,2085,0
+40,10,109,454,Yes,Yes,Naproxen sodium 220 MG Oral Tablet,8464,1,PO,QID,,No,2270,1
+41,10,569,164,No,Yes,Abuse-Deterrent 12 HR Oxycodone Hydrochloride 15 MG Extended Release Oral Tablet,5427,1,IV,BID,,Yes,2564,1
+42,11,774,697,No,No,Fexofenadine hydrochloride 30 MG Oral Tablet,2449,257,IV,PRN,,No,4752,0
+43,11,522,326,Yes,No,NDA020800 0.3 ML Epinephrine 1 MG/ML Auto-Injector,6653,257,IV,QD,,Yes,2187,0
+44,11,309,725,No,Yes,Naproxen sodium 220 MG Oral Tablet,8924,1,IV,BID,,Yes,2549,0
+45,11,845,281,No,Yes,Naproxen sodium 220 MG Oral Tablet,8933,1,IV,BID,,Yes,1617,0
+46,12,63,964,No,No,Ibuprofen 400 MG Oral Tablet [Ibu],8809,3,IV,BID,,Yes,4745,0
+47,12,347,255,No,No,Ibuprofen 400 MG Oral Tablet [Ibu],9703,3,IV,QD,,No,3677,1
+48,12,471,418,No,No,Ibuprofen 400 MG Oral Tablet [Ibu],1472,3,PO,BID,,Yes,3336,0
+49,12,693,77,No,Yes,Ibuprofen 400 MG Oral Tablet [Ibu],5110,3,IV,QID,,Yes,1711,0
+50,12,775,150,No,No,Ibuprofen 400 MG Oral Tablet [Ibu],1286,3,IV,QD,,No,1118,1
+51,13,314,23,Yes,No,Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet,8109,3,IV,QD,,Yes,2846,0
+52,13,512,745,Yes,No,{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Errin 28 Day],4048,12,IM,PRN,,No,1292,1
+53,13,358,809,No,Yes,Ibuprofen 400 MG Oral Tablet [Ibu],9716,3,IM,BID,,Yes,2322,0
+54,13,959,671,No,No,tramadol hydrochloride 50 MG Oral Tablet,7115,3,PO,QID,,Yes,1989,1
+55,13,687,82,No,No,Acetaminophen 325 MG Oral Tablet,8116,1,PO,TID,,No,4327,1
+56,14,145,194,Yes,No,Aspirin 81 MG Oral Tablet,8644,1,PO,TID,,Yes,2181,0
+57,14,75,747,No,Yes,Paclitaxel 100 MG Injection,6433,1,IV,QD,,No,4437,1
+58,14,531,172,Yes,No,Paclitaxel 100 MG Injection,7046,1,SQ,PRN,,Yes,3110,1
+59,14,248,75,Yes,No,Paclitaxel 100 MG Injection,5090,1,IV,QID,,No,1003,0
+60,14,874,656,Yes,No,Paclitaxel 100 MG Injection,3968,1,IV,BID,,Yes,2287,1
+61,15,64,484,Yes,Yes,Chlorpheniramine Maleate 2 MG/ML Oral Solution,5984,604,IM,BID,,Yes,4357,1
+62,15,771,144,Yes,No,Hydrochlorothiazide 25 MG Oral Tablet,5494,4,IM,QID,,No,3556,0
+63,15,85,188,Yes,Yes,amLODIPine 2.5 MG Oral Tablet,6309,4,IM,PRN,,No,4373,0
+64,15,358,594,Yes,No,Hydrochlorothiazide 25 MG Oral Tablet,4184,4,SQ,PRN,,No,1888,1
+65,15,635,386,Yes,No,amLODIPine 2.5 MG Oral Tablet,9246,4,IM,BID,,No,1916,0
+66,16,673,394,No,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,7969,1,SQ,BID,,Yes,4678,1
+67,16,938,256,No,Yes,Naproxen sodium 220 MG Oral Tablet,9155,68,PO,BID,,Yes,1685,0
+68,17,134,450,No,Yes,doxycycline hyclate 100 MG,1765,417,SQ,BID,,No,2588,0
+69,17,638,71,No,Yes,levonorgestrel 0.000833 MG/HR Intrauterine System [Mirena],3727,12,PO,TID,,Yes,2914,0
+70,17,505,246,No,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,1745,1,IV,QD,,Yes,1473,1
+71,17,724,61,No,Yes,21 DAY ethinyl estradiol 0.000625 MG/HR / etonogestrel 0.005 MG/HR Vaginal System [NuvaRing],5803,12,PO,QID,,No,4259,1
+72,17,751,400,No,No,cefdinir 300 MG Oral Capsule,8726,1,PO,TID,,Yes,4408,0
+73,18,7,708,Yes,No,insulin isophane  human 70 UNT/ML / insulin  regular  human 30 UNT/ML Injectable Suspension [Humulin],1047,11,IV,TID,,Yes,1720,1
+74,18,125,521,Yes,Yes,Acetaminophen 325 MG / Oxycodone Hydrochloride 10 MG Oral Tablet [Percocet],1725,3,IV,QD,,Yes,3347,0
+75,18,735,580,Yes,No,Abuse-Deterrent 12 HR Oxycodone Hydrochloride 10 MG Extended Release Oral Tablet [Oxycontin],4376,3,SQ,QID,,Yes,2102,1
+76,18,54,659,Yes,Yes,amLODIPine 2.5 MG Oral Tablet,1008,3,SQ,PRN,,Yes,2978,0
+77,18,805,218,No,No,insulin isophane  human 70 UNT/ML / insulin  regular  human 30 UNT/ML Injectable Suspension [Humulin],1517,1,IM,PRN,,Yes,3314,1
+78,19,682,148,Yes,Yes,Hydrochlorothiazide 25 MG Oral Tablet,7977,4,PO,QID,,No,3572,0
+79,19,622,803,No,Yes,Hydrochlorothiazide 25 MG Oral Tablet,8408,4,IV,BID,,Yes,4043,1
+80,19,796,196,No,No,Hydrochlorothiazide 25 MG Oral Tablet,2001,3,IV,QD,,Yes,3938,0
+81,19,934,299,No,Yes,Hydrochlorothiazide 25 MG Oral Tablet,4891,1,IM,QID,,Yes,2161,0
+82,19,684,193,No,No,Hydrochlorothiazide 25 MG Oral Tablet,7205,4,IV,QD,,Yes,3326,0
+83,20,864,395,No,No,Acetaminophen 21.7 MG/ML / Dextromethorphan Hydrobromide 1 MG/ML / doxylamine succinate 0.417 MG/ML Oral Solution,5146,1,SQ,TID,,Yes,2919,0
+84,20,602,682,No,Yes,Acetaminophen 325 MG Oral Tablet,8140,1,PO,QID,,Yes,1339,0
+85,20,477,238,No,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,3115,1,PO,BID,,Yes,4919,1
+86,20,480,545,Yes,No,Acetaminophen 325 MG Oral Tablet,8536,1,SQ,QID,,No,1738,1
+87,20,310,81,No,Yes,Acetaminophen 325 MG Oral Tablet,7462,1,PO,BID,,Yes,3056,1
+88,21,935,334,Yes,No,Penicillin V Potassium 500 MG Oral Tablet,2835,1,IM,QD,,No,4262,0
+89,21,425,265,Yes,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,1049,1,IM,BID,,No,1235,1
+90,21,622,200,Yes,Yes,nitrofurantoin  macrocrystals 25 MG / nitrofurantoin  monohydrate 75 MG [Macrobid],7008,1,IV,TID,,Yes,3380,0
+91,21,305,253,No,Yes,sulfamethoxazole 800 MG / trimethoprim 160 MG Oral Tablet,3994,1,IM,QD,,Yes,2759,1
+92,21,616,237,Yes,No,sodium fluoride 0.0272 MG/MG Oral Gel,6740,1,IV,PRN,,No,4774,1
+93,22,135,181,No,No,sodium fluoride 0.0272 MG/MG Oral Gel,4141,1,IM,BID,,No,3379,0
+94,23,46,713,No,No,{5 (dienogest 2 MG / estradiol valerate 2 MG Oral Tablet) / 17 (dienogest 3 MG / estradiol valerate 2 MG Oral Tablet) / 2 (estradiol valerate 1 MG Oral Tablet) / 2 (estradiol valerate 3 MG Oral Tablet) / 2 (inert ingredi,9058,12,PO,QID,,Yes,2212,0
+95,23,734,631,Yes,No,sodium fluoride 0.0272 MG/MG Oral Gel,3226,1,IM,PRN,,Yes,4810,1
+96,23,177,162,No,No,21 DAY ethinyl estradiol 0.000625 MG/HR / etonogestrel 0.005 MG/HR Vaginal System [NuvaRing],7023,12,IM,QID,,No,1759,1
+97,23,754,418,No,No,{5 (dienogest 2 MG / estradiol valerate 2 MG Oral Tablet) / 17 (dienogest 3 MG / estradiol valerate 2 MG Oral Tablet) / 2 (estradiol valerate 1 MG Oral Tablet) / 2 (estradiol valerate 3 MG Oral Tablet) / 2 (inert ingredi,8953,12,IM,PRN,,No,3804,0
+98,23,583,622,Yes,No,{5 (dienogest 2 MG / estradiol valerate 2 MG Oral Tablet) / 17 (dienogest 3 MG / estradiol valerate 2 MG Oral Tablet) / 2 (estradiol valerate 1 MG Oral Tablet) / 2 (estradiol valerate 3 MG Oral Tablet) / 2 (inert ingredi,1198,12,IV,PRN,,Yes,3468,1
+99,24,69,843,No,Yes,Astemizole 10 MG Oral Tablet,2636,558,IM,TID,,No,3877,1
+100,24,742,174,No,Yes,Hydrochlorothiazide 25 MG Oral Tablet,3029,4,IV,PRN,,No,1115,1
+101,24,752,356,No,Yes,Hydrochlorothiazide 25 MG Oral Tablet,4555,4,SQ,QID,,Yes,1346,1
+102,24,931,129,Yes,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,1353,1,IV,BID,,Yes,1876,1
+103,24,102,255,Yes,No,Hydrochlorothiazide 25 MG Oral Tablet,9453,4,PO,PRN,,No,4800,0
+104,25,492,376,No,No,Hydrochlorothiazide 25 MG Oral Tablet,4814,1,PO,BID,,Yes,2267,1
+105,25,578,274,Yes,No,lisinopril 10 MG Oral Tablet,6177,1,IM,BID,,No,3617,0
+106,25,411,767,Yes,No,Hydrochlorothiazide 25 MG Oral Tablet,1361,4,IM,QD,,No,1446,1
+107,25,924,658,Yes,No,lisinopril 10 MG Oral Tablet,8837,4,IV,BID,,Yes,2842,1
+108,25,921,770,No,Yes,0.4 ML Enoxaparin sodium 100 MG/ML Prefilled Syringe,7595,1,IV,BID,,Yes,3573,1
+109,26,725,450,Yes,No,Penicillin V Potassium 250 MG Oral Tablet,9059,1,PO,QID,,No,2393,1
+110,26,719,934,No,No,Amoxicillin 500 MG Oral Tablet,3486,1,IV,BID,,Yes,1959,1
+111,26,213,999,Yes,Yes,Acetaminophen 160 MG Chewable Tablet,3975,1,PO,QID,,Yes,3886,0
+112,26,59,819,No,No,Loratadine 5 MG Chewable Tablet,8387,55,SQ,BID,,No,1503,0
+113,26,137,908,Yes,No,NDA020800 0.3 ML Epinephrine 1 MG/ML Auto-Injector,7690,55,PO,QD,,No,4133,0
+114,27,360,359,Yes,Yes,ferrous sulfate 325 MG Oral Tablet,6993,654,IV,QD,,No,2857,1
+115,27,645,669,No,No,Vitamin B12 5 MG/ML Injectable Solution,4465,654,PO,BID,,No,2962,1
+116,27,255,866,No,No,aspirin 81 MG Oral Tablet,6875,342,SQ,TID,,Yes,2567,1
+117,27,470,546,Yes,Yes,metoprolol tartrate 25 MG Oral Tablet,3055,1,IM,BID,,Yes,3972,1
+118,27,458,955,Yes,No,rosuvastatin calcium 40 MG Oral Tablet,2509,1,PO,QD,,No,1386,0
+119,28,402,308,No,No,Loratadine 5 MG Chewable Tablet,3156,252,IV,QID,,No,4295,0
+120,28,686,613,No,No,NDA020800 0.3 ML Epinephrine 1 MG/ML Auto-Injector,1200,252,IM,QID,,No,2396,1
+121,28,660,903,No,Yes,Acetaminophen 325 MG Oral Tablet,2746,1,IM,QD,,Yes,2197,1
+122,28,834,749,No,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,8772,1,SQ,QID,,Yes,2905,1
+123,28,38,722,Yes,No,sodium fluoride 0.0272 MG/MG Oral Gel,9348,1,SQ,QD,,Yes,3574,1
+124,29,462,129,No,Yes,Hydrocortisone 10 MG/ML Topical Cream,1106,186,PO,QD,,No,3932,0
+125,29,408,230,No,No,Fexofenadine hydrochloride 60 MG Oral Tablet,1726,186,IV,TID,,No,4055,0
+126,29,789,324,Yes,No,NDA020800 0.3 ML Epinephrine 1 MG/ML Auto-Injector,2179,186,IV,BID,,Yes,3716,1
+127,29,586,462,No,Yes,Acetaminophen 325 MG Oral Tablet,7592,1,SQ,PRN,,No,4976,0
+128,29,405,45,Yes,No,Amoxicillin 250 MG / Clavulanate 125 MG Oral Tablet,9478,1,PO,TID,,No,4160,0
+129,30,65,410,No,No,Hydrochlorothiazide 25 MG Oral Tablet,2988,1,IV,QD,,No,4631,0
+130,30,323,619,No,No,lisinopril 10 MG Oral Tablet,8183,1,PO,BID,,Yes,2430,0
+131,30,731,235,No,No,amLODIPine 2.5 MG Oral Tablet,8339,1,IV,PRN,,No,4259,0
+132,30,147,214,Yes,Yes,Hydrochlorothiazide 25 MG Oral Tablet,6266,1,SQ,TID,,No,3189,1
+133,30,103,650,No,No,lisinopril 10 MG Oral Tablet,2502,1,IM,QID,,Yes,4845,1
+134,31,966,631,Yes,Yes,albuterol 5 MG/ML Inhalation Solution,2923,2,IM,BID,,No,4371,1
+135,31,203,454,No,Yes,24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet,1312,8,IV,TID,,No,4145,1
+136,31,298,459,Yes,Yes,lisinopril 10 MG Oral Tablet,5000,2,IM,BID,,No,4488,0
+137,31,149,392,No,No,60 ACTUAT Fluticasone propionate 0.25 MG/ACTUAT / salmeterol 0.05 MG/ACTUAT Dry Powder Inhaler,3975,8,IV,BID,,Yes,2704,0
+138,31,468,455,No,No,albuterol 5 MG/ML Inhalation Solution,2864,1,PO,TID,,No,1772,0
+139,32,881,238,No,No,Astemizole 10 MG Oral Tablet,7900,587,PO,QD,,No,4198,0
+140,32,651,700,Yes,No,120 ACTUAT fluticasone propionate 0.044 MG/ACTUAT Metered Dose Inhaler [Flovent],7212,1,IV,PRN,,No,3841,1
+141,32,986,231,No,No,NDA021457 200 ACTUAT albuterol 0.09 MG/ACTUAT Metered Dose Inhaler [ProAir],1255,1,SQ,PRN,,Yes,2664,1
+142,32,222,712,Yes,No,{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Errin 28 Day],3353,12,PO,BID,,Yes,2488,0
+143,32,732,86,No,Yes,120 ACTUAT fluticasone propionate 0.044 MG/ACTUAT Metered Dose Inhaler [Flovent],3747,1,PO,QID,,Yes,1578,1
+144,33,573,673,No,No,Naproxen sodium 220 MG Oral Tablet,5764,1,IM,BID,,No,3433,0
+145,33,207,830,No,No,{7 (ethinyl estradiol 0.01 MG Oral Tablet) / 84 (ethinyl estradiol 0.03 MG / levonorgestrel 0.15 MG Oral Tablet) } Pack [Seasonique],5933,12,IV,BID,,No,2157,0
+146,33,451,975,No,No,{5 (dienogest 2 MG / estradiol valerate 2 MG Oral Tablet) / 17 (dienogest 3 MG / estradiol valerate 2 MG Oral Tablet) / 2 (estradiol valerate 1 MG Oral Tablet) / 2 (estradiol valerate 3 MG Oral Tablet) / 2 (inert ingredi,5743,2,IV,BID,,No,3191,1
+147,34,418,878,No,Yes,Acetaminophen 325 MG Oral Tablet,1386,1,SQ,PRN,,Yes,3585,1
+148,34,517,388,Yes,No,Acetaminophen 325 MG Oral Tablet,6647,1,IM,QD,,No,4268,1
+149,34,816,723,Yes,No,Penicillin V Potassium 250 MG Oral Tablet,3168,1,SQ,BID,,No,2050,1
+150,34,310,644,Yes,Yes,Naproxen sodium 220 MG Oral Tablet,9984,1,IV,QID,,No,4114,0
+151,34,414,55,No,Yes,Penicillin V Potassium 250 MG Oral Tablet,3124,1,IV,BID,,No,2438,1
+152,35,891,367,No,No,budesonide 0.25 MG/ML Inhalation Suspension,9738,1,PO,QID,,No,1855,0
+153,35,443,784,Yes,No,Hydrochlorothiazide 25 MG Oral Tablet,9923,4,IV,TID,,No,4288,0
+154,35,59,431,Yes,Yes,albuterol 0.83 MG/ML Inhalation Solution,2576,1,IM,QID,,No,4523,1
+155,35,97,998,Yes,Yes,Leucovorin 100 MG Injection,5795,1,IV,PRN,,No,4051,0
+156,35,750,477,Yes,Yes,10 ML oxaliplatin 5 MG/ML Injection,8144,1,SQ,QD,,No,3109,1
+157,36,30,185,No,No,lisinopril 10 MG Oral Tablet,7884,4,IM,QID,,No,2616,1
+158,36,746,336,Yes,No,lisinopril 10 MG Oral Tablet,7373,4,IM,PRN,,Yes,3345,0
+159,36,809,995,Yes,No,lisinopril 10 MG Oral Tablet,1922,4,IV,TID,,Yes,4215,0
+160,36,516,149,Yes,Yes,lisinopril 10 MG Oral Tablet,8685,4,PO,QID,,Yes,3139,1
+161,36,129,376,Yes,Yes,lisinopril 10 MG Oral Tablet,3596,4,IM,PRN,,Yes,3138,1
+162,37,734,267,No,Yes,{5 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ethinyl estradiol 0.03 MG / norethindrone acetate 1 MG Oral Tablet) / 9 (ethinyl estradiol 0.035 MG / norethindrone acetate 1 MG Oral Tablet) /,3070,12,PO,BID,,Yes,2994,0
+163,37,233,153,No,No,{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Camila 28 Day],4297,12,IV,QID,,Yes,3549,0
+164,37,735,635,No,Yes,{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Errin 28 Day],1511,12,PO,QD,,Yes,3553,0
+165,37,366,477,No,No,Hydrochlorothiazide 25 MG Oral Tablet,7341,1,SQ,BID,,Yes,4538,1
+166,37,787,715,Yes,Yes,Hydrochlorothiazide 25 MG Oral Tablet,4901,3,SQ,BID,,No,1397,0
+167,38,577,713,No,No,lisinopril 10 MG Oral Tablet,7855,4,IV,QID,,Yes,4157,0
+168,38,997,55,Yes,No,amLODIPine 2.5 MG Oral Tablet,8528,4,SQ,QD,,Yes,3817,0
+169,38,752,52,No,Yes,lisinopril 10 MG Oral Tablet,5292,4,IM,QD,,No,4991,0
+170,38,811,944,Yes,Yes,amLODIPine 2.5 MG Oral Tablet,8461,4,PO,PRN,,No,2803,1
+171,38,664,510,Yes,No,lisinopril 10 MG Oral Tablet,1470,4,IV,BID,,Yes,1833,0
+172,39,898,534,No,No,sodium fluoride 0.0272 MG/MG Oral Gel,5310,1,IV,BID,,No,4853,0
+173,39,976,202,Yes,No,sodium fluoride 0.0272 MG/MG Oral Gel,7041,1,PO,BID,,No,2272,0
+174,39,21,612,Yes,No,sodium fluoride 0.0272 MG/MG Oral Gel,5245,1,PO,QD,,No,2661,1
+175,39,963,32,No,Yes,Acetaminophen 21.7 MG/ML / Dextromethorphan Hydrobromide 1 MG/ML / doxylamine succinate 0.417 MG/ML Oral Solution,7844,1,IM,TID,,No,1255,0
+176,39,254,914,No,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,6737,1,IM,QID,,No,2936,0
+177,40,48,8,No,No,Clopidogrel 75 MG Oral Tablet,8439,183,PO,QD,,Yes,1929,1
+178,40,267,846,Yes,No,Simvastatin 20 MG Oral Tablet,8720,183,IV,QID,,Yes,3259,1
+179,40,55,91,Yes,Yes,24 HR metoprolol succinate 100 MG Extended Release Oral Tablet,3290,183,PO,QD,,No,2707,0
+180,40,808,673,Yes,No,Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray,9623,183,IM,PRN,,No,3046,1
+181,40,467,878,No,Yes,Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet,4473,3,PO,QID,,Yes,3479,1
+182,41,298,995,No,Yes,Clopidogrel 75 MG Oral Tablet,6345,142,PO,BID,,No,1111,0
+183,41,648,183,Yes,Yes,Simvastatin 20 MG Oral Tablet,5845,142,SQ,TID,,No,2931,0
+184,41,838,827,No,Yes,24 HR metoprolol succinate 100 MG Extended Release Oral Tablet,9235,142,IV,PRN,,No,4570,1
+185,41,890,786,Yes,Yes,Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray,1264,142,IV,TID,,No,4387,0
+186,41,649,818,No,No,Acetaminophen 325 MG Oral Tablet,2123,1,PO,PRN,,No,3483,1
+187,42,567,787,No,Yes,Hydrochlorothiazide 25 MG Oral Tablet,1189,4,SQ,BID,,Yes,4110,1
+188,42,153,277,Yes,Yes,24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet,5343,12,PO,TID,,Yes,3617,1
+189,42,21,93,No,Yes,lisinopril 10 MG Oral Tablet,1329,4,SQ,TID,,No,3143,0
+190,42,731,76,No,Yes,amLODIPine 2.5 MG Oral Tablet,4420,4,IM,QID,,Yes,1969,1
+191,42,634,518,Yes,No,1 ML medroxyprogesterone acetate 150 MG/ML Injection,1911,12,PO,TID,,No,2609,0
+192,44,799,389,Yes,Yes,cetirizine hydrochloride 5 MG Oral Tablet,7870,163,SQ,BID,,No,2925,0
+193,44,184,819,No,Yes,NDA020800 0.3 ML Epinephrine 1 MG/ML Auto-Injector,1697,163,SQ,TID,,No,1207,0
+194,44,449,744,No,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,5629,1,SQ,PRN,,Yes,3298,1
+195,44,355,691,No,No,sodium fluoride 0.0272 MG/MG Oral Gel,8935,1,PO,PRN,,Yes,4985,0
+196,44,939,899,No,No,Methylphenidate Hydrochloride 20 MG Oral Tablet,1328,12,PO,TID,,No,2512,0
+197,45,217,453,No,No,ferrous sulfate 325 MG Oral Tablet,5206,409,IV,QID,,No,1378,1
+198,45,161,918,No,No,Vitamin B12 5 MG/ML Injectable Solution,1056,409,PO,QID,,No,1860,0
+199,45,380,825,Yes,Yes,Ibuprofen 400 MG Oral Tablet [Ibu],1070,3,IM,TID,,Yes,2417,0
+200,45,391,845,Yes,No,Ibuprofen 400 MG Oral Tablet [Ibu],5644,3,PO,QID,,Yes,3668,1
+201,45,810,867,Yes,Yes,Ibuprofen 400 MG Oral Tablet [Ibu],4496,3,PO,BID,,Yes,4377,1
+202,46,299,743,No,Yes,Loratadine 5 MG Chewable Tablet,5747,248,PO,QD,,Yes,4645,1
+203,46,650,955,No,No,NDA020800 0.3 ML Epinephrine 1 MG/ML Auto-Injector,8432,248,IM,PRN,,No,4391,1
+204,46,269,844,No,No,120 ACTUAT fluticasone propionate 0.044 MG/ACTUAT Metered Dose Inhaler [Flovent],2773,1,PO,PRN,,No,4679,1
+205,46,584,233,No,Yes,albuterol 0.83 MG/ML Inhalation Solution,4424,1,IV,TID,,Yes,3036,1
+206,46,407,846,No,No,120 ACTUAT fluticasone propionate 0.044 MG/ACTUAT Metered Dose Inhaler [Flovent],7127,1,PO,QD,,No,2815,1
+207,47,175,56,Yes,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,3244,1,IV,BID,,Yes,4590,0
+208,47,744,495,No,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,9316,1,IV,TID,,No,4828,1
+209,47,784,734,No,Yes,Acetaminophen 160 MG Chewable Tablet,6182,1,IM,QID,,Yes,3337,0
+210,47,675,871,Yes,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,5968,1,IM,QD,,No,3294,1
+211,47,501,356,No,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,3915,1,SQ,QID,,Yes,4641,0
+212,48,819,743,No,Yes,Amoxicillin 500 MG Oral Tablet,1050,1,SQ,PRN,,No,1853,0
+213,48,707,908,No,Yes,Acetaminophen 160 MG Chewable Tablet,4753,1,IM,PRN,,Yes,2971,0
+214,48,933,294,No,Yes,Amoxicillin 500 MG Oral Tablet,8390,1,SQ,TID,,Yes,3778,1
+215,48,522,262,Yes,No,Ibuprofen 100 MG Oral Tablet,7686,1,PO,PRN,,No,3242,1
+216,48,164,66,Yes,No,Amoxicillin 500 MG Oral Tablet,6144,1,IV,PRN,,No,1151,0
+217,49,989,952,No,No,diphenhydrAMINE Hydrochloride 25 MG Oral Tablet,1976,623,PO,TID,,No,2874,0
+218,49,892,742,No,No,budesonide 0.25 MG/ML Inhalation Suspension,5373,1,IM,QD,,No,1759,0
+219,49,912,595,No,Yes,albuterol 0.83 MG/ML Inhalation Solution,9296,1,PO,PRN,,Yes,2347,0
+220,49,288,971,Yes,Yes,budesonide 0.25 MG/ML Inhalation Suspension,5127,1,PO,QD,,Yes,3704,1
+221,49,855,857,No,No,albuterol 0.83 MG/ML Inhalation Solution,2359,1,PO,QID,,Yes,2072,0
+222,50,999,521,No,No,{21 (ethinyl estradiol 0.03 MG / levonorgestrel 0.15 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Levora 0.15/30 28 Day],8097,12,IM,QID,,Yes,3221,1
+223,50,689,303,Yes,Yes,Acetaminophen 325 MG Oral Tablet [Tylenol],5143,3,IM,QD,,No,2703,1
+224,50,782,832,Yes,Yes,Acetaminophen 325 MG Oral Tablet [Tylenol],4684,3,SQ,PRN,,Yes,3013,1
+225,50,300,436,No,No,sodium fluoride 0.0272 MG/MG Oral Gel,9732,1,IV,PRN,,Yes,4850,1
+226,50,722,297,No,Yes,Acetaminophen 325 MG Oral Tablet [Tylenol],8898,3,IV,QID,,No,3619,1
+227,51,587,235,Yes,Yes,Vitamin B12 5 MG/ML Injectable Solution,3338,454,SQ,TID,,Yes,2853,1
+228,51,911,197,Yes,No,24 HR metoprolol succinate 100 MG Extended Release Oral Tablet,9316,435,IV,TID,,No,4349,1
+229,51,872,207,Yes,Yes,Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray,2148,435,IV,QID,,Yes,4216,0
+230,51,267,269,Yes,No,Levothyroxine Sodium 0.075 MG Oral Tablet,4132,6,IM,TID,,No,3337,1
+231,51,238,77,Yes,No,Alendronic acid 10 MG Oral Tablet,5250,12,SQ,BID,,Yes,1862,1
+232,52,111,216,Yes,No,FLUoxetine 20 MG Oral Capsule,3440,12,PO,QID,,No,2672,1
+233,52,174,714,Yes,No,Hydrochlorothiazide 25 MG Oral Tablet,5526,4,IM,PRN,,No,4076,0
+234,52,902,216,No,Yes,lisinopril 10 MG Oral Tablet,7709,4,SQ,BID,,No,2556,1
+235,52,536,897,No,Yes,amLODIPine 2.5 MG Oral Tablet,8198,4,IM,BID,,Yes,2685,0
+236,52,635,714,No,No,Hydrochlorothiazide 25 MG Oral Tablet,2915,4,SQ,PRN,,No,1600,1
+237,53,945,370,Yes,No,Ibuprofen 400 MG Oral Tablet [Ibu],6379,3,IV,BID,,No,1802,1
+238,53,359,418,Yes,No,Ibuprofen 400 MG Oral Tablet [Ibu],7198,3,SQ,TID,,No,2770,0
+239,53,90,81,No,No,{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Camila 28 Day],2176,12,IM,TID,,Yes,3348,1
+240,53,533,249,No,Yes,Ibuprofen 400 MG Oral Tablet [Ibu],1087,3,SQ,QD,,Yes,4981,0
+241,53,997,208,Yes,No,Ibuprofen 400 MG Oral Tablet [Ibu],2928,3,IV,PRN,,No,2043,1
+242,54,515,814,Yes,Yes,{24 (drospirenone 3 MG / ethinyl estradiol 0.02 MG Oral Tablet) / 4 (inert ingredients 1 MG Oral Tablet) } Pack [Yaz 28 Day],8491,12,IM,TID,,No,1407,0
+243,54,621,224,No,No,{7 (ethinyl estradiol 0.035 MG / norgestimate 0.18 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norgestimate 0.215 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norgestimate 0.25 MG Oral Tablet) / 7 (inert ingre,9934,12,PO,QID,,Yes,2274,1
+244,54,437,822,No,Yes,Amoxicillin 250 MG / Clavulanate 125 MG Oral Tablet,4397,1,IV,QD,,No,2320,1
+245,54,755,778,Yes,Yes,{21 (ethinyl estradiol 0.03 MG / levonorgestrel 0.15 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Levora 0.15/30 28 Day],9793,11,SQ,QD,,No,4200,1
+246,54,799,97,No,Yes,{7 (ethinyl estradiol 0.01 MG Oral Tablet) / 84 (ethinyl estradiol 0.03 MG / levonorgestrel 0.15 MG Oral Tablet) } Pack [Seasonique],9027,12,IM,QID,,No,4696,1
+247,55,721,349,Yes,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,2071,1,SQ,BID,,Yes,4966,0
+248,55,78,332,Yes,Yes,Acetaminophen 325 MG Oral Tablet,7407,1,PO,BID,,Yes,3567,1
+249,55,719,660,Yes,Yes,Ibuprofen 200 MG Oral Tablet,1549,3,PO,PRN,,No,4941,0
+250,55,745,892,Yes,Yes,{7 (ethinyl estradiol 0.035 MG / norgestimate 0.18 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norgestimate 0.215 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norgestimate 0.25 MG Oral Tablet) / 7 (inert ingre,9323,12,IV,QID,,No,2248,0
+251,55,88,340,No,Yes,nitrofurantoin  macrocrystals 25 MG / nitrofurantoin  monohydrate 75 MG Oral Capsule,8559,1,IM,TID,,No,2411,1
+252,56,832,53,Yes,Yes,Simvastatin 10 MG Oral Tablet,2830,10,SQ,BID,,No,2283,1
+253,56,130,963,No,No,Simvastatin 10 MG Oral Tablet,6746,12,SQ,QD,,Yes,4452,0
+254,56,894,32,Yes,Yes,Hydrochlorothiazide 25 MG Oral Tablet,3287,4,PO,TID,,Yes,3778,0
+255,56,966,909,Yes,Yes,24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet,4893,12,PO,QID,,No,2658,1
+256,56,690,507,Yes,No,lisinopril 10 MG Oral Tablet,2613,4,PO,QID,,Yes,4676,0
+257,57,67,836,Yes,No,Vitamin B12 5 MG/ML Injectable Solution,7355,427,IM,QD,,No,4702,0
+258,57,627,508,No,No,Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet,4636,3,PO,QID,,No,4842,1
+259,57,585,485,Yes,Yes,Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet,3850,3,SQ,QID,,Yes,3689,0
+260,57,554,726,Yes,No,Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet,7507,3,PO,BID,,Yes,3583,0
+261,57,758,917,No,No,Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet,1978,3,IM,QID,,No,2569,0
+262,58,629,160,No,Yes,{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Jolivette 28 Day],2549,12,IV,QID,,Yes,1103,0
+263,58,628,690,No,No,{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Errin 28 Day],3786,12,IV,PRN,,No,2362,0
+264,58,968,706,Yes,No,sodium fluoride 0.0272 MG/MG Oral Gel,4118,1,PO,QID,,Yes,1416,0
+265,58,356,678,Yes,No,Ibuprofen 200 MG Oral Tablet,6715,1,IM,PRN,,Yes,1986,0
+266,58,467,563,No,Yes,Etonogestrel 68 MG Drug Implant,8336,12,PO,QD,,Yes,2644,0
+267,59,564,274,No,Yes,Vitamin B12 5 MG/ML Injectable Solution,7482,286,IV,PRN,,Yes,1508,0
+268,59,402,914,No,Yes,insulin isophane  human 70 UNT/ML / insulin  regular  human 30 UNT/ML Injectable Suspension [Humulin],6047,3,SQ,QID,,Yes,1416,1
+269,59,922,567,Yes,No,Hydrochlorothiazide 25 MG Oral Tablet,9619,1,PO,QD,,No,3597,0
+270,59,388,9,Yes,No,lisinopril 10 MG Oral Tablet,7751,1,PO,QD,,No,2801,0
+271,59,307,623,No,No,amLODIPine 2.5 MG Oral Tablet,6440,1,IV,QD,,Yes,4396,0
+272,60,712,130,No,No,Naproxen sodium 220 MG Oral Tablet,2705,312,IM,QID,,Yes,3589,1
+273,60,266,949,Yes,No,albuterol 5 MG/ML Inhalation Solution,1174,4,SQ,PRN,,Yes,4342,0
+274,60,627,379,Yes,Yes,lisinopril 10 MG Oral Tablet,1670,4,SQ,TID,,Yes,2136,0
+275,60,106,695,No,No,60 ACTUAT Fluticasone propionate 0.25 MG/ACTUAT / salmeterol 0.05 MG/ACTUAT Dry Powder Inhaler,9028,12,IV,PRN,,No,2984,0
+276,60,659,223,Yes,No,albuterol 5 MG/ML Inhalation Solution,7907,4,IM,QD,,Yes,1939,0
+277,61,839,837,No,No,sodium fluoride 0.0272 MG/MG Oral Gel,1453,1,IM,PRN,,No,4459,1
+278,61,48,215,No,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,3346,1,IV,BID,,Yes,3898,0
+279,61,351,722,No,Yes,Acetaminophen 325 MG Oral Tablet,5868,1,IV,TID,,No,2486,0
+280,62,833,560,No,Yes,ciprofloxacin 500 MG Oral Tablet,5542,1,IV,BID,,No,1760,1
+281,62,637,6,Yes,Yes,Clopidogrel 75 MG Oral Tablet,1003,84,IM,PRN,,No,4493,0
+282,62,756,695,No,No,Simvastatin 20 MG Oral Tablet,9818,84,SQ,PRN,,Yes,1123,1
+283,62,544,134,No,Yes,24 HR metoprolol succinate 100 MG Extended Release Oral Tablet,5755,84,IV,BID,,Yes,4176,1
+284,62,961,348,No,Yes,Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray,7938,84,PO,PRN,,Yes,4820,1
+285,63,181,278,No,No,Chlorpheniramine Maleate 2 MG/ML Oral Solution,4575,603,PO,QID,,No,1875,0
+286,63,522,388,No,No,lisinopril 10 MG Oral Tablet,1586,4,IV,TID,,No,4256,1
+287,63,541,160,Yes,Yes,lisinopril 10 MG Oral Tablet,1345,4,IM,QID,,Yes,1807,0
+288,63,320,836,No,Yes,lisinopril 10 MG Oral Tablet,6796,4,SQ,TID,,No,2678,0
+289,63,644,462,Yes,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,9759,1,IM,PRN,,No,1385,1
+290,64,181,952,No,Yes,Levothyroxine Sodium 0.075 MG Oral Tablet,7246,6,IM,PRN,,No,2881,0
+291,64,971,661,No,Yes,Naproxen sodium 220 MG Oral Tablet,8006,1,IV,BID,,Yes,1648,1
+292,64,614,593,No,No,Clopidogrel 75 MG Oral Tablet,4971,108,IM,BID,,No,2427,1
+293,64,404,266,Yes,No,Simvastatin 20 MG Oral Tablet,2227,108,IM,QD,,Yes,4281,0
+294,64,769,985,No,No,24 HR metoprolol succinate 100 MG Extended Release Oral Tablet,8532,108,PO,BID,,Yes,3370,1
+295,65,272,386,Yes,Yes,predniSONE 5 MG Oral Tablet,2799,1,IM,QID,,Yes,1440,0
+296,65,64,93,Yes,No,cetirizine hydrochloride 5 MG Oral Tablet,1157,87,SQ,BID,,Yes,4449,1
+297,65,759,49,No,No,NDA020800 0.3 ML Epinephrine 1 MG/ML Auto-Injector,5491,87,SQ,QD,,Yes,1741,1
+298,65,878,280,No,No,sodium fluoride 0.0272 MG/MG Oral Gel,6194,1,IM,BID,,No,2951,0
+299,65,510,352,No,No,sodium fluoride 0.0272 MG/MG Oral Gel,8593,1,IV,BID,,No,1025,0
+300,66,855,67,No,Yes,diphenhydrAMINE Hydrochloride 25 MG Oral Tablet,6433,501,SQ,TID,,Yes,1401,1
+301,66,282,634,No,Yes,Acetaminophen 325 MG Oral Tablet,2540,1,SQ,TID,,No,3694,1
+302,66,2,488,Yes,No,Penicillin V Potassium 500 MG Oral Tablet,1811,1,IM,QD,,Yes,3103,1
+303,66,416,780,Yes,Yes,Ibuprofen 200 MG Oral Tablet,9233,1,IM,BID,,Yes,2598,0
+304,66,500,7,Yes,No,Clopidogrel 75 MG Oral Tablet,4439,1,PO,PRN,,Yes,3844,1
+305,67,450,801,Yes,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,1905,1,IM,BID,,No,4270,1
+306,67,171,120,Yes,Yes,Acetaminophen 325 MG Oral Tablet,7429,1,IV,PRN,,Yes,1922,1
+307,67,341,482,No,No,sodium fluoride 0.0272 MG/MG Oral Gel,8661,1,SQ,TID,,Yes,4525,0
+308,68,800,316,Yes,No,Chlorpheniramine Maleate 2 MG/ML Oral Solution,1912,441,IM,TID,,No,1067,1
+309,68,958,625,Yes,No,NDA020800 0.3 ML Epinephrine 1 MG/ML Auto-Injector,8335,441,SQ,QID,,No,1999,0
+310,68,332,811,Yes,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,6802,1,IM,QD,,Yes,2023,0
+311,68,254,616,No,Yes,Ibuprofen 200 MG Oral Tablet,9200,1,IV,QD,,Yes,4517,1
+312,69,498,302,Yes,No,aspirin 81 MG Oral Tablet,2286,320,IV,QD,,No,3858,1
+313,69,460,713,Yes,No,24 HR metoprolol succinate 50 MG Extended Release Oral Tablet,5831,1,IV,QD,,No,2731,1
+314,69,49,110,Yes,Yes,atorvastatin 40 MG Oral Tablet,2672,1,PO,QID,,Yes,2412,0
+315,69,97,626,Yes,Yes,Simvastatin 10 MG Oral Tablet,8160,10,IM,BID,,No,3634,1
+316,69,323,210,No,No,Clopidogrel 75 MG Oral Tablet,3851,166,PO,PRN,,Yes,2974,0
+317,70,254,525,Yes,No,Abuse-Deterrent 12 HR Oxycodone Hydrochloride 10 MG Extended Release Oral Tablet [Oxycontin],6292,3,IM,QD,,Yes,1887,0
+318,70,151,438,No,Yes,Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet,6078,3,SQ,PRN,,No,4293,0
+319,70,342,882,No,Yes,Abuse-Deterrent 12 HR Oxycodone Hydrochloride 10 MG Extended Release Oral Tablet [Oxycontin],7887,3,IM,PRN,,Yes,1074,1
+320,70,566,133,Yes,Yes,Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet,5655,3,PO,TID,,No,1452,0
+321,70,55,310,Yes,No,{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Camila 28 Day],6227,12,SQ,TID,,Yes,4764,1
+322,71,682,688,Yes,Yes,Ibuprofen 400 MG Oral Tablet [Ibu],2665,3,SQ,QD,,No,4855,0
+323,71,673,78,No,No,Ibuprofen 400 MG Oral Tablet [Ibu],6591,3,SQ,QID,,Yes,3548,0
+324,71,800,711,No,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,3088,1,SQ,QD,,Yes,1648,0
+325,71,391,268,Yes,Yes,Ibuprofen 400 MG Oral Tablet [Ibu],3901,3,IM,TID,,No,2423,0
+326,71,7,415,Yes,No,Ibuprofen 400 MG Oral Tablet [Ibu],6953,3,IV,PRN,,Yes,4485,1
+327,72,391,501,No,Yes,Vitamin B12 5 MG/ML Injectable Solution,4745,258,SQ,BID,,Yes,3770,1
+328,72,652,683,No,No,Acetaminophen 21.7 MG/ML / Dextromethorphan Hydrobromide 1 MG/ML / doxylamine succinate 0.417 MG/ML Oral Solution,4110,1,IV,TID,,Yes,2637,1
+329,72,385,668,Yes,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,4550,1,PO,PRN,,Yes,4741,0
+330,72,64,440,Yes,No,Amoxicillin 250 MG / Clavulanate 125 MG Oral Tablet,3020,1,IM,TID,,No,1935,1
+331,73,487,393,No,No,budesonide 0.25 MG/ML Inhalation Suspension,2192,1,IV,QID,,Yes,1234,0
+332,73,269,818,Yes,Yes,NDA021457 200 ACTUAT albuterol 0.09 MG/ACTUAT Metered Dose Inhaler [ProAir],1740,1,PO,PRN,,Yes,1840,1
+333,73,18,212,No,Yes,budesonide 0.25 MG/ML Inhalation Suspension,4891,1,PO,QD,,No,1947,1
+334,73,813,977,No,Yes,NDA021457 200 ACTUAT albuterol 0.09 MG/ACTUAT Metered Dose Inhaler [ProAir],2718,1,IV,QID,,No,4695,0
+335,73,732,714,No,Yes,budesonide 0.25 MG/ML Inhalation Suspension,5004,1,IM,BID,,No,3904,1
+336,74,793,345,Yes,No,Cefuroxime 250 MG Oral Tablet,8175,1,IV,BID,,Yes,4111,1
+337,74,484,75,Yes,No,Ibuprofen 100 MG Oral Tablet,8618,1,IV,PRN,,No,3147,0
+338,74,612,205,Yes,Yes,Loratadine 5 MG Chewable Tablet,3622,33,IM,QID,,Yes,3664,1
+339,74,741,884,Yes,No,NDA020800 0.3 ML Epinephrine 1 MG/ML Auto-Injector,1133,33,SQ,QD,,No,2053,1
+340,74,701,527,Yes,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,2682,1,PO,PRN,,No,3349,1
+341,75,96,362,No,Yes,Ibuprofen 200 MG Oral Tablet,8446,3,IM,BID,,Yes,2805,1
+342,75,381,130,No,No,sodium fluoride 0.0272 MG/MG Oral Gel,5267,1,IV,QD,,No,1247,0
+343,75,296,537,Yes,No,Penicillin V Potassium 250 MG Oral Tablet,6656,1,IM,BID,,Yes,2639,1
+344,75,78,340,Yes,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,5321,1,SQ,BID,,Yes,4013,0
+345,76,990,54,No,No,Astemizole 10 MG Oral Tablet,3502,582,PO,PRN,,Yes,1590,1
+346,76,426,908,No,Yes,lisinopril 10 MG Oral Tablet,9201,4,PO,QID,,No,3846,0
+347,76,474,558,No,No,lisinopril 10 MG Oral Tablet,4005,4,SQ,BID,,Yes,3699,0
+348,76,813,812,No,Yes,Ibuprofen 200 MG Oral Tablet,6871,1,IV,BID,,Yes,2462,0
+349,76,580,676,Yes,No,levonorgestrel 0.000833 MG/HR Intrauterine System [Mirena],6512,12,SQ,BID,,No,2317,1
+350,77,429,160,Yes,Yes,Fexofenadine hydrochloride 30 MG Oral Tablet,3159,261,IM,TID,,Yes,1688,0
+351,77,329,970,Yes,No,NDA020800 0.3 ML Epinephrine 1 MG/ML Auto-Injector,7709,261,PO,QID,,No,2636,1
+352,77,247,997,Yes,No,sodium fluoride 0.0272 MG/MG Oral Gel,4753,1,SQ,TID,,Yes,1226,1
+353,77,170,632,No,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,3778,1,IV,TID,,Yes,1299,1
+354,78,618,766,No,No,sodium fluoride 0.0272 MG/MG Oral Gel,5075,1,IV,QD,,No,2037,0
+355,78,821,595,No,No,Amoxicillin 500 MG Oral Tablet,1506,1,SQ,PRN,,No,2569,1
+356,78,936,640,No,Yes,Acetaminophen 160 MG Chewable Tablet,1715,1,IM,TID,,No,4298,0
+357,78,153,167,No,No,Acetaminophen 160 MG Chewable Tablet,5781,1,SQ,TID,,No,3199,1
+358,78,625,191,Yes,Yes,Penicillin V Potassium 250 MG Oral Tablet,4860,1,PO,BID,,No,4139,0
+359,79,31,416,No,Yes,lisinopril 10 MG Oral Tablet,6835,4,PO,PRN,,No,2051,1
+360,79,882,767,No,No,amLODIPine 2.5 MG Oral Tablet,1377,4,SQ,QID,,No,4302,0
+361,79,431,389,Yes,No,{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Camila 28 Day],2516,12,PO,PRN,,No,4168,1
+362,79,838,101,Yes,No,lisinopril 10 MG Oral Tablet,9112,4,IM,QD,,Yes,1684,0
+363,79,677,218,No,No,amLODIPine 2.5 MG Oral Tablet,2949,4,IM,BID,,Yes,3403,0
+364,81,606,278,No,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,7439,1,IM,TID,,Yes,1066,1
+365,81,660,57,Yes,Yes,Amoxicillin 250 MG / Clavulanate 125 MG Oral Tablet,2420,1,PO,QD,,Yes,2517,0
+366,81,746,360,Yes,No,Amoxicillin 250 MG / Clavulanate 125 MG Oral Tablet,4752,1,IM,QID,,Yes,1860,1
+367,81,432,166,No,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,9410,1,SQ,QD,,No,3542,0
+368,81,561,862,No,Yes,Acetaminophen 325 MG Oral Tablet,1792,1,IM,QD,,No,4738,0
+369,82,143,733,Yes,No,Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet,1378,3,PO,BID,,Yes,4614,0
+370,82,387,267,No,Yes,tramadol hydrochloride 50 MG Oral Tablet,9211,3,IM,BID,,No,1178,0
+371,82,187,140,Yes,No,buprenorphine 2 MG / naloxone 0.5 MG Sublingual Tablet,2511,3,IV,PRN,,No,2804,1
+372,82,104,318,No,Yes,aspirin 81 MG Oral Capsule [Vazalore],7165,332,IM,TID,,Yes,3565,0
+373,82,568,126,Yes,Yes,tramadol hydrochloride 50 MG Oral Tablet,1265,3,IV,QID,,No,3267,1
+374,83,744,61,Yes,No,ciprofloxacin 500 MG Oral Tablet,6414,1,IV,QD,,Yes,1931,0
+375,83,919,486,Yes,No,Amoxicillin 250 MG / Clavulanate 125 MG Oral Tablet,4962,1,IV,QID,,No,1028,1
+376,83,135,355,Yes,No,Simvastatin 10 MG Oral Tablet,5267,10,IV,TID,,No,1132,1
+377,83,242,583,No,No,sodium fluoride 0.0272 MG/MG Oral Gel,7450,1,PO,TID,,No,3168,1
+378,83,389,857,Yes,Yes,Simvastatin 10 MG Oral Tablet,8744,12,SQ,BID,,Yes,3341,1
+379,84,372,620,Yes,Yes,Hydrochlorothiazide 25 MG Oral Tablet,6157,4,IV,BID,,Yes,3111,0
+380,84,227,102,Yes,No,Hydrochlorothiazide 25 MG Oral Tablet,3114,4,IV,QD,,Yes,3784,1
+381,84,394,171,Yes,No,Hydrochlorothiazide 25 MG Oral Tablet,4566,4,IV,BID,,Yes,3987,1
+382,84,811,930,No,Yes,Hydrochlorothiazide 25 MG Oral Tablet,8186,4,SQ,BID,,Yes,3956,0
+383,84,537,479,Yes,No,Hydrochlorothiazide 25 MG Oral Tablet,9400,4,PO,TID,,No,1680,0
+384,85,610,361,Yes,No,sodium fluoride 0.0272 MG/MG Oral Gel,7393,1,IM,BID,,Yes,4665,1
+385,85,157,816,Yes,No,Amoxicillin 250 MG / Clavulanate 125 MG Oral Tablet,3618,1,PO,PRN,,Yes,2912,1
+386,85,559,371,Yes,Yes,Acetaminophen 160 MG Chewable Tablet,3584,1,IM,QD,,Yes,4440,0
+387,85,569,260,Yes,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,2948,1,IM,PRN,,No,3900,1
+388,85,158,32,No,No,Naproxen sodium 220 MG Oral Tablet,1853,2,PO,TID,,Yes,2537,1
+389,86,833,769,No,No,Vitamin B12 5 MG/ML Injectable Solution,9713,231,SQ,TID,,No,4434,1
+390,86,605,84,Yes,Yes,Hydrochlorothiazide 25 MG Oral Tablet,1460,4,IM,TID,,No,1972,1
+391,86,469,486,Yes,Yes,24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet,2303,12,IV,PRN,,Yes,2717,1
+392,86,713,14,No,Yes,Hydrochlorothiazide 25 MG Oral Tablet,7802,1,SQ,QD,,Yes,4835,0
+393,86,878,943,No,Yes,24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet,9487,1,PO,TID,,Yes,3409,0
+394,87,467,787,No,Yes,Vitamin B12 5 MG/ML Injectable Solution,2026,494,SQ,QD,,Yes,2522,1
+395,87,97,894,No,No,Clopidogrel 75 MG Oral Tablet,5007,80,SQ,QID,,No,2545,0
+396,87,147,361,No,No,Simvastatin 20 MG Oral Tablet,5839,80,IV,QD,,No,4633,1
+397,87,862,54,No,No,24 HR metoprolol succinate 100 MG Extended Release Oral Tablet,1233,80,IV,TID,,No,4981,1
+398,87,708,987,Yes,No,Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray,8619,80,PO,PRN,,No,2876,0
+399,88,537,592,Yes,Yes,Amoxicillin 500 MG Oral Tablet,5879,1,SQ,BID,,Yes,4172,1
+400,88,879,914,Yes,No,Ibuprofen 100 MG Oral Tablet,3907,1,PO,TID,,Yes,1652,0
+401,88,952,841,No,No,Acetaminophen 325 MG Oral Tablet,2269,1,IV,QD,,No,1772,0
+402,88,862,899,No,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,2726,1,IM,QD,,No,4198,1
+403,88,183,953,No,Yes,Ibuprofen 100 MG Oral Tablet,6582,1,IM,QID,,No,3978,1
+404,89,261,106,No,Yes,Amoxicillin 500 MG Oral Tablet,9176,1,PO,BID,,No,1443,1
+405,89,88,725,Yes,Yes,Acetaminophen 160 MG Chewable Tablet,8908,1,SQ,PRN,,Yes,1924,1
+406,89,316,37,No,Yes,Acetaminophen 160 MG Chewable Tablet,1995,1,IM,TID,,Yes,4289,1
+407,89,318,527,Yes,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,7165,1,IM,BID,,Yes,1828,1
+408,89,37,47,Yes,Yes,Amoxicillin 500 MG Oral Tablet,8614,1,IV,QID,,No,3685,1
+409,90,510,389,Yes,Yes,diphenhydrAMINE Hydrochloride 25 MG Oral Tablet,4069,664,PO,TID,,No,4945,0
+410,90,563,438,No,Yes,Ibuprofen 200 MG Oral Tablet,5151,2,SQ,TID,,Yes,2528,0
+411,90,131,93,Yes,No,sodium fluoride 0.0272 MG/MG Oral Gel,7349,1,IV,QD,,No,2895,1
+412,90,805,126,Yes,No,sodium fluoride 0.0272 MG/MG Oral Gel,1984,1,IV,PRN,,No,2331,1
+413,90,825,107,Yes,No,sodium fluoride 0.0272 MG/MG Oral Gel,8702,1,IV,QD,,Yes,2543,0
+414,91,693,754,No,No,sodium fluoride 0.0272 MG/MG Oral Gel,1933,1,IV,BID,,No,1174,1
+415,91,513,887,Yes,No,Cefuroxime 250 MG Oral Tablet,3597,1,IM,BID,,Yes,1371,0
+416,91,465,455,Yes,No,Ibuprofen 100 MG Oral Tablet,6847,1,SQ,PRN,,No,3277,1
+417,91,978,902,Yes,No,sodium fluoride 0.0272 MG/MG Oral Gel,1177,1,PO,TID,,No,4908,1
+418,91,678,358,No,No,Penicillin V Potassium 250 MG Oral Tablet,7236,1,IM,QID,,No,2215,1
+419,92,340,583,No,Yes,Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet,3689,3,IV,TID,,No,2069,1
+420,92,513,496,Yes,No,{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Camila 28 Day],5075,12,IM,TID,,No,3572,0
+421,92,343,841,Yes,No,Acetaminophen 325 MG / Oxycodone Hydrochloride 10 MG Oral Tablet [Percocet],9447,3,IM,TID,,No,3901,0
+422,92,708,706,Yes,Yes,Abuse-Deterrent 12 HR Oxycodone Hydrochloride 10 MG Extended Release Oral Tablet [Oxycontin],8569,3,SQ,BID,,No,3533,1
+423,92,470,357,Yes,Yes,12 HR Hydrocodone Bitartrate 10 MG Extended Release Oral Capsule,1570,3,IV,QD,,Yes,3876,0
+424,93,723,50,No,No,Ibuprofen 400 MG Oral Tablet [Ibu],1807,3,SQ,QD,,No,2342,1
+425,93,816,874,No,Yes,Acetaminophen 325 MG Oral Tablet,4528,1,IV,TID,,No,1105,0
+426,93,61,774,No,Yes,Ibuprofen 400 MG Oral Tablet [Ibu],4612,3,PO,TID,,No,2809,1
+427,93,382,220,Yes,No,Ibuprofen 400 MG Oral Tablet [Ibu],9716,3,PO,TID,,No,2432,0
+428,93,949,200,No,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,4910,1,PO,QD,,Yes,4570,0
+429,94,696,266,No,No,24 HR nicotine 0.292 MG/HR Transdermal System,1929,487,IV,BID,,Yes,3164,0
+430,94,885,786,No,Yes,Simvastatin 10 MG Oral Tablet,1011,10,PO,TID,,No,3267,0
+431,94,451,597,Yes,No,Simvastatin 10 MG Oral Tablet,5364,12,SQ,QID,,No,3899,0
+432,94,892,23,Yes,Yes,Simvastatin 10 MG Oral Tablet,8053,12,IV,TID,,Yes,4163,1
+433,94,516,50,No,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,8575,1,PO,PRN,,Yes,3568,1
+434,95,141,702,Yes,No,Acetaminophen 325 MG Oral Tablet [Tylenol],6634,3,PO,TID,,No,1367,0
+435,95,817,727,Yes,Yes,Clopidogrel 75 MG Oral Tablet,4700,133,IM,PRN,,No,3776,0
+436,95,693,813,No,No,Simvastatin 20 MG Oral Tablet,2869,133,IM,BID,,Yes,3604,1
+437,95,969,84,Yes,Yes,24 HR metoprolol succinate 100 MG Extended Release Oral Tablet,4166,133,PO,TID,,Yes,2622,0
+438,95,596,195,Yes,Yes,Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray,2207,133,IV,PRN,,No,1430,1
+439,96,64,122,Yes,Yes,Fexofenadine hydrochloride 30 MG Oral Tablet,2948,73,SQ,PRN,,Yes,2972,1
+440,96,569,859,No,No,NDA020800 0.3 ML Epinephrine 1 MG/ML Auto-Injector,8058,73,IM,PRN,,Yes,2885,1
+441,96,175,906,Yes,No,Acetaminophen 160 MG Chewable Tablet,2346,1,IM,PRN,,No,3184,0
+442,96,383,69,No,Yes,120 ACTUAT fluticasone propionate 0.11 MG/ACTUAT Metered Dose Inhaler [Flovent],8981,1,SQ,TID,,Yes,4333,1
+443,96,535,510,No,Yes,albuterol 5 MG/ML Inhalation Solution,8179,1,PO,QD,,Yes,4515,1
+444,97,905,474,No,Yes,Hydrochlorothiazide 25 MG Oral Tablet,3408,4,SQ,QD,,No,1907,1
+445,97,257,720,Yes,Yes,lisinopril 10 MG Oral Tablet,2397,4,PO,BID,,Yes,4520,1
+446,97,250,338,No,No,amLODIPine 2.5 MG Oral Tablet,5202,4,PO,PRN,,Yes,4273,1
+447,97,423,409,Yes,Yes,Acetaminophen 325 MG Oral Tablet,6819,1,PO,PRN,,Yes,3892,1
+448,97,982,482,Yes,Yes,Hydrochlorothiazide 25 MG Oral Tablet,5656,4,IM,PRN,,No,4702,1
+449,98,160,190,Yes,No,sodium fluoride 0.0272 MG/MG Oral Gel,8637,1,IV,BID,,Yes,4013,0
+450,98,441,551,Yes,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,9555,1,IM,TID,,Yes,4996,0
+451,98,799,969,No,Yes,Etonogestrel 68 MG Drug Implant,4988,12,SQ,BID,,Yes,3993,0
+452,98,504,958,No,No,Amoxicillin 250 MG / Clavulanate 125 MG Oral Tablet,9229,1,IM,QD,,No,2030,0
+453,98,110,691,No,Yes,24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet,3073,1,SQ,BID,,No,4664,1
+454,99,103,226,No,Yes,{21 (ethinyl estradiol 0.03 MG / levonorgestrel 0.15 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Levora 0.15/30 28 Day],6562,12,SQ,TID,,Yes,4347,1
+455,99,254,621,No,No,Etonogestrel 68 MG Drug Implant,8185,12,IM,QID,,Yes,1698,1
+456,99,876,961,Yes,No,sodium fluoride 0.0272 MG/MG Oral Gel,4383,1,IM,QID,,Yes,1111,1
+457,99,858,112,Yes,No,1 ML medroxyprogesterone acetate 150 MG/ML Injection,6055,12,SQ,QID,,Yes,4411,0
+458,99,207,610,No,Yes,{24 (drospirenone 3 MG / ethinyl estradiol 0.02 MG Oral Tablet) / 4 (inert ingredients 1 MG Oral Tablet) } Pack [Yaz 28 Day],2448,12,IV,TID,,Yes,4758,1
+459,100,192,611,No,No,Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet,4604,3,IV,PRN,,No,4218,0
+460,100,628,122,No,Yes,Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet,4864,3,IV,BID,,Yes,2790,0
+461,100,78,354,Yes,No,levonorgestrel 0.000813 MG/HR Intrauterine System [Liletta],7701,12,SQ,BID,,Yes,4496,0
+462,100,965,127,Yes,No,Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet,7765,3,PO,QD,,Yes,3002,0
+463,100,685,103,Yes,Yes,{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Camila 28 Day],9727,12,SQ,PRN,,Yes,3877,1
+464,101,456,165,Yes,Yes,budesonide 0.125 MG/ML Inhalation Suspension,1654,1,IV,PRN,,No,2118,0
+465,101,184,331,Yes,Yes,albuterol 0.83 MG/ML Inhalation Solution,2950,1,PO,TID,,No,4933,0
+466,101,625,362,No,Yes,budesonide 0.125 MG/ML Inhalation Suspension,8395,1,PO,TID,,Yes,1961,1
+467,101,46,771,No,Yes,albuterol 0.83 MG/ML Inhalation Solution,9518,1,PO,BID,,No,2419,0
+468,101,538,31,No,Yes,budesonide 0.125 MG/ML Inhalation Suspension,6147,1,IM,TID,,No,1414,0
+469,102,21,666,No,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,3107,1,SQ,TID,,No,4502,1
+470,102,805,908,Yes,Yes,Acetaminophen 160 MG Chewable Tablet,2309,3,IV,BID,,Yes,1568,1
+471,102,383,793,Yes,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,1091,1,IV,BID,,Yes,4336,0
+472,102,515,155,No,Yes,Amoxicillin 250 MG / Clavulanate 125 MG Oral Tablet,5836,1,SQ,PRN,,Yes,1657,0
+473,102,61,316,Yes,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,2800,1,SQ,TID,,No,3516,0
+474,103,89,137,Yes,No,{5 (dienogest 2 MG / estradiol valerate 2 MG Oral Tablet) / 17 (dienogest 3 MG / estradiol valerate 2 MG Oral Tablet) / 2 (estradiol valerate 1 MG Oral Tablet) / 2 (estradiol valerate 3 MG Oral Tablet) / 2 (inert ingredi,2411,12,SQ,QD,,Yes,1793,0
+475,103,42,594,No,Yes,{7 (ethinyl estradiol 0.01 MG Oral Tablet) / 84 (ethinyl estradiol 0.03 MG / levonorgestrel 0.15 MG Oral Tablet) } Pack [Seasonique],2040,12,IM,QID,,No,3044,0
+476,103,535,653,Yes,No,Amoxicillin 250 MG / Clavulanate 125 MG Oral Tablet,2553,1,IV,QD,,No,2815,0
+477,103,821,749,No,Yes,Penicillin V Potassium 500 MG Oral Tablet,4904,1,SQ,BID,,Yes,2401,0
+478,104,992,313,No,No,Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet,8117,3,SQ,QID,,No,4748,0
+479,104,332,0,Yes,No,Acetaminophen 325 MG / Oxycodone Hydrochloride 10 MG Oral Tablet [Percocet],7315,3,SQ,TID,,No,4861,0
+480,104,665,492,Yes,Yes,Ibuprofen 400 MG Oral Tablet [Ibu],6032,3,IM,QID,,No,1967,1
+481,104,314,977,No,No,Etonogestrel 68 MG Drug Implant,1081,12,IM,PRN,,No,1278,1
+482,104,470,133,No,No,Acetaminophen 325 MG / Oxycodone Hydrochloride 10 MG Oral Tablet [Percocet],1519,3,IM,BID,,No,3292,1
+483,105,965,309,Yes,Yes,Astemizole 10 MG Oral Tablet,8852,557,IM,QID,,Yes,4964,1
+484,105,564,699,No,No,doxycycline hyclate 100 MG,8189,228,IM,QID,,No,1435,0
+485,105,676,626,No,Yes,120 ACTUAT fluticasone propionate 0.11 MG/ACTUAT Metered Dose Inhaler [Flovent],2674,1,SQ,QID,,Yes,4065,1
+486,105,469,130,No,Yes,albuterol 0.83 MG/ML Inhalation Solution,2072,1,PO,QD,,Yes,2751,0
+487,105,123,495,Yes,Yes,levonorgestrel 0.000813 MG/HR Intrauterine System [Liletta],5736,12,SQ,QD,,Yes,2250,0
+488,106,504,323,Yes,Yes,24 HR metoprolol succinate 100 MG Extended Release Oral Tablet,2425,1,PO,QD,,No,1772,1
+489,106,389,2,No,Yes,Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray,1969,317,IV,QD,,No,1726,1
+490,106,650,958,No,No,aspirin 81 MG Oral Tablet,7149,238,SQ,QD,,No,4796,1
+491,106,359,910,Yes,No,atorvastatin 10 MG Oral Tablet,9835,1,IV,PRN,,No,4764,1
+492,106,48,33,Yes,No,hydrochlorothiazide 25 MG / valsartan 320 MG Oral Tablet,1915,1,IV,TID,,Yes,4103,1
+493,107,626,135,No,Yes,Naproxen sodium 220 MG Oral Tablet,1513,1,PO,QID,,Yes,1083,0
+494,107,111,867,Yes,No,24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet,5942,1,IV,BID,,No,2623,1
+495,107,835,82,Yes,Yes,24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet,9260,12,PO,BID,,No,4994,0
+496,107,212,830,Yes,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,4872,1,IV,BID,,Yes,3177,1
+497,107,52,754,Yes,No,24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet,8678,12,SQ,BID,,Yes,4887,1
+498,108,584,449,No,Yes,Hydrochlorothiazide 25 MG Oral Tablet,6340,4,IV,BID,,No,1341,1
+499,108,961,987,No,Yes,lisinopril 10 MG Oral Tablet,9949,4,IV,PRN,,Yes,3491,0
+500,108,561,420,Yes,Yes,amLODIPine 2.5 MG Oral Tablet,8846,4,IV,QID,,Yes,2686,0
+501,108,434,95,No,Yes,Hydrochlorothiazide 25 MG Oral Tablet,3392,4,IV,BID,,No,2167,0
+502,108,600,598,Yes,No,lisinopril 10 MG Oral Tablet,8380,4,SQ,TID,,Yes,1251,1
+503,109,357,147,Yes,No,ferrous sulfate 325 MG Oral Tablet,6285,658,IM,PRN,,No,3896,0
+504,109,408,772,Yes,No,Vitamin B12 5 MG/ML Injectable Solution,5214,658,PO,PRN,,No,3346,0
+505,109,149,908,No,No,Simvastatin 10 MG Oral Tablet,6231,10,PO,TID,,Yes,2981,1
+506,109,825,106,Yes,Yes,Simvastatin 10 MG Oral Tablet,6651,12,IM,BID,,Yes,2354,1
+507,109,349,520,No,No,insulin isophane  human 70 UNT/ML / insulin  regular  human 30 UNT/ML Injectable Suspension [Humulin],4561,3,IV,PRN,,No,3783,1
+508,110,53,632,Yes,No,Vitamin B12 5 MG/ML Injectable Solution,9699,218,IM,TID,,No,2511,1
+509,110,305,980,Yes,No,sodium fluoride 0.0272 MG/MG Oral Gel,4766,1,IV,BID,,No,1482,1
+510,110,558,364,No,No,Simvastatin 10 MG Oral Tablet,9307,10,IM,QID,,No,3322,0
+511,110,646,20,Yes,Yes,Simvastatin 10 MG Oral Tablet,9417,12,IV,TID,,No,4314,1
+512,110,377,413,Yes,Yes,Simvastatin 10 MG Oral Tablet,4284,12,PO,TID,,No,4104,0
+513,111,613,832,Yes,Yes,Simvastatin 10 MG Oral Tablet,6946,10,PO,TID,,Yes,2558,1
+514,111,103,289,Yes,Yes,Simvastatin 10 MG Oral Tablet,7657,12,IV,QID,,No,3960,1
+515,111,28,560,No,Yes,Naproxen 500 MG Oral Tablet,7761,1,IM,PRN,,No,1829,1
+516,111,926,77,No,No,Allopurinol 100 MG Oral Tablet,9384,1,PO,QID,,Yes,4936,1
+517,111,812,439,Yes,Yes,Simvastatin 10 MG Oral Tablet,4425,12,IM,TID,,No,1706,0
+518,112,944,230,Yes,No,Vitamin B12 5 MG/ML Injectable Solution,1201,372,SQ,BID,,No,4121,0
+519,112,963,960,Yes,Yes,Hydrochlorothiazide 25 MG Oral Tablet,3680,4,PO,QID,,No,5000,1
+520,112,502,169,Yes,Yes,Acetaminophen 325 MG Oral Tablet [Tylenol],9578,3,IM,TID,,Yes,1518,0
+521,112,753,973,No,Yes,lisinopril 10 MG Oral Tablet,5710,4,PO,QID,,No,4036,1
+522,112,409,928,Yes,No,amLODIPine 2.5 MG Oral Tablet,2402,4,PO,PRN,,Yes,1682,1
+523,113,365,63,Yes,No,Hydrocortisone 10 MG/ML Topical Cream,2465,616,IV,PRN,,No,4017,0
+524,113,315,626,No,Yes,diphenhydrAMINE Hydrochloride 25 MG Oral Tablet,8685,616,IV,BID,,No,4778,0
+525,113,309,472,Yes,No,Vitamin B12 5 MG/ML Injectable Solution,5247,607,IM,PRN,,No,1142,1
+526,113,96,563,Yes,Yes,Hydrochlorothiazide 25 MG Oral Tablet,4109,4,IM,PRN,,No,3921,1
+527,113,879,471,Yes,Yes,Acetaminophen 325 MG Oral Tablet [Tylenol],9923,3,PO,TID,,Yes,1179,0
+528,114,375,242,No,No,Hydrocortisone 10 MG/ML Topical Cream,3337,763,IM,QD,,No,2030,0
+529,114,861,144,No,Yes,insulin isophane  human 70 UNT/ML / insulin  regular  human 30 UNT/ML Injectable Suspension [Humulin],7771,1,IM,QD,,Yes,4923,1
+530,114,802,573,Yes,Yes,Hydrochlorothiazide 25 MG Oral Tablet,7599,1,SQ,BID,,Yes,4840,1
+531,114,147,795,Yes,Yes,amLODIPine 2.5 MG Oral Tablet,4261,1,PO,BID,,No,1966,1
+532,114,540,677,Yes,No,insulin isophane  human 70 UNT/ML / insulin  regular  human 30 UNT/ML Injectable Suspension [Humulin],3647,1,IM,PRN,,Yes,1241,0
+533,115,699,122,Yes,No,sodium fluoride 0.0272 MG/MG Oral Gel,4307,1,SQ,BID,,No,3084,0
+534,115,956,833,Yes,Yes,Clopidogrel 75 MG Oral Tablet,7393,96,SQ,QD,,No,2303,0
+535,115,780,320,No,No,Simvastatin 20 MG Oral Tablet,9237,96,PO,QID,,No,2910,1
+536,115,631,365,No,No,24 HR metoprolol succinate 100 MG Extended Release Oral Tablet,2611,96,IM,BID,,No,2300,0
+537,115,563,383,Yes,Yes,Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray,2697,96,IM,QID,,Yes,1116,0
+538,116,591,390,No,No,Naproxen sodium 220 MG Oral Tablet,4609,588,IM,PRN,,Yes,4715,0
+539,116,368,893,No,Yes,Simvastatin 10 MG Oral Tablet,9989,10,SQ,TID,,Yes,3602,0
+540,116,384,156,Yes,Yes,24 HR metoprolol succinate 100 MG Extended Release Oral Tablet,6232,462,SQ,QD,,No,4676,1
+541,116,20,380,No,No,Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray,2538,462,PO,QID,,Yes,4476,0
+542,116,569,169,Yes,No,Vitamin B12 5 MG/ML Injectable Solution,8828,315,SQ,PRN,,Yes,2584,0
+543,117,648,397,Yes,No,Simvastatin 20 MG Oral Tablet,7077,200,IV,BID,,Yes,4266,1
+544,117,260,430,No,No,24 HR metoprolol succinate 100 MG Extended Release Oral Tablet,5659,1,IV,PRN,,No,3616,0
+545,117,968,834,Yes,Yes,Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray,1657,200,IV,TID,,Yes,4994,1
+546,117,870,474,Yes,No,insulin isophane  human 70 UNT/ML / insulin  regular  human 30 UNT/ML Injectable Suspension [Humulin],1836,6,PO,QD,,No,4756,0
+547,117,8,249,No,No,insulin isophane  human 70 UNT/ML / insulin  regular  human 30 UNT/ML Injectable Suspension [Humulin],9064,3,SQ,QD,,No,1399,1
+548,118,986,341,No,No,24 HR nicotine 0.292 MG/HR Transdermal System,9329,165,IV,TID,,Yes,3616,0
+549,118,656,374,No,Yes,sodium fluoride 0.0272 MG/MG Oral Gel,2114,1,SQ,QD,,No,1776,1
+550,118,213,297,Yes,No,aspirin 325 MG Oral Tablet,8397,1,IM,QD,,No,1462,0
+551,118,777,479,No,Yes,nitroglycerin 0.4 MG Sublingual Tablet,2873,1,PO,QD,,No,1564,1
+552,118,234,424,Yes,No,2 ML morphine sulfate 1 MG/ML Injection,2340,1,PO,PRN,,Yes,1181,1
+553,119,397,669,Yes,No,Simvastatin 10 MG Oral Tablet,4302,10,IV,PRN,,No,4078,1
+554,119,351,968,Yes,Yes,Naproxen sodium 220 MG Oral Tablet,6607,368,PO,PRN,,Yes,1463,1
+555,119,605,547,No,Yes,Clopidogrel 75 MG Oral Tablet,1327,271,IM,TID,,Yes,4432,0
+556,119,226,889,Yes,Yes,Simvastatin 20 MG Oral Tablet,2463,271,IM,PRN,,Yes,2232,0
+557,119,441,872,Yes,Yes,24 HR metoprolol succinate 100 MG Extended Release Oral Tablet,9809,271,PO,PRN,,No,3824,0
+558,120,385,408,Yes,Yes,Clopidogrel 75 MG Oral Tablet,9462,327,SQ,PRN,,No,4483,0
+559,120,876,353,Yes,Yes,Simvastatin 20 MG Oral Tablet,4900,327,IM,BID,,Yes,4766,0
+560,120,569,635,No,Yes,24 HR metoprolol succinate 100 MG Extended Release Oral Tablet,3687,327,IV,TID,,No,4304,1
+561,120,807,338,Yes,No,Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray,2543,327,SQ,TID,,No,4543,1
+562,120,295,1,No,Yes,Galantamine 4 MG Oral Tablet,6183,128,IM,PRN,,No,2751,0
