@@ -1,0 +1,27 @@
+Which drugs were administered to a patient with a specific unit stay ID?
+
+The ontology would use the `patientunitstayid` and `drugname` fields to filter and retrieve the drugs administered to a patient with a specific unit stay ID.
+
+---
+
+What is the dosage and frequency of a specific drug administered to a patient?
+
+The ontology would use the `drugname`, `drugdosage`, and `drugadmitfrequency` fields to provide the dosage and frequency of a specific drug administered to a patient.
+
+---
+
+Which drugs were included in the Rx and written in the ICU for a specific patient unit stay?
+
+The ontology would use the `patientunitstayid`, `rxincluded`, and `writtenineicu` fields to filter and retrieve the drugs that were included in the Rx and written in the ICU for a specific patient unit stay.
+
+---
+
+What is the sequence number of a specific drug administered to a patient?
+
+The ontology would use the `drugname` and `drughiclseqno` fields to provide the sequence number of a specific drug administered to a patient.
+
+---
+
+Which drugs were administered by a specific user type for a given patient unit stay?
+
+The ontology would use the `patientunitstayid`, `usertype`, and `drugname` fields to filter and retrieve the drugs administered by a specific user type for a given patient unit stay.
