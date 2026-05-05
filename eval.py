@@ -793,6 +793,7 @@ def get_metric_criteria(metric: str) -> str:
         "adaptability":  "1. Extensibility\n2. Modular design\n3. Clear naming",
         "clarity":       "1. Readability\n2. Unambiguous definitions\n3. Documentation quality",
         "consistency":   "1. Logical coherence\n2. Valid relationships\n3. Proper inheritance",
+      "domain_enrichment" : "1. The degree to which the ontology transcends structural schema mirroring to capture domain-level semantics: (a) annotations that explain the clinical or domain meaning of classes and properties, including expansion of abbreviated names and documentation of measurement units; (b) value encoding annotations that explain the meaning of coded integer values (e.g., ECOG 0=fully active, 4=disabled); (c) class hierarchies (SubClassOf) reflecting established domain taxonomies; (d) provenance metadata linking each element to its source table or documentation."
     }
     return criteria.get(metric, "")
 
@@ -848,7 +849,7 @@ def evaluate_cq_scores(
     Returns per-chunk scores, final averages, total tokens, and runtime.
     """
     metrics     = ["accuracy", "completeness", "conciseness",
-                   "adaptability", "clarity", "consistency"]
+                   "adaptability", "clarity", "consistency", "domain_enrichment"]
     results     = {m: [] for m in metrics}
     total_tokens = 0
     start_time   = time.time()
@@ -1010,6 +1011,7 @@ def build_comparison_table(evaluations: List[Dict]) -> Dict:
         row["cq_adaptability"]  = cq.get("adaptability", 0.0)
         row["cq_clarity"]       = cq.get("clarity", 0.0)
         row["cq_consistency"]   = cq.get("consistency", 0.0)
+        row["cq_enrichment"]   = cq.get("domain_enrichment", 0.0)
         row["cq_overall"]       = ev.get("cq_scores", {}).get("overall", 0.0)
 
         # Runtime and tokens
