@@ -1,0 +1,27 @@
+[What is the current airway position for a patient with a specific respiratory care ID?]
+
+The ontology would use the RESPCAREID to identify the specific respiratory care record and retrieve the AIRWAYPOSITION to determine the current airway position.
+
+---
+
+[What are the limits for peak pressure in a patient's respiratory care?]
+
+The ontology would use the HIPEAKPRESLIMIT and LOWPEAKPRESLIMIT columns to provide the upper and lower limits for peak pressure in the respiratory care.
+
+---
+
+[What is the cuff pressure for a specific airway type in a patient's respiratory care?]
+
+The ontology would use the AIRWAYTYPE to filter the records and retrieve the CUFFPRESSURE for the specific airway type.
+
+---
+
+[What are the ventilation start and end offsets for a patient with a specific respiratory care ID?]
+
+The ontology would use the RESPCAREID to identify the specific respiratory care record and retrieve the VENTSTARTOFFSET and VENTENDOFFSET to determine the ventilation start and end offsets.
+
+---
+
+[What are the limits for the inspiratory oxygen concentration in a patient's respiratory care?]
+
+The ontology would use the LOWIRONOXLIMIT and HIGHIRONOXLIMIT columns to provide the lower and upper limits for the inspiratory oxygen concentration in the respiratory care.

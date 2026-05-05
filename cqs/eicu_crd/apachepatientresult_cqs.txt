@@ -1,0 +1,27 @@
+What is the predicted ICU mortality rate for a patient with a specific Apache score?
+
+The ontology would use the apachepatientresult table to join the apache score with the predicted ICU mortality field to answer this question.
+
+---
+
+How many patients had a pre-operative myocardial infarction (preopmi)?
+
+The ontology would count the number of rows in the apachepatientresult table where the preopmi field is not null or has a value of 1.
+
+---
+
+What is the average length of stay in the hospital (unabridgedhosplos) for patients with a specific physician specialty?
+
+The ontology would group the data by the physicianspeciality field and calculate the average of the unabridgedhosplos field for each group.
+
+---
+
+What is the predicted vs. actual ICU length of stay (predictediculos vs. actualiculos) for patients with a specific Apache version?
+
+The ontology would filter the rows based on the apacheversion field and then compare the predictediculos and actualiculos fields.
+
+---
+
+How many patients had a PTCA within 24 hours (ptcawithin24h) of admission?
+
+The ontology would count the number of rows in the apachepatientresult table where the ptcawithin24h field is not null or has a value of 1.

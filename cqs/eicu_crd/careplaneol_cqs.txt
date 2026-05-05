@@ -1,0 +1,27 @@
+[Which patients had an end-of-life care plan documented during their ICU unit stay?]
+
+The ontology would answer this by retrieving careplaneol records linked via patientunitstayid to the patient table, identifying all unit stays for which an end-of-life care plan entry exists.
+
+---
+
+[Which patients had an end-of-life care plan that remained active upon discharge from the ICU?]
+
+The ontology would answer this by filtering careplaneol records where activeupondischarge indicates an active status and returning the corresponding patientunitstayid values linked to the patient entity.
+
+---
+
+[What is the temporal relationship between the documentation of an end-of-life care plan and the patient's ICU admission?]
+
+The ontology would answer this by retrieving the cpleolsaveoffset for a given unit stay, which records the time offset in minutes from ICU admission at which the end-of-life care plan was saved, indicating how early or late in the stay the plan was initiated.
+
+---
+
+[Was a goals-of-care discussion documented for a patient with an end-of-life care plan, and at what point during the stay did it occur?]
+
+The ontology would answer this by retrieving the cpleoldiscussionoffset for the specified patientunitstayid, which captures the time offset at which a formal goals-of-care or end-of-life discussion was recorded.
+
+---
+
+[How does the presence of an end-of-life care plan relate to the patient's discharge status and unit discharge location?]
+
+The ontology would answer this by linking careplaneol records via patientunitstayid to the patient table and returning unitdischargestatus and unitdischargelocation alongside the end-of-life plan documentation to characterise outcomes for patients with end-of-life plans.

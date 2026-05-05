@@ -1,0 +1,27 @@
+[What is the diagnosis string for a given diagnosis ID?]
+
+The ontology would use the diagnosisid column to look up the corresponding diagnosisstring in the table.
+
+---
+
+[Which diagnoses were active upon discharge for a specific patient unit stay?]
+
+The ontology would filter the table for the given patientunitstayid and check the activeupondischarge column to find the diagnoses that were active upon discharge.
+
+---
+
+[What is the ICD-9 code for a diagnosis with a specific priority?]
+
+The ontology would filter the table for the given diagnosispriority and retrieve the corresponding icd9code.
+
+---
+
+[How many diagnoses are there for a specific patient unit stay?]
+
+The ontology would count the number of rows in the table that match the given patientunitstayid.
+
+---
+
+[What is the offset for a diagnosis with a specific diagnosis string?]
+
+The ontology would filter the table for the given diagnosisstring and retrieve the corresponding diagnosisoffset.

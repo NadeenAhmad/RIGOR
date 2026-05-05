@@ -1,0 +1,27 @@
+[What are the different types of respiratory chart entries recorded in the system?]
+
+The ontology would answer this by querying the distinct values in the RESPCHARTTYPECAT column, as this column categorizes the type of respiratory chart entries.
+
+---
+
+[What is the respiratory chart value for a specific patient unit stay identified by a given PATIENTUNITSTAYID?]
+
+The ontology would answer this by filtering the rows with the specified PATIENTUNITSTAYID and retrieving the values in the RESPCHARTVALUE column.
+
+---
+
+[What is the respiratory chart entry offset for a specific respiratory chart identified by a given RESPCHARTID?]
+
+The ontology would answer this by filtering the rows with the specified RESPCHARTID and retrieving the value in the RESPCHARTOFFSET column.
+
+---
+
+[What is the respiratory chart entry value label for a specific respiratory chart entry offset identified by a given RESPCHARTENTRYOFFSET?]
+
+The ontology would answer this by filtering the rows with the specified RESPCHARTENTRYOFFSET and retrieving the value in the RESPCHARTVALUELABEL column.
+
+---
+
+[What are all the respiratory chart values recorded for a specific type of respiratory chart entry categorized by a given RESPCHARTTYPECAT?]
+
+The ontology would answer this by filtering the rows with the specified RESPCHARTTYPECAT and retrieving the values in the RESPCHARTVALUE column.

@@ -1,0 +1,27 @@
+[What non-standard or custom laboratory measurements were recorded for a given patient unit stay?]
+
+The ontology would answer this by retrieving customlab records for the specified patientunitstayid and returning the labothername values, which document institution-specific or non-standard laboratory tests not captured in the standard lab table.
+
+---
+
+[What is the result of a specific custom laboratory test for a given patient unit stay?]
+
+The ontology would answer this by filtering customlab records for the specified patientunitstayid and labothername and returning the labotherresult and labothervaluetext values documenting the quantitative or textual result of that non-standard measurement.
+
+---
+
+[What types of custom laboratory tests are represented in the ICU database, and how are they classified?]
+
+The ontology would answer this by retrieving distinct labothertypeid and labothername values from the customlab table, which together characterise the categories of non-standard laboratory measurements used across the ICU population.
+
+---
+
+[At what time point during the ICU stay was a custom laboratory test performed for a given patient?]
+
+The ontology would answer this by retrieving the labotheroffset for the specified customlabid, which records the time in minutes from ICU admission at which the non-standard laboratory measurement was taken.
+
+---
+
+[How do custom laboratory findings complement standard laboratory results for a given patient unit stay?]
+
+The ontology would answer this by linking customlab records to the lab table via patientunitstayid, returning both standard measurements from lab and non-standard measurements from customlab to provide a complete view of laboratory monitoring for the patient stay.

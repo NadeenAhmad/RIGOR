@@ -1,0 +1,27 @@
+[Which drugs have been noted to cause allergic reactions for a specific patient unit stay?]
+
+The ontology would use the 'patientunitstayid' and 'drugname' fields to identify the drugs associated with allergic reactions for a specific patient unit stay.
+
+---
+
+[What is the type of allergy noted for a specific drug?]
+
+The ontology would use the 'drugname' and 'allergytype' fields to determine the type of allergy associated with a specific drug.
+
+---
+
+[How many different types of allergies are recorded in the system?]
+
+The ontology would query the distinct values in the 'allergytype' field to count the number of different types of allergies recorded.
+
+---
+
+[Which allergies were entered within a specific offset range?]
+
+The ontology would use the 'allergyenteredoffset' field to filter and retrieve the allergies that were entered within a specific offset range.
+
+---
+
+[What is the specialty type associated with a specific allergy note type?]
+
+The ontology would use the 'allergynotetype' and 'specialtytype' fields to find the specialty type associated with a specific allergy note type.

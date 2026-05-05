@@ -1,0 +1,27 @@
+[What is the name of the drug administered to a patient with a specific patient unit stay ID?]
+
+The ontology would use the 'patientunitstayid' and 'drugname' columns to answer this question. By filtering the rows with the specific 'patientunitstayid', the 'drugname' column provides the name of the drug administered.
+
+---
+
+[What is the dosage and route of administration for a specific drug ordered for a patient?]
+
+The ontology would use the 'drugname', 'dosage', and 'routeadmin' columns to answer this question. By filtering the rows with the specific 'drugname', the 'dosage' and 'routeadmin' columns provide the dosage and route of administration, respectively.
+
+---
+
+[Has a specific drug order been cancelled for a patient?]
+
+The ontology would use the 'drugname' and 'drugordercancelled' columns to answer this question. By filtering the rows with the specific 'drugname', the 'drugordercancelled' column indicates whether the drug order has been cancelled.
+
+---
+
+[What is the start and stop time offset for a specific drug administered to a patient?]
+
+The ontology would use the 'drugname', 'drugstartoffset', and 'drugstopoffset' columns to answer this question. By filtering the rows with the specific 'drugname', the 'drugstartoffset' and 'drugstopoffset' columns provide the start and stop time offsets, respectively.
+
+---
+
+[Which drugs have been administered as a loading dose to a patient?]
+
+The ontology would use the 'loadingdose' and 'drugname' columns to answer this question. By filtering the rows where 'loadingdose' is not null or empty, the 'drugname' column provides the names of the drugs administered as a loading dose.

@@ -1,0 +1,27 @@
+[How many hospitals are there in each region?]
+
+The ontology would answer this by grouping the entries by the 'region' column and counting the number of entries in each group, using the 'hospitalid' column to determine the number of unique hospitals.
+
+---
+
+[What are the different bed categories available in the hospitals?]
+
+The ontology would answer this by selecting the distinct values from the 'numbedscategory' column.
+
+---
+
+[How many teaching hospitals are there?]
+
+The ontology would answer this by filtering the entries where the 'teachingstatus' column has a value indicating that the hospital is a teaching hospital (e.g., 1 or 'Yes') and counting the number of such entries.
+
+---
+
+[Which hospitals are located in a specific region, say 'New England'?]
+
+The ontology would answer this by filtering the entries where the 'region' column matches 'New England' and then selecting the corresponding 'hospitalid' values.
+
+---
+
+[What is the teaching status of each hospital in a specific region, say 'Midwest'?]
+
+The ontology would answer this by filtering the entries where the 'region' column matches 'Midwest' and then selecting the corresponding 'hospitalid' and 'teachingstatus' values.

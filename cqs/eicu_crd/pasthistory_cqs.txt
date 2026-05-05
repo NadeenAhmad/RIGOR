@@ -1,0 +1,27 @@
+[What types of past history notes are recorded for a patient?]
+
+The ontology would answer this by querying the distinct values in the pasthistorynotetype column, which stores the types of past history notes.
+
+---
+
+[What is the value and text of a specific past history record for a given patient unit stay?]
+
+The ontology would answer this by filtering the table for the specific patientunitstayid and retrieving the pasthistoryvalue and pasthistoryvaluetext columns.
+
+---
+
+[What is the offset and entered offset for a specific past history record?]
+
+The ontology would answer this by filtering the table for the specific pasthistoryid and retrieving the pasthistoryoffset and pasthistoryenteredoffset columns.
+
+---
+
+[What is the path associated with a specific past history note type?]
+
+The ontology would answer this by filtering the table for the specific pasthistorynotetype and retrieving the pasthistorypath column.
+
+---
+
+[What are the details of the past history records entered within a specific range of offsets?]
+
+The ontology would answer this by filtering the table for records where pasthistoryenteredoffset falls within the specified range and retrieving all relevant columns.

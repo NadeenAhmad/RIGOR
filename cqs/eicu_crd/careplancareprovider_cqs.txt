@@ -1,0 +1,27 @@
+[Which care providers were involved in a specific patient's stay?]
+
+The ontology would use the 'patientunitstayid' to filter the records and retrieve the corresponding 'providertype' and 'specialty' for each 'careprovidersaveoffset' to determine the care providers involved.
+
+---
+
+[What is the type and specialty of the care provider with a specific ID?]
+
+The ontology would use the 'cplcareprovderid' to filter the records and retrieve the corresponding 'providertype' and 'specialty' to determine the type and specialty of the care provider.
+
+---
+
+[Which interventions were performed by care providers for a specific patient?]
+
+The ontology would use the 'patientunitstayid' to filter the records and retrieve the corresponding 'interventioncategory' for each 'careprovidersaveoffset' to determine the interventions performed.
+
+---
+
+[Who is the managing physician for a specific care provider involved in a patient's stay?]
+
+The ontology would use the 'patientunitstayid' and 'cplcareprovderid' to filter the records and retrieve the corresponding 'managingphysician' to determine the managing physician.
+
+---
+
+[Which care providers were active upon discharge for a specific patient?]
+
+The ontology would use the 'patientunitstayid' to filter the records and retrieve the corresponding 'cplcareprovderid' and 'providertype' where 'activeupondischarge' is 'true' to determine the care providers who were active upon discharge.

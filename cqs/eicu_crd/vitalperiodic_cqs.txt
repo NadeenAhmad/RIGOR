@@ -1,0 +1,27 @@
+What are the vital signs recorded for a specific patient unit stay identified by patientunitstayid = 123?
+
+The ontology would use the patientunitstayid column to filter the records and retrieve all corresponding rows from the vitalperiodic table. The vital signs such as temperature, sao2, heartrate, respiration, etc., would be extracted from the filtered rows.
+
+---
+
+What is the average heart rate for all patients with a temperature greater than 38.0?
+
+The ontology would filter the records where the temperature column value is greater than 38.0 and then calculate the average of the heartrate column from the filtered records.
+
+---
+
+How many records exist for a specific patient unit stay identified by patientunitstayid = 456?
+
+The ontology would count the number of rows where the patientunitstayid column matches 456.
+
+---
+
+What is the maximum and minimum systolic blood pressure (systemicsystolic) recorded for all patients?
+
+The ontology would retrieve the maximum and minimum values from the systemicsystolic column across all records in the vitalperiodic table.
+
+---
+
+What are the vital signs recorded at a specific observation offset (e.g., observationoffset = 5) for all patients?
+
+The ontology would filter the records where the observationoffset column matches the specified value (e.g., 5) and retrieve all corresponding vital signs from the filtered rows.

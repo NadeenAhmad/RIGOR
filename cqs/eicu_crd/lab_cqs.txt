@@ -1,0 +1,27 @@
+[What are the different types of lab tests available?]
+
+The ontology can answer this by querying the distinct values in the 'labtypeid' and 'labname' columns, which represent the types of lab tests and their corresponding names.
+
+---
+
+[What is the lab result for a specific patient unit stay identified by a given patientunitstayid?]
+
+The ontology can answer this by filtering the rows where 'patientunitstayid' matches the given value and retrieving the 'labresult' and 'labresulttext' columns.
+
+---
+
+[Which lab tests were revised and what were their original and revised results?]
+
+The ontology can answer this by identifying rows where 'labresultrevisedoffset' is not null or zero, and then retrieving the 'labresult', 'labresulttext', and 'labresultrevisedoffset' columns.
+
+---
+
+[What are the measurement systems and interfaces used for a specific lab type?]
+
+The ontology can answer this by filtering the rows where 'labtypeid' matches the specific lab type and retrieving the 'labmeasurenamesystem' and 'labmeasurenameinterface' columns.
+
+---
+
+[What is the offset time for a specific lab result?]
+
+The ontology can answer this by filtering the rows where 'labid' matches the specific lab result and retrieving the 'labresultoffset' column.

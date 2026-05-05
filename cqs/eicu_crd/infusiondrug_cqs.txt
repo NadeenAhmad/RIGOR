@@ -1,0 +1,27 @@
+Which drugs were administered to a patient with a specific patient unit stay ID?
+
+The ontology would use the patientunitstayid column to filter the records and the drugname column to retrieve the names of the drugs administered.
+
+---
+
+What is the infusion rate for a specific drug given to a patient?
+
+The ontology would use the drugname column to filter the records and the infusionrate column to retrieve the infusion rate for the specified drug.
+
+---
+
+What is the total volume of fluid administered to a patient during a specific unit stay?
+
+The ontology would use the patientunitstayid column to filter the records and the volumeoffluid column to sum up the total volume of fluid administered.
+
+---
+
+How many different drugs were administered to a patient during a specific unit stay?
+
+The ontology would use the patientunitstayid column to filter the records and count the distinct values in the drugname column to determine the number of different drugs administered.
+
+---
+
+What is the drug amount for a specific drug administered to a patient with a specific patient unit stay ID?
+
+The ontology would use the patientunitstayid and drugname columns to filter the records and the drugamount column to retrieve the amount of the specified drug administered.

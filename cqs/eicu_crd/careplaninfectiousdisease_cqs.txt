@@ -1,0 +1,27 @@
+[Which patients were still under a care plan for an infectious disease upon discharge?]
+
+The ontology would filter records where `activeupondischarge` is 'Yes' and then retrieve the corresponding `patientunitstayid` values.
+
+---
+
+[What is the offset for a specific infectious disease in a patient's care plan?]
+
+The ontology would use the `patientunitstayid` and `infectdiseasesite` to find the corresponding `cplinfectdiseaseoffset` value.
+
+---
+
+[What is the assessment for a specific infectious disease in a patient's care plan?]
+
+The ontology would use the `patientunitstayid` and `infectdiseasesite` to find the corresponding `infectdiseaseassessment` value.
+
+---
+
+[What was the response to therapy for a specific infectious disease site in a patient's care plan?]
+
+The ontology would use the `patientunitstayid` and `infectdiseasesite` to find the corresponding `responsetotherapy` value.
+
+---
+
+[What treatment was given for a specific infectious disease in a patient's care plan?]
+
+The ontology would use the `patientunitstayid` and `infectdiseasesite` to find the corresponding `treatment` value.

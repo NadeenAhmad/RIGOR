@@ -1,0 +1,27 @@
+[What is the total amount of intake for a specific patient unit stay?]
+
+The ontology would answer this by querying the intaketotal column for records matching the specific patientunitstayid.
+
+---
+
+[What is the net total (intake minus output) for a specific patient unit stay?]
+
+The ontology would answer this by querying the nettotal column for records matching the specific patientunitstayid.
+
+---
+
+[What is the total amount of dialysis for a specific patient unit stay?]
+
+The ontology would answer this by querying the dialysistotal column for records matching the specific patientunitstayid.
+
+---
+
+[What are the specific details (label, numeric value, and text value) of a cell entry for a particular intakeoutputid?]
+
+The ontology would answer this by querying the celllabel, cellvaluenumeric, and cellvaluetext columns for records matching the specific intakeoutputid.
+
+---
+
+[What is the total output for a specific patient unit stay?]
+
+The ontology would answer this by querying the outputtotal column for records matching the specific patientunitstayid.

@@ -1,0 +1,27 @@
+[Which patients were intubated during their unit stay?]
+
+The ontology would use the 'intubated' field to identify patients who were intubated. A value of 1 in the 'intubated' column indicates that the patient was intubated.
+
+---
+
+[What is the average heart rate of patients in the table?]
+
+The ontology would calculate the average of the 'heartrate' column to determine the average heart rate of patients in the table.
+
+---
+
+[Which patients had a respiratory rate above a certain threshold?]
+
+The ontology would filter the rows based on a given threshold value in the 'respiratoryrate' column to identify patients with a respiratory rate above that threshold.
+
+---
+
+[What is the average creatinine level for patients who were on dialysis?]
+
+The ontology would filter the rows where the 'dialysis' column is 1 (indicating the patient was on dialysis) and then calculate the average of the 'creatinine' column for these filtered rows.
+
+---
+
+[Which patients had a Glasgow Coma Scale (GCS) score below a certain threshold?]
+
+The ontology would sum the 'eyes', 'motor', and 'verbal' columns to calculate the GCS score for each patient and then filter the rows based on a given threshold to identify patients with a GCS score below that threshold.

@@ -1,0 +1,27 @@
+[What are the different types of nursing chart cells recorded in the system?]
+
+The ontology would answer this by querying the distinct values in the NURSINGCHARTCELLTYPECAT column, which categorizes the types of nursing chart cells.
+
+---
+
+[What are the possible values and labels for a specific nursing chart cell type?]
+
+The ontology would answer this by filtering the rows based on a specific NURSINGCHARTCELLTYPECAT value and then retrieving the corresponding values from the NURSINGCHARTCELLTYPEVALLABEL and NURSINGCHARTCELLTYPEVALNAME columns.
+
+---
+
+[What are the nursing chart entries for a specific patient unit stay?]
+
+The ontology would answer this by filtering the rows based on a specific patientunitstayid value and then retrieving the relevant entries from the NURSINGCHARTOFFSET, NURSINGCHARTENTRYOFFSET, and NURSINGCHARTVALUE columns.
+
+---
+
+[What are the nursing chart values for a specific cell type and value label?]
+
+The ontology would answer this by filtering the rows based on specific values in the NURSINGCHARTCELLTYPECAT and NURSINGCHARTCELLTYPEVALLABEL columns and then retrieving the corresponding values from the NURSINGCHARTVALUE column.
+
+---
+
+[What are the nursing chart entries for a specific nursing chart ID?]
+
+The ontology would answer this by filtering the rows based on a specific nursingchartid value and then retrieving the relevant entries from the NURSINGCHARTOFFSET, NURSINGCHARTENTRYOFFSET, and NURSINGCHARTVALUE columns.

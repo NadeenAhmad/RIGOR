@@ -1,0 +1,27 @@
+[What is the admission diagnosis recorded for a given patient unit stay?]
+
+The ontology would answer this by retrieving the admissiondx record for the specified patientunitstayid and returning the admitdxname and admitdxtext fields describing the clinical reason for ICU admission.
+
+---
+
+[What is the detailed clinical description associated with a given admission diagnosis name?]
+
+The ontology would answer this by linking the admitdxname to its corresponding admitdxtext, returning the structured textual explanation of the admission diagnosis for the specified unit stay.
+
+---
+
+[Which patients were admitted with a specific diagnosis category such as sepsis, respiratory failure, or cardiac arrest?]
+
+The ontology would answer this by filtering admissiondx records where admitdxname or admitdxtext contains the specified diagnosis concept and returning the corresponding patientunitstayid values.
+
+---
+
+[What diagnostic path was followed to classify the admission diagnosis for a given patient unit stay?]
+
+The ontology would answer this by retrieving the admitdxpath for the specified patientunitstayid, which represents the hierarchical classification pathway used to record the admission diagnosis.
+
+---
+
+[How does the admission diagnosis relate to the patient's overall ICU stay context, including unit type and discharge status?]
+
+The ontology would answer this by linking the admissiondx record via patientunitstayid to the patient table and returning the admitdxname together with unittype and unitdischargestatus to contextualise the clinical reason for admission within the ICU stay outcome.

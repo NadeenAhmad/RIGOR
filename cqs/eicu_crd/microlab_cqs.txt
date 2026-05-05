@@ -1,0 +1,27 @@
+[Which antibiotics were tested for a specific organism in a particular patient's stay?]
+
+The ontology would answer this by filtering the table for the specific patientunitstayid and organism, then retrieving the distinct antibiotic values.
+
+---
+
+[What is the sensitivity level of a specific antibiotic for a given culture site in a patient's stay?]
+
+The ontology would answer this by filtering the table for the specific patientunitstayid, culturesite, and antibiotic, then retrieving the sensitivitylevel.
+
+---
+
+[How many different organisms were cultured from a specific site in a patient's stay?]
+
+The ontology would answer this by filtering the table for the specific patientunitstayid and culturesite, then counting the distinct organism values.
+
+---
+
+[What is the time offset when a culture was taken for a specific patient stay?]
+
+The ontology would answer this by filtering the table for the specific patientunitstayid, then retrieving the culturetakenoffset.
+
+---
+
+[Which organisms were tested for sensitivity to a specific antibiotic in a patient's stay?]
+
+The ontology would answer this by filtering the table for the specific patientunitstayid and antibiotic, then retrieving the distinct organism values.

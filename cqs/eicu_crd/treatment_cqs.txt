@@ -1,0 +1,27 @@
+[Which treatments were active upon discharge for a specific patient unit stay?]
+
+The ontology would use the patientunitstayid and activeupondischarge columns to filter and retrieve the treatments that were active when the patient was discharged.
+
+---
+
+[What is the treatment string for a specific treatment identified by treatmentid?]
+
+The ontology would use the treatmentid to look up the corresponding treatmentstring in the table.
+
+---
+
+[How many treatments were administered to a specific patient during their unit stay?]
+
+The ontology would count the number of entries in the table that match a specific patientunitstayid.
+
+---
+
+[What is the offset (in time or sequence) for a specific treatment identified by treatmentid?]
+
+The ontology would use the treatmentid to retrieve the corresponding treatmentoffset from the table.
+
+---
+
+[Which treatments were administered to a patient unit stay before a specific offset?]
+
+The ontology would filter the treatments based on the patientunitstayid and treatmentoffset to find those administered before the specified offset.

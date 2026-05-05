@@ -1,0 +1,27 @@
+[Which patient unit stays have an active care plan on discharge?]
+
+The ontology would use the 'patientunitstayid' and 'activeupondischarge' fields to filter and retrieve the relevant patient unit stays where 'activeupondischarge' is set to a value indicating an active status.
+
+---
+
+[What are the different groups in the care plan?]
+
+The ontology would query the 'cplgroup' field to retrieve and list all unique groups present in the care plan.
+
+---
+
+[What is the value of a specific care plan item for a given patient unit stay?]
+
+The ontology would use the 'patientunitstayid' and 'cplitemoffset' fields to identify the specific care plan item and retrieve the corresponding 'cplitemvalue'.
+
+---
+
+[How many care plan items are there for a specific patient unit stay?]
+
+The ontology would count the number of rows with a specific 'patientunitstayid' to determine the total number of care plan items for that patient unit stay.
+
+---
+
+[What are the care plan items and their values for a specific group?]
+
+The ontology would filter rows based on the 'cplgroup' field and retrieve the corresponding 'cplitemoffset' and 'cplitemvalue' to list the care plan items and their values for the specified group.

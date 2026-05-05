@@ -1,0 +1,27 @@
+[What is the systolic blood pressure for a patient with a specific vitalaperiodicid?]
+
+The ontology can answer this by selecting the noninvasivesystolic value from the vitalaperiodic table where the vitalaperiodicid matches the given patient identifier.
+
+---
+
+[What is the mean arterial pressure for a patient with a specific patientunitstayid and observationoffset?]
+
+The ontology can answer this by selecting the noninvasivemean value from the vitalaperiodic table where the patientunitstayid and observationoffset match the given patient stay identifier and observation offset.
+
+---
+
+[What is the cardiac output for all patients with a specific patientunitstayid?]
+
+The ontology can answer this by selecting the cardiacoutput values from the vitalaperiodic table where the patientunitstayid matches the given patient stay identifier.
+
+---
+
+[What is the systemic vascular resistance index (SVRI) for a patient with a specific vitalaperiodicid?]
+
+The ontology can answer this by selecting the svri value from the vitalaperiodic table where the vitalaperiodicid matches the given patient identifier.
+
+---
+
+[What is the pulmonary vascular resistance (PVR) for a patient with a specific vitalaperiodicid and observationoffset?]
+
+The ontology can answer this by selecting the pvr value from the vitalaperiodic table where the vitalaperiodicid and observationoffset match the given patient identifier and observation offset.

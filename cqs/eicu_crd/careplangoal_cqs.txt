@@ -1,0 +1,27 @@
+[What clinical goal categories were documented for a given patient unit stay in the ICU care plan?]
+
+The ontology would answer this by retrieving careplangoal records for the specified patientunitstayid and returning the distinct CPLGOALCATEGORY values, which represent the clinical domains targeted by ICU care goals such as respiratory, haemodynamic, or infectious disease management.
+
+---
+
+[Which care plan goals were still active upon a patient's discharge from the ICU?]
+
+The ontology would answer this by filtering careplangoal records for the given patientunitstayid where ACTIVEUPONDISCHARGE indicates an active status and returning the corresponding CPLGOALCATEGORY and CPLGOALVALUE.
+
+---
+
+[What is the documented status of a specific ICU care goal, and has it been achieved or is it still pending?]
+
+The ontology would answer this by retrieving the CPLGOALSTATUS for a given cplgoalid, which indicates whether the stated care goal has been met, is in progress, or has been discontinued.
+
+---
+
+[What specific clinical targets or values were set as goals for a patient in a given care plan category?]
+
+The ontology would answer this by retrieving careplangoal records for the specified patientunitstayid filtered by CPLGOALCATEGORY and returning the CPLGOALVALUE, which documents the specific clinical target established for that goal domain.
+
+---
+
+[How many distinct clinical goal domains were addressed in the care plan for a given patient unit stay?]
+
+The ontology would answer this by counting the distinct CPLGOALCATEGORY values in careplangoal records for the specified patientunitstayid, providing a measure of the breadth of clinical concerns addressed in the ICU care plan.

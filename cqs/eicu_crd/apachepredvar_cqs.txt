@@ -1,0 +1,27 @@
+[What is the average SAPS3 score for patients who died in the hospital?]
+
+The ontology can answer this by calculating the average of the 'saps3today' column for rows where 'diedinhospital' is a non-zero value
+
+---
+
+[How many patients had a specific diagnosis upon admission, such as 'pneumonia'?]
+
+The ontology can answer this by counting the number of rows where the 'admitdiagnosis' column matches the specific diagnosis, such as 'pneumonia'
+
+---
+
+[What is the distribution of gender among patients?]
+
+The ontology can answer this by grouping the data based on the 'gender' column and counting the number of occurrences for each gender value
+
+---
+
+[What are the average values of PaO2 and FiO2 for patients on the first day of ICU stay?]
+
+The ontology can answer this by calculating the average of the 'day1pao2' and 'day1fio2' columns
+
+---
+
+[How many patients had a specific procedure, such as elective surgery?]
+
+The ontology can answer this by counting the number of rows where the 'electivesurgery' column is a non-zero value

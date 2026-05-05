@@ -1,0 +1,27 @@
+[What nursing care interventions were documented for a given patient unit stay?]
+
+The ontology would answer this by retrieving nursecare records for the specified patientunitstayid and returning the CELLLABEL and CELLATTRIBUTE fields, which together identify the category of nursing care activity performed such as wound care, repositioning, or oral hygiene.
+
+---
+
+[What is the documented outcome or value of a specific nursing care intervention for a given patient unit stay?]
+
+The ontology would answer this by filtering nursecare records for the specified patientunitstayid and CELLATTRIBUTE and returning CELLATTRIBUTEVALUE, which captures the recorded result or status of the nursing care activity performed.
+
+---
+
+[Which patients received a specific type of nursing care intervention during their ICU stay?]
+
+The ontology would answer this by filtering nursecare records by CELLATTRIBUTE or CELLLABEL matching the specified intervention type and returning the corresponding patientunitstayid values linked to the patient entity.
+
+---
+
+[What nursing care activities were performed at a specific time point during a patient's ICU stay?]
+
+The ontology would answer this by retrieving nursecare records for the specified patientunitstayid filtered by NURSECAREOFFSET, returning all CELLLABEL and CELLATTRIBUTEVALUE entries documenting the care activities performed at that time point.
+
+---
+
+[How does the nursing care documentation for a given patient relate to their overall clinical care plan and assessment findings?]
+
+The ontology would answer this by linking nursecare records via patientunitstayid to nurseassessment and careplangeneral records, combining care activity documentation with assessment findings and care plan goals to provide an integrated view of nursing care delivery.

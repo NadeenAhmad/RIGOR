@@ -1,0 +1,27 @@
+[What nursing assessment findings were documented for a given patient unit stay?]
+
+The ontology would answer this by retrieving nurseassessment records for the specified patientunitstayid and returning the CELLLABEL and CELLATTRIBUTEVALUE fields, which together capture the assessed clinical parameter and its recorded value such as pain score, fall risk, or skin integrity status.
+
+---
+
+[What is the assessed value for a specific nursing assessment parameter for a given patient unit stay?]
+
+The ontology would answer this by filtering nurseassessment records for the specified patientunitstayid and CELLLABEL and returning the CELLATTRIBUTE and CELLATTRIBUTEVALUE, documenting the nursing finding for that clinical assessment category.
+
+---
+
+[Which patients had a specific nursing assessment finding documented, such as a high fall risk or impaired skin integrity?]
+
+The ontology would answer this by filtering nurseassessment records where CELLATTRIBUTE or CELLATTRIBUTEVALUE matches the specified clinical finding and returning the corresponding patientunitstayid values linked to the patient entity.
+
+---
+
+[What nursing assessments were performed at a specific time point during a patient's ICU stay?]
+
+The ontology would answer this by retrieving nurseassessment records for the specified patientunitstayid filtered by NURSEASSESSOFFSET, returning the CELLLABEL and CELLATTRIBUTEVALUE for all clinical parameters assessed at that time point.
+
+---
+
+[How did nursing assessment findings for a specific parameter change over the course of a patient's ICU stay?]
+
+The ontology would answer this by retrieving all nurseassessment records for the specified patientunitstayid and CELLLABEL, ordered by NURSEASSESSOFFSET, enabling tracking of how the assessed clinical value evolved across multiple assessment time points during the stay.
