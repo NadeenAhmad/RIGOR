@@ -41,11 +41,7 @@ RIGOR_Framework/
 │   ├── schema_rd.json
 │   └── schema_icu.json
 │
-├── core_ontology/              # Seed core ontologies (bootstraps the growing core)
-│   ├── core.owl
-│   └── core_icu.owl
-│
-├── documents_chinook/          # Domain documents for RAG retrieval (Chinook)
+├── documents/          # Domain documents for RAG retrieval (Chinook)
 ├── external_ontologies_chinook/# Reference ontologies for RAG retrieval (Chinook)
 │
 ├── output/                     # Generated ontologies (created at runtime)
