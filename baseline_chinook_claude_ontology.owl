@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://example.org/ontology#billingAddress">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Invoice"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#state">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Employee"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Genre">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#name">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Artist"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Genre"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MediaType"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Playlist"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Track"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#:invoiceId">
+    <rdfs:range rdf:resource="http://example.org/ontology#:Invoice"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#:InvoiceLine"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#unitPrice">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Track"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#:invoiceLineId">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#:InvoiceLine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hasArtist">
+    <rdfs:range rdf:resource="http://example.org/ontology#Artist"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Album"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#employeeId">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Employee"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#billingCountry">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Invoice"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#composer">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Track"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#trackId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Track"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#genreId">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Genre"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Track"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#Genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#db:PlaylistTrack">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#invoiceId">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Invoice"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#supportRepId">
+    <rdfs:range rdf:resource="http://example.org/ontology#owl:Thing"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#birthDate">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Employee"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#postalCode">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Employee"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#total">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Invoice"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#phone">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Employee"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#billingPostalCode">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Invoice"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#db:Track">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#bytes">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Track"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#billingState">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Invoice"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#:unitPrice">
+    <rdfs:domain rdf:resource="http://example.org/ontology#:InvoiceLine"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#mediaTypeId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MediaType"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Track"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#MediaType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#:Invoice">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#company">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#playlistId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Playlist"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#:quantity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#:InvoiceLine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#lastName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Employee"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#reportsTo">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Employee"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#Employee"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Playlist">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Album">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#customerId">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Invoice"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#Customer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#firstName">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Employee"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#title">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Album"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Employee"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#:trackId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#:InvoiceLine"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#:Track"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#artistId">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Artist"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#country">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Employee"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Employee">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#albumId">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#Album"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Album"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Track"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#MediaType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#db:playlistTrack_hasPlaylist">
+    <rdfs:domain rdf:resource="http://example.org/ontology#db:PlaylistTrack"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#db:Playlist"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#db:Playlist">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Track">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#hireDate">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Employee"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#:Track">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#address">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Employee"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#email">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Employee"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Invoice">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#db:playlistTrack_hasTrack">
+    <rdfs:range rdf:resource="http://example.org/ontology#db:Track"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#db:PlaylistTrack"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#milliseconds">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Track"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Customer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#city">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Employee"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#billingCity">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Invoice"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#fax">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Customer"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Employee"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#invoiceDate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Invoice"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Artist">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#:InvoiceLine">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>
