@@ -147,30 +147,8 @@ python baseline.py
 python non-iterative.py
 ```
 
-### 4. Run the Ablation Study
 
-Generates ontology variants with selected context sources disabled:
-
-```bash
-python run_ablation.py                          # all variants
-python run_ablation.py --variant no_rag         # single variant
-```
-
-Ablation variants:
-
-| Variant | Schema Context | External Ontologies | Documents |
-|---------|:-:|:-:|:-:|
-| `no_rag` | — | — | — |
-| `only_schema_context` | ✓ | — | — |
-| `only_external_ontologies` | — | ✓ | — |
-| `only_relevant_documents` | — | — | ✓ |
-| `without_schema_context` | — | ✓ | ✓ |
-| `without_external_ontologies` | ✓ | — | ✓ |
-| `without_relevant_documents` | ✓ | ✓ | — |
-
-The deterministic direct mapping is always retained in every variant to keep schema coverage constant, isolating only the contribution of contextual inputs.
-
-### 5. Generate Competency Questions
+### 4. Generate Competency Questions
 
 Generates 5 CQs per table using an LLM, saved in the format expected by `eval.py`:
 
@@ -178,7 +156,7 @@ Generates 5 CQs per table using an LLM, saved in the format expected by `eval.py
 python cqs.py
 ```
 
-### 6. Evaluate Ontologies
+### 5. Evaluate Ontologies
 
 Runs multi-dimensional evaluation across all generated ontologies:
 
@@ -192,7 +170,7 @@ Evaluation dimensions:
 - **Semantic coverage** — how well schema concepts are covered (embedding similarity)
 - **Syntax and logical consistency** — rdflib parse validation
 
-### 7. Consistency and Pitfall Checking
+### 6. Consistency and Pitfall Checking
 
 Runs HermiT (logical consistency) and OOPS! (ontology pitfall detection) on all ontologies:
 
@@ -202,15 +180,9 @@ python ontology_checker.py
 
 Requires `HermiT.jar` — download from [owlcs/HermiT releases](https://github.com/owlcs/HermiT/releases) and place in `jars/`.
 
-### 8. Evaluate Ablation Results
 
-```bash
-python ablation_evaluation.py
-```
 
-Evaluates all ablation variants against three reference sources (schema terms, external ontology concepts, documentation corpus) using both exact lexical matching and semantic similarity.
-
-### 9. Populate a Knowledge Graph with Real Data
+### 7. Populate a Knowledge Graph with Real Data
 
 Reads SQL dumps or CSVs and instantiates individuals in the RIGOR-enriched ontologies:
 
