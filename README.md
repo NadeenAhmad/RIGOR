@@ -182,7 +182,7 @@ Requires `HermiT.jar` — download from [owlcs/HermiT releases](https://github.c
 
 
 
-### 7. Populate a Knowledge Graph with Real Data
+### 7. Populate a Knowledge Graph with Data Instances
 
 Reads SQL dumps or CSVs and instantiates individuals in the RIGOR-enriched ontologies:
 
@@ -214,7 +214,7 @@ The framework has been evaluated on three database schemas:
 | Schema | Domain | Description |
 |--------|--------|-------------|
 | `chinook` | Music | The Chinook sample database (artists, albums, tracks, invoices) |
-| `real_world` | Clinical | Real-world liver cancer patient registry |
+| `liver cancer` | Clinical | Liver cancer patient registry |
 | `eicu_crd` | Clinical | eICU Collaborative Research Database |
 
 Schema files are provided as JSON in `sql_schema/`. Each file maps table names to their columns and (optionally) foreign key definitions.
