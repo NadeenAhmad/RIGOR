@@ -2,7 +2,7 @@
 
 An end-to-end framework for automatically generating semantically rich OWL 2 ontologies from relational database schemas. RIGOR combines deterministic direct mapping with LLM-driven semantic enrichment, RAG-based context retrieval, and a Judge-LLM validation loop to produce ontologies that go beyond simple schema translation.
 
-![RIGOR Pipeline](figures/LLMOntoRAG.pdf) 
+![RIGOR Pipeline](figures/LLMOntoRAG.png) 
 
 ---
 
