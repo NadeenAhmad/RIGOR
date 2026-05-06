@@ -165,7 +165,7 @@ python eval.py
 ```
 
 Evaluation dimensions:
-- **CQ-based quality scoring** — 7 dimensions scored by a Judge-LLM (GPT-4o, a different model family from all generators to avoid self-evaluation bias)
+- **CQ-based quality scoring** — 7 dimensions scored by an LLM-as-a-Judge (GPT-5.4, a different model family from all generators to avoid self-evaluation bias)
 - **Structural analysis** — class/property/axiom counts
 - **Semantic coverage** — how well schema concepts are covered (embedding similarity)
 - **Syntax and logical consistency** — rdflib parse validation
@@ -194,16 +194,16 @@ python sql_to_kg.py
 
 ## LLMs Used
 
-All LLM calls go through [OpenRouter](https://openrouter.ai/). The three generator LLMs and the judge LLM are:
+All LLM calls go through [OpenRouter](https://openrouter.ai/). The three generator LLMs and the LLM-as-a-Judge are:
 
 | Role | Model | OpenRouter ID |
 |------|-------|---------------|
 | Generator | Claude (Anthropic) | `anthropic/claude-opus-4-6` |
 | Generator | Mistral Small 24B | `mistralai/mistral-small-24b-instruct-2501` |
 | Generator | DeepSeek Chat | `deepseek/deepseek-chat` |
-| Judge (eval) | GPT-4o | `openai/gpt-4o-2024-11-20` |
+| LLM-as-a-Judge (eval) | GPT-5.4 | `openai/gpt-5.4` |
 
-The Judge-LLM in `eval.py` is intentionally from a different model family than all three generators to eliminate self-evaluation bias.
+The LLM-as-a-Judge in `eval.py` is intentionally from a different model family than all three generators to eliminate self-evaluation bias.
 
 ---
 
