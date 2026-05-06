@@ -96,11 +96,11 @@ ONTOLOGIES = {
 }
 
 OUTPUT_DIR    = f"{BASE_PATH}/evaluation"
-# Judge-LLM: GPT-4o (latest) via OpenRouter
-# GPT-4o is from a different model family than all three generators
+# Judge-LLM: GPT-5.4 (latest) via OpenRouter
+# GPT-5.4 is from a different model family than all three generators
 # (Claude/Anthropic, Mistral, DeepSeek are generators — OpenAI GPT is the judge)
 # This eliminates self-evaluation bias and uses the strongest available judge.
-JUDGE_MODEL   = "openai/gpt-4o-2024-11-20"
+JUDGE_MODEL   = "openai/gpt-5.4"
 MAX_CHUNK_SIZE = 2048  # characters per ontology chunk
 # Judge-LLM toggle
 ENABLE_CQ_JUDGE = False
@@ -113,10 +113,10 @@ COVERAGE_THRESHOLD = 0.55
 
 def call_judge_llm(prompt: str, api_key: str, retries: int = 3) -> str:
     """
-    Call GPT-4o (latest) via OpenRouter as the Judge-LLM.
-    GPT-4o is from a different model family than all three evaluated generators
+    Call GPT-5.4 (latest) via OpenRouter as the Judge-LLM.
+    GPT-5.4 is from a different model family than all three evaluated generators
     (Claude/Anthropic, Mistral, DeepSeek), eliminating self-evaluation bias.
-    Retries up to 3 times on timeout or server error with increasing wait.
+    Retries up to 3 times on timeout or server error, with increasing wait time.
     """
     for attempt in range(1, retries + 1):
         try:
@@ -798,7 +798,7 @@ def get_metric_criteria(metric: str) -> str:
     return criteria.get(metric, "")
 
 def evaluate_metric(metric: str, context: Dict) -> Tuple[float, int]:
-    """Score one metric via GPT-4o Judge-LLM. Returns (score, approx_tokens)."""
+    """Score one metric via GPT-5.4 Judge-LLM. Returns (score, approx_tokens)."""
     """
     Score one metric for one ontology chunk.
     Returns (score, approx_tokens_used).
