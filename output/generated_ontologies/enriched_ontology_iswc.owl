@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:prov="http://www.w3.org/ns/prov#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://example.org/ontology#organizations_OrgID">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/organizations/OrgID"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'organizations.OrgID' with range xsd:integer.</rdfs:comment>
+    <rdfs:label xml:lang="en">Org ID</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Organizations"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Conferences">
+    <rdfs:subClassOf rdf:nodeID="N877934ab4bde4416b455eb7580b366af"/>
+    <rdfs:subClassOf rdf:nodeID="N0e44153dc28042d2aa61aa9c5d2a95b2"/>
+    <rdfs:subClassOf rdf:nodeID="N9cc885a5dc0c4e3d8ffeafdcd08c53a0"/>
+    <rdfs:subClassOf rdf:nodeID="Nbe52d841f45145a9824f1520df80871c"/>
+    <rdfs:subClassOf rdf:nodeID="N41e1c210dbf849d38465afae475a8c4a"/>
+    <rdfs:subClassOf rdf:nodeID="N040c01232da940d3a4dbcb8014b758a4"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/conferences"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Class generated from source table 'conferences'.</rdfs:comment>
+    <rdfs:label xml:lang="en">Conferences</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#persons_Homepage">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/persons/Homepage"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Persons"/>
+    <rdfs:label xml:lang="en">Homepage</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'persons.Homepage' with range xsd:string.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#papers_Title">
+    <rdfs:comment xml:lang="en">Data property generated from source column 'papers.Title' with range xsd:string.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/papers/Title"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">Title</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Papers"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#papers_Abstract">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/papers/Abstract"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Papers"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'papers.Abstract' with range xsd:string.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Abstract</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#papers_Publish">
+    <rdfs:comment xml:lang="en">Data property generated from source column 'papers.Publish' with range xsd:integer.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Papers"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/papers/Publish"/>
+    <rdfs:label xml:lang="en">Publish</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#persons_LastName">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Persons"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'persons.LastName' with range xsd:string.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/persons/LastName"/>
+    <rdfs:label xml:lang="en">Last Name</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#conferences_Location">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Conferences"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Location</rdfs:label>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/conferences/Location"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'conferences.Location' with range xsd:string.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4ebd6f194eb14345acfa4ad7907f5cd7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://example.org/ontology#Papers"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#rel_person_paper_hasPaper"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#RelPersonPaper">
+    <rdfs:label xml:lang="en">Rel Person Paper</rdfs:label>
+    <rdfs:comment xml:lang="en">Class generated from source table 'rel_person_paper'.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/rel_person_paper"/>
+    <rdfs:subClassOf rdf:nodeID="N23bda44fac364632a15d9a480d40769f"/>
+    <rdfs:subClassOf rdf:nodeID="N4ebd6f194eb14345acfa4ad7907f5cd7"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndf36b99ef833403181bde2f54405ef4a">
+    <owl:onProperty rdf:resource="http://example.org/ontology#organizations_Location"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#conferences_ConfID">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Conf ID</rdfs:label>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'conferences.ConfID' with range xsd:integer.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Conferences"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/conferences/ConfID"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd445e87c172c4bf8b022841547bce828">
+    <owl:onProperty rdf:resource="http://example.org/ontology#persons_URI"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#rel_person_organization_hasPerson">
+    <rdfs:comment xml:lang="en">Object property generated from foreign key 'rel_person_organization.PersonID' referencing 'persons.PerID'.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/rel_person_organization/PersonID"/>
+    <rdfs:label xml:lang="en">rel person organization has Person</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#RelPersonOrganization"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#Persons"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#RelPaperTopic">
+    <rdfs:subClassOf rdf:nodeID="N8cfeaead63914382ad7288d1892c7e44"/>
+    <rdfs:subClassOf rdf:nodeID="Ncc0bee44d53c4f8b82bc2adbaf18d809"/>
+    <rdfs:subClassOf rdf:nodeID="Na6f75fd263c744ba9d34a92bde2b4446"/>
+    <rdfs:comment xml:lang="en">Class generated from source table 'rel_paper_topic'.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Rel Paper Topic</rdfs:label>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/rel_paper_topic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#organizations_Name">
+    <rdfs:comment xml:lang="en">Data property generated from source column 'organizations.Name' with range xsd:string.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/organizations/Name"/>
+    <rdfs:label xml:lang="en">Name</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Organizations"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndea561e3a1db4a6d8aec7cf1c02e97cc">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#organizations_Postcode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#organizations_Postcode">
+    <rdfs:label xml:lang="en">Postcode</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'organizations.Postcode' with range xsd:string.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/organizations/Postcode"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Organizations"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncc0bee44d53c4f8b82bc2adbaf18d809">
+    <owl:onProperty rdf:resource="http://example.org/ontology#rel_paper_topic_hasTopic"/>
+    <owl:allValuesFrom rdf:resource="http://example.org/ontology#Topics"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Persons">
+    <rdfs:comment xml:lang="en">Class generated from source table 'persons'.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="N1dcf9687f2dd490eafb1587680e391de"/>
+    <rdfs:subClassOf rdf:nodeID="N514fcb0802904b1ca78b85979e84556f"/>
+    <rdfs:subClassOf rdf:nodeID="N8f1f1c72baf74bbe98b8f39b68f4081f"/>
+    <rdfs:subClassOf rdf:nodeID="Nb86c50966c564bfa846980742fb9fa85"/>
+    <rdfs:subClassOf rdf:nodeID="Nd445e87c172c4bf8b022841547bce828"/>
+    <rdfs:subClassOf rdf:nodeID="N4cdce3bebc794a9aab6e822d8c46b082"/>
+    <rdfs:subClassOf rdf:nodeID="Nf3a347454f3e400b916ebc4970c2d160"/>
+    <rdfs:subClassOf rdf:nodeID="N568b1a6b57274d4bbc0e3517f2cc8542"/>
+    <rdfs:subClassOf rdf:nodeID="N2f22cbeed18a4d3d9481d657aa9e6f91"/>
+    <rdfs:subClassOf rdf:nodeID="N97f04e16f1a74aaaabe85c024fd377af"/>
+    <rdfs:label xml:lang="en">Persons</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/persons"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1fdc8233f1004068896e7eb311e3ffa3">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#papers_Publish"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nea09388439f24430b49ee313f4bafd6b">
+    <owl:onProperty rdf:resource="http://example.org/ontology#rel_person_topic_hasTopic"/>
+    <owl:allValuesFrom rdf:resource="http://example.org/ontology#Topics"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#rel_person_topic_hasTopic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">rel person topic has Topic</rdfs:label>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/rel_person_topic/TopicID"/>
+    <rdfs:comment xml:lang="en">Object property generated from foreign key 'rel_person_topic.TopicID' referencing 'topics.TopicID'.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#RelPersonTopic"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#Topics"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#papers_URI">
+    <rdfs:comment xml:lang="en">Data property generated from source column 'papers.URI' with range xsd:string.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Papers"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/papers/URI"/>
+    <rdfs:label xml:lang="en">URI</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#rel_paper_topic_hasTopic">
+    <rdfs:range rdf:resource="http://example.org/ontology#Topics"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/rel_paper_topic/TopicID"/>
+    <rdfs:label xml:lang="en">rel paper topic has Topic</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#RelPaperTopic"/>
+    <rdfs:comment xml:lang="en">Object property generated from foreign key 'rel_paper_topic.TopicID' referencing 'topics.TopicID'.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Papers">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/papers"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="N7e67cdc171a244119f84c7c5e16cc017"/>
+    <rdfs:subClassOf rdf:nodeID="N615315e7fcfa4117885561309cb2e07e"/>
+    <rdfs:subClassOf rdf:nodeID="Ne3d87bb97f3d41228a3573e488bf331a"/>
+    <rdfs:subClassOf rdf:nodeID="N1fdc8233f1004068896e7eb311e3ffa3"/>
+    <rdfs:subClassOf rdf:nodeID="N6aa90f5a41d043dd8d1e757fb3425383"/>
+    <rdfs:subClassOf rdf:nodeID="N2140576f54bc49f7b4f79e51b6b0cd84"/>
+    <rdfs:subClassOf rdf:nodeID="N3afcbad9c0aa4656a603ffc7f3370a19"/>
+    <rdfs:comment xml:lang="en">Class generated from source table 'papers'.</rdfs:comment>
+    <rdfs:label xml:lang="en">Papers</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#persons_Phone">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/persons/Phone"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Persons"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'persons.Phone' with range xsd:string.</rdfs:comment>
+    <rdfs:label xml:lang="en">Phone</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N040c01232da940d3a4dbcb8014b758a4">
+    <owl:onProperty rdf:resource="http://example.org/ontology#conferences_Location"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#organizations_Address">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/organizations/Address"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Organizations"/>
+    <rdfs:label xml:lang="en">Address</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'organizations.Address' with range xsd:string.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#organizations_Belongsto">
+    <rdfs:label xml:lang="en">organizations Belongsto</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#Organizations"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Organizations"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/organizations/Belongsto"/>
+    <rdfs:comment xml:lang="en">Object property generated from foreign key 'organizations.Belongsto' referencing 'organizations.OrgID'. This is an explicit recursive self-referential relationship within the Organizations class.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#persons_Type">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Persons"/>
+    <rdfs:label xml:lang="en">Type</rdfs:label>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'persons.Type' with range xsd:string.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/persons/Type"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd104498cad1a4675ae9957d7b7ee7e86">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#organizations_Homepage"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#organizations_Country">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Organizations"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'organizations.Country' with range xsd:string.</rdfs:comment>
+    <rdfs:label xml:lang="en">Country</rdfs:label>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/organizations/Country"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N615315e7fcfa4117885561309cb2e07e">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#papers_URI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Topics">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/topics"/>
+    <rdfs:label xml:lang="en">Topics</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="N460846c58bf44d00bfa4f4e01966f3a4"/>
+    <rdfs:subClassOf rdf:nodeID="Nad0b73ffcdb245d5af56b169db717993"/>
+    <rdfs:subClassOf rdf:nodeID="N423999820b5a426993d2aef20e8e2760"/>
+    <rdfs:subClassOf rdf:nodeID="N3ec58752ba684726a11e1fec05639657"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Class generated from source table 'topics'.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#conferences_Name">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/conferences/Name"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Conferences"/>
+    <rdfs:label xml:lang="en">Name</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'conferences.Name' with range xsd:string.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb86c50966c564bfa846980742fb9fa85">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#persons_PerID"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#RelPersonTopic">
+    <rdfs:subClassOf rdf:nodeID="Nea09388439f24430b49ee313f4bafd6b"/>
+    <rdfs:subClassOf rdf:nodeID="Na093e1b9afc040d288c8cd33f117d887"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/rel_person_topic"/>
+    <rdfs:comment xml:lang="en">Class generated from source table 'rel_person_topic'.</rdfs:comment>
+    <rdfs:label xml:lang="en">Rel Person Topic</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Organizations">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Class generated from source table 'organizations'.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="N34015f56bf7e4ca884c8996f9a659850"/>
+    <rdfs:subClassOf rdf:nodeID="N5858312cf0a84b7dbd97556e7e763c79"/>
+    <rdfs:subClassOf rdf:nodeID="N05ced5f07de74e72ae597588665aeb16"/>
+    <rdfs:subClassOf rdf:nodeID="N145296fd67cb40c2bab7c30c813303af"/>
+    <rdfs:subClassOf rdf:nodeID="Ndf36b99ef833403181bde2f54405ef4a"/>
+    <rdfs:subClassOf rdf:nodeID="Ndea561e3a1db4a6d8aec7cf1c02e97cc"/>
+    <rdfs:subClassOf rdf:nodeID="Nd104498cad1a4675ae9957d7b7ee7e86"/>
+    <rdfs:subClassOf rdf:nodeID="N7cc4a55a34b14ff197e9295a449d5fca"/>
+    <rdfs:subClassOf rdf:nodeID="N39341c3cf08949d396ed40849ad9786a"/>
+    <rdfs:subClassOf rdf:nodeID="N503d71a7c6614bc3a688c329c70e6020"/>
+    <rdfs:label xml:lang="en">Organizations</rdfs:label>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/organizations"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4cdce3bebc794a9aab6e822d8c46b082">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#persons_Phone"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N34015f56bf7e4ca884c8996f9a659850">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#organizations_Name"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#conferences_URI">
+    <rdfs:label xml:lang="en">URI</rdfs:label>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/conferences/URI"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'conferences.URI' with range xsd:string.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Conferences"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#organizations_Location">
+    <rdfs:label xml:lang="en">Location</rdfs:label>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/organizations/Location"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'organizations.Location' with range xsd:string.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Organizations"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N514fcb0802904b1ca78b85979e84556f">
+    <owl:onProperty rdf:resource="http://example.org/ontology#persons_LastName"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#persons_PerID">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/persons/PerID"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Persons"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="en">Per ID</rdfs:label>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'persons.PerID' with range xsd:integer.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbe52d841f45145a9824f1520df80871c">
+    <owl:onProperty rdf:resource="http://example.org/ontology#conferences_Datum"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#persons_Photo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/persons/Photo"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'persons.Photo' with range xsd:string.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Persons"/>
+    <rdfs:label xml:lang="en">Photo</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne3d87bb97f3d41228a3573e488bf331a">
+    <owl:onProperty rdf:resource="http://example.org/ontology#papers_Title"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#organizations_Type">
+    <rdfs:label xml:lang="en">Type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Organizations"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'organizations.Type' with range xsd:string.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/organizations/Type"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N460846c58bf44d00bfa4f4e01966f3a4">
+    <owl:onProperty rdf:resource="http://example.org/ontology#topics_ParentID"/>
+    <owl:allValuesFrom rdf:resource="http://example.org/ontology#Topics"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#persons_Address">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/persons/Address"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Persons"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">Address</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'persons.Address' with range xsd:string.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na6f75fd263c744ba9d34a92bde2b4446">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://example.org/ontology#Papers"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#rel_paper_topic_hasPaper"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2140576f54bc49f7b4f79e51b6b0cd84">
+    <owl:onProperty rdf:resource="http://example.org/ontology#papers_PaperID"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#rel_person_organization_hasOrganization">
+    <rdfs:label xml:lang="en">rel person organization has Organization</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#RelPersonOrganization"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/rel_person_organization/OrganizationID"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#Organizations"/>
+    <rdfs:comment xml:lang="en">Object property generated from foreign key 'rel_person_organization.OrganizationID' referencing 'organizations.OrgID'.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N39341c3cf08949d396ed40849ad9786a">
+    <owl:onProperty rdf:resource="http://example.org/ontology#organizations_Belongsto"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://example.org/ontology#Organizations"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#papers_hasConferences">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">Object property generated from foreign key 'papers.Conference' referencing 'conferences.ConfID'.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/papers/Conference"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#Conferences"/>
+    <rdfs:label xml:lang="en">papers has Conferences</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Papers"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#RelPersonOrganization">
+    <rdfs:subClassOf rdf:nodeID="N1a472d414a8e444793eb09d26c7c5a2e"/>
+    <rdfs:subClassOf rdf:nodeID="N6966248d2a814d2e972a9c13439155fa"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/rel_person_organization"/>
+    <rdfs:comment xml:lang="en">Class generated from source table 'rel_person_organization'.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Rel Person Organization</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N145296fd67cb40c2bab7c30c813303af">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#organizations_Address"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3ec58752ba684726a11e1fec05639657">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#topics_URI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#rel_paper_topic_hasPaper">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/rel_paper_topic/PaperID"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#Papers"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#RelPaperTopic"/>
+    <rdfs:label xml:lang="en">rel paper topic has Paper</rdfs:label>
+    <rdfs:comment xml:lang="en">Object property generated from foreign key 'rel_paper_topic.PaperID' referencing 'papers.PaperID'.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#conferences_Date">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'conferences.Date' with range xsd:date.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Conferences"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/conferences/Date"/>
+    <rdfs:label xml:lang="en">Date</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2f22cbeed18a4d3d9481d657aa9e6f91">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#persons_Type"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#organizations_URI">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'organizations.URI' with range xsd:string.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/organizations/URI"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Organizations"/>
+    <rdfs:label xml:lang="en">URI</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N503d71a7c6614bc3a688c329c70e6020">
+    <owl:onProperty rdf:resource="http://example.org/ontology#organizations_Country"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8cfeaead63914382ad7288d1892c7e44">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#rel_paper_topic_RelationType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nad0b73ffcdb245d5af56b169db717993">
+    <owl:onProperty rdf:resource="http://example.org/ontology#topics_TopicName"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8f1f1c72baf74bbe98b8f39b68f4081f">
+    <owl:onProperty rdf:resource="http://example.org/ontology#persons_FirstName"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#persons_URI">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/persons/URI"/>
+    <rdfs:label xml:lang="en">URI</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Persons"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'persons.URI' with range xsd:string.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9cc885a5dc0c4e3d8ffeafdcd08c53a0">
+    <owl:onProperty rdf:resource="http://example.org/ontology#conferences_Date"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#topics_ParentID">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/topics/ParentID"/>
+    <rdfs:comment xml:lang="en">Object property generated from foreign key 'topics.ParentID' referencing 'topics.TopicID'. This is an explicit recursive self-referential relationship within the Topics class.</rdfs:comment>
+    <rdfs:label xml:lang="en">topics Parent ID</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Topics"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#Topics"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#persons_FirstName">
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/persons/FirstName"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'persons.FirstName' with range xsd:string.</rdfs:comment>
+    <rdfs:label xml:lang="en">First Name</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Persons"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N41e1c210dbf849d38465afae475a8c4a">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#conferences_ConfID"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#organizations_Homepage">
+    <rdfs:comment xml:lang="en">Data property generated from source column 'organizations.Homepage' with range xsd:string.</rdfs:comment>
+    <rdfs:label xml:lang="en">Homepage</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Organizations"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/organizations/Homepage"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3afcbad9c0aa4656a603ffc7f3370a19">
+    <owl:onProperty rdf:resource="http://example.org/ontology#papers_Year"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#rel_person_paper_hasPerson">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/rel_person_paper/PersonID"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#RelPersonPaper"/>
+    <rdfs:comment xml:lang="en">Object property generated from foreign key 'rel_person_paper.PersonID' referencing 'persons.PerID'.</rdfs:comment>
+    <rdfs:range rdf:resource="http://example.org/ontology#Persons"/>
+    <rdfs:label xml:lang="en">rel person paper has Person</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N877934ab4bde4416b455eb7580b366af">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#conferences_Name"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#rel_paper_topic_RelationType">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="en">Relation Type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'rel_paper_topic.RelationType' with range xsd:integer. This integer-valued property may encode a categorical or ordinal concept; consult source documentation for value meanings.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/rel_paper_topic/RelationType"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#RelPaperTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#persons_Email">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">Email</rdfs:label>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'persons.Email' with range xsd:string.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Persons"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/persons/Email"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6966248d2a814d2e972a9c13439155fa">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#rel_person_organization_hasPerson"/>
+    <owl:allValuesFrom rdf:resource="http://example.org/ontology#Persons"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1a472d414a8e444793eb09d26c7c5a2e">
+    <owl:onProperty rdf:resource="http://example.org/ontology#rel_person_organization_hasOrganization"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://example.org/ontology#Organizations"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N23bda44fac364632a15d9a480d40769f">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://example.org/ontology#Persons"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#rel_person_paper_hasPerson"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N423999820b5a426993d2aef20e8e2760">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#topics_TopicID"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#topics_URI">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Topics"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">URI</rdfs:label>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'topics.URI' with range xsd:string.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/topics/URI"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf3a347454f3e400b916ebc4970c2d160">
+    <owl:onProperty rdf:resource="http://example.org/ontology#persons_Address"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N97f04e16f1a74aaaabe85c024fd377af">
+    <owl:onProperty rdf:resource="http://example.org/ontology#persons_Homepage"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#topics_TopicName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">Topic Name</rdfs:label>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/topics/TopicName"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Topics"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'topics.TopicName' with range xsd:string.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#topics_TopicID">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Topics"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/topics/TopicID"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'topics.TopicID' with range xsd:integer.</rdfs:comment>
+    <rdfs:label xml:lang="en">Topic ID</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#papers_Year">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">Year</rdfs:label>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'papers.Year' with range xsd:integer.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/papers/Year"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Papers"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N05ced5f07de74e72ae597588665aeb16">
+    <owl:onProperty rdf:resource="http://example.org/ontology#organizations_OrgID"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5858312cf0a84b7dbd97556e7e763c79">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#organizations_URI"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0e44153dc28042d2aa61aa9c5d2a95b2">
+    <owl:onProperty rdf:resource="http://example.org/ontology#conferences_URI"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na093e1b9afc040d288c8cd33f117d887">
+    <owl:allValuesFrom rdf:resource="http://example.org/ontology#Persons"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#rel_person_topic_hasPerson"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7cc4a55a34b14ff197e9295a449d5fca">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#organizations_Type"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#conferences_Datum">
+    <rdfs:label xml:lang="en">Datum</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'conferences.Datum' with range xsd:datetime.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/conferences/Datum"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Conferences"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6aa90f5a41d043dd8d1e757fb3425383">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology#papers_hasConferences"/>
+    <owl:allValuesFrom rdf:resource="http://example.org/ontology#Conferences"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#papers_PaperID">
+    <rdfs:domain rdf:resource="http://example.org/ontology#Papers"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Data property generated from source column 'papers.PaperID' with range xsd:integer.</rdfs:comment>
+    <rdfs:label xml:lang="en">Paper ID</rdfs:label>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/papers/PaperID"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1dcf9687f2dd490eafb1587680e391de">
+    <owl:onProperty rdf:resource="http://example.org/ontology#persons_Photo"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#rel_person_paper_hasPaper">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#RelPersonPaper"/>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/rel_person_paper/PaperID"/>
+    <rdfs:label xml:lang="en">rel person paper has Paper</rdfs:label>
+    <rdfs:range rdf:resource="http://example.org/ontology#Papers"/>
+    <rdfs:comment xml:lang="en">Object property generated from foreign key 'rel_person_paper.PaperID' referencing 'papers.PaperID'.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N568b1a6b57274d4bbc0e3517f2cc8542">
+    <owl:onProperty rdf:resource="http://example.org/ontology#persons_Email"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <prov:generatedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-05-07T21:20:21.076001+00:00</prov:generatedAtTime>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#rel_person_topic_hasPerson">
+    <rdfs:label xml:lang="en">rel person topic has Person</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">Object property generated from foreign key 'rel_person_topic.PersonID' referencing 'persons.PerID'.</rdfs:comment>
+    <prov:wasDerivedFrom rdf:resource="http://example.org/ontology/provenance/rel_person_topic/PersonID"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#RelPersonTopic"/>
+    <rdfs:range rdf:resource="http://example.org/ontology#Persons"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7e67cdc171a244119f84c7c5e16cc017">
+    <owl:onProperty rdf:resource="http://example.org/ontology#papers_Abstract"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+</rdf:RDF>
