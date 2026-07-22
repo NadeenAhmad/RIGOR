@@ -242,3 +242,38 @@ This work builds on the following prior work:
 - **LLM-based Ontology Engineering Baseline:** Mateiu, P., Groza, A.: Ontology engineering with large language models. In: 2023 25th International Symposium on Symbolic and Numeric Algorithms for Scientific Computing (SYNASC), pp. 226–229. IEEE (2023)
 
 ---
+
+## 📬 Contact
+
+For inquiries, feel free to contact:
+nadeen.fathallah@ki.uni-stuttgart.de
+
+
+
+## 📜 License
+
+ Code under this repo is licensed under a MIT License.
+
+## 📋 [Read our paper](https://arxiv.org/pdf/2506.01232?)
+
+## 📄 Citation
+
+If you find this work useful, please consider citing our paper:
+
+```
+@inproceedings{Fathallah2026RIGOR,
+  author    = {Nadeen Fathallah and
+               Mojtaba Nayyeri and
+               Athish A. Yogi and
+               Ratan Bahadur Thapa and
+               Hans-Michael Tautenhahn and
+               Anton Schnurpel and
+               Steffen Staab},
+  title     = {Retrieval-Augmented Generation of Ontologies from Relational Databases},
+  booktitle = {Proceedings of the International Semantic Web Conference (ISWC 2026)},
+  year      = {2026},
+  note       = {Accepted}
+}
+
+
+
