@@ -271,8 +271,7 @@ If you find this work useful, please consider citing our paper:
                Steffen Staab},
   title     = {Retrieval-Augmented Generation of Ontologies from Relational Databases},
   booktitle = {Proceedings of the International Semantic Web Conference (ISWC 2026)},
-  year      = {2026},
-  note       = {Accepted}
+  year      = {2026}
 }
 
 
