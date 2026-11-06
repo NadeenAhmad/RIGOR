@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="rigor_log_fancy.png" alt="RIGOR logo" height="300">
+  <img src="rigor_log_fancyy.png" alt="RIGOR logo" height="300">
 </p>
 
 # RIGOR: Retrieval-Augmented Iterative Generation of Ontologies with Refinement
